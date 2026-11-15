@@ -96,4 +96,7 @@ export const apiClient = {
       method: 'DELETE',
       token,
     }),
+  exportBackup: (token) => apiRequest('/api/admin/backup', { token }),
+  importBackup: (token, backup) =>
+    apiRequest('/api/admin/backup', { method: 'POST', token, body: { backup } }),
 };

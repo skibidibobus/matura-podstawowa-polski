@@ -208,4 +208,58 @@ describe('Backend Auth, Account Generator & Progress Isolation', () => {
     });
     assert.equal(clearRes.status, 200);
   });
+
+  it('7. Admin can export backup and import/merge backup without deleting existing accounts', async () => {
+    const exportRes = await fetch(`${baseUrl}/api/admin/backup`, {
+      headers: { Authorization: `Bearer ${adminToken}` },
+    });
+    assert.equal(exportRes.status, 200);
+    const exportData = await exportRes.json();
+    assert.ok(Array.isArray(exportData.backup.users));
+    assert.equal(exportData.persistence.mode, 'local-json');
+
+    // Import a backup containing an additional student while keeping existing student1
+    const importRes = await fetch(`${baseUrl}/api/admin/backup`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${adminToken}`,
+      },
+      body: JSON.stringify({
+        backup: {
+          users: [
+            {
+              id: 'usr-restored-1',
+              username: 'hubert-restored',
+              displayName: 'Hubert',
+              role: 'student',
+              passwordHash: student1.user ? 'salt:hash' : 'salt:hash',
+            },
+          ],
+          progressByUserId: {
+            'usr-restored-1': {
+              theme: 'dark',
+              activeCourse: 'kurs',
+              activeLevelByCourse: { probna: 1, ustna: 101, kurs: 'dept-02' },
+              checkedNotes: { 'kn1-1': true },
+              cardStatus: { 'kf1-1': 'known' },
+              quizScores: { 'dept-01': 12 },
+            },
+          },
+          logs: [],
+        },
+      }),
+    });
+    assert.equal(importRes.status, 200);
+    const importSummary = await importRes.json();
+    assert.equal(importSummary.importedUsers, 1);
+
+    const lbRes = await fetch(`${baseUrl}/api/leaderboard`, {
+      headers: { Authorization: `Bearer ${adminToken}` },
+    });
+    const lbData = await lbRes.json();
+    assert.equal(lbData.leaderboard.length, 2);
+    assert.equal(lbData.leaderboard[0].username, 'hubert-restored');
+    assert.equal(lbData.leaderboard[0].stats.notesCount, 1);
+  });
 });

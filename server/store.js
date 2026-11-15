@@ -72,10 +72,130 @@ export function computeProgressStats(progress) {
 }
 
 export class JsonStore {
-  constructor(dbPath, adminPassword = process.env.ADMIN_PASSWORD || 'MaturaAdmin2026!') {
+  constructor(
+    dbPath,
+    adminPassword = process.env.ADMIN_PASSWORD || 'MaturaAdmin2026!',
+    remoteConfig = {
+      gistId: process.env.GIST_ID || '',
+      gistToken: process.env.GIST_TOKEN || '',
+      gistFile: process.env.GIST_FILE || 'matura-polski-db.json',
+    }
+  ) {
     this.dbPath = dbPath;
     this.adminPassword = adminPassword;
+    this.remoteConfig = remoteConfig;
+    this.remoteTimer = null;
+    this.remoteInFlight = null;
+    this.lastRemoteSyncAt = null;
+    this.lastRemoteError = null;
     this.data = this.#loadOrInit();
+  }
+
+  hasRemotePersistence() {
+    return Boolean(this.remoteConfig?.gistId && this.remoteConfig?.gistToken);
+  }
+
+  getPersistenceInfo() {
+    return {
+      mode: this.hasRemotePersistence() ? 'github-gist' : 'local-json',
+      lastSyncedAt: this.lastRemoteSyncAt,
+      lastError: this.lastRemoteError,
+    };
+  }
+
+  async initRemote() {
+    if (!this.hasRemotePersistence()) return false;
+    try {
+      const res = await fetch(`https://api.github.com/gists/${this.remoteConfig.gistId}`, {
+        headers: {
+          Accept: 'application/vnd.github+json',
+          Authorization: `Bearer ${this.remoteConfig.gistToken}`,
+          'User-Agent': 'matura-polski-backend',
+        },
+      });
+      if (!res.ok) {
+        this.lastRemoteError = `HTTP ${res.status}`;
+        return false;
+      }
+      const gist = await res.json();
+      const file = gist?.files?.[this.remoteConfig.gistFile];
+      if (!file?.content) return false;
+      const parsed = JSON.parse(file.content);
+      if (!parsed || typeof parsed !== 'object' || !Array.isArray(parsed.users)) {
+        return false;
+      }
+      // Hydrate from remote Gist while ensuring admin exists
+      if (!parsed.jwtSecret) parsed.jwtSecret = this.data.jwtSecret;
+      if (!parsed.progressByUserId || typeof parsed.progressByUserId !== 'object') {
+        parsed.progressByUserId = {};
+      }
+      if (!Array.isArray(parsed.logs)) parsed.logs = [];
+      const hasAdmin = parsed.users.some((u) => u.role === 'admin');
+      if (!hasAdmin) {
+        const currentAdmin = this.data.users.find((u) => u.role === 'admin');
+        if (currentAdmin) {
+          parsed.users.unshift(currentAdmin);
+          parsed.progressByUserId[currentAdmin.id] =
+            this.data.progressByUserId[currentAdmin.id] || structuredClone(DEFAULT_PROGRESS);
+        }
+      }
+      this.data = parsed;
+      this.#writeLocalAtomic(this.data);
+      this.lastRemoteSyncAt = new Date().toISOString();
+      this.lastRemoteError = null;
+      return true;
+    } catch (err) {
+      this.lastRemoteError = err?.message || 'Remote init error';
+      return false;
+    }
+  }
+
+  #scheduleRemoteSync() {
+    if (!this.hasRemotePersistence()) return;
+    if (this.remoteTimer) clearTimeout(this.remoteTimer);
+    this.remoteTimer = setTimeout(() => {
+      this.remoteTimer = null;
+      this.flushRemoteSync();
+    }, 600);
+  }
+
+  async flushRemoteSync() {
+    if (!this.hasRemotePersistence()) return false;
+    if (this.remoteTimer) {
+      clearTimeout(this.remoteTimer);
+      this.remoteTimer = null;
+    }
+    const payload = JSON.stringify(this.data, null, 2);
+    const run = async () => {
+      try {
+        const res = await fetch(`https://api.github.com/gists/${this.remoteConfig.gistId}`, {
+          method: 'PATCH',
+          headers: {
+            Accept: 'application/vnd.github+json',
+            Authorization: `Bearer ${this.remoteConfig.gistToken}`,
+            'Content-Type': 'application/json',
+            'User-Agent': 'matura-polski-backend',
+          },
+          body: JSON.stringify({
+            files: {
+              [this.remoteConfig.gistFile]: { content: payload },
+            },
+          }),
+        });
+        if (!res.ok) {
+          this.lastRemoteError = `HTTP ${res.status}`;
+          return false;
+        }
+        this.lastRemoteSyncAt = new Date().toISOString();
+        this.lastRemoteError = null;
+        return true;
+      } catch (err) {
+        this.lastRemoteError = err?.message || 'Remote sync error';
+        return false;
+      }
+    };
+    this.remoteInFlight = (this.remoteInFlight || Promise.resolve()).then(run, run);
+    return this.remoteInFlight;
   }
 
   #loadOrInit() {
@@ -131,10 +251,15 @@ export class JsonStore {
     return db;
   }
 
-  #writeAtomic(db = this.data) {
+  #writeLocalAtomic(db = this.data) {
     const tmpPath = `${this.dbPath}.${process.pid}.tmp`;
     fs.writeFileSync(tmpPath, JSON.stringify(db, null, 2), 'utf8');
     fs.renameSync(tmpPath, this.dbPath);
+  }
+
+  #writeAtomic(db = this.data) {
+    this.#writeLocalAtomic(db);
+    this.#scheduleRemoteSync();
   }
 
   getJwtSecret() {
@@ -287,5 +412,70 @@ export class JsonStore {
   clearLogs() {
     this.data.logs = [];
     this.#writeAtomic();
+  }
+
+  exportBackup() {
+    return {
+      exportedAt: new Date().toISOString(),
+      users: structuredClone(this.data.users),
+      progressByUserId: structuredClone(this.data.progressByUserId),
+      logs: structuredClone(this.data.logs),
+    };
+  }
+
+  importBackup(backup) {
+    if (!backup || typeof backup !== 'object' || !Array.isArray(backup.users)) {
+      throw new Error('Nieprawidłowy format pliku kopii zapasowej.');
+    }
+    let importedUsers = 0;
+    let updatedProgress = 0;
+    const backupProgress = backup.progressByUserId || {};
+
+    for (const u of backup.users) {
+      if (!u || !u.username || !u.passwordHash) continue;
+      if (u.role === 'admin') continue; // Never overwrite local admin credentials
+      const existing = this.findUserByUsername(u.username);
+      if (!existing) {
+        const id = u.id || `usr-${crypto.randomUUID().slice(0, 8)}`;
+        this.data.users.push({
+          id,
+          username: String(u.username).trim().toLowerCase(),
+          displayName: String(u.displayName || u.username).trim(),
+          role: 'student',
+          passwordHash: u.passwordHash,
+          createdAt: u.createdAt || new Date().toISOString(),
+        });
+        const srcProg = backupProgress[u.id] || backupProgress[id];
+        this.data.progressByUserId[id] = srcProg
+          ? sanitizeProgress(srcProg)
+          : structuredClone(DEFAULT_PROGRESS);
+        importedUsers += 1;
+      } else {
+        const srcProg = backupProgress[u.id] || backupProgress[existing.id];
+        if (srcProg) {
+          const curStats = computeProgressStats(this.data.progressByUserId[existing.id]);
+          const srcStats = computeProgressStats(srcProg);
+          if (srcStats.xp > curStats.xp) {
+            this.data.progressByUserId[existing.id] = sanitizeProgress(srcProg);
+            updatedProgress += 1;
+          }
+        }
+      }
+    }
+
+    if (Array.isArray(backup.logs)) {
+      const existingIds = new Set(this.data.logs.map((l) => l.id));
+      const merged = [...this.data.logs];
+      for (const log of backup.logs) {
+        if (log?.id && !existingIds.has(log.id)) {
+          merged.push(log);
+        }
+      }
+      merged.sort((a, b) => String(b.timestamp || '').localeCompare(String(a.timestamp || '')));
+      this.data.logs = merged.slice(0, MAX_LOGS);
+    }
+
+    this.#writeAtomic();
+    return { importedUsers, updatedProgress, totalUsers: this.data.users.length };
   }
 }

@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   Activity,
   Check,
   Copy,
+  Download,
   KeyRound,
   LogOut,
   RefreshCw,
@@ -10,6 +11,7 @@ import {
   Shield,
   Trash2,
   Trophy,
+  Upload,
   UserPlus,
   X,
 } from 'lucide-react';
@@ -69,6 +71,7 @@ export function AccountModal({
   const [newPassword, setNewPassword] = useState('');
   const [generatedCreds, setGeneratedCreds] = useState(null);
   const [copiedCreds, setCopiedCreds] = useState(false);
+  const backupInputRef = useRef(null);
 
   const isAdmin = authSession?.user?.role === 'admin';
 
@@ -220,6 +223,46 @@ export function AccountModal({
     navigator.clipboard?.writeText(text);
     setCopiedCreds(true);
     setTimeout(() => setCopiedCreds(false), 2500);
+  };
+
+  const handleExportBackup = async () => {
+    if (!authSession?.token) return;
+    setError('');
+    try {
+      const data = await apiClient.exportBackup(authSession.token);
+      const blob = new Blob([JSON.stringify(data.backup, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `matura-polski-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      setNotice('Pobrano kopię zapasową wszystkich kont i postępów.');
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
+  const handleImportBackup = async (e) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file || !authSession?.token) return;
+    setError('');
+    setNotice('');
+    try {
+      const text = await file.text();
+      const parsed = JSON.parse(text);
+      const res = await apiClient.importBackup(authSession.token, parsed);
+      setNotice(
+        `Przywrócono kopię: dodano ${res.importedUsers} nowych kont, zaktualizowano postęp: ${res.updatedProgress} (istniejące konta zachowane).`
+      );
+      await Promise.all([
+        loadLeaderboard(authSession.token),
+        loadLogs(authSession.token, logFilter),
+      ]);
+    } catch (err) {
+      setError(err.message || 'Nie udało się wgrać kopii zapasowej.');
+    }
   };
 
   const maxLeaderboardXp = Math.max(100, ...leaderboard.map((u) => u.stats?.xp || 0));
@@ -407,14 +450,41 @@ export function AccountModal({
                     <Trophy size={15} />
                     Ranking uczniów (bez admina)
                   </h4>
-                  <button
-                    type="button"
-                    className="check-note-btn"
-                    onClick={() => loadLeaderboard(authSession.token)}
-                  >
-                    <RefreshCw size={12} />
-                    Odśwież
-                  </button>
+                  <div className="user-row-actions">
+                    <button
+                      type="button"
+                      className="check-note-btn"
+                      onClick={handleExportBackup}
+                      title="Pobierz kopię wszystkich kont i postępów (.json)"
+                    >
+                      <Download size={12} />
+                      Kopia (.json)
+                    </button>
+                    <button
+                      type="button"
+                      className="check-note-btn"
+                      onClick={() => backupInputRef.current?.click()}
+                      title="Wgraj kopię zapasową (bez usuwania obecnych kont)"
+                    >
+                      <Upload size={12} />
+                      Wgraj kopię
+                    </button>
+                    <input
+                      ref={backupInputRef}
+                      type="file"
+                      accept="application/json,.json"
+                      style={{ display: 'none' }}
+                      onChange={handleImportBackup}
+                    />
+                    <button
+                      type="button"
+                      className="check-note-btn"
+                      onClick={() => loadLeaderboard(authSession.token)}
+                    >
+                      <RefreshCw size={12} />
+                      Odśwież
+                    </button>
+                  </div>
                 </div>
 
                 {leaderboard.length === 0 ? (

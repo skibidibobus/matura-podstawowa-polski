@@ -88,6 +88,7 @@ export function createAppServer({
         return sendJson(res, 200, {
           ok: true,
           usersCount: store.listUsers().length,
+          persistence: store.getPersistenceInfo(),
         });
       }
 
@@ -293,6 +294,27 @@ export function createAppServer({
             store.clearLogs();
             return sendJson(res, 200, { ok: true });
           }
+
+          if (req.method === 'GET' && pathname === '/api/admin/backup') {
+            return sendJson(res, 200, {
+              backup: store.exportBackup(),
+              persistence: store.getPersistenceInfo(),
+            });
+          }
+
+          if (req.method === 'POST' && pathname === '/api/admin/backup') {
+            const body = await readJsonBody(req);
+            const backupPayload = body.backup !== undefined ? body.backup : body;
+            const summary = store.importBackup(backupPayload);
+            store.addLog({
+              type: 'user_created',
+              userId: currentUser.id,
+              username: currentUser.username,
+              displayName: currentUser.displayName,
+              message: `Zaimportowano kopię zapasową (+${summary.importedUsers} kont, zaktualizowano postęp: ${summary.updatedProgress})`,
+            });
+            return sendJson(res, 200, { ok: true, ...summary });
+          }
         }
       }
 
@@ -314,9 +336,20 @@ export function createAppServer({
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === __filename;
 if (isMain) {
   const port = Number(process.env.PORT || 3001);
-  const { server } = createAppServer();
+  const { server, store } = createAppServer();
+  await store.initRemote();
+
+  const shutdown = async () => {
+    await store.flushRemoteSync();
+    server.close(() => process.exit(0));
+    setTimeout(() => process.exit(0), 2500);
+  };
+  process.on('SIGTERM', shutdown);
+  process.on('SIGINT', shutdown);
+
   server.listen(port, () => {
-    console.log(`Matura Polski Backend running at http://localhost:${port}`);
+    const pInfo = store.getPersistenceInfo();
+    console.log(`Matura Polski Backend running at http://localhost:${port} (persistence: ${pInfo.mode})`);
     console.log(`Default admin login: admin (password from ADMIN_PASSWORD env or MaturaAdmin2026!)`);
   });
 }
