@@ -92,6 +92,12 @@ export function createAppServer({
         });
       }
 
+      // Public leaderboard (displayName only, excludes admin, supports ?course=all|probna|kurs|ustna)
+      if (req.method === 'GET' && pathname === '/api/public/leaderboard') {
+        const course = url.searchParams.get('course') || 'all';
+        return sendJson(res, 200, { leaderboard: store.getPublicLeaderboard(course) });
+      }
+
       // Login
       if (req.method === 'POST' && pathname === '/api/auth/login') {
         const body = await readJsonBody(req);

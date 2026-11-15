@@ -8,6 +8,7 @@ import { NotesView } from './components/NotesView';
 import { FlashcardsView } from './components/FlashcardsView';
 import { QuizView } from './components/QuizView';
 import { AccountModal } from './components/AccountModal';
+import { RankingView } from './components/RankingView';
 import { apiClient } from './api/client';
 
 const STORAGE_KEY = 'matura-polski-progress-v1';
@@ -102,6 +103,7 @@ export function App() {
   const [stage, setStage] = useState('notes'); // 'notes' | 'flashcards' | 'quiz'
   const [activeNoteId, setActiveNoteId] = useState(null);
   const [reviewMode, setReviewMode] = useState(false);
+  const [rankingMode, setRankingMode] = useState(false);
   const [checkedNotes, setCheckedNotes] = useState(initial.checkedNotes || {});
   const [cardStatus, setCardStatus] = useState(initial.cardStatus || {});
   const [quizScores, setQuizScores] = useState(initial.quizScores || {});
@@ -373,12 +375,14 @@ export function App() {
   const handleSelectCourse = (course) => {
     setActiveCourse(course);
     setReviewMode(false);
+    setRankingMode(false);
     setStage('notes');
     setActiveNoteId(null);
   };
 
   const handleSelectLevel = (id) => {
     setReviewMode(false);
+    setRankingMode(false);
     setActiveLevelByCourse((prev) => ({ ...prev, [activeCourse]: id }));
     setStage('notes');
     setActiveNoteId(null);
@@ -386,6 +390,7 @@ export function App() {
 
   const handleSelectNote = (levelId, noteId) => {
     setReviewMode(false);
+    setRankingMode(false);
     setActiveLevelByCourse((prev) => ({ ...prev, [activeCourse]: levelId }));
     setStage('notes');
     setActiveNoteId(noteId);
@@ -417,7 +422,15 @@ export function App() {
         activeLevelId={activeLevel?.id}
         onSelectLevel={handleSelectLevel}
         reviewMode={reviewMode}
-        onToggleReviewMode={() => setReviewMode((v) => !v)}
+        onToggleReviewMode={() => {
+          setRankingMode(false);
+          setReviewMode((v) => !v);
+        }}
+        rankingMode={rankingMode}
+        onToggleRankingMode={() => {
+          setReviewMode(false);
+          setRankingMode((v) => !v);
+        }}
         reviewCount={reviewCards.length}
         completedLevelsCount={completedLevelsCount}
         masteredCardsCount={masteredCardsCount}
@@ -447,7 +460,23 @@ export function App() {
       />
 
       <main className="main">
-        {reviewMode ? (
+        {rankingMode ? (
+          <>
+            <header className="level-header">
+              <div>
+                <div className="level-kicker">PUBLICZNA TABELA WYNIKÓW</div>
+                <h1 className="level-h1">Ranking uczniów</h1>
+                <p className="level-desc">
+                  Porównaj postępy w każdym kursie osobno lub w rankingu łącznym ze wszystkich kursów.
+                </p>
+              </div>
+            </header>
+            <RankingView
+              activeCourse={activeCourse}
+              currentUserId={authSession?.user?.id || null}
+            />
+          </>
+        ) : reviewMode ? (
           <>
             <header className="level-header">
               <div>

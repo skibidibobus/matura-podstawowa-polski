@@ -68,6 +68,8 @@ export const apiClient = {
   getProgress: (token) => apiRequest('/api/progress', { token }),
   saveProgress: (token, progress) =>
     apiRequest('/api/progress', { method: 'PUT', token, body: { progress }, keepalive: true }),
+  getPublicLeaderboard: (course = 'all') =>
+    apiRequest(`/api/public/leaderboard?course=${encodeURIComponent(course)}`),
   getLeaderboard: (token) => apiRequest('/api/leaderboard', { token }),
   listUsers: (token) => apiRequest('/api/admin/users', { token }),
   createUser: (token, payload) =>

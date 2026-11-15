@@ -261,5 +261,23 @@ describe('Backend Auth, Account Generator & Progress Isolation', () => {
     assert.equal(lbData.leaderboard.length, 2);
     assert.equal(lbData.leaderboard[0].username, 'hubert-restored');
     assert.equal(lbData.leaderboard[0].stats.notesCount, 1);
+
+    // Public leaderboard requires no auth, hides username/admin, and filters by course
+    const pubAll = await fetch(`${baseUrl}/api/public/leaderboard?course=all`);
+    assert.equal(pubAll.status, 200);
+    const pubAllData = await pubAll.json();
+    assert.equal(pubAllData.leaderboard.length, 2);
+    assert.equal(pubAllData.leaderboard[0].displayName, 'Hubert');
+    assert.equal(pubAllData.leaderboard[0].username, undefined);
+
+    const pubKurs = await fetch(`${baseUrl}/api/public/leaderboard?course=kurs`);
+    const pubKursData = await pubKurs.json();
+    assert.equal(pubKursData.leaderboard[0].stats.notesCount, 1);
+    assert.equal(pubKursData.leaderboard[0].stats.knownCards, 1);
+    assert.equal(pubKursData.leaderboard[0].stats.quizzesTaken, 1);
+
+    const pubProbna = await fetch(`${baseUrl}/api/public/leaderboard?course=probna`);
+    const pubProbnaData = await pubProbna.json();
+    assert.equal(pubProbnaData.leaderboard[0].stats.xp, 0);
   });
 });

@@ -53,19 +53,69 @@ export function sanitizeProgress(raw) {
 
 const MAX_LOGS = 300;
 
+function classifyNoteCourse(noteId) {
+  const id = String(noteId || '');
+  if (id.startsWith('kn')) return 'kurs';
+  if (id.startsWith('u')) return 'ustna';
+  return 'probna';
+}
+
+function classifyCardCourse(cardId) {
+  const id = String(cardId || '');
+  if (id.startsWith('kf')) return 'kurs';
+  if (id.startsWith('uf')) return 'ustna';
+  return 'probna';
+}
+
+function classifyQuizCourse(quizKey) {
+  const key = String(quizKey || '');
+  if (key.startsWith('dept-')) return 'kurs';
+  const num = Number(key);
+  if (Number.isFinite(num) && num >= 100) return 'ustna';
+  return 'probna';
+}
+
 export function computeProgressStats(progress) {
   const p = progress || DEFAULT_PROGRESS;
-  const notesCount = Object.values(p.checkedNotes || {}).filter(Boolean).length;
-  const knownCards = Object.values(p.cardStatus || {}).filter((s) => s === 'known').length;
-  const reviewCards = Object.values(p.cardStatus || {}).filter((s) => s === 'review').length;
-  const quizzesTaken = Object.keys(p.quizScores || {}).length;
+  const byCourse = {
+    probna: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, xp: 0 },
+    kurs: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, xp: 0 },
+    ustna: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, xp: 0 },
+  };
+
+  for (const [noteId, done] of Object.entries(p.checkedNotes || {})) {
+    if (!done) continue;
+    byCourse[classifyNoteCourse(noteId)].notesCount += 1;
+  }
+
+  for (const [cardId, status] of Object.entries(p.cardStatus || {})) {
+    const c = classifyCardCourse(cardId);
+    if (status === 'known') byCourse[c].knownCards += 1;
+    else if (status === 'review') byCourse[c].reviewCards += 1;
+  }
+
+  for (const quizKey of Object.keys(p.quizScores || {})) {
+    byCourse[classifyQuizCourse(quizKey)].quizzesTaken += 1;
+  }
+
+  for (const c of ['probna', 'kurs', 'ustna']) {
+    const s = byCourse[c];
+    s.xp = s.notesCount * 15 + s.knownCards * 10 + s.quizzesTaken * 80;
+  }
+
+  const notesCount = byCourse.probna.notesCount + byCourse.kurs.notesCount + byCourse.ustna.notesCount;
+  const knownCards = byCourse.probna.knownCards + byCourse.kurs.knownCards + byCourse.ustna.knownCards;
+  const reviewCards = byCourse.probna.reviewCards + byCourse.kurs.reviewCards + byCourse.ustna.reviewCards;
+  const quizzesTaken = byCourse.probna.quizzesTaken + byCourse.kurs.quizzesTaken + byCourse.ustna.quizzesTaken;
   const xp = notesCount * 15 + knownCards * 10 + quizzesTaken * 80;
+
   return {
     notesCount,
     knownCards,
     reviewCards,
     quizzesTaken,
     xp,
+    byCourse,
     activeCourse: p.activeCourse || 'probna',
     updatedAt: p.updatedAt || null,
   };
@@ -243,9 +293,9 @@ export class JsonStore {
         createdAt: new Date().toISOString(),
       });
       db.progressByUserId[adminId] = structuredClone(DEFAULT_PROGRESS);
-      this.#writeAtomic(db);
+      this.#writeLocalAtomic(db);
     } else if (!fs.existsSync(this.dbPath)) {
-      this.#writeAtomic(db);
+      this.#writeLocalAtomic(db);
     }
 
     return db;
@@ -300,6 +350,40 @@ export class JsonStore {
           displayName: u.displayName,
           createdAt: u.createdAt,
           stats: computeProgressStats(p),
+        };
+      })
+      .sort((a, b) => {
+        if (b.stats.xp !== a.stats.xp) return b.stats.xp - a.stats.xp;
+        if (b.stats.knownCards !== a.stats.knownCards) return b.stats.knownCards - a.stats.knownCards;
+        if (b.stats.notesCount !== a.stats.notesCount) return b.stats.notesCount - a.stats.notesCount;
+        if (b.stats.quizzesTaken !== a.stats.quizzesTaken) return b.stats.quizzesTaken - a.stats.quizzesTaken;
+        return a.displayName.localeCompare(b.displayName, 'pl');
+      });
+
+    return students.map((entry, idx) => ({
+      ...entry,
+      rank: idx + 1,
+    }));
+  }
+
+  getPublicLeaderboard(course = 'all') {
+    const validCourse = ['probna', 'kurs', 'ustna'].includes(course) ? course : 'all';
+    const students = this.data.users
+      .filter((u) => u.role !== 'admin')
+      .map((u) => {
+        const p = this.data.progressByUserId[u.id] || DEFAULT_PROGRESS;
+        const fullStats = computeProgressStats(p);
+        const scoped = validCourse === 'all' ? fullStats : fullStats.byCourse[validCourse];
+        return {
+          id: u.id,
+          displayName: u.displayName,
+          stats: {
+            notesCount: scoped.notesCount,
+            knownCards: scoped.knownCards,
+            quizzesTaken: scoped.quizzesTaken,
+            xp: scoped.xp,
+          },
+          byCourse: fullStats.byCourse,
         };
       })
       .sort((a, b) => {

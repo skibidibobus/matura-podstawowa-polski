@@ -32,6 +32,8 @@ export function Sidebar({
   activeNoteId = null,
   onSelectNote,
   onToggleLevelNotes,
+  rankingMode = false,
+  onToggleRankingMode,
 }) {
   const [expandedLevels, setExpandedLevels] = useState(() =>
     activeLevelId ? { [activeLevelId]: true } : {}
@@ -125,6 +127,17 @@ export function Sidebar({
           Matura Ustna
         </button>
       </div>
+
+      {onToggleRankingMode && (
+        <button
+          type="button"
+          className={`ranking-nav-btn ${rankingMode ? 'active' : ''}`}
+          onClick={onToggleRankingMode}
+        >
+          <Trophy size={15} />
+          <span>Ranking uczniów</span>
+        </button>
+      )}
 
       <div className="progress-card">
         <div className="progress-row">
