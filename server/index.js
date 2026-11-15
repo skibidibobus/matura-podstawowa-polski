@@ -9,7 +9,7 @@ import {
   verifyPassword,
   verifyToken,
 } from './auth.js';
-import { JsonStore } from './store.js';
+import { JsonStore, computeProgressStats } from './store.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -101,12 +101,24 @@ export function createAppServer({
         }
         const user = store.findUserByUsername(username);
         if (!user || !verifyPassword(password, user.passwordHash)) {
+          store.addLog({
+            type: 'login_failed',
+            username,
+            message: `Nieudana próba logowania na login „${username}”`,
+          });
           return sendJson(res, 401, { error: 'Nieprawidłowy login lub hasło.' });
         }
         const token = signToken(
           { sub: user.id, username: user.username, role: user.role },
           store.getJwtSecret()
         );
+        store.addLog({
+          type: 'login',
+          userId: user.id,
+          username: user.username,
+          displayName: user.displayName,
+          message: 'Zalogowano się do aplikacji',
+        });
         return sendJson(res, 200, {
           token,
           user: publicUser(user),
@@ -139,8 +151,29 @@ export function createAppServer({
         if (req.method === 'PUT' && pathname === '/api/progress') {
           const body = await readJsonBody(req);
           const progressPayload = body.progress !== undefined ? body.progress : body;
+          const prevStats = computeProgressStats(store.getProgress(currentUser.id));
           const saved = store.saveProgress(currentUser.id, progressPayload);
+          const nextStats = computeProgressStats(saved);
+          if (
+            prevStats.notesCount !== nextStats.notesCount ||
+            prevStats.knownCards !== nextStats.knownCards ||
+            prevStats.reviewCards !== nextStats.reviewCards ||
+            prevStats.quizzesTaken !== nextStats.quizzesTaken
+          ) {
+            store.addLog({
+              type: 'progress_sync',
+              userId: currentUser.id,
+              username: currentUser.username,
+              displayName: currentUser.displayName,
+              message: `Postęp: Notatki ${nextStats.notesCount}, Fiszki ${nextStats.knownCards} (powt. ${nextStats.reviewCards}), Quizy ${nextStats.quizzesTaken} (${nextStats.xp} XP)`,
+            });
+          }
           return sendJson(res, 200, { ok: true, progress: saved });
+        }
+
+        // Student leaderboard (excludes admin)
+        if (req.method === 'GET' && pathname === '/api/leaderboard') {
+          return sendJson(res, 200, { leaderboard: store.getLeaderboard() });
         }
 
         // Admin routes
@@ -175,6 +208,14 @@ export function createAppServer({
               role: 'student',
             });
 
+            store.addLog({
+              type: 'user_created',
+              userId: created.id,
+              username: created.username,
+              displayName: created.displayName,
+              message: `Administrator utworzył konto ${created.displayName} (@${created.username})`,
+            });
+
             return sendJson(res, 201, {
               user: publicUser(created),
               plainPassword,
@@ -194,19 +235,62 @@ export function createAppServer({
             if (!updated) {
               return sendJson(res, 404, { error: 'Nie znaleziono użytkownika.' });
             }
+            store.addLog({
+              type: 'password_reset',
+              userId: updated.id,
+              username: updated.username,
+              displayName: updated.displayName,
+              message: `Administrator zresetował hasło dla @${updated.username}`,
+            });
             return sendJson(res, 200, {
               user: publicUser(updated),
               plainPassword,
             });
           }
 
+          const resetProgressMatch = pathname.match(/^\/api\/admin\/users\/([^/]+)\/reset-progress$/);
+          if (req.method === 'POST' && resetProgressMatch) {
+            const userId = decodeURIComponent(resetProgressMatch[1]);
+            const updated = store.resetUserProgress(userId);
+            if (!updated) {
+              return sendJson(res, 404, { error: 'Nie znaleziono użytkownika.' });
+            }
+            store.addLog({
+              type: 'progress_reset',
+              userId: updated.id,
+              username: updated.username,
+              displayName: updated.displayName,
+              message: `Administrator wyzerował postęp użytkownika @${updated.username}`,
+            });
+            return sendJson(res, 200, { ok: true });
+          }
+
           const deleteMatch = pathname.match(/^\/api\/admin\/users\/([^/]+)$/);
           if (req.method === 'DELETE' && deleteMatch) {
             const userId = decodeURIComponent(deleteMatch[1]);
+            const target = store.findUserById(userId);
             const deleted = store.deleteUser(userId);
             if (!deleted) {
               return sendJson(res, 404, { error: 'Nie znaleziono użytkownika.' });
             }
+            store.addLog({
+              type: 'user_deleted',
+              userId,
+              username: target?.username || '',
+              displayName: target?.displayName || '',
+              message: `Administrator usunął konto @${target?.username || userId}`,
+            });
+            return sendJson(res, 200, { ok: true });
+          }
+
+          if (req.method === 'GET' && pathname === '/api/admin/logs') {
+            const type = url.searchParams.get('type') || '';
+            const limit = Number(url.searchParams.get('limit') || 150);
+            return sendJson(res, 200, { logs: store.listLogs({ limit, type }) });
+          }
+
+          if (req.method === 'DELETE' && pathname === '/api/admin/logs') {
+            store.clearLogs();
             return sendJson(res, 200, { ok: true });
           }
         }

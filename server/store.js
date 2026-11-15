@@ -51,6 +51,26 @@ export function sanitizeProgress(raw) {
   };
 }
 
+const MAX_LOGS = 300;
+
+export function computeProgressStats(progress) {
+  const p = progress || DEFAULT_PROGRESS;
+  const notesCount = Object.values(p.checkedNotes || {}).filter(Boolean).length;
+  const knownCards = Object.values(p.cardStatus || {}).filter((s) => s === 'known').length;
+  const reviewCards = Object.values(p.cardStatus || {}).filter((s) => s === 'review').length;
+  const quizzesTaken = Object.keys(p.quizScores || {}).length;
+  const xp = notesCount * 15 + knownCards * 10 + quizzesTaken * 80;
+  return {
+    notesCount,
+    knownCards,
+    reviewCards,
+    quizzesTaken,
+    xp,
+    activeCourse: p.activeCourse || 'probna',
+    updatedAt: p.updatedAt || null,
+  };
+}
+
 export class JsonStore {
   constructor(dbPath, adminPassword = process.env.ADMIN_PASSWORD || 'MaturaAdmin2026!') {
     this.dbPath = dbPath;
@@ -78,6 +98,7 @@ export class JsonStore {
         jwtSecret: process.env.JWT_SECRET || crypto.randomBytes(32).toString('hex'),
         users: [],
         progressByUserId: {},
+        logs: [],
       };
     }
 
@@ -88,6 +109,7 @@ export class JsonStore {
     if (!db.progressByUserId || typeof db.progressByUserId !== 'object') {
       db.progressByUserId = {};
     }
+    if (!Array.isArray(db.logs)) db.logs = [];
 
     const hasAdmin = db.users.some((u) => u.role === 'admin');
     if (!hasAdmin) {
@@ -131,23 +153,42 @@ export class JsonStore {
   listUsers() {
     return this.data.users.map((u) => {
       const p = this.data.progressByUserId[u.id] || DEFAULT_PROGRESS;
-      const notesCount = Object.values(p.checkedNotes || {}).filter(Boolean).length;
-      const knownCards = Object.values(p.cardStatus || {}).filter((s) => s === 'known').length;
-      const quizzesTaken = Object.keys(p.quizScores || {}).length;
       return {
         id: u.id,
         username: u.username,
         displayName: u.displayName,
         role: u.role,
         createdAt: u.createdAt,
-        stats: {
-          notesCount,
-          knownCards,
-          quizzesTaken,
-          updatedAt: p.updatedAt || null,
-        },
+        stats: computeProgressStats(p),
       };
     });
+  }
+
+  getLeaderboard() {
+    const students = this.data.users
+      .filter((u) => u.role !== 'admin')
+      .map((u) => {
+        const p = this.data.progressByUserId[u.id] || DEFAULT_PROGRESS;
+        return {
+          id: u.id,
+          username: u.username,
+          displayName: u.displayName,
+          createdAt: u.createdAt,
+          stats: computeProgressStats(p),
+        };
+      })
+      .sort((a, b) => {
+        if (b.stats.xp !== a.stats.xp) return b.stats.xp - a.stats.xp;
+        if (b.stats.knownCards !== a.stats.knownCards) return b.stats.knownCards - a.stats.knownCards;
+        if (b.stats.notesCount !== a.stats.notesCount) return b.stats.notesCount - a.stats.notesCount;
+        if (b.stats.quizzesTaken !== a.stats.quizzesTaken) return b.stats.quizzesTaken - a.stats.quizzesTaken;
+        return a.displayName.localeCompare(b.displayName, 'pl');
+      });
+
+    return students.map((entry, idx) => ({
+      ...entry,
+      rank: idx + 1,
+    }));
   }
 
   createUser({ username, displayName, passwordHash, role = 'student', initialProgress = null }) {
@@ -201,5 +242,47 @@ export class JsonStore {
     this.data.progressByUserId[userId] = sanitized;
     this.#writeAtomic();
     return sanitized;
+  }
+
+  resetUserProgress(userId) {
+    const user = this.findUserById(userId);
+    if (!user) return null;
+    if (user.role === 'admin') {
+      throw new Error('Nie można zresetować postępu administratora.');
+    }
+    this.data.progressByUserId[userId] = structuredClone(DEFAULT_PROGRESS);
+    this.#writeAtomic();
+    return user;
+  }
+
+  addLog({ type, userId = null, username = '', displayName = '', message = '' }) {
+    const entry = {
+      id: `log-${crypto.randomUUID().slice(0, 8)}`,
+      timestamp: new Date().toISOString(),
+      type: String(type || 'info'),
+      userId,
+      username: String(username || ''),
+      displayName: String(displayName || ''),
+      message: String(message || ''),
+    };
+    this.data.logs.unshift(entry);
+    if (this.data.logs.length > MAX_LOGS) {
+      this.data.logs = this.data.logs.slice(0, MAX_LOGS);
+    }
+    this.#writeAtomic();
+    return entry;
+  }
+
+  listLogs({ limit = 150, type = '' } = {}) {
+    let items = this.data.logs;
+    if (type) {
+      items = items.filter((l) => l.type === type);
+    }
+    return items.slice(0, limit);
+  }
+
+  clearLogs() {
+    this.data.logs = [];
+    this.#writeAtomic();
   }
 }

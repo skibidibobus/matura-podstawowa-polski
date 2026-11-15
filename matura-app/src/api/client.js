@@ -67,6 +67,7 @@ export const apiClient = {
   getProgress: (token) => apiRequest('/api/progress', { token }),
   saveProgress: (token, progress) =>
     apiRequest('/api/progress', { method: 'PUT', token, body: { progress } }),
+  getLeaderboard: (token) => apiRequest('/api/leaderboard', { token }),
   listUsers: (token) => apiRequest('/api/admin/users', { token }),
   createUser: (token, payload) =>
     apiRequest('/api/admin/users', { method: 'POST', token, body: payload }),
@@ -76,8 +77,21 @@ export const apiClient = {
       token,
       body: {},
     }),
+  resetUserProgress: (token, userId) =>
+    apiRequest(`/api/admin/users/${encodeURIComponent(userId)}/reset-progress`, {
+      method: 'POST',
+      token,
+      body: {},
+    }),
   deleteUser: (token, userId) =>
     apiRequest(`/api/admin/users/${encodeURIComponent(userId)}`, {
+      method: 'DELETE',
+      token,
+    }),
+  listLogs: (token, type = '') =>
+    apiRequest(`/api/admin/logs${type ? `?type=${encodeURIComponent(type)}` : ''}`, { token }),
+  clearLogs: (token) =>
+    apiRequest('/api/admin/logs', {
       method: 'DELETE',
       token,
     }),

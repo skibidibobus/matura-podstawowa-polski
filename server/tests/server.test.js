@@ -163,4 +163,49 @@ describe('Backend Auth, Account Generator & Progress Isolation', () => {
     });
     assert.equal(delRes.status, 200);
   });
+
+  it('6. Leaderboard excludes admin and ranks students by XP; admin can reset progress and inspect/clear logs', async () => {
+    const lbRes = await fetch(`${baseUrl}/api/leaderboard`, {
+      headers: { Authorization: `Bearer ${adminToken}` },
+    });
+    assert.equal(lbRes.status, 200);
+    const lbData = await lbRes.json();
+    assert.equal(lbData.leaderboard.length, 1);
+    assert.equal(lbData.leaderboard[0].username, student1.user.username);
+    assert.equal(lbData.leaderboard[0].rank, 1);
+    assert.ok(lbData.leaderboard[0].stats.xp > 0);
+
+    // Admin logs contain login, user_created, progress_sync, password_reset, user_deleted
+    const logsRes = await fetch(`${baseUrl}/api/admin/logs`, {
+      headers: { Authorization: `Bearer ${adminToken}` },
+    });
+    assert.equal(logsRes.status, 200);
+    const logsData = await logsRes.json();
+    assert.ok(logsData.logs.length >= 4);
+    assert.ok(logsData.logs.some((l) => l.type === 'progress_sync'));
+
+    // Admin resets student1 progress
+    const resetProgRes = await fetch(`${baseUrl}/api/admin/users/${student1.user.id}/reset-progress`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${adminToken}`,
+      },
+      body: JSON.stringify({}),
+    });
+    assert.equal(resetProgRes.status, 200);
+
+    const lbAfterReset = await fetch(`${baseUrl}/api/leaderboard`, {
+      headers: { Authorization: `Bearer ${adminToken}` },
+    });
+    const lbAfterData = await lbAfterReset.json();
+    assert.equal(lbAfterData.leaderboard[0].stats.xp, 0);
+
+    // Clear logs
+    const clearRes = await fetch(`${baseUrl}/api/admin/logs`, {
+      method: 'DELETE',
+      headers: { Authorization: `Bearer ${adminToken}` },
+    });
+    assert.equal(clearRes.status, 200);
+  });
 });
