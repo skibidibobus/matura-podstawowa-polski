@@ -9,6 +9,7 @@ import { FlashcardsView } from './components/FlashcardsView';
 import { QuizView } from './components/QuizView';
 import { AccountModal } from './components/AccountModal';
 import { RankingView } from './components/RankingView';
+import { WelcomePage } from './components/WelcomePage';
 import { apiClient } from './api/client';
 
 const STORAGE_KEY = 'matura-polski-progress-v1';
@@ -104,6 +105,15 @@ export function App() {
   const [activeNoteId, setActiveNoteId] = useState(null);
   const [reviewMode, setReviewMode] = useState(false);
   const [rankingMode, setRankingMode] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(() => {
+    if (typeof window === 'undefined' || !window.location?.protocol?.startsWith('http')) return false;
+    if (loadAuthSession()?.token) return false;
+    try {
+      return !window.sessionStorage?.getItem('matura-polski-welcome-dismissed');
+    } catch {
+      return true;
+    }
+  });
   const [checkedNotes, setCheckedNotes] = useState(initial.checkedNotes || {});
   const [cardStatus, setCardStatus] = useState(initial.cardStatus || {});
   const [quizScores, setQuizScores] = useState(initial.quizScores || {});
@@ -296,6 +306,7 @@ export function App() {
       // Ignore storage errors
     }
     hydratedTokenRef.current = loginData.token;
+    setShowWelcome(false);
     const remote = loginData.progress;
     const localUserCache = loadState(getUserStorageKey(loginData.user?.username));
     if (remote && !remote.updatedAt && !hasAnyProgress(remote) && hasAnyProgress(localUserCache)) {
@@ -315,6 +326,7 @@ export function App() {
   const handleLogout = () => {
     try {
       localStorage.removeItem(AUTH_STORAGE_KEY);
+      window.sessionStorage?.removeItem('matura-polski-welcome-dismissed');
     } catch {
       // Ignore storage errors
     }
@@ -322,6 +334,7 @@ export function App() {
     pendingRemoteSaveRef.current = null;
     setAuthSession(null);
     setSyncStatus('');
+    setShowWelcome(true);
     applyProgressState(loadState(STORAGE_KEY));
   };
 
@@ -440,6 +453,29 @@ export function App() {
   const notesDoneCount = activeLevel?.notes?.filter((n) => checkedNotes[n.id]).length || 0;
   const cardsDoneCount = activeLevel?.flashcards?.filter((c) => cardStatus[c.id] === 'known').length || 0;
   const quizBest = quizScores[activeLevel?.id];
+
+  const dismissWelcome = (openRanking = false) => {
+    try {
+      window.sessionStorage?.setItem('matura-polski-welcome-dismissed', '1');
+    } catch {
+      // Ignore storage errors
+    }
+    setRankingMode(openRanking);
+    setReviewMode(false);
+    setShowWelcome(false);
+  };
+
+  if (showWelcome && !authSession?.token) {
+    return (
+      <WelcomePage
+        theme={theme}
+        onToggleTheme={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
+        onLoginSuccess={handleLoginSuccess}
+        onEnterGuest={() => dismissWelcome(false)}
+        onOpenRanking={() => dismissWelcome(true)}
+      />
+    );
+  }
 
   return (
     <div className="app-shell">
