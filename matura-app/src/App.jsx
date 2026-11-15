@@ -21,15 +21,36 @@ const DEFAULT_LEVEL_BY_COURSE = {
   kurs: 'dept-01',
 };
 
-function loadState() {
+function getUserStorageKey(username) {
+  return username ? `${STORAGE_KEY}:user:${String(username).toLowerCase()}` : STORAGE_KEY;
+}
+
+function loadState(storageKey = STORAGE_KEY) {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(storageKey);
     if (!raw) return {};
     const parsed = JSON.parse(raw);
     return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
   } catch {
     return {};
   }
+}
+
+function saveState(storageKey, payload) {
+  try {
+    localStorage.setItem(storageKey, JSON.stringify(payload));
+  } catch {
+    // Ignore storage errors in restricted environments
+  }
+}
+
+function hasAnyProgress(raw) {
+  if (!raw || typeof raw !== 'object') return false;
+  return (
+    Object.values(raw.checkedNotes || {}).some(Boolean) ||
+    Object.keys(raw.cardStatus || {}).length > 0 ||
+    Object.keys(raw.quizScores || {}).length > 0
+  );
 }
 
 function loadAuthSession() {
@@ -56,11 +77,20 @@ function normalizeActiveLevels(raw) {
 }
 
 export function App() {
-  const initial = useMemo(() => loadState(), []);
   const [authSession, setAuthSession] = useState(() => loadAuthSession());
+  const initial = useMemo(() => {
+    const sess = loadAuthSession();
+    if (sess?.user?.username) {
+      const userCached = loadState(getUserStorageKey(sess.user.username));
+      if (Object.keys(userCached).length > 0) return userCached;
+    }
+    return loadState(STORAGE_KEY);
+  }, []);
   const [accountModalOpen, setAccountModalOpen] = useState(false);
   const [syncStatus, setSyncStatus] = useState('');
   const skipNextRemoteSave = useRef(false);
+  const hydratedTokenRef = useRef(null);
+  const pendingRemoteSaveRef = useRef(null);
 
   const [theme, setTheme] = useState(initial.theme || 'dark');
   const [activeCourse, setActiveCourse] = useState(() =>
@@ -140,14 +170,43 @@ export function App() {
 
   // Hydrate account progress from backend on startup if logged in
   useEffect(() => {
-    if (!authSession?.token) return;
+    const token = authSession?.token;
+    const username = authSession?.user?.username;
+    if (!token) {
+      hydratedTokenRef.current = null;
+      return;
+    }
+
     let cancelled = false;
+    hydratedTokenRef.current = null;
+
     apiClient
-      .getProgress(authSession.token)
+      .getProgress(token)
       .then((data) => {
         if (cancelled) return;
-        if (data?.progress) {
-          applyProgressState(data.progress);
+        const remote = data?.progress;
+        const localUserCache = loadState(getUserStorageKey(username));
+        // If server returned a clean default (no updatedAt & empty) while local account cache has progress,
+        // preserve local progress and sync it back to server instead of wiping user work.
+        if (remote && !remote.updatedAt && !hasAnyProgress(remote) && hasAnyProgress(localUserCache)) {
+          hydratedTokenRef.current = token;
+          applyProgressState(localUserCache);
+          skipNextRemoteSave.current = false;
+          apiClient
+            .saveProgress(token, localUserCache)
+            .then(() => {
+              if (!cancelled) setSyncStatus('Zsynchronizowano z serwerem');
+            })
+            .catch(() => {
+              if (!cancelled) setSyncStatus('Tryb offline konta');
+            });
+          return;
+        }
+
+        if (remote) {
+          hydratedTokenRef.current = token;
+          applyProgressState(remote);
+          saveState(getUserStorageKey(username), remote);
           setSyncStatus('Zsynchronizowano z serwerem');
         }
       })
@@ -157,9 +216,21 @@ export function App() {
     return () => {
       cancelled = true;
     };
-  }, [authSession?.token]);
+  }, [authSession?.token, authSession?.user?.username]);
 
-  // Persist progress: localStorage when guest, backend API when logged in
+  // Flush pending remote save on page hide / tab close / refresh
+  useEffect(() => {
+    const flushPending = () => {
+      const pending = pendingRemoteSaveRef.current;
+      if (!pending) return;
+      pendingRemoteSaveRef.current = null;
+      apiClient.saveProgress(pending.token, pending.payload).catch(() => {});
+    };
+    window.addEventListener('pagehide', flushPending);
+    return () => window.removeEventListener('pagehide', flushPending);
+  }, []);
+
+  // Persist progress: localStorage when guest, per-user cache + backend API when logged in
   useEffect(() => {
     const payload = {
       theme,
@@ -171,11 +242,15 @@ export function App() {
     };
 
     if (!authSession?.token) {
-      try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
-      } catch {
-        // Ignore storage errors in restricted environments
-      }
+      saveState(STORAGE_KEY, payload);
+      return;
+    }
+
+    // Always mirror logged-in user's progress in a per-user localStorage cache
+    saveState(getUserStorageKey(authSession.user?.username), payload);
+
+    // Never overwrite server progress before initial getProgress hydration completes
+    if (hydratedTokenRef.current !== authSession.token) {
       return;
     }
 
@@ -185,15 +260,17 @@ export function App() {
     }
 
     setSyncStatus('Zapisywanie...');
+    pendingRemoteSaveRef.current = { token: authSession.token, payload };
     const timer = setTimeout(() => {
+      pendingRemoteSaveRef.current = null;
       apiClient
         .saveProgress(authSession.token, payload)
         .then(() => setSyncStatus('Zsynchronizowano z serwerem'))
         .catch(() => setSyncStatus('Błąd synchronizacji'));
-    }, 300);
+    }, 150);
 
     return () => clearTimeout(timer);
-  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, cardStatus, quizScores, authSession?.token]);
+  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, cardStatus, quizScores, authSession?.token, authSession?.user?.username]);
 
   const handleLoginSuccess = (loginData) => {
     const session = { token: loginData.token, user: loginData.user };
@@ -202,8 +279,20 @@ export function App() {
     } catch {
       // Ignore storage errors
     }
+    hydratedTokenRef.current = loginData.token;
+    const remote = loginData.progress;
+    const localUserCache = loadState(getUserStorageKey(loginData.user?.username));
+    if (remote && !remote.updatedAt && !hasAnyProgress(remote) && hasAnyProgress(localUserCache)) {
+      setAuthSession(session);
+      applyProgressState(localUserCache);
+      skipNextRemoteSave.current = false;
+      apiClient.saveProgress(loginData.token, localUserCache).catch(() => {});
+      setSyncStatus('Zsynchronizowano z serwerem');
+      return;
+    }
+    saveState(getUserStorageKey(loginData.user?.username), remote || {});
     setAuthSession(session);
-    applyProgressState(loginData.progress);
+    applyProgressState(remote);
     setSyncStatus('Zsynchronizowano z serwerem');
   };
 
@@ -213,9 +302,11 @@ export function App() {
     } catch {
       // Ignore storage errors
     }
+    hydratedTokenRef.current = null;
+    pendingRemoteSaveRef.current = null;
     setAuthSession(null);
     setSyncStatus('');
-    applyProgressState(loadState());
+    applyProgressState(loadState(STORAGE_KEY));
   };
 
   const currentLevels =

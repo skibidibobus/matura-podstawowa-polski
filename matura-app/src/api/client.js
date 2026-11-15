@@ -31,7 +31,7 @@ export function setCustomApiBaseUrl(url) {
   }
 }
 
-async function apiRequest(path, { method = 'GET', token = '', body = null } = {}) {
+async function apiRequest(path, { method = 'GET', token = '', body = null, keepalive = false } = {}) {
   const base = getApiBaseUrl();
   const headers = { 'Content-Type': 'application/json' };
   if (token) headers.Authorization = `Bearer ${token}`;
@@ -42,6 +42,7 @@ async function apiRequest(path, { method = 'GET', token = '', body = null } = {}
       method,
       headers,
       body: body !== null ? JSON.stringify(body) : undefined,
+      keepalive,
     });
   } catch {
     throw new Error('Brak połączenia z serwerem backendu. Upewnij się, że serwer działa lub podaj jego adres URL.');
@@ -66,7 +67,7 @@ export const apiClient = {
   getMe: (token) => apiRequest('/api/auth/me', { token }),
   getProgress: (token) => apiRequest('/api/progress', { token }),
   saveProgress: (token, progress) =>
-    apiRequest('/api/progress', { method: 'PUT', token, body: { progress } }),
+    apiRequest('/api/progress', { method: 'PUT', token, body: { progress }, keepalive: true }),
   getLeaderboard: (token) => apiRequest('/api/leaderboard', { token }),
   listUsers: (token) => apiRequest('/api/admin/users', { token }),
   createUser: (token, payload) =>

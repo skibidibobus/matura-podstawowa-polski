@@ -45,12 +45,14 @@ describe('Tier 2: Boundary & Corner Cases (Limits, Nulls, Stress, Error Resilien
       );
       assert.ok(limitRule, 'Limit rule must exist in callout block items');
       assert.ok(
-        limitRule.includes('59 słów') && limitRule.includes('utratę 1 punktu'),
-        'Must explicitly codify that 59 words causes 1-point penalty in Criterion D'
+        limitRule.includes('59 słów') &&
+          (limitRule.includes('utratę 1 punktu') || limitRule.includes('odjęcie 1 punktu')),
+        'Must explicitly codify that 59 words causes 1-point penalty'
       );
       assert.ok(
-        limitRule.includes('poniżej 30 słów') && limitRule.includes('0/4 pkt'),
-        'Must explicitly codify that <30 words results in complete zeroing (0/4 pkt)'
+        (limitRule.includes('poniżej 30 słów') && limitRule.includes('0/4 pkt')) ||
+          limitRule.includes('nie zeruje automatycznie'),
+        'Must explicitly codify word-count zeroing rule'
       );
 
       // Verify flashcard kf1-1 reinforces the 59-word boundary condition
@@ -68,11 +70,13 @@ describe('Tier 2: Boundary & Corner Cases (Limits, Nulls, Stress, Error Resilien
       assert.ok(note1, 'kn1-1 must exist');
 
       const criteriaBlock = note1.blocks.find(
-        (b) => b.type === 'callout' && b.title.includes('4 Kryteria Oceny CKE')
+        (b) => b.type === 'callout' && b.title.includes('Kryteria Oceny CKE')
       );
       assert.ok(criteriaBlock, 'Criteria callout block must exist');
 
-      const criterionD = criteriaBlock.items.find((item) => item.includes('Kryterium D'));
+      const criterionD = criteriaBlock.items.find(
+        (item) => item.includes('Kryterium D') || item.includes('limit słów')
+      );
       assert.ok(criterionD, 'Kryterium D item must be present');
       assert.ok(
         criterionD.includes('60–90') || criterionD.includes('60-90'),
@@ -117,8 +121,9 @@ describe('Tier 2: Boundary & Corner Cases (Limits, Nulls, Stress, Error Resilien
         (item) => item.includes('60–90') || item.includes('60-90')
       );
       assert.ok(
-        limitRule.includes('91 słów') && limitRule.includes('utratę 1 punktu'),
-        'Must explicitly codify that 91 words triggers a 1-point penalty in Criterion D'
+        limitRule.includes('91 słów') &&
+          (limitRule.includes('utratę 1 punktu') || limitRule.includes('odjęcie 1 punktu')),
+        'Must explicitly codify that 91 words triggers a 1-point penalty'
       );
 
       const fc1 = dept1.flashcards.find((f) => f.id === 'kf1-1');

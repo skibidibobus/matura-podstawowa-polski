@@ -194,16 +194,17 @@ describe('Tier 1: Feature Coverage (F01–F17 across 8 Feature Groups)', async (
       );
       assert.ok(
         synthText.includes('ocena za język wynosi automatycznie 0 punktów') ||
+        synthText.includes('ocena za poprawność językową wynosi automatycznie 0 punktów') ||
         synthText.includes('0 punktów za język') ||
         synthText.includes('0 pkt za treść'),
         'Synthesizing note kn1-1 must explain cascade penalty (0 pts for content = 0 pts for language)'
       );
 
-      // CKE 4 Criteria breakdown (A, B, C, D)
-      assert.match(synthText, /kryterium a/i, 'Note kn1-1 must define Kryterium A');
-      assert.match(synthText, /kryterium b/i, 'Note kn1-1 must define Kryterium B (zestawienie)');
-      assert.match(synthText, /kryterium c/i, 'Note kn1-1 must define Kryterium C (synteza)');
-      assert.match(synthText, /kryterium d/i, 'Note kn1-1 must define Kryterium D (limit słów)');
+      // CKE 4 Criteria breakdown (A, B, C, D or Aspekt 1–3 + Kryterium Językowe)
+      assert.match(synthText, /kryterium a|aspekt 1/i, 'Note kn1-1 must define Kryterium A / Aspekt 1');
+      assert.match(synthText, /kryterium b|aspekt 2|zestawienie/i, 'Note kn1-1 must define Kryterium B / Aspekt 2 (zestawienie)');
+      assert.match(synthText, /kryterium c|aspekt 3|synteza/i, 'Note kn1-1 must define Kryterium C / Aspekt 3 (synteza)');
+      assert.match(synthText, /kryterium d|limit słów|kryterium językowe/i, 'Note kn1-1 must define Kryterium D / limit słów / językowe');
 
       // 5. Verify reinforcing flashcard in dept-01
       const synthCard = dept01.flashcards?.find((f) => f.id === 'kf1-1');

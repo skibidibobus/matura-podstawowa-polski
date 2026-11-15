@@ -250,7 +250,10 @@ export class JsonStore {
     if (user.role === 'admin') {
       throw new Error('Nie można zresetować postępu administratora.');
     }
-    this.data.progressByUserId[userId] = structuredClone(DEFAULT_PROGRESS);
+    this.data.progressByUserId[userId] = {
+      ...structuredClone(DEFAULT_PROGRESS),
+      updatedAt: new Date().toISOString(),
+    };
     this.#writeAtomic();
     return user;
   }
