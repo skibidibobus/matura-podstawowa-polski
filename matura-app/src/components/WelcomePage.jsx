@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import {
+  ArrowRight,
   BookOpen,
   CheckCircle2,
-  GraduationCap,
   Layers,
   LogIn,
+  LogOut,
   Mic,
   Moon,
   Sparkles,
@@ -13,6 +14,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { apiClient } from '../api/client';
+import { BrandLogo } from './BrandLogo';
 
 const COURSE_CARDS = [
   {
@@ -47,7 +49,10 @@ const COURSE_CARDS = [
 export function WelcomePage({
   theme,
   onToggleTheme,
+  authUser = null,
   onLoginSuccess,
+  onReturnToCourse,
+  onLogout,
   onEnterGuest,
   onOpenRanking,
 }) {
@@ -75,9 +80,7 @@ export function WelcomePage({
     <div className="welcome-shell">
       <header className="welcome-topbar">
         <div className="welcome-brand">
-          <div className="brand-badge">
-            <GraduationCap size={20} />
-          </div>
+          <BrandLogo size={38} />
           <div>
             <strong>Matura z Polskiego</strong>
             <span>Formuła 2023 • CKE 2026–2028</span>
@@ -129,50 +132,75 @@ export function WelcomePage({
           </div>
 
           <div className="welcome-login-card">
-            <div className="welcome-login-header">
-              <h2>Zaloguj się do kursu</h2>
-              <p>Wpisz dane konta otrzymane od prowadzącego, aby odblokować swoje kursy i zapisać postęp.</p>
-            </div>
+            {authUser ? (
+              <>
+                <div className="welcome-login-header">
+                  <h2>Witaj, {authUser.displayName}!</h2>
+                  <p>Jesteś już zalogowany. Twój postęp jest zsynchronizowany i bezpieczny.</p>
+                </div>
+                <div className="welcome-logged-actions">
+                  <button
+                    type="button"
+                    className="primary-btn welcome-submit-btn"
+                    onClick={onReturnToCourse}
+                  >
+                    <ArrowRight size={16} />
+                    Wróć do kursu
+                  </button>
+                  <button type="button" className="secondary-btn welcome-logout-btn" onClick={onLogout}>
+                    <LogOut size={15} />
+                    Wyloguj się
+                  </button>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="welcome-login-header">
+                  <h2>Zaloguj się do kursu</h2>
+                  <p>Wpisz dane konta otrzymane od prowadzącego, aby odblokować swoje kursy i zapisać postęp.</p>
+                </div>
 
-            {error && <div className="auth-error">{error}</div>}
+                {error && <div className="auth-error">{error}</div>}
 
-            <form className="auth-form" onSubmit={handleLogin}>
-              <label className="auth-field">
-                <span>Login</span>
-                <input
-                  type="text"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  placeholder="np. hubert-9626 lub admin"
-                  autoComplete="username"
-                  required
-                />
-              </label>
+                <form className="auth-form" onSubmit={handleLogin}>
+                  <label className="auth-field">
+                    <span>Login</span>
+                    <input
+                      type="text"
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)}
+                      placeholder="Login"
+                      autoComplete="username"
+                      required
+                    />
+                  </label>
 
-              <label className="auth-field">
-                <span>Hasło</span>
-                <input
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  placeholder="Wpisz hasło"
-                  autoComplete="current-password"
-                  required
-                />
-              </label>
+                  <label className="auth-field">
+                    <span>Hasło</span>
+                    <input
+                      type="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      placeholder="Hasło"
+                      autoComplete="current-password"
+                      required
+                    />
+                  </label>
 
-              <button type="submit" className="primary-btn welcome-submit-btn" disabled={loading}>
-                <LogIn size={16} />
-                {loading ? 'Logowanie...' : 'Zaloguj się i rozpocznij naukę'}
-              </button>
-            </form>
+                  <button type="submit" className="primary-btn welcome-submit-btn" disabled={loading}>
+                    <LogIn size={16} />
+                    {loading ? 'Logowanie...' : 'Zaloguj się i rozpocznij naukę'}
+                  </button>
+                </form>
 
-            <div className="welcome-guest-row">
-              <span>Chcesz najpierw tylko zobaczyć układ?</span>
-              <button type="button" className="welcome-guest-link" onClick={onEnterGuest}>
-                Podgląd jako gość →
-              </button>
-            </div>
+                <div className="welcome-guest-row">
+                  <span>Chcesz najpierw tylko zobaczyć układ?</span>
+                  <button type="button" className="welcome-guest-link" onClick={onEnterGuest}>
+                    Podgląd jako gość →
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         </section>
 

@@ -465,12 +465,15 @@ export function App() {
     setShowWelcome(false);
   };
 
-  if (showWelcome && !authSession?.token) {
+  if (showWelcome) {
     return (
       <WelcomePage
         theme={theme}
         onToggleTheme={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
+        authUser={authSession?.user || null}
         onLoginSuccess={handleLoginSuccess}
+        onReturnToCourse={() => setShowWelcome(false)}
+        onLogout={handleLogout}
         onEnterGuest={() => dismissWelcome(false)}
         onOpenRanking={() => dismissWelcome(true)}
       />
@@ -495,6 +498,7 @@ export function App() {
           setReviewMode(false);
           setRankingMode((v) => !v);
         }}
+        onOpenWelcome={() => setShowWelcome(true)}
         allowedCourses={allowedCourses}
         reviewCount={reviewCards.length}
         completedLevelsCount={completedLevelsCount}

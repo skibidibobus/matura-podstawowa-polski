@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BookOpen, Check, CheckCircle2, ChevronDown, ChevronRight, Lock, Maximize2, Minimize2, Moon, RotateCcw, Sun, Trophy, User } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 const COURSE_BRAND_SUBTITLES = {
   ustna: 'Kurs 76 pytań jawnych • CKE 2026–2028',
@@ -34,6 +35,7 @@ export function Sidebar({
   onToggleLevelNotes,
   rankingMode = false,
   onToggleRankingMode,
+  onOpenWelcome,
   allowedCourses = ['probna', 'kurs', 'ustna'],
 }) {
   const [expandedLevels, setExpandedLevels] = useState(() =>
@@ -52,12 +54,20 @@ export function Sidebar({
   return (
     <aside className="sidebar">
       <div className="brand">
-        <div>
-          <div className="brand-title">Matura Polski</div>
-          <div className="brand-sub">
-            {COURSE_BRAND_SUBTITLES[activeCourse] || COURSE_BRAND_SUBTITLES.probna}
+        <button
+          type="button"
+          className="brand-home-btn"
+          onClick={onOpenWelcome}
+          title="Przejdź do strony głównej"
+        >
+          <BrandLogo size={34} />
+          <div>
+            <div className="brand-title">Matura Polski</div>
+            <div className="brand-sub">
+              {COURSE_BRAND_SUBTITLES[activeCourse] || COURSE_BRAND_SUBTITLES.probna}
+            </div>
           </div>
-        </div>
+        </button>
         <div className="brand-actions">
           <button
             type="button"
