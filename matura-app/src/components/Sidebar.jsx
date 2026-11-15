@@ -197,7 +197,7 @@ export function Sidebar({
               <div className="level-row">
                 <button
                   type="button"
-                  className={`level-item ${active ? 'active' : ''} ${done || allNotesDone ? 'completed' : ''}`}
+                  className={`level-item ${active ? 'active' : ''} ${done ? 'completed' : ''}`}
                   onClick={() => {
                     if (active) {
                       setExpandedLevels((prev) => ({ ...prev, [lvl.id]: !prev[lvl.id] }));
@@ -208,12 +208,13 @@ export function Sidebar({
                   }}
                 >
                   <span className="level-num">
-                    {done || allNotesDone ? <CheckCircle2 size={15} /> : (lvl.displayNum ?? lvl.id)}
+                    {done ? <CheckCircle2 size={15} /> : (lvl.displayNum ?? lvl.id)}
                   </span>
                   <span className="level-meta">
                     <div className="level-name">{lvl.title}</div>
                     <div className="level-sub">
                       {lvl.code} • {levelNotes.length > 0 ? `${checkedCount}/${levelNotes.length} tematów` : lvl.duration}
+                      {allNotesDone && !done ? ' • quiz do zrobienia' : ''}
                     </div>
                   </span>
                   {levelNotes.length > 0 && (
