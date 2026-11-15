@@ -125,7 +125,7 @@ export const DEPT_06 = {
                 summary: 'Uosobienie mądrości politycznej dawnej potężnej Rzeczypospolitej.',
                 bullets: [
                   'Wyrzut sumienia Dziennikarza, który jako redaktor konserwatywnego „Czasu” (ugrupowanie Stańczyków) usypia naród w lojalizmie wobec zaborcy austriackiego.',
-                  'Wręcza mu Kaduceusz (laskę błazeńską) ze słowami: „Mąć tę wodę, mąć!” — zachęta do dalszego siania rezygnacji i tumiwisizmu.'
+                  'Wręcza mu Kaduceusz (laskę błazeńską) ze słowami: „Mąć nim wodę, mąć!” — gorzka ironia pod adresem dziennikarstwa pogłębiającego narodową apatię.'
                 ],
                 essayUse: 'Do motywu odpowiedzialności elit i publicystyki za losy zniewolonego narodu.'
               }
@@ -186,8 +186,8 @@ export const DEPT_06 = {
           title: 'Finał: Czapka z pawich piór i Chocholi Taniec',
           items: [
             'Jasiek gubi Złoty Róg, schylając się po czapkę z pawich piór (symbol próżności, prywaty i chłopskiego materializmu). Zostaje mu w ręku jedynie powróz.',
-            'Chocholi taniec: Chochoł gra na patykach monotonną, hipnotyczną melodię, a zebrani chłopi z kosami i inteligencja tańczą w bezwładnym, lunatycznym letargu.',
-            'Słynne słowa Chochoła: „Miałeś, chamie, złoty róg, miałeś, chamie, czapkę z piór: czapkę wicher z głowy zdjął, róg po krzakach kędyś siał, ostał ci się ino sznur”.',
+            'Chocholi taniec: Chochoł gra na patykach monotonną, hipnotyczną melodię, a zebrani goście — chłopi (którzy odłożyli/porzucili kosy) i inteligencja — tańczą w bezwładnym, lunatycznym letargu.',
+            'Słynne słowa Chochoła: „Miałeś, chamie, złoty róg, miałeś, chamie, czapkę z piór: czapkę wicher niesie, róg huka po lesie, ostał ci się ino sznur...”.',
             'Pamiętaj: Chochoł ma dwoistą symbolikę — jest symbolem uśpienia i martwoty narodu pod zaborami, ale jako otulina słomiana chroni różę na zimę, co daje nadzieję na przebudzenie na wiosnę!'
           ]
         }
@@ -196,7 +196,7 @@ export const DEPT_06 = {
     {
       id: 'kn6-3',
       title: 'Władysław Stanisław Reymont: „Chłopi” (tom I: Jesień) — Epopeja Wsi Polskiej',
-      badge: 'Lektura Obowiązkowa (w całości)',
+      badge: 'Lektura Obowiązkowa (t. I Jesień — we fragmentach)',
       intro:
         'Nagrodzona literacką Nagrodą Nobla (1924) epopeja chłopska. Reymont stworzył uniwersalny mit wsi Lipce, gdzie życie człowieka podporządkowane jest trzem potężnym siłom: odwiecznemu rytmowi przyrody, kalendarzowi liturgicznemu oraz bezwzględnej walce o ziemię.',
       blocks: [
@@ -205,7 +205,7 @@ export const DEPT_06 = {
           heading: 'Czas Mityczny i Porządek Społeczny w Lipcach',
           paragraphs: [
             'W „Chłopach” czas historyczny praktycznie nie istnieje. Życiem gromady rządzi cykl agrarny (pory roku determinujące wykopki, siew, żniwa) oraz święta kościelne i obrzędy.',
-            'Gromada lipiecka to społeczność o surowej hierarchii majątkowej. Miarą wartości człowieka jest ilość posiadanych morgów ziemi: najbogatsi gospodarze (Maciej Boryna) decydują o wszystkim, poniżej stoją średniorolni, komornicy, a na samym dole bezrolni żebracy (Jagustynka, Roch). Kto nie ma ziemi, nie liczy się w gromadzie.'
+            'Gromada lipiecka to społeczność o surowej hierarchii majątkowej. Miarą wartości człowieka jest ilość posiadanych morgów ziemi: najbogatsi gospodarze (np. Maciej Boryna) decydują o wszystkim, poniżej stoją średniorolni, komornicy i bezrolni żebracy (np. stara Agata; osobne miejsce zajmują wywłaszczona przez dzieci wyrobnica Jagustynka oraz wędrowny tajny nauczyciel Roch). Kto nie ma ziemi, ma w gromadzie słabszą pozycję.'
           ]
         },
         {
@@ -292,7 +292,7 @@ export const DEPT_06 = {
               }
             },
             {
-              term: 'Jan Kasprowicz: „Krzak dzikiej róży w Ciemnych Smrekach”',
+              term: 'Jan Kasprowicz: „Krzak dzikiej róży w Ciemnych Smreczynach”',
               desc: 'Mistrzostwo impresjonizmu i symbolizmu tatrzańskiego.',
               details: {
                 summary:
@@ -312,7 +312,7 @@ export const DEPT_06 = {
                 summary:
                   'Monumentalna wizja Sądu Ostatecznego, łącząca motywy biblijne z ekspresjonistycznym krzykiem cierpienia.',
                 bullets: [
-                  'Oskarżenie Boga: podmiot liryczny rzuca buntownicze oskarżenie pod adresem Stwórcy, czyniąc Go odpowiedzialnym za istnienie grzechu i zła na świecie („Nic, co się stało pod słońcem, nie stało się bez Twojej woli, o Panie!”).',
+                  'Oskarżenie Boga: podmiot liryczny rzuca buntownicze oskarżenie pod adresem Stwórcy, czyniąc Go odpowiedzialnym za istnienie grzechu i zła na świecie („Nic, co się stało pod sklepem niebiosów, bez Twojej woli nie stało się, Panie!”).',
                   'Szatan jako król ziemi i zdeptana przez grzech ludzkość.'
                 ],
                 essayUse: 'Do motywu prometeizmu, buntu przeciw Bogu, teodycei i apokalipsy.'
@@ -325,7 +325,7 @@ export const DEPT_06 = {
                 summary:
                   'Dwa wiersze ukazujące niezwykłą rozpiętość poetycką Staffa.',
                 bullets: [
-                  '„Kowal”: wiersz sonetowy w duchu nietzscheańskim; kowal w potężnej kuźni wykuwa ze szlachetnych kruszców twarde, darmne serce; woli zginąć, niż okazać się słabym („Bo lepiej nie być wcale, niż być zaledwie częścią”).',
+                  '„Kowal” (kontekst / wybór poezji): sonet w duchu nietzscheańskim; kowal w kuźni wykuwa ze szlachetnych kruszców serce „hartowne, mężne, serce dumne, silne”; woli je zniszczyć, niż pozwolić mu skarleć słabością („Bo lepiej giń, zmiażdżone cyklopowym razem, / Niżbyś żyć miało własną słabością przeklęte”).',
                   '„Deszcz jesienny”: wiersz nastrojowy, onomatopeiczny; miarowy stukot kropel deszczu o szyby rodzi wizję płaczącego w ogrodzie szatana i bezkresnego smutku.'
                 ],
                 essayUse: 'Do zestawienia postawy aktywnej (hartowanie woli) z biernością nastrojową (melancholia).'
@@ -368,7 +368,7 @@ export const DEPT_06 = {
     { id: 'kf6-29', front: 'Co było główną przyczyną konfliktu Macieja Boryny z synem Antkiem w „Chłopach”?', back: 'Dwie nakładające się przyczyny: walka o ziemię (stary Boryna nie chce oddać majątku dzieciom) oraz rywalizacja o młodą, piękną Jagnę, która została żoną Macieja, będąc kochanką Antka.', hint: 'Spór o morgi (ziemię) i o Jagnę.', category: 'bohater' },
     { id: 'kf6-30', front: 'Czym jest symbolizm i impresjonizm w poezji młodopolskiej (na przykładzie „Krzaku dzikiej róży...”)?', back: 'Impresjonizm oddaje ulotne wrażenia barw, światła i dźwięku w naturze; symbolizm poprzez obrazy (żywa róża vs gnijąca limba) wyraża niewyrażalne prawdy egzystencjalne o pięknie, przemijaniu i samotności.', hint: 'Ulotne barwy/światła + ukryte znaczenia natury.', category: 'pojecie' },
     { id: 'kf6-31', front: 'Jaka jest rola ludu i postaci Boryny w scenie jego śmierci w „Chłopach”?', back: 'Umierający Boryna w gorączce wychodzi na pole i wykonuje gest siewcy — zjednoczenie chłopa z ziemią-matką nadaje jego śmierci wymiar niemal sakralny i mityczny.', hint: 'Gest siewcy — jedność chłopa z ziemią.', category: 'bohater' },
-    { id: 'kf6-32', front: 'Jakie stanowisko zajmuje podmiot liryczny w wierszu „Kowal” Leopolda Staffa wobec cierpienia i słabości?', back: 'Odrzuca młodopolski dekadentyzm i bierność; niczym kowal wykuwa z bezkształtnej bryły swoje serce „hartowne, mężne, dumne, silne”, a gdy pęknie z niemocy — sam rozbija je młotem.', hint: 'Aktywizm i hartowanie ducha zamiast rozpaczy.', category: 'lektura' }
+    { id: 'kf6-32', front: 'Jakie stanowisko zajmuje podmiot liryczny w wierszu „Kowal” Leopolda Staffa wobec cierpienia i słabości?', back: 'Odrzuca młodopolski dekadentyzm i bierność; niczym kowal wykuwa z bezkształtnej bryły swoje serce „hartowne, mężne, serce dumne, silne”, a gdy pęknie z niemocy — sam rozbija je młotem.', hint: 'Aktywizm i hartowanie ducha zamiast rozpaczy.', category: 'lektura' }
   ],
   quiz: [
     {
@@ -381,7 +381,7 @@ export const DEPT_06 = {
         "Hetman Branicki"
       ],
       correct: 0,
-      explanation: "Stańczyk ukazuje się Dziennikarzowi i wręcza mu Kaduceusz ze słowami „Mąć tę wodę, mąć!”, ganiąc go za zachowawczą politykę ugodową.",
+      explanation: "Stańczyk ukazuje się Dziennikarzowi i wręcza mu Kaduceusz ze słowami „Mąć nim wodę, mąć!”, ganiąc go za zachowawczą politykę ugodową.",
       whyWrong: {
         1: "Błąd: Wernyhora przybył do Gospodarza ze Złotym Rogiem.",
         2: "Błąd: Rycerz Czarny ukazał się Poecie.",
@@ -423,7 +423,7 @@ export const DEPT_06 = {
         2: "Błąd: Jasiek nie bił się z Czepcem o róg.",
         3: "Błąd: Gospodarz zasnął, ale to Jasiek pojechał i zgubił róg w pędzie."
       },
-      examTip: "Cytat: „czapkę wicher z głowy zdjął, róg po krzakach kędyś siał, ostał ci się ino sznur” — naucz się go na pamięć do wypracowania!"
+      examTip: "Cytat: „czapkę wicher niesie, róg huka po lesie, ostał ci się ino sznur...” — naucz się go na pamięć do wypracowania!"
     },
     {
       id: "kq6-4",
@@ -499,7 +499,7 @@ export const DEPT_06 = {
     },
     {
       id: "kq6-8",
-      q: "Sonet „Krzak dzikiej róży w Ciemnych Smrekach” Jana Kasprowicza reprezentuje nurt:",
+      q: "Sonet „Krzak dzikiej róży w Ciemnych Smreczynach” Jana Kasprowicza reprezentuje nurt:",
       options: [
         "Klasycyzmu oświeceniowego",
         "Impresjonizmu i symbolizmu",
@@ -681,7 +681,7 @@ export const DEPT_06 = {
       id: "kq6-18",
       q: "Które z poniższych stwierdzeń opisuje zasadniczą wymowę wiersza Kazimierza Przerwy-Tetmajera „Koniec wieku XIX”?",
       options: [
-        "Człowiek końca wieku odrzuca kolejno przekleństwo, ironię, pogardę, rozpacz i walkę jako bezsilne, pozostając w milczącej rezygnacji („głowę zwiesić niemo”).",
+        "Człowiek końca wieku odrzuca kolejno przekleństwo, ironię, pogardę, rozpacz i walkę jako bezsilne, pozostając w milczącej rezygnacji („Głowę zwiesić niemy.”).",
         "Poeta nawołuje do stworzenia nowej partii robotniczej i walki o prawa socjalne.",
         "Wiersz jest radosną pochwałą rozwoju nauki i kolejnictwa u progu XX wieku.",
         "Podmiot liryczny znajduje ostateczne ukojenie w powrocie do sielskiego życia na wsi."

@@ -26,7 +26,7 @@ export const DEPT_03 = {
             'Antropocentryzm i humanizm: zachwyt możliwościami twórczymi człowieka i harmonią Bożego świata (Pieśń „Czego chcesz od nas, Panie, za Twe hojne dary”).',
             'Synteza stoicyzmu i epikureizmu w „Pieśniach”: cnota jako jedyna stała wartość w zmiennym świecie Fortuny (stoicyzm) połączona z umiarkowaną radością życia w gronie przyjaciół (epikureizm — „Chcemy sobie być radzi”).',
             'Topos Horacjański: świadomość poetyckiej nieśmiertelności („Niezwykłym i nie leda piórem opatrzony... Non omnis moriar”).',
-            'Pojęcie Theatrum Mundi (Świat jako teatr): we fraszkach („O żywocie ludzkim”) ludzie są jedynie kukiełkami odgrywającymi swoje role, po czym trafiają do tego samego mieszka.'
+            'Pojęcie Theatrum Mundi (Świat jako teatr): we fraszce „O żywocie ludzkim” (nr 101: „Fraszki to wszytko, cokolwiek myślemy”) ludzie są łątkami (marionetkami) odgrywającymi swoje role, po czym trafiają do jednego worka.'
           ]
         },
         {
@@ -39,23 +39,23 @@ export const DEPT_03 = {
                 summary: 'Złamanie antycznej reguły decorum (treny pisano dla wybitnych mężów stanu, a nie małych dzieci) oraz zapis rozpadu humanistycznej wiary.',
                 bullets: [
                   'Etap 1: Początkowy żal i wyidealizowany obraz zmarłej Urszulki (Tren I, V — porównanie zgasłego życia dziecka do młodej gałązki oliwnej ściętej omyłkowo przez ogrodnika).',
-                  'Etap 2: Bunt i kryzys filozoficzny (Treny IX, X, XI):',
+                  'Etap 2: Bunt i kryzys filozoficzny (Treny IX, X, XI — obowiązkowe w PP od 2024 r.):',
                   'Tren IX: Upadek stoicyzmu — Mądrość, której poeta uczył się całe życie, nie chroni przed rozpaczą; Kochanowski wyznaje, że „zrzucony z ostatnich schodów” stał się równy zwykłemu prostaczkowi.',
                   'Tren X: Kryzys wiary religijnej — seria dramatycznych pytań o miejsce pobytu duszyczki („Gdzieśkolwiek jest, jeśliś jest...”), podważenie dogmatów chrześcijańskich.',
                   'Tren XI: Rozpacz ocierająca się o nihilizm — poeta cytuje słowa Brutusa: „Fraszka cnota!”, dochodząc do wniosku, że pobożność i prawość przed niczym nie ratują.',
-                  'Etap 3: Ukojenie i odrodzenie w Trenie XIX („Sen”): poecie ukazuje się we śnie zmarła matka z Urszulką na rękach, zapewniając, że dziecko jest bezpieczne w niebie, i dając synowi humanistyczną lekcję: „Ludzkie przygody ludzku noś” (znoszenie cierpienia po ludzku, z godnością i pokorą).'
+                  'Etap 3: Ukojenie i odrodzenie w Trenie XIX („Sen” — PR / przejściowo 2025–2028): poecie ukazuje się we śnie zmarła matka z Urszulką na rękach, zapewniając, że dziecko jest bezpieczne w niebie, i dając synowi humanistyczną lekcję: „Ludzkie przygody ludzkie noś” (znoszenie cierpienia po ludzku, z godnością i pokorą).'
                 ],
                 essayUse: 'Wzorcowy przykład w motywach: cierpienie po stracie dziecka, kryzys wiary, bunt przeciw filozofii, miłość ojcowska.'
               }
             },
             {
-              term: '„Odprawa posłów greckich” — pierwsza polska tragedia humanistyczna',
-              desc: 'Dramat polityczny o odpowiedzialności rządzących za los ojczyzny.',
+              term: '„Odprawa posłów greckich” — pierwsza polska tragedia humanistyczna [poza PP od 2024 r.]',
+              desc: 'Dramat polityczny o odpowiedzialności rządzących (kontekst / przejściowo 2025–2028).',
               details: {
                 summary: 'Kostium mitu trojańskiego posłużył poecie do krytyki wad współczesnej mu polskiej szlachty.',
                 bullets: [
                   'Konflikt: Posłowie greccy (Ulisses, Menelaos) żądają zwrotu Heleny uprowadzonej przez Aleksandra (Parysa).',
-                  'Postawy obywatelskie: Antenor (prawy patriota przedkładający dobro państwa nad prywaty, żąda oddania Heleny) kontra Aleksander (egoistyczny królewicz przekupujący radę trojańską).',
+                  'Postawy obywatelskie: Antenor (prawy patriota przedkładający dobro państwa nad prywatę, żąda oddania Heleny) kontra Aleksander (egoistyczny królewicz przekupujący radę trojańską).',
                   'Król Priam: władca słaby, ulegający emocjom syna i demagogii Iketaona.',
                   'Monolog Kasandry: odrzucona wieszczka przepowiada nieuchronny pożar i zagładę Troi.',
                   'Chór: pieśń „Wy, którzy pospolitą rzeczą władacie” — napomnienie dla sędziów i królów, że mają władzę od Boga i przed Nim zdadzą sprawę ze swoich wyroków.'
@@ -64,8 +64,8 @@ export const DEPT_03 = {
               }
             },
             {
-              term: 'Piotr Skarga: „Kazania sejmowe” — kaznodziejstwo polityczne',
-              desc: 'Patriotyczne ostrzeżenie przed upadkiem I Rzeczypospolitej.',
+              term: 'Piotr Skarga: „Kazania sejmowe” — kaznodziejstwo polityczne [poza PP od 2024 r.]',
+              desc: 'Patriotyczne ostrzeżenie przed upadkiem I Rzeczypospolitej (kontekst / przejściowo 2025–2028).',
               details: {
                 summary: 'Skarga diagnozuje 6 chorób trawiących Rzeczpospolitą (m.in. brak miłości ojczyzny, swary domowe, naruszenie praw Kościoła, niesprawiedliwe prawa).',
                 bullets: [
@@ -161,8 +161,8 @@ export const DEPT_03 = {
           type: 'grid',
           items: [
             {
-              term: 'Sarmatyzm i „Pamiętniki” Jana Chryzostoma Paska',
-              desc: 'Autentyczny obraz mentalności polskiej szlachty XVII wieku.',
+              term: 'Sarmatyzm i „Pamiętniki” Jana Chryzostoma Paska [poza PP od 2024 r. — kontekst]',
+              desc: 'Autentyczny obraz mentalności polskiej szlachty XVII wieku (przejściowo 2025–2028).',
               details: {
                 summary: 'Mit o pochodzeniu szlachty polskiej od starożytnego walecznego ludu Sarmatów.',
                 bullets: [
@@ -182,7 +182,7 @@ export const DEPT_03 = {
                 summary: 'Arcydzieło komedii ukazujące patologiczną deformację osobowości pod wpływem żądzy pieniądza.',
                 bullets: [
                   'Harpagon: podstarzały paryski mieszczanin, dla którego pieniądz jest najwyższą i jedyną wartością na świecie. Pieniądz zastępuje mu miłość, rodzinę i wiarę.',
-                  'Destrukcja więzi rodzinnych: Harpagon głodzi sługi i konie, pożycza pieniądze na lichwiarski procent (jak się okazuje — własnemu synowi!), planuje wydać córkę Elizę za starego Anzelma bez posagu („bez posagu!”) i odebrać synowi Kleantowi narzeczoną Mariannę, bo jest posażną partią.',
+                  'Destrukcja więzi rodzinnych: Harpagon głodzi sługi i konie, pożycza pieniądze na lichwiarski procent (jak się okazuje — własnemu synowi!), planuje wydać córkę Elizę za starego Anzelma bez posagu („bez posagu!”) i odebrać synowi Kleantowi ukochaną Mariannę (ubogą dziewczynę bez posagu, co Harpagonowi rekompensuje jej rzekoma oszczędność).',
                   'Słynny monolog po kradzieży szkatułki: Harpagon traci zmysły po zniknięciu 10 tysięcy talarów zakopanych w ogrodzie — podejrzewa cały świat, widownię w teatrze, a w amoku łapie samego siebie za rękę, krzycząc: „Łapaj złodzieja!”.',
                   'Trzy odmiany komizmu: postaciowy (dziwactwa Harpagona), sytuacyjny (przesłuchanie Walerego mylącego szkatułkę z miłością do Elizy), słowny (dialogi pełne uszczypliwości i nieporozumień).'
                 ],
@@ -233,7 +233,8 @@ export const DEPT_03 = {
                   '„Do króla”: kunsztowny koncept oparty na pozornej krytyce Stanisława Augusta Poniatowskiego. Podmiot liryczny (ciemny sarmata) zarzuca królowi, że: nie jest cudzoziemcem („król swój”), jest zbyt młody, zbyt mądry i kocha naukę oraz książki zamiast polowań. W rzeczywistości to druzgocąca satyra na głupotę szlachty, a nie na króla.',
                   '„Pijaństwo”: dialog dwóch szlachciców. Jeden opowiada o kolejnych etapach libacji (imieniny żony, ugoszczenie sąsiadów, bójka po pijanemu, kac). Mimo że potępia zgubne skutki nałogu i chwali trzeźwość, na koniec oświadcza, że spieszy się... „napić się wódki”. Pokazuje bezsilność rozumu wobec nałogu.',
                   '„Świat zepsuty”: lament nad upadkiem dawnych cnót rycerskich przodków i rozprzestrzenieniem się fałszu, zdrady, chciwości i bezprawia.',
-                  '„Żona modna”: satyra na kosmopolityzm — małżeństwo rozsądnego szlachcica Piotra z modną panną z miasta kończy się finansową i życiową katastrofą z powodu jej bezmyślnego naśladowania francuszczyzny.'
+                  '„Hymn do miłości ojczyzny” („Święta miłości kochanej ojczyzny...”): pochwała bezinteresownego poświęcenia dla ojczyzny — utwór obowiązkowy z kanonu polskiego Oświecenia.',
+                  '„Żona modna”: satyra na kosmopolityzm — małżeństwo rozsądnego, chciwego na posag szlachcica Piotra z bogatą panną wychowaną w mieście kończy się finansową i życiową katastrofą z powodu jej bezmyślnego naśladowania francuszczyzny (fajerwerki puszczają z dymem stodołę).'
                 ],
                 essayUse: 'W tematach: wady narodowe Polaków, krytyka obyczajów, racjonalizm Oświecenia.'
               }
@@ -246,7 +247,7 @@ export const DEPT_03 = {
   flashcards: [
     { id: 'kf3-1', front: 'Jaka dewiza Terencjusza stała się hasłem przewodnim renesansowego humanizmu?', back: '„Homo sum et nihil humani a me alienum esse puto” (Człowiekiem jestem i nic, co ludzkie, nie jest mi obce).', hint: 'Zainteresowanie wszystkim, co dotyczy człowieka.', category: 'cytat' },
     { id: 'kf3-2', front: 'Na czym polegał kryzys światopoglądowy Kochanowskiego w Trenie IX i X?', back: 'W Trenie IX podważył stoicką Mądrość (która nie uchroniła go przed cierpieniem), a w Trenie X załamała się jego wiara chrześcijańska w życie pozagrobowe („Gdzieśkolwiek jest, jeśliś jest”).', hint: 'Kryzys rozumu (stoicyzmu) i kryzys wiary religijnej.', category: 'lektura' },
-    { id: 'kf3-3', front: 'Jakie przesłanie przynosi zmarła matka poety w Trenie XIX („Sen”)?', back: 'Poucza syna: „Ludzkie przygody ludzku noś” — cierpienie jest naturalną częścią ludzkiego losu i należy znosić je z godnością; zapewnia, że Urszulka jest bezpieczna w niebie.', hint: 'Humanistyczna lekcja pokory wobec losu.', category: 'cytat' },
+    { id: 'kf3-3', front: 'Jakie przesłanie przynosi zmarła matka poety w Trenie XIX („Sen”)?', back: 'Poucza syna: „Ludzkie przygody ludzkie noś” — cierpienie jest naturalną częścią ludzkiego losu i należy znosić je z godnością; zapewnia, że Urszulka jest bezpieczna w niebie (Tren XIX: PR / przejściowo 2025–2028).', hint: 'Humanistyczna lekcja pokory wobec losu.', category: 'cytat' },
     { id: 'kf3-4', front: 'Kto w „Odprawie posłów greckich” reprezentuje postawę prawego patrioty, a kto egoisty?', back: 'Prawym patriotą stawiającym dobro ojczyzny na pierwszym miejscu jest Antenor; egoistycznym manipulatorem przekupującym radę jest Aleksander (Parys).', hint: 'Antenor vs Aleksander.', category: 'bohater' },
     { id: 'kf3-5', front: 'Na czym polega metafora ojczyzny w „Kazaniach sejmowych” Piotra Skargi?', back: 'Ojczyzna jest tonącym okrętem — gdy pasażerowie zamiast ratować statek dbają o własne bagaże, giną wraz z tonącym okrętem.', hint: 'Rzeczpospolita jako miotany falami okręt.', category: 'motyw' },
     { id: 'kf3-6', front: 'Jakie przepowiednie otrzymał Makbet od czarownic w Akcie I i IV?', back: 'W Akcie I: zostanie tanem Kawdoru i królem Szkocji. W Akcie IV: nie pokona go nikt zrodzony z kobiety, dopóki las Birnam nie podejdzie pod Dunsinane.', hint: 'Korona oraz złudna nietykalność.', category: 'lektura' },
@@ -257,7 +258,7 @@ export const DEPT_03 = {
     { id: 'kf3-11', front: 'Wymień główne wady sarmatyzmu ukazane w „Pamiętnikach” Paska.', back: 'Pieniactwo (nadużywanie sądów), warcholstwo, ksenofobia (wrogość do cudzoziemców), pijaństwo i powierzchowna, jarmarczna pobożność.', hint: 'Ciemna strona złotej wolności szlacheckiej.', category: 'motyw' },
     { id: 'kf3-12', front: 'Jaka mania zdominowała osobowość Harpagona w „Skąpcu” Moliera?', back: 'Patologiczne skąpstwo i ubóstwienie pieniądza — podporządkował całe życie, rodzinę i sługi ochronie swojej ukochanej szkatułki ze złotem.', hint: 'Szkatułka ważniejsza niż dzieci.', category: 'bohater' },
     { id: 'kf3-13', front: 'Na czym polega komizm sytuacji w przesłuchaniu Walerego przez Harpagona?', back: 'Na komizmie omyłki: Harpagon krzyczy o skradzionej szkatułce, a Walery jest przekonany, że oskarża się go o potajemną miłość do córki Elizy.', hint: 'Jeden mówi o pieniądzach, drugi o miłości.', category: 'lektura' },
-    { id: 'kf3-14', front: 'Jaka zasada przyświecała literaturze Oświecenia wg Horacego?', back: '„Docere et delectare” (Uczyć bawiąc) — literatura miała naprawiać obyczaje i edukować obywatela poprzez atrakcyjną, często satyryczną formę.', hint: 'Uczyć bawiąc.', category: 'epoka' },
+    { id: 'kf3-14', front: 'Jaka zasada wywodząca się z poetyki Horacego przyświecała literaturze Oświecenia?', back: '„Docere et delectare” (Uczyć bawiąc) — literatura miała naprawiać obyczaje i edukować obywatela poprzez atrakcyjną, często satyryczną formę.', hint: 'Uczyć bawiąc.', category: 'epoka' },
     { id: 'kf3-15', front: 'Jaki morał płynie z bajki Krasickiego „Jagnię i wilcy”?', back: 'W świecie opartym na egoizmie rację ma silniejszy („Smacznyś, słaby i w lesie”), a niewinność i prawo moralne nie chronią słabych przed przemocą.', hint: 'Prawo brutalnej siły.', category: 'cytat' },
     { id: 'kf3-16', front: 'Na czym polega przewrotny koncept satyry „Do króla” Krasickiego?', back: 'Pod pozorem wyliczania wad Stanisława Augusta (za młody, nie cudzoziemiec, mądry, wykształcony) Krasicki w rzeczywistości obnaża głupotę i zawiść szlachty.', hint: 'Zarzuty wobec króla są w istocie jego zaletami.', category: 'lektura' },
     { id: 'kf3-17', front: 'Co ośmiesza Ignacy Krasicki w satyrze „Pijaństwo”?', back: 'Niemoc silnej woli i hipokryzję Polaków — szlachcic wygłasza moralizatorski traktat o zgubnych skutkach pijaństwa, po czym sam natychmiast idzie się napić.', hint: 'Wzniosła teoria kontra nałóg.', category: 'motyw' },
@@ -271,7 +272,7 @@ export const DEPT_03 = {
     { id: 'kf3-25', front: 'Czym był sarmatyzm w Rzeczypospolitej i jak ujawnił się w „Pamiętnikach” Jana Chryzostoma Paska?', back: 'Ideologia szlachty polskiej łącząca dumę z „złotej wolności” i rzekomego pochodzenia od Sarmatów z ksenofobią, warcholstwem, pijaństwem i powierzchowną pobożnością — barwnie opisaną w gawędowym stylu Paska.', hint: 'Złota wolność + warcholstwo i ksenofobia.', category: 'epoka' },
     { id: 'kf3-26', front: 'Jakie dwie wady ludzkie bezlitośnie wyśmiewa Molier w „Skąpcu”?', back: 'Skąpstwo i chciwość niszczącą więzi rodzinne (Harpagon chce wydać Elizę bez posagu i ożenić się z wybranką syna) oraz obłudę i ślepotę wynikającą z obsesji na punkcie pieniędzy.', hint: 'Pieniądze ważniejsze od własnych dzieci.', category: 'bohater' },
     { id: 'kf3-27', front: 'Czym różni się satyra od bajki w twórczości Ignacego Krasickiego?', back: 'Bajka to krótki utwór alegoryczny (często ze zwierzętami) z uniwersalnym morałem o naturze ludzkiej; satyra to dłuższy utwór ośmieszający konkretne wady obyczajowe i społeczne współczesnych (bez podawania gotowej recepty).', hint: 'Uniwersalna alegoria vs krytyka obyczajów epoki.', category: 'pojecie' },
-    { id: 'kf3-28', front: 'Jaki sens niesie zakończenie fraszki „Do gór i lasów” lub pieśni „Czego chcesz od nas, Panie” Jana Kochanowskiego?', back: 'W hymnie „Czego chcesz od nas, Panie” Bóg jest ukazany jako renesansowy Wielki Budowniczy i Artysta harmonijnego świata, któremu człowiek winien jest wdzięczne serce zamiast krwawych ofiar.', hint: 'Bóg-Architekt i harmonia natury.', category: 'lektura' },
+    { id: 'kf3-28', front: 'Jaki obraz Boga i świata wyłania się z pieśni (hymnu) „Czego chcesz od nas, Panie” Jana Kochanowskiego?', back: 'Bóg jest ukazany jako renesansowy Wielki Budowniczy i Artysta harmonijnego świata, któremu człowiek winien jest wdzięczne serce zamiast krwawych ofiar.', hint: 'Bóg-Architekt i harmonia natury.', category: 'lektura' },
     { id: 'kf3-29', front: 'Na czym polegał marinizm i jakie środki stosował w poezji barokowej (np. Morsztyn)?', back: 'Nurt dążący do zaskoczenia i olśnienia czytelnika wyszukanym konceptem, nagromadzeniem oksymoronów, hiperbol, wyliczeń i paradoksów (np. porównanie zakochanego do trupa).', hint: 'Zaskoczenie czytelnika kunsztowną formą.', category: 'pojecie' },
     { id: 'kf3-30', front: 'Jakie główne instytucje i prądy charakteryzowały Oświecenie w Polsce?', back: 'Racjonalizm i empiryzm, Komisja Edukacji Narodowej (1773), Szkoła Rycerska, czasopismo „Monitor”, Teatr Narodowy oraz hasło „uczyć bawiąc” w służbie naprawy Rzeczypospolitej.', hint: 'Rozum, edukacja (KEN), Monitor i reformy.', category: 'epoka' }
   ],
@@ -481,7 +482,7 @@ export const DEPT_03 = {
       examTip: "Deizm był próbą pogodzenia nauki o prawach fizyki z istnieniem Stwórcy."
     },
     {
-      q: "Jaką rolę w „Odprawie posłów greckich” Jana Kochanowskiego pełni monolog Iketaona i pieśń chóru „Wy, którzy pospolitą rzeczą władacie”?",
+      q: "Jaką rolę w „Odprawie posłów greckich” Jana Kochanowskiego pełni monolog Ulissesa oraz pieśń chóru „Wy, którzy pospolitą rzeczą władacie”?",
       options: [
         "Przypominają władcom o odpowiedzialności moralnej przed Bogiem i poddanymi za los państwa.",
         "Zachęcają Greków do jak najszybszego podboju ziem polskich.",

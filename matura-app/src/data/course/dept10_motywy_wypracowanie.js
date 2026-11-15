@@ -17,22 +17,22 @@ export const DEPT_10 = {
         {
           type: 'callout',
           variant: 'amber',
-          title: '3 twarde warunki formalne CKE — granice wyzerowania pracy!',
+          title: '3 twarde warunki formalne CKE — próg 300 słów i błąd kardynalny!',
           items: [
-            '1. Długość minimalna: praca MUSI liczyć co najmniej 300 słów. Jeśli napiszesz 299 słów, egzaminator stawia 0 pkt za całe wypracowanie! Bezpieczny, zalecany przedział to 450–650 słów.',
-            '2. Lektura obowiązkowa: musisz odwołać się do lektury obowiązkowej z listy wskazanej w arkuszu (najbezpieczniej: lektury czytanej w całości). Brak lektury z listy = wyzerowanie kryterium!',
-            '3. Zero błędu kardynalnego: jakakolwiek całkowita falsyfikacja fabuły lub wymowy ideowej lektury obowiązkowej czytanej w całości skutkuje natychmiastową oceną 0/35 pkt!'
+            '1. Długość minimalna: praca powinna liczyć co najmniej 300 słów. Jeśli napiszesz 299 słów lub mniej, egzaminator przyznaje 0 pkt w kryteriach kompozycji (7 pkt) i języka (11 pkt), przez co możesz zdobyć maksymalnie 17/35 pkt (za formalność i kompetencje literackie)! Bezpieczny, zalecany przedział to 450–650 słów.',
+            '2. Lektura obowiązkowa: w Formule 2023 musisz odwołać się do wybranej lektury obowiązkowej (utworu epickiego albo dramatycznego) oraz drugiego utworu literackiego. Brak utworu spełniającego warunek polecenia zeruje kryterium formalne (0/35 pkt)!',
+            '3. Zero błędu kardynalnego: jakakolwiek całkowita falsyfikacja fabuły lub wymowy ideowej lektury obowiązkowej skutkuje natychmiastową oceną 0/35 pkt!'
           ]
         },
         {
           type: 'callout',
           variant: 'emerald',
-          title: 'Złota struktura akapitu argumentacyjnego: model TSACW',
+          title: 'Złota struktura akapitu argumentacyjnego: model TSAKW',
           items: [
             'T (Teza cząstkowa): 1 zdanie wprowadzające cząstkowy argument bezpośrednio wynikający z tezy głównej.',
             'S (Scena z lektury): przywołanie konkretnego epizodu, dialogu lub zachowania bohatera (NIE streszczaj całej książki!).',
             'A (Analiza i interpretacja): wyjaśnienie, co ta konkretna scena mówi o człowieku i w jaki sposób dowodzi Twojej tezy.',
-            'C (Context pogłębiający): funkcjonalne powiązanie sceny z filozofią, biografią autora, historią epoki lub innym dziełem sztuki.',
+            'K (Kontekst pogłębiający): funkcjonalne powiązanie sceny z filozofią, biografią autora, historią epoki lub innym dziełem sztuki.',
             'W (Wniosek cząstkowy): krótkie zdanie domykające akapit i płynnie łączące go z kolejną myślą.'
           ]
         },
@@ -105,7 +105,7 @@ export const DEPT_10 = {
           variant: 'emerald',
           title: 'Strategia doboru lektur: złota zasada bezpieczeństwa',
           items: [
-            'Wybieraj ZAWSZE lektury czytane w całości (*Lektury z gwiazdką*) — masz w nich setki precyzyjnych scen.',
+            'Wybieraj lektury obowiązkowe czytane w całości (utwory epickie lub dramatyczne z aktualnej listy PP) — masz w nich setki precyzyjnych scen.',
             'Zestawiaj utwory na zasadzie podobieństwa (analogii) lub kontrastu postaw.',
             'Nigdy nie pisz ogólnikowo: „Bohater cierpiał”. Wskaż konkret: „Wokulski po podsłuchaniu rozmowy Starskiego z Izabelą w pociągu do Skierniewic przeżywa załamanie nerwowe i rzuca się pod pociąg”.'
           ]
@@ -159,7 +159,7 @@ export const DEPT_10 = {
                 summary: 'Idealne pary lektur: „Zbrodnia i kara” Dostojewskiego + „Pan Tadeusz” Mickiewicza (lub „Makbet”).',
                 bullets: [
                   '„Zbrodnia i kara”: teoria Raskolnikowa o podziale ludzi na „wszy” i „nadludzi”; zabójstwo lichwiarki Alony i Lizawiety; koszmar gorączki i paranoi; psychologiczna gra z Porfirym Pietrowiczem i odkupienie na katordze.',
-                  '„Pan Tadeusz”: Jacek Soplica po zabójstwie Stolnika Horeszki pokutuje całe życie jako pokorny emisariusz Ksiądz Robak; ratuje życie Hrabiemu i Tadeuszowi; spowiedź na łożu śmierci i przebaczenie Gerwazego.',
+                  '„Pan Tadeusz”: Jacek Soplica po zabójstwie Stolnika Horeszki pokutuje całe życie jako pokorny emisariusz Ksiądz Robak; ratuje życie Tadeuszowi i Hrabiemu podczas polowania (Ks. IV) oraz osłania Hrabiego w bitwie (Ks. IX); spowiedź na łożu śmierci i przebaczenie Gerwazego.',
                   '„Makbet”: zbrodnia niszczy psychikę; lunatykowanie i obłęd Lady Makbet próbującej zmyć wyimaginowaną krew z rąk.'
                 ],
                 essayUse: 'Kontekst filozoficzny: imperatyw kategoryczny Immanuela Kanta lub chrześcijańska teologia pokuty.'
@@ -185,8 +185,8 @@ export const DEPT_10 = {
                 summary: 'Idealne pary lektur: „Dżuma” Camusa + „Księga Hioba” (lub „Zdążyć przed Panem Bogiem”, „Inny świat”).',
                 bullets: [
                   '„Dżuma”: epidemia dżumy w Oranie jako metafora wszelkiego zła i totalitaryzmu; postawa doktora Rieux (bohaterstwo bez patosu, mrówcza praca lekarska); solidarność formacji sanitarnych Tarrou.',
-                  '„Księga Hioba”: Hiob traci majątek, dzieci i zdrowie, lecz zachowuje wierność Bogu („Bóg dał, Bóg wziął, niech imię Pańskie będzie błogosławione”); przezwyciężenie rozpaczy i nagroda za wierność.',
-                  '„Zdążyć przed Panem Bogiem”: Marek Edelman w getcie warszawskim; walka o godny wybór sposobu umierania; praca kardiochirurga jako wyścig ze śmiercią.'
+                  '„Księga Hioba”: Hiob traci majątek, dzieci i zdrowie, lecz zachowuje wierność Bogu („Dał Pan i zabrał Pan. Niech będzie imię Pańskie błogosławione!”); przezwyciężenie rozpaczy i nagroda za wierność.',
+                  '„Zdążyć przed Panem Bogiem”: Marek Edelman w getcie warszawskim; walka o godny wybór sposobu umierania; praca kardiologa jako wyścig ze śmiercią.'
                 ],
                 essayUse: 'Kontekst filozoficzny: egzystencjalizm Alberta Camusa lub personalizm chrześcijański.'
               }
@@ -287,7 +287,7 @@ export const DEPT_10 = {
                   '4. Dziady cz. III: Konrad to NIE Konrad Wallenrod ani Kordian; w Wielkiej Improwizacji NIE nazwał Boga carem — zemdlał, a słowo dopowiedział diabeł.',
                   '5. Kordian: Kordian NIE zabił cara — zemdlał na progu carskiej sypialni pokonany przez Strach i Imaginację.',
                   '6. Pan Tadeusz: Jacek Soplica NIE był rosyjskim szpiegiem; zabił Stolnika w afekcie po odrzuceniu zaręczyn czarną polewką, a potem pokutował jako Ksiądz Robak.',
-                  '7. Pan Tadeusz: Gerwazy to mściwy Klucznik Horeszków z scyzorykiem; Protazy to Woźny Sopliców.',
+                  '7. Pan Tadeusz: Gerwazy to mściwy Klucznik Horeszków ze scyzorykiem; Protazy to Woźny Sopliców.',
                   '8. Lalka: Wokulski NIE ożenił się z Izabelą; zerwał zaręczyny po podsłuchaniu jej flirtu ze Starskim w pociągu i chciał rzucić się pod pociąg w Skierniewicach.',
                   '9. Lalka: Rzecki NIE był wrogiem Wokulskiego — to jego najwierniejszy przyjaciel, stary subiekt i bonapartysta.',
                   '10. Zbrodnia i kara: Raskolnikow zabił lichwiarkę Alonę i przypadkowo jej siostrę Lizawietę; zabił z pychy filozoficznej, a nie dla pieniędzy na ślub z Sonią.',
@@ -295,7 +295,7 @@ export const DEPT_10 = {
                   '12. Wesele: Złoty Róg zgubił Jasiek schylając się po czapkę z pawich piór, a NIE Gospodarz ani Pan Młody.',
                   '13. Wesele: Akcja toczy się w podkrakowskiej wsi Bronowice na weselu poety Lucjana Rydla z Jadwigą Mikołajczykówną, a NIE w Warszawie.',
                   '14. Przedwiośnie: Szklane domy NIE istniały naprawdę — to była utopijna baśń opowiedziana przez umierającego Seweryna Barykę.',
-                  '15. Przedwiośnie: Cezary Baryka w finale NIE jest bolszewikiem strzelającym do Polaków — idzie na czele manifestacji robotniczej w polskim mundurze legionisty, ale idzie osobno.',
+                  '15. Przedwiośnie: Cezary Baryka w finale NIE jest bolszewikiem strzelającym do Polaków — idzie na czele manifestacji robotniczej w mundurze żołnierza polskiego z wojny 1920 r., ale idzie osobno.',
                   '16. Dżuma: Narratorem NIE jest Tarrou ani Grand — kronikę od początku spisuje doktor Bernard Rieux, co ujawnia w ostatnim rozdziale.',
                   '17. Dżuma: Dżuma nie została zniszczona na zawsze — Rieux ostrzega, że bakcyl dżumy nigdy nie umiera i może powrócić.',
                   '18. Rok 1984: Winston Smith NIE obalił Wielkiego Brata ani nie uciekł z Julią — został złamany torturami w Pokoju 101, zdradził Julię i pokochał Wielkiego Brata.',
@@ -380,22 +380,22 @@ export const DEPT_10 = {
   flashcards: [
     {
       id: 'kf10-1',
-      front: 'Jaki jest bezwzględny limit minimalny słów w wypracowaniu maturalnym CKE Formuła 2023?',
-      back: 'Minimum 300 słów. Praca licząca 299 słów lub mniej otrzymuje 0 punktów w kryterium formalnym (0/35 pkt za całe wypracowanie!).',
-      hint: 'Pamiętaj: celuj bezpiecznie w 450–650 słów.',
+      front: 'Jaki jest minimalny próg liczby słów w wypracowaniu maturalnym CKE Formuła 2023 i co grozi poniżej 300 słów?',
+      back: 'Minimum 300 słów. Praca licząca 299 słów lub mniej otrzymuje 0 pkt w kryteriach kompozycji (7 pkt) i języka (11 pkt), więc maksymalnie może zdobyć 17/35 pkt (1 pkt formalny + 16 pkt kompetencji literackich).',
+      hint: 'Pamiętaj: celuj bezpiecznie w 450–650 słów, by nie stracić 18 pkt.',
       category: 'wypracowanie'
     },
     {
       id: 'kf10-2',
       front: 'Czym jest błąd kardynalny według oficjalnych wytycznych CKE?',
-      back: 'To rażący błąd rzeczowy polegający na całkowitej falsyfikacji fabuły, losów bohatera lub wymowy ideowej lektury obowiązkowej czytanej w całości. Skutek: 0/35 pkt!',
-      hint: 'Dotyczy wyłącznie lektur z gwiazdką omawianych w całości.',
+      back: 'To rażący błąd rzeczowy polegający na całkowitej falsyfikacji fabuły, losów bohatera lub wymowy ideowej lektury obowiązkowej. Skutek: 0/35 pkt!',
+      hint: 'Dotyczy lektur obowiązkowych z podstawy programowej.',
       category: 'wypracowanie'
     },
     {
       id: 'kf10-3',
-      front: 'Co oznacza reguła TSACW w budowie akapitu argumentacyjnego?',
-      back: 'T – Teza cząstkowa, S – Scena z lektury, A – Analiza sensu, C – Context pogłębiający, W – Wniosek cząstkowy.',
+      front: 'Co oznacza reguła TSAKW w budowie akapitu argumentacyjnego?',
+      back: 'T – Teza cząstkowa, S – Scena z lektury, A – Analiza sensu, K – Kontekst pogłębiający, W – Wniosek cząstkowy.',
       hint: 'Struktura profesjonalnego akapitu.',
       category: 'wypracowanie'
     },
@@ -519,15 +519,15 @@ export const DEPT_10 = {
       category: 'wypracowanie'
     },
     { id: 'kf10-21', front: 'Z jakich dokładnie elementów musi składać się wstęp wypracowania maturalnego CKE?', back: '1) Krótkie wprowadzenie w problem z tematu (2–3 zdania, bez lania wody typu „Od zarania dziejów...”); 2) Wyraźne, jednoznaczne sformułowanie tezy lub hipotezy odpowiadającej na polecenie tematu; 3) Opcjonalna zapowiedź dobranych lektur.', hint: 'Problem → jasna teza → (zapowiedź lektur).', category: 'wypracowanie' },
-    { id: 'kf10-22', front: 'Ile co najmniej lektur i kontekstów wymaga wypracowanie maturalne (Formuła 2023)?', back: 'Minimum 2 utwory literackie: co najmniej 1 lektura obowiązkowa wskazana w podstawie programowej (znajomość w całości lub we fragmencie zgodnie z wymogiem tematu) + 1 inny utwór literacki (może być druga lektura obowiązkowa) oraz minimum 2 funkcjonalne konteksty (np. historyczny, filozoficzny, biograficzny, kulturowy).', hint: 'Min. 2 utwory (w tym min. 1 lektura obowiązkowa) + min. 2 konteksty.', category: 'wypracowanie' },
-    { id: 'kf10-23', front: 'Dlaczego nie wolno mylić pojęć „argumentacja” i „streszczenie” w akapicie rozwinięcia?', back: 'Streszczenie opisuje tylko „co się stało” (fabułę), za co grozi niska punktacja za kompetencje literackie; argumentacja wyjaśnia „DLACZEGO i W JAKI SPOSÓB” dana scena/postawa potwierdza tezę (reguła TSACW: Teza cząstkowa → Sytuacja → Analiza → Context → Wniosek).', hint: 'Analiza sensu sceny zamiast opowiadania fabuły.', category: 'wypracowanie' },
+    { id: 'kf10-22', front: 'Ile co najmniej lektur i kontekstów wymaga wypracowanie maturalne (Formuła 2023)?', back: 'Minimum 2 utwory literackie: co najmniej 1 lektura obowiązkowa (utwór epicki albo dramatyczny) wskazana w podstawie programowej + 1 inny utwór literacki (np. wiersz lub druga lektura obowiązkowa) oraz minimum 2 funkcjonalne konteksty (np. historyczny, filozoficzny, biograficzny, kulturowy).', hint: 'Min. 2 utwory (w tym min. 1 lektura obowiązkowa epicka/dramatyczna) + min. 2 konteksty.', category: 'wypracowanie' },
+    { id: 'kf10-23', front: 'Dlaczego nie wolno mylić pojęć „argumentacja” i „streszczenie” w akapicie rozwinięcia?', back: 'Streszczenie opisuje tylko „co się stało” (fabułę), za co grozi niska punktacja za kompetencje literackie; argumentacja wyjaśnia „DLACZEGO i W JAKI SPOSÓB” dana scena/postawa potwierdza tezę (reguła TSAKW: Teza cząstkowa → Sytuacja → Analiza → Kontekst → Wniosek).', hint: 'Analiza sensu sceny zamiast opowiadania fabuły.', category: 'wypracowanie' },
     { id: 'kf10-24', front: 'Jakie dwie lektury najlepiej dobrać do tematu: „Czy wybujała ambicja i żądza władzy zawsze niszczą człowieka?”', back: '„Makbet” Williama Szekspira (spirala zbrodni, paranoja i upadek etyczny po zabójstwie Dunkana) + „Antygona” Sofoklesa (pycha władzy Kreona prowadząca do śmierci bliskich) lub „Lalka” (porażka ambicji w zderzeniu ze światem).', hint: 'Makbet + Antygona (Kreon).', category: 'motyw' },
-    { id: 'kf10-25', front: 'Jakie lektury obowiązkowe najlepiej zestawić do motywu winy, pokuty i wewnętrznej przemiany?', back: '„Pan Tadeusz” Adama Mickiewicza (Jacek Soplica → Ksiądz Robak), „Potop” Henryka Sienkiewicza (Andrzej Kmicic → Babinicz) oraz „Zbrodnia i kara” Fiodora Dostojewskiego (Raskolnikow na katordze z Sonią).', hint: 'Jacek Soplica, Kmicic, Raskolnikow.', category: 'motyw' },
+    { id: 'kf10-25', front: 'Jakie lektury obowiązkowe najlepiej zestawić do motywu winy, pokuty i wewnętrznej przemiany?', back: '„Pan Tadeusz” Adama Mickiewicza (Jacek Soplica → Ksiądz Robak, od 2024 r. lektura SP / przejściowo dopuszczona w 2025–2028), „Potop” Henryka Sienkiewicza (Andrzej Kmicic → Babinicz, we fragmentach) oraz „Zbrodnia i kara” Fiodora Dostojewskiego (Raskolnikow na katordze z Sonią).', hint: 'Jacek Soplica, Kmicic, Raskolnikow.', category: 'motyw' },
     { id: 'kf10-26', front: 'Jakie utwory najlepiej wykorzystać w temacie o miłości niespełnionej, niszczącej lub poświęceniu z miłości?', back: '„Lalka” B. Prusa (ślepa, destrukcyjna miłość Wokulskiego do Izabeli), „Kamizelka” B. Prusa (ciche poświęcenie małżonków) oraz „Dziady cz. IV”/„Pan Tadeusz” (historia Jacka Soplicy i Ewy Horeszkówny) lub „Wesele” (zderzenie stanów).', hint: 'Wokulski, małżonkowie z Kamizelki, Jacek Soplica.', category: 'motyw' },
     { id: 'kf10-27', front: 'Czym jest kontekst funkcjonalny (punktowany) w odróżnieniu od kontekstu pozornego (0 pkt)?', back: 'Kontekst funkcjonalny realnie pogłębia interpretację lektury i pomaga udowodnić tezę (np. filozofia Schopenhauera tłumacząca pesymizm Tetmajera lub realia stalinizmu wyjaśniające „Inny świat”); kontekst pozorny to luźne wtrącenie daty lub tytułu bez związku z analizą.', hint: 'Pogłębia argumentację, a nie zdobi akapit.', category: 'wypracowanie' },
     { id: 'kf10-28', front: 'Jakie są 3 najczęstsze błędy kardynalne w lekturach XX wieku („Przedwiośnie”, „Ferdydurke”, „Rok 1984”, „Dżuma”)?', back: '1) Twierdzenie, że w Polsce istniały prawdziwe szklane domy (to tylko mit Seweryna); 2) Mylenie narracji Winstona z happy endem (Winston zostaje złamany i kocha Wielkiego Brata); 3) Pisanie, że Tarrou przeżył dżumę (Tarrou umiera tuż przed końcem epidemii, przeżywa Rieux).', hint: 'Mit szklanych domów, klęska Winstona, śmierć Tarrou.', category: 'lektura' },
     { id: 'kf10-29', front: 'Jaką strategię zastosować na maturze, gdy nie pamiętasz dokładnie imienia postaci epizodycznej lub szczegółu daty?', back: 'Stosuj „zasadę bezpieczeństwa opisowego”: zamiast zgadywać nazwisko czy rok (ryzyko błędu rzeczowego/kardynalnego!), użyj pewnego określenia funkcji (np. „sędzia śledczy w «Zbrodni i karze»”, „przyjaciel Rieux organizujący oddziały sanitarne”, „w pierwszej połowie XIX wieku”).', hint: 'Nie zgaduj detalu — opisz pewną funkcję lub rolę.', category: 'wypracowanie' },
-    { id: 'kf10-30', front: 'Ile punktów łącznie można zdobyć za wypracowanie maturalne (Formuła 2023) i za co odejmuje się najwięcej?', back: 'Maksymalnie 35 pkt: spełnienie warunków formalnych i kompetencje literackie/kulturowe (do 16 pkt), kompozycja i spójność (do 7 pkt), język, styl i ortografia/interpunkcja (do 12 pkt). Błąd kardynalny zeruje całe wypracowanie (0/35 pkt)!', hint: '35 pkt max; błąd kardynalny = 0 pkt za całość.', category: 'wypracowanie' }
+    { id: 'kf10-30', front: 'Ile punktów łącznie można zdobyć za wypracowanie maturalne (Formuła 2023) i jak dzielą się kryteria CKE?', back: 'Maksymalnie 35 pkt: spełnienie warunków formalnych (0–1 pkt), kompetencje literackie i kulturowe (0–16 pkt), kompozycja tekstu — struktura, spójność i styl (0–7 pkt) oraz język — zakres, poprawność, ortografia i interpunkcja (0–11 pkt). Błąd kardynalny zeruje całe wypracowanie (0/35 pkt)!', hint: '1 + 16 + 7 + 11 = 35 pkt; błąd kardynalny = 0/35 pkt.', category: 'wypracowanie' }
   ],
   quiz: [
     {
@@ -540,7 +540,7 @@ export const DEPT_10 = {
         "Dokładnie 500 słów"
       ],
       correct: 0,
-      explanation: "Wypracowanie musi liczyć co najmniej 300 słów. Praca mająca choćby 299 słów jest automatycznie oceniana na 0 punktów w kryterium formalnym, co zeruje całe wypracowanie (0/35 pkt).",
+      explanation: "Wypracowanie musi liczyć co najmniej 300 słów. Praca mająca 299 słów lub mniej otrzymuje automatycznie 0 pkt w kryterium kompozycji (7 pkt) i języka (11 pkt), przez co traci aż 18 pkt (maks. 17/35 pkt do zdobycia).",
       whyWrong: {
         1: "250 słów obowiązywało w dawnej Formule 2015, w Formule 2023 limit wynosi min. 300 słów.",
         2: "400 słów to dobra, bezpieczna objętość zalecana przez nauczycieli, ale progiem formalnym jest 300 słów.",
@@ -564,7 +564,7 @@ export const DEPT_10 = {
         1: "Wynik poniżej 30% z całego arkusza obliguje do poprawki, ale sam błąd kardynalny jest regułą punktową CKE.",
         2: "Przy błędzie kardynalnym nie ocenia się kompozycji ani języka — cała praca otrzymuje 0 pkt."
       },
-      examTip: "Błąd kardynalny dotyczy wyłącznie lektur obowiązkowych sprawdzanych w całości — nie można go popełnić w lekturze uzupełniającej!"
+      examTip: "Błąd kardynalny dotyczy lektury obowiązkowej wskazanej w podstawie programowej i przywołanej w rozprawce!"
     },
     {
       id: "kq10-3",
@@ -586,18 +586,18 @@ export const DEPT_10 = {
     },
     {
       id: "kq10-4",
-      q: "W modelu budowy akapitu argumentacyjnego TSACW litera „C” oznacza:",
+      q: "W modelu budowy akapitu argumentacyjnego TSAKW litera „K” oznacza:",
       options: [
-        "Cytat dosłowny z tekstu lektury",
-        "Czasownik operacyjny użyty w poleceniu",
-        "Ciekawostkę o życiu prywatnym pisarza",
-        "Context pogłębiający (np. historyczny, filozoficzny lub biograficzny)"
+        "„Książkę” — czyli streszczenie całego tomu od początku do końca",
+        "„Komentarz” niezwiązany z tematem pracy",
+        "„Krótką” ciekawostkę o życiu prywatnym pisarza",
+        "Kontekst pogłębiający (np. historyczny, filozoficzny lub biograficzny)"
       ],
       correct: 3,
-      explanation: "Litera „C” w strukturze TSACW oznacza Context — powiązanie omawianej sceny z wiedzą o epoce, filozofii czy zjawiskach kulturowych, co zapewnia punkty w kryterium CKE.",
+      explanation: "Litera „K” w strukturze TSAKW oznacza Kontekst — powiązanie omawianej sceny z wiedzą o epoce, filozofii czy zjawiskach kulturowych, co zapewnia punkty w kryterium CKE.",
       whyWrong: {
-        0: "Na maturze podstawowej nie wymaga się cytatów z pamięci — wystarczy analiza sceny.",
-        1: "Czasowniki operacyjne dotyczą pytań w teście, a nie struktury akapitu wypracowania.",
+        0: "Na maturze nie streszcza się całych lektur — liczy się funkcjonalna analiza konkretnej sceny.",
+        1: "Dygresje niezwiązane z tematem obniżają ocenę kompozycji i spójności.",
         2: "Ciekawostki prywatne bez związku z problemem są uznawane za kontekst niefunkcjonalny."
       },
       examTip: "Kontekst musi logicznie wynikać z analizy sceny, a nie stanowić doczepionego na siłę zdania."
@@ -648,7 +648,7 @@ export const DEPT_10 = {
         "Brał udział w wojnie polsko-bolszewickiej 1920 roku i uratował życie Hipolitowi Wielosławskiemu."
       ],
       correct: 2,
-      explanation: "W finale Cezary idzie w pochodzie robotników na Belweder w mundurze legionisty, ale idzie OSOBNO, nie będąc komunistą i do nikogo nie strzelając. Twierdzenie przeciwne to kardynalna pomyłka!",
+      explanation: "W finale Cezary idzie w pochodzie robotników na Belweder w mundurze żołnierza polskiego z wojny 1920 r., ale idzie OSOBNO, nie będąc komunistą i do nikogo nie strzelając. Twierdzenie przeciwne to kardynalna pomyłka!",
       whyWrong: {
         0: "To prawda — Cezary w Baku zakopywał zwłoki i doznał wstrząsu na widok martwej Ormianki.",
         1: "To prawda — ojciec opowiadał mu legendę o szklanych domach.",
@@ -666,7 +666,7 @@ export const DEPT_10 = {
         "Został mianowany generałem wojsk carskich i zawarł pokój z Polakami"
       ],
       correct: 1,
-      explanation: "Jacek przybrał habit bernardyna i nazwisko Robak, przygotowywał powstanie na Litwie, a w czasie polowania i bitwy z Moskalami własnym ciałem zasłonił Hrabiego i Tadeusza przed kulami.",
+      explanation: "Jacek przybrał habit bernardyna i nazwisko Robak, przygotowywał powstanie na Litwie, w czasie polowania na niedźwiedzia uratował strzałem Tadeusza i Hrabiego (Ks. IV), a podczas bitwy z Moskalami własnym ciałem zasłonił Hrabiego przed kulą (Ks. IX).",
       whyWrong: {
         0: "Zamek należał do Horeszków i był przedmiotem sporu sądowego, Soplica go nie budował.",
         2: "Do Ameryki uciekał np. Julian Ursyn Niemcewicz, nie Soplica.",
@@ -838,21 +838,21 @@ export const DEPT_10 = {
     },
     {
       id: "kq10-18",
-      q: "Co oznacza metoda budowy akapitu TSACW zalecana w wypracowaniu maturalnym?",
+      q: "Co oznacza metoda budowy akapitu TSAKW zalecana w wypracowaniu maturalnym?",
       options: [
         "Teza cząstkowa → Sytuacja (przywołanie sceny) → Analiza (odpowiedź „dlaczego”) → Kontekst (funkcjonalne pogłębienie) → Wniosek cząstkowy.",
-        "Tytuł utworu → Streszczenie całej książki → Aneks → Cytat → Wstęp.",
-        "Temat → Spis treści → Argument → Cytat → Wypunktowanie.",
-        "Teza → Streszczenie → Anegdota → Cytat → Wyliczenie epok."
+        "Tytuł utworu → Streszczenie całej książki → Aneks → Krytyka → Wstęp.",
+        "Temat → Spis treści → Argument → Konkluzja → Wypunktowanie.",
+        "Teza → Streszczenie → Anegdota → Komentarz → Wyliczenie epok."
       ],
       correct: 0,
-      explanation: "Schemat TSACW gwarantuje, że każdy akapit rozwinięcia ma wyraźny argument, odwołanie do konkretu z lektury, pogłębioną analizę (zamiast streszczenia!), kontekst oraz podsumowanie wiążące całość z tezą.",
+      explanation: "Schemat TSAKW gwarantuje, że każdy akapit rozwinięcia ma wyraźny argument, odwołanie do konkretu z lektury, pogłębioną analizę (zamiast streszczenia!), kontekst oraz podsumowanie wiążące całość z tezą.",
       whyWrong: {
         1: "Streszczenie całej książki w akapicie rozwinięcia obniża punktację.",
         2: "Rozprawka musi być tekstem ciągłym, nie wypunktowaniem.",
         3: "Anegdoty i suche wyliczenia epok nie budują argumentacji."
       },
-      examTip: "Sprawdź każdy swój akapit pod kątem TSACW: czy po opisaniu sceny odpowiedziałeś na pytanie „co z tego wynika dla tezy?”."
+      examTip: "Sprawdź każdy swój akapit pod kątem TSAKW: czy po opisaniu sceny odpowiedziałeś na pytanie „co z tego wynika dla tezy?”."
     },
     {
       id: "kq10-19",
@@ -894,7 +894,7 @@ export const DEPT_10 = {
       id: "kq10-21",
       q: "Które dwie lektury najlepiej zestawić w temacie: „Sztuka i artysta wobec brutalnej historii lub obojętnego świata”?",
       options: [
-        "„Fortepian Szopena” Cypriana Kamila Norwida (profanacja sztuki i „Idea – osiągnęła bruk”) oraz „Campo di Fiori” Czesława Miłosza (słowo poety przełamujące obojętność świata).",
+        "„Fortepian Szopena” Cypriana Kamila Norwida (profanacja sztuki i „Ideał — sięgnął bruku”) oraz „Campo di Fiori” Czesława Miłosza (słowo poety przełamujące obojętność świata).",
         "„Skąpiec” Moliera oraz „Pamiętniki” Jana Chryzostoma Paska.",
         "„Jagnię i wilcy” Ignacego Krasickiego oraz „Kamizelka” Bolesława Prusa.",
         "„Lament świętokrzyski” oraz „Bogurodzica”."
@@ -906,7 +906,7 @@ export const DEPT_10 = {
         2: "Dotyczą przemocy silniejszego w bajce i miłości małżeńskiej.",
         3: "To zabytki średniowiecznej liryki religijnej."
       },
-      examTip: "Warto znać też trzeci przykład do tego motywu: Poeta z „Wesela” Wyspiańskiego lub Ojciec Jakub z „Sklepów cynamonowych”."
+      examTip: "Warto znać też trzeci przykład do tego motywu: Poeta z „Wesela” Wyspiańskiego lub Ojciec Jakub ze „Sklepów cynamonowych”."
     },
     {
       id: "kq10-22",

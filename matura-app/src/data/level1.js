@@ -18,17 +18,17 @@ export const LEVEL_1 = {
           variant: 'amber',
           title: '5 żelaznych kryteriów oceny notatki syntetyzującej (CKE / Operon)',
           items: [
-            '1. Długość: dokładnie od 60 do 90 wyrazów (każdy przyimek „w”, „z”, „na” i spójnik „i”, „że” liczy się jako osobny wyraz! Liczby zapisane cyframi to też wyrazy). Napisanie 59 lub 91 słów obcina punkty do maksymalnie 1 pkt.',
+            '1. Długość: dokładnie od 60 do 90 wyrazów (każdy przyimek „w”, „z”, „na” i spójnik „i”, „że” liczy się jako osobny wyraz! Liczby zapisane cyframi to też wyrazy). Wyjście poza limit 60–90 wyrazów odejmuje 1 pkt w kryterium treści (maks. 3/4 pkt za całą notatkę).',
             '2. Przedmiot syntezy: w pierwszym zdaniu musisz nazwać wspólny temat obu tekstów dokładnie tak, jak sformułowano go w poleceniu (np. „Obaj autorzy rozważają wpływ technologii na relacje międzyludzkie”).',
             '3. Zestawienie stanowisk: nie wolno streszczać najpierw Tekstu 1, a potem osobno Tekstu 2 bez ich połączenia. Musisz używać zwrotów porównujących: „Zarówno X, jak i Y dostrzegają…”, „Odmienne stanowisko w kwestii… zajmuje Y”, „Podczas gdy pierwszy autor podkreśla…, drugi skupia się na…”.',
             '4. Obiektywizm i własne słowa: zero ocen („autor słusznie zauważa”) i zero dosłownych cytatów z tekstu — stosuj parafrazę.',
-            '5. Poprawność językowa, ortograficzna i interpunkcyjna (1 pkt z 4 jest przyznawany za brak błędów językowych).'
+            '5. Poprawność językowa, ortograficzna i interpunkcyjna (1 pkt z 4 jest przyznawany za brak błędów lub maksymalnie 2 błędy łącznie).'
           ]
         },
         {
           type: 'quote',
           label: 'Uniwersalny szablon na 4/4 pkt (~78 słów) — naucz się go na pamięć!',
-          text: 'Zarówno [Imię i Nazwisko Autora 1], jak i [Imię i Nazwisko Autora 2] podejmują w swoich tekstach temat [dokładne przepisanie tematu z polecenia]. Obaj autorzy są zgodni co do tego, że [wspólny wniosek obu tekstów]. Różnią się jednak w ocenie przyczyn i skutków tego zjawiska. Pierwszy z badaczy podkreśla, iż [główny argument z tekstu 1], natomiast drugi zwraca szczególną uwagę na [główny argument z tekstu 2]. Podsumowując, podczas gdy [Autor 1] ujmuje problem z perspektywy [np. jednostki], [Autor 2] analizuje go w wymiarze [np. społecznym].'
+          text: 'Zarówno [Imię i Nazwisko Autora 1], jak i [Imię i Nazwisko Autora 2] podejmują w swoich tekstach temat [dokładne przepisanie tematu z polecenia]. [Obaj autorzy są zgodni / Oboje autorów jest zgodnych / Obie autorki są zgodne] co do tego, że [wspólny wniosek obu tekstów]. Różnią się jednak w ocenie przyczyn i skutków tego zjawiska. Pierwszy z autorów podkreśla, iż [główny argument z tekstu 1], natomiast drugi zwraca szczególną uwagę na [główny argument z tekstu 2]. W podsumowaniu: podczas gdy [Autor 1] ujmuje problem z perspektywy [np. jednostki], [Autor 2] analizuje go w wymiarze [np. społecznym].'
         },
         {
           type: 'grid',
@@ -50,12 +50,12 @@ export const LEVEL_1 = {
             },
             {
               term: 'Przykład wzorcowej notatki syntetyzującej',
-              desc: 'Zobacz pełny przykład na temat „roli podróży w życiu człowieka” (79 słów).',
+              desc: 'Zobacz pełny przykład na temat „roli podróży w kształtowaniu osobowości człowieka” (77 słów).',
               details: {
                 summary:
                   'Temat: Porównaj stanowiska autorów dotyczące roli podróży w kształtowaniu osobowości człowieka.',
                 bullets: [
-                  'Treść wzorcowa (79 słów): „Zarówno Ryszard Kapuściński, jak i Olga Tokarczuk analizują w swoich tekstach rolę podróży w kształtowaniu osobowości człowieka. Oboje autorzy zgadzają się, że przemieszczanie się wymaga otwartości i zmienia sposób postrzegania świata. Kapuściński skupia się jednak na poznawaniu Innego, podkreślając, że podróż uczy pokory wobec odmiennych kultur. Z kolei Tokarczuk akcentuje wymiar psychologiczny wędrówki i dowodzi, iż ruch pozwala uciec przed rutyną oraz odkryć własną tożsamość. Podsumowując, pierwszy tekst uwypukla aspekt społeczny podróżowania, a drugi — indywidualny.”'
+                  'Treść wzorcowa (77 słów): „Zarówno Ryszard Kapuściński, jak i Olga Tokarczuk analizują w swoich tekstach rolę podróży w kształtowaniu osobowości człowieka. Oboje autorów zgadza się, że przemieszczanie się wymaga otwartości i zmienia sposób postrzegania świata. Kapuściński skupia się jednak na poznawaniu Innego, podkreślając, że podróż uczy pokory wobec odmiennych kultur. Z kolei Tokarczuk akcentuje wymiar psychologiczny wędrówki i dowodzi, iż ruch pozwala uciec przed rutyną oraz odkryć własną tożsamość. W podsumowaniu pierwszy tekst uwypukla aspekt społeczny podróżowania, a drugi — wymiar indywidualny.”'
                 ],
                 essayUse: 'Zwróć uwagę na strukturę: Wspólny temat → Punkt wspólny → Stanowisko 1 → Stanowisko 2 → Kontrastowe podsumowanie.'
               }
@@ -99,7 +99,7 @@ export const LEVEL_1 = {
                   'Wszystkie trzy operują kontrastem, ale różnią się budową gramatyczną.',
                 bullets: [
                   'Oksymoron (epitet sprzeczny): połączenie dwóch wyrazów (zwykle rzeczownik + przymiotnik) o wykluczających się znaczeniach, np. „żywy trup”, „gorzka słodycz”, „zimny ogień”, „suchy ocean” (Mickiewicz). Funkcja: oddaje wewnętrzne rozdarcie bohatera lub niezwykłość zjawiska.',
-                  'Antyteza: zestawienie dwóch przeciwstawnych członów zdania lub wersów, np. „Lepiej z mądrym zgubić, niż z głupim znaleźć”, „Jedni płaczą, drudzy tańczą” (Bal u Senatora w Dziadach cz. III). Funkcja: wyostrza konflikt moralny lub społeczny.',
+                  'Antyteza: zestawienie dwóch przeciwstawnych członów zdania lub wersów, np. „Lepiej z mądrym zgubić, niż z głupim znaleźć”, „Nasz naród jak lawa, / Z wierzchu zimna i twarda, sucha i plugawa, / Lecz wewnętrznego ognia sto lat nie wyziębi” (Dziady cz. III). Funkcja: wyostrza konflikt moralny lub społeczny.',
                   'Paradoks: błyskotliwe, pozornie sprzeczne z logiką stwierdzenie, które kryje głęboką prawdę filozoficzną, np. „Wiem, że nic nie wiem”, „Śpieszymy się powoli”, „Tylko umarli widzieli koniec wojny”.'
                 ],
                 essayUse: 'W baroku (Morsztyn, Naborowski) i romantyzmie oksymorony i antytezy są podstawowym narzędziem opisu uczuć.'
@@ -112,7 +112,7 @@ export const LEVEL_1 = {
                 summary:
                   'Oba środki mają ukryte, niedosłowne znaczenie, ale różnią się liczbą możliwych odczytań.',
                 bullets: [
-                  'Alegoria: znak JEDNOZNACZNY, mający w kulturze stałe, ustalone znaczenie, które każdy oczytany odbiorca odkoduje tak samo. Przykłady: lis = przebiegłość, mrówka = pracowitość (Bajki Krasickiego), kobieta z zawiązanymi oczami i wagą = sprawiedliwość, tonący okręt = ginąca ojczyzna (Kazania sejmowe Skargi).',
+                  'Alegoria: znak JEDNOZNACZNY, mający w kulturze stałe, ustalone znaczenie, które każdy oczytany odbiorca odkoduje tak samo. Przykłady: lis = przebiegłość, mrówka = pracowitość (Bajki Krasickiego), kobieta z zawiązanymi oczami i wagą = sprawiedliwość, tonący okręt = ginąca ojczyzna (Kazania sejmowe Skargi — od 2024 r. poza podstawą PP, kontekst / przejściowo 2025–2028).',
                   'Symbol: znak WIELOZNACZNY, tajemniczy, którego nie da się sprowadzić do jednej prostej definicji. Przykłady z „Wesela”: Chochoł (z jednej strony uśpienie, marazm i niemoc Polaków, ale z drugiej — słomiana osłona chroniąca krzak róży na zimę, czyli nadzieja na odrodzenie wiosną!).'
                 ],
                 essayUse: 'Pamiętaj: Średniowiecze i Oświecenie kochają alegorię, a Romantyzm i Młoda Polska — symbol.'
@@ -125,7 +125,7 @@ export const LEVEL_1 = {
                 summary:
                   'Te cztery pojęcia pojawiają się w niemal każdym arkuszu próbnym Operonu i CKE.',
                 bullets: [
-                  'Apostrofa: bezpośredni, patetyczny zwrot do adresata — osoby, Boga, ojczyzny, idei lub przedmiotu („O myśli! w twojej głębi jest hydra pamiątek”, „Wielkiś mi uczynił pustki w domu moim, moja droga Orszulo”). Funkcja: nadaje wypowiedzi uroczysty, podniosły lub intymny ton.',
+                  'Apostrofa: bezpośredni, patetyczny zwrot do adresata — osoby, Boga, ojczyzny, idei lub przedmiotu („O myśli! w twojej głębi jest hydra pamiątek”, „Wielkieś mi uczyniła pustki w domu moim, Moja droga Orszulo...” — Tren VIII). Funkcja: nadaje wypowiedzi uroczysty, podniosły lub intymny ton.',
                   'Inwokacja: rozbudowana apostrofa umieszczona na samym początku eposu („Pan Tadeusz”, „Iliada”), w której autor zwraca się do muzy, bóstwa lub ojczyzny z prośbą o natchnienie twórcze.',
                   'Peryfraza (omówienie): zastąpienie prostej nazwy rozbudowanym opisem poetyckim, np. zamiast „słońce” → „oko dnia”, zamiast „zima” → „biała pani północy”. Funkcja: wzbogaca styl i unika potocznych powtórzeń.',
                   'Anafora: rozpoczynanie kolejnych wersów lub zdań tym samym słowem/zwrotem. Funkcja: rytmizuje tekst i wzmacnia siłę perswazji.'
@@ -183,7 +183,7 @@ export const LEVEL_1 = {
               desc: 'Pieśń, fraszka, tren, sonet, hymn, wiersz wolny + rodzaje liryki.',
               details: {
                 summary:
-                  'W liryce mówi podmiot liryczny (NIGDY nie utożsamiaj go automatycznie z autorem — wyjątkiem są „Treny” Kochanowskiego, gdzie podmiotem jest sam poeta-ojciec!).',
+                  'W liryce mówi podmiot liryczny (NIGDY nie utożsamiaj go wprost z autorem — choć w liryce osobistej, np. w „Trenach” Kochanowskiego, jest on bardzo bliski samemu poecie-ojcu).',
                 bullets: [
                   'Liryka bezpośrednia: podmiot ujawnia się w 1. os. („ja”, „mój”, „czuję”, „płaczę”) — mówi wprost o swoich przeżyciach.',
                   'Liryka pośrednia: podmiot jest ukryty w 3. os., opisuje pejzaż, scenę lub bohatera, a emocje wynikają z samego opisu.',
@@ -229,7 +229,7 @@ export const LEVEL_1 = {
     { id: 'f1-11', front: 'Czym różni się liryka bezpośrednia od pośredniej?', back: 'W bezpośredniej podmiot liryczny ujawnia się wprost („widzę, kocham”), a w pośredniej ukrywa się za opisem sytuacji lub obrazu.' },
     { id: 'f1-12', front: 'Co to jest aluzja literacka? Podaj przykład.', back: 'Świadome nawiązanie w utworze do innego znanego dzieła (np. „Tango” Mrożka nawiązuje do „Wesela” i „Hamleta”).' },
     { id: 'f1-13', front: 'Jakie są główne kryteria oceny pytań otwartych w Części 1 arkusza maturalnego?', back: 'Liczy się precyzyjna odpowiedź wprost na polecenie, odwołanie do konkretnego mechanizmu/przykładu w tekście oraz zwięzłość bez lania wody.' },
-    { id: 'f1-14', front: 'Czym jest zasada kaskadowa oceny notatki syntetyzującej?', back: 'Najpierw oceniana jest treść (0–3 pkt); jeżeli za treść uczeń dostanie 0 pkt (np. pominie jeden tekst), automatycznie otrzymuje 0 pkt również za język (kryterium D).' },
+    { id: 'f1-14', front: 'Czym jest zasada kaskadowa oceny notatki syntetyzującej?', back: 'Najpierw oceniana jest treść (0–3 pkt); jeżeli za treść uczeń dostanie 0 pkt (np. pominie jeden tekst), automatycznie otrzymuje 0 pkt również w kryterium poprawności językowej (0–1 pkt).' },
     { id: 'f1-15', front: 'Czym różni się funkcja impresywna (nakłaniająca) od funkcji ekspresywnej?', back: 'Impresywna ma wywołać reakcję odbiorcy (tryb rozkazujący, apele, pytania retoryczne); ekspresywna wyraża uczucia i emocje nadawcy (wykrzykniki, zdrobnienia, słownictwo oceniające).' },
     { id: 'f1-16', front: 'Czym jest funkcja metajęzykowa i fatyczna?', back: 'Metajęzykowa wyjaśnia sam język, znaczenie słów lub definicje; fatyczna służy nawiązaniu, podtrzymaniu lub sprawdzeniu kontaktu z rozmówcą.' },
     { id: 'f1-17', front: 'Podaj różnicę między antytezą a oksymoronem.', back: 'Oksymoron to dwa sprzeczne wyrazy obok siebie („zimny ogień”), a antyteza to zestawienie dwóch przeciwstawnych myśli lub zdań („zgoda buduje, niezgoda rujnuje”).' },
@@ -238,7 +238,7 @@ export const LEVEL_1 = {
     { id: 'f1-20', front: 'Co to jest ironia i hiperbola w zadaniach z analizy tekstu?', back: 'Ironia polega na sprzeczności między dosłownym znaczeniem a ukrytym sensem (często kpiną); hiperbola to celowe wyolbrzymienie (np. „morze łez”) wzmacniające ekspresję.' },
     { id: 'f1-21', front: 'Jakie są główne cechy dramatu romantycznego („Dziady cz. III”, „Kordian”)?', back: 'Otwarta, luźna kompozycja, synkretyzm rodzajowy, łamanie zasady trzech jedności, obecność scen zbiorowych i fantastycznych oraz bohater indywidualista.' },
     { id: 'f1-22', front: 'Jakie są główne cechy eposu jako gatunku epickiego?', back: 'Rozbudowany utwór wierszowany o przełomowych losach narodu, pisany podniosłym stylem, z inwokacją, porównaniami homeryckimi i wszechwiedzącym narratorem.' },
-    { id: 'f1-23', front: 'Czym różni się liryka inwokacyjna od liryki sytuacji (opisowej)?', back: 'Inwokacyjna zawiera bezpośredni zwrot do adresata („Litwo! Ojczyzno moja!”), a opisowa/sytuacyjna przedstawia obraz lub scenkę bez ujawniania wprost „ja” mówiącego.' },
+    { id: 'f1-23', front: 'Czym różni się liryka inwokacyjna od liryki sytuacji (opisowej)?', back: 'Inwokacyjna zawiera bezpośredni zwrot do adresata (np. „Czego chcesz od nas, Panie...” albo „Smutno mi, Boże!”), a opisowa/sytuacyjna przedstawia obraz lub scenkę bez ujawniania wprost „ja” mówiącego.' },
     { id: 'f1-24', front: 'Czym jest paradoks w odróżnieniu od zwykłego błędu logicznego?', back: 'Paradoks to sformułowanie pozornie sprzeczne z logiką lub zdrowym rozsądkiem, które jednak ujawnia głębszą prawdę filozoficzną lub psychologiczną (np. „Wiem, że nic nie wiem”).' }
   ],
   quiz: [
@@ -263,7 +263,7 @@ export const LEVEL_1 = {
       q: 'Który gatunek jest charakterystyczny dla „Zdążyć przed Panem Bogiem” Hanny Krall?',
       options: ['Nowela pozytywistyczna', 'Reportaż literacki', 'Powieść paraboliczna', 'Dramat symboliczny'],
       correct: 1,
-      explanation: '„Zdążyć przed Panem Bogiem” to reportaż (wywiad-rzeka z Markiem Edelmanem).'
+      explanation: '„Zdążyć przed Panem Bogiem” to reportaż literacki (oparty na rozmowach z Markiem Edelmanem).'
     },
     {
       q: 'Zastąpienie słowa „słońce” opisem „dzienna gwiazda” to:',

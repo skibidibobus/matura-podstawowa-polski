@@ -23,42 +23,41 @@ export const DEPT_01 = {
           variant: 'amber',
           title: 'Pułapki zerujące i ucinające punkty (Zasady CKE)',
           items: [
-            'Rygorystyczny limit 60–90 wyrazów: 59 słów lub 91 słów oznacza automatyczną utratę 1 punktu w kryterium formalnym D! Tekst liczący poniżej 30 słów jest całkowicie zerowany (0/4 pkt).',
+            'Rygorystyczny limit 60–90 wyrazów: napisanie 59 słów lub 91 słów oznacza odjęcie 1 punktu za treść (maks. 3/4 pkt za całą notatkę). Samo niespełnienie limitu słów nie zeruje automatycznie pracy.',
             'Zasada liczenia słów: Zaimki, spójniki („i”, „że”) oraz jednoliterowe przyimki („w”, „z”, „o”) są liczone jako osobne wyrazy. Liczby zapisane cyframi (np. „1984”, „2”) to również pełne wyrazy. Wyrazy z łącznikiem (np. „biało-czerwony”) liczą się jako jeden wyraz.',
-            'Zero dosłownych cytatów: Użycie cytatów w cudzysłowie nie jest uznawane za syntezę własną — egzaminator odlicza je od objętości lub obniża ocenę za uogólnienie.',
+            'Zero dosłownych cytatów: notatka syntetyzująca musi być parafrazą własnymi słowami — dosłowne przytaczanie zdań w cudzysłowie obniża ocenę za umiejętność uogólnienia i syntezy.',
             'Zero własnej opinii: Sformułowania wartościujące („autor słusznie zauważa”, „moim zdaniem”) są błędem merytorycznym — obowiązuje bezwzględny obiektywizm relacjonowania.',
-            'Zasada kaskadowa oceny: Jeśli za treść (kryteria A, B, C) otrzymasz 0 punktów, ocena za język wynosi automatycznie 0 punktów, niezależnie od bezbłędnej polszczyzny.'
+            'Zasada kaskadowa oceny: Jeśli za treść (0–3 pkt) otrzymasz 0 punktów, ocena za poprawność językową wynosi automatycznie 0 punktów, niezależnie od bezbłędnej polszczyzny.'
           ]
         },
         {
           type: 'callout',
           variant: 'emerald',
-          title: '4 Kryteria Oceny CKE (3 pkt treść + 1 pkt język)',
+          title: 'Kryteria Oceny CKE (Treść 0–3 pkt + Język 0–1 pkt)',
           items: [
-            'Kryterium A: Zgodność z tematem i adekwatne przedstawienie stanowisk obu autorów (1 pkt).',
-            'Kryterium B: Bezpośrednie zestawienie stanowisk (wskazanie podobieństw lub różnic, relacji nadrzędności/podrzędności) (1 pkt). Dwa oddzielne miniaturowe streszczenia bez łącznika logicznego = 0 pkt w kryterium B!',
-            'Kryterium C: Synteza własnymi słowami, uogólnienie i spójność logiczna wywodu (1 pkt).',
-            'Kryterium D: Zmieszczenie się w przedziale 60–90 wyrazów (warunek przyznania pełnych 3 pkt za treść).',
-            'Kryterium Językowe (1 pkt): Przyznawany za poprawność gramatyczną, ortograficzną i interpunkcyjną przy zachowaniu max 2 błędów łącznie. 3 lub więcej błędów = 0 pkt za język.'
+            'Treść — aspekt 1 (przedstawienie stanowisk): Zgodność z poleceniem oraz trafne oddanie stanowisk obu autorów.',
+            'Treść — aspekt 2 (zestawienie): Bezpośrednie porównanie stanowisk (wskazanie podobieństw, różnic lub relacji między nimi). Dwa oddzielne miniaturowe streszczenia bez łącznika logicznego obniżają wynik!',
+            'Treść — aspekt 3 (synteza i limit słów): Uogólnienie własnymi słowami, spójność oraz zmieszczenie się w przedziale 60–90 wyrazów (przekroczenie limitu odejmuje 1 pkt z oceny treści).',
+            'Kryterium Językowe (0–1 pkt): Przyznawany za poprawność językową, ortograficzną i interpunkcyjną przy zachowaniu maks. 2 błędów łącznie (3 lub więcej błędów = 0 pkt za język).'
           ]
         },
         {
           type: 'quote',
           label: 'Uniwersalny Wzorzec Maturalny na 4/4 pkt (~74 słowa)',
-          text: 'Zarówno [Autor 1 / Tekst 1], jak i [Autor 2 / Tekst 2] podejmują zagadnienie [dokładny temat z polecenia]. Oboje badacze są zgodni co do tego, że [wspólne stanowisko / punkt wyjścia]. Różnią się jednak w ocenie [konkretny aspekt różnicy]. Pierwszy autor akcentuje [główny argument tekstu 1], wskazując na [wniosek 1]. Z kolei drugi autor skupia się na [główny argument tekstu 2], dowodząc, że [wniosek 2]. Podsumowując, pierwszy tekst uwypukla wymiar [np. społeczny], natomiast drugi kładzie nacisk na aspekt [np. psychologiczny].',
-          analysis: 'Wzorzec realizuje wszystkie 4 kryteria: nazywa wspólny temat, wskazuje punkt wspólny, przeprowadza kontrastową syntezę i kończy klamrą porównawczą.'
+          text: 'Zarówno [Autor 1 / Tekst 1], jak i [Autor 2 / Tekst 2] podejmują zagadnienie [dokładny temat z polecenia]. Autorzy są zgodni co do tego, że [wspólne stanowisko / punkt wyjścia]. Różnią się jednak w ocenie [konkretny aspekt różnicy]. Pierwszy autor akcentuje [główny argument tekstu 1], wskazując na [wniosek 1]. Z kolei drugi autor skupia się na [główny argument tekstu 2], dowodząc, że [wniosek 2]. W podsumowaniu pierwszy tekst uwypukla wymiar [np. społeczny], natomiast drugi kładzie nacisk na aspekt [np. psychologiczny].',
+          analysis: 'Wzorzec realizuje wszystkie wymogi CKE: nazywa wspólny temat, wskazuje punkt wspólny, przeprowadza kontrastową syntezę i kończy klamrą porównawczą.'
         },
         {
           type: 'grid',
           items: [
             {
               term: 'Katalog zwrotów syntetyzujących',
-              desc: 'Zwroty logiczne gwarantujące realizację kryterium B (zestawienie).',
+              desc: 'Zwroty logiczne gwarantujące właściwe zestawienie stanowisk.',
               details: {
                 summary: 'Aby nie stworzyć dwóch odrębnych streszczeń, każde zdanie powinno operować łącznikami porównawczymi.',
                 bullets: [
                   '„Zarówno [Autor 1], jak i [Autor 2] zauważają, że…” (wskazanie analogii).',
-                  '„Oboje autorzy podzielają pogląd o…” (podstawa wspólna).',
+                  '„Obaj autorzy / Obie autorki / Oboje autorów podziela(ją) pogląd o…” (podstawa wspólna).',
                   '„Z kolei [Autor 2], w przeciwieństwie do [Autora 1], kładzie nacisk na…” (kontrast).',
                   '„Podczas gdy pierwszy tekst skupia się na…, drugi uwypukla rolę…” (zestawienie proporcji).',
                   '„W podsumowaniu można stwierdzić, że autorzy ujmują zjawisko komplementarnie: z perspektywy… oraz…” (synteza końcowa).'
@@ -72,7 +71,7 @@ export const DEPT_01 = {
               details: {
                 summary: 'Polecenie: Porównaj stanowiska autorów na temat wpływu sztucznej inteligencji na proces uczenia się.',
                 bullets: [
-                  'Tekst modelowy (77 słów): „Zarówno Jan Kowalski, jak i Anna Nowak analizują wpływ sztucznej inteligencji na proces uczenia się. Oboje autorzy są zgodni, że algorytmy nieodwracalnie przekształcają tradycyjną edukację. Różnią się jednak w ocenie skutków tej transformacji. Kowalski akcentuje korzyści, wykazując, że technologia umożliwia personalizację nauczania i wspiera autonomię ucznia. Z kolei Nowak ostrzega przed degradacją pamięci i zanikiem krytycznego myślenia u młodzieży. Podsumowując, podczas gdy pierwszy autor dostrzega w technologii szansę rozwojową, druga badaczka traktuje ją jako zagrożenie poznawcze.”'
+                  'Tekst modelowy (77 słów): „Zarówno Jan Kowalski, jak i Anna Nowak analizują wpływ sztucznej inteligencji na proces uczenia się. Oboje autorów jest zgodnych, że algorytmy nieodwracalnie przekształcają tradycyjną edukację. Różnią się jednak w ocenie skutków tej transformacji. Kowalski akcentuje korzyści, wykazując, że technologia umożliwia personalizację nauczania i wspiera autonomię ucznia. Z kolei Nowak ostrzega przed degradacją pamięci i zanikiem krytycznego myślenia u młodzieży. W podsumowaniu pierwszy autor dostrzega w technologii szansę rozwojową, natomiast druga badaczka traktuje ją jako realne zagrożenie poznawcze.”'
                 ],
                 essayUse: 'Zwróć uwagę na dokładne policzenie słów (77 wyrazów mieści się idealnie w bezpiecznym marginesie 70–80 słów).'
               }
@@ -290,7 +289,8 @@ export const DEPT_01 = {
                 summary: 'W zadaniach CKE musisz nazwać rodzaj zastosowanego argumentu.',
                 bullets: [
                   'Argumenty logiczne (rozumowe / Logos): wnioskowanie indukcyjne (od szczegółu do ogółu) lub dedukcyjne (od ogólnej reguły do szczegółu), związki przyczynowo-skutkowe, definicje.',
-                  'Argumenty rzeczowe: autentyczne fakty, dane statystyczne, wyniki badań naukowych, cytaty z autorytetów, przykłady historyczne.',
+                  'Argumenty etyczne i autorytatywne (Ethos): odwołanie do wiarygodności nadawcy, norm moralnych, autorytetów naukowych lub kulturowych.',
+                  'Argumenty rzeczowe: autentyczne fakty, dane statystyczne, wyniki badań naukowych, cytaty z dokumentów, przykłady historyczne.',
                   'Argumenty emocjonalne (Pathos): odwoływanie się do uczuć odbiorcy (litości, strachu, dumy narodowej, współczucia), wyolbrzymianie zagrożeń.'
                 ],
                 essayUse: 'W wypracowaniu maturalnym najwyżej punktowane są argumenty logiczne poparte trafnym kontekstem rzeczowym.'
@@ -302,9 +302,9 @@ export const DEPT_01 = {
     }
   ],
   flashcards: [
-    { id: 'kf1-1', front: 'Jaki jest bezwzględny limit słów w notatce syntetyzującej na maturze CKE?', back: 'Od 60 do 90 wyrazów. Napisanie 59 lub 91 słów skutkuje utratą 1 punktu w kryterium formalnym D.', hint: 'Margines bezpieczeństwa to 70–80 słów.', category: 'wypracowanie' },
-    { id: 'kf1-2', front: 'Co oznacza zasada kaskadowa w ocenie notatki syntetyzującej?', back: 'Jeśli notatka otrzyma 0 punktów za treść (brak tematu, brak zestawienia, objętość poniżej 30 słów), to automatycznie otrzymuje 0 punktów za język (wynik całkowity: 0/4 pkt).', hint: 'Bez treści nie ma punktu za poprawność językową.', category: 'wypracowanie' },
-    { id: 'kf1-3', front: 'Dlaczego w notatce syntetyzującej NIE WOLNO stosować dosłownych cytatów?', back: 'Egzaminator CKE nie uznaje cytatów za syntezę własną — cytaty są odliczane od objętości pracy lub obniżają ocenę za kryterium C (uogólnianie). Stosuj wyłącznie parafrazę.', hint: 'Zero cudzysłowów — pisz własnymi słowami.', category: 'wypracowanie' },
+    { id: 'kf1-1', front: 'Jaki jest bezwzględny limit słów w notatce syntetyzującej na maturze CKE?', back: 'Od 60 do 90 wyrazów. Napisanie 59 lub 91 słów skutkuje utratą 1 punktu w kryterium treści (maks. 3/4 pkt).', hint: 'Margines bezpieczeństwa to 70–80 słów.', category: 'wypracowanie' },
+    { id: 'kf1-2', front: 'Co oznacza zasada kaskadowa w ocenie notatki syntetyzującej?', back: 'Jeśli notatka otrzyma 0 punktów za treść (np. całkowity brak realizacji polecenia i zestawienia stanowisk), to automatycznie otrzymuje 0 punktów za język (wynik całkowity: 0/4 pkt).', hint: 'Bez treści nie ma punktu za poprawność językową.', category: 'wypracowanie' },
+    { id: 'kf1-3', front: 'Dlaczego w notatce syntetyzującej NIE WOLNO stosować dosłownych cytatów?', back: 'Notatka sprawdza umiejętność własnego uogólnienia — dosłowne przytaczanie zdań z tekstu obniża ocenę za kryterium treści (brak syntezy własnymi słowami). Stosuj wyłącznie parafrazę.', hint: 'Zero cudzysłowów — pisz własnymi słowami.', category: 'wypracowanie' },
     { id: 'kf1-4', front: 'Na czym polega funkcja metajęzykowa wypowiedzi?', back: 'Tekst skupia się na samym języku — wyjaśnia znaczenie wyrazu, etymologię, poprawność gramatyczną lub reguły ortograficzne (np. definicja słownikowa).', hint: 'Język opowiadający o języku.', category: 'jezyk' },
     { id: 'kf1-5', front: 'Czym różni się funkcja impresywna od ekspresywnej?', back: 'Funkcja impresywna skupia się na odbiorcy (nakłania, rozkazuje, przekonuje), a ekspresywna na nadawcy (wyraża jego własne emocje, stan ducha i oceny).', hint: 'Impresja = wpływ na kogoś; ekspresja = wyrzucenie z siebie uczuć.', category: 'jezyk' },
     { id: 'kf1-6', front: 'Czym różni się oksymoron od antytezy?', back: 'Oksymoron to zestawienie dwóch sprzecznych wyrazów (np. „gorzki miód”), a antyteza to zestawienie dwóch przeciwstawnych całych zdań lub sądów logicznych.', hint: 'Oksymoron to miniatura (związek wyrazowy); antyteza to konstrukcja zdaniowa.', category: 'pojecie' },
@@ -320,8 +320,8 @@ export const DEPT_01 = {
     { id: 'kf1-16', front: 'Co to jest inwersja w poezji i prozie artystycznej?', back: 'Szyk przestawny wyrazów, naruszający naturalną kolejność gramatyczną w celu uwypuklenia kluczowego słowa lub stylizacji na język dawny.', hint: 'Przestawienie słów dla patosu.', category: 'pojecie' },
     { id: 'kf1-17', front: 'Czym jest argument rzeczowy w wypowiedzi argumentacyjnej?', back: 'Argument oparty na weryfikowalnych faktach: danych statystycznych, wynikach badań, cytatach z ekspertów, konkretnych datach i wydarzeniach historycznych.', hint: 'Fakty, liczby, twarde dowody.', category: 'wypracowanie' },
     { id: 'kf1-18', front: 'Dlaczego nie wolno pisać w wypracowaniu: „Uważam, że autor ma rację” w analizie tekstu w Części 1?', back: 'Zadania w Części 1 badają zrozumienie intencji i struktury tekstu autora, a nie osobiste upodobania zdającego — liczy się bezstronny dowód analityczny.', hint: 'Arkusz bada wiedzę i logikę, nie sympatie.', category: 'wypracowanie' },
-    { id: 'kf1-19', front: 'Ile punktów można zdobyć w notatce syntetyzującej za kryteria A, B i C (treść) oraz za kryterium D (język)?', back: 'Za treść (A: wspólny temat, B: zestawienie podobieństw i różnic, C: brak zbędnych szczegółów i dygresji) otrzymuje się łącznie 0–3 pkt, a za poprawność językową, ortograficzną i interpunkcyjną (D) — 0–1 pkt (łącznie maks. 4 pkt).', hint: 'Podział 3 pkt + 1 pkt.', category: 'wypracowanie' },
-    { id: 'kf1-20', front: 'Czym jest zasada trójdzielnej struktury akapitów w notatce syntetyzującej?', back: 'Akspit 1: wprowadzenie wspólnego tematu obu tekstów; Akapit 2: rozwinięcie różnic i punktów stycznych obu autorów; Akapit 3: zwięzła synteza klamrowa bez własnych ocen.', hint: 'Wspólny mianownik → zestawienie → klamra.', category: 'wypracowanie' },
+    { id: 'kf1-19', front: 'Jak dzielą się 4 punkty za notatkę syntetyzującą w zasadach oceniania CKE?', back: 'Za treść (wspólny temat, zestawienie podobieństw i różnic, uogólnienie własnymi słowami oraz limit 60–90 wyrazów) otrzymuje się 0–3 pkt, a za poprawność językową, ortograficzną i interpunkcyjną (maks. 2 błędy) — 0–1 pkt (łącznie maks. 4 pkt).', hint: 'Podział 3 pkt (treść) + 1 pkt (język).', category: 'wypracowanie' },
+    { id: 'kf1-20', front: 'Czym jest zasada trójdzielnej struktury akapitów w notatce syntetyzującej?', back: 'Akapit 1: wprowadzenie wspólnego tematu obu tekstów; Akapit 2: rozwinięcie różnic i punktów stycznych obu autorów; Akapit 3: zwięzła synteza klamrowa bez własnych ocen.', hint: 'Wspólny mianownik → zestawienie → klamra.', category: 'wypracowanie' },
     { id: 'kf1-21', front: 'Dlaczego w notatce syntetyzującej zakazane jest dosłowne cytowanie lub kopiowanie zdań z arkusza?', back: 'Notatka sprawdza umiejętność własnego, skondensowanego parafrazowania sensu obu tekstów — przepisywanie całych zdań grozi utratą punktów za brak uogólnienia i przekroczeniem limitu 90 słów.', hint: 'Parafraza i uogólnienie zamiast „kopiuj-wklej”.', category: 'wypracowanie' },
     { id: 'kf1-22', front: 'Czym różni się funkcja fatyczna języka od funkcji poetyckiej?', back: 'Funkcja fatyczna służy nawiązaniu, podtrzymaniu lub zakończeniu kontaktu z odbiorcą („Halo, słyszysz mnie?”, „Dzień dobry”), a funkcja poetycka skupia uwagę na samej formie i brzmieniu komunikatu (rytm, metafory, gry słowne).', hint: 'Kontakt z rozmówcą vs piękno/organizacja tekstu.', category: 'pojecie' },
     { id: 'kf1-23', front: 'Na czym polega funkcja referencjalna (informatywna/poznawcza) i jakie cechy tekstu na nią wskazują?', back: 'Przekazuje obiektywną wiedzę o świecie, faktach i zjawiskach; wyróżnia się brakiem emocjonalizmów, obecnością terminów naukowych, liczb, dat i czasowników w 3. osobie.', hint: 'Neutralny przekaz faktów.', category: 'pojecie' },
@@ -360,11 +360,11 @@ export const DEPT_01 = {
         "0 punktów"
       ],
       correct: 0,
-      explanation: "Za niespełnienie kryterium D (limit 60–90 słów) uczeń traci 1 punkt w kryterium formalnym. Jeśli praca jest merytorycznie i językowo doskonała, może otrzymać maksymalnie 3 punkty (2 za treść + 1 za język).",
+      explanation: "Za niespełnienie wymogu objętości (limit 60–90 słów) uczeń traci 1 punkt w ocenie treści. Jeśli praca jest poza tym merytorycznie i językowo doskonała, może otrzymać maksymalnie 3 punkty (2 za treść + 1 za język).",
       whyWrong: {
         1: "4 punkty są niemożliwe z powodu złamania dolnego limitu 60 słów.",
         2: "2 punkty otrzymałby, gdyby dodatkowo popełnił błędy językowe lub usterki syntezy.",
-        3: "Praca nie jest zerowana — próg kasacji wynosi poniżej 30 wyrazów."
+        3: "Samo przekroczenie limitu słów nie zeruje pracy — 0 pkt pada dopiero przy 0 pkt za treść (zasada kaskadowa)."
       },
       examTip: "Zawsze licz słowa w brudnopisie. Jeśli masz 58 wyrazów, dodaj jedno rozwinięcie (np. „w sposób jednoznaczny”) i bezpiecznie osiągnij 62 słowa."
     },
@@ -414,8 +414,8 @@ export const DEPT_01 = {
       explanation: "„W miesiącu lipcu” to pleonazm, ponieważ lipiec z definicji jest miesiącem. Poprawna forma to: „w lipcu”.",
       whyWrong: {
         1: "To w 100% poprawny związek frazeologiczny (błędem byłoby: „ciężki orzech”).",
-        2: "To zwykły związek wyrazowy z epitetem.",
-        3: "To poprawny związek frazeologiczny."
+        2: "To poprawne połączenie wyrazowe (kolokacja bez powtórzenia treści), a nie pleonazm.",
+        3: "To poprawna kolokacja."
       },
       examTip: "Unikaj w wypracowaniu: „w miesiącu…”, „w okresie czasu…”, „cofnąć się wstecz…”."
     },
@@ -522,7 +522,7 @@ export const DEPT_01 = {
       examTip: "Statystyki, daty i cytaty z ustaw to zawsze argumenty rzeczowe."
     },
     {
-      q: "Wskaż szereg zawierający wyłącznie błędy językowe zewnątrzjęzykowe (ortograficzne lub interpunkcyjne):",
+      q: "Wskaż szereg zawierający wyłącznie błędy zewnątrzjęzykowe (ortograficzne lub interpunkcyjne):",
       options: [
         "Brak przecinka przed spójnikiem „ale”, pisownia „nie łatwy” zamiast „niełatwy”.",
         "Użycie zwrotu „w cudzysłowiu”, błąd imiesłowu przysłówkowego.",
@@ -539,7 +539,7 @@ export const DEPT_01 = {
       examTip: "Zasady oceniania CKE surowo rozróżniają błędy gramatyczne od ortograficznych i interpunkcyjnych."
     },
     {
-      q: "Jakie jest dokładne znaczenie kryterium A w ocenie notatki syntetyzującej na maturze?",
+      q: "Co w ocenie treści notatki syntetyzującej sprawdza pierwsze kryterium merytoryczne (przedstawienie stanowisk)?",
       options: [
         "Określenie wspólnego tematu lub problemu, do którego odnoszą się oba teksty źródłowe.",
         "Zacytowanie minimum dwóch zdań z każdego tekstu w celu udowodnienia jego lektury.",
@@ -547,7 +547,7 @@ export const DEPT_01 = {
         "Użycie co najmniej trzech terminów z zakresu teorii literatury."
       ],
       correct: 0,
-      explanation: "Kryterium A bada, czy zdający prawidłowo rozpoznał i nazwał wspólny temat/problem łączący oba zacytowane teksty.",
+      explanation: "Pierwszy warunek kryterium treści bada, czy zdający prawidłowo rozpoznał i nazwał wspólny temat/problem oraz stanowiska autorów w obu tekstach.",
       whyWrong: {
         1: "Cytowanie fragmentów w notatce jest zbędne i marnuje limit 60–90 słów.",
         2: "W notatce obowiązuje obiektywizm bez własnych opinii.",
