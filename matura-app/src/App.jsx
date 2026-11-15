@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { BookOpen, CheckCircle2, HelpCircle, Layers, Lock } from 'lucide-react';
+import { BookOpen, CheckCircle2, HelpCircle, Layers, Lock, Menu, User } from 'lucide-react';
 import { LEVELS } from './data/levels';
 import { ORAL_LEVELS } from './data/oralLevels';
 import { KURS_PODSTAWOWY_LEVELS } from './data/kursPodstawowyLevels';
 import { Sidebar } from './components/Sidebar';
+import { BrandLogo } from './components/BrandLogo';
 import { NotesView } from './components/NotesView';
 import { FlashcardsView } from './components/FlashcardsView';
 import { QuizView } from './components/QuizView';
@@ -167,6 +168,22 @@ export function App() {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
+
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  useEffect(() => {
+    if (!mobileNavOpen || typeof document === 'undefined') return undefined;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') setMobileNavOpen(false);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [mobileNavOpen]);
 
   const applyProgressState = (progressObj) => {
     const src = progressObj && typeof progressObj === 'object' ? progressObj : {};
@@ -488,6 +505,53 @@ export function App() {
 
   return (
     <div className="app-shell">
+      <header className="mobile-topbar">
+        <button
+          type="button"
+          className="mobile-menu-btn"
+          onClick={() => setMobileNavOpen(true)}
+          aria-label="Otwórz menu"
+          aria-expanded={mobileNavOpen}
+        >
+          <Menu size={20} />
+        </button>
+        <button
+          type="button"
+          className="mobile-topbar-brand"
+          onClick={() => setShowWelcome(true)}
+          title="Przejdź do strony głównej"
+        >
+          <BrandLogo size={26} />
+          <span className="mobile-topbar-text">
+            <strong>Matura Polski</strong>
+            <span>
+              {rankingMode
+                ? 'Rankingi'
+                : reviewMode
+                  ? 'Powtórka fiszek'
+                  : activeLevel?.title || 'Kurs'}
+            </span>
+          </span>
+        </button>
+        <button
+          type="button"
+          className={`mobile-account-btn ${authSession?.user ? 'logged-in' : ''}`}
+          onClick={() => setAccountModalOpen(true)}
+          aria-label="Konto"
+        >
+          <User size={16} />
+          <span>{authSession?.user?.displayName || 'Zaloguj'}</span>
+        </button>
+      </header>
+
+      {mobileNavOpen && (
+        <div
+          className="mobile-sidebar-backdrop"
+          onClick={() => setMobileNavOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
       <Sidebar
         activeCourse={activeCourse}
         onSelectCourse={handleSelectCourse}
@@ -507,6 +571,8 @@ export function App() {
         onOpenWelcome={() => setShowWelcome(true)}
         allowedCourses={allowedCourses}
         isGuestPreviewLimited={isGuestPreviewLimited}
+        mobileOpen={mobileNavOpen}
+        onCloseMobile={() => setMobileNavOpen(false)}
         reviewCount={reviewCards.length}
         completedLevelsCount={completedLevelsCount}
         masteredCardsCount={masteredCardsCount}

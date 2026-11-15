@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BookOpen, Check, CheckCircle2, ChevronDown, ChevronRight, Lock, Maximize2, Minimize2, Moon, RotateCcw, Sun, Trophy, User } from 'lucide-react';
+import { BookOpen, Check, CheckCircle2, ChevronDown, ChevronRight, Lock, Maximize2, Minimize2, Moon, RotateCcw, Sun, Trophy, User, X } from 'lucide-react';
 import { BrandLogo } from './BrandLogo';
 
 const COURSE_BRAND_SUBTITLES = {
@@ -38,6 +38,8 @@ export function Sidebar({
   onOpenWelcome,
   allowedCourses = ['probna', 'kurs', 'ustna'],
   isGuestPreviewLimited = false,
+  mobileOpen = false,
+  onCloseMobile = null,
 }) {
   const [expandedLevels, setExpandedLevels] = useState(() =>
     activeLevelId ? { [activeLevelId]: true } : {}
@@ -53,12 +55,15 @@ export function Sidebar({
   const progressPct = totalLevels > 0 ? Math.round((completedLevelsCount / totalLevels) * 100) : 0;
 
   return (
-    <aside className="sidebar">
+    <aside className={mobileOpen ? 'sidebar mobile-open' : 'sidebar'}>
       <div className="brand">
         <button
           type="button"
           className="brand-home-btn"
-          onClick={onOpenWelcome}
+          onClick={() => {
+            onCloseMobile?.();
+            onOpenWelcome?.();
+          }}
           title="Przejdź do strony głównej"
         >
           <BrandLogo size={34} />
@@ -72,7 +77,7 @@ export function Sidebar({
         <div className="brand-actions">
           <button
             type="button"
-            className="theme-btn"
+            className="theme-btn desktop-only-btn"
             onClick={onToggleFullscreen}
             title={isFullscreen ? 'Wyjdź z trybu pełnoekranowego (F)' : 'Tryb pełnoekranowy (F)'}
             aria-label="Tryb pełnoekranowy"
@@ -89,6 +94,16 @@ export function Sidebar({
           >
             {theme === 'dark' ? <Sun size={17} /> : <Moon size={17} />}
           </button>
+          {onCloseMobile && (
+            <button
+              type="button"
+              className="theme-btn mobile-sidebar-close"
+              onClick={onCloseMobile}
+              aria-label="Zamknij menu"
+            >
+              <X size={18} />
+            </button>
+          )}
         </div>
       </div>
 
@@ -96,7 +111,10 @@ export function Sidebar({
         <button
           type="button"
           className={`account-bar ${authUser ? 'logged-in' : ''}`}
-          onClick={onOpenAccount}
+          onClick={() => {
+            onCloseMobile?.();
+            onOpenAccount();
+          }}
         >
           <span className="account-bar-left">
             <User size={15} />
@@ -153,7 +171,10 @@ export function Sidebar({
         <button
           type="button"
           className={`ranking-nav-btn ${rankingMode ? 'active' : ''}`}
-          onClick={onToggleRankingMode}
+          onClick={() => {
+            onCloseMobile?.();
+            onToggleRankingMode();
+          }}
         >
           <Trophy size={15} />
           <span>Rankingi</span>
@@ -213,6 +234,7 @@ export function Sidebar({
                   onClick={() => {
                     if (isLockedForGuest) {
                       onSelectLevel(lvl.id);
+                      onCloseMobile?.();
                       return;
                     }
                     if (active) {
@@ -220,6 +242,7 @@ export function Sidebar({
                     } else {
                       setExpandedLevels((prev) => ({ ...prev, [lvl.id]: true }));
                       onSelectLevel(lvl.id);
+                      onCloseMobile?.();
                     }
                   }}
                 >
@@ -277,6 +300,7 @@ export function Sidebar({
                             } else {
                               onSelectLevel(lvl.id);
                             }
+                            onCloseMobile?.();
                           }}
                         >
                           <span className="subtopic-idx">{idx + 1}.</span>
@@ -308,7 +332,10 @@ export function Sidebar({
         <button
           type="button"
           className={`level-item review-pool-item ${reviewMode ? 'active' : ''}`}
-          onClick={onToggleReviewMode}
+          onClick={() => {
+            onCloseMobile?.();
+            onToggleReviewMode();
+          }}
         >
           <span className="level-num">
             <RotateCcw size={15} />
