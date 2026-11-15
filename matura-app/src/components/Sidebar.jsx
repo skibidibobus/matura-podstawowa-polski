@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BookOpen, Check, CheckCircle2, ChevronDown, ChevronRight, Maximize2, Minimize2, Moon, RotateCcw, Sun, Trophy, User } from 'lucide-react';
+import { BookOpen, Check, CheckCircle2, ChevronDown, ChevronRight, Lock, Maximize2, Minimize2, Moon, RotateCcw, Sun, Trophy, User } from 'lucide-react';
 
 const COURSE_BRAND_SUBTITLES = {
   ustna: 'Kurs 76 pytań jawnych • CKE 2026–2028',
@@ -34,6 +34,7 @@ export function Sidebar({
   onToggleLevelNotes,
   rankingMode = false,
   onToggleRankingMode,
+  allowedCourses = ['probna', 'kurs', 'ustna'],
 }) {
   const [expandedLevels, setExpandedLevels] = useState(() =>
     activeLevelId ? { [activeLevelId]: true } : {}
@@ -103,27 +104,36 @@ export function Sidebar({
           type="button"
           role="tab"
           aria-selected={activeCourse === 'probna'}
-          className={`course-tab ${activeCourse === 'probna' ? 'active' : ''}`}
+          className={`course-tab ${activeCourse === 'probna' ? 'active' : ''} ${
+            !allowedCourses.includes('probna') ? 'locked' : ''
+          }`}
           onClick={() => onSelectCourse('probna')}
         >
+          {!allowedCourses.includes('probna') && <Lock size={11} style={{ marginRight: 3 }} />}
           Matura Próbna
         </button>
         <button
           type="button"
           role="tab"
           aria-selected={activeCourse === 'kurs'}
-          className={`course-tab ${activeCourse === 'kurs' ? 'active' : ''}`}
+          className={`course-tab ${activeCourse === 'kurs' ? 'active' : ''} ${
+            !allowedCourses.includes('kurs') ? 'locked' : ''
+          }`}
           onClick={() => onSelectCourse('kurs')}
         >
+          {!allowedCourses.includes('kurs') && <Lock size={11} style={{ marginRight: 3 }} />}
           Kurs Główny
         </button>
         <button
           type="button"
           role="tab"
           aria-selected={activeCourse === 'ustna'}
-          className={`course-tab ${activeCourse === 'ustna' ? 'active' : ''}`}
+          className={`course-tab ${activeCourse === 'ustna' ? 'active' : ''} ${
+            !allowedCourses.includes('ustna') ? 'locked' : ''
+          }`}
           onClick={() => onSelectCourse('ustna')}
         >
+          {!allowedCourses.includes('ustna') && <Lock size={11} style={{ marginRight: 3 }} />}
           Matura Ustna
         </button>
       </div>
@@ -135,7 +145,7 @@ export function Sidebar({
           onClick={onToggleRankingMode}
         >
           <Trophy size={15} />
-          <span>Ranking uczniów</span>
+          <span>Rankingi</span>
         </button>
       )}
 

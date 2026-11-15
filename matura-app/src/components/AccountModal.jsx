@@ -24,8 +24,15 @@ const LOG_TYPE_META = {
   user_created: { label: 'Nowe konto', tone: 'ok' },
   password_reset: { label: 'Reset hasła', tone: 'warn' },
   progress_reset: { label: 'Reset postępu', tone: 'warn' },
+  courses_updated: { label: 'Dostęp do kursów', tone: 'accent' },
   user_deleted: { label: 'Usunięto konto', tone: 'danger' },
 };
+
+const ALL_COURSES_LIST = [
+  { id: 'probna', label: 'Sprint 7h' },
+  { id: 'kurs', label: 'Kurs Główny' },
+  { id: 'ustna', label: 'Matura Ustna' },
+];
 
 const COURSE_LABELS = {
   probna: 'Sprint 7h',
@@ -196,6 +203,25 @@ export function AccountModal({
     try {
       await apiClient.deleteUser(authSession.token, user.id);
       setNotice(`Usunięto konto ${user.displayName} (@${user.username}).`);
+      await Promise.all([
+        loadLeaderboard(authSession.token),
+        loadLogs(authSession.token, logFilter),
+      ]);
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
+  const handleToggleCourseAccess = async (user, courseId) => {
+    if (!authSession?.token) return;
+    setError('');
+    setNotice('');
+    const current = Array.isArray(user.allowedCourses) ? user.allowedCourses : [];
+    const next = current.includes(courseId)
+      ? current.filter((c) => c !== courseId)
+      : [...current, courseId];
+    try {
+      await apiClient.updateUserCourses(authSession.token, user.id, next);
       await Promise.all([
         loadLeaderboard(authSession.token),
         loadLogs(authSession.token, logFilter),
@@ -523,7 +549,27 @@ export function AccountModal({
                           </div>
 
                           {isAdmin && (
-                            <div className="user-row-actions">
+                            <>
+                              <div className="course-access-row">
+                                <span className="course-access-label">Dostęp do kursów:</span>
+                                {ALL_COURSES_LIST.map((c) => {
+                                  const enabled = (u.allowedCourses || []).includes(c.id);
+                                  return (
+                                    <button
+                                      key={c.id}
+                                      type="button"
+                                      className={`course-access-pill ${enabled ? 'enabled' : ''}`}
+                                      onClick={() => handleToggleCourseAccess(u, c.id)}
+                                      aria-pressed={enabled}
+                                      title={enabled ? `Zablokuj ${c.label}` : `Odblokuj ${c.label}`}
+                                    >
+                                      {enabled ? '✓ ' : '+ '}
+                                      {c.label}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                              <div className="user-row-actions">
                               <button
                                 type="button"
                                 className="check-note-btn"
@@ -551,6 +597,7 @@ export function AccountModal({
                                 <Trash2 size={13} />
                               </button>
                             </div>
+                            </>
                           )}
                         </div>
                       );
@@ -580,6 +627,7 @@ export function AccountModal({
                     <option value="user_created">Utworzone konta</option>
                     <option value="password_reset">Resety haseł</option>
                     <option value="progress_reset">Resety postępu</option>
+                    <option value="courses_updated">Zmiany dostępu</option>
                     <option value="user_deleted">Usunięte konta</option>
                   </select>
 

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { BookOpen, CheckCircle2, HelpCircle, Layers } from 'lucide-react';
+import { BookOpen, CheckCircle2, HelpCircle, Layers, Lock } from 'lucide-react';
 import { LEVELS } from './data/levels';
 import { ORAL_LEVELS } from './data/oralLevels';
 import { KURS_PODSTAWOWY_LEVELS } from './data/kursPodstawowyLevels';
@@ -182,10 +182,21 @@ export function App() {
     let cancelled = false;
     hydratedTokenRef.current = null;
 
-    apiClient
-      .getProgress(token)
-      .then((data) => {
+    Promise.all([apiClient.getProgress(token), apiClient.getMe(token).catch(() => null)])
+      .then(([data, meData]) => {
         if (cancelled) return;
+        if (meData?.user) {
+          setAuthSession((prev) => {
+            if (!prev) return prev;
+            const next = { ...prev, user: meData.user };
+            try {
+              localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(next));
+            } catch {
+              // Ignore storage errors
+            }
+            return next;
+          });
+        }
         const remote = data?.progress;
         const localUserCache = loadState(getUserStorageKey(username));
         // If server returned a clean default (no updatedAt & empty) while local account cache has progress,
@@ -409,6 +420,16 @@ export function App() {
     });
   };
 
+  const allowedCourses = useMemo(() => {
+    if (!authSession?.user || authSession.user.role === 'admin') return VALID_COURSES;
+    return Array.isArray(authSession.user.allowedCourses) ? authSession.user.allowedCourses : [];
+  }, [authSession?.user]);
+
+  const isCourseLocked =
+    Boolean(authSession?.user) &&
+    authSession.user.role !== 'admin' &&
+    !allowedCourses.includes(activeCourse);
+
   const notesDoneCount = activeLevel?.notes?.filter((n) => checkedNotes[n.id]).length || 0;
   const cardsDoneCount = activeLevel?.flashcards?.filter((c) => cardStatus[c.id] === 'known').length || 0;
   const quizBest = quizScores[activeLevel?.id];
@@ -431,6 +452,7 @@ export function App() {
           setReviewMode(false);
           setRankingMode((v) => !v);
         }}
+        allowedCourses={allowedCourses}
         reviewCount={reviewCards.length}
         completedLevelsCount={completedLevelsCount}
         masteredCardsCount={masteredCardsCount}
@@ -465,17 +487,49 @@ export function App() {
             <header className="level-header">
               <div>
                 <div className="level-kicker">PUBLICZNA TABELA WYNIKÓW</div>
-                <h1 className="level-h1">Ranking uczniów</h1>
+                <h1 className="level-h1">Rankingi</h1>
                 <p className="level-desc">
-                  Porównaj postępy w każdym kursie osobno lub w rankingu łącznym ze wszystkich kursów.
+                  Top 10 uczniów osobno dla Matury Próbnej (7h), Matury Głównej i Matury Ustnej oraz ranking łączny.
                 </p>
               </div>
             </header>
             <RankingView
-              activeCourse={activeCourse}
               currentUserId={authSession?.user?.id || null}
             />
           </>
+        ) : isCourseLocked ? (
+          <div className="locked-course-card">
+            <div className="locked-course-icon">
+              <Lock size={28} />
+            </div>
+            <h2>Ten kurs jest obecnie zablokowany</h2>
+            <p>
+              Twoje konto nie ma jeszcze przyznanego dostępu do tego kursu. Poproś administratora o odblokowanie w panelu admina.
+            </p>
+            <div className="locked-course-actions">
+              {allowedCourses.map((c) => (
+                <button
+                  key={c}
+                  type="button"
+                  className="primary-btn"
+                  onClick={() => handleSelectCourse(c)}
+                >
+                  Przejdź do:{' '}
+                  {c === 'probna' ? 'Matura Próbna (7h)' : c === 'kurs' ? 'Kurs Główny' : 'Matura Ustna'}
+                </button>
+              ))}
+              <button
+                type="button"
+                className="secondary-btn"
+                onClick={() => {
+                  setReviewMode(false);
+                  setRankingMode(true);
+                }}
+              >
+                Zobacz Rankingi
+              </button>
+            </div>
+          </div>
         ) : reviewMode ? (
           <>
             <header className="level-header">

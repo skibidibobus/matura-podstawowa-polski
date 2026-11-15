@@ -58,6 +58,12 @@ function publicUser(user) {
     username: user.username,
     displayName: user.displayName,
     role: user.role,
+    allowedCourses:
+      user.role === 'admin'
+        ? ['probna', 'kurs', 'ustna']
+        : Array.isArray(user.allowedCourses)
+        ? user.allowedCourses
+        : [],
     createdAt: user.createdAt,
   };
 }
@@ -270,6 +276,25 @@ export function createAppServer({
               message: `Administrator wyzerował postęp użytkownika @${updated.username}`,
             });
             return sendJson(res, 200, { ok: true });
+          }
+
+          const coursesMatch = pathname.match(/^\/api\/admin\/users\/([^/]+)\/courses$/);
+          if (req.method === 'POST' && coursesMatch) {
+            const userId = decodeURIComponent(coursesMatch[1]);
+            const body = await readJsonBody(req);
+            const updated = store.updateAllowedCourses(userId, body.allowedCourses);
+            if (!updated) {
+              return sendJson(res, 404, { error: 'Nie znaleziono użytkownika.' });
+            }
+            const label = updated.allowedCourses.length > 0 ? updated.allowedCourses.join(', ') : 'brak';
+            store.addLog({
+              type: 'courses_updated',
+              userId: updated.id,
+              username: updated.username,
+              displayName: updated.displayName,
+              message: `Administrator ustawił dostęp do kursów dla @${updated.username}: ${label}`,
+            });
+            return sendJson(res, 200, { user: publicUser(updated) });
           }
 
           const deleteMatch = pathname.match(/^\/api\/admin\/users\/([^/]+)$/);

@@ -86,6 +86,12 @@ export const apiClient = {
       token,
       body: {},
     }),
+  updateUserCourses: (token, userId, allowedCourses) =>
+    apiRequest(`/api/admin/users/${encodeURIComponent(userId)}/courses`, {
+      method: 'POST',
+      token,
+      body: { allowedCourses },
+    }),
   deleteUser: (token, userId) =>
     apiRequest(`/api/admin/users/${encodeURIComponent(userId)}`, {
       method: 'DELETE',

@@ -280,4 +280,39 @@ describe('Backend Auth, Account Generator & Progress Isolation', () => {
     const pubProbnaData = await pubProbna.json();
     assert.equal(pubProbnaData.leaderboard[0].stats.xp, 0);
   });
+
+  it('8. New student has empty allowedCourses by default and admin can unlock/lock courses', async () => {
+    const createRes = await fetch(`${baseUrl}/api/admin/users`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${adminToken}`,
+      },
+      body: JSON.stringify({ displayName: 'Nowy Uczen' }),
+    });
+    assert.equal(createRes.status, 201);
+    const created = await createRes.json();
+    assert.deepEqual(created.user.allowedCourses, []);
+
+    const coursesRes = await fetch(`${baseUrl}/api/admin/users/${created.user.id}/courses`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${adminToken}`,
+      },
+      body: JSON.stringify({ allowedCourses: ['probna', 'ustna'] }),
+    });
+    assert.equal(coursesRes.status, 200);
+    const coursesData = await coursesRes.json();
+    assert.deepEqual(coursesData.user.allowedCourses, ['probna', 'ustna']);
+
+    const loginNew = await fetch(`${baseUrl}/api/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username: created.user.username, password: created.plainPassword }),
+    });
+    assert.equal(loginNew.status, 200);
+    const loginNewData = await loginNew.json();
+    assert.deepEqual(loginNewData.user.allowedCourses, ['probna', 'ustna']);
+  });
 });

@@ -3,6 +3,32 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { hashPassword } from './auth.js';
 
+export const ALL_COURSES = ['probna', 'kurs', 'ustna'];
+const LEGACY_FULL_ACCESS_USERNAMES = new Set(['dominik-3607', 'blanka-6113', 'hubert-9626']);
+
+export function sanitizeAllowedCourses(raw) {
+  if (!Array.isArray(raw)) return [];
+  const seen = new Set();
+  for (const c of raw) {
+    if (ALL_COURSES.includes(c)) seen.add(c);
+  }
+  return [...seen];
+}
+
+function normalizeUserCourses(user) {
+  if (!user || typeof user !== 'object') return user;
+  if (user.role === 'admin') {
+    user.allowedCourses = [...ALL_COURSES];
+  } else if (Array.isArray(user.allowedCourses)) {
+    user.allowedCourses = sanitizeAllowedCourses(user.allowedCourses);
+  } else if (LEGACY_FULL_ACCESS_USERNAMES.has(String(user.username || '').toLowerCase())) {
+    user.allowedCourses = [...ALL_COURSES];
+  } else {
+    user.allowedCourses = [];
+  }
+  return user;
+}
+
 export const DEFAULT_PROGRESS = {
   theme: 'dark',
   activeCourse: 'kurs',
@@ -191,6 +217,7 @@ export class JsonStore {
       } else if (process.env.ADMIN_PASSWORD) {
         existingAdmin.passwordHash = hashPassword(this.adminPassword);
       }
+      parsed.users = parsed.users.map(normalizeUserCourses);
       this.data = parsed;
       this.#writeLocalAtomic(this.data);
       this.lastRemoteSyncAt = new Date().toISOString();
@@ -291,6 +318,7 @@ export class JsonStore {
         username: 'admin',
         displayName: 'Administrator',
         role: 'admin',
+        allowedCourses: [...ALL_COURSES],
         passwordHash: hashPassword(this.adminPassword),
         createdAt: new Date().toISOString(),
       });
@@ -300,6 +328,7 @@ export class JsonStore {
       this.#writeLocalAtomic(db);
     }
 
+    db.users = db.users.map(normalizeUserCourses);
     return db;
   }
 
@@ -335,6 +364,7 @@ export class JsonStore {
         username: u.username,
         displayName: u.displayName,
         role: u.role,
+        allowedCourses: u.role === 'admin' ? [...ALL_COURSES] : sanitizeAllowedCourses(u.allowedCourses),
         createdAt: u.createdAt,
         stats: computeProgressStats(p),
       };
@@ -350,6 +380,7 @@ export class JsonStore {
           id: u.id,
           username: u.username,
           displayName: u.displayName,
+          allowedCourses: sanitizeAllowedCourses(u.allowedCourses),
           createdAt: u.createdAt,
           stats: computeProgressStats(p),
         };
@@ -402,7 +433,7 @@ export class JsonStore {
     }));
   }
 
-  createUser({ username, displayName, passwordHash, role = 'student', initialProgress = null }) {
+  createUser({ username, displayName, passwordHash, role = 'student', allowedCourses = [], initialProgress = null }) {
     const cleanUsername = String(username || '').trim().toLowerCase();
     if (!cleanUsername) throw new Error('Wymagany jest login.');
     if (this.findUserByUsername(cleanUsername)) {
@@ -413,6 +444,7 @@ export class JsonStore {
       username: cleanUsername,
       displayName: String(displayName || cleanUsername).trim(),
       role,
+      allowedCourses: role === 'admin' ? [...ALL_COURSES] : sanitizeAllowedCourses(allowedCourses),
       passwordHash,
       createdAt: new Date().toISOString(),
     };
@@ -428,6 +460,15 @@ export class JsonStore {
     const user = this.findUserById(userId);
     if (!user) return null;
     user.passwordHash = passwordHash;
+    this.#writeAtomic();
+    return user;
+  }
+
+  updateAllowedCourses(userId, allowedCourses) {
+    const user = this.findUserById(userId);
+    if (!user) return null;
+    user.allowedCourses =
+      user.role === 'admin' ? [...ALL_COURSES] : sanitizeAllowedCourses(allowedCourses);
     this.#writeAtomic();
     return user;
   }
