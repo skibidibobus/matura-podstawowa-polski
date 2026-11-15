@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BookOpen, Check, CheckCircle2, ChevronDown, ChevronRight, Lock, Maximize2, Minimize2, Moon, RotateCcw, Sun, Trophy, User, X } from 'lucide-react';
+import { BookOpen, Check, CheckCircle2, ChevronDown, ChevronRight, Lock, Maximize2, Minimize2, Moon, RotateCcw, Shield, Sun, Trophy, User, X } from 'lucide-react';
 import { BrandLogo } from './BrandLogo';
 
 const COURSE_BRAND_SUBTITLES = {
@@ -35,6 +35,8 @@ export function Sidebar({
   onToggleLevelNotes,
   rankingMode = false,
   onToggleRankingMode,
+  adminMode = false,
+  onToggleAdminMode = null,
   onOpenWelcome,
   allowedCourses = ['probna', 'kurs', 'ustna'],
   isGuestPreviewLimited = false,
@@ -178,6 +180,20 @@ export function Sidebar({
         >
           <Trophy size={15} />
           <span>Rankingi</span>
+        </button>
+      )}
+
+      {authUser?.role === 'admin' && onToggleAdminMode && (
+        <button
+          type="button"
+          className={`ranking-nav-btn admin-nav-btn ${adminMode ? 'active' : ''}`}
+          onClick={() => {
+            onCloseMobile?.();
+            onToggleAdminMode();
+          }}
+        >
+          <Shield size={15} />
+          <span>Panel Admina</span>
         </button>
       )}
 

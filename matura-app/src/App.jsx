@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { BookOpen, CheckCircle2, HelpCircle, Layers, Lock, Menu, User } from 'lucide-react';
+import { BookOpen, CheckCircle2, Eye, HelpCircle, Layers, Lock, Menu, User } from 'lucide-react';
 import { LEVELS } from './data/levels';
 import { ORAL_LEVELS } from './data/oralLevels';
 import { KURS_PODSTAWOWY_LEVELS } from './data/kursPodstawowyLevels';
@@ -10,6 +10,7 @@ import { FlashcardsView } from './components/FlashcardsView';
 import { QuizView } from './components/QuizView';
 import { AccountModal } from './components/AccountModal';
 import { RankingView } from './components/RankingView';
+import { AdminDashboardView } from './components/AdminDashboardView';
 import { WelcomePage } from './components/WelcomePage';
 import { apiClient } from './api/client';
 
@@ -106,6 +107,9 @@ export function App() {
   const [activeNoteId, setActiveNoteId] = useState(null);
   const [reviewMode, setReviewMode] = useState(false);
   const [rankingMode, setRankingMode] = useState(false);
+  const [adminMode, setAdminMode] = useState(false);
+  const [previewUser, setPreviewUser] = useState(null);
+  const adminSavedProgressRef = useRef(null);
   const [showWelcome, setShowWelcome] = useState(() => {
     if (typeof window === 'undefined' || !window.location?.protocol?.startsWith('http')) return false;
     if (loadAuthSession()?.token) return false;
@@ -274,6 +278,8 @@ export function App() {
 
   // Persist progress: localStorage when guest, per-user cache + backend API when logged in
   useEffect(() => {
+    if (previewUser) return;
+
     const payload = {
       theme,
       activeCourse,
@@ -313,7 +319,7 @@ export function App() {
     }, 150);
 
     return () => clearTimeout(timer);
-  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, cardStatus, quizScores, quizAttempts, authSession?.token, authSession?.user?.username]);
+  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, cardStatus, quizScores, quizAttempts, authSession?.token, authSession?.user?.username, previewUser]);
 
   const handleLoginSuccess = (loginData) => {
     const session = { token: loginData.token, user: loginData.user };
@@ -323,6 +329,9 @@ export function App() {
       // Ignore storage errors
     }
     hydratedTokenRef.current = loginData.token;
+    setPreviewUser(null);
+    adminSavedProgressRef.current = null;
+    setAdminMode(loginData.user?.role === 'admin');
     setShowWelcome(false);
     const remote = loginData.progress;
     const localUserCache = loadState(getUserStorageKey(loginData.user?.username));
@@ -349,10 +358,50 @@ export function App() {
     }
     hydratedTokenRef.current = null;
     pendingRemoteSaveRef.current = null;
+    adminSavedProgressRef.current = null;
+    setPreviewUser(null);
+    setAdminMode(false);
     setAuthSession(null);
     setSyncStatus('');
     setShowWelcome(true);
     applyProgressState(loadState(STORAGE_KEY));
+  };
+
+  const handleStartPreview = (user, userProgress) => {
+    if (!user) return;
+    adminSavedProgressRef.current = {
+      theme,
+      activeCourse,
+      activeLevelByCourse,
+      checkedNotes,
+      cardStatus,
+      quizScores,
+      quizAttempts,
+    };
+    setPreviewUser(user);
+    setAdminMode(false);
+    setRankingMode(false);
+    setReviewMode(false);
+    setShowWelcome(false);
+
+    const nextProgress = userProgress && typeof userProgress === 'object' ? { ...userProgress } : {};
+    const userCourses = Array.isArray(user.allowedCourses) ? user.allowedCourses : [];
+    if (userCourses.length > 0 && !userCourses.includes(nextProgress.activeCourse)) {
+      nextProgress.activeCourse = userCourses[0];
+    }
+    applyProgressState(nextProgress);
+  };
+
+  const handleExitPreview = () => {
+    const saved = adminSavedProgressRef.current;
+    adminSavedProgressRef.current = null;
+    setPreviewUser(null);
+    if (saved) {
+      applyProgressState(saved);
+    }
+    setRankingMode(false);
+    setReviewMode(false);
+    setAdminMode(true);
   };
 
   const currentLevels =
@@ -424,6 +473,7 @@ export function App() {
     setActiveCourse(course);
     setReviewMode(false);
     setRankingMode(false);
+    setAdminMode(false);
     setStage('notes');
     setActiveNoteId(null);
   };
@@ -431,6 +481,7 @@ export function App() {
   const handleSelectLevel = (id) => {
     setReviewMode(false);
     setRankingMode(false);
+    setAdminMode(false);
     setActiveLevelByCourse((prev) => ({ ...prev, [activeCourse]: id }));
     setStage('notes');
     setActiveNoteId(null);
@@ -439,6 +490,7 @@ export function App() {
   const handleSelectNote = (levelId, noteId) => {
     setReviewMode(false);
     setRankingMode(false);
+    setAdminMode(false);
     setActiveLevelByCourse((prev) => ({ ...prev, [activeCourse]: levelId }));
     setStage('notes');
     setActiveNoteId(noteId);
@@ -459,16 +511,17 @@ export function App() {
 
   const isBrowser =
     typeof window !== 'undefined' && Boolean(window.location?.protocol?.startsWith('http'));
-  const isGuestPreviewLimited = isBrowser && !authSession?.user;
+  const effectiveUser = previewUser || authSession?.user || null;
+  const isGuestPreviewLimited = isBrowser && !effectiveUser;
 
   const allowedCourses = useMemo(() => {
-    if (!authSession?.user || authSession.user.role === 'admin') return VALID_COURSES;
-    return Array.isArray(authSession.user.allowedCourses) ? authSession.user.allowedCourses : [];
-  }, [authSession?.user]);
+    if (!effectiveUser || effectiveUser.role === 'admin') return VALID_COURSES;
+    return Array.isArray(effectiveUser.allowedCourses) ? effectiveUser.allowedCourses : [];
+  }, [effectiveUser]);
 
   const isCourseLocked =
-    Boolean(authSession?.user) &&
-    authSession.user.role !== 'admin' &&
+    Boolean(effectiveUser) &&
+    effectiveUser.role !== 'admin' &&
     !allowedCourses.includes(activeCourse);
 
   const isGuestLevelLocked = isGuestPreviewLimited && (activeIndex > 0 || reviewMode);
@@ -525,22 +578,24 @@ export function App() {
           <span className="mobile-topbar-text">
             <strong>Matura Polski</strong>
             <span>
-              {rankingMode
-                ? 'Rankingi'
-                : reviewMode
-                  ? 'Powtórka fiszek'
-                  : activeLevel?.title || 'Kurs'}
+              {adminMode
+                ? 'Panel Admina'
+                : rankingMode
+                  ? 'Rankingi'
+                  : reviewMode
+                    ? 'Powtórka fiszek'
+                    : activeLevel?.title || 'Kurs'}
             </span>
           </span>
         </button>
         <button
           type="button"
-          className={`mobile-account-btn ${authSession?.user ? 'logged-in' : ''}`}
+          className={`mobile-account-btn ${effectiveUser ? 'logged-in' : ''}`}
           onClick={() => setAccountModalOpen(true)}
           aria-label="Konto"
         >
           <User size={16} />
-          <span>{authSession?.user?.displayName || 'Zaloguj'}</span>
+          <span>{effectiveUser?.displayName || 'Zaloguj'}</span>
         </button>
       </header>
 
@@ -561,12 +616,20 @@ export function App() {
         reviewMode={reviewMode}
         onToggleReviewMode={() => {
           setRankingMode(false);
+          setAdminMode(false);
           setReviewMode((v) => !v);
         }}
         rankingMode={rankingMode}
         onToggleRankingMode={() => {
           setReviewMode(false);
+          setAdminMode(false);
           setRankingMode((v) => !v);
+        }}
+        adminMode={adminMode}
+        onToggleAdminMode={() => {
+          setReviewMode(false);
+          setRankingMode(false);
+          setAdminMode((v) => !v);
         }}
         onOpenWelcome={() => setShowWelcome(true)}
         allowedCourses={allowedCourses}
@@ -582,7 +645,7 @@ export function App() {
         onToggleTheme={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
         isFullscreen={isFullscreen}
         onToggleFullscreen={toggleFullscreen}
-        authUser={authSession?.user || null}
+        authUser={effectiveUser}
         onOpenAccount={() => setAccountModalOpen(true)}
         isLevelCompleted={isLevelCompleted}
         checkedNotes={checkedNotes}
@@ -602,7 +665,32 @@ export function App() {
       />
 
       <main className="main">
-        {rankingMode ? (
+        {previewUser && (
+          <div className="preview-banner">
+            <div className="preview-banner-info">
+              <Eye size={16} />
+              <span>
+                Podgląd chwilowy konta: <strong>{previewUser.displayName}</strong> (@{previewUser.username}) •{' '}
+                <em>Tryb tylko do odczytu (zmiany nie są zapisywane)</em>
+              </span>
+            </div>
+            <button
+              type="button"
+              className="primary-btn preview-exit-btn"
+              onClick={handleExitPreview}
+            >
+              Wróć do panelu admina
+            </button>
+          </div>
+        )}
+
+        {adminMode && authSession?.user?.role === 'admin' && !previewUser ? (
+          <AdminDashboardView
+            token={authSession.token}
+            currentUser={authSession.user}
+            onImpersonateUser={handleStartPreview}
+          />
+        ) : rankingMode ? (
           <>
             <header className="level-header">
               <div>
@@ -614,7 +702,7 @@ export function App() {
               </div>
             </header>
             <RankingView
-              currentUserId={authSession?.user?.id || null}
+              currentUserId={effectiveUser?.id || null}
             />
           </>
         ) : isCourseLocked ? (
