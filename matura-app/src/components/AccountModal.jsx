@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Check, Copy, KeyRound, LogOut, RefreshCw, Shield, Trash2, UserPlus, Users, X } from 'lucide-react';
-import { apiClient, getApiBaseUrl, setCustomApiBaseUrl } from '../api/client';
+import { apiClient } from '../api/client';
 
 export function AccountModal({
   isOpen,
@@ -12,8 +12,6 @@ export function AccountModal({
 }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [apiUrl, setApiUrl] = useState(() => getApiBaseUrl());
-  const [showApiConfig, setShowApiConfig] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -49,7 +47,6 @@ export function AccountModal({
     setError('');
     setLoading(true);
     try {
-      setCustomApiBaseUrl(apiUrl);
       const data = await apiClient.login(username.trim(), password);
       setUsername('');
       setPassword('');
@@ -171,27 +168,6 @@ export function AccountModal({
                 required
               />
             </label>
-
-            <button
-              type="button"
-              className="link-btn"
-              onClick={() => setShowApiConfig((v) => !v)}
-            >
-              {showApiConfig ? 'Ukryj adres serwera API' : 'Ustaw własny adres serwera API (opcjonalnie)'}
-            </button>
-
-            {showApiConfig && (
-              <label className="field-label">
-                Adres backendu (np. https://twoj-backend.onrender.com)
-                <input
-                  type="url"
-                  className="field-input"
-                  value={apiUrl}
-                  onChange={(e) => setApiUrl(e.target.value)}
-                  placeholder="Puste = lokalny serwer (/api)"
-                />
-              </label>
-            )}
 
             <div className="modal-actions">
               <button type="button" className="secondary-btn" onClick={onClose}>

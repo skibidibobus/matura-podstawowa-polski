@@ -1,4 +1,5 @@
 const API_URL_STORAGE_KEY = 'matura-polski-api-url';
+const DEFAULT_PRODUCTION_API_URL = 'https://matura-polski-backend.onrender.com';
 
 export function getApiBaseUrl() {
   try {
@@ -9,6 +10,14 @@ export function getApiBaseUrl() {
   }
   const envUrl = import.meta.env.VITE_API_URL;
   if (envUrl && String(envUrl).trim()) return String(envUrl).trim().replace(/\/+$/, '');
+  if (
+    typeof window !== 'undefined' &&
+    window.location?.hostname &&
+    window.location.hostname !== 'localhost' &&
+    window.location.hostname !== '127.0.0.1'
+  ) {
+    return DEFAULT_PRODUCTION_API_URL;
+  }
   return '';
 }
 
