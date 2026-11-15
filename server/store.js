@@ -180,14 +180,16 @@ export class JsonStore {
         parsed.progressByUserId = {};
       }
       if (!Array.isArray(parsed.logs)) parsed.logs = [];
-      const hasAdmin = parsed.users.some((u) => u.role === 'admin');
-      if (!hasAdmin) {
+      const existingAdmin = parsed.users.find((u) => u.role === 'admin');
+      if (!existingAdmin) {
         const currentAdmin = this.data.users.find((u) => u.role === 'admin');
         if (currentAdmin) {
           parsed.users.unshift(currentAdmin);
           parsed.progressByUserId[currentAdmin.id] =
             this.data.progressByUserId[currentAdmin.id] || structuredClone(DEFAULT_PROGRESS);
         }
+      } else if (process.env.ADMIN_PASSWORD) {
+        existingAdmin.passwordHash = hashPassword(this.adminPassword);
       }
       this.data = parsed;
       this.#writeLocalAtomic(this.data);
