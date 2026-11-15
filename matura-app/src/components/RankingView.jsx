@@ -128,6 +128,9 @@ export function RankingView({ currentUserId }) {
                             <div className="user-row-stats">
                               Notatki: {u.stats?.notesCount || 0} • Fiszki: {u.stats?.knownCards || 0} • Quizy:{' '}
                               {u.stats?.quizzesTaken || 0}
+                              {(u.stats?.quizAttempts || 0) > (u.stats?.quizzesTaken || 0)
+                                ? ` (${u.stats.quizAttempts} prób)`
+                                : ''}
                             </div>
                           </div>
                         </div>
@@ -165,6 +168,9 @@ export function RankingView({ currentUserId }) {
                       Notatki: <strong>{u.stats?.notesCount || 0}</strong> • Fiszki umiem:{' '}
                       <strong>{u.stats?.knownCards || 0}</strong> • Quizy:{' '}
                       <strong>{u.stats?.quizzesTaken || 0}</strong>
+                      {(u.stats?.quizAttempts || 0) > (u.stats?.quizzesTaken || 0)
+                        ? ` (${u.stats.quizAttempts} prób)`
+                        : ''}
                     </div>
                   </div>
                 </div>

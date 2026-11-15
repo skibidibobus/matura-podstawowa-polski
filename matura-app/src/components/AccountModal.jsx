@@ -541,7 +541,11 @@ export function AccountModal({
                               <div className="user-row-stats">
                                 Notatki: <strong>{u.stats?.notesCount || 0}</strong> • Fiszki umiem:{' '}
                                 <strong>{u.stats?.knownCards || 0}</strong> (powt. {u.stats?.reviewCards || 0}) •
-                                Quizy: <strong>{u.stats?.quizzesTaken || 0}</strong> • Kurs:{' '}
+                                Quizy: <strong>{u.stats?.quizzesTaken || 0}</strong>
+                                {(u.stats?.quizAttempts || 0) > (u.stats?.quizzesTaken || 0)
+                                  ? ` (${u.stats.quizAttempts} prób)`
+                                  : ''}{' '}
+                                • Kurs:{' '}
                                 {COURSE_LABELS[u.stats?.activeCourse] || u.stats?.activeCourse || '—'} • Ost. akt.:{' '}
                                 {formatDateTime(u.stats?.updatedAt)}
                               </div>

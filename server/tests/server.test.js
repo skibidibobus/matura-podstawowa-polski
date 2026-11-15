@@ -315,4 +315,52 @@ describe('Backend Auth, Account Generator & Progress Isolation', () => {
     const loginNewData = await loginNew.json();
     assert.deepEqual(loginNewData.user.allowedCourses, ['probna', 'ustna']);
   });
+
+  it('9. Retaking a quiz tracks quizAttempts in leaderboard even below 100% and preserves improved score', async () => {
+    const createRes = await fetch(`${baseUrl}/api/admin/users`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${adminToken}`,
+      },
+      body: JSON.stringify({ displayName: 'QuizTester' }),
+    });
+    assert.equal(createRes.status, 201);
+    const created = await createRes.json();
+
+    const loginRes = await fetch(`${baseUrl}/api/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username: created.user.username, password: created.plainPassword }),
+    });
+    const loginData = await loginRes.json();
+
+    const saveRes = await fetch(`${baseUrl}/api/progress`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${loginData.token}`,
+      },
+      body: JSON.stringify({
+        progress: {
+          theme: 'dark',
+          activeCourse: 'kurs',
+          activeLevelByCourse: { probna: 1, kurs: 'dept-04', ustna: 101 },
+          checkedNotes: {},
+          cardStatus: {},
+          quizScores: { 'dept-04': 16 },
+          quizAttempts: { 'dept-04': 2 },
+        },
+      }),
+    });
+    assert.equal(saveRes.status, 200);
+
+    const lbRes = await fetch(`${baseUrl}/api/public/leaderboard?course=kurs`);
+    assert.equal(lbRes.status, 200);
+    const lbData = await lbRes.json();
+    const tester = lbData.leaderboard.find((u) => u.displayName === 'QuizTester');
+    assert.ok(tester);
+    assert.equal(tester.stats.quizzesTaken, 1);
+    assert.equal(tester.stats.quizAttempts, 2);
+  });
 });

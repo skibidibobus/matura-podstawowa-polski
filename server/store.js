@@ -40,6 +40,7 @@ export const DEFAULT_PROGRESS = {
   checkedNotes: {},
   cardStatus: {},
   quizScores: {},
+  quizAttempts: {},
 };
 
 export function sanitizeProgress(raw) {
@@ -73,6 +74,10 @@ export function sanitizeProgress(raw) {
       raw.quizScores && typeof raw.quizScores === 'object' && !Array.isArray(raw.quizScores)
         ? raw.quizScores
         : {},
+    quizAttempts:
+      raw.quizAttempts && typeof raw.quizAttempts === 'object' && !Array.isArray(raw.quizAttempts)
+        ? raw.quizAttempts
+        : {},
     updatedAt: new Date().toISOString(),
   };
 }
@@ -104,9 +109,9 @@ function classifyQuizCourse(quizKey) {
 export function computeProgressStats(progress) {
   const p = progress || DEFAULT_PROGRESS;
   const byCourse = {
-    probna: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, xp: 0 },
-    kurs: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, xp: 0 },
-    ustna: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, xp: 0 },
+    probna: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, quizAttempts: 0, xp: 0 },
+    kurs: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, quizAttempts: 0, xp: 0 },
+    ustna: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, quizAttempts: 0, xp: 0 },
   };
 
   for (const [noteId, done] of Object.entries(p.checkedNotes || {})) {
@@ -124,8 +129,16 @@ export function computeProgressStats(progress) {
     byCourse[classifyQuizCourse(quizKey)].quizzesTaken += 1;
   }
 
+  for (const [quizKey, attempts] of Object.entries(p.quizAttempts || {})) {
+    const num = Number(attempts);
+    if (Number.isFinite(num) && num > 0) {
+      byCourse[classifyQuizCourse(quizKey)].quizAttempts += num;
+    }
+  }
+
   for (const c of ['probna', 'kurs', 'ustna']) {
     const s = byCourse[c];
+    s.quizAttempts = Math.max(s.quizzesTaken, s.quizAttempts);
     s.xp = s.notesCount * 15 + s.knownCards * 10 + s.quizzesTaken * 80;
   }
 
@@ -133,6 +146,7 @@ export function computeProgressStats(progress) {
   const knownCards = byCourse.probna.knownCards + byCourse.kurs.knownCards + byCourse.ustna.knownCards;
   const reviewCards = byCourse.probna.reviewCards + byCourse.kurs.reviewCards + byCourse.ustna.reviewCards;
   const quizzesTaken = byCourse.probna.quizzesTaken + byCourse.kurs.quizzesTaken + byCourse.ustna.quizzesTaken;
+  const quizAttempts = byCourse.probna.quizAttempts + byCourse.kurs.quizAttempts + byCourse.ustna.quizAttempts;
   const xp = notesCount * 15 + knownCards * 10 + quizzesTaken * 80;
 
   return {
@@ -140,6 +154,7 @@ export function computeProgressStats(progress) {
     knownCards,
     reviewCards,
     quizzesTaken,
+    quizAttempts,
     xp,
     byCourse,
     activeCourse: p.activeCourse || 'probna',
@@ -414,6 +429,7 @@ export class JsonStore {
             notesCount: scoped.notesCount,
             knownCards: scoped.knownCards,
             quizzesTaken: scoped.quizzesTaken,
+            quizAttempts: scoped.quizAttempts,
             xp: scoped.xp,
           },
           byCourse: fullStats.byCourse,

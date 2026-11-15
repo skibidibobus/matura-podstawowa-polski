@@ -107,6 +107,7 @@ export function App() {
   const [checkedNotes, setCheckedNotes] = useState(initial.checkedNotes || {});
   const [cardStatus, setCardStatus] = useState(initial.cardStatus || {});
   const [quizScores, setQuizScores] = useState(initial.quizScores || {});
+  const [quizAttempts, setQuizAttempts] = useState(initial.quizAttempts || {});
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const toggleFullscreen = async () => {
@@ -166,6 +167,7 @@ export function App() {
     setCheckedNotes(src.checkedNotes || {});
     setCardStatus(src.cardStatus || {});
     setQuizScores(src.quizScores || {});
+    setQuizAttempts(src.quizAttempts || {});
     setReviewMode(false);
     setStage('notes');
   };
@@ -252,6 +254,7 @@ export function App() {
       checkedNotes,
       cardStatus,
       quizScores,
+      quizAttempts,
     };
 
     if (!authSession?.token) {
@@ -283,7 +286,7 @@ export function App() {
     }, 150);
 
     return () => clearTimeout(timer);
-  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, cardStatus, quizScores, authSession?.token, authSession?.user?.username]);
+  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, cardStatus, quizScores, quizAttempts, authSession?.token, authSession?.user?.username]);
 
   const handleLoginSuccess = (loginData) => {
     const session = { token: loginData.token, user: loginData.user };
@@ -381,6 +384,10 @@ export function App() {
       ...prev,
       [levelId]: Math.max(prev[levelId] || 0, score),
     }));
+    setQuizAttempts((prev) => {
+      const base = prev[levelId] ?? (quizScores[levelId] !== undefined ? 1 : 0);
+      return { ...prev, [levelId]: base + 1 };
+    });
   };
 
   const handleSelectCourse = (course) => {

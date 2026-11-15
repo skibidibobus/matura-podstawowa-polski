@@ -159,7 +159,7 @@ export function QuizView({ level, savedScore, onSaveScore, onNextLevel, hasNextL
         {answeredCount === total && total > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <span style={{ fontWeight: 700 }}>
-              Wynik: {currentScore}/{total}
+              Wynik: {currentScore}/{total} ({Math.round((currentScore / total) * 100)}%)
             </span>
             {hasNextLevel && (
               <button type="button" className="primary-btn" onClick={onNextLevel}>
