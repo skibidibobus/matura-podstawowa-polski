@@ -178,7 +178,19 @@ export const LEVEL_4 = {
     { id: 'f4-9', front: 'Kim jest Swidrygajłow w „Zbrodni i karze”?', back: 'Cynicznym sobowtórem Raskolnikowa — człowiekiem całkowicie pozbawionym zasad moralnych, który kończy samobójstwem.' },
     { id: 'f4-10', front: 'Kogo reprezentuje Upiór (Jakub Szela) w II akcie „Wesela”?', back: 'Pamięć o krwawej rabacji galicyjskiej (1846) i głęboką przepaść historyczną między chłopami a szlachtą.' },
     { id: 'f4-11', front: 'Co oznaczają w „Weselu” słowa Dziennikarza: „Niech na całym świecie wojna, byle polska wieś zaciszna”?', back: 'Złudzenie inteligencji (wypowiedziane przez Dziennikarza w rozmowie z Czepcem), która traktuje wieś jako sielankową oazę spokoju i ucieka od realnej polityki.' },
-    { id: 'f4-12', front: 'Jak kończy się „Lalka” B. Prusa?', back: 'Zakończenie jest otwarte: Wokulski znika (mógł zginąć w ruinach zamku w Zasławku lub wyjechać do Geista), a Rzecki umiera w sklepie.' }
+    { id: 'f4-12', front: 'Jak kończy się „Lalka” B. Prusa?', back: 'Zakończenie jest otwarte: Wokulski znika (mógł zginąć w ruinach zamku w Zasławku lub wyjechać do Geista), a Rzecki umiera w sklepie.' },
+    { id: 'f4-13', front: 'Dlaczego Stanisława Wokulskiego w „Lalce” nazywamy „człowiekiem epoki przejściowej”?', back: 'Łączy romantyczne serce (powstaniec styczniowy, ślepa miłość do Izabeli, próba samobójcza) z pozytywistycznym rozumem (handel, filantropia, wspieranie nauki Geista).' },
+    { id: 'f4-14', front: 'Co symbolizują Powiśle i Krakowskie Przedmieście w topografii „Lalki”?', back: 'Kontrast społeczny Warszawy: Krakowskie Przedmieście to bogactwo i salony, a Powiśle to skrajna nędza, głód i brak pracy (gdzie Wokulski widzi bezradność jednostki wobec biedy).' },
+    { id: 'f4-15', front: 'Jakie są główne cechy Ignacego Rzeckiego i jego „Pamiętnika starego subiekta”?', back: 'Rzecki to „stary romantyk”, wierny kultowi Napoleona, uczciwej pracy kupieckiej i bezgranicznie oddany Wokulskiemu; jego pamiętnik daje drugą, subiektywną perspektywę narracyjną w „Lalce”.' },
+    { id: 'f4-16', front: 'Co oznacza tytułowa „Lalka” w powieści Bolesława Prusa?', back: 'Ma kilka znaczeń: dosłownie to zabawka z procesu baronowej Krzeszowskiej i pani Stawskiej, a metaforycznie — pusta salonowa „lalka” (Izabela Łęcka) lub ludzie będący marionetkami w teatrze życia (słowa Rzeckiego).' },
+    { id: 'f4-17', front: 'W jakim momencie Wokulski ostatecznie przejrzał na oczy i zerwał z Izabelą Łęcką?', back: 'W pociągu do Krakowa podsłuchał rozmowę Izabeli ze Starskim po angielsku, gdy szydziła z jego uczuć i zgubiła medalion od Geista.' },
+    { id: 'f4-18', front: 'Na czym polegała teoria Raskolnikowa o „ludziach zwykłych i niezwykłych” w „Zbrodni i karze”?', back: 'Według niej „wszom” (zwykłym) nie wolno łamać prawa, a jednostkom wybitnym („Napoleonom”) wolno nawet zabić dla wyższego celu — teoria ponosi całkowitą klęskę w starciu z sumieniem.' },
+    { id: 'f4-19', front: 'Jaką rolę odegrała Sonia Marmieładowa w życiu Raskolnikowa?', back: 'Ucieleśnia ewangeliczną miłość i pokorę; namówiła Raskolnikowa do wyznania winy (pokłon na Placu Siennym) i poszła z nim na katorgę na Syberię, prowadząc go ku moralnemu odrodzeniu.' },
+    { id: 'f4-20', front: 'Jaką metodą działał sędzia śledczy Porfiry Pietrowicz w „Zbrodni i karze”?', back: 'Stosował psychologiczną grę i rozmowy o artykule Raskolnikowa, bez tortur osaczając jego sumienie, aż morderca sam załamał się i przyznał.' },
+    { id: 'f4-21', front: 'Co symbolizuje Petersburg w powieści Fiodora Dostojewskiego?', back: 'Duszne, brudne, ciasne miasto-pułapka, którego przytłaczająca przestrzeń (pokój-trumna, szynki, zaułki) odzwierciedla rozpad psychiczny Raskolnikowa.' },
+    { id: 'f4-22', front: 'Co oznaczają Złoty Róg i czapka z pawich piór w „Weselu” Wyspiańskiego?', back: 'Złoty Róg symbolizuje wielki czyn narodowy i wezwanie do powstania; czapka z pawich piór to prywata i próżność, przez którą Jasiek zgubił róg.' },
+    { id: 'f4-23', front: 'Co symbolizuje Chochoł i finałowy chocholi taniec w „Weselu”?', back: 'Narodowy letarg, marazm i uśpienie wszystkich warstw społecznych (inteligencji i chłopów), choć słoma chochoła chroni też różę na przyszłą wiosnę.' },
+    { id: 'f4-24', front: 'Kogo krytykuje Stańczyk w rozmowie z Dziennikarzem w II akcie „Wesela”?', back: 'Ugodową politykę krakowskich konserwatystów, brak wiary w czyn narodowy i usypianie sumień obywateli (wręcza mu szyderczo kaduceusz — laskę błazeńską).' }
   ],
   quiz: [
     {
@@ -228,6 +240,94 @@ export const LEVEL_4 = {
       options: ['Rycerz Czarny', 'Hetman', 'Wernyhora', 'Widmo'],
       correct: 2,
       explanation: 'Wernyhora — legendarny ukraiński wieszcz — przynosi Gospodarzowi misję zjednoczenia narodu.'
+    },
+    {
+      q: 'Która cecha Wokulskiego z „Lalki” świadczy o jego romantycznej naturze?',
+      options: [
+        'Założenie spółki do handlu ze Wschodem',
+        'Udział w powstaniu styczniowym i ślepa, niszcząca miłość do Izabeli Łęckiej',
+        'Pomoc finansowa udzielona dróżnikowi Wysockiemu',
+        'Współpraca naukowa z profesorem Geistem'
+      ],
+      correct: 1,
+      explanation: 'Wokulski jest rozdarty między romantycznymi porywami serca a pozytywistyczną działalnością gospodarczą i naukową.'
+    },
+    {
+      q: 'W jakich okolicznościach Wokulski ostatecznie zrywa z Izabelą Łęcką?',
+      options: [
+        'Podczas spaceru po Powiślu',
+        'W pociągu do Krakowa, gdy podsłuchał jej angielski flirt ze Starskim i drwiny z medalionu od Geista',
+        'Na wyścigach konnych w Warszawie',
+        'Po śmierci Ignacego Rzeckiego'
+      ],
+      correct: 1,
+      explanation: 'Izabela nie wiedziała, że Wokulski zna angielski; podsłuchana rozmowa otworzyła mu oczy na jej fałsz i próżność.'
+    },
+    {
+      q: 'Co jest główną ideą „Pamiętnika starego subiekta” w „Lalce”?',
+      options: [
+        'Ukazanie historii politycznej Europy (kult Napoleona), losów Wokulskiego oraz bezinteresownej wierności Rzeckiego',
+        'Krytyka handlu i pochwała próżniaczego życia arystokracji',
+        'Opis podróży Rzeckiego do Paryża i Petersburga',
+        'Spis cen towarów w sklepie Minclów'
+      ],
+      correct: 0,
+      explanation: 'Pamiętnik Rzeckiego poszerza perspektywę historyczną powieści i stanowi kontrapunkt dla trzecioosobowej narracji.'
+    },
+    {
+      q: 'Jaką rolę odegrał sędzia śledczy Porfiry Pietrowicz w „Zbrodni i karze”?',
+      options: [
+        'Skazał Raskolnikowa na śmierć bez przesłuchania',
+        'Prowadził psychologiczną grę z Raskolnikowem, skłaniając go do wewnętrznego załamania i przyznania się do winy',
+        'Pomógł Raskolnikowowi ukryć zrabowane kosztowności',
+        'Wyjechał z Sonią na Syberię zamiast Raskolnikowa'
+      ],
+      correct: 1,
+      explanation: 'Porfiry zamiast przemocy wykorzystywał znajomość psychiki i artykułu Raskolnikowa, czekając na jego skruchę.'
+    },
+    {
+      q: 'Gdzie i dzięki komu zaczyna się duchowe odrodzenie Rodiona Raskolnikowa?',
+      options: [
+        'W Paryżu dzięki listom matki',
+        'Na katordze na Syberii dzięki miłości i Ewangelii Soni Marmieładowej',
+        'W Petersburgu po rozmowie ze Swidrygajłowem',
+        'W sądzie po ułaskawieniu przez cara'
+      ],
+      correct: 1,
+      explanation: 'Dopiero na syberyjskiej katordze, pod wpływem bezwarunkowej miłości Soni, Raskolnikow porzuca swoją teorię i otwiera się na życie.'
+    },
+    {
+      q: 'Co symbolizuje chocholi taniec w finale „Wesela” Stanisława Wyspiańskiego?',
+      options: [
+        'Radosne świętowanie odzyskanej niepodległości',
+        'Narodowy marazm, uśpienie, niemoc i bezwolne poddanie się letargowi',
+        'Zwycięstwo chłopów nad wojskami zaborcy',
+        'Bogactwo polskiej tradycji szlacheckiej'
+      ],
+      correct: 1,
+      explanation: 'Zamiast ruszyć do walki, goście weselni kręcą się w hipnotycznym rytmie muzyki Chochoła.'
+    },
+    {
+      q: 'Dlaczego Jasiek w „Weselu” zgubił Złoty Róg przekazany przez Wernyhorę?',
+      options: [
+        'Oddał go austriackim żandarmom za pieniądze',
+        'Schylił się po swoją czapkę z pawich piór, stawiając próżność ponad sprawę narodową',
+        'Zostawił go na stole u Czepca podczas bójki',
+        'Wrzucił go do studni przed chatą w Bronowicach'
+      ],
+      correct: 1,
+      explanation: 'Czapka z pawich piór symbolizuje prywatę i błahostki, przez które przepadła szansa na zryw narodowy.'
+    },
+    {
+      q: 'Jakie dwie grupy społeczne ścierają się i nie potrafią porozumieć w „Weselu”?',
+      options: [
+        'Krakowska inteligencja (zafascynowana powierzchownie wsią, lecz lękliwa) oraz chłopi (gotowi do czynu, ale nieufni i pozbawieni przywództwa)',
+        'Arystokracja petersburska i polscy robotnicy fabryczni',
+        'Kupcy warszawscy i szlachta litewska',
+        'Żołnierze napoleońscy i powstańcy styczniowi'
+      ],
+      correct: 0,
+      explanation: 'Wyspiański obnaża mit narodowej jedności: inteligencja i chłopi nie potrafią przekroczyć historycznych uprzedzeń i własnych słabości.'
     }
   ]
 };

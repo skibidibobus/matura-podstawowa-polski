@@ -158,7 +158,19 @@ export const LEVEL_5 = {
     { id: 'f5-9', front: 'Czym różni się obraz obozu u Borowskiego od obrazu łagru u Herlinga-Grudzińskiego?', back: 'U Borowskiego obóz niszczy moralność (człowiek zlagrowany), a u Grudzińskiego mimo nieludzkich warunków część więźniów próbuje ocalić godność.' },
     { id: 'f5-10', front: 'Jak kończy się „Przedwiośnie” Stefana Żeromskiego?', back: 'Cezary Baryka idzie na czele robotniczego marszu na Belweder (otwarte zakończenie — symbol buntu i rozczarowania nierównościami w II RP).' },
     { id: 'f5-11', front: 'Czym jest Koncert Jankiela w „Panu Tadeuszu”?', back: 'Muzyczną historią Polski od Konstytucji 3 maja i Targowicy, przez rzeź Pragi, aż po nadzieje związane z Legionami Dąbrowskiego.' },
-    { id: 'f5-12', front: 'Kim był Stolnik Horeszko dla Jacka Soplicy i dlaczego zginął?', back: 'Ojcem ukochanej Jacka (Ewy); wykorzystywał wpływy Jacka na sejmikach, ale nie zgodził się na ślub z córką (symboliczna „czarna polewka”), za co Jacek w afekcie zastrzelił go podczas najazdu Moskali.' }
+    { id: 'f5-12', front: 'Kim był Stolnik Horeszko dla Jacka Soplicy i dlaczego zginął?', back: 'Ojcem ukochanej Jacka (Ewy); wykorzystywał wpływy Jacka na sejmikach, ale nie zgodził się na ślub z córką (symboliczna „czarna polewka”), za co Jacek w afekcie zastrzelił go podczas najazdu Moskali.' },
+    { id: 'f5-13', front: 'Na czym polega paradoks odwróconego buntu pokoleń w „Tangu” Sławomira Mrożka?', back: 'Rodzice (Stomil i Eleonora) zbuntowali się przeciw wszelkim zasadom, tworząc chaos; dlatego syn Artur buntuje się w stronę konserwatyzmu, żądając powrotu formy i ślubu.' },
+    { id: 'f5-14', front: 'Co symbolizuje finałowy taniec Edka i Eugeniusza w „Tangu” Mrożka?', back: 'Triumf prymitywnej siły fizycznej (Edek) oraz uległość i kolaborację bezradnej inteligencji (wuj Eugeniusz) wobec nowej dyktatury po zabójstwie Artura.' },
+    { id: 'f5-15', front: 'Jaką postawę reprezentuje doktor Bernard Rieux w „Dżumie” Alberta Camusa?', back: 'Laicki humanizm i heroizm codzienności: leczy ludzi z poczucia zwykłego obowiązku, bez wiary w Boga i bez wielkiego patosu.' },
+    { id: 'f5-16', front: 'Co zmieniło się w postawie ojca Paneloux w „Dżumie” po śmierci dziecka sędziego Othona?', back: 'W pierwszym kazaniu oskarżał mieszkańców („zasłużyliście na karę”); widok agonii niewinnego dziecka sprawił, że w drugim kazaniu mówił „my” i stanął ramię w ramię z cierpiącymi.' },
+    { id: 'f5-17', front: 'Czym był system trzech kotłów w sowieckim łagrze w „Innym świecie” Herlinga-Grudzińskiego?', back: 'Mechanizmem stopniowego wyniszczenia głodem: wielkość porcji zależała od wyrobienia normy pracy (I kocioł głodowy dla najsłabszych prowadził do szybkiej śmierci w „trupiarni”).' },
+    { id: 'f5-18', front: 'Kim był Michaił Kostylew w „Innym świecie”?', back: 'Więźniem, który codziennie opalał własną rękę w ogniu, aby nie pracować dla sowieckiego systemu — symbol dramatycznej walki o zachowanie godności i wolności wewnętrznej.' },
+    { id: 'f5-19', front: 'Dlaczego Marek Edelman w „Zdążyć przed Panem Bogiem” porównuje pracę lekarza do walki w getcie?', back: 'W obu miejscach chodzi o ocalenie pojedynczego życia — „Pan Bóg chce już zgasić świeczkę, a ja muszę szybko osłonić płomień”, czyli wydrzeć śmierci choćby trochę czasu.' },
+    { id: 'f5-20', front: 'Co znajdowało się w Pokoju 101 w „Roku 1984” George’a Orwella?', back: 'Największy lęk przesłuchiwanego człowieka (dla Winstona była to klatka z głodnymi szczurami), służący złamaniu oporu psychicznego i zmuszeniu do zdrady najbliższej osoby.' },
+    { id: 'f5-21', front: 'Czym był mit „szklanych domów” w „Przedwiośniu” Stefana Żeromskiego?', back: 'Utopijną opowieścią umierającego ojca Seweryna o czystej, nowoczesnej Polsce; w rzeczywistości Cezary po przekroczeniu granicy zobaczył biedę i błoto polskiego miasteczka.' },
+    { id: 'f5-22', front: 'Jakie dwie koncepcje naprawy Polski ścierają się w III części „Przedwiośnia”?', back: 'Stopniowe reformy ewolucyjne i praca u podstaw (Szymon Gajowiec) kontra gwałtowna rewolucja komunistyczna (Antoni Lulek).' },
+    { id: 'f5-23', front: 'W jaki sposób Jacek Soplica (Ksiądz Robak) odkupił swoją winę w „Panu Tadeuszu”?', back: 'Porzucił dumę szlachecką, przyjął habit bernardyna, pracował jako tajny emisariusz przygotowujący powstanie na Litwie, dwukrotnie uratował życie Hrabiemu i Gerwazemu, a przed śmiercią wyspowiadał się Klucznikowi.' },
+    { id: 'f5-24', front: 'Co oznacza przestroga z finału „Dżumy”: „bakcyl dżumy nigdy nie umiera”?', back: 'Zło (zaraza, wojna, totalitaryzm) może jedynie uśpić się na lata, ale w każdej chwili może powrócić — dlatego ludzie muszą zachować czujność i solidarność.' }
   ],
   quiz: [
     {
@@ -213,6 +225,89 @@ export const LEVEL_5 = {
       ],
       correct: 1,
       explanation: '„Kanada” była uprzywilejowanym komandem na rampie w Auschwitz, skąd narrator obserwował transporty.'
+    },
+    {
+      q: 'Kto w „Tangu” Sławomira Mrożka zabija Artura i przejmuje władzę w domu Stomila?',
+      options: ['Wuj Eugeniusz', 'Edek', 'Stomil', 'Ala'],
+      correct: 1,
+      explanation: 'Prymitywny Edek uderza Artura w kark i w finale tańczy tango z uległym wujem Eugeniuszem.'
+    },
+    {
+      q: 'Jaką postawę w „Dżumie” reprezentuje doktor Bernard Rieux?',
+      options: [
+        'Religijny fanatyzm i oczekiwanie cudu',
+        'Laicki humanizm, skromne poczucie obowiązku i solidarność w walce ze złem',
+        'Ucieczkę z miasta przed epidemią',
+        'Czerpanie korzyści finansowych z kwarantanny'
+      ],
+      correct: 1,
+      explanation: 'Rieux nie wierzy w Boga, lecz uważa leczenie chorych i obronę ludzkiego życia za zwykły, uczciwy obowiązek.'
+    },
+    {
+      q: 'Co skłoniło Raymonda Ramberta w „Dżumie” do rezygnacji z ucieczki z Oranu?',
+      options: [
+        'Władze zamknęły port i zastrzeliły przemytników',
+        'Zrozumiał, że wstydem byłoby być szczęśliwym samemu, gdy inni cierpią, i został w oddziałach sanitarnych',
+        'Zakochał się w mieszkance Oranu',
+        'Sam zachorował na dżumę i trafił do szpitala'
+      ],
+      correct: 1,
+      explanation: 'Rambert odkrywa w sobie wspólnotową solidarność („wszyscy stąd pochodzimy”) i wybiera pomoc ludziom.'
+    },
+    {
+      q: 'Jak w „Innym świecie” Herlinga-Grudzińskiego przejawiała się walka Michaiła Kostylewa o godność?',
+      options: [
+        'Został szefem brygady i donosił na współwięźniów',
+        'Codziennie opalał swoją rękę w ogniu, aby nie pracować dla sowieckiego reżimu',
+        'Uciekł z łagru do Rzymu przed zakończeniem wojny',
+        'Pisał pochwalne artykuły dla obozowej gazetki'
+      ],
+      correct: 1,
+      explanation: 'Kostylew wolał straszliwy ból fizyczny i śmierć niż poddanie się niewolniczej pracy w łagrze.'
+    },
+    {
+      q: 'Co w „Zdążyć przed Panem Bogiem” oznacza postawa Marka Edelmana wobec mitu powstania w getcie?',
+      options: [
+        'Odbrązawia patetyczny mit walki, mówiąc szczerze o strachu, głodzie i wartości ocalenia każdego pojedynczego życia',
+        'Twierdzi, że powstanie w getcie nigdy się nie odbyło',
+        'Uważa, że lekarze nie powinni leczyć ciężko chorych pacjentów',
+        'Chwali propagandę powojenną za wyolbrzymianie liczby powstańców'
+      ],
+      correct: 0,
+      explanation: 'Edelman przeciwstawia heroizmowi na pokaz codzienną, cichą walkę o życie — w getcie i na sali operacyjnej.'
+    },
+    {
+      q: 'Co oznacza końcowe zdanie powieści „Rok 1984”: „Kochał Wielkiego Brata”?',
+      options: [
+        'Winston udaje miłość do dyktatora, by uciec z Oceanii',
+        'System totalitarny całkowicie złamał psychikę Winstona w Pokoju 101, zmuszając go do zdrady Julii i autentycznego uwielbienia oprawcy',
+        'Wielki Brat obalił Partię Wewnętrzną i ogłosił demokrację',
+        'Winston został szefem Ministerstwa Prawdy'
+      ],
+      correct: 1,
+      explanation: 'Orwell pokazuje absolutną grozę totalitaryzmu: Partia nie tylko zabija ciało, ale najpierw całkowicie przekształca duszę ofiary.'
+    },
+    {
+      q: 'Dlaczego Cezary Baryka w „Przedwiośniu” rozczarował się zarówno Nawłocią, jak i rewolucją w Baku?',
+      options: [
+        'W Baku zobaczył krwawy terror i śmierć matki, a w Nawłoci — egoizm ziemiaństwa obojętnego na skrajną nędzę chłopów w Chłodku',
+        'W obu miejscach zabroniono mu uczyć się języka polskiego',
+        'W Baku nie było fabryk, a w Nawłoci wybuchła wojna domowa',
+        'W obu miejscach odrzucono jego projekt budowy szklanych domów'
+      ],
+      correct: 0,
+      explanation: 'Cezary odrzuca zarówno okrucieństwo bolszewizmu, jak i bezmyślne użycie życia ziemian w wolnej Polsce.'
+    },
+    {
+      q: 'Jakie dwie funkcje pełni postać Jacka Soplicy (Księdza Robaka) w „Panu Tadeuszu”?',
+      options: [
+        'Jest głównym wrogiem Napoleona oraz zarządcą zamku Horeszków',
+        'Uosabia archetyp winy, głębokiej pokuty oraz bezinteresownej służby ojczyźnie jako tajny emisariusz',
+        'Jest bogaczem pożyczającym pieniądze Sędziemu Soplicy',
+        'Prowadzi spór o charty z Rejentem i Asesorem'
+      ],
+      correct: 1,
+      explanation: 'Jacek Soplica przemienia się z porywczego warchoła i zabójcy Stolnika w pokornego zakonnika-patriotę.'
     }
   ]
 };

@@ -183,7 +183,19 @@ export const LEVEL_6 = {
     { id: 'f6-9', front: 'Co krytykuje Ignacy Krasicki w satyrze „Żona modna”?', back: 'Ślepą modę na cudzoziemszczyznę (francuszczyznę), rozrzutność oraz małżeństwa zawierane wyłącznie dla majątku.' },
     { id: 'f6-10', front: 'Czym jest nowela „Kamizelka” Bolesława Prusa?', back: 'Wzruszającym obrazem cichej miłości małżonków: chory mąż skraca, a żona poszerza pasek kamizelki, by wzajemnie oszczędzić sobie bólu.' },
     { id: 'f6-11', front: 'O czym opowiadają „Chłopi” (tom I „Jesień”) Władysława Reymonta?', back: 'O życiu wsi Lipce w rytmie natury i religii oraz o konflikcie ojca (Maciej Boryna) i syna (Antek) o młodą Jagnę.' },
-    { id: 'f6-12', front: 'Co jest głównym tematem opowiadania „Miejsce” Andrzeja Stasiuka?', back: 'Przemijanie i pamięć ukryta w śladach po dawnej, rozebranej drewnianej cerkwi w Beskidzie Niskim.' }
+    { id: 'f6-12', front: 'Co jest głównym tematem opowiadania „Miejsce” Andrzeja Stasiuka?', back: 'Przemijanie i pamięć ukryta w śladach po dawnej, rozebranej drewnianej cerkwi w Beskidzie Niskim.' },
+    { id: 'f6-13', front: 'Co wyraża sentencja z Księgi Koheleta: „Vanitas vanitatum et omnia vanitas”?', back: 'Marność nad marnościami i wszystko marność — przekonanie o kruchości bogactwa, sławy i doczesnych dążeń człowieka wobec upływu czasu.' },
+    { id: 'f6-14', front: 'Czego uczy biblijna przypowieść o Miłosiernym Samarytaninie i o Synu Marnotrawnym?', back: 'Samarytanin pokazuje miłosierdzie ponad podziałami religijnymi i etnicznymi; Syn Marnotrawny uczy bezwarunkowego przebaczenia ojca skruszonemu grzesznikowi.' },
+    { id: 'f6-15', front: 'Jakie postawy reprezentują mityczni Dedal i Ikar oraz Syzyf i Prometeusz?', back: 'Dedal = rozwaga i rozsądek; Ikar = młodzieńczy idealizm i zgubna brawura; Syzyf = bezsensowna, powtarzana praca; Prometeusz = bunt i poświęcenie dla ludzkości.' },
+    { id: 'f6-16', front: 'Czym jest motyw Deesis w „Bogurodzicy” i humanizacja Maryi w „Lamencie świętokrzyskim”?', back: 'Deesis to scena modlitewnego pośrednictwa (Maryja i Jan Chrzciciel proszą Chrystusa o łaskę dla ludzi); w „Lamencie” Maryja ukazana jest jako cierpiąca, bezradna ludzka matka pod krzyżem.' },
+    { id: 'f6-17', front: 'Na czym polega kryzys światopoglądowy Jana Kochanowskiego w Trenach IX, X i XI?', back: 'Po śmierci Urszulki poeta podważa stoicką mądrość (Tren IX), wątpi w istnienie zaświatów (Tren X: „Gdzieśkolwiek jest, jeśliś jest”) i w wartość cnoty (Tren XI: „Fraszka cnota!”), by odzyskać ukojenie w Trenie XIX.' },
+    { id: 'f6-18', front: 'Czym był sarmatyzm w „Pamiętnikach” Jana Chryzostoma Paska?', back: 'Ideologią szlachty polskiej XVII w. łączącą dumę z wolności szlacheckiej i odwagę rycerską z kłótliwością, pijaństwem i niechęcią wobec cudzoziemców.' },
+    { id: 'f6-19', front: 'Jaką wadę ludzką ośmiesza Molier w komedii „Skąpiec”?', back: 'Chorobliwe skąpstwo i chciwość Harpagona, które niszczą więzi rodzinne — pieniądze ze szkatułki są dla niego ważniejsze od szczęścia własnych dzieci.' },
+    { id: 'f6-20', front: 'Jaki jest morał bajki Ignacego Krasickiego „Jagnię i wilcy” oraz satyry „Pijaństwo”?', back: '„Jagnię i wilcy”: w świecie egoizmu prawo ma silniejszy („Smacznyś, słaby i w lesie”); „Pijaństwo”: wyśmiewa hipokryzję szlachty (pijak wygłasza mowę o szkodliwości alkoholu i od razu idzie pić).' },
+    { id: 'f6-21', front: 'Jaka jest wymowa ballady „Romantyczność” Adama Mickiewicza?', back: 'Manifest romantyzmu przeciwstawiający „szkiełko i oko” (chłodny rozum Starca) poznaniu przez „czucie i wiarę” (empatia, serce i prawda ludowa).' },
+    { id: 'f6-22', front: 'Pod jakim nazwiskiem pokutował Andrzej Kmicic w „Potopie” i po co Sienkiewicz pisał Trylogię?', back: 'Jako Babinicz (wsławił się obroną Jasnej Góry i ocaleniem króla); Sienkiewicz pisał Trylogię „ku pokrzepieniu serc” Polaków pod zaborami.' },
+    { id: 'f6-23', front: 'Czym są „gęba”, „pupa” i „łydka” w „Ferdydurke” Witolda Gombrowicza?', back: 'Gęba = narzucona przez innych sztuczna rola/maska; pupa = upupienie, czyli traktowanie dorosłego jak niedojrzałego dziecka; łydka = kult nowoczesności, sportu i młodości u Młodziaków.' },
+    { id: 'f6-24', front: 'Jaką postawę etyczną nakazuje „Przesłanie Pana Cogito” Zbigniewa Herberta?', back: '„Bądź wierny Idź” — zachowanie godności, odwagi i wierności prawdzie bez obietnicy nagrody oraz zakaz przebaczania w imieniu zamordowanych ofiar.' }
   ],
   quiz: [
     {
@@ -238,6 +250,79 @@ export const LEVEL_6 = {
       options: ['Przedwiośnie', 'Ferdydurke', 'Lalka', 'Tango'],
       correct: 1,
       explanation: 'Józio Kowalski to główny bohater groteskowej powieści „Ferdydurke” Witolda Gombrowicza.'
+    },
+    {
+      q: 'Która księga biblijna jest źródłem toposu „vanitas” (marności spraw doczesnych)?',
+      options: ['Księga Rodzaju', 'Księga Koheleta', 'Księga Wyjścia', 'Pieśń nad Pieśniami'],
+      correct: 1,
+      explanation: 'Słynne „Vanitas vanitatum et omnia vanitas” pochodzi z Księgi Koheleta.'
+    },
+    {
+      q: 'Co w zakończeniu „Iliady” Homera skłania gniewnego Achillesa do oddania ciała Hektora królowi Priamowi?',
+      options: [
+        'Groźba ataku wszystkich bogów olimpijskich',
+        'Współczucie wobec starego ojca Priama i wspomnienie własnego ojca Peleusa',
+        'Ogromny okup w złocie i rydwanach',
+        'Rozkaz króla Agamemnona'
+      ],
+      correct: 1,
+      explanation: 'Wspólny ból i żałoba jednoczą wrogów — Achilles odzyskuje ludzką wrażliwość.'
+    },
+    {
+      q: 'Który utwór średniowieczny ukazuje Maryję jako cierpiącą, zwykłą ludzką matkę stojącą pod krzyżem?',
+      options: ['Bogurodzica', 'Lament świętokrzyski („Posłuchajcie, bracia miła...”)', 'Legenda o św. Aleksym', 'Pieśń o Rolandzie'],
+      correct: 1,
+      explanation: 'Humanizacja Matki Boskiej w „Lamencie świętokrzyskim” kontrastuje z dostojnym hymnem „Bogurodzica”.'
+    },
+    {
+      q: 'W którym z „Trenów” Jan Kochanowski wyraża najgłębsze zwątpienie w sens cnoty i pobożności słowami „Fraszka cnota!”?',
+      options: ['Tren V', 'Tren IX', 'Tren XI', 'Tren XIX'],
+      correct: 2,
+      explanation: 'Tren XI to kulminacja kryzysu etycznego poety po śmierci córeczki Urszulki.'
+    },
+    {
+      q: 'Jaka mania całkowicie opanowała tytułowego bohatera komedii „Skąpiec” Moliera?',
+      options: [
+        'Przesadna dbałość o wykształcenie dzieci',
+        'Obsesyjna chciwość i strach o ukrytą szkatułkę z pieniędzmi',
+        'Chęć zostania ministrem finansów Francji',
+        'Miłość do podróży morskich'
+      ],
+      correct: 1,
+      explanation: 'Harpagon kocha swoją szkatułkę bardziej niż własnego syna i córkę.'
+    },
+    {
+      q: 'Co ośmiesza Ignacy Krasicki w bajce „Jagnię i wilcy”?',
+      options: [
+        'Brak sprytu pasterza pilnującego stada',
+        'Bezkarne prawo silniejszego, który zawsze znajdzie pretekst, by skrzywdzić słabszego („Smacznyś, słaby i w lesie”)',
+        'Chciwość bogatych mieszczan',
+        'Nadmiar polowań na dworze królewskim'
+      ],
+      correct: 1,
+      explanation: 'Krótka bajka obnaża brutalny mechanizm przemocy, wobec którego niewinność bywa bezsilna.'
+    },
+    {
+      q: 'Co w „Ferdydurke” Gombrowicza oznacza pojęcie „upupienia”?',
+      options: [
+        'Zdobycie najwyższej pozycji w świecie nauki',
+        'Narzucone przez innych zdziecinnienie, odebranie dorosłemu powagi i wciśnięcie go w rolę niedojrzałego ucznia',
+        'Zwycięstwo nowoczesnej młodzieży nad tradycją',
+        'Ucieczkę z miasta na spokojną wieś'
+      ],
+      correct: 1,
+      explanation: 'Profesor Pimko przyprawia dorosłemu Józiowi „pupę”, zamykając go na powrót w szkole.'
+    },
+    {
+      q: 'Które zdanie najtrafniej opisuje przesłanie wiersza „Ocalony” Tadeusza Różewicza?',
+      options: [
+        'Wojna ocaliła tradycyjne wartości moralne i język poetycki',
+        'Człowiek ocalały fizycznie z wojny doświadcza pustki moralnej i szuka „nauczyciela”, który od nowa nazwie dobro i zło',
+        'Poeta wzywa do wyjazdu na emigrację do Paryża',
+        'Wiersz chwali potęgę nowoczesnej techniki wojennej'
+      ],
+      correct: 1,
+      explanation: 'Różewicz pokazuje świat po katastrofie Holokaustu, w którym dawne pojęcia („człowiek i zwierzę”, „cnota i występek”) utraciły znaczenie.'
     }
   ]
 };

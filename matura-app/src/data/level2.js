@@ -211,7 +211,19 @@ export const LEVEL_2 = {
     { id: 'f2-9', front: 'Co oznacza renesansowe hasło „antropocentryzm” i „ad fontes”?', back: 'Antropocentryzm = człowiek i jego sprawy w centrum uwagi. Ad fontes = powrót do źródeł (antycznej kultury i Biblii).' },
     { id: 'f2-10', front: 'Czym jest prometeizm i wallenrodyzm w Romantyzmie?', back: 'Prometeizm = bunt jednostki przeciw Bogu w imię dobra ludzkości (Konrad). Wallenrodyzm = walka podstępem i zdradą w imię ocalenia ojczyzny.' },
     { id: 'f2-11', front: 'Co to jest dekadentyzm w Młodej Polsce?', back: 'Poczucie schyłku wieku (fin de siècle), bezsensu istnienia, zmęczenia kulturą i bierności wobec świata.' },
-    { id: 'f2-12', front: 'Jaką postawę reprezentowali Skamandryci na początku Dwudziestolecia międzywojennego?', back: 'Witalizm, radość z odzyskanej niepodległości, pochwałę codzienności i zwykłego człowieka (Tuwim, Lechoń, Wierzyński).' }
+    { id: 'f2-12', front: 'Jaką postawę reprezentowali Skamandryci na początku Dwudziestolecia międzywojennego?', back: 'Witalizm, radość z odzyskanej niepodległości, pochwałę codzienności i zwykłego człowieka (Tuwim, Lechoń, Wierzyński).' },
+    { id: 'f2-13', front: 'Czym różni się stoicyzm od epikureizmu w filozofii antycznej?', back: 'Stoicyzm zalecał spokój ducha (ataraksję) i rozumne przyjęcie losu niezależnie od emocji; epikureizm uczył rozumnego cieszenia się życiem („carpe diem”) bez lęku przed śmiercią i bogami.' },
+    { id: 'f2-14', front: 'Jakie trzy wzorce osobowe (parenetyczne) dominowały w Średniowieczu?', back: '1) Rycerz (Roland — honor, wiara, wierność suwerenowi); 2) Asceta (św. Aleksy — wyrzeczenie się majątku dla Boga); 3) Władca (Karol Wielki — sprawiedliwy obrońca chrześcijaństwa).' },
+    { id: 'f2-15', front: 'Co oznacza średniowieczny teocentryzm i topos Danse Macabre?', back: 'Teocentryzm stawia Boga w centrum wszechświata („Ad maiorem Dei gloriam”); Danse Macabre (taniec śmierci) przypomina o równości wszystkich stanów wobec śmierci.' },
+    { id: 'f2-16', front: 'Czym charakteryzuje się barokowy konceptyzm oraz sarmatyzm?', back: 'Konceptyzm to budowanie utworu na zaskakującym pomyśle i paradoksie (Morsztyn); sarmatyzm to ideologia polskiej szlachty łącząca dumę ze złotej wolności z ksenofobią i przywiązaniem do tradycji.' },
+    { id: 'f2-17', front: 'Jaka była główna funkcja literatury w Oświeceniu („docere et delectare”)?', back: '„Uczyć bawiąc” — literatura miała naprawiać wady społeczeństwa i edukować obywatela poprzez satyry, bajki, komedie i publicystykę.' },
+    { id: 'f2-18', front: 'Czym jest deizm i racjonalizm w filozofii Oświecenia?', back: 'Racjonalizm uznawał rozum i naukę za główne źródło poznania; deizm zakładał, że Bóg stworzył świat niczym zegarmistrz, ale już nie ingeruje w jego prawa.' },
+    { id: 'f2-19', front: 'Co stanowi o istocie polskiego Pozytywizmu (4 hasła programowe)?', back: 'Praca organiczna (rozwój gospodarki), praca u podstaw (oświata i pomoc najuboższym), emancypacja kobiet oraz asymilacja mniejszości.' },
+    { id: 'f2-20', front: 'Czym różni się realizm od naturalizmu w prozie XIX i XX wieku?', back: 'Realizm wiernie i obiektywnie odtwarza typowe zjawiska społeczne i psychologiczne; naturalizm bez upiększeń pokazuje ciemne strony życia, biologizm i determinizm środowiska.' },
+    { id: 'f2-21', front: 'Jakie dwie filozofie zdominowały Młodą Polskę (Schopenhauer vs Nietzsche)?', back: 'Pesymizm Schopenhauera (cierpienie z woli życia, ratunek w sztuce i nirwanie) oraz witalizm Nietzschego (wola mocy, kult siły i nadczłowieka).' },
+    { id: 'f2-22', front: 'Co oznaczają pojęcia „katastrofizm” i „groteska” w Dwudziestoleciu międzywojennym?', back: 'Katastrofizm (lata 30.) wyrażał przeczucie zagłady cywilizacji i wojny; groteska deformowała rzeczywistość przez absurd i śmiech podszyty lękiem (Gombrowicz, Witkacy).' },
+    { id: 'f2-23', front: 'Czym jest „człowiek zlagrowany” w literaturze wojny i okupacji?', back: 'Pojęcie z opowiadań Borowskiego: więzień tak przystosowany do okrutnych praw obozu koncentracyjnego, że aby przeżyć, przejmuje logikę obozu kosztem innych.' },
+    { id: 'f2-24', front: 'Czym różni się postawa Różewicza („Ocalony”) od postawy Herberta („Pan Cogito”) we współczesności?', back: 'Różewicz ogłasza rozpad powojennych wartości i szuka prostych słów od zera; Herbert nakazuje mimo klęsk trwać wiernie przy dawnych zasadach moralnych („idź wyprostowany”).' }
   ],
   quiz: [
     {
@@ -271,6 +283,79 @@ export const LEVEL_2 = {
       ],
       correct: 1,
       explanation: 'W latach 30. XX w. poeci i pisarze (np. Miłosz, Witkacy) przeczuwali nadchodzącą katastrofę wojenną.'
+    },
+    {
+      q: 'Która filozofia antyczna zalecała wewnętrzny spokój, dystans wobec namiętności i zgodę na los?',
+      options: ['Epikureizm', 'Stoicyzm', 'Sceptycyzm', 'Sofistyka'],
+      correct: 1,
+      explanation: 'Stoicyzm uczył równowagi ducha (ataraksji) i kierowania się rozumem zarówno w szczęściu, jak i w nieszczęściu.'
+    },
+    {
+      q: 'Jakie trzy wzorce osobowe (parenetyczne) są najbardziej reprezentatywne dla Średniowiecza?',
+      options: [
+        'Kupiec, naukowiec, rewolucjonista',
+        'Rycerz, asceta, władca',
+        'Poeta, sarmata, obywatel',
+        'Dekadent, inteligent, robotnik'
+      ],
+      correct: 1,
+      explanation: 'Średniowieczna literatura parenetyczna propagowała wzorce rycerza (Roland), ascety (św. Aleksy) oraz sprawiedliwego władcy.'
+    },
+    {
+      q: 'Renesansowe hasło „ad fontes” oznaczało:',
+      options: [
+        'Ucieczkę od nauki ku mistycyzmowi',
+        'Powrót do źródeł — oryginalnych tekstów antycznych i Biblii',
+        'Tworzenie wyłącznie w języku francuskim',
+        'Odrzucenie wszelkiej tradycji literackiej'
+      ],
+      correct: 1,
+      explanation: 'Humaniści renesansowi sięgali do oryginalnych dzieł starożytnej Grecji, Rzymu i Pisma Świętego.'
+    },
+    {
+      q: 'Dla której epoki charakterystyczne są konceptyzm, marinizm, motyw vanitas oraz sarmatyzm?',
+      options: ['Oświecenie', 'Renesans', 'Barok', 'Pozytywizm'],
+      correct: 2,
+      explanation: 'Barok łączył kunsztowne koncepty poetyckie i refleksję nad marnością świata (vanitas) z polskim zjawiskiem sarmatyzmu.'
+    },
+    {
+      q: 'Oświeceniowa zasada „docere et delectare” nakazywała literaturze:',
+      options: [
+        'Szokować czytelnika krwawą grozą',
+        'Uczyć i wychowywać obywatela, jednocześnie go bawiąc',
+        'Skupiać się wyłącznie na przeżyciach mistycznych',
+        'Pisać wyłącznie niepoprawną polszczyzną'
+      ],
+      correct: 1,
+      explanation: 'Satyry, bajki i komedie Oświecenia miały poprawiać obyczaje w przystępnej, zabawnej formie.'
+    },
+    {
+      q: 'Które pojęcie NIE należy do programu polskiego Pozytywizmu?',
+      options: ['Praca organiczna', 'Praca u podstaw', 'Scjentyzm', 'Mesjanizm narodowy'],
+      correct: 3,
+      explanation: 'Mesjanizm narodowy jest ideą epoki Romantyzmu („Dziady cz. III”), natomiast pozytywiści stawiali na pracę i naukę.'
+    },
+    {
+      q: 'Filozofia Artura Schopenhauera w Młodej Polsce wskazywała jako ratunek przed cierpieniem:',
+      options: [
+        'Bezinteresowną sztukę, współczucie i stan nirwany',
+        'Agresywną walkę o władzę polityczną',
+        'Szybki rozwój fabryk i kolei żelaznych',
+        'Zbrojny bunt przeciwko zaborcy'
+      ],
+      correct: 0,
+      explanation: 'Schopenhauer widział wyzwolenie od bólu istnienia w wyciszeniu popędów, kontemplacji sztuki i nirwanie.'
+    },
+    {
+      q: 'Co oznacza pojęcie „nowomowa” w literaturze o totalitaryzmach XX wieku?',
+      options: [
+        'Zbiór poetyckich neologizmów Bolesława Leśmiana',
+        'Język władzy totalitarnej celowo ograniczający słownictwo, by uniemożliwić krytyczne myślenie',
+        'Współczesny slang młodzieżowy',
+        'Styl biblijny w przekładach średniowiecznych'
+      ],
+      correct: 1,
+      explanation: 'George Orwell opisał nowomowę w „Roku 1984” jako narzędzie kontroli umysłu poprzez redukcję języka.'
     }
   ]
 };

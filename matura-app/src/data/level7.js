@@ -199,7 +199,19 @@ export const LEVEL_7 = {
     { id: 'f7-9', front: 'Podaj 2 lektury idealne pod temat „Rola sztuki i artysty w społeczeństwie”.', back: '„Wesele” (Poeta uśpiony dekadentyzmem vs wezwanie do czynu) + „Dziady cz. III” (Konrad jako poeta-kreator w Wielkiej Improwizacji).' },
     { id: 'f7-10', front: 'Jakich błędów unikać w kontekstach?', back: 'Kontekst nie może być „doczepionym” jednym zdaniem na końcu — musi realnie pogłębiać analizę i wiązać się z argumentem.' },
     { id: 'f7-11', front: 'Podaj 2 lektury idealne pod temat „Przemiana wewnętrzna człowieka”.', back: '„Pan Tadeusz” (Jacek Soplica → pokorny Ksiądz Robak) + „Zbrodnia i kara” (Raskolnikow od zbrodniarza do skruszonego na Syberii).' },
-    { id: 'f7-12', front: 'Co zrobić, jeśli na wypracowaniu wpadnie nietypowy temat (np. samotność lub praca)?', back: 'Użyj lektur uniwersalnych: „Lalka” (samotność Wokulskiego, praca w sklepie) + „Dżuma” (samotność Rieux, solidarna praca sanitarna).' }
+    { id: 'f7-12', front: 'Co zrobić, jeśli na wypracowaniu wpadnie nietypowy temat (np. samotność lub praca)?', back: 'Użyj lektur uniwersalnych: „Lalka” (samotność Wokulskiego, praca w sklepie) + „Dżuma” (samotność Rieux, solidarna praca sanitarna).' },
+    { id: 'f7-13', front: 'Jaki jest bezwzględny limit minimalny słów w wypracowaniu maturalnym (Formuła 2023)?', back: 'Minimum 300 wyrazów. Praca krótsza niż 300 słów nie może uzyskać punktów za kompetencje literackie/kompozycję w pełnej skali i traci podstawę zaliczenia.' },
+    { id: 'f7-14', front: 'Ile utworów literackich i kontekstów musisz zawrzeć w wypracowaniu maturalnym?', back: 'Minimum 2 utwory literackie (w tym co najmniej 1 lektura obowiązkowa wskazana w poleceniu/podstawie) oraz minimum 2 funkcjonalne konteksty (np. historyczny, filozoficzny, kulturowy, biograficzny).' },
+    { id: 'f7-15', front: 'Czym jest błąd kardynalny w wypracowaniu maturalnym i jaka jest za niego kara?', back: 'Rażące zniekształcenie fabuły lub sensu lektury obowiązkowej przywołanej jako główne uzasadnienie tezy (np. pomylenie autorów lub zakończenia) — skutkuje wyzerowaniem całego wypracowania (0/35 pkt).' },
+    { id: 'f7-16', front: 'Wymień 3 najgroźniejsze błędy kardynalne w „Antygonie”, „Makbecie” i „Kordianie”.', back: '1) Pisanie, że Antygona została spalona na stosie (powiesiła się w jaskini); 2) Pisanie, że czarownice zmusiły Makbeta do zbrodni (miał wolną wolę); 3) Pisanie, że Kordian zabił cara (zemdlał przed sypialnią).' },
+    { id: 'f7-17', front: 'Wymień 3 najgroźniejsze błędy kardynalne w „Lalce”, „Weselu” i „Dżumie”.', back: '1) Pisanie, że Wokulski utopił się w Wiśle (próbował skoczyć pod pociąg w Skierniewicach, finał jest otwarty); 2) Pisanie, że Gospodarz zgubił Złoty Róg (zgubił go Jasiek); 3) Pisanie, że Tarrou przeżył dżumę (zmarł tuż przed końcem epidemii).' },
+    { id: 'f7-18', front: 'Co oznacza schemat akapitu argumentacyjnego TSACW?', back: 'Teza cząstkowa → Sytuacja z lektury → Analiza („dlaczego i po co?” zamiast streszczenia!) → Kontekst funkcjonalny → Wniosek wiążący akapit z tezą główną.' },
+    { id: 'f7-19', front: 'Czym różni się analiza sceny od jej streszczenia?', back: 'Streszczenie odpowiada na pytanie „co się stało?”; analiza odpowiada na pytanie „DLACZEGO bohater tak postąpił i CO TO ZNACZY dla problemu z tematu?”.' },
+    { id: 'f7-20', front: 'Podaj 2 lektury idealne do motywu „Cena buntu i walki o wolność”.', back: '„Antygona” (bunt jednostki w imię sumienia przeciw prawu państwa) + „Dziady cz. III” / „Kordian” (bunt przeciw tyranii zaborcy) lub „Rok 1984” (klęska buntu w totalitaryzmie).' },
+    { id: 'f7-21', front: 'Podaj 2 lektury idealne do motywu „Wpływ przeszłości i historii na los człowieka”.', back: '„Pan Tadeusz” (historia Jacka Soplicy i nadzieje napoleońskie 1812) + „Lalka” (powstanie styczniowe w życiorysie Wokulskiego i kult Napoleona u Rzeckiego) lub „Inny świat”.' },
+    { id: 'f7-22', front: 'Podaj 2 lektury idealne do motywu „Człowiek wobec cierpienia i zła”.', back: '„Księga Hioba” (niezawinione cierpienie i wierność) + „Dżuma” (solidarna walka ze złem przez Rieux) lub „Zbrodnia i kara” (cierpienie prowadzące do odkupienia).' },
+    { id: 'f7-23', front: 'Czego absolutnie NIE wolno robić w zakończeniu wypracowania maturalnego?', back: 'Nie wolno wprowadzać nowych lektur, nowych argumentów ani zmieniać tezy postawionej we wstępie — zakończenie to synteza dotychczasowego dowodzenia.' },
+    { id: 'f7-24', front: 'Jak stosować „zasadę bezpieczeństwa opisowego”, gdy nie pamiętasz imienia postaci lub dokładnej daty?', back: 'Nie zgaduj! Zastąp niepewny szczegół pewnym opisem roli lub okresu (np. „sędzia śledczy w «Zbrodni i karze»”, „w drugiej połowie XIX wieku”), aby uniknąć błędu rzeczowego.' }
   ],
   quiz: [
     {
@@ -279,6 +291,89 @@ export const LEVEL_7 = {
       ],
       correct: 0,
       explanation: '„Lalka” pasuje do większości tematów maturalnych dzięki bogactwu motywów i psychologii Wokulskiego.'
+    },
+    {
+      q: 'Ile co najmniej słów musi liczyć wypracowanie maturalne z języka polskiego (Formuła 2023)?',
+      options: ['150 słów', '250 słów', '300 słów', '500 słów'],
+      correct: 2,
+      explanation: 'Bezwzględne minimum objętości wypracowania maturalnego na poziomie podstawowym to 300 wyrazów.'
+    },
+    {
+      q: 'Ile utworów literackich i kontekstów należy przywołać w wypracowaniu maturalnym?',
+      options: [
+        'Minimum 1 utwór literacki i brak kontekstów',
+        'Minimum 2 utwory literackie (w tym min. 1 lekturę obowiązkową) oraz minimum 2 funkcjonalne konteksty',
+        'Minimum 5 lektur obowiązkowych bez żadnych kontekstów',
+        'Wyłącznie 2 filmy i 1 wiersz'
+      ],
+      correct: 1,
+      explanation: 'Standard CKE wymaga co najmniej dwóch utworów literackich (z min. jedną lekturą obowiązkową) oraz funkcjonalnych kontekstów pogłębiających argumentację.'
+    },
+    {
+      q: 'Która z poniższych sytuacji spowoduje wyzerowanie całego wypracowania (błąd kardynalny)?',
+      options: [
+        'Napisanie, że Wokulski w „Lalce” ożenił się z Izabelą Łęcką i wyjechał z nią do Ameryki',
+        'Zastosowanie krótszego akapitu wstępnego (3 zdania)',
+        'Brak cytatu dosłownego z pamięci',
+        'Popełnienie dwóch błędów przecinkowych'
+      ],
+      correct: 0,
+      explanation: 'Rażące zniekształcenie głównych faktów lub sensu lektury obowiązkowej to błąd kardynalny skutkujący 0/35 pkt.'
+    },
+    {
+      q: 'Czym różni się dobry akapit argumentacyjny (TSACW) od streszczenia lektury?',
+      options: [
+        'Akapit argumentacyjny dokładnie opisuje każdy rozdział po kolei',
+        'Akapit argumentacyjny przywołuje konkretną scenę tylko po to, by przeanalizować „dlaczego?” i „co z tego wynika dla tezy?”',
+        'Akapit argumentacyjny w ogóle nie może wymieniać bohaterów',
+        'Streszczenie jest zawsze wyżej punktowane niż analiza'
+      ],
+      correct: 1,
+      explanation: 'Egzaminator szuka interpretacji i dowodzenia tezy, a nie biernego opowiadania fabuły.'
+    },
+    {
+      q: 'Która para lektur najlepiej sprawdzi się w temacie: „Przemiana wewnętrzna człowieka pod wpływem winy lub miłości”?',
+      options: [
+        '„Skąpiec” i „Krótkość żywota”',
+        '„Pan Tadeusz” (Jacek Soplica → Ksiądz Robak) oraz „Zbrodnia i kara” (Raskolnikow)',
+        '„Tango” i „Bajki” Krasickiego',
+        '„Bogurodzica” i „Krzak dzikiej róży”'
+      ],
+      correct: 1,
+      explanation: 'Obaj bohaterowie przechodzą głęboką moralną metamorfozę przez pokutę i cierpienie.'
+    },
+    {
+      q: 'Która para lektur najlepiej zilustruje temat: „Walka jednostki o godność w warunkach totalitarnego zniewolenia”?',
+      options: [
+        '„Inny świat” Herlinga-Grudzińskiego (np. Kostylew) oraz „Rok 1984” Orwella (Winston Smith)',
+        '„Lalka” i „Pamiętniki” Paska',
+        '„Odprawa posłów greckich” i „Kamizelka”',
+        '„Chłopi” i „Żona modna”'
+      ],
+      correct: 0,
+      explanation: 'Oba dzieła pokazują zmaganie jednostki z aparatem terroru niszczącym ciało, pamięć i sumienie.'
+    },
+    {
+      q: 'Kiedy kontekst w wypracowaniu uznawany jest przez egzaminatora CKE za FUNKCJONALNY?',
+      options: [
+        'Gdy jest wrzucony na końcu pracy jako luźna ciekawostka biograficzna',
+        'Gdy realnie pomaga wyjaśnić sens sceny, motywacje bohatera lub wymowę utworu w odniesieniu do tezy',
+        'Gdy wymienia wyłącznie datę urodzenia i śmierci autora',
+        'Gdy ma dokładnie 100 słów długości'
+      ],
+      correct: 1,
+      explanation: 'Kontekst (historyczny, filozoficzny, literacki, kulturowy) ma pogłębiać analizę, a nie być pustym ozdobnikiem.'
+    },
+    {
+      q: 'Jak należy poprawnie skonstruować zakończenie rozprawki maturalnej?',
+      options: [
+        'Wprowadzić zupełnie nową, trzecią lekturę obowiązkową',
+        'Syntetycznie podsumować wnioski z obu omówionych utworów, potwierdzając słuszność tezy ze wstępu',
+        'Zmienić tezę na przeciwną, by pokazać obiektywizm',
+        'Napisać jedno krótkie zdanie: „To już koniec mojej pracy”'
+      ],
+      correct: 1,
+      explanation: 'Zakończenie spina kompozycyjnie całą wypowiedź klamrą logiczną bez dodawania nowych wątków.'
     }
   ]
 };

@@ -175,7 +175,19 @@ export const LEVEL_3 = {
     { id: 'f3-9', front: 'Jak objawia się obłęd Lady Makbet w V akcie?', back: 'Lunatykuje i bezskutecznie próbuje zmyć wyimaginowaną krew z rąk („Precz, przeklęta plamo!”), po czym popełnia samobójstwo.' },
     { id: 'f3-10', front: 'Kim była Pani Rollison w „Dziadach cz. III”?', back: 'Niewidomą matką torturowanego w więzieniu studenta, która na Balu u Senatora błaga Nowosilcowa o litość dla syna.' },
     { id: 'f3-11', front: 'Czego dowiaduje się Kordian podczas podróży po Europie (Londyn, Włochy, Watykan)?', back: 'Traci młodzieńcze złudzenia: w Londynie rządzi pieniądz, we Włoszech miłość jest sprzedajna (Wioletta), a Papież każe Polakom słuchać cara.' },
-    { id: 'f3-12', front: 'Czym jest „mała improwizacja” Konrada przed Wielką Improwizacją?', back: 'Pierwszym uniesieniem poetyckim Konrada — widzi siebie jako orła, ale wzrok zatrzymuje mu czarny kruk (zapowiedź klęski przez pychę).' }
+    { id: 'f3-12', front: 'Czym jest „mała improwizacja” Konrada przed Wielką Improwizacją?', back: 'Pierwszym uniesieniem poetyckim Konrada — widzi siebie jako orła, ale wzrok zatrzymuje mu czarny kruk (zapowiedź klęski przez pychę).' },
+    { id: 'f3-13', front: 'Na czym polega konflikt tragiczny w „Antygonie” Sofoklesa?', back: 'Na nierozstrzygalnym starciu dwóch równorzędnych racji: boskiego prawa moralnego i rodzinnego (Antygona) z prawem państwowym i racją stanu (Kreon).' },
+    { id: 'f3-14', front: 'Jaką winę (hybris) popełnia Kreon w „Antygonie” i jak zostaje ukarany?', back: 'Dopuścił się pychy władcy, stawiając swój edykt ponad niepisane prawa bogów i nie słuchając rad Hajmona ani Tyrezjasza; stracił syna Hajmona i żonę Eurydykę.' },
+    { id: 'f3-15', front: 'Dlaczego nie wolno pisać w wypracowaniu, że „czarownice zmusiły Makbeta do zabicia króla”?', back: 'Przepowiednia wiedźm tylko rozbudziła uśpioną ambicję Makbeta — bohater zachował wolną wolę i sam podjął decyzję o zbrodni (inaczej to błąd rzeczowy/kardynalny).' },
+    { id: 'f3-16', front: 'Jak spełniły się dwie zwodnicze przepowiednie czarownic w finale „Makbeta”?', back: '„Las Birnam podejdzie pod Dunsynan” = żołnierze użyli gałęzi jako kamuflażu; „Nikt zrodzony z niewiasty” = Makduf urodził się przez cesarskie cięcie.' },
+    { id: 'f3-17', front: 'Dlaczego Makbet po pierwszej zbrodni popełnia kolejne morderstwa (Banka, rodziny Makdufa)?', back: 'Wkracza w spiralę zbrodni i paranoi: strach przed utratą tronu zmusza go do usuwania świadków i potencjalnych rywali, aż do zupełnego otępienia moralnego.' },
+    { id: 'f3-18', front: 'Na czym polega „Wielka Improwizacja” Konrada w „Dziadach cz. III”?', back: 'Samotny bunt poety z miłości do narodu („Nazywam się Milijon”); żąda od Boga „rządu dusz”, oskarża Stwórcę o obojętność i ociera się o nazwanie Go carem (bluźnierstwo powstrzymane przez diabła).' },
+    { id: 'f3-19', front: 'Czym jest mesjanizm w „Widzeniu Księdza Piotra” w „Dziadach cz. III”?', back: 'Koncepcja, że cierpienie rozbiorowej Polski ma sens zbawczy jak męka Chrystusa („Polska Chrystusem narodów”) i przyniesie odrodzenie wolności Europy.' },
+    { id: 'f3-20', front: 'Co symbolizuje Salon Warszawski (scena VII) i metafora lawy w „Dziadach cz. III”?', back: 'Rozłam społeczeństwa: arystokracja przy stoliku jest obojętna („z wierzchu zimna i twarda skorupa”), a młodzi patrioci przy drzwiach kryją „wewnętrzny ogień”.' },
+    { id: 'f3-21', front: 'Kim jest tajemniczy „44” z Widzenia Księdza Piotra?', back: 'Proroczym zapowiedzeniem przyszłego „wskrzesiciela narodu” (z matki obcej, krew jego dawne bohatery), symbolizującego duchowe wyzwolenie Polski.' },
+    { id: 'f3-22', front: 'Czym jest winkelriedyzm w monologu Kordiana na Mont Blanc?', back: 'Hasło „Polska Winkelriedem narodów” — wezwanie do czynnej walki zbrojnej i poświęcenia jednego narodu, który ściąga na siebie ciosy tyranów, by wyzwolić innych (polemika z biernym mesjanizmem).' },
+    { id: 'f3-23', front: 'Dlaczego Kordian nie zabił cara Mikołaja I w sypialni Zamku Królewskiego?', back: 'W decydującej chwili przed drzwiami pokonały go własne Strach i Imaginacja (halucynacje), wskutek czego zemdlał i został ujęty.' },
+    { id: 'f3-24', front: 'Jak kończy się „Kordian” Juliusza Słowackiego?', back: 'Zakończeniem otwartym: na placu Marsowym oficer podnosi rękę do rozkazu egzekucji, a z boku nadjeżdża adiutant z ułaskawieniem — nie wiadomo, czy zdążył.' }
   ],
   quiz: [
     {
@@ -230,6 +242,89 @@ export const LEVEL_3 = {
       options: ['Banko', 'Malkolm', 'Makduf', 'Lady Makbet'],
       correct: 2,
       explanation: 'Makbet ginie z ręki Makdufa, który urodził się przez cesarskie cięcie.'
+    },
+    {
+      q: 'Dlaczego konflikt w „Antygonie” Sofoklesa nazywamy konfliktem tragicznym?',
+      options: [
+        'Ponieważ obie strony — Antygona (prawo boskie) i Kreon (prawo państwowe) — mają swoje racje, a każdy wybór prowadzi do katastrofy.',
+        'Ponieważ Antygona nie miała żadnego powodu, by chować brata.',
+        'Ponieważ Kreon był od początku szalony i nie kierował się dobrem państwa.',
+        'Ponieważ chór odmówił udziału w przedstawieniu.'
+      ],
+      correct: 0,
+      explanation: 'Istotą konfliktu tragicznego jest starcie dwóch równorzędnych racji bez bezbolesnego wyjścia.'
+    },
+    {
+      q: 'Kto popełnił samobójstwo w finale „Antygony”?',
+      options: [
+        'Wyłącznie Antygona',
+        'Antygona, Hajmon i Eurydyka',
+        'Kreon i Ismena',
+        'Tyrezjasz i Hajmon'
+      ],
+      correct: 1,
+      explanation: 'Antygona powiesiła się w jaskini, Hajmon przebił się mieczem przy jej ciele, a Eurydyka odebrała sobie życie na wieść o śmierci syna.'
+    },
+    {
+      q: 'Jaki jest główny sens dwuznacznej przepowiedni o Lesie Birnam w „Makbecie”?',
+      options: [
+        'Las naprawdę ożył za sprawą czarów',
+        'Żołnierze Malkolma ucięli gałęzie drzew jako kamuflaż, podchodząc pod zamek Dunsynan',
+        'Makbet sam kazał wyciąć las wokół zamku',
+        'Przepowiednia nigdy się nie spełniła'
+      ],
+      correct: 1,
+      explanation: 'Przepowiednia spełniła się w sposób realistyczny i ironiczny — gałęzie stały się maskowaniem nacierających wojsk.'
+    },
+    {
+      q: 'Czego symbolem są widma krwi na rękach Lady Makbet w V akcie dramatu?',
+      options: [
+        'Nieuleczalnych wyrzutów sumienia i poczucia współwiny za zbrodnie',
+        'Chęci popełnienia kolejnego morderstwa',
+        'Zwycięstwa Szkotów nad armią angielską',
+        'Fizycznej choroby skóry'
+      ],
+      correct: 0,
+      explanation: 'Mimo początkowego cynizmu sumienie Lady Makbet budzi się w obłędzie i prowadzi ją do samobójstwa.'
+    },
+    {
+      q: 'W „Wielkiej Improwizacji” Konrad wygłasza słynne słowa:',
+      options: [
+        '„Polska Winkelriedem narodów!”',
+        '„Nazywam się Milijon – bo za milijony kocham i cierpię katusze!”',
+        '„Miej serce i patrzaj w serce!”',
+        '„Ojczyzna to wielki zbiorowy obowiązek”'
+      ],
+      correct: 1,
+      explanation: 'Konrad utożsamia się z całym cierpiącym narodem polskim i żąda od Boga „rządu dusz”.'
+    },
+    {
+      q: 'Kto powstrzymał Konrada przed wypowiedzeniem ostatniego bluźnierczego słowa (nazwania Boga carem)?',
+      options: ['Ksiądz Piotr', 'Anioł Stróż', 'Diabeł (duch zły)', 'Senator Nowosilcow'],
+      correct: 2,
+      explanation: 'Gdy Konrad mdleje wyczerpany improwizacją, to diabeł dopowiada słowo „carem!”, chcąc zdobyć jego duszę.'
+    },
+    {
+      q: 'Co oznacza winkelriedyzm w dramacie „Kordian” Juliusza Słowackiego?',
+      options: [
+        'Bierne cierpienie i modlitwę o cud',
+        'Aktywną walkę zbrojną i poświęcenie narodu dla wolności innych ludów',
+        'Ucieczkę elit na emigrację do Londynu',
+        'Posłuszeństwo wobec zaleceń papieża'
+      ],
+      correct: 1,
+      explanation: 'Kordian na Mont Blanc rzuca hasło „Polska Winkelriedem narodów”, wzywając do czynu zbrojnego w polemice z mesjanizmem.'
+    },
+    {
+      q: 'Dlaczego Kordian nie dokonał zamachu na cara w III akcie?',
+      options: [
+        'Zatrzymali go polscy spiskowcy w podziemiach katedry',
+        'Obezwładniły go własne lęki psychiczne (Strach i Imaginacja) i zemdlał przed sypialnią',
+        'Car opuścił zamek dzień wcześniej',
+        'Papież zabronił mu użycia bagnetu'
+      ],
+      correct: 1,
+      explanation: 'Kordian przegrał z własną rozchwianą psychiką — Strach i Imaginacja odebrały mu siły w kluczowej chwili.'
     }
   ]
 };

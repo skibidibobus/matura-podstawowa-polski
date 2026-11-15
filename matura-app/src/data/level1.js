@@ -227,7 +227,19 @@ export const LEVEL_1 = {
     { id: 'f1-9', front: 'Czym różni się apostrofa od inwokacji?', back: 'Apostrofa to bezpośredni zwrot do osoby/pojęcia; inwokacja to rozbudowana apostrofa na początku eposu z prośbą o natchnienie (np. w „Panu Tadeuszu”).' },
     { id: 'f1-10', front: 'Co to jest anafora?', back: 'Powtórzenie tego samego słowa lub zwrotu na początku kolejnych wersów lub zdań.' },
     { id: 'f1-11', front: 'Czym różni się liryka bezpośrednia od pośredniej?', back: 'W bezpośredniej podmiot liryczny ujawnia się wprost („widzę, kocham”), a w pośredniej ukrywa się za opisem sytuacji lub obrazu.' },
-    { id: 'f1-12', front: 'Co to jest aluzja literacka? Podaj przykład.', back: 'Świadome nawiązanie w utworze do innego znanego dzieła (np. „Tango” Mrożka nawiązuje do „Wesela” i „Hamleta”).' }
+    { id: 'f1-12', front: 'Co to jest aluzja literacka? Podaj przykład.', back: 'Świadome nawiązanie w utworze do innego znanego dzieła (np. „Tango” Mrożka nawiązuje do „Wesela” i „Hamleta”).' },
+    { id: 'f1-13', front: 'Jaki jest dokładny limit słów w notatce syntetyzującej i co grozi za jego złamanie?', back: 'Ściśle 60–90 słów. Przekroczenie limitu (poniżej 60 lub powyżej 90 wyrazów) skutkuje obniżeniem punktacji według zasad CKE.' },
+    { id: 'f1-14', front: 'Czym jest zasada kaskadowa oceny notatki syntetyzującej?', back: 'Najpierw oceniana jest treść (0–3 pkt); jeżeli za treść uczeń dostanie 0 pkt (np. pominie jeden tekst), automatycznie otrzymuje 0 pkt również za język (kryterium D).' },
+    { id: 'f1-15', front: 'Czym różni się funkcja impresywna (nakłaniająca) od funkcji ekspresywnej?', back: 'Impresywna ma wywołać reakcję odbiorcy (tryb rozkazujący, apele, pytania retoryczne); ekspresywna wyraża uczucia i emocje nadawcy (wykrzykniki, zdrobnienia, słownictwo oceniające).' },
+    { id: 'f1-16', front: 'Czym jest funkcja metajęzykowa i fatyczna?', back: 'Metajęzykowa wyjaśnia sam język, znaczenie słów lub definicje; fatyczna służy nawiązaniu, podtrzymaniu lub sprawdzeniu kontaktu z rozmówcą.' },
+    { id: 'f1-17', front: 'Podaj różnicę między antytezą a oksymoronem.', back: 'Oksymoron to dwa sprzeczne wyrazy obok siebie („zimny ogień”), a antyteza to zestawienie dwóch przeciwstawnych myśli lub zdań („zgoda buduje, niezgoda rujnuje”).' },
+    { id: 'f1-18', front: 'Co to jest peryfraza (omówienie) i eufemizm?', back: 'Peryfraza zastępuje nazwę dłuższym opisem („król zwierząt” = lew); eufemizm łagodzi dosadne lub drażliwe określenie („odejść” zamiast „umrzeć”).' },
+    { id: 'f1-19', front: 'Czym różni się symbol od alegorii?', back: 'Alegoria ma jedno skonwencjonalizowane znaczenie (np. waga = sprawiedliwość), a symbol jest wieloznaczny i otwiera wiele interpretacji (np. chochoł w „Weselu”).' },
+    { id: 'f1-20', front: 'Na czym polega błąd imiesłowowego równoważnika zdania?', back: 'Czynność wyrażona imiesłowem (np. „Idąc do szkoły...”) i czynność ze zdania głównego („...zgubił się mój zeszyt”) mają różne podmioty.' },
+    { id: 'f1-21', front: 'Jaka jest poprawna odmiana słowa „cudzysłów” w miejscowniku i znaczenie słowa „bynajmniej”?', back: 'Poprawnie: „w cudzysłowie” (NIE „w cudzysłowiu”). „Bynajmniej” oznacza „wcale nie” i nie wolno mylić go z „przynajmniej”.' },
+    { id: 'f1-22', front: 'Jakie są główne cechy eposu jako gatunku epickiego?', back: 'Rozbudowany utwór wierszowany o przełomowych losach narodu, pisany podniosłym stylem, z inwokacją, porównaniami homeryckimi i wszechwiedzącym narratorem.' },
+    { id: 'f1-23', front: 'Czym różni się liryka inwokacyjna od liryki sytuacji (opisowej)?', back: 'Inwokacyjna zawiera bezpośredni zwrot do adresata („Litwo! Ojczyzno moja!”), a opisowa/sytuacyjna przedstawia obraz lub scenkę bez ujawniania wprost „ja” mówiącego.' },
+    { id: 'f1-24', front: 'Czym jest perswazja w odróżnieniu od manipulacji językowej?', back: 'Perswazja przekonuje otwarcie argumentami rzeczowymi i logicznymi, szanując wolność wyboru odbiorcy; manipulacja ukrywa intencję i gra na lękach lub fałszywych wyborach.' }
   ],
   quiz: [
     {
@@ -287,6 +299,69 @@ export const LEVEL_1 = {
       options: ['Aluzja', 'Oksymoron', 'Inwokacja', 'Hiperbola'],
       correct: 2,
       explanation: 'Inwokacja to uroczysta apostrofa umieszczona na początku eposu.'
+    },
+    {
+      q: 'Jaki jest bezwzględny przedział liczby wyrazów obowiązujący w notatce syntetyzującej CKE?',
+      options: ['30–50 wyrazów', '60–90 wyrazów', '100–150 wyrazów', 'Minimum 200 wyrazów'],
+      correct: 1,
+      explanation: 'Notatka syntetyzująca musi liczyć od 60 do 90 słów — zarówno poniżej 60, jak i powyżej 90 słów traci się punkty.'
+    },
+    {
+      q: 'W zdaniu „Kup ten produkt już dziś, bo jutro może być za późno!” dominuje funkcja:',
+      options: ['Informatywna', 'Metajęzykowa', 'Impresywna (nakłaniająca)', 'Fatyczna'],
+      correct: 2,
+      explanation: 'Tryb rozkazujący („Kup”) i wezwanie do działania wskazują wprost na funkcję impresywną.'
+    },
+    {
+      q: 'Wyrażenie „gorący lód” lub „żywy trup” to przykład:',
+      options: ['Oksymoronu', 'Anafory', 'Peryfrazy', 'Eufemizmu'],
+      correct: 0,
+      explanation: 'Oksymoron łączy dwa bezpośrednio sąsiadujące ze sobą wyrazy o przeciwstawnych znaczeniach.'
+    },
+    {
+      q: 'Który z wymienionych znaków lub motywów jest ALEGORIĄ, a nie symbolem?',
+      options: ['Chochoł w „Weselu”', 'Szklane domy w „Przedwiośniu”', 'Waga jako znak sprawiedliwości', 'Biała róża w wierszu'],
+      correct: 2,
+      explanation: 'Alegoria ma jedno ustalone, skonwencjonalizowane znaczenie (waga = sprawiedliwość), w przeciwieństwie do wieloznacznego symbolu.'
+    },
+    {
+      q: 'W którym zdaniu popełniono błąd składniowy w użyciu imiesłowowego równoważnika zdania?',
+      options: [
+        'Czytając lekturę, robiłem notatki.',
+        'Wchodząc do klasy, zadzwonił dzwonek.',
+        'Skończywszy zadanie, sprawdziłem ortografię.',
+        'Patrząc przez okno, widziałem góry.'
+      ],
+      correct: 1,
+      explanation: 'Podmiot „dzwonek” nie może wykonywać czynności „wchodząc do klasy” — brak tożsamości podmiotu.'
+    },
+    {
+      q: 'Wskaż zdanie w pełni poprawne pod względem językowym:',
+      options: [
+        'W cudzysłowiu zapisujemy cytaty.',
+        'Bynajmniej wiem, o co chodzi w tym wierszu.',
+        'W cudzysłowie zapisujemy tytuły czasopism i cytaty.',
+        'Odgrywa to bardzo ważne znaczenie w utworze.'
+      ],
+      correct: 2,
+      explanation: 'Poprawna forma miejscownika to „w cudzysłowie”; „bynajmniej” znaczy „wcale nie”, a „odgrywać znaczenie” to kontaminacja.'
+    },
+    {
+      q: 'Czym różni się liryka pośrednia od liryki bezpośredniej?',
+      options: [
+        'W liryce pośredniej podmiot liryczny mówi wyłącznie w 1. osobie liczby pojedynczej.',
+        'W liryce pośredniej podmiot ukrywa się za opisem sytuacji, pejzażu lub postaci, nie używając „ja”.',
+        'Liryka pośrednia występuje tylko w tragediach antycznych.',
+        'Liryka pośrednia nie posiada żadnych środków stylistycznych.'
+      ],
+      correct: 1,
+      explanation: 'Liryka pośrednia wyraża emocje i refleksje poprzez przedstawiony obraz czy sytuację bez jawnego „ja” mówiącego.'
+    },
+    {
+      q: 'Który z poniższych gatunków NIE należy do dramatu?',
+      options: ['Tragedia', 'Komedia', 'Ballada', 'Dramat romantyczny'],
+      correct: 2,
+      explanation: 'Ballada jest gatunkiem synkretycznym (łączy lirykę, epikę i elementy dramatyczne), ale nie jest gatunkiem ściśle dramatycznym przeznaczonym na scenę.'
     }
   ]
 };
