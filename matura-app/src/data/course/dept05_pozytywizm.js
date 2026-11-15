@@ -354,7 +354,19 @@ export const DEPT_05 = {
     { id: 'kf5-17', front: 'Co oznacza tytuł noweli Orzeszkowej „Gloria victis”?', back: '„Chwała zwyciężonym” — odwrócenie rzymskiego „Vae victis”, hołd dla moralnego zwycięstwa powstańców styczniowych.', hint: 'Przeciwieństwo Vae victis', category: 'lektura' },
     { id: 'kf5-18', front: 'Pod jakim nazwiskiem pokutował Andrzej Kmicic w „Potopie”?', back: 'Jako Babinicz — pod tym nazwiskiem wsławił się m.in. wysadzeniem kolubryny na Jasnej Górze i ocaleniem króla.', hint: 'Babinicz', category: 'bohater' },
     { id: 'kf5-19', front: 'W jakim celu Sienkiewicz pisał Trylogię?', back: '„Ku pokrzepieniu serc” — by podtrzymać ducha narodowego Polaków pod zaborami pamięcią o dawnych triumfach.', hint: 'Pokrzepienie serc', category: 'epoka' },
-    { id: 'kf5-20', front: 'Kto wypowiada słowa „Non omnis moriar” w finale „Lalki”?', back: 'Doktor Szuman, cytując Horacego po odczytaniu listu o losie Wokulskiego i śmierci Rzeckiego.', hint: 'Szuman o Wokulskim', category: 'cytat' }
+    { id: 'kf5-20', front: 'Kto wypowiada słowa „Non omnis moriar” w finale „Lalki”?', back: 'Doktor Szuman, cytując Horacego po odczytaniu listu o losie Wokulskiego i śmierci Rzeckiego.', hint: 'Szuman o Wokulskim', category: 'cytat' },
+    { id: 'kf5-21', front: 'Jakie były cztery główne hasła programowe polskiego pozytywizmu?', back: '1) Praca organiczna (rozwój gospodarki i przemysłu całego społeczeństwa); 2) Praca u podstaw (oświata i wsparcie dla najniższych warstw, chłopów i biedoty); 3) Emancypacja kobiet; 4) Asymilacja Żydów.', hint: 'Cztery filary programu pozytywistów.', category: 'epoka' },
+    { id: 'kf5-22', front: 'Czym był scjentyzm i utylitaryzm w filozofii pozytywistycznej?', back: 'Scjentyzm to zaufanie wyłącznie do wiedzy naukowej opartej na doświadczeniu i faktach; utylitaryzm (J.S. Mill) to uznanie za wartościowe tego, co przynosi wymierny pożytek jak największej liczbie ludzi.', hint: 'Nauka empiryczna + użyteczność społeczna.', category: 'pojecie' },
+    { id: 'kf5-23', front: 'Dlaczego Stanisława Wokulskiego nazywa się „człowiekiem epoki przejściowej”?', back: 'Łączy w sobie cechy romantyka (udział w powstaniu styczniowym, ślepa i niszcząca miłość do Izabeli Łęckiej, próba samobójcza) z cechami pozytywisty (zmysł handlowy, spółka do handlu ze Wschodem, wspieranie nauki Geista i pomoc biedocie).', hint: 'Romantyczne serce + pozytywistyczny rozum.', category: 'bohater' },
+    { id: 'kf5-24', front: 'Co oznaczają pojęcia „Powiśle” i „Krakowskie Przedmieście” w topografii „Lalki”?', back: 'Krakowskie Przedmieście to reprezentacyjna ulica bogatego mieszczaństwa, sklepu Wokulskiego i arystokracji; Powiśle to dzielnica skrajnej nędzy, bezrobocia i chorób, która wstrząsa Wokulskim podczas spaceru.', hint: 'Kontrast nędzy Powiśla i przepychu centrum.', category: 'motyw' },
+    { id: 'kf5-25', front: 'Kim był Ignacy Rzecki w „Lalce” i jakie trzy idee wyznawał w swoim „Pamiętniku starego subiekta”?', back: 'Oddanym subiektem i przyjacielem Wokulskiego, „starym romantykiem” wiernym: 1) kultowi Napoleona (nadzieja na odzyskanie niepodległości); 2) rzetelnej pracy kupieckiej; 3) wiernej przyjaźni (do śmierci troszczył się o Stacha).', hint: 'Bonapartyzm, etos pracy i przyjaźń.', category: 'bohater' },
+    { id: 'kf5-26', front: 'Dlaczego nie wolno pisać w wypracowaniu, że „Wokulski popełnił samobójstwo w Zasławku”?', back: 'To błąd kardynalny! Wokulski próbował rzucić się pod pociąg w Skierniewicach (uratował go dróżnik Wysocki), a jego ostateczny los po wyjeździe w finale powieści pozostaje otwarty (domysły: wyjazd do Geista lub śmierć w ruinach zamku w Zasławiu).', hint: 'Skierniewice (uratowany), finał otwarty.', category: 'lektura' },
+    { id: 'kf5-27', front: 'Kim byli Julian Ochocki i profesor Geist w „Lalce”?', back: 'Ochocki to młody arystokrata-wynalazca marzący o skonstruowaniu maszyny latającej; Geist to paryski uczony pracujący nad metalem lżejszym od powietrza — obaj symbolizują bezinteresowną wiarę w naukę (scjentyzm).', hint: 'Naukowcy-idealiści i maszyna latająca.', category: 'bohater' },
+    { id: 'kf5-28', front: 'Na czym polegała teoria Raskolnikowa o „ludziach zwykłych i niezwykłych” w „Zbrodni i karze”?', back: 'Raskolnikow podzielił ludzkość na posłuszne „wszy” (ludzi zwykłych) oraz „Napoleonów” (jednostki wybitne), którym rzekomo wolno łamać prawo moralne i przelewać krew w imię wyższego celu — teoria ta poniosła klęskę w starciu z sumieniem.', hint: 'Filozofia nadczłowieka i klęska zbrodni.', category: 'pojecie' },
+    { id: 'kf5-29', front: 'Jaką rolę odegrała Sonia Marmieładowa w duchowym odrodzeniu Rodiona Raskolnikowa?', back: 'Będąc sama skrzywdzoną przez biedę (została prostytutką, by utrzymać rodzinę), nie potępiła Raskolnikowa, skłoniła go do wyznania winy i ucałowania ziemi na Placu Siennym oraz poszła za nim na katorgę na Syberię, prowadząc go do Ewangelii i skruchy.', hint: 'Ewangeliczne miłosierdzie i wspólna katorga.', category: 'bohater' },
+    { id: 'kf5-30', front: 'W jaki sposób Henryk Sienkiewicz ukazał przemianę Andrzeja Kmicica w „Potopie”?', back: 'Z warchoła, zabijaki i zdrajcy służącego Januszowi Radziwiłłowi stał się pokornym obrońcą ojczyzny pod nazwiskiem Babinicz (obrona Jasnej Góry, wysadzenie kolubryny, ocalenie króla Jana Kazimierza), odzyskując cześć i miłość Oleńki.', hint: 'Od warchoła i zdrajcy do bohatera narodowego.', category: 'bohater' },
+    { id: 'kf5-31', front: 'Co oznacza kontrast między dworkiem szlacheckim a mogiłą powstańczą w noweli „Gloria victis” Elizy Orzeszkowej?', back: 'Zwycięzcy zaborcy zatarli ślady mogił, lecz przyroda (wiatr, drzewa, kwiaty) przechowuje pamięć o moralnym zwycięstwie poległych powstańców styczniowych (m.in. Romualda Traugutta i Marysia Tarłowskiego).', hint: 'Pamięć natury o klęsce militarnej, lecz zwycięstwie moralnym.', category: 'lektura' },
+    { id: 'kf5-32', front: 'Jaką rolę pełni opis Petersburga w „Zbrodni i karze” Fiodora Dostojewskiego?', back: 'Miasto jest duszne, ciasne, brudne, pełne szynków i nędznych pokoików przypominających trumnę — przestrzeń współgra ze stanem psychicznym Raskolnikowa, potęgując poczucie osaczenia i rozpadu moralnego.', hint: 'Miasto jako lustro chorej psychiki bohatera.', category: 'motyw' }
   ],
   quiz: [
     {
@@ -572,6 +584,150 @@ export const DEPT_05 = {
         3: "Błąd: Wyścigi na Służewcu były elementem gry salonowej o względy Łęckiej."
       },
       examTip: "Pamiętaj o rozróżnieniu: praca u podstaw = pomoc najniższym warstwom; praca organiczna = rozwój gospodarki całego narodu."
+    },
+    {
+      id: "kq5-13",
+      q: "Co w powieści „Lalka” najpełniej ilustruje moralny upadek i obłudę warszawskiej arystokracji?",
+      options: [
+        "Próżniacze życie na salonach, małżeństwa dla pieniędzy i pogarda dla ludzi pracy (np. postawa Tomasza Łęckiego i Starskiego).",
+        "Masowe wyjazdy arystokratów do pracy w fabrykach włókienniczych w Łodzi.",
+        "Bezwarunkowe oddanie całego majątku na rzecz przytułków na Powiślu.",
+        "Wspieranie polskich naukowców takich jak Geist kosztem własnych pałaców."
+      ],
+      correct: 0,
+      explanation: "Prus ukazuje arystokrację jako klasę pasożytniczą, żyjącą ponad stan, gardzącą kupcami („galanterią”), a jednocześnie ratującą się finansowo dzięki pieniądzom Wokulskiego.",
+      whyWrong: {
+        1: "Arystokracja brzydziła się pracą zarobkową i przemysłem.",
+        2: "Kwesty wielkopostne służyły arystokracji głównie do pokazania się towarzysko, nie do realnej pomocy.",
+        3: "Nauką Geista zainteresował się jedynie Wokulski (kupiec), a nie salonowa elita."
+      },
+      examTip: "W „Lalce” zestawiaj trzy pokolenia idealistów (Rzecki — polityka, Wokulski — miłość i czyn, Ochocki — nauka) z egoizmem arystokracji."
+    },
+    {
+      id: "kq5-14",
+      q: "W jakich okolicznościach Wokulski ostatecznie przejrzał na oczy i zerwał z Izabelą Łęcką?",
+      options: [
+        "W pociągu do Krakowa podsłuchał rozmowę Izabeli ze Starskim po angielsku, gdy szydziła z niego i nazwała go śmiesznym, gubiąc medalion od Geista.",
+        "W Paryżu zobaczył Izabelę wychodzącą za mąż za barona Krzeszowskiego.",
+        "Ignacy Rzecki zabronił mu wstępu do sklepu, jeśli nie zerwie zaręczyn.",
+        "Izabela otwarcie odmówiła wyjazdu do Zasławka na polowanie."
+      ],
+      correct: 0,
+      explanation: "Izabela nie wiedziała, że Wokulski zna angielski; w wagonie flirtowała ze Starskim i żartowała z podarowanego jej przez Stacha medalionu z metalu Geista.",
+      whyWrong: {
+        1: "Izabela nie wyszła za barona Krzeszowskiego.",
+        2: "Rzecki mimo obaw nigdy nie stawiał Wokulskiemu takiego ultimatum.",
+        3: "Izabela chętnie pojechała do Zasławia."
+      },
+      examTip: "Scena w pociągu ze Starskim to punkt zwrotny — moment bolesnego przebudzenia Wokulskiego z romantycznego zaślepienia."
+    },
+    {
+      id: "kq5-15",
+      q: "Co symbolizują „szklane ściany” lub ciasny pokój Raskolnikowa przypominający „szafę albo kufer” w „Zbrodni i karze”?",
+      options: [
+        "Psychiczne osaczenie, alienację i przytłoczenie bohatera przez nędzę oraz obsesyjną ideę zbrodni.",
+        "Nowoczesną architekturę pałacową Petersburga za panowania Piotra Wielkiego.",
+        "Pragnienie Raskolnikowa, by zostać architektem miejskim.",
+        "Dobrobyt rosyjskich studentów prawa w XIX wieku."
+      ],
+      correct: 0,
+      explanation: "Matka Raskolnikowa porównuje jego nędzny pokoik do trumny; ciasna, duszna przestrzeń odzwierciedla zamknięcie bohatera w chorej teorii i samotności.",
+      whyWrong: {
+        1: "To nędzna klitka pod dachem kamienicy czynszowej, a nie pałac.",
+        2: "Raskolnikow był byłym studentem prawa, nie architektury.",
+        3: "Bohater żył w skrajnym ubóstwie i długach."
+      },
+      examTip: "W analizie „Zbrodni i kary” zwracaj uwagę na psychologizację przestrzeni (miasto-pułapka, pokój-trumna)."
+    },
+    {
+      id: "kq5-16",
+      q: "W jaki sposób sędzia śledczy Porfiry Pietrowicz doprowadził do załamania się Raskolnikowa?",
+      options: [
+        "Prowadził z nim subtelne rozmowy psychologiczne, powołując się na jego własny artykuł o „ludziach niezwykłych” i budząc w nim niepokój sumienia.",
+        "Zastosował brutalne tortury fizyczne w piwnicach petersburskiej policji.",
+        "Przekupił Sonię Marmieładową, aby zeznawała przeciwko Raskolnikowowi.",
+        "Aresztował matkę Raskolnikowa i zagroził jej zesłaniem na Sybir."
+      ],
+      correct: 0,
+      explanation: "Porfiry nie miał na początku twardych dowodów materialnych, więc użył intelektualnej gry — dawał Raskolnikowowi do zrozumienia, że zna jego teorię i motyw, czekając na dobrowolne przyznanie się.",
+      whyWrong: {
+        1: "Porfiry nie stosował przemocy fizycznej wobec Raskolnikowa.",
+        2: "Sonia dobrowolnie wspierała Raskolnikowa ku skrusze, nie działała za łapówkę.",
+        3: "Matka bohatera nie została aresztowana."
+      },
+      examTip: "Pojedynek umysłów między Raskolnikowem a Porfirym to klasyczny przykład powieści polifonicznej i psychologicznej."
+    },
+    {
+      id: "kq5-17",
+      q: "Jaką rolę w „Zbrodni i karze” odgrywa scena z katowanym koniem we śnie Raskolnikowa jeszcze przed morderstwem?",
+      options: [
+        "Ujawnia ukrytą wrażliwość moralną i sumienie bohatera, które w rzeczywistości sprzeciwia się okrucieństwu jego własnej teorii.",
+        "Zapowiada karierę Raskolnikowa jako właściciela stajni wyścigowych.",
+        "Jest snem proroczym o wybuchu pożaru w sklepie Wokulskiego.",
+        "Dowodzi, że Raskolnikow od dzieciństwa nie odczuwał żadnej empatii."
+      ],
+      correct: 0,
+      explanation: "Mały Rodia we śnie płacze i obejmuje zakatowaną klacz — sen pokazuje, że natura ludzka i sumienie Raskolnikowa buntują się przeciw przemocy, którą chce usprawiedliwić rozumem.",
+      whyWrong: {
+        1: "To symboliczna projekcja psychiki, nie plan zawodowy.",
+        2: "Sen dotyczy wyłącznie „Zbrodni i kary”, nie „Lalki”.",
+        3: "Przeciwnie — sen dowodzi głębokiej empatii i wrażliwości bohatera."
+      },
+      examTip: "Sny w „Zbrodni i karze” to głos podświadomości i sumienia bohatera."
+    },
+    {
+      q: "Dlaczego w finale noweli „Kamizelka” Bolesława Prusa narrator kupuje zniszczoną kamizelkę za pół rubla?",
+      id: "kq5-18",
+      options: [
+        "Ponieważ zna poruszającą historię bezgranicznej miłości małżonków i chce ocalić tę pamiątkę od zapomnienia.",
+        "Ponieważ zamierza ją naprawić i sprzedać z zyskiem na targu staroci.",
+        "Ponieważ szuka w kieszeniach kamizelki ukrytych dokumentów powstańczych.",
+        "Ponieważ potrzebuje ciepłego ubrania na zimę w Warszawie."
+      ],
+      correct: 0,
+      explanation: "Kamizelka staje się dla narratora relikwią codziennego, cichego heroizmu i poświęcenia dwojga zwykłych ludzi.",
+      whyWrong: {
+        1: "Narrator jest zamożnym sąsiadem-obserwatorem kierowanym empatią, nie chęcią zysku.",
+        2: "Nowela nie ma wątku tajnych dokumentów.",
+        3: "Kamizelka jest zniszczona i zbyt mała — ma wartość wyłącznie symboliczną."
+      },
+      examTip: "„Kamizelka” to mistrzowski przykład realizmu małej formy: zwykły przedmiot staje się nośnikiem wielkiego dramatu uczuć."
+    },
+    {
+      id: "kq5-19",
+      q: "W jaki sposób Henryk Sienkiewicz uzasadnił przemianę Andrzeja Kmicica w powieści „Potop”?",
+      options: [
+        "Szok po odkryciu zdrady Janusza Radziwiłła oraz pragnienie odzyskania czci u Oleńki Billewiczówny skłoniły go do pokuty i ofiarnej służby ojczyźnie.",
+        "Kmicic został zmuszony przez szwedzkiego króla Karola Gustawa do przejścia na stronę polską.",
+        "Babinicz był w rzeczywistości bratem bliźniakiem Kmicica, który zajął jego miejsce.",
+        "Kmicic porzucił walkę zbrojną i zamieszkał jako pustelnik na Jasnej Górze."
+      ],
+      correct: 0,
+      explanation: "Kmicic zrozumiał, że Radziwiłł oddał Polskę Szwedom dla własnej korony; przyjął imię Babinicz, by czynami zmazać hańbę zdrajcy i zasłużyć na przebaczenie Oleńki oraz narodu.",
+      whyWrong: {
+        1: "Kmicic sam zerwał z Radziwiłłem i walczył ze Szwedami.",
+        2: "Kmicic i Babinicz to ta sama osoba!",
+        3: "Kmicic bronił Jasnej Góry z bronią w ręku, a potem walczył u boku króla i Czarnieckiego."
+      },
+      examTip: "Pamiętaj o motywie metamorfozy (winy i odkupienia): Kmicic obok Jacka Soplicy to najważniejszy polski bohater przechodzący przemianę moralną."
+    },
+    {
+      id: "kq5-20",
+      q: "Które z poniższych stwierdzeń trafnie charakteryzuje ideę utylitaryzmu w nowelach i powieściach pozytywistycznych?",
+      options: [
+        "Prawdziwa wartość człowieka i jego działań mierzy się ich praktyczną przydatnością dla dobra i rozwoju społeczeństwa.",
+        "Jedynym celem sztuki jest czysta forma oderwana od problemów zwykłych ludzi.",
+        "O wartości jednostki decyduje wyłącznie jej pochodzenie szlacheckie i herb.",
+        "Człowiek powinien całkowicie wycofać się z życia publicznego do kontemplacji natury."
+      ],
+      correct: 0,
+      explanation: "Pozytywiści głosili użyteczność społeczną (utylitaryzm) — stąd krytyka bezproduktywnej arystokracji w „Lalce” i pochwała rzemieślników, uczonych oraz nauczycieli.",
+      whyWrong: {
+        1: "Hasło „sztuka dla sztuki” należy do Młodej Polski (Przybyszewski), nie pozytywizmu.",
+        2: "Pozytywizm zwalczał przesądy stanowe.",
+        3: "Pozytywizm propagował aktywną pracę na rzecz wspólnoty."
+      },
+      examTip: "Utylitaryzm = użyteczność dla ogółu. Łącz go z pracą organiczną i pracą u podstaw."
     }
   ]
 };

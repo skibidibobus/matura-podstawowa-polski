@@ -319,7 +319,19 @@ export const DEPT_01 = {
     { id: 'kf1-15', front: 'Jaka funkcja języka dominuje w haśle: „Nie bądź obojętny, przyłącz się do zbiórki!”?', back: 'Funkcja impresywna (nakłaniająca) — zastosowano tryb rozkazujący i bezpośredni apel do działania.', hint: 'Skupienie na zachowaniu odbiorcy.', category: 'jezyk' },
     { id: 'kf1-16', front: 'Co to jest inwersja w poezji i prozie artystycznej?', back: 'Szyk przestawny wyrazów, naruszający naturalną kolejność gramatyczną w celu uwypuklenia kluczowego słowa lub stylizacji na język dawny.', hint: 'Przestawienie słów dla patosu.', category: 'pojecie' },
     { id: 'kf1-17', front: 'Czym jest argument rzeczowy w wypowiedzi argumentacyjnej?', back: 'Argument oparty na weryfikowalnych faktach: danych statystycznych, wynikach badań, cytatach z ekspertów, konkretnych datach i wydarzeniach historycznych.', hint: 'Fakty, liczby, twarde dowody.', category: 'wypracowanie' },
-    { id: 'kf1-18', front: 'Dlaczego nie wolno pisać w wypracowaniu: „Uważam, że autor ma rację” w analizie tekstu w Części 1?', back: 'Zadania w Części 1 badają zrozumienie intencji i struktury tekstu autora, a nie osobiste upodobania zdającego — liczy się bezstronny dowód analityczny.', hint: 'Arkusz bada wiedzę i logikę, nie sympatie.', category: 'wypracowanie' }
+    { id: 'kf1-18', front: 'Dlaczego nie wolno pisać w wypracowaniu: „Uważam, że autor ma rację” w analizie tekstu w Części 1?', back: 'Zadania w Części 1 badają zrozumienie intencji i struktury tekstu autora, a nie osobiste upodobania zdającego — liczy się bezstronny dowód analityczny.', hint: 'Arkusz bada wiedzę i logikę, nie sympatie.', category: 'wypracowanie' },
+    { id: 'kf1-19', front: 'Ile punktów można zdobyć w notatce syntetyzującej za kryteria A, B i C (treść) oraz za kryterium D (język)?', back: 'Za treść (A: wspólny temat, B: zestawienie podobieństw i różnic, C: brak zbędnych szczegółów i dygresji) otrzymuje się łącznie 0–3 pkt, a za poprawność językową, ortograficzną i interpunkcyjną (D) — 0–1 pkt (łącznie maks. 4 pkt).', hint: 'Podział 3 pkt + 1 pkt.', category: 'wypracowanie' },
+    { id: 'kf1-20', front: 'Czym jest zasada trójdzielnej struktury akapitów w notatce syntetyzującej?', back: 'Akspit 1: wprowadzenie wspólnego tematu obu tekstów; Akapit 2: rozwinięcie różnic i punktów stycznych obu autorów; Akapit 3: zwięzła synteza klamrowa bez własnych ocen.', hint: 'Wspólny mianownik → zestawienie → klamra.', category: 'wypracowanie' },
+    { id: 'kf1-21', front: 'Dlaczego w notatce syntetyzującej zakazane jest dosłowne cytowanie lub kopiowanie zdań z arkusza?', back: 'Notatka sprawdza umiejętność własnego, skondensowanego parafrazowania sensu obu tekstów — przepisywanie całych zdań grozi utratą punktów za brak uogólnienia i przekroczeniem limitu 90 słów.', hint: 'Parafraza i uogólnienie zamiast „kopiuj-wklej”.', category: 'wypracowanie' },
+    { id: 'kf1-22', front: 'Czym różni się funkcja fatyczna języka od funkcji poetyckiej?', back: 'Funkcja fatyczna służy nawiązaniu, podtrzymaniu lub zakończeniu kontaktu z odbiorcą („Halo, słyszysz mnie?”, „Dzień dobry”), a funkcja poetycka skupia uwagę na samej formie i brzmieniu komunikatu (rytm, metafory, gry słowne).', hint: 'Kontakt z rozmówcą vs piękno/organizacja tekstu.', category: 'pojecie' },
+    { id: 'kf1-23', front: 'Na czym polega funkcja referencjalna (informatywna/poznawcza) i jakie cechy tekstu na nią wskazują?', back: 'Przekazuje obiektywną wiedzę o świecie, faktach i zjawiskach; wyróżnia się brakiem emocjonalizmów, obecnością terminów naukowych, liczb, dat i czasowników w 3. osobie.', hint: 'Neutralny przekaz faktów.', category: 'pojecie' },
+    { id: 'kf1-24', front: 'Czym jest hiperbola i eufemizm oraz jaką pełnią funkcję w tekście?', back: 'Hiperbola to celowe wyolbrzymienie (np. „morze łez”) wzmacniające ekspresję; eufemizm to złagodzenie dosłownego, drastycznego określenia (np. „odszedł” zamiast „umarł”) z przyczyn obyczajowych lub retorycznych.', hint: 'Przesada vs złagodzenie.', category: 'pojecie' },
+    { id: 'kf1-25', front: 'Na czym polega paralelizm składniowy i jaką funkcję pełni w przemówieniach lub poezji?', back: 'To powtarzanie zdań lub fraz o identycznej bądź bardzo podobnej budowie gramatycznej; nadaje wypowiedzi rytm, uporządkowanie oraz wzmacnia siłę argumentacji lub patos.', hint: 'Powtarzalny schemat gramatyczny.', category: 'pojecie' },
+    { id: 'kf1-26', front: 'Jak odróżnić paradoks od oksymoronu w zadaniu maturalnym?', back: 'Oksymoron to dwuwyrazowy związek wyrazów o sprzecznych znaczeniach (np. „gorący lód”), natomiast paradoks to całe zdanie lub myśl pozornie sprzeczna z logiką, lecz kryjąca głębszą prawdę (np. „Wiem, że nic nie wiem”).', hint: 'Dwa wyrazy vs całe zdanie z głębszym sensem.', category: 'pojecie' },
+    { id: 'kf1-27', front: 'Czym jest argumentacja ad personam i dlaczego dyskwalifikuje ją etyka retoryczna?', back: 'To atakowanie cech osobistych, wyglądu, wieku lub życiorysu rozmówcy zamiast odnoszenia się do jego tez — jest chwytem erystycznym i manipulacją, a nie argumentem merytorycznym.', hint: 'Atak na człowieka zamiast na pogląd.', category: 'pojecie' },
+    { id: 'kf1-28', front: 'Podaj przykład błędu frazeologicznego (kontaminacji) i wyjaśnij, jak go poprawić.', back: 'Błąd: „odgrywać ważną rolę” pomieszane z „mieć znaczenie” daje niepoprawne „odgrywać ważne znaczenie” albo „brać udział” + „uczestniczyć” → „brać uczestnictwo”. Poprawnie: rozdzielić związki („odgrywać ważną rolę” lub „mieć ważne znaczenie”).', hint: 'Skrzyżowanie dwóch frazeologizmów.', category: 'pojecie' },
+    { id: 'kf1-29', front: 'Czym różni się wulgaryzacja od archaizacji i potocyzacji stylu w zadaniu z analizy tekstu?', back: 'Archaizacja stylizuje język na dawny (dawne słownictwo/fleksja), potocyzacja wprowadza swobodną mowę codzienną dla bliskości z odbiorcą, a wulgaryzacja celowo łamie tabu językowe w celu szoku lub oddania brutalności.', hint: 'Dawność vs codzienność vs łamanie tabu.', category: 'pojecie' },
+    { id: 'kf1-30', front: 'Jak brzmi złota zasada CKE dotycząca nazywania środków stylistycznych w części testowej arkusza?', back: 'Samo podanie nazwy środka (np. „autor użył metafory”) daje 0 pkt — zawsze należy podać przykład z tekstu ORAZ określić jego konkretną funkcję w tym fragmencie (np. buduje nastrój grozy, ironizuje).', hint: 'Nazwa + przykład + funkcja w kontekście.', category: 'wypracowanie' }
   ],
   quiz: [
     {
@@ -525,6 +537,142 @@ export const DEPT_01 = {
         3: "To błąd rzeczowy w interpretacji tekstu."
       },
       examTip: "Zasady oceniania CKE surowo rozróżniają błędy gramatyczne od ortograficznych i interpunkcyjnych."
+    },
+    {
+      q: "Jakie jest dokładne znaczenie kryterium A w ocenie notatki syntetyzującej na maturze?",
+      options: [
+        "Określenie wspólnego tematu lub problemu, do którego odnoszą się oba teksty źródłowe.",
+        "Zacytowanie minimum dwóch zdań z każdego tekstu w celu udowodnienia jego lektury.",
+        "Wyrażenie własnego stanowiska wobec tezy pierwszego i drugiego autora.",
+        "Użycie co najmniej trzech terminów z zakresu teorii literatury."
+      ],
+      correct: 0,
+      explanation: "Kryterium A bada, czy zdający prawidłowo rozpoznał i nazwał wspólny temat/problem łączący oba zacytowane teksty.",
+      whyWrong: {
+        1: "Cytowanie fragmentów w notatce jest zbędne i marnuje limit 60–90 słów.",
+        2: "W notatce obowiązuje obiektywizm bez własnych opinii.",
+        3: "Terminy literaturoznawcze nie są obowiązkowym wymogiem notatki syntetyzującej."
+      },
+      examTip: "Pierwsze zdanie notatki zawsze zacznij od wskazania wspólnego tematu obu tekstów."
+    },
+    {
+      q: "W którym zdaniu dominuje funkcja fatyczna języka?",
+      options: [
+        "„Czy mógłbyś mówić nieco głośniej, bo przerywa połączenie?”",
+        "„W tym roku matura z języka polskiego rozpocznie się o godzinie 9:00.”",
+        "„Słowo «epopeja» pochodzi z języka greckiego i oznacza utwór narracyjny.”",
+        "„Ach, jakże cudowny jest ten wiosenny poranek nad Wisłą!”"
+      ],
+      correct: 0,
+      explanation: "Pytanie sprawdzające kanał komunikacji i podtrzymujące kontakt z rozmówcą („Czy mógłbyś mówić głośniej, bo przerywa”) realizuje funkcję fatyczną.",
+      whyWrong: {
+        1: "To funkcja informatywna (referencjalna) — przekazuje fakt.",
+        2: "To funkcja metajęzykowa — wyjaśnia znaczenie i pochodzenie słowa.",
+        3: "To funkcja ekspresywna — wyraża zachwyt nadawcy."
+      },
+      examTip: "Funkcja fatyczna to wszelkie powitania, pożegnania i pytania o to, czy odbiorca słucha/rozumie."
+    },
+    {
+      q: "Wskaż poprawne rozróżnienie między alegorią a symbolem:",
+      options: [
+        "Alegoria ma jedno skonwencjonalizowane znaczenie (np. waga = sprawiedliwość), a symbol jest wieloznaczny.",
+        "Symbol ma zawsze tylko jedno znaczenie słownikowe, a alegoria jest nieprzetłumaczalna.",
+        "Alegoria występuje wyłącznie w liryce, a symbol wyłącznie w powieściach realistycznych.",
+        "Symbol polega na zastąpieniu słowa dłuższym opisem, a alegoria to zestawienie przeciwieństw."
+      ],
+      correct: 0,
+      explanation: "Alegoria odwołuje się do utrwalonego w kulturze, jednoznacznego kodu (np. lis = chytrość), podczas gdy symbol otwiera wiele równorzędnych interpretacji (np. chochoł w „Weselu”).",
+      whyWrong: {
+        1: "Jest dokładnie odwrotnie.",
+        2: "Oba tropy występują we wszystkich rodzajach literackich.",
+        3: "Opis zastępujący wyraz to peryfraza, a zestawienie przeciwieństw to antyteza."
+      },
+      examTip: "Pamiętaj o parze: alegoria = 1 klucz (jednoznaczna), symbol = wiele kluczy (wieloznaczny)."
+    },
+    {
+      q: "Który z poniższych zabiegów językowych jest klasycznym przykładem manipulacji, a nie uczciwej perswazji?",
+      options: [
+        "Ukrywanie niewygodnych danych i wywoływanie strachu przez fałszywe dychotomie („kto nie jest z nami, ten niszczy kraj”).",
+        "Przytaczanie zweryfikowanych raportów GUS oraz opinii niezależnych ekspertów.",
+        "Przedstawienie zarówno zalet, jak i potencjalnych kosztów proponowanego rozwiązania.",
+        "Jasne oddzielenie faktów od własnej tezy i zaproszenie odbiorcy do dyskusji."
+      ],
+      correct: 0,
+      explanation: "Manipulacja ukrywa prawdziwą intencję, gra na lękach i stosuje fałszywy wybór („albo-albo”), aby wymusić decyzję bez refleksji odbiorcy.",
+      whyWrong: {
+        1: "To uczciwy argument rzeczowy (perswazja).",
+        2: "To rzetelna argumentacja wielostronna.",
+        3: "To etyczna postawa w debacie."
+      },
+      examTip: "W zadaniach arkuszowych odróżniaj jawną intencję (perswazja) od ukrytego przymusu i emocjonalnego szantażu (manipulacja)."
+    },
+    {
+      q: "Które z poniższych zdań zawiera błąd gramatyczny z użyciem imiesłowowego równoważnika zdania?",
+      options: [
+        "„Czytając lekturę, wypadła mi z rąk zakładka.”",
+        "„Czytając lekturę, robiłem dokładne notatki na marginesie.”",
+        "„Wyszedłszy z sali egzaminacyjnej, odetchnęliśmy z ulgą.”",
+        "„Patrząc na wykres, zauważamy wyraźny wzrost czytelnictwa.”"
+      ],
+      correct: 0,
+      explanation: "Podmiotem zdania nadrzędnego jest „zakładka” (ona wypadła), a imiesłów „czytając” sugeruje, że to zakładka czytała lekturę — brak tożsamości podmiotu.",
+      whyWrong: {
+        1: "W obu częściach podmiotem jestem „ja” — zdanie poprawne.",
+        2: "W obu częściach podmiotem jesteśmy „my” — zdanie poprawne.",
+        3: "W obu częściach podmiotem jesteśmy „my” — zdanie poprawne."
+      },
+      examTip: "Zawsze zadaj pytanie: czy ta sama osoba/rzecz wykonuje obie czynności w zdaniu?"
+    },
+    {
+      q: "Czym jest kontaminacja (błąd frazeologiczny) i w którym zdaniu występuje?",
+      options: [
+        "To skrzyżowanie dwóch związków frazeologicznych, widoczne w zdaniu: „Ten argument odgrywa bardzo ważne znaczenie”.",
+        "To powtórzenie tego samego wyrazu na początku wersów, np. „Wszędzie cicho, wszędzie pusto”.",
+        "To celowe zastąpienie wyrazu jego łagodniejszym odpowiednikiem, np. „mijać się z prawdą”.",
+        "To błąd ortograficzny polegający na łącznej pisowni partykuły „nie” z czasownikiem."
+      ],
+      correct: 0,
+      explanation: "„Odgrywać rolę” i „mieć znaczenie” zostały błędnie zmieszane w niepoprawne „odgrywać znaczenie”.",
+      whyWrong: {
+        1: "To anafora — środek stylistyczny, nie błąd.",
+        2: "To eufemizm.",
+        3: "To błąd ortograficzny, a nie kontaminacja frazeologiczna."
+      },
+      examTip: "Uważaj w wypracowaniach na zwroty typu „odnosić wrażenie” vs „mieć poczucie” — nigdy ich nie krzyżuj."
+    },
+    {
+      q: "W wypowiedzi publicystycznej autor użył zwrotu: „Zatopiliśmy się w oceanie bezsensownych powiadomień”. Jaką funkcję pełni tu hiperbola?",
+      options: [
+        "Wyolbrzymia skalę zjawiska nadmiaru bodźców cyfrowych, aby wywołać niepokój i skłonić odbiorcę do refleksji.",
+        "Łagodzi negatywny wydźwięk uzależnienia od telefonu, wprowadzając ton żartobliwy.",
+        "Nadaje tekstowi obiektywny charakter sprawozdania statystycznego.",
+        "Wyjaśnia dokładną etymologię słowa „powiadomienie”."
+      ],
+      correct: 0,
+      explanation: "Hiperbola („ocean powiadomień”) celowo przejaskrawia problem, aby uświadomić odbiorcy jego ogromną skalę i zaangażować go emocjonalnie.",
+      whyWrong: {
+        1: "Łagodzeniem zajmuje się eufemizm, nie hiperbola.",
+        2: "Metaforyczna przesada jest subiektywna, nie statystyczna.",
+        3: "Nie ma tu analizy pochodzenia wyrazu (funkcji metajęzykowej)."
+      },
+      examTip: "Na maturze opisując hiperbolę, zawsze pokaż, CO dokładnie zostało wyolbrzymione i PO CO."
+    },
+    {
+      q: "Które zdanie jest w pełni poprawne pod względem normy językowej i interpunkcyjnej?",
+      options: [
+        "„W cudzysłowie umieszczamy tytuły utworów, natomiast w nawiasie — daty wydania.”",
+        "„W cudzysłowiu umieszczamy tytuły utworów, lecz nie wiemy gdzie je zapisać.”",
+        "„Bynajmniej rozumiem treść tego wiersza, choć jest on trudny.”",
+        "„Wracając do domu przez park, zaczęło mocno padać.”"
+      ],
+      correct: 0,
+      explanation: "Poprawna forma miejscownika rzeczownika „cudzysłów” to „w cudzysłowie”; zdanie ma również poprawną interpunkcję.",
+      whyWrong: {
+        1: "Forma „w cudzysłowiu” jest błędna, a przed „gdzie” brakuje przecinka.",
+        2: "„Bynajmniej” znaczy „wcale nie” i nie może zastępować słowa „przynajmniej”.",
+        3: "Błąd imiesłowowego równoważnika zdania („wracając” nie może odnosić się do „zaczęło padać”)."
+      },
+      examTip: "Zapamiętaj trójkę maturalną: w cudzysłowie (NIE -wiu), bynajmniej = wcale nie, oraz spójność podmiotu przy imiesłowie."
     }
   ]
 };

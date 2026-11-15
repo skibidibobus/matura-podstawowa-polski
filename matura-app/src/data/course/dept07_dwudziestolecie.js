@@ -278,7 +278,17 @@ export const DEPT_07 = {
     { id: 'kf7-17', front: 'O czym traktuje ballada „Dusiołek” Leśmiana?', back: 'O chłopie Bajdale duszonym we śnie przez potwora, który ma pretensje do Boga o to, że stworzył taką poczwarę na świecie.', hint: 'Bajdała i Bóg', category: 'lektura' },
     { id: 'kf7-18', front: 'Jaka jest wymowa ballady „Dziewczyna” Bolesława Leśmiana?', back: 'Ukazuje tragizm ludzkich wysiłków w dążeniu do złudnego ideału — za rozbitym przez braci murem nie było żadnej dziewczyny.', hint: 'Pustka za murem', category: 'motyw' },
     { id: 'kf7-19', front: 'Na czym polega „mitologizacja rzeczywistości” u Brunona Schulza?', back: 'Na przekształcaniu szarej codzienności miasteczka Drohobycz w magiczną, oniryczną opowieść mityczną o stworzeniu świata.', hint: 'Mityzacja Drohobycza', category: 'pojecie' },
-    { id: 'kf7-20', front: 'Kto jest centralną postacią opowiadań „Sklepy cynamonowe” obok narratora?', back: 'Ojciec Jakub — kupiec, marzyciel, eksperymentator i demiurg toczący walkę z martwotą materii.', hint: 'Ojciec Jakub', category: 'bohater' }
+    { id: 'kf7-20', front: 'Kto jest centralną postacią opowiadań „Sklepy cynamonowe” obok narratora?', back: 'Ojciec Jakub — kupiec, marzyciel, eksperymentator i demiurg toczący walkę z martwotą materii.', hint: 'Ojciec Jakub', category: 'bohater' },
+    { id: 'kf7-21', front: 'Jakie trzy wielkie etapy ideowe i życiowe przechodzi Cezary Baryka w „Przedwiośniu”?', back: '1) Baku — rewolucyjny zapał i brutalna rzeczywistość rzezi oraz głodu; 2) Nawłoć — sielankowe ziemiaństwo i romans z Laurą, ale też nędza Chłodka; 3) Warszawa — spór o kształt Polski z Gajowcem i Lulkiem oraz marsz na Belweder.', hint: 'Baku → Nawłoć → Warszawa.', category: 'lektura' },
+    { id: 'kf7-22', front: 'Czym był mit „szklanych domów” w „Przedwiośniu” i kto go stworzył?', back: 'Opowieść umierającego ojca, Seweryna Baryki, o nowoczesnej, sprawiedliwej i czystej Polsce budowanej ze szkła — po przekroczeniu granicy okazała się bolesną utopią w zderzeniu z nędzą i błotem polskiego miasteczka.', hint: 'Utopia ojca vs rzeczywistość II RP.', category: 'motyw' },
+    { id: 'kf7-23', front: 'Jakie dwie koncepcje odbudowy Polski zderzają się w trzeciej części „Przedwiośnia”?', back: 'Ewolucyjne reformy stopniowe (Szymon Gajowiec — praca u podstaw, oświata, waluta, podatki) vs gwałtowny przewrót komunistyczny i rewolucja (Antoni Lulek).', hint: 'Ewolucjonizm Gajowca vs rewolucjonizm Lulka.', category: 'pojecie' },
+    { id: 'kf7-24', front: 'Co symbolizuje finałowa scena marszu robotników na Belweder w „Przedwiośniu”?', back: 'Cezary Baryka idzie w pierwszym szeregu, lecz w osobnym, własnym rytmie — symbolizuje to dramatyczne ostrzeżenie Żeromskiego przed wybuchem społecznym i brak jednoznacznej odpowiedzi ideowej bohatera.', hint: 'Otwarte zakończenie i przestroga dla władzy.', category: 'lektura' },
+    { id: 'kf7-25', front: 'Zdefiniuj trzy kluczowe pojęcia z „Ferdydurke” Gombrowicza: „gęba”, „pupa” i „łydka”.', back: '„Gęba” to narzucona przez innych maska/rola społeczna; „pupa” to upupienie, czyli traktowanie dorosłego jak niedojrzałego dzieciaka (np. przez profesora Pimkę); „łydka” to kult nowoczesności, sportu i biologii u Młodziaków.', hint: 'Maska, zdziecinnienie, kult młodości.', category: 'pojecie' },
+    { id: 'kf7-26', front: 'Na czym polega groteska w „Ferdydurke” na przykładzie lekcji języka polskiego u profesora Bladaczki?', back: 'Absurdalne, mechaniczne wmawianie uczniom na siłę, dlaczego Słowacki „wielkim poetą był” i ma „zachwycać, skoro nie zachwyca” — parodia skostniałej szkoły zabijającej autentyczność.', hint: '„Dlaczego Słowacki wzbudza zachwyt?”', category: 'lektura' },
+    { id: 'kf7-27', front: 'Jakie trzy środowiska (światy form) poznaje trzydziestoletni Józio Kowalski w „Ferdydurke”?', back: '1) Szkołę (tradycyjno-konserwatywna „pupa” Pimki i Bladaczki); 2) Stancję Młodziaków (pozornie wyzwolona nowoczesność i „łydka”); 3) Dworek Hurleckich w Bolimowie (feudalno-pański anachronizm i walka z parobkami).', hint: 'Szkoła, stancja Młodziaków, dworek w Bolimowie.', category: 'lektura' },
+    { id: 'kf7-28', front: 'Jaką rolę odgrywają grupy poetyckie „Skamander” oraz „Awangarda Krakowska” w Dwudziestoleciu?', back: 'Skamander (Tuwim, Lechoń, Wierzyński, Iwaszkiewicz, Słonimski) głosił witalizm, pochwałę codzienności i zwykłego człowieka; Awangarda Krakowska (Peiper, Przyboś) stawiała na „miasto, masę, maszynę” oraz maksymalną zwięzłość metafory.', hint: 'Codzienność i witalizm vs rygor i technika.', category: 'epoka' },
+    { id: 'kf7-29', front: 'Co oznacza pojęcie „katastrofizm” w literaturze lat 30. XX wieku?', back: 'Przeczucie nieuchronnej zagłady cywilizacji europejskiej, nadchodzącej totalitarnej wojny i kryzysu wartości humanistycznych (widoczne m.in. w poezji Czechowicza, Miłosza oraz w dramatach Witkacego).', hint: 'Lęk przed II wojną światową i upadkiem kultury.', category: 'epoka' },
+    { id: 'kf7-30', front: 'Jaki sens filozoficzny ma „Traktat o manekinach” głoszony przez Ojca Jakuba w „Sklepach cynamonowych”?', back: 'Ojciec występuje jako zbuntowany demiurg, który chce tworzyć „wtórą kreację” z tandetnej, kruchej materii (manekiny, ptaki) na wzór człowieka, broniąc prawa do niedoskonałości i fantazji wbrew szarej nudzie świata.', hint: 'Pochwała tandety i wtórna kreacja.', category: 'motyw' }
   ],
   quiz: [
     {
@@ -496,6 +506,150 @@ export const DEPT_07 = {
         3: "Błąd: Gombrowicz drwił z krytyków literackich w przedmowach do rozdziałów."
       },
       examTip: "Autotematyzm (pisanie o samym procesie pisania) to ważna cecha nowoczesnej powieści XX wieku."
+    },
+    {
+      id: "kq7-13",
+      q: "Co w „Przedwiośniu” Stefana Żeromskiego symbolizuje pobyt Cezarego Baryki w majątku Nawłoć?",
+      options: [
+        "Beztroski, egoistyczny świat polskiego ziemiaństwa odciętego od nędzy chłopów (ukazanej w sąsiednim Chłodku).",
+        "Nowoczesną reformę rolną przeprowadzoną przez komunistów na Kresach.",
+        "Miejsce tajnego spotkania Cezarego z Józefem Piłsudskim.",
+        "Realizację utopijnej wizji szklanych domów z opowieści Seweryna Baryki."
+      ],
+      correct: 0,
+      explanation: "W Nawłoci panuje dostatek, bale i flirty, podczas gdy tuż obok we wsi Chłodek chłopi i komornicy żyją w skrajnej nędzy — kontrast ten budzi społeczny bunt Baryki.",
+      whyWrong: {
+        1: "Nawłoć jest konserwatywnym dworem ziemiańskim.",
+        2: "Piłsudski nie pojawia się na spotkaniu w Nawłoci.",
+        3: "Nawłoć jest tradycyjnym, zacofanym dworem, a nie nowoczesnym miastem ze szkła."
+      },
+      examTip: "Zestawiaj arkadię Soplicowa (XIX w.) z egoistyczną pseudoarkadią Nawłoci (XX w.) — to świetny kontrast maturalny."
+    },
+    {
+      id: "kq7-14",
+      q: "Dlaczego Cezary Baryka rozczarował się rewolucją bolszewicką podczas pobytu w Baku?",
+      options: [
+        "Zobaczył, że rewolucja zamiast równości przyniosła chaos, rzeź Ormian, głód i śmierć jego własnej matki Jadwigi.",
+        "Bolszewicy zmusili go do wyjazdu na studia medyczne do Warszawy.",
+        "Ojciec zabronił mu czytania gazet rewolucyjnych pod groźbą wydziedziczenia.",
+        "Rewolucja okazała się pokojową reformą bez żadnych ofiar."
+      ],
+      correct: 0,
+      explanation: "Młody Cezary początkowo fascynował się hasłami rewolucji, ale widok bezsensownego okrucieństwa, grabieży i tragiczny los matki odebrały mu złudzenia.",
+      whyWrong: {
+        1: "Do Polski zabrał go ojciec Seweryn po powrocie z wojny.",
+        2: "Ojciec był wtedy na froncie i Cezary działał wbrew woli matki.",
+        3: "W Baku doszło do krwawej rzezi i chaosu."
+      },
+      examTip: "Doświadczenie Baku sprawia, że Baryka w Warszawie spiera się z Lulkiem i nie jest bezkrytycznym bolszewikiem."
+    },
+    {
+      id: "kq7-15",
+      q: "Jaką metodą profesor Pimko w „Ferdydurke” doprowadził do „upupienia” trzydziestoletniego Józia?",
+      options: [
+        "Zredukował go do roli niedojrzałego ucznia, narzucił mu szkolną formę i siłą zaprowadził z powrotem do szkoły średniej.",
+        "Wywiózł go do Paryża, aby tam pracował jako nauczyciel filozofii.",
+        "Zaproponował mu stanowisko dyrektora gimnazjum.",
+        "Ożenił go z Zutą Młodziakówną wbrew woli rodziców."
+      ],
+      correct: 0,
+      explanation: "Pimko wykorzystuje szkolny autorytet i protekcjonalny ton, sprawiając, że dorosły pisarz Józio zaczyna mówić i zachowywać się jak bezradny sztubak.",
+      whyWrong: {
+        1: "Pimko zamknął Józia w polskiej szkole i u Młodziaków, nie w Paryżu.",
+        2: "Józio trafił na ławkę szkolną jako uczeń.",
+        3: "Pimko sam adorował Zutę, a potem wpadł w pułapkę Józia."
+      },
+      examTip: "Upupienie = wciśnięcie kogoś w rolę dziecka/niedojrzałego i odebranie mu powagi."
+    },
+    {
+      id: "kq7-16",
+      q: "Co udowadnia pojedynek na miny między Syfonem a Miętusem w „Ferdydurke” Witolda Gombrowicza?",
+      options: [
+        "Że w relacjach międzyludzkich nie ma ucieczki przed formą — każda postawa (szlachetna czy wulgarna) jest sztuczną pozą i walką o dominację.",
+        "Że Syfon potrafi przekonać Miętusa do głębokiej wiary religijnej.",
+        "Że sport i wychowanie fizyczne są najważniejszym celem szkoły.",
+        "Że uczniowie potrafią wspólnie zbuntować się przeciwko profesorowi Pimce."
+      ],
+      correct: 0,
+      explanation: "Syfon przybiera „gębę” niewinnego chłopięcia-idealisty, a Miętus „gębę” cynicznego brutala; obaj są równie zniewoleni przez formę.",
+      whyWrong: {
+        1: "Pojedynek kończy się brutalnym „zgwałceniem przez uszy”, nie nawróceniem.",
+        2: "Pojedynek jest groteskową parodią sporu światopoglądowego, nie sportem.",
+        3: "Uczniowie walczą między sobą, zamiast zjednoczyć się przeciw belfrom."
+      },
+      examTip: "Pojedynek na miny to jeden z najsłynniejszych symboli gombrowiczowskiej „walki form”."
+    },
+    {
+      id: "kq7-17",
+      q: "Jaką główną prawdę o ludzkim losie wyraża ballada Bolesława Leśmiana „Dziewczyna”?",
+      options: [
+        "Bezgraniczny wysiłek, cierpienie i poświęcenie kolejnych pokoleń (braci, a potem cieni i młotów) mogą służyć dążeniu do ideału, który w rzeczywistości nie istnieje.",
+        "Ciężka praca fizyczna zawsze gwarantuje człowiekowi bogactwo i szczęście rodzinne.",
+        "Dziewczyna uwięziona za murem wychodzi za mąż za najmłodszego z dwunastu braci.",
+        "Bóg natychmiast rozbija mur, nagradzając modlitwy dwunastu braci."
+      ],
+      correct: 0,
+      explanation: "Gdy młoty same rozbiły mur, za nim była „nicość” i pusto — mimo to sam heroizm dążenia i marzenia buduje tragiczne piękno ludzkiej egzystencji.",
+      whyWrong: {
+        1: "Za murem nie było żadnej nagrody ani dziewczyny.",
+        2: "Tytułowa dziewczyna okazała się złudzeniem głosu.",
+        3: "Bracia pomarli z wycieńczenia, a mur rozbiły same ich cienie i młoty."
+      },
+      examTip: "Leśmian w „Dziewczynie” przekształca motyw miłości i wysiłku w egzystencjalną przypowieść o pogoni za złudzeniem."
+    },
+    {
+      id: "kq7-18",
+      q: "Które zdanie najtrafniej opisuje funkcję „leśmianizmów” (neologizmów) w liryce Bolesława Leśmiana?",
+      options: [
+        "Pozwalają nazwać nieuchwytne stany z pogranicza istnienia i niebytu, natury i metafizyki (np. „znikomek”, „niebywalec”, „bezbrzeż”).",
+        "Służą ośmieszeniu gwar ludowych i błędów językowych chłopów.",
+        "Są wyrazami zapożyczonymi z technicznego słownictwa Awangardy Krakowskiej.",
+        "Stanowią kryptonimy konspiracyjne z czasów I wojny światowej."
+      ],
+      correct: 0,
+      explanation: "Leśmian uważał zwykły język za zbyt ubogi wobec tajemnicy bytu i śmierci, dlatego tworzył autorskie neologizmy oddające zmienność i dziwność świata.",
+      whyWrong: {
+        1: "Leśmian cenił ludową wyobraźnię i balladowość, nie ośmieszał ich.",
+        2: "Awangarda Krakowska operowała słownictwem urbanistycznym i technicznym, zupełnie innym niż baśniowy świat Leśmiana.",
+        3: "Nie są to kryptonimy wojenne."
+      },
+      examTip: "Gdy w arkuszu pojawi się wiersz z wyrazami typu „śniedź”, „znikomek”, „rozśpiew” — od razu szukaj Leśmiana i neologizmów."
+    },
+    {
+      id: "kq7-19",
+      q: "Na czym polega oniryzm i poetyka „Sklepów cynamonowych” Brunona Schulza?",
+      options: [
+        "Rzeczywistość małego galicyjskiego miasteczka zostaje przekształcona na wzór marzenia sennego, pełnego bujnej przyrody, przemian i mitycznej magii.",
+        "Jest to surowy reportaż dziennikarski opisujący ceny przypraw w Drohobyczu.",
+        "Opowiadania utrzymane są w konwencji klasycznej tragedii pięcioaktowej.",
+        "Narrator opisuje wyłącznie przyszłość i podróże kosmiczne w XXII wieku."
+      ],
+      correct: 0,
+      explanation: "Schulz stosuje poetykę snu (oniryzm) i mityzację codzienności — zwykły sklep bławatny ojca czy letnia noc stają się kosmicznym, magicznym spektaklem.",
+      whyWrong: {
+        1: "Styl Schulza jest poetycki, metaforyczny i oniryczny, zupełnie przeciwny suchemu reportażowi.",
+        2: "To proza poetycka (cykl opowiadań), nie tragedia.",
+        3: "Akcja osadzona jest we wspomnieniach dzieciństwa w Drohobyczu."
+      },
+      examTip: "Kluczowe słowa do Schulza: oniryzm (senność), mityzacja rzeczywistości, demiurgiczny ojciec Jakub, manekiny."
+    },
+    {
+      id: "kq7-20",
+      q: "Co było wspólną cechą wczesnej poezji grupy „Skamander” (Tuwim, Wierzyński, Lechoń)?",
+      options: [
+        "Odrzucenie młodopolskiego smutku i patosu na rzecz witalizmu, radości życia, codzienności i języka ulicy.",
+        "Całkowity zakaz używania rymów i strof tradycyjnych.",
+        "Naśladowanie wyłącznie średniowiecznych hymnów łacińskich.",
+        "Głoszenie apokaliptycznej zagłady już od 1918 roku."
+      ],
+      correct: 0,
+      explanation: "Po odzyskaniu niepodległości w 1918 r. Skamandryci zachłysnęli się wolnością i codziennością („Niechaj prawo zawsze prawo znaczy, a sprawiedliwość — sprawiedliwość”), pisząc o zwykłych ludziach i witalnej radości.",
+      whyWrong: {
+        1: "Skamandryci chętnie korzystali z tradycyjnej wersyfikacji i rymów (w przeciwieństwie do Awangardy).",
+        2: "Czerpali z języka współczesnego i codziennego.",
+        3: "Katastrofizm pojawił się dopiero w latach 30. (tzw. drugie pokolenie / ciemne dwudziestolecie)."
+      },
+      examTip: "Zapamiętaj podział dwudziestolecia: lata 20. (optymizm, witalizm, Skamander) vs lata 30. (kryzys, groteska, katastrofizm)."
     }
   ]
 };

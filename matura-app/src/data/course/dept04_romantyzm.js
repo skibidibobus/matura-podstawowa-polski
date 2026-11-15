@@ -350,7 +350,19 @@ export const DEPT_04 = {
     { id: 'kf4-15', front: 'Czym charakteryzuje się kult pracy w twórczości Cypriana Kamila Norwida?', back: 'Praca jest rozumiana jako „miłość znojąca się” — uduchowienie materii i najwyższa forma ludzkiej twórczości łącząca człowieka z Bogiem.', hint: 'Praca jako miłość i znojenie ducha.', category: 'pojecie' },
     { id: 'kf4-16', front: 'Jak w „Bema pamięci żałobnym-rapsodzie” Norwid ukazał śmierć wodza?', back: 'Jako stylizowany pochówek średniowiecznego rycerza, który nie kończy się w grobie, lecz budzi kolejne pokolenia do nieustannego marszu ku wolności.', hint: 'Śmierć bohatera budząca naród.', category: 'lektura' },
     { id: 'kf4-17', front: 'Kim był Cichowski w „Dziadach cz. III”?', back: 'Młodym Polakiem porwanym przez carską policję, więzionym i torturowanym przez lata w lochach; mimo że nikogo nie wydał, po powrocie był wrakiem człowieka zniszczonym obłędem i lękiem.', hint: 'Symbol milczenia pod carskimi torturami.', category: 'bohater' },
-    { id: 'kf4-18', front: 'Wskaż cechy dramatu romantycznego na przykładzie „Dziadów cz. III”.', back: 'Kompozycja otwarta i luźna (fragmentaryczność), synkretyzm rodzajowy (liryka, epika, dramat), łączenie scen realistycznych z fantastycznymi (anioły, diabły), bohater prometejski.', hint: 'Otwarta forma, synkretyzm i metafizyka.', category: 'pojecie' }
+    { id: 'kf4-18', front: 'Wskaż cechy dramatu romantycznego na przykładzie „Dziadów cz. III”.', back: 'Kompozycja otwarta i luźna (fragmentaryczność), synkretyzm rodzajowy (liryka, epika, dramat), łączenie scen realistycznych z fantastycznymi (anioły, diabły), bohater prometejski.', hint: 'Otwarta forma, synkretyzm i metafizyka.', category: 'pojecie' },
+    { id: 'kf4-19', front: 'Jaka jest wymowa programowa ballady „Romantyczność” Adama Mickiewicza (1822)?', back: 'Manifest polskiego romantyzmu przeciwstawiający „szkiełko i oko” (chłodny racjonalizm Starca) poznaniu przez „czucie i wiarę” (empatia, intuicja i ludowa prawda serca Karusi).', hint: '„Miej serce i patrzaj w serce”.', category: 'lektura' },
+    { id: 'kf4-20', front: 'Czym jest orientalizm w „Sonetach krymskich” Adama Mickiewicza?', back: 'Fascynacja egzotyką Wschodu (stepy Akermanu, Krym, islam, słowa takie jak „muezim”, „mirza”, „czatyrdah”), łącząca zachwyt potęgą natury z nostalgią Pielgrzyma za utraconą ojczyzną.', hint: 'Krym jako pejzaż metafizyczny i tęsknota wygnańca.', category: 'epoka' },
+    { id: 'kf4-21', front: 'Na czym polega tragizm wallenrodyzmu w „Konradzie Wallenrodzie”?', back: 'Bohater wybiera walkę za pomocą podstępu i zdrady (wbrew kodeksowi rycerskiemu), ratuje ojczyznę przed Zakonem, ale płaci za to utratą honoru, szczęścia osobistego i samobójczą śmiercią.', hint: 'Skuteczna zdrada w imię ojczyzny za cenę duszy.', category: 'motyw' },
+    { id: 'kf4-22', front: 'Czym jest opowiadanie Jana Sobolewskiego w I scenie „Dziadów cz. III”?', back: 'Relacją naocznego świadka o wywózce polskich dzieci i studentów kibitkami na Sybir (m.in. małego Wasilewskiego i Janczewskiego), ukazującą bezbronność i heroizm młodzieży pod carskim terrorem.', hint: 'Kibitki, kajdany i okrzyk „Jeszcze Polska nie zginęła”.', category: 'lektura' },
+    { id: 'kf4-23', front: 'Co symbolizuje metafora lawy wypowiedziana przez Piotra Wysockiego w Scenie VII „Dziadów cz. III”?', back: 'Podział narodu na „z wierzchu zimną i twardą, suchą i plugawą” skorupę (serwilistyczną arystokrację) oraz „wewnętrzny ogień”, którego sto lat nie wyziębi (patriotyczną młodzież i lud).', hint: 'Skorupa vs wewnętrzny ogień narodu.', category: 'cytat' },
+    { id: 'kf4-24', front: 'Kim był Senator Nowosilcow w „Dziadach cz. III” i co robił w Wilnie?', back: 'Carskim dygnitarzem prowadzącym brutalne śledztwo przeciwko filomatom i filaretom w celu przypodobania się carowi; otoczony pochlebcami (Doktor, Bajkow, Pelikan), symbolizuje zepsucie władzy.', hint: 'Bal u Senatora i śmierć Rollisona/Doktora.', category: 'bohater' },
+    { id: 'kf4-25', front: 'Czym jest winkelriedyzm w dramacie Juliusza Słowackiego „Kordian”?', back: 'Koncepcja czynnej walki zbrojnej i poświęcenia jednego narodu („Polska Winkelriedem narodów”), który ściąga na siebie ostrza tyranów, by torować wolność innym ludom — w polemice z biernym mesjanizmem.', hint: 'Czyn zbrojny i ofiara za wolność innych.', category: 'pojecie' },
+    { id: 'kf4-26', front: 'Dlaczego Kordian nie zabił cara Mikołaja I w sypialni Zamku Królewskiego (Akt III)?', back: 'W decydującej chwili przed drzwiami sypialni jego słabą psychikę opanowały Strach i Imaginacja (halucynacje), w wyniku czego Kordian zemdlał na progu i został aresztowany.', hint: 'Strach i Imaginacja pokonały spiskowca.', category: 'bohater' },
+    { id: 'kf4-27', front: 'Jakich złudzeń pozbył się Kordian podczas podróży po Europie w Akcie II?', back: 'W Londynie odkrył, że światem rządzi pieniądz; w Dover zrozumiał rozdźwięk między poezją Szekspira a prozą życia; we Włoszech doznał zawodu w miłości do Wioletty; w Watykanie papież potępił polskie powstanie.', hint: 'Pieniądz, miłość interesowna i brak poparcia Watykanu.', category: 'lektura' },
+    { id: 'kf4-28', front: 'Na czym polegała przemiana Jacka Soplicy w Księdza Robaka w „Panu Tadeuszu”?', back: 'Z dumnego, porywczego zabijaki, który w gniewie zastrzelił Stolnika Horeszkę (i został uznany za zdrajcę), stał się pokornym bernardynem, emisariuszem przygotowującym powstanie na Litwie i ratującym Gerwazego oraz Hrabiego.', hint: 'Od dumy i zbrodni do pokory i służby ojczyźnie.', category: 'bohater' },
+    { id: 'kf4-29', front: 'Wymień 4 główne cechy Soplicowa jako szlacheckiej arkadii w „Panu Tadeuszu”.', back: '1) Szacunek dla tradycji i obyczaju (grzybobranie, polowanie, polonez, porządek przy stole); 2) Gościnność otwarta dla każdego; 3) Pielęgnowanie patriotyzmu (zegar grający Mazurka Dąbrowskiego, portrety Kościuszki i Rejtana); 4) Harmonia człowieka z litewską przyrodą.', hint: 'Tradycja, gościnność, patriotyzm, natura.', category: 'motyw' },
+    { id: 'kf4-30', front: 'Co oznaczają słowa „Ojczyzna to wielki zbiorowy obowiązek” oraz „Przeszłość – jest to dziś, tylko cokolwiek dalej” u Norwida?', back: 'Norwid odrzuca pusty patriotyzm martyrologiczny i bezmyślną walkę; wymaga codziennej pracy, odpowiedzialności moralnej za wspólnotę i ciągłości historycznej z tradycją.', hint: 'Codzienny obowiązek i ciągłość dziejów.', category: 'cytat' }
   ],
   quiz: [
     {
@@ -556,6 +568,142 @@ export const DEPT_04 = {
         3: "Wątkiem jest spór o zamek, miłość Tadeusza i Zosi oraz pokuta Jacka Soplicy."
       },
       examTip: "Znajomość formy trzynastozgłoskowca jest wymagana w zadaniach wersyfikacyjnych CKE."
+    },
+    {
+      q: "Co w balladzie „Romantyczność” Adama Mickiewicza symbolizuje spór między Narratorem a Starcem?",
+      options: [
+        "Konflikt między romantycznym poznaniem intuicyjno-uczuciowym („czucie i wiara”) a oświeceniowym racjonalizmem („szkiełko i oko”).",
+        "Spór polityczny o kształt granicy między Litwą a Królestwem Polskim.",
+        "Różnicę między stylem klasycystycznym a barokowym konceptem w poezji.",
+        "Walkę o majątek rodzinny między Karusią a mieszkańcami miasteczka."
+      ],
+      correct: 0,
+      explanation: "Starzec reprezentuje zimny empiryzm oświeceniowy („szkiełko i oko”), a Narrator staje po stronie ludu i Karusi, głosząc prawdę serca i empatii.",
+      whyWrong: {
+        1: "Ballada jest manifestem filozoficzno-literackim, nie politycznym.",
+        2: "Nie dotyczy teorii poezji barokowej.",
+        3: "Karusia rozmawia z duchem zmarłego ukochanego Jasieńka, a nie walczy o spadek."
+      },
+      examTip: "Wers „Czucie i wiara silniej mówi do mnie / Niż mędrca szkiełko i oko” to hasło-klucz przełomu romantycznego."
+    },
+    {
+      q: "Który bohater „Dziadów części III” reprezentuje prometejski bunt przeciwko Bogu, a kto pokorną wiarę i wizję mesjanistyczną?",
+      options: [
+        "Bunt reprezentuje Konrad (Wielka Improwizacja), a pokorę i mesjanizm — Ksiądz Piotr (Widzenie).",
+        "Bunt reprezentuje Ksiądz Piotr, a pokorę — Senator Nowosilcow.",
+        "Bunt reprezentuje Ewa, a mesjanizm — Gustaw w celi bazylianów.",
+        "Bunt reprezentuje Piotr Wysocki, a pokorę — Doktor."
+      ],
+      correct: 0,
+      explanation: "Konrad w Wielkiej Improwizacji bluźni z pychy i miłości do narodu, żądając „rządu dusz”, natomiast pokorny Ksiądz Piotr staje się narzędziem Boga i otrzymuje proroctwo o Polsce jako Chrystusie narodów.",
+      whyWrong: {
+        1: "Ksiądz Piotr jest ucieleśnieniem chrześcijańskiej pokory, a Senator — carskiego zepsucia.",
+        2: "Ewa to niewinna, pobożna dziewczyna modląca się za więźniów.",
+        3: "Doktor to służalec Nowosilcowa."
+      },
+      examTip: "Kontrast pychy Konrada i pokory Księdza Piotra jest kluczowym motywem „Dziadów cz. III”."
+    },
+    {
+      q: "Co wydarzyło się w scenie I („Więzienie”) „Dziadów części III” i jaką funkcję pełni w dramacie?",
+      options: [
+        "Więźniowie filomaci dzielą się opowieściami (m.in. Sobolewski o wywózce dzieci na Sybir), ukazując realne męczeństwo polskiego narodu pod zaborem rosyjskim.",
+        "Konrad ucieka z klasztoru bazylianów do Paryża na spotkanie z papieżem.",
+        "Ksiądz Piotr ogłasza upadek powstania listopadowego przed senatem warszawskim.",
+        "Nowosilcow wręcza więźniom ułaskawienie w zamian za rezygnację z nauki."
+      ],
+      correct: 0,
+      explanation: "Scena I buduje realistyczny obraz carskich represji w Wilnie (proces filomatów i filaretów) oraz przemiany Gustawa w Konrada.",
+      whyWrong: {
+        1: "Do Paryża i Rzymu podróżuje Kordian (bohater Słowackiego), nie Konrad.",
+        2: "Akcja toczy się w 1823 r. w Wilnie, przed powstaniem listopadowym.",
+        3: "Nowosilcow właśnie zaostrzał śledztwo i represje."
+      },
+      examTip: "Nie myl Gustawa-Konrada (Mickiewicz) z Kordianem (Słowacki) — to częsta pułapka maturalna."
+    },
+    {
+      q: "Jakie wydarzenie w Rzymie z Aktu II „Kordiana” przyspieszyło rozczarowanie bohatera do instytucji międzynarodowych?",
+      options: [
+        "Papież Grzegorz XVI odmówił błogosławieństwa dla polskiej walki o wolność i nakazał Polakom posłuszeństwo wobec cara.",
+        "Król Anglii odmówił Kordianowi pożyczki na zakup broni dla spiskowców.",
+        "Wioletta wyznała Kordianowi, że wstąpiła do zakonu karmelitanek.",
+        "Książę Konstanty aresztował Kordiana na placu św. Piotra."
+      ],
+      correct: 0,
+      explanation: "Papież przyjął podarunek (garść polskiej ziemi z krwią męczenników) z obojętnością i wezwał do uległości wobec caratu, co zburzyło resztki złudzeń Kordiana.",
+      whyWrong: {
+        1: "W Londynie Kordian rozmawiał z dozorcą w parku i dostrzegł wszechwładzę pieniądza, nie prosił króla o pożyczkę.",
+        2: "Wioletta opuściła Kordiana, gdy sądziła, że stracił majątek.",
+        3: "Konstanty pojawia się w Akcie III w Warszawie, nie w Rzymie."
+      },
+      examTip: "Wizyta w Watykanie stanowi gorzką polemikę Słowackiego z mesjanistyczną wiarą w opiekę Kościoła nad polską sprawą."
+    },
+    {
+      q: "Co było powodem spóźnienia się posłańca z ułaskawieniem w finale „Kordiana” i jak należy rozumieć zakończenie dramatu?",
+      options: [
+        "Adiutant z ułaskawieniem od Wielkiego Księcia Konstantego nie zdążył przed rozkazem oficera (lub dotarł w ostatniej chwili) — dramat ma zakończenie otwarte.",
+        "Kordian sam odmówił przyjęcia ułaskawienia i wyskoczył przez okno Cytadeli.",
+        "Car Mikołaj I osobiście ułaskawił Kordiana podczas balu koronacyjnego.",
+        "Spiskowcy odbili Kordiana z placu Marsowego i wywieźli go do Szwajcarii."
+      ],
+      correct: 0,
+      explanation: "Słowacki celowo urywa akcję dokładnie w momencie, gdy oficer podnosi rękę z rozkazem strzału, a z boku nadjeżdża adiutant — finał pozostaje niedopowiedziany (otwarty).",
+      whyWrong: {
+        1: "Nie ma takiej sceny w dramacie.",
+        2: "Car podpisał wyrok śmierci, a o ułaskawienie walczył brat cara, Konstanty.",
+        3: "Spiskowcy nie odbili Kordiana."
+      },
+      examTip: "Kompozycja otwarta finału „Kordiana” to ulubione pytanie testowe CKE o budowę dramatu romantycznego."
+    },
+    {
+      q: "Dlaczego Gerwazy Rębajło przez lata nienawidził Sopliców i na końcu wybaczył Jackowi Soplicy?",
+      options: [
+        "Poprzysiągł zemstę za zabójstwo swojego pana, Stolnika Horeszki, lecz na łożu śmierci Jacka (ks. Robaka) usłyszał o jego pokucie i ocaleniu Hrabiego.",
+        "Zazdrościł Sędziemu Soplicy bogactwa i tytułu hrabiowskiego.",
+        "Był agentem carskim próbującym przejąć zamek Horeszków dla Rosji.",
+        "Chciał poślubić Telimenę, która wybrała Tadeusza."
+      ],
+      correct: 0,
+      explanation: "Gerwazy był wiernym sługą Stolnika i po jego śmierci mścił się na Soplicach, ale wyznanie umierającego księdza Robaka oraz fakt, że Stolnik przed śmiercią wybaczył Jackowi znakiem krzyża, skłoniły Klucznika do pojednania.",
+      whyWrong: {
+        1: "Gerwazy nie walczył o własne bogactwo, lecz o pamięć rodu Horeszków.",
+        2: "Gerwazy walczył przeciwko Moskalom podczas zajazdu w Księdze IX.",
+        3: "Nie miał wątku miłosnego z Telimeną."
+      },
+      examTip: "Spowiedź Jacka Soplicy przed Gerwazym (Księga X) to szczytowy moment motywu winy, pokuty i przebaczenia w literaturze polskiej."
+    },
+    {
+      q: "Które zdanie najtrafniej opisuje funkcję „Pana Tadeusza” jako epopei narodowej?",
+      options: [
+        "Utrwala obraz odchodzącej Polski szlacheckiej w chwili przełomu dziejowego (1811–1812), łącząc realizm obyczajowy z pokrzepieniem serc emigrantów.",
+        "Jest realistyczną powieścią krytykującą bezwzględnie wszelkie tradycje ziemiańskie.",
+        "Opisuje powstanie styczniowe na Żmudzi z perspektywy pozytywistycznego scjentyzmu.",
+        "Stanowi satyrę oświeceniową na sejmiki szlacheckie za czasów Stanisława Augusta."
+      ],
+      correct: 0,
+      explanation: "Mickiewicz na emigracji w Paryżu stworzył nostalgiczny, idealizowany, lecz pełen humoru i prawdy obraz szlacheckiego świata na progu nadziei napoleońskiej.",
+      whyWrong: {
+        1: "Utwór pokazuje wady szlachty (kłótliwość, prywata), ale z ogromnym ciepłem i afirmacją patriotyzmu.",
+        2: "Akcja toczy się w latach 1811–1812 (na ponad 50 lat przed powstaniem styczniowym).",
+        3: "To epopeja romantyczna, nie satyra oświeceniowa."
+      },
+      examTip: "Pamiętaj: akcja „Pana Tadeusza” = 5 dni w 1811 r. i 1 dzień w 1812 r. (wiosna napoleońska)."
+    },
+    {
+      q: "Jaki główny sens ma refren i pointa wiersza Cypriana Kamila Norwida „Moja piosnka [II]” („Do kraju tego, gdzie kruszynę chleba...”)?",
+      options: [
+        "Wyraża głęboką tęsknotę wygnańca za Polską prostych wartości moralnych, szacunku dla chleba i dotrzymywania danego słowa.",
+        "Wzywa emigrantów do natychmiastowego ataku zbrojnego na Petersburg.",
+        "Krytykuje przyrodę polską jako ubogą w porównaniu z krajobrazem Włoch.",
+        "Chwali nowoczesny przemysł i koleje żelazne w Europie Zachodniej."
+      ],
+      correct: 0,
+      explanation: "Norwid buduje portret idealnej ojczyzny poprzez etykę codzienności (podnoszenie kruszyny chleba z ziemi, poszanowanie bocianiego gniazda, „tak” za „tak” i „nie” za „nie”).",
+      whyWrong: {
+        1: "Wiersz jest liryczną elegią tęsknoty, nie wezwaniem militarnym.",
+        2: "Poeta z czułością wspomina właśnie polską przyrodę i bociany.",
+        3: "Nie ma w utworze pochwały industrializacji."
+      },
+      examTip: "„Moja piosnka [II]” to znakomity przykład patriotyzmu codziennego i motywu emigracji/tęsknoty za ojczyzną."
     }
   ]
 };

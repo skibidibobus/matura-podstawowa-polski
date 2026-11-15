@@ -263,6 +263,14 @@ export function App() {
     setCardStatus((prev) => ({ ...prev, [cardId]: status }));
   };
 
+  const handleResetCards = (cardIds) => {
+    setCardStatus((prev) => {
+      const next = { ...prev };
+      for (const id of cardIds) delete next[id];
+      return next;
+    });
+  };
+
   const handleSaveQuizScore = (levelId, score) => {
     setQuizScores((prev) => ({
       ...prev,
@@ -324,18 +332,19 @@ export function App() {
           <>
             <header className="level-header">
               <div>
-                <div className="level-kicker">SPACED REPETITION</div>
-                <h1 className="level-h1">Pula do powtórki</h1>
+                <div className="level-kicker">POWTÓRKA ZE WSZYSTKICH BLOKÓW</div>
+                <h1 className="level-h1">Powtórka fiszek</h1>
                 <p className="level-desc">
-                  Wszystkie fiszki oznaczone jako „Do powtórki” ze wszystkich bloków ({reviewCards.length}).
+                  Wszystkie fiszki ze wszystkich bloków tego kursu ({allFlashcards.length}). Możesz włączyć filtr „Tylko do powtórki”, aby ćwiczyć te oznaczone jako trudne ({reviewCards.length}).
                 </p>
               </div>
             </header>
             <FlashcardsView
-              cards={reviewCards}
+              key={`review-all-${activeCourse}`}
+              cards={allFlashcards}
               cardStatus={cardStatus}
               onSetCardStatus={handleSetCardStatus}
-              isReviewPool
+              onResetCards={handleResetCards}
             />
           </>
         ) : (
@@ -426,9 +435,11 @@ export function App() {
 
             {stage === 'flashcards' && (
               <FlashcardsView
+                key={`fc-${activeCourse}-${activeLevel.id}`}
                 cards={activeLevel.flashcards}
                 cardStatus={cardStatus}
                 onSetCardStatus={handleSetCardStatus}
+                onResetCards={handleResetCards}
                 onGoToQuiz={() => setStage('quiz')}
               />
             )}

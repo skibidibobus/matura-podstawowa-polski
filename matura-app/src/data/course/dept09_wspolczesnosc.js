@@ -411,7 +411,19 @@ export const DEPT_09 = {
       back: 'Różewicz uważa, że wojna zniszczyła dawne wartości i język (nihilizm etyczny), a Herbert nakazuje trwać przy dawnych wartościach mimo klęski (stoicyzm).',
       hint: 'Ocalony (pustka) vs Pan Cogito (wierność).',
       category: 'kontekst'
-    }
+    },
+    { id: 'kf9-19', front: 'Jakie pokolenia mieszkają w domu Stomila w „Tangu” Sławomira Mrożka i co każde z nich reprezentuje?', back: '1) Dziadkowie (Babcia Eugenia i wuj Eugeniusz) — bezsilna tradycja i konformizm; 2) Rodzice (Stomil i Eleonora) — dawni buntownicy awangardy, którzy znieśli wszelkie normy i stworzyli chaos; 3) Syn Artur — buntownik przeciwko brakowi zasad pragnący przywrócić formę; 4) Edek — brutalna siła fizyczna i prostactwo.', hint: '4 generacje i prymitywny Edek.', category: 'bohater' },
+    { id: 'kf9-20', front: 'Dlaczego Artur w „Tangu” najpierw chce przywrócić tradycyjny ślub kościelny z Alą, a potem odkrywa „ideę władzy absolutnej”?', back: 'Ponieważ sam bunt przez przywrócenie dawnej formy (ślub, garnitur) nie wystarcza w świecie, gdzie wszystko jest dozwolone — Stomil rozbija sens konwencji, więc Artur wpada w pokusę czystej siły i terroru, co bezlitośnie przejmuje Edek.', hint: 'Od formy do pustej idei siły.', category: 'lektura' },
+    { id: 'kf9-21', front: 'Na czym polega paradoks roli Edka w dramacie „Tango” Sławomira Mrożka?', back: 'Edek jest prymitywny, bezmyślny i leniwy, ale jako jedyny posiada realną siłę fizyczną oraz brak skrupułów — podczas gdy intelektualiści dyskutują o ideach, Edek po prostu zabija Artura i przejmuje władzę.', hint: 'Prymityw z siłą pokonuje bezradną inteligencję.', category: 'bohater' },
+    { id: 'kf9-22', front: 'Dlaczego podmiot liryczny wiersza „Ocalony” Tadeusza Różewicza mówi: „Mam dwadzieścia cztery lata / ocalałem / prowadzony na rzeź”?', back: 'Ocalał fizycznie z zagłady II wojny światowej, ale wewnętrznie czuje się martwy moralnie — wojna zrównała w jego doświadczeniu pojęcia takie jak „człowiek i zwierzę”, „cnota i występek”, odbierając słowom sens.', hint: 'Fizyczne ocalenie vs duchowa pustka po wojnie.', category: 'cytat' },
+    { id: 'kf9-23', front: 'Czego szuka bohater wiersza „Ocalony” Tadeusza Różewicza w finale utworu?', back: 'Szuka „nauczyciela i mistrza”, który na nowo przywróci mu wzrok, słuch i mowę, oddzieli światło od ciemności i nazwie rzeczy po imieniu — odbuduje zburzony po wojnie system wartości.', hint: 'Prośba o mistrza i przywrócenie słów.', category: 'lektura' },
+    { id: 'kf9-24', front: 'Co oznaczają słowa „Patrzę na to wszystko / jak na coś, co było” oraz ostrzeżenie w „List do ludożerców” Różewicza?', back: 'W „Liście do ludożerców” tytułowi „ludożercy” to zwykli, współcześni ludzie żyjący w pośpiechu i egoizmie PRL-u/nowoczesności (nie ustępują miejsca, popychają słabszych, patrzą z nienawiścią), których poeta ironicznie prosi: „Kochani ludożercy / nie zjadajmy się Dobrze”.', hint: 'Współczesny egoizm i znieczulica w masie.', category: 'motyw' },
+    { id: 'kf9-25', front: 'Jakie dwie główne przykazania etyczne zawiera „Przesłanie Pana Cogito” Zbigniewa Herberta?', back: '1) Bądź wierny, idź wyprostowany wśród tych, co na kolanach (nie idź na kompromis ze złem, nawet jeśli grozi śmierć); 2) Czuwaj, powtarzaj stare zaklęcia ludzkości, przebaczaj w imieniu własnym, ale nigdy w imieniu zdradzonych o świcie.', hint: 'Postawa wyprostowana i zakaz wybaczania w imieniu ofiar.', category: 'lektura' },
+    { id: 'kf9-26', front: 'Dlaczego w „Przesłaniu Pana Cogito” nagrodą za wierność zasadom nie jest „złote runo”, lecz pogarda i śmierć?', back: 'Herbert proponuje etykę heroiczną bez żadnej gwarancji sukcesu czy nagrody — człowiek ma postępować szlachetnie dla samej wierności prawdzie i godności, a nie dla korzyści czy chwały.', hint: 'Etyka bezinteresowna (bez nagrody).', category: 'pojecie' },
+    { id: 'kf9-27', front: 'Na czym polega ironia i filozofia przypadku w wierszu Wisławy Szymborskiej „Nic dwa razy”?', back: 'Każda chwila, uśmiech i człowiek są jednorazowe i niepowtarzalne („żaden dzień się nie powtórzy”), dlatego zamiast bać się przemijania, warto przyjąć ulotność życia z czułą uważnością i uśmiechem.', hint: 'Jednorazowość każdej chwili życia.', category: 'lektura' },
+    { id: 'kf9-28', front: 'Jaką funkcję pełni kocia perspektywa w wierszu Wisławy Szymborskiej „Kot w pustym mieszkaniu”?', back: 'Unika sentymentalnego patosu: śmierć człowieka pokazana jest oczami zwierzęcia, które nie rozumie pojęcia śmierci, czuje się porzucone i urażone zniknięciem pana, co jeszcze mocniej wyraża ból pustki po stracie bliskiego.', hint: 'Pustka po śmierci pokazana bez patosu, oczami kota.', category: 'motyw' },
+    { id: 'kf9-29', front: 'Co oznacza kontrast między losem Giordana Bruna a karuzelą na placu Krasińskich w wierszu „Campo di Fiori” Czesława Miłosza?', back: 'Zarówno w XVI-wiecznym Rzymie (spalenie Bruna na stosie przy wesołym tłumie), jak i w Warszawie w 1943 r. (płonące getto przy wesołej karuzeli) świat pozostaje obojętny na cierpienie ginących w samotności — dopiero „słowo poety” przełamuje tę samotność i pamięta.', hint: 'Obojętność świata wobec zbrodni i ocalająca moc poezji.', category: 'lektura' },
+    { id: 'kf9-30', front: 'Jaką rzeczywistość PRL ukazują opowiadania Marka Nowakowskiego (np. „Górą «Edek»” lub „Raport o stanie wojennym”)?', back: 'Absurd, braki materialne, cwaniactwo i bezwzględność w realiach schyłkowego PRL-u oraz stanu wojennego — pokazane w krótkich, realistycznych scenkach obyczajowych (np. walka o miejsce parkingowe, w której wygrywa bezczelny cwaniak).', hint: 'Realia PRL, absurd kolejki/parkingu i triumf cwaniactwa.', category: 'epoka' }
   ],
   quiz: [
     {
@@ -629,6 +641,150 @@ export const DEPT_09 = {
         3: "Mrożek parodiuje oportunizm ludzi wykształconych, a nie głosi manifest marksistowski."
       },
       examTip: "Postawa Eugeniusza to studium kolaboracji i konformizmu elit wobec totalitaryzmu."
+    },
+    {
+      id: "kq9-13",
+      q: "Dlaczego Artur w dramacie „Tango” Sławomira Mrożka przegrywa swoją walkę o przywrócenie porządku w rodzinie?",
+      options: [
+        "Ponieważ w świecie pozbawionym autentycznych wartości sama forma (ślub) okazuje się pusta, a gdy Artur sięga po nagą siłę, Edek jest w niej silniejszy i bardziej bezwzględny.",
+        "Ponieważ Babcia Eugenia oddała cały majątek Stomilowi przed ślubem.",
+        "Ponieważ Ala uciekła do Paryża z profesorem Pimką jeszcze w I akcie.",
+        "Ponieważ policja aresztowała Artura za nielegalne noszenie garnituru."
+      ],
+      correct: 0,
+      explanation: "Artur nie potrafi nadać dawnej formie prawdziwego sensu, więc w desperacji próbuje oprzeć porządek na idei absolutnej władzy i terroru — wtedy wkracza prymitywny Edek, dla którego przemoc jest naturalnym żywiołem.",
+      whyWrong: {
+        1: "W dramacie nie ma wątku majątkowego Babci Eugenii.",
+        2: "Ala została w domu i zdradziła Artura z Edkiem, a Pimko to bohater „Ferdydurke”.",
+        3: "W domu Stomila nie interweniuje policja."
+      },
+      examTip: "Zestawiaj „Tango” Mrożka (przymus chaosu i triumf Edka) z „Ferdydurke” Gombrowicza (walka z formą)."
+    },
+    {
+      id: "kq9-14",
+      q: "Co w „Tangu” Mrożka symbolizuje finałowy taniec Edka i wuja Eugeniusza w rytm „La cumparsity”?",
+      options: [
+        "Triumf brutalnej, prymitywnej dyktatury (Edek) wspieranej przez uległą, konformistyczną inteligencję (wuj Eugeniusz).",
+        "Pojednanie pokoleń w duchu narodowej solidarności.",
+        "Radosne wesele Artura i Ali po pokonaniu Stomila.",
+        "Powrót rodziny do tradycyjnych wartości szlacheckich."
+      ],
+      correct: 0,
+      explanation: "Po zabójstwie Artura Edek obejmuje rządy siłą, a wykształcony Eugeniusz posłusznie mu wtóruje w tańcu — to groteskowa alegoria narodzin totalitaryzmu.",
+      whyWrong: {
+        1: "Artur leży martwy na podłodze — to nie pojednanie, lecz klęska.",
+        2: "Ślub nie doszedł do skutku.",
+        3: "Tradycja została wcześniej wyśmiana, a w finale rządzi terror Edka."
+      },
+      examTip: "Taniec w „Tangu” zestawiaj z chocholim tańcem z „Wesela” Wyspiańskiego!"
+    },
+    {
+      id: "kq9-15",
+      q: "Jaką cechę poetyki tzw. „wiersza różewiczowskiego” widać w utworze „Ocalony”?",
+      options: [
+        "Wiersz wolny pozbawiony rymów i zbędnych ozdobników, oparty na prostym, surowym języku i ascetycznej zwięzłości po doświadczeniu wojny.",
+        "Regularny trzynastozgłoskowiec z kunsztownymi porównaniami homeryckimi.",
+        "Nagromadzenie barokowych konceptów, oksymoronów i wyszukanych metafor.",
+        "Stosowanie młodopolskiej synestezji i muzycznego nastroju dekadencji."
+      ],
+      correct: 0,
+      explanation: "Różewicz odrzucił ozdobną poetyckość („śmierć poezji po Oświęcimiu”), tworząc surowy, nagi zapis świadomości człowieka okaleczonego przez wojnę.",
+      whyWrong: {
+        1: "Trzynastozgłoskowiec z porównaniami homeryckimi to cecha „Pana Tadeusza”.",
+        2: "Barokowy konceptyzm był obcy powojennej prostocie Różewicza.",
+        3: "Synestezja i dekadentyzm należą do Młodej Polski."
+      },
+      examTip: "Różewicz = antyestetyzm, brak interpunkcji, nagi język, kryzys wartości po II wojnie światowej."
+    },
+    {
+      id: "kq9-16",
+      q: "Dlaczego w „Przesłaniu Pana Cogito” Zbigniew Herbert ostrzega: „nie przebaczaj zaiste nie w twojej mocy / przebaczać w imieniu tych których zdradzono o świcie”?",
+      options: [
+        "Ponieważ żywi nie mają moralnego prawa rozgrzeszać katów i zdrajców w imieniu zamordowanych ofiar, które nie mogą już zabrać głosu.",
+        "Ponieważ Herbert wzywa do krwawej zemsty osobistej na każdym przeciwniku.",
+        "Ponieważ Pan Cogito odrzuca wszelką etykę i wiarę w sprawiedliwość.",
+        "Ponieważ wiersz opisuje prywatny konflikt sąsiedzki w Krakowie."
+      ],
+      correct: 0,
+      explanation: "Wybaczyć można tylko własną krzywdę; rozgrzeszanie zbrodni w imieniu bezbronnych ofiar byłoby drugą zdradą wobec ich pamięci.",
+      whyWrong: {
+        1: "Herbert mówi o „daniu świadectwa” i wierności prawdzie, nie o ślepej zemście.",
+        2: "Pan Cogito jest właśnie ucieleśnieniem bezkompromisowej etyki i sumienia.",
+        3: "Kontekstem są ofiary totalitaryzmów XX wieku i bohaterowie historii."
+      },
+      examTip: "Zestawiaj etykę pamięci Herberta z epilogiem „Innego świata” Herlinga-Grudzińskiego."
+    },
+    {
+      id: "kq9-17",
+      q: "Co w wierszu Wisławy Szymborskiej „Nic dwa razy” wyrażają słowa: „Żaden dzień się nie powtórzy, nie ma dwóch podobnych nocy”?",
+      options: [
+        "Refleksję o absolutnej niepowtarzalności każdej chwili ludzkiego życia, która mimo przemijania powinna skłaniać do uważności i akceptacji.",
+        "Rozpacz i wezwanie do rezygnacji z miłości wobec zbliżającej się śmierci.",
+        "Pochwałę rutyny i powtarzalności codziennych obowiązków.",
+        "Krytykę kalendarza i pomiaru czasu przez naukę."
+      ],
+      correct: 0,
+      explanation: "Szymborska łączy świadomość przemijania z pogodną mądrością: jesteśmy w „szkole” świata bez możliwości powtórki, więc każda chwila i relacja są bezcenne.",
+      whyWrong: {
+        1: "Wiersz kończy się czułą próbą porozumienia („uśmiechnięci, współobjęci”), nie rozpaczą.",
+        2: "Poetka podkreśla właśnie brak powtarzalności, nie rutynę.",
+        3: "To refleksja egzystencjalna, nie krytyka nauki."
+      },
+      examTip: "Szymborska bardzo często wykorzystuje ironię, paradoks i filozoficzną refleksję nad codziennością."
+    },
+    {
+      id: "kq9-18",
+      q: "Jaki zabieg artystyczny zastosowała Wisława Szymborska w wierszu „Kot w pustym mieszkaniu”?",
+      options: [
+        "Ukazała ból po stracie zmarłego człowieka z perspektywy zwierzęcia czekającego na powrót pana, unikając taniego sentymentalizmu.",
+        "Napisała klasyczny tren pogrzebowy skierowany bezpośrednio do Boga.",
+        "Zastosowała groteskową satyrę na miłośników zwierząt w mieście.",
+        "Opisała szczegółowy przebieg pogrzebu z perspektywy sąsiadów."
+      ],
+      correct: 0,
+      explanation: "Kot nie rozumie śmierci — widzi tylko, że ktoś naruszył porządek mieszkania i nie wraca („Umrzeć – tego się nie robi kotu”), co czyni wiersz niezwykle przejmującym.",
+      whyWrong: {
+        1: "To nie jest klasyczny tren w stylu Kochanowskiego.",
+        2: "Wiersz jest pełen dyskretnego bólu i powagi, nie jest satyrą.",
+        3: "W mieszkaniu jest pusto — jedynym świadkiem jest kot."
+      },
+      examTip: "Współczesne ujęcie motywu śmierci i żałoby: Szymborska („Kot w pustym mieszkaniu”) vs renesansowy Kochanowski („Treny”)."
+    },
+    {
+      id: "kq9-19",
+      q: "Co w wierszu Czesława Miłosza „Campo di Fiori” oznacza zestawienie rzymskiego placu z warszawską karuzelą w 1943 roku?",
+      options: [
+        "Pokazuje powtarzalną w historii obojętność zwykłego świata na samotną śmierć bohaterów i ofiar (Giordano Bruno i powstańcy w getcie warszawskim).",
+        "Chwali radosną zabawę mieszkańców Warszawy w czasie pokoju.",
+        "Dowodzi, że sztuka ludowa powinna całkowicie zniknąć z miast.",
+        "Porównuje architekturę renesansowego Rzymu do zabudowy Pragi."
+      ],
+      correct: 0,
+      explanation: "Tak jak Rzymianie kupowali owoce i wino, gdy płonął Giordano Bruno, tak warszawiacy bawili się na karuzeli przy murach płonącego getta — jedynym buntem przeciw zapomnieniu jest „słowo poety”.",
+      whyWrong: {
+        1: "Była to Wielkanoc 1943 roku w trakcie zagłady getta warszawskiego, nie czas pokoju.",
+        2: "Karuzela jest tu bolesnym kontrastem obojętności, nie krytyką folkloru.",
+        3: "Zestawienie ma wymiar etyczny i historyczny, nie architektoniczny."
+      },
+      examTip: "„Campo di Fiori” to jeden z najważniejszych wierszy o samotności ginących i etycznym obowiązku poezji."
+    },
+    {
+      id: "kq9-20",
+      q: "Co piętnuje Marek Nowakowski w swoich krótkich opowiadaniach o realiach PRL (np. „Górą «Edek»”)?",
+      options: [
+        "Zwycięstwo bezczelnego cwaniactwa, egoizmu i siły nad bezradnym, przyzwoitym inteligentem w szarej rzeczywistości Polski Ludowej.",
+        "Nadmierną uprzejmość urzędników państwowych w czasach stanu wojennego.",
+        "Zbyt szybki rozwój nowoczesnych autostrad w Polsce lat 80.",
+        "Romantyczne ideały powstańców styczniowych na Litwie."
+      ],
+      correct: 0,
+      explanation: "W mikroscenkach Nowakowskiego (nawiązujących do tradycji Mrożkowego Edka) brutalny, pewny siebie cwaniak bez skrupułów wygrywa z kulturalnym, wahającym się człowiekiem.",
+      whyWrong: {
+        1: "Opowiadania ukazują właśnie brak kultury i chamstwo w życiu publicznym.",
+        2: "Tematem są codzienne absurdy i deficyty PRL.",
+        3: "Akcja toczy się we współczesnej Polsce PRL, nie w XIX wieku."
+      },
+      examTip: "Zwróć uwagę na nazwę „Edek” u Nowakowskiego — to świadome nawiązanie do postaci Edka z „Tanga” Mrożka!"
     }
   ]
 };

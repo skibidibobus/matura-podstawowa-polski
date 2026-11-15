@@ -323,7 +323,19 @@ export const DEPT_08 = {
     { id: 'kf8-17', front: 'Jaką postawę reprezentuje doktor Bernard Rieux w „Dżumie” Camusa?', back: 'Laicki humanizm i poczucie obowiązku: leczy chorych bez patosu i bez wiary w Boga, uważając walkę ze złem za oczywistość.', hint: 'Lekarski obowiązek bez Boga', category: 'bohater' },
     { id: 'kf8-18', front: 'Dlaczego Raymond Rambert zrezygnował z ucieczki z Oranu?', back: 'Uświadomił sobie, że wstydem byłoby być samemu szczęśliwym, gdy całe miasto cierpi, i dołączył do formacji sanitarnych.', hint: 'Wstyd być szczęśliwym samemu', category: 'bohater' },
     { id: 'kf8-19', front: 'Co spowodowało kryzys wiary i zmianę tonu kazań u ojca Paneloux w „Dżumie”?', back: 'Widok powolnej i potwornej agonii niewinnego małego dziecka (synka sędziego Othona).', hint: 'Śmierć dziecka sędziego Othona', category: 'lektura' },
-    { id: 'kf8-20', front: 'Co w ujęciu Camusa symbolizuje dżuma?', back: 'Zarazę biologiczną, wojnę i faszyzm (brunatna dżuma), absurd ludzkiego losu oraz zło tkwiące w każdym człowieku.', hint: 'Wieloznaczna parabola zła', category: 'motyw' }
+    { id: 'kf8-20', front: 'Co w ujęciu Camusa symbolizuje dżuma?', back: 'Zarazę biologiczną, wojnę i faszyzm (brunatna dżuma), absurd ludzkiego losu oraz zło tkwiące w każdym człowieku.', hint: 'Wieloznaczna parabola zła', category: 'motyw' },
+    { id: 'kf8-21', front: 'Dlaczego twórców urodzonych około 1920 roku nazwano „Pokoleniem Kolumbów”?', back: 'Ponieważ wchodzili w dorosłość w 1939 r. i musieli odkrywać niepodległą Polskę oraz własną młodość na nowo w cieniu wojny, konspiracji i tragicznej śmierci (nazwa od powieści Romana Bratnego „Kolumbowie. Rocznik 20”).', hint: 'Rocznik 1920 — młodość przerwana przez wojnę.', category: 'epoka' },
+    { id: 'kf8-22', front: 'Co symbolizują „białe czaszki” i „złe oczy” w wierszu Krzysztofa Kamila Baczyńskiego „Pokolenie”?', back: 'Skalę wojennego zniszczenia moralnego: młodzi poeci i żołnierze musieli wyzbyć się litości, sumienia i wrażliwości, aby przetrwać i zabijać wroga — wojna okaleczyła ich dusze jeszcze przed śmiercią.', hint: 'Moralne okaleczenie młodych przez wojnę.', category: 'lektura' },
+    { id: 'kf8-23', front: 'Na czym polega prowokacja narracyjna Tadeusza Borowskiego w opowiadaniu „Proszę państwa do gazu”?', back: 'Narrator (Tadek) sam jest więźniem pracującym na rampie w Birkenau w komandzie „Kanada” — relacjonuje selekcje i transporty z chłodnym cynizmem, złością na ofiary i bez moralizowania, pokazując, jak obóz zmusza ofiarę do współudziału.', hint: 'Ofiara w roli cynicznego obserwatora na rampie.', category: 'lektura' },
+    { id: 'kf8-24', front: 'Dlaczego obóz w opowiadaniach Borowskiego („U nas, w Auschwitzu...”) odwraca tradycyjną etykę europejską?', back: 'W rzeczywistości lagrowej instynkt przetrwania znosi dekalog — kradzież chleba, donos czy obojętność na śmierć sąsiada stają się normą („człowiek zlagrowany”), a przeżycie jednego odbywa się kosztem drugiego.', hint: 'Odwrócony dekalog w warunkach obozowych.', category: 'pojecie' },
+    { id: 'kf8-25', front: 'Jak działał system trzech kotłów żywnościowych w sowieckim łagrze w „Innym świecie”?', back: 'Wielkość racji chleba i zupy zależała od wyrobienia normy pracy (np. przy wyrębie lasu): I kocioł (głodowy) prowadził do szybkiego wycieńczenia i „trupiarni”, a III kocioł dawał szanse na przetrwanie — głód służył do wyciskania z ludzi ostatnich sił.', hint: 'Głód jako narzędzie zmuszania do pracy.', category: 'lektura' },
+    { id: 'kf8-26', front: 'Czego symbolem jest postać Michaiła Kostylewa w „Innym świecie” Gustawa Herlinga-Grudzińskiego?', back: 'Tragicznej ceny zachowania godności w łagrze: Kostylew wolał codziennie opalać własną rękę w ogniu, aby nie pracować dla sowieckiego reżimu, niż zrezygnować z wewnętrznej wolności.', hint: 'Opór przez samookaleczenie — wolność ponad ból.', category: 'bohater' },
+    { id: 'kf8-27', front: 'Dlaczego Marek Edelman w książce „Zdążyć przed Panem Bogiem” porównuje swoją pracę kardiochirurga do walki w getcie?', back: 'Zarówno w getcie, jak i na sali operacyjnej walczy o ocalenie pojedynczego ludzkiego życia — uważa, że „Pan Bóg chce już zgasić świeczkę, a ja muszę szybko osłonić płomień”, czyli wydrzeć śmierci choćby kilka dodatkowych lat.', hint: 'Osłanianie płomienia życia przed śmiercią.', category: 'cytat' },
+    { id: 'kf8-28', front: 'W jaki sposób Marek Edelman polemizuje z tradycyjnym mitem bohaterskiej śmierci w powstaniu w getcie warszawskim?', back: 'Mówi bez patosu o brudzie, strachu, głodzie i bezradności powstańców; twierdzi, że „śmierć z bronią w ręku” nie była lepsza niż cicha śmierć w komorze gazowej, a najważniejsza była godność wyboru sposobu umierania.', hint: 'Antypatetyczna prawda o powstaniu w getcie.', category: 'motyw' },
+    { id: 'kf8-29', front: 'Jakie trzy ministerstwa rządzą w Oceanii w „Roku 1984” i na czym polega ich ironiczna nazwa?', back: 'Ministerstwo Prawdy (zajmuje się cenzurą i fałszowaniem historii), Ministerstwo Pokoju (prowadzi nieustanną wojnę), Ministerstwo Miłości (torturuje i łamie opozycjonistów) oraz Ministerstwo Obfitości (zarządza niedoborem).', hint: 'Orwellowska ironia: nazwa odwrotna do funkcji.', category: 'lektura' },
+    { id: 'kf8-30', front: 'Co symbolizuje ostateczne zdanie powieści „Rok 1984”: „Kochał Wielkiego Brata”?', back: 'Totalne zwycięstwo totalitaryzmu nad jednostką — system nie zadowala się samym zabiciem buntownika, lecz najpierw łamie jego psychikę w Pokoju 101 (zdrada Julii), zmuszając go do szczerego pokochania oprawcy.', hint: 'Całkowite złamanie duszy i zdrada miłości.', category: 'cytat' },
+    { id: 'kf8-31', front: 'Kim był Jean Tarrou w „Dżumie” Alberta Camusa i na czym polega jego koncepcja „świętego bez Boga”?', back: 'Przyjaciel doktora Rieux i organizator oddziałów sanitarnych; uważa, że każdy człowiek nosi w sobie „bakcyla dżumy” (skłonność do zła), więc jedynym wyjściem jest ciągła czujność i solidarność z ofiarami bez religijnej nagrody.', hint: 'Świecka etyka i nieustanna czujność wobec zła.', category: 'bohater' },
+    { id: 'kf8-32', front: 'Jakie jest przesłanie finału „Dżumy” Alberta Camusa mimo chwilowego ustąpienia zarazy w Oranie?', back: 'Doktor Rieux wie, że radość tłumu jest zagrożona, ponieważ „bakcyl dżumy nigdy nie umiera i nie znika” — może uśpiony czekać wiele lat, by znów obudzić szczury w szczęśliwym mieście (przestroga przed powrotem zła i totalitaryzmu).', hint: 'Uśpiony bakcyl zła zawsze może powrócić.', category: 'motyw' }
   ],
   quiz: [
     {
@@ -541,6 +553,150 @@ export const DEPT_08 = {
         3: "Błąd: Przestępcy pospolici (urkowie) rządzili w barakach i okradali więźniów politycznych."
       },
       examTip: "System kotłów żywnościowych dowodzi nieludzkiej inżynierii sowieckiego łagru: głód zmuszał ludzi do wycieńczania się pracą."
+    },
+    {
+      id: "kq8-13",
+      q: "Czym wyróżnia się styl narracji behawiorystycznej w opowiadaniach oświęcimskich Tadeusza Borowskiego?",
+      options: [
+        "Rejestruje wyłącznie zewnętrzne zachowania, gesty i dialogi ludzi bez analizowania ich przeżyć wewnętrznych i bez komentarzy moralizujących.",
+        "Skupia się na długich monologach filozoficznych narratora o sensie historii.",
+        "Używa podniosłego, romantycznego patosu i archaizmów biblijnych.",
+        "Opisuje wydarzenia z perspektywy strażników SS wspominających wojnę po latach."
+      ],
+      correct: 0,
+      explanation: "Behawioryzm literacki pokazuje człowieka poprzez jego reakcje zewnętrzne i czyny, zmuszając czytelnika do samodzielnego wyciągnięcia wstrząsających wniosków moralnych.",
+      whyWrong: {
+        1: "Borowski celowo rezygnuje z filozoficznego komentowania i ocen.",
+        2: "Język Borowskiego jest chłodny, potoczny, wręcz brutalnie rzeczowy.",
+        3: "Narrator Tadek to więzień-vorarbeiter (Polak), nie esesman."
+      },
+      examTip: "Behawioryzm Borowskiego to najczęstsze pytanie arkuszowe dotyczące formy jego opowiadań."
+    },
+    {
+      id: "kq8-14",
+      q: "Dlaczego w finale „Innego świata” Gustaw Herling-Grudziński odmówił przebaczenia współwięźniowi spotkanemu w Rzymie?",
+      options: [
+        "Uznał, że w normalnym, wolnym świecie nie wolno rozgrzeszać czynów popełnionych dla przeżycia kosztem śmierci czterech niewinnych Niemców.",
+        "Ponieważ ów współwięzień był w łagrze komendantem obozu i osobiście go torturował.",
+        "Ponieważ Grudziński całkowicie stracił pamięć o latach spędzonych w Jercewie.",
+        "Ponieważ współwięzień nie chciał oddać mu pożyczonych pieniędzy."
+      ],
+      correct: 0,
+      explanation: "W „Epilogu” były więzień przyznał się, że przeżył, składając fałszywy donos, i poprosił o słowo zrozumienia — Grudziński milcząco odszedł, broniąc granicy między etyką wolnego świata a złem łagru.",
+      whyWrong: {
+        1: "Rozmówca nie był komendantem, lecz zwykłym więźniem, który ratował życie donosem.",
+        2: "Grudziński doskonale pamiętał każdy szczegół Jercewa.",
+        3: "Nie chodziło o żadne długi finansowe."
+      },
+      examTip: "Epilog „Innego świata” stanowi bezpośrednią polemikę z „zlagrowanym” relatywizmem ukazanym u Borowskiego."
+    },
+    {
+      id: "kq8-15",
+      q: "Co w „Zdążyć przed Panem Bogiem” Hanny Krall symbolizuje postać Marka Edelmana jako powojennego kardiochirurga?",
+      options: [
+        "Kontynuację walki o ludzkie życie — tym razem z czasem i śmiercią na stole operacyjnym zamiast z bronią w getcie.",
+        "Chęć ucieczki od wspomnień z getta i całkowitego zapomnienia o kolegach z ŻOB.",
+        "Dążenie do sławy medialnej i bogactwa w PRL.",
+        "Wiarę w to, że medycyna może całkowicie zastąpić pamięć historyczną."
+      ],
+      correct: 0,
+      explanation: "Edelman mówi o „wyścigu z Panem Bogiem”: jeśli Bóg chce zgasić świeczkę życia, lekarz stara się choć na chwilę osłonić płomień.",
+      whyWrong: {
+        1: "Edelman nie zapomniał — co roku przynosił żonkile pod pomnik Bohaterów Getta i mówił o kolegach.",
+        2: "Edelman żył skromnie i odrzucał propagandowy blichtr.",
+        3: "Książka jest właśnie świadectwem pamięci historycznej."
+      },
+      examTip: "W „Zdążyć przed Panem Bogiem” dostrzegaj zestawienie dwóch wymiarów odwagi: zbrojnej w getcie i codziennej w szpitalu."
+    },
+    {
+      id: "kq8-16",
+      q: "W jaki sposób władza Partii w „Roku 1984” George’a Orwella kontrolowała przeszłość i pamięć obywateli?",
+      options: [
+        "Nieustannie fałszowała stare gazety, fotografie i dokumenty w Ministerstwie Prawdy tak, aby Partia zawsze miała rację („Kto kontroluje przeszłość, ten kontroluje przyszłość”).",
+        "Przekazywała wszystkie archiwa historyczne niezależnym uniwersytetom.",
+        "Zakazała wydawania jakichkolwiek gazet i książek w Oceanii.",
+        "Umożliwiała obywatelom swobodny dostęp do zagranicznych bibliotek."
+      ],
+      correct: 0,
+      explanation: "Winston Smith sam pracował w Departamencie Archiwów Ministerstwa Prawdy, przepisując stare numery „Timesa” i wrzucając niewygodne fakty do „luk pamięci”.",
+      whyWrong: {
+        1: "W Oceanii nie istniały żadne niezależne instytucje naukowe.",
+        2: "Partia wydawała masowo spreparowaną prasę i tanią literaturę dla proli.",
+        3: "Obywatele nie mieli dostępu do żadnych źródeł z zagranicy."
+      },
+      examTip: "Orwellowskie „luki pamięci” i fałszowanie historii to świetny kontekst do tematów o propagandzie i manipulacji prawdą."
+    },
+    {
+      id: "kq8-17",
+      q: "Dlaczego w „Roku 1984” Partia stworzyła „nowomowę” (Newspeak)?",
+      options: [
+        "Aby poprzez drastyczne zubożenie słownictwa i usunięcie słów takich jak „wolność” uczynić samą myślozbrodnię niemożliwą do pomyślenia.",
+        "Aby ułatwić cudzoziemcom szybką naukę języka angielskiego.",
+        "Aby rozwijać poezję futurystyczną i neologizmy artystyczne.",
+        "Aby ułatwić komunikację z sąsiednimi mocarstwami Eurazją i Wschódazją."
+      ],
+      correct: 0,
+      explanation: "Jeśli nie istnieją słowa nazywające bunt, wolność czy sprawiedliwość w sensie przeciwnym Partii, człowiek nie potrafi nawet sformułować w głowie buntu.",
+      whyWrong: {
+        1: "Celem nowomowy była kontrola umysłu, nie ułatwienie edukacji cudzoziemcom.",
+        2: "Nowomowa niszczyła literaturę i wieloznaczność poezji.",
+        3: "Oceania była w stanie permanentnej wojny z tymi mocarstwami."
+      },
+      examTip: "Nowomowa to narzędzie zniewolenia myśli poprzez język — świetny argument także do zadań językowych z Części 1 arkusza!"
+    },
+    {
+      id: "kq8-18",
+      q: "Jak zmieniła się postawa ojca Paneloux w „Dżumie” Alberta Camusa między jego pierwszym a drugim kazaniem?",
+      options: [
+        "Z potępienia grzesznych mieszkańców („zasłużyliście na karę”) przeszedł do pokornego współodczuwania z cierpiącymi („my” zamiast „wy”) po śmierci dziecka sędziego Othona.",
+        "Opuścił Oran pierwszym statkiem, porzucając swoją parafię.",
+        "Wyrzekł się wiary w Boga i ogłosił ateizm z ambony.",
+        "Zaczął głosić, że dżuma jest zwykłą plotką wymyśloną przez prasę."
+      ],
+      correct: 0,
+      explanation: "Śmierć niewinnego dziecka wstrząsnęła Paneloux — w drugim kazaniu mówił już „my”, uznając tajemnicę wiary wymagającą przyjęcia nawet niezrozumiałego cierpienia i solidarności z ludźmi.",
+      whyWrong: {
+        1: "Paneloux pozostał w Oranie i wstąpił do oddziałów sanitarnych.",
+        2: "Pozostał wierzącym księdzem aż do śmierci.",
+        3: "Od początku traktował epidemię śmiertelnie poważnie."
+      },
+      examTip: "Ewolucja ojca Paneloux to głęboki obraz zderzenia dogmatu religijnego z tajemnicą niezawinionego cierpienia."
+    },
+    {
+      id: "kq8-19",
+      q: "Co łączy doktora Bernarda Rieux, Jeana Tarrou i urzędnika Josepha Granda w „Dżumie”?",
+      options: [
+        "Cichy, pozbawiony patosu heroizm codzienności — poczucie zwykłego obowiązku i solidarności z cierpiącymi w obliczu absurdu.",
+        "Przekonanie, że jedynym sposobem pokonania zarazy jest ucieczka w góry.",
+        "Wiara w to, że dżuma stanowi sprawiedliwą karę dla bogatych kupców.",
+        "Chęć wykorzystania kwarantanny do nielegalnego handlu żywnością."
+      ],
+      correct: 0,
+      explanation: "Camus celowo czyni bohaterem powieści skromnych ludzi (lekarza, społecznika, drobnego urzędnika), którzy robią to, co do nich należy, bo „w człowieku więcej rzeczy zasługuje na podziw niż na pogardę”.",
+      whyWrong: {
+        1: "Wszyscy trzej zostali w mieście i walczyli z epidemią.",
+        2: "To Cottard czerpał zyski z chaosu kwarantanny, nie oni.",
+        3: "Rieux był niewierzącym humanistą, a nie kaznodzieją kary Bożej."
+      },
+      examTip: "„Heroizm codzienności” to najważniejsza kategoria etyczna „Dżumy” Camusa."
+    },
+    {
+      id: "kq8-20",
+      q: "Jaki kontrast buduje Krzysztof Kamil Baczyński w wierszu „Elegia o… [chłopcu polskim]”?",
+      options: [
+        "Zderza wspomnienie czułego, niewinnego dzieciństwa („oddzielili cię, syneczku, od snów”) z brutalną rzeczywistością wojny, która zmusiła młodego człowieka do zabijania i przedwczesnej śmierci.",
+        "Przeciwstawia piękno paryskich kawiarni surowej przyrodzie Tatr.",
+        "Zestawia zwycięstwo armii napoleońskiej z klęską powstania listopadowego.",
+        "Kontrastuje nowoczesny przemysł PRL z życiem na wsi."
+      ],
+      correct: 0,
+      explanation: "Wiersz ukazuje tragizm całego Pokolenia Kolumbów — „wyuczono” ich nienawiści i lęku, zanim zdążyli dorosnąć w pokoju.",
+      whyWrong: {
+        1: "Wiersz dotyczy tragizmu wojennego, nie porównania Paryża i Tatr.",
+        2: "Dotyczy II wojny światowej i okupacji, nie XIX wieku.",
+        3: "Baczyński zginął w 1944 r. w powstaniu warszawskim, przed powstaniem PRL."
+      },
+      examTip: "Baczyński to klasyczny patron tematu o utraconej młodości i cenie wojny."
     }
   ]
 };

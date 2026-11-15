@@ -144,18 +144,6 @@ export function Sidebar({
         </div>
       </div>
 
-      <button
-        type="button"
-        className={`review-pool-btn ${reviewMode ? 'active' : ''}`}
-        onClick={onToggleReviewMode}
-      >
-        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-          <RotateCcw size={16} />
-          Pula do powtórki
-        </span>
-        <span className="badge-count">{reviewCount}</span>
-      </button>
-
       <nav className="level-list" aria-label="Poziomy nauki">
         {(levels || []).map((lvl) => {
           const done = isLevelCompleted(lvl);
@@ -179,6 +167,23 @@ export function Sidebar({
             </button>
           );
         })}
+
+        <button
+          type="button"
+          className={`level-item review-pool-item ${reviewMode ? 'active' : ''}`}
+          onClick={onToggleReviewMode}
+        >
+          <span className="level-num">
+            <RotateCcw size={15} />
+          </span>
+          <span className="level-meta">
+            <div className="level-name">Powtórka fiszek</div>
+            <div className="level-sub">
+              {totalCardsCount} fiszek • {reviewCount > 0 ? `${reviewCount} do powtórki` : 'wszystkie bloki'}
+            </div>
+          </span>
+          {reviewCount > 0 && <span className="badge-count">{reviewCount}</span>}
+        </button>
       </nav>
 
       <div style={{ marginTop: 'auto', fontSize: '0.75rem', color: 'var(--text-muted)', display: 'flex', gap: 6, alignItems: 'center' }}>

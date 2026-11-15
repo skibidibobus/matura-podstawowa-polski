@@ -517,7 +517,17 @@ export const DEPT_10 = {
       back: 'Nie wolno wprowadzać nowych lektur, nowych wątków fabularnych ani zmieniać postawionej we wstępie tezy. Zakończenie ma wyłącznie syntetyzować wnioski.',
       hint: 'Podsumowanie dowodzenia, nie nowy rozdział.',
       category: 'wypracowanie'
-    }
+    },
+    { id: 'kf10-21', front: 'Z jakich dokładnie elementów musi składać się wstęp wypracowania maturalnego CKE?', back: '1) Krótkie wprowadzenie w problem z tematu (2–3 zdania, bez lania wody typu „Od zarania dziejów...”); 2) Wyraźne, jednoznaczne sformułowanie tezy lub hipotezy odpowiadającej na polecenie tematu; 3) Opcjonalna zapowiedź dobranych lektur.', hint: 'Problem → jasna teza → (zapowiedź lektur).', category: 'wypracowanie' },
+    { id: 'kf10-22', front: 'Ile co najmniej lektur i kontekstów wymaga wypracowanie maturalne (Formuła 2023)?', back: 'Minimum 2 utwory literackie: co najmniej 1 lektura obowiązkowa wskazana w podstawie programowej (znajomość w całości lub we fragmencie zgodnie z wymogiem tematu) + 1 inny utwór literacki (może być druga lektura obowiązkowa) oraz minimum 2 funkcjonalne konteksty (np. historyczny, filozoficzny, biograficzny, kulturowy).', hint: 'Min. 2 utwory (w tym min. 1 lektura obowiązkowa) + min. 2 konteksty.', category: 'wypracowanie' },
+    { id: 'kf10-23', front: 'Dlaczego nie wolno mylić pojęć „argumentacja” i „streszczenie” w akapicie rozwinięcia?', back: 'Streszczenie opisuje tylko „co się stało” (fabułę), za co grozi niska punktacja za kompetencje literackie; argumentacja wyjaśnia „DLACZEGO i W JAKI SPOSÓB” dana scena/postawa potwierdza tezę (reguła TSACW: Teza cząstkowa → Sytuacja → Analiza → Context → Wniosek).', hint: 'Analiza sensu sceny zamiast opowiadania fabuły.', category: 'wypracowanie' },
+    { id: 'kf10-24', front: 'Jakie dwie lektury najlepiej dobrać do tematu: „Czy wybujała ambicja i żądza władzy zawsze niszczą człowieka?”', back: '„Makbet” Williama Szekspira (spirala zbrodni, paranoja i upadek etyczny po zabójstwie Dunkana) + „Antygona” Sofoklesa (pycha władzy Kreona prowadząca do śmierci bliskich) lub „Lalka” (porażka ambicji w zderzeniu ze światem).', hint: 'Makbet + Antygona (Kreon).', category: 'motyw' },
+    { id: 'kf10-25', front: 'Jakie lektury obowiązkowe najlepiej zestawić do motywu winy, pokuty i wewnętrznej przemiany?', back: '„Pan Tadeusz” Adama Mickiewicza (Jacek Soplica → Ksiądz Robak), „Potop” Henryka Sienkiewicza (Andrzej Kmicic → Babinicz) oraz „Zbrodnia i kara” Fiodora Dostojewskiego (Raskolnikow na katordze z Sonią).', hint: 'Jacek Soplica, Kmicic, Raskolnikow.', category: 'motyw' },
+    { id: 'kf10-26', front: 'Jakie utwory najlepiej wykorzystać w temacie o miłości niespełnionej, niszczącej lub poświęceniu z miłości?', back: '„Lalka” B. Prusa (ślepa, destrukcyjna miłość Wokulskiego do Izabeli), „Kamizelka” B. Prusa (ciche poświęcenie małżonków) oraz „Dziady cz. IV”/„Pan Tadeusz” (historia Jacka Soplicy i Ewy Horeszkówny) lub „Wesele” (zderzenie stanów).', hint: 'Wokulski, małżonkowie z Kamizelki, Jacek Soplica.', category: 'motyw' },
+    { id: 'kf10-27', front: 'Czym jest kontekst funkcjonalny (punktowany) w odróżnieniu od kontekstu pozornego (0 pkt)?', back: 'Kontekst funkcjonalny realnie pogłębia interpretację lektury i pomaga udowodnić tezę (np. filozofia Schopenhauera tłumacząca pesymizm Tetmajera lub realia stalinizmu wyjaśniające „Inny świat”); kontekst pozorny to luźne wtrącenie daty lub tytułu bez związku z analizą.', hint: 'Pogłębia argumentację, a nie zdobi akapit.', category: 'wypracowanie' },
+    { id: 'kf10-28', front: 'Jakie są 3 najczęstsze błędy kardynalne w lekturach XX wieku („Przedwiośnie”, „Ferdydurke”, „Rok 1984”, „Dżuma”)?', back: '1) Twierdzenie, że w Polsce istniały prawdziwe szklane domy (to tylko mit Seweryna); 2) Mylenie narracji Winstona z happy endem (Winston zostaje złamany i kocha Wielkiego Brata); 3) Pisanie, że Tarrou przeżył dżumę (Tarrou umiera tuż przed końcem epidemii, przeżywa Rieux).', hint: 'Mit szklanych domów, klęska Winstona, śmierć Tarrou.', category: 'lektura' },
+    { id: 'kf10-29', front: 'Jaką strategię zastosować na maturze, gdy nie pamiętasz dokładnie imienia postaci epizodycznej lub szczegółu daty?', back: 'Stosuj „zasadę bezpieczeństwa opisowego”: zamiast zgadywać nazwisko czy rok (ryzyko błędu rzeczowego/kardynalnego!), użyj pewnego określenia funkcji (np. „sędzia śledczy w «Zbrodni i karze»”, „przyjaciel Rieux organizujący oddziały sanitarne”, „w pierwszej połowie XIX wieku”).', hint: 'Nie zgaduj detalu — opisz pewną funkcję lub rolę.', category: 'wypracowanie' },
+    { id: 'kf10-30', front: 'Ile punktów łącznie można zdobyć za wypracowanie maturalne (Formuła 2023) i za co odejmuje się najwięcej?', back: 'Maksymalnie 35 pkt: spełnienie warunków formalnych i kompetencje literackie/kulturowe (do 16 pkt), kompozycja i spójność (do 7 pkt), język, styl i ortografia/interpunkcja (do 12 pkt). Błąd kardynalny zeruje całe wypracowanie (0/35 pkt)!', hint: '35 pkt max; błąd kardynalny = 0 pkt za całość.', category: 'wypracowanie' }
   ],
   quiz: [
     {
@@ -771,6 +781,150 @@ export const DEPT_10 = {
         3: "Uczta w Inverness to scena z „Makbeta” Szekspira."
       },
       examTip: "Metafora lawy („Nasz naród jak lawa...”) autorstwa Piotra Wysockiego to absolutny fundament do tematów o polskim społeczeństwie."
+    },
+    {
+      id: "kq10-15",
+      q: "Co w wypracowaniu maturalnym CKE powoduje przyznanie 0 punktów za całą pracę (tzw. błąd kardynalny)?",
+      options: [
+        "Rażące zniekształcenie treści lub sensu lektury obowiązkowej przywoływanej jako główne uzasadnienie tezy (np. pomylenie autorów, głównych faktów fabularnych lub sensu dzieła).",
+        "Napisanie wypracowania liczącego dokładnie 315 słów zamiast 450.",
+        "Popełnienie trzech błędów interpunkcyjnych przy użyciu zdania podrzędnego.",
+        "Zastosowanie kontekstu filozoficznego zamiast kontekstu biograficznego."
+      ],
+      correct: 0,
+      explanation: "Błąd kardynalny świadczy o nieznajomości lektury obowiązkowej lub całkowitym niezrozumieniu jej wymowy (np. stwierdzenie, że Kreon okazał łaskę Antygonie lub że Wokulski poślubił Izabelę).",
+      whyWrong: {
+        1: "Minimum to 300 słów — 315 słów mieści się w normie.",
+        2: "Błędy interpunkcyjne obniżają jedynie punktację językową, nie zerują pracy.",
+        3: "Kontekst filozoficzny jest w pełni równoprawnym kontekstem funkcjonalnym."
+      },
+      examTip: "Jeśli nie masz 100% pewności co do detalu (imienia, daty, zakończenia wątku), lepiej użyj bezpiecznego opisu ogólnego niż ryzykujesz błąd kardynalny."
+    },
+    {
+      id: "kq10-16",
+      q: "Który z poniższych przykładów najlepiej ilustruje FUNKCJONALNE użycie kontekstu w rozprawce o „Zbrodni i karze”?",
+      options: [
+        "Odwołanie do filozofii nadczłowieka Friedricha Nietzschego i pojęcia nihilizmu w celu wyjaśnienia korzeni teorii Raskolnikowa o „ludziach niezwykłych”.",
+        "Wtrącenie zdania: „Fiodor Dostojewski urodził się w XIX wieku w Rosji i był znanym pisarzem”.",
+        "Wspomnienie w jednym zdaniu, że akcja „Lalki” Prusa toczy się w Warszawie, bez żadnego powiązania z Raskolnikowem.",
+        "Zacytowanie przysłowia „Kto pod kim dołki kopie” na samym końcu akapitu bez analizy."
+      ],
+      correct: 0,
+      explanation: "Kontekst filozoficzny (Nietzsche/nihilizm) realnie pogłębia analizę psychologii i motywacji Raskolnikowa, pomagając udowodnić tezę rozprawki.",
+      whyWrong: {
+        1: "Sucha informacja biograficzna bez związku z argumentem to kontekst pozorny (0 pkt).",
+        2: "Wzmianka o innej lekturze bez porównania i wniosku jest niefunkcjonalna.",
+        3: "Przysłowie bez funkcji interpretacyjnej nie stanowi wartościowego kontekstu."
+      },
+      examTip: "Zawsze pytaj siebie po dopisaniu kontekstu: „Czy to zdanie pomaga mi lepiej wyjaśnić utwór?”"
+    },
+    {
+      id: "kq10-17",
+      q: "Wskaż parę lektur obowiązkowych najlepiej dobraną do tematu: „Jak system totalitarny próbuje odebrać człowiekowi godność i pamięć?”",
+      options: [
+        "„Rok 1984” George’a Orwella (nowomowa, dwójmyślenie, Pokój 101) oraz „Inny świat” Gustawa Herlinga-Grudzińskiego (łagier w Jercewie, system kotłów, sprawa Kostylewa).",
+        "„Skąpiec” Moliera oraz „Pieśń o Rolandzie”.",
+        "„Pan Tadeusz” Adama Mickiewicza oraz „Treny” Jana Kochanowskiego.",
+        "„Kamizelka” Bolesława Prusa oraz „Bajki” Ignacego Krasickiego."
+      ],
+      correct: 0,
+      explanation: "Obie lektury bezpośrednio analizują mechanizmy totalitarnego zniewolenia — odpowiednio w antyutopii o Oceanii oraz w literaturze faktu o sowieckim Gułagu.",
+      whyWrong: {
+        1: "To utwory o chciwości (XVII w.) i etosie rycerskim (średniowiecze).",
+        2: "Dotyczą szlacheckiej arkadii i żałoby ojca po stracie dziecka.",
+        3: "To nowela o miłości małżeńskiej i alegoryczne bajki oświeceniowe."
+      },
+      examTip: "Do tematów o totalitaryzmie i zniewoleniu pamiętaj o niezawodnej trójce: Orwell („Rok 1984”), Grudziński („Inny świat”) i Borowski (opowiadania)."
+    },
+    {
+      id: "kq10-18",
+      q: "Co oznacza metoda budowy akapitu TSACW zalecana w wypracowaniu maturalnym?",
+      options: [
+        "Teza cząstkowa → Sytuacja (przywołanie sceny) → Analiza (odpowiedź „dlaczego”) → Kontekst (funkcjonalne pogłębienie) → Wniosek cząstkowy.",
+        "Tytuł utworu → Streszczenie całej książki → Aneks → Cytat → Wstęp.",
+        "Temat → Spis treści → Argument → Cytat → Wypunktowanie.",
+        "Teza → Streszczenie → Anegdota → Cytat → Wyliczenie epok."
+      ],
+      correct: 0,
+      explanation: "Schemat TSACW gwarantuje, że każdy akapit rozwinięcia ma wyraźny argument, odwołanie do konkretu z lektury, pogłębioną analizę (zamiast streszczenia!), kontekst oraz podsumowanie wiążące całość z tezą.",
+      whyWrong: {
+        1: "Streszczenie całej książki w akapicie rozwinięcia obniża punktację.",
+        2: "Rozprawka musi być tekstem ciągłym, nie wypunktowaniem.",
+        3: "Anegdoty i suche wyliczenia epok nie budują argumentacji."
+      },
+      examTip: "Sprawdź każdy swój akapit pod kątem TSACW: czy po opisaniu sceny odpowiedziałeś na pytanie „co z tego wynika dla tezy?”."
+    },
+    {
+      id: "kq10-19",
+      q: "Który zestaw lektur jest całkowicie WOLNY od błędu merytorycznego w podanych faktach fabularnych?",
+      options: [
+        "W „Weselu” Jasiek gubi Złoty Róg; w „Ferdydurke” Józio zostaje zabrany przez Pimkę do szkoły; w „Dżumie” umierają Tarrou i Othon, ale przeżywa doktor Rieux.",
+        "W „Makbecie” Lady Makbet własnoręcznie zabija Dunkana; w „Lalce” Wokulski topi się w Wiśle; w „Przedwiośniu” Cezary buduje szklane domy.",
+        "W „Panu Tadeuszu” Gerwazy zabija Jacka Soplicę; w „Kordianie” Kordian zabija cara Mikołaja I; w „Antygonie” Kreon popełnia samobójstwo.",
+        "W „Zbrodni i karze” Raskolnikow ucieka do Paryża; w „Potopie” Kmicic służy do końca Szwedom; w „Tangu” Artur zabija Edka."
+      ],
+      correct: 0,
+      explanation: "Wszystkie trzy fakty w pierwszej odpowiedzi są w 100% zgodne z treścią lektur obowiązkowych.",
+      whyWrong: {
+        1: "Dunkana zabił sam Makbet; los Wokulskiego jest otwarty (nie utopił się w Wiśle); szklane domy okazały się mitem.",
+        2: "Jacek Soplica umarł od dawnej rany wojennej (po spowiedzi przed Gerwazym); Kordian zemdlał przed sypialnią cara; Kreon przeżył (samobójstwo popełnili Antygona, Hajmon i Eurydyka).",
+        3: "Raskolnikow poszedł na Syberię; Kmicic przeszedł na stronę króla Polski; to Edek zabił Artura."
+      },
+      examTip: "Taka szybka kontrola faktów przed oddaniem arkusza chroni przed nieświadomym błędem kardynalnym."
+    },
+    {
+      id: "kq10-20",
+      q: "Jaki powinien być charakter zakończenia wypracowania maturalnego?",
+      options: [
+        "Powinno zwięźle podsumować przeprowadzone dowodzenie, powrócić do tezy ze wstępu i sformułować ogólny wniosek z obu omówionych lektur (bez wprowadzania nowych dzieł).",
+        "Powinno zawierać zupełnie nową lekturę obowiązkową, której zabrakło w rozwinięciu.",
+        "Powinno składać się z jednego krótkiego zdania: „I tak oto udowodniłem swoją tezę”.",
+        "Powinno zmienić tezę postawioną we wstępie na przeciwną, aby zaskoczyć egzaminatora."
+      ],
+      correct: 0,
+      explanation: "Zakończenie spina klamrą kompozycyjną całą rozprawkę, potwierdzając słuszność tezy na podstawie przedstawionych argumentów.",
+      whyWrong: {
+        1: "Wprowadzanie nowych lektur i wątków w zakończeniu jest błędem kompozycyjnym.",
+        2: "Jednozdaniowe ogólniki bez syntezy wniosków obniżają ocenę kompozycji.",
+        3: "Zaprzeczenie własnej tezie burzy spójność logiczną całej pracy."
+      },
+      examTip: "Dobre zakończenie ma 4–6 zdań: synteza wniosków z lektur + uniwersalna refleksja zamykająca."
+    },
+    {
+      id: "kq10-21",
+      q: "Które dwie lektury najlepiej zestawić w temacie: „Sztuka i artysta wobec brutalnej historii lub obojętnego świata”?",
+      options: [
+        "„Fortepian Szopena” Cypriana Kamila Norwida (profanacja sztuki i „Idea – osiągnęła bruk”) oraz „Campo di Fiori” Czesława Miłosza (słowo poety przełamujące obojętność świata).",
+        "„Skąpiec” Moliera oraz „Pamiętniki” Jana Chryzostoma Paska.",
+        "„Jagnię i wilcy” Ignacego Krasickiego oraz „Kamizelka” Bolesława Prusa.",
+        "„Lament świętokrzyski” oraz „Bogurodzica”."
+      ],
+      correct: 0,
+      explanation: "Oba utwory podejmują wprost rolę artysty i poezji/muzyki w zderzeniu z przemocą historii (zaborczy carat u Norwida, Holokaust u Miłosza).",
+      whyWrong: {
+        1: "Dotyczą chciwości i obyczajowości sarmackiej.",
+        2: "Dotyczą przemocy silniejszego w bajce i miłości małżeńskiej.",
+        3: "To zabytki średniowiecznej liryki religijnej."
+      },
+      examTip: "Warto znać też trzeci przykład do tego motywu: Poeta z „Wesela” Wyspiańskiego lub Ojciec Jakub z „Sklepów cynamonowych”."
+    },
+    {
+      id: "kq10-22",
+      q: "Co należy zrobić, gdy w temacie maturalnym pojawia się sformułowanie: „Rozważ problem i uzasadnij swoje stanowisko, odwołując się do wybranej lektury obowiązkowej...”?",
+      options: [
+        "Zająć wyraźne stanowisko (tezę lub hipotezę) już we wstępie, oprzeć główny argument na wybranej lekturze obowiązkowej oraz drugim utworze literackim, a także użyć min. dwóch kontekstów.",
+        "Napisać streszczenie wszystkich przeczytanych lektur z liceum bez zajmowania stanowiska.",
+        "Odwołać się wyłącznie do współczesnych filmów i gier komputerowych, pomijając książki.",
+        "Skupić się na opisaniu biografii autora bez analizowania treści samego utworu."
+      ],
+      correct: 0,
+      explanation: "Formuła 2023 wymaga wypowiedzi argumentacyjnej (problemowej) z jasnym stanowiskiem, minimum dwoma utworami literackimi (w tym min. 1 lekturą obowiązkową) i funkcjonalnymi kontekstami.",
+      whyWrong: {
+        1: "Brak tezy i streszczanie zamiast argumentacji dyskwalifikuje wysoką ocenę.",
+        2: "Lektura obowiązkowa i drugi utwór literacki są bezwzględnym wymogiem formalnym (film może być tylko dodatkowym kontekstem).",
+        3: "Biografia bez analizy utworu nie realizuje tematu."
+      },
+      examTip: "Zawsze dokładnie sprawdź wymagania z polecenia: ile lektur, czy całość czy fragment, i czy trzeba odwołać się do konkretnej epoki."
     }
   ]
 };

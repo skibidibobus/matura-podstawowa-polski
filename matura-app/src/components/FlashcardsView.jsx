@@ -1,16 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, CheckCircle2, RotateCcw, Shuffle, XCircle } from 'lucide-react';
 
+function findFirstUnansweredIndex(list, statusMap) {
+  if (!Array.isArray(list) || list.length === 0) return 0;
+  const idx = list.findIndex((c) => !statusMap?.[c.id]);
+  return idx >= 0 ? idx : 0;
+}
+
 export function FlashcardsView({
   cards,
   cardStatus,
   onSetCardStatus,
+  onResetCards,
   onGoToQuiz,
   isReviewPool = false,
 }) {
   const [filterReviewOnly, setFilterReviewOnly] = useState(false);
   const [shuffledOrder, setShuffledOrder] = useState(null);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(() => findFirstUnansweredIndex(cards, cardStatus));
   const [flipped, setFlipped] = useState(false);
   const touchStartX = useRef(null);
 
@@ -27,9 +34,10 @@ export function FlashcardsView({
   const currentCard = visibleCards[safeIndex];
 
   useEffect(() => {
-    setIndex(0);
-    setFlipped(false);
+    setFilterReviewOnly(false);
     setShuffledOrder(null);
+    setIndex(findFirstUnansweredIndex(cards, cardStatus));
+    setFlipped(false);
   }, [cards]);
 
   useEffect(() => {
@@ -94,6 +102,17 @@ export function FlashcardsView({
     setFlipped(false);
   };
 
+  const handleRestart = () => {
+    const ids = (cards || []).map((c) => c.id);
+    if (onResetCards && ids.length > 0) {
+      onResetCards(ids);
+    }
+    setFilterReviewOnly(false);
+    setShuffledOrder(null);
+    setIndex(0);
+    setFlipped(false);
+  };
+
   const handleTouchStart = (e) => {
     touchStartX.current = e.changedTouches[0].clientX;
   };
@@ -141,6 +160,7 @@ export function FlashcardsView({
               className={`pill-btn ${filterReviewOnly ? 'active' : ''}`}
               onClick={() => {
                 setFilterReviewOnly((v) => !v);
+                setShuffledOrder(null);
                 setIndex(0);
                 setFlipped(false);
               }}
@@ -149,6 +169,10 @@ export function FlashcardsView({
               Tylko do powtórki ({reviewCountInDeck})
             </button>
           )}
+          <button type="button" className="pill-btn" onClick={handleRestart} title="Wyczyść odpowiedzi w tym zestawie i zacznij od pierwszej fiszki">
+            <RotateCcw size={14} />
+            Zrób jeszcze raz
+          </button>
           <button type="button" className="pill-btn" onClick={handleShuffle}>
             <Shuffle size={14} />
             Wymieszaj
@@ -236,7 +260,7 @@ export function FlashcardsView({
         </button>
       </div>
 
-      {!isReviewPool && (
+      {!isReviewPool && onGoToQuiz && (
         <div className="footer-actions" style={{ width: '100%', maxWidth: 680 }}>
           <span style={{ fontSize: '0.84rem', color: 'var(--text-muted)' }}>
             Czujesz, że pamiętasz fiszki? Sprawdź się w mini-quizie!

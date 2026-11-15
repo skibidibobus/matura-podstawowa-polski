@@ -356,7 +356,19 @@ export const DEPT_06 = {
     { id: 'kf6-17', front: 'Jaki kontrast przedstawia sonet Kasprowicza „Krzak dzikiej róży...”?', back: 'Kontrast między żywym, pąsowym krzakiem róży (życie, piękno) a zbutwiałym pniem powalonej limby (śmierć, rozkład).', hint: 'Róża i limba', category: 'motyw' },
     { id: 'kf6-18', front: 'Do jakiej filozofii nawiązuje wiersz Leopolda Staffa „Kowal”?', back: 'Do filozofii Fryderyka Nietzschego — wola mocy, hartowanie twardego charakteru i odrzucenie słabości.', hint: 'Nietzscheanizm', category: 'pojecie' },
     { id: 'kf6-19', front: 'Co oznacza termin „synestezja” popularny w Młodej Polsce?', back: 'Łączenie wrażeń odbieranych przez różne zmysły naraz (np. „błękitny zapach”, „ostry kolor”, „słodki dźwięk”).', hint: 'Mieszanie zmysłów', category: 'pojecie' },
-    { id: 'kf6-20', front: 'Kto napisał młodopolski manifest „Confiteor” i jakie hasło głosił?', back: 'Stanisław Przybyszewski — głosił hasło „Sztuka dla sztuki” (artysta kapłanem piękna wolnym od służby społecznej).', hint: 'Przybyszewski', category: 'epoka' }
+    { id: 'kf6-20', front: 'Kto napisał młodopolski manifest „Confiteor” i jakie hasło głosił?', back: 'Stanisław Przybyszewski — głosił hasło „Sztuka dla sztuki” (artysta kapłanem piękna wolnym od służby społecznej).', hint: 'Przybyszewski', category: 'epoka' },
+    { id: 'kf6-21', front: 'Jakie dwie główne postawy filozoficzne kształtowały światopogląd Młodej Polski?', back: 'Pesymizm Artura Schopenhauera (życie to cierpienie wynikające z popędu woli, ratunkiem sztuka, asceza i nirwana) oraz witalizm Fryderyka Nietzschego (wola mocy, bunt wobec słabości, idea nadczłowieka).', hint: 'Schopenhauer (nirwana) vs Nietzsche (wola mocy).', category: 'epoka' },
+    { id: 'kf6-22', front: 'Czym jest dekadentyzm i „chłód schyłku wieku” w poezji przełomu XIX i XX w.?', back: 'Nastrój znużenia, zwątpienia w postęp i wartości, poczucie bezsilności i nadchodzącej katastrofy cywilizacji (widoczne m.in. w wierszu „Koniec wieku XIX” K. Przerwy-Tetmajera).', hint: 'Schyłkowość i bezradność „fin de siècle”.', category: 'pojecie' },
+    { id: 'kf6-23', front: 'Co symbolizuje Chata w Bronowicach i złoty róg w „Weselu” Stanisława Wyspiańskiego?', back: 'Chata w Bronowicach to miniatura całej Polski (zderzenie inteligencji z chłopstwem); Złoty Róg to symbol wielkiego, historycznego czynu niepodległościowego, który zaprzepaszczono przez przywiązanie do dóbr doczesnych (czapka z pawich piór).', hint: 'Polska w pigułce + szansa na czyn narodowy.', category: 'motyw' },
+    { id: 'kf6-24', front: 'Dlaczego w „Weselu” nie doszło do wybuchu powstania narodowego, mimo że chłopi z kosami czekali pod chatą?', back: 'Jasiek zgubił Złoty Róg, schylając się po czapkę z pawich piór (symbol prywaty i próżności), a inteligencja pogrążyła się w marazmie, lęku przed ludem i chocholim tańcu.', hint: 'Zgubiony róg i letarg inteligencji.', category: 'lektura' },
+    { id: 'kf6-25', front: 'Kim są Zjawy (osoby dramatu) w II akcie „Wesela” i do kogo przychodzą?', back: 'To projekcje lęków, kompleksów i sumienia bohaterów: Stańczyk (do Dziennikarza), Rycerz Czarny (do Poety), Hetman Branicki (do Pana Młodego), Upiór Szeli (do Dziada), Wernyhora (do Gospodarza), Widmo (do Marysi).', hint: 'Lustro podświadomości bohaterów.', category: 'bohater' },
+    { id: 'kf6-26', front: 'Na czym polega młodopolska „chłopomania” ukazana krytycznie w „Weselu”?', back: 'Powierzchowna fascynacja inteligencji miejskiej barwnością wsi i chłopskim wigorem (śluby z chłopkami, zachwyt strojem), za którą kryje się jednak lęk przed chłopską siłą i niezrozumienie historii (pamięć rabacji 1846 r.).', hint: 'Powierzchowny zachwyt miastowych nad wsią.', category: 'epoka' },
+    { id: 'kf6-27', front: 'Jaki jest sens finałowego chocholego tańca w „Weselu” Wyspiańskiego?', back: 'Symbolizuje narodowy letarg, uśpienie, niemoc i bezwolne kręcenie się w kółko mimo szansy na wolność — choć słomiana otulina chochoła skrywa też nadzieję na wiosenne przebudzenie róży.', hint: 'Marazm i uśpienie narodu.', category: 'motyw' },
+    { id: 'kf6-28', front: 'Jak zbudowany jest czas w powieści „Chłopi” Władysława Reymonta i dlaczego ma to sens symboliczny?', back: 'Cztery tomy odpowiadają czterem porom roku (Jesień, Zima, Wiosna, Lato), co podkreśla cykliczność natury, rytm prac polowych oraz wpisanie losu ludzkiego w porządek przyrody i roku liturgicznego.', hint: 'Cztery pory roku = cykliczność losu i natury.', category: 'lektura' },
+    { id: 'kf6-29', front: 'Co było główną przyczyną konfliktu Macieja Boryny z synem Antkiem w „Chłopach”?', back: 'Dwie nakładające się przyczyny: walka o ziemię (stary Boryna nie chce oddać majątku dzieciom) oraz rywalizacja o młodą, piękną Jagnę, która została żoną Macieja, będąc kochanką Antka.', hint: 'Spór o morgi (ziemię) i o Jagnę.', category: 'bohater' },
+    { id: 'kf6-30', front: 'Czym jest symbolizm i impresjonizm w poezji młodopolskiej (na przykładzie „Krzaku dzikiej róży...”)?', back: 'Impresjonizm oddaje ulotne wrażenia barw, światła i dźwięku w naturze; symbolizm poprzez obrazy (żywa róża vs gnijąca limba) wyraża niewyrażalne prawdy egzystencjalne o pięknie, przemijaniu i samotności.', hint: 'Ulotne barwy/światła + ukryte znaczenia natury.', category: 'pojecie' },
+    { id: 'kf6-31', front: 'Jaka jest rola ludu i postaci Boryny w scenie jego śmierci w „Chłopach”?', back: 'Umierający Boryna w gorączce wychodzi na pole i wykonuje gest siewcy — zjednoczenie chłopa z ziemią-matką nadaje jego śmierci wymiar niemal sakralny i mityczny.', hint: 'Gest siewcy — jedność chłopa z ziemią.', category: 'bohater' },
+    { id: 'kf6-32', front: 'Jakie stanowisko zajmuje podmiot liryczny w wierszu „Kowal” Leopolda Staffa wobec cierpienia i słabości?', back: 'Odrzuca młodopolski dekadentyzm i bierność; niczym kowal wykuwa z bezkształtnej bryły swoje serce „hartowne, mężne, dumne, silne”, a gdy pęknie z niemocy — sam rozbija je młotem.', hint: 'Aktywizm i hartowanie ducha zamiast rozpaczy.', category: 'lektura' }
   ],
   quiz: [
     {
@@ -574,6 +586,150 @@ export const DEPT_06 = {
         3: "Błąd: Poddanie się popędom wg filozofa prowadzi do jeszcze większego cierpienia."
       },
       examTip: "Nirwana i kontemplacja piękna to dwa słowa-klucze do poezji młodopolskiej (np. wiersz Tetmajera „Hymn do Nirwany”)."
+    },
+    {
+      id: "kq6-13",
+      q: "Co w II akcie „Wesela” symbolizuje zjawa Jakuba Szeli, ukazująca się Dziadowi?",
+      options: [
+        "Krwawą pamięć o rabacji galicyjskiej z 1846 r., która wciąż dzieli chłopów i szlachtę oraz budzi wzajemną nieufność.",
+        "Sojusz szlachty i chłopstwa zawarty podczas bitwy pod Racławicami.",
+        "Nadzieję na szybkie uwłaszczenie chłopów przez rząd w Wiedniu.",
+        "Pochwałę sztuki ludowej i barwnych strojów krakowskich."
+      ],
+      correct: 0,
+      explanation: "Upiór Szeli przypomina o rzezi szlachty dokonanej przez chłopów pół wieku wcześniej — to rana historyczna podważająca sielankową wizję zbratania stanów.",
+      whyWrong: {
+        1: "Bitwa pod Racławicami to pozytywna legenda kościuszkowska (Gospodarz i kosynierzy), a nie Jakub Szela.",
+        2: "Szela jest postacią tragiczną i krwawą, budzącą lęk.",
+        3: "Zjawa dotyczy bolesnej historii, nie folkloru."
+      },
+      examTip: "Zestawiaj dwie legendy w „Weselu”: Racławice (współpraca) vs rabacja Szeli (nienawiść klasowa)."
+    },
+    {
+      id: "kq6-14",
+      q: "Dlaczego Stańczyk w rozmowie z Dziennikarzem w „Weselu” wyraża gorycz i wręcza mu kaduceusz?",
+      options: [
+        "Krytykuje ugodową, usypiającą politykę krakowskich konserwatystów („Stańczyków”), którzy zamiast budzić naród, mieszają w nim błazeńską laską.",
+        "Chwali Dziennikarza za odważne przygotowanie zbrojnego powstania w Krakowie.",
+        "Przekazuje Dziennikarzowi rozkaz wymarszu chłopskich oddziałów na Warszawę.",
+        "Zapowiada nadanie Dziennikarzowi tytułu szlacheckiego przez cesarza."
+      ],
+      correct: 0,
+      explanation: "Mądry błazen Stańczyk wyrzuca Dziennikarzowi brak wiary w naród, ugodowość i usypianie sumień publicystyką.",
+      whyWrong: {
+        1: "Dziennikarz jest właśnie znużonym konserwatystą bez wiary w czyn.",
+        2: "Rozkaz wymarszu i złoty róg przynosi Wernyhora Gospodarzowi, nie Stańczyk.",
+        3: "Stańczyk piętnuje serwilizm wobec zaborców, nie nagradza go."
+      },
+      examTip: "Kaduceusz to laska błazeńska (symbol błazenady) i zarazem laska pokoju — w tym kontekście oznacza usypianie narodu."
+    },
+    {
+      id: "kq6-15",
+      q: "Czym jest „czapka z pawich piór” w finale „Wesela” Stanisława Wyspiańskiego?",
+      options: [
+        "Symbolem chłopskiej próżności, przywiązania do błyskotek i prywaty, przez które Jasiek zgubił Złoty Róg.",
+        "Odznaczeniem wojskowym nadanym Jaśkowi przez Wernyhorę za odwagę.",
+        "Atrybutem Poety pragnącego napisać dramat o królach polskich.",
+        "Nakryciem głowy Panny Młodej przynoszącym szczęście w małżeństwie."
+      ],
+      correct: 0,
+      explanation: "Jasiek schylił się po czapkę z pawich piór i wtedy stracił Złoty Róg — Wyspiański pokazuje, jak błaha prywatna ambicja potrafi zaprzepaścić wielką sprawę narodową.",
+      whyWrong: {
+        1: "Wernyhora wręczył Gospodarzowi Złoty Róg, a nie czapkę.",
+        2: "Czapka należy do Jaśka (drużby wiejskiego), nie do Poety.",
+        3: "Czapka była elementem męskiego stroju krakowskiego drużby."
+      },
+      examTip: "Para symboli z „Wesela”: Złoty Róg (sprawa narodowa) vs czapka z pawich piór (prywata/próżność)."
+    },
+    {
+      id: "kq6-16",
+      q: "Jaki główny konflikt ekonomiczno-społeczny decyduje o pozycji bohaterów w lipieckiej gromadzie w „Chłopach”?",
+      options: [
+        "Posiadanie ziemi (morgów) — ziemia wyznacza godność, władzę w rodzinie i hierarchię we wsi.",
+        "Znajomość języków obcych i wykształcenie zdobyte na uniwersytecie w Krakowie.",
+        "Przynależność do partii politycznych działających w Warszawie.",
+        "Liczba koni wyścigowych trzymanych w dworskiej stajni."
+      ],
+      correct: 0,
+      explanation: "W społeczności Lipiec ziemia jest wartością najwyższą i niemal świętą — „kto ma ziemię, ten ma władzę”, a bezrolni komornicy stoją na najniższym szczeblu drabiny społecznej.",
+      whyWrong: {
+        1: "Chłopi w Lipcach w większości są analfabetami przywiązanymi do tradycyjnej gospodarki.",
+        2: "Akcja skupia się na zamkniętej wspólnocie wiejskiej, choć pojawia się wątek szkoły i walki o las.",
+        3: "Chłopi nie hodują koni wyścigowych."
+      },
+      examTip: "W „Chłopach” ziemia pełni rolę zarówno żywicielki (sacrum), jak i obiektu bezwzględnej walki o byt (naturalizm)."
+    },
+    {
+      id: "kq6-17",
+      q: "Dlaczego los Jagny Paczesiówny w „Chłopach” Reymonta ma wymiar tragiczny?",
+      options: [
+        "Jako artystyczna, wrażliwa i kierująca się naturą indywidualistka nie mieści się w ciasnych normach moralnych i majątkowych gromady, która w końcu ją wyklucza.",
+        "Została skazana na zesłanie na Syberię za udział w buncie przeciwko dziedzicowi.",
+        "Dobrowolnie wstąpiła do klasztoru po śmierci Macieja Boryny.",
+        "Uciekła do Paryża, aby tam zostać sławną malarką."
+      ],
+      correct: 0,
+      explanation: "Jagna jest zmysłowa, bierna, poszukuje piękna i uczuć, przez co staje się kozłem ofiarnym hipokryzji i zawiści wsi.",
+      whyWrong: {
+        1: "Wypędziła ją sama gromada lipiecka na wozie gnoju, nie carski sąd.",
+        2: "Nie wstąpiła do klasztoru.",
+        3: "Nigdy nie opuściła wsi dla kariery w Paryżu."
+      },
+      examTip: "Postać Jagny świetnie ilustruje konflikt jednostki wybitnej/innej ze zbiorowością (społeczeństwem)."
+    },
+    {
+      id: "kq6-18",
+      q: "Które z poniższych stwierdzeń opisuje zasadniczą wymowę wiersza Kazimierza Przerwy-Tetmajera „Koniec wieku XIX”?",
+      options: [
+        "Człowiek końca wieku odrzuca kolejno przekleństwo, ironię, pogardę, rozpacz i walkę jako bezsilne, pozostając w milczącej rezygnacji („głowę zwiesić niemo”).",
+        "Poeta nawołuje do stworzenia nowej partii robotniczej i walki o prawa socjalne.",
+        "Wiersz jest radosną pochwałą rozwoju nauki i kolejnictwa u progu XX wieku.",
+        "Podmiot liryczny znajduje ostateczne ukojenie w powrocie do sielskiego życia na wsi."
+      ],
+      correct: 0,
+      explanation: "Utwór jest dialogiem poety z samym sobą, w którym każda próba buntu czy filozoficznej odpowiedzi na zło okazuje się jałowa, prowadząc do skrajnego dekadentyzmu.",
+      whyWrong: {
+        1: "Wiersz wyraża apatię i bezsilność, a nie program polityczny.",
+        2: "Dekadentyzm odrzucał właśnie wiarę w zbawczą moc postępu technicznego.",
+        3: "Wiersz nie kończy się sielankowym ukojeniem."
+      },
+      examTip: "Zestawiaj dekadencką bezradność „Końca wieku XIX” Tetmajera z aktywizmem „Kowala” Staffa."
+    },
+    {
+      id: "kq6-19",
+      q: "Co w sonecie Jana Kasprowicza „Krzak dzikiej róży w Ciemnych Smreczynach” symbolizuje powalona, próchniejąca limba?",
+      options: [
+        "Nieuchronność śmierci, rozkładu i przemijania kontrastującą z kruchym pięknem i wolą życia samotnego krzaku róży.",
+        "Zwycięstwo cywilizacji przemysłowej nad dziką przyrodą Tatr.",
+        "Upadek powstania styczniowego i zdradę szlachty polskiej.",
+        "Bezpieczne schronienie dla młodych artystów cyganerii krakowskiej."
+      ],
+      correct: 0,
+      explanation: "Kontrast żywej, pąsowej róży i gnijącej limby buduje młodopolską refleksję o współistnieniu piękna i śmierci w naturze oraz w ludzkiej egzystencji.",
+      whyWrong: {
+        1: "W sonecie opisany jest wyłącznie górski krajobraz natury bez elementów przemysłu.",
+        2: "To liryka natury i egzystencjalnego symbolizmu, nie wiersz historyczno-polityczny.",
+        3: "Sonet nie opisuje cyganerii krakowskiej."
+      },
+      examTip: "W „Krzaku dzikiej róży...” wskaż cechy impresjonizmu (gra świateł, mgieł, barw i szumu potoku) oraz symbolizmu."
+    },
+    {
+      id: "kq6-20",
+      q: "Wskaż cechę poezji młodopolskiej widoczną w określeniu „płomienny dźwięk” lub „błękitna cisza”:",
+      options: [
+        "Synestezja — celowe łączenie doznań różnych zmysłów w jednej metaforze.",
+        "Inwersja — przestawienie szyku wyrazów w celu archaizacji tekstu.",
+        "Pleonazm — niezamierzone powtórzenie tej samej treści w dwóch wyrazach.",
+        "Alegoria — jednoznaczny znak wywodzący się z tradycji biblijnej."
+      ],
+      correct: 0,
+      explanation: "Synestezja (np. dźwięk + płomień/kolor) była ulubionym zabiegiem impresjonistów i symbolistów Młodej Polski dla oddania nastroju chwili.",
+      whyWrong: {
+        1: "Inwersja dotyczy szyku zdania, nie mieszania zmysłów.",
+        2: "Pleonazm to błąd językowy (np. „cofnąć się do tyłu”).",
+        3: "Alegoria jest skonwencjonalizowana i jednoznaczna, podczas gdy synestezja działa na zmysły i nastrój."
+      },
+      examTip: "Synestezja = zmysł + inny zmysł (np. wzrok + słuch, smak + dotyk)."
     }
   ]
 };

@@ -294,7 +294,19 @@ export const DEPT_02 = {
     { id: 'kf2-15', front: 'Wymień cechy eposu homeryckiego widoczne w „Iliadzie”.', back: 'Inwokacja, heksametr, stałe epitety („szybkonogi Achilles”), porównania homeryckie, wszechwiedzący i obiektywny narrator, sceny z udziałem bogów.', hint: 'Styl podniosły i rozbudowane porównania.', category: 'pojecie' },
     { id: 'kf2-16', front: 'Kim był Prometeusz i jaki topos zapoczątkował?', back: 'Tytanem, który ulepił człowieka z gliny i łez oraz ukradł bogom ogień, by pomóc ludziom. Zapoczątkował topos prometeizmu — bezinteresownego buntu i cierpienia za ludzkość.', hint: 'Dobroczyńca ludzi przykuty do Kaukazu.', category: 'motyw' },
     { id: 'kf2-17', front: 'Dlaczego Aleksy z „Legendy o św. Aleksym” porzucił swoją żonę?', back: 'Uważał małżeństwo i doczesne rozkosze za przeszkodę w dążeniu do doskonałości duchowej i zbawienia wiecznego; wybrał drogę ascezy.', hint: 'Ślub czystości i umartwienie ciała.', category: 'bohater' },
-    { id: 'kf2-18', front: 'Co oznacza łacińska dewiza średniowiecza: „Ad maiorem Dei gloriam”?', back: '„Na większą chwałę Bożą” — naczelna zasada teocentryzmu tłumacząca anonimowość artystów tworzących dla Boga, a nie dla doczesnego poklasku.', hint: 'Teocentryzm w sztuce i nauce.', category: 'epoka' }
+    { id: 'kf2-18', front: 'Co oznacza łacińska dewiza średniowiecza: „Ad maiorem Dei gloriam”?', back: '„Na większą chwałę Bożą” — naczelna zasada teocentryzmu tłumacząca anonimowość artystów tworzących dla Boga, a nie dla doczesnego poklasku.', hint: 'Teocentryzm w sztuce i nauce.', category: 'epoka' },
+    { id: 'kf2-19', front: 'Czym różni się mimesis od fatum w estetyce antycznej?', back: 'Mimesis to zasada naśladowania rzeczywistości i ludzkich działań w sztuce (Arystoteles), natomiast fatum to nieuchronne, ślepe przeznaczenie ciążące nad losem człowieka w tragedii greckiej.', hint: 'Naśladowanie natury vs nieuchronny los.', category: 'pojecie' },
+    { id: 'kf2-20', front: 'Jaką funkcję w tragedii antycznej pełnił chór oraz zasada trzech jedności?', back: 'Chór komentował wydarzenia i reprezentował głos opinii publicznej oraz sumienia; zasada trzech jedności (miejsca, czasu do jednej doby, jednego wątku akcji) skupiała uwagę widza na konflikcie tragicznym.', hint: 'Komentarz moralny + zwartość miejsca, czasu i akcji.', category: 'pojecie' },
+    { id: 'kf2-21', front: 'Dlaczego w „Antygonie” nie wolno pisać, że „Kreon jest wyłącznie złym tyranem bez racji”?', back: 'Ponieważ to błąd podważający istotę konfliktu tragicznego — Kreon broni spójności państwa, porządku publicznego i zakazu gloryfikacji zdrajcy (Polinejkesa), zanim popadnie w pychę (hybris).', hint: 'Obie strony mają swoje racje prawne.', category: 'lektura' },
+    { id: 'kf2-22', front: 'Jakie skutki osobiste dotknęły Kreona w finale „Antygony” za jego upór i pychę?', back: 'Stracił całą rodzinę: jego syn Hajmon popełnił samobójstwo nad ciałem Antygony, a zrozpaczona żona Eurydyka odebrała sobie życie, przeklinając męża.', hint: 'Samotność władcy po śmierci syna i żony.', category: 'bohater' },
+    { id: 'kf2-23', front: 'Jakie toposy pochodzą z mitu o Syzyfie, Prometeuszu oraz Dedalu i Ikarze?', back: 'Syzyf: bezsensowna, wiecznie ponawiana praca (syzyfowa praca); Prometeusz: bunt i cierpienie dla dobra ludzkości; Dedal: rozsądny pragmatyzm i kunszt; Ikar: młodzieńczy idealizm i zgubna brawura.', hint: 'Cztery klasyczne toposy mitologiczne.', category: 'motyw' },
+    { id: 'kf2-24', front: 'Czym charakteryzuje się styl biblijny (wyróżniki językowe)?', back: 'Podniosłością i patosem, licznymi paralelizmami składniowymi, powtórzeniami, zdaniami rozpoczynanymi spójnikami („A oto...”, „I stało się...”), aforyzmami oraz symboliką liczb i przypowieści.', hint: 'Patos, paralelizmy, inwersje i spójniki na początku zdań.', category: 'pojecie' },
+    { id: 'kf2-25', front: 'Na czym polega teodycea w „Księdze Hioba” i jak kończy się próba Hioba?', back: 'Teodycea to próba pogodzenia istnienia dobrego Boga z obecnością zła i cierpienia niewinnych; Hiob nie wyrzeka się Boga mimo straty dzieci, majątku i zdrowia, a w finale Bóg nagradza jego wierność, przywracając mu dobra w dwójnasób.', hint: 'Niezawinione cierpienie i wierność Bogu.', category: 'lektura' },
+    { id: 'kf2-26', front: 'Co oznaczają pojęcia profetyzm i eschatologia w „Apokalipsie św. Jana”?', back: 'Profetyzm to styl prorocki i wieszczący przyszłość, a eschatologia to nauka o rzeczach ostatecznych człowieka i świata (Sąd Ostateczny, koniec dziejów, Nowe Jeruzalem).', hint: 'Proroctwo + koniec świata i sąd.', category: 'pojecie' },
+    { id: 'kf2-27', front: 'Jakie dwie główne prawdy ilustrują przypowieści o Synu Marnotrawnym oraz o Miłosiernym Samarytaninie?', back: 'Syn Marnotrawny uczy o bezwarunkowym Bożym przebaczeniu skruszonemu grzesznikowi; Miłosierny Samarytanin pokazuje, że bliźnim jest każdy potrzebujący, niezależnie od podziałów etnicznych czy religijnych.', hint: 'Przebaczenie ojca + miłosierdzie ponad podziałami.', category: 'motyw' },
+    { id: 'kf2-28', front: 'Wymień 3 cechy językowe „Bogurodzicy”, które świadczą o jej archaiczności i kunszcie.', back: 'Archaizmy leksykalne (np. „dziela” = dla, „bożyc” = syn Boży), rozkaźniki („spuści”, „raczy”, „usłysz”) oraz kunsztowna kompozycja paralelna i motyw Deesis.', hint: 'Archaizmy + prośby w trybie rozkazującym.', category: 'lektura' },
+    { id: 'kf2-29', front: 'Na czym polega kontrast w „Rozmowie Mistrza Polikarpa ze Śmiercią”?', back: 'Uczony filozof Polikarp drży i blednie przed groteskową, rozkładającą się postacią Śmierci z kosą, co obnaża marność ludzkiego rozumu i równość wszystkich stanów społecznych wobec zgonu.', hint: 'Uczony vs rozkładająca się Śmierć.', category: 'lektura' },
+    { id: 'kf2-30', front: 'Jaką zasadę kompozycyjną stosowano w „Pieśni o Rolandzie” i jaki ideał rycerza z niej wynika?', back: 'Zasada stopniowania heroizmu i wierności wasalnej (Roland umiera na wzgórzu zwrócony twarzą ku wrogom, z rękawicą podaną Bogu); idealny rycerz stawia honor, wiarę i wierność władcy ponad własne życie.', hint: 'Śmierć na wzgórzu z rękawicą dla Boga.', category: 'bohater' }
   ],
   quiz: [
     {
@@ -500,6 +512,142 @@ export const DEPT_02 = {
         3: "Mit nie dotyczy relacji artysty z władzą państwową."
       },
       examTip: "Zestawiaj Dedala (pozytywizm, racjonalizm) z Ikarem (romantyzm, poryw serca)."
+    },
+    {
+      q: "Czym w poetyce tragedii greckiej według Arystotelesa jest zasada trzech jedności?",
+      options: [
+        "Jednością miejsca akcji, czasu (do jednej doby) oraz jednego głównego wątku akcji.",
+        "Obecnością dokładnie trzech aktorów, trzech chórów i trzech aktów w każdym dramacie.",
+        "Połączeniem trzech gatunków: eposu, liryki i dramatu w jednym utworze.",
+        "Zgodnością poglądów bohatera, chóru i bogów olimpijskich."
+      ],
+      correct: 0,
+      explanation: "Klasyczna tragedia antyczna zachowywała jedność miejsca (np. plac przed pałacem), czasu (zwykle ok. 24 godzin) i akcji (brak wątków pobocznych).",
+      whyWrong: {
+        1: "Liczba aktorów czy pieśni chóru nie definiuje zasady trzech jedności.",
+        2: "Połączenie trzech rodzajów to synkretyzm rodzajowy, typowy dla romantyzmu.",
+        3: "W tragedii dochodzi właśnie do konfliktu poglądów i racji."
+      },
+      examTip: "Zasada trzech jedności odróżnia dramat antyczny i klasycystyczny od otwartego dramatu szekspirowskiego i romantycznego."
+    },
+    {
+      q: "Które z poniższych zachowań najlepiej ilustruje filozofię stoicką w obliczu życiowych nieszczęść?",
+      options: [
+        "Zachowanie wewnętrznego spokoju, dystansu wobec namiętności oraz przyjęcie losu z godnością i rozumem.",
+        "Dążenie do maksymalizacji zmysłowych przyjemności i ucieczka od wszelkiego wysiłku.",
+        "Bunt przeciwko bogom i aktywna próba zmiany porządku świata za wszelką cenę.",
+        "Skupienie się wyłącznie na dobrach materialnych jako zabezpieczeniu przed śmiercią."
+      ],
+      correct: 0,
+      explanation: "Stoicyzm (Zenon z Kition, Seneka, Marek Aureliusz) zalecał równowagę ducha (ataraksję), panowanie nad emocjami i życie zgodne z rozumem i cnotą.",
+      whyWrong: {
+        1: "To zniekształcony (potoczny) obraz epikureizmu, tzw. hedonizm.",
+        2: "To postawa prometejska lub romantyczna, obca stoickiemu spokojowi.",
+        3: "Stoicy uważali bogactwo za rzecz obojętną wobec cnoty."
+      },
+      examTip: "Stoicyzm to fundament postawy Jana Kochanowskiego we fraszkach i pieśniach przed tragedią „Trenów”."
+    },
+    {
+      q: "Jaki był ostateczny los Kreona w zakończeniu „Antygony” Sofoklesa?",
+      options: [
+        "Został złamany psychicznie po samobójstwach syna Hajmona i żony Eurydyki, uznając własną winę.",
+        "Został skazany na śmierć przez radę starców tebańskich za znieważenie zwłok Polinejkesa.",
+        "Pokonał wojska z Argos i poślubił Ismenę, aby utrzymać ciągłość dynastii.",
+        "Uciekł z Teb jeszcze przed wyrokiem Antygony, oddając władzę chórowi."
+      ],
+      correct: 0,
+      explanation: "Kreon przeżył, ale poniósł klęskę moralną i rodzinną — po śmierci Antygony, Hajmona i Eurydyki uświadomił sobie swoją pychę (hybris).",
+      whyWrong: {
+        1: "Kreon nie został stracony przez radę — jego karą była śmierć bliskich i bolesna samotność.",
+        2: "Ismena nie poślubiła Kreona.",
+        3: "Kreon pozostał w Tebach aż do tragicznego finału."
+      },
+      examTip: "W „Antygonie” nie tylko Antygona jest postacią tragiczną — tragedia dotyka również zaślepionego władzą Kreona."
+    },
+    {
+      q: "Czego symbolem w kulturze europejskiej stał się biblijny Hiob?",
+      options: [
+        "Niezawinionego cierpienia, które nie niszczy wiary człowieka i zaufania wobec Boga.",
+        "Buntu przeciw Stwórcy prowadzącego do całkowitego odrzucenia religii.",
+        "Pychy uczonego pragnącego zdobyć zakazaną wiedzę za cenę duszy.",
+        "Zdrady przyjaciela w zamian za korzyści materialne."
+      ],
+      correct: 0,
+      explanation: "Hiob mimo utraty majątku, dzieci i zdrowia zachował wierność Bogu (choć pytał o sens bólu), stając się archetypem cierpienia niewinnego.",
+      whyWrong: {
+        1: "Hiob spierał się z Bogiem i przyjaciółmi, ale nigdy się Go nie wyrzekł.",
+        2: "To opis motywu faustycznego, nie hiobowego.",
+        3: "To motyw judaszowy, obcy Księdze Hioba."
+      },
+      examTip: "Zestawiaj Hioba z Gustawem Herlingiem-Grudzińskim lub bohaterami obozowymi pytającymi o sens cierpienia."
+    },
+    {
+      q: "Co oznacza motyw „vanitas” wywodzący się z biblijnej Księgi Koheleta?",
+      options: [
+        "Przemijalność, kruchość i marność wszystkich spraw doczesnych, bogactwa oraz sławy wobec wieczności.",
+        "Bezwzględny obowiązek poddania się władzy świeckiej w imię spokoju społecznego.",
+        "Radość z używania życia bez troski o jutro zgodnie z zasadą carpe diem.",
+        "Przekonanie o wyższości wiedzy naukowej nad objawieniem religijnym."
+      ],
+      correct: 0,
+      explanation: "„Vanitas vanitatum et omnia vanitas” (Marność nad marnościami i wszystko marność) wyraża znikomość ludzkich dążeń doczesnych i bogactw wobec upływu czasu.",
+      whyWrong: {
+        1: "Księga Koheleta nie jest traktatem o posłuszeństwie władzy państwowej.",
+        2: "Carpe diem pochodzi od Horacego (Antyk rzymski), choć Kohelet także zaleca skromną radość z darów Bożych w obliczu marności.",
+        3: "Kohelet podkreśla właśnie ograniczenia ludzkiego rozumu i wiedzy."
+      },
+      examTip: "Motyw vanitas powraca bardzo mocno w poezji barokowej (Naborowski, Morsztyn) oraz w średniowiecznym danse macabre."
+    },
+    {
+      q: "Na czym polega nowatorstwo psychologiczne w „Lamencie świętokrzyskim” („Posłuchajcie, bracia miła...”)?",
+      options: [
+        "Maryja została ukazana jako cierpiąca, ludzka matka bliska zwykłym ludziom, a nie niedostępna królowa niebios.",
+        "Utwór wprowadza dialog między szatanem a polskim królem o losach zbawienia.",
+        "Po raz pierwszy zastosowano w nim komizm sytuacyjny w opisie ukrzyżowania.",
+        "Wiersz jest napisany wyłącznie po łacinie w formie traktatu filozoficznego."
+      ],
+      correct: 0,
+      explanation: "Humanizacja postaci Maryi w „Lamencie świętokrzyskim” sprawia, że cierpi ona jak każda ziemska matka bezradna wobec męki swojego dziecka.",
+      whyWrong: {
+        1: "W utworze mówi sama Matka Boska, zwracając się do ludzi, Jezusa i archanioła Gabriela.",
+        2: "Komizm i groteska występują w „Rozmowie Mistrza Polikarpa ze Śmiercią”, nie w „Lamencie”.",
+        3: "„Lament świętokrzyski” to arcydzieło liryki w języku polskim."
+      },
+      examTip: "Zestawiaj „Bogurodzicę” (Maryja dostojna pośredniczka — Deesis) z „Lamentem świętokrzyskim” (Maryja cierpiąca matka)."
+    },
+    {
+      q: "Co symbolizuje motyw Danse Macabre (taniec śmierci) w „Rozmowie Mistrza Polikarpa ze Śmiercią”?",
+      options: [
+        "Równość wszystkich ludzi wobec śmierci, niezależnie od majątku, wykształcenia czy stanu społecznego.",
+        "Triumf uczonych filozofów, którzy dzięki wiedzy potrafią oszukać przeznaczenie.",
+        "Radosne święto kończące karnawał na dworach średniowiecznych królów.",
+        "Ocalenie wyłącznie ludzi bogatych, którzy ufundowali kościoły."
+      ],
+      correct: 0,
+      explanation: "Śmierć prowadzi w korowodzie papieża, króla, rycerza, chłopa i zakonnicę, pokazując, że przed zgonem nikt nie ucieknie.",
+      whyWrong: {
+        1: "Polikarp mimo całej swojej wiedzy mdleje i drży przed Śmiercią.",
+        2: "Danse macabre nie jest radosną zabawą dworską, lecz groteskowym ostrzeżeniem (memento mori).",
+        3: "Bogactwo nie daje żadnego immunitetu przed Śmiercią."
+      },
+      examTip: "Motyw danse macabre łącz z łacińskim hasłem memento mori (pamiętaj o śmierci)."
+    },
+    {
+      q: "Które z poniższych zachowań najpełniej wyraża średniowieczny wzorzec rycerza (na przykładzie Rolanda)?",
+      options: [
+        "Bezgraniczna wierność Bogu, ojczyźnie i władcy oraz przedkładanie honoru nad ocalenie własnego życia.",
+        "Ostrożne unikanie bitwy i pertraktacje handlowe z wrogiem w celu ocalenia oddziału.",
+        "Odrzucenie przysięgi lennej i walka wyłącznie dla osobistych łupów wojennych.",
+        "Wyrzeczenie się broni i udanie się na pustelnię w roli żebraka."
+      ],
+      correct: 0,
+      explanation: "Roland odmawia wezwania posiłków rogiem Olifantem na początku bitwy, by nie splamić honoru, a umierając zwraca się ku Hiszpanii i oddaje rękawicę Bogu.",
+      whyWrong: {
+        1: "Taktyczny kompromis z Saracenami byłby według etosu rycerskiego zdradą i tchórzostwem.",
+        2: "Etos rycerski wyklucza zdradę suzerena i chciwość.",
+        3: "To opis wzorca ascety (np. św. Aleksego), a nie rycerza."
+      },
+      examTip: "Średniowieczna parenetyka opiera się na trzech filarach: rycerz (Roland), asceta (św. Aleksy), władca (Karol Wielki / Bolesław Chrobry)."
     }
   ]
 };

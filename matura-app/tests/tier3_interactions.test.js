@@ -366,6 +366,7 @@ describe('Tier 3: Cross-Feature Interactions (10 Pairwise Interaction Suites)', 
 
     it('App-SSR.5: hydrates student progress (checked notes, quiz score, XP) into rendered HTML', () => {
       resetMockStorage();
+      const dept1 = KURS_PODSTAWOWY_LEVELS[0];
       mockLocalStorage._setJSON('matura-polski-progress-v1', {
         activeCourse: 'kurs',
         activeLevelByCourse: { kurs: 'dept-01' },
@@ -379,7 +380,7 @@ describe('Tier 3: Cross-Feature Interactions (10 Pairwise Interaction Suites)', 
           'kf1-3': 'known',
         },
         quizScores: {
-          'dept-01': 12, // 12/12 = 100% -> level completed
+          'dept-01': dept1.quiz.length, // 100% -> level completed
         },
       });
 
@@ -391,10 +392,10 @@ describe('Tier 3: Cross-Feature Interactions (10 Pairwise Interaction Suites)', 
         'Stage tab for notes must display 2/4 read notes'
       );
 
-      // 2. Quiz stage tab reflects 12/12 completed
+      // 2. Quiz stage tab reflects full score completed
       assert.ok(
-        html.includes('12/12'),
-        'Stage tab for quiz must display 12/12 score'
+        html.includes(`${dept1.quiz.length}/${dept1.quiz.length}`),
+        `Stage tab for quiz must display ${dept1.quiz.length}/${dept1.quiz.length} score`
       );
 
       // 3. Completed level marker in sidebar

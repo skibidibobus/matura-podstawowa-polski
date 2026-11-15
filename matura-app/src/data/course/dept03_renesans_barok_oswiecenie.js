@@ -261,7 +261,19 @@ export const DEPT_03 = {
     { id: 'kf3-15', front: 'Jaki morał płynie z bajki Krasickiego „Jagnię i wilcy”?', back: 'W świecie opartym na egoizmie rację ma silniejszy („Smacznyś, słaby i w lesie”), a niewinność i prawo moralne nie chronią słabych przed przemocą.', hint: 'Prawo brutalnej siły.', category: 'cytat' },
     { id: 'kf3-16', front: 'Na czym polega przewrotny koncept satyry „Do króla” Krasickiego?', back: 'Pod pozorem wyliczania wad Stanisława Augusta (za młody, nie cudzoziemiec, mądry, wykształcony) Krasicki w rzeczywistości obnaża głupotę i zawiść szlachty.', hint: 'Zarzuty wobec króla są w istocie jego zaletami.', category: 'lektura' },
     { id: 'kf3-17', front: 'Co ośmiesza Ignacy Krasicki w satyrze „Pijaństwo”?', back: 'Niemoc silnej woli i hipokryzję Polaków — szlachcic wygłasza moralizatorski traktat o zgubnych skutkach pijaństwa, po czym sam natychmiast idzie się napić.', hint: 'Wzniosła teoria kontra nałóg.', category: 'motyw' },
-    { id: 'kf3-18', front: 'Co oznacza topos Theatrum Mundi w twórczości Kochanowskiego?', back: 'Świat jest teatrem, w którym ludzie są aktorami/marionetkami odgrywającymi narzucone role, a po spektaklu śmierć chowa ich do tego samego worka.', hint: 'Ludzie jako kukiełki Boga/Fortuny.', category: 'motyw' }
+    { id: 'kf3-18', front: 'Co oznacza topos Theatrum Mundi w twórczości Kochanowskiego?', back: 'Świat jest teatrem, w którym ludzie są aktorami/marionetkami odgrywającymi narzucone role, a po spektaklu śmierć chowa ich do tego samego worka.', hint: 'Ludzie jako kukiełki Boga/Fortuny.', category: 'motyw' },
+    { id: 'kf3-19', front: 'Czym jest antropocentryzm renesansowy (dewiza Terencjusza)?', back: 'Postawa stawiająca człowieka, jego godność, rozum i ziemskie doświadczenie w centrum zainteresowania sztuki i nauki („Człowiekiem jestem i nic, co ludzkie, nie jest mi obce”).', hint: 'Człowiek w centrum świata zamiast wyłącznie Boga.', category: 'epoka' },
+    { id: 'kf3-20', front: 'Jaką wymowę obywatelską ma „Odprawa posłów greckich” Jana Kochanowskiego?', back: 'Poprzez kostium antyczny (upadek Troi przez przekupstwo i prywatę Aleksandra-Parysa) Kochanowski ostrzega Rzeczpospolitą przed anarchią szlachty i lekceważeniem dobra publicznego.', hint: 'Troja jako ostrzeżenie dla Polski.', category: 'lektura' },
+    { id: 'kf3-21', front: 'Jakie dwie główne wady szlachty piętnuje Piotr Skarga w „Kazaniach sejmowych”?', back: 'Przekładanie prywaty (własnego interesu) nad dobro Rzeczypospolitej, brak zgody wewnętrznej oraz osłabienie władzy królewskiej — obrazowane metaforą tonącego okrętu.', hint: 'Tonący okręt i prywata.', category: 'lektura' },
+    { id: 'kf3-22', front: 'Dlaczego w „Makbecie” Szekspira nie wolno pisać, że „czarownice zmusiły Makbeta do zbrodni”?', back: 'Czarownice jedynie rozbudziły ukrytą w nim ambicję — Makbet zachował wolną wolę i sam podjął decyzję o zabójstwie Dunkana (błąd kardynalny w razie zrzucenia winy na fatum).', hint: 'Przepowiednia jako katalizator, a nie przymus.', category: 'lektura' },
+    { id: 'kf3-23', front: 'Na czym polegała dwuznaczność (podwójne dno) drugich przepowiedni czarownic dla Makbeta?', back: '„Nikt zrodzony z niewiasty” nie zabije Makbeta — Makduf przyszedł na świat przez cesarskie cięcie; „Las Birnam nie podejdzie pod Dunsynan” — żołnierze użyli gałęzi jako kamuflażu.', hint: 'Cesarskie cięcie Makdufa i gałęzie jako kamuflaż.', category: 'lektura' },
+    { id: 'kf3-24', front: 'Wymień 3 cechy dramatu szekspirowskiego odróżniające go od tragedii antycznej.', back: '1) Złamanie zasady trzech jedności (wiele miejsc i miesięcy akcji); 2) Krwawe sceny zbrodni na oczach widzów (brak zasady decorum); 3) Wprowadzenie duchów, czarownic oraz ewolucji psychologicznej bohatera.', hint: 'Brak 3 jedności, przemoc na scenie, duchy.', category: 'pojecie' },
+    { id: 'kf3-25', front: 'Czym był sarmatyzm w Rzeczypospolitej i jak ujawnił się w „Pamiętnikach” Jana Chryzostoma Paska?', back: 'Ideologia szlachty polskiej łącząca dumę z „złotej wolności” i rzekomego pochodzenia od Sarmatów z ksenofobią, warcholstwem, pijaństwem i powierzchowną pobożnością — barwnie opisaną w gawędowym stylu Paska.', hint: 'Złota wolność + warcholstwo i ksenofobia.', category: 'epoka' },
+    { id: 'kf3-26', front: 'Jakie dwie wady ludzkie bezlitośnie wyśmiewa Molier w „Skąpcu”?', back: 'Skąpstwo i chciwość niszczącą więzi rodzinne (Harpagon chce wydać Elizę bez posagu i ożenić się z wybranką syna) oraz obłudę i ślepotę wynikającą z obsesji na punkcie pieniędzy.', hint: 'Pieniądze ważniejsze od własnych dzieci.', category: 'bohater' },
+    { id: 'kf3-27', front: 'Czym różni się satyra od bajki w twórczości Ignacego Krasickiego?', back: 'Bajka to krótki utwór alegoryczny (często ze zwierzętami) z uniwersalnym morałem o naturze ludzkiej; satyra to dłuższy utwór ośmieszający konkretne wady obyczajowe i społeczne współczesnych (bez podawania gotowej recepty).', hint: 'Uniwersalna alegoria vs krytyka obyczajów epoki.', category: 'pojecie' },
+    { id: 'kf3-28', front: 'Jaki sens niesie zakończenie fraszki „Do gór i lasów” lub pieśni „Czego chcesz od nas, Panie” Jana Kochanowskiego?', back: 'W hymnie „Czego chcesz od nas, Panie” Bóg jest ukazany jako renesansowy Wielki Budowniczy i Artysta harmonijnego świata, któremu człowiek winien jest wdzięczne serce zamiast krwawych ofiar.', hint: 'Bóg-Architekt i harmonia natury.', category: 'lektura' },
+    { id: 'kf3-29', front: 'Na czym polegał marinizm i jakie środki stosował w poezji barokowej (np. Morsztyn)?', back: 'Nurt dążący do zaskoczenia i olśnienia czytelnika wyszukanym konceptem, nagromadzeniem oksymoronów, hiperbol, wyliczeń i paradoksów (np. porównanie zakochanego do trupa).', hint: 'Zaskoczenie czytelnika kunsztowną formą.', category: 'pojecie' },
+    { id: 'kf3-30', front: 'Jakie główne instytucje i prądy charakteryzowały Oświecenie w Polsce?', back: 'Racjonalizm i empiryzm, Komisja Edukacji Narodowej (1773), Szkoła Rycerska, czasopismo „Monitor”, Teatr Narodowy oraz hasło „uczyć bawiąc” w służbie naprawy Rzeczypospolitej.', hint: 'Rozum, edukacja (KEN), Monitor i reformy.', category: 'epoka' }
   ],
   quiz: [
     {
@@ -467,6 +479,142 @@ export const DEPT_03 = {
         3: "Scholastyka to średniowieczna filozofia rozumowego dowodzenia prawd wiary."
       },
       examTip: "Deizm był próbą pogodzenia nauki o prawach fizyki z istnieniem Stwórcy."
+    },
+    {
+      q: "Jaką rolę w „Odprawie posłów greckich” Jana Kochanowskiego pełni monolog Iketaona i pieśń chóru „Wy, którzy pospolitą rzeczą władacie”?",
+      options: [
+        "Przypominają władcom o odpowiedzialności moralnej przed Bogiem i poddanymi za los państwa.",
+        "Zachęcają Greków do jak najszybszego podboju ziem polskich.",
+        "Stanowią pochwałę prywatnego bogactwa ponad interes publiczny.",
+        "Wyśmiewają klasyczną edukację humanistyczną na dworze trojańskim."
+      ],
+      correct: 0,
+      explanation: "Kochanowski wkłada w usta chóru przestrogę dla polskich rządzących: władza to służba i obowiązek wobec ojczyzny, a przekupstwo oraz prywata prowadzą kraj do upadku.",
+      whyWrong: {
+        1: "Akcja toczy się w starożytnej Troi, bez wzmianki o podboju Polski.",
+        2: "Dramat piętnuje prywatę, a nie ją pochwala.",
+        3: "Utwór sam jest wzorcem renesansowej tragedii humanistycznej."
+      },
+      examTip: "Łącz „Odprawę posłów greckich” z „Kazaniami sejmowymi” Skargi jako renesansowy głos troski o Rzeczpospolitą."
+    },
+    {
+      q: "Wskaż właściwą kolejność etapów upadku moralnego Makbeta w dramacie Szekspira:",
+      options: [
+        "Wahanie i wyrzuty sumienia przy zabójstwie Dunkana → paranoja i zlecenie mordu Banka → rzeź rodziny Makdufa i całkowite otępienie.",
+        "Natychmiastowe odrzucenie przepowiedni → obrona Dunkana przed zamachowcami → dobrowolne oddanie tronu Malkolmowi.",
+        "Samobójstwo z poczucia winy przed zabójstwem Dunkana → przejęcie władzy przez Lady Makbet.",
+        "Zabicie Makdufa w pierwszej scenie → ucieczka z kraju z obawy przed czarownicami."
+      ],
+      correct: 0,
+      explanation: "Szekspir mistrzowsko ukazuje spiralę zbrodni: pierwsza zbrodnia rodzi strach, który wymusza kolejne morderstwa, aż do całkowitego wyjałowienia emocjonalnego bohatera.",
+      whyWrong: {
+        1: "Makbet uległ pokusie władzy i sam zabił Dunkana.",
+        2: "To Lady Makbet popełniła samobójstwo w finale, nie Makbet przed zbrodnią.",
+        3: "Makduf walczy z Makbetem dopiero w finałowym akcie."
+      },
+      examTip: "Spirala zbrodni w „Makbecie” to idealny argument do tematów o destrukcyjnym wpływie niepohamowanej żądzy władzy."
+    },
+    {
+      q: "Jaką rolę w moralnej przemianie Makbeta i jego późniejszej klęsce odegrała Lady Makbet?",
+      options: [
+        "Przełamała początkowe wahanie męża, grając na jego ambicji i męskiej dumie, lecz sama popadła w obłęd i popełniła samobójstwo.",
+        "Od początku powstrzymywała Makbeta przed zbrodnią i ostrzegła króla Dunkana.",
+        "Zabiła własnoręcznie króla Dunkana i objęła tron Szkocji jako królowa.",
+        "Wydała Makbeta synom Dunkana tuż po uczcie w Inverness."
+      ],
+      correct: 0,
+      explanation: "Lady Makbet początkowo wykazuje żelazną determinację, zarzucając mężowi tchórzostwo, ale ciężar współwiny niszczy ją psychicznie (lunatykowanie i zmywanie wyimaginowanej krwi).",
+      whyWrong: {
+        1: "To ona namawiała i planowała morderstwo Dunkana.",
+        2: "Król Dunkan został zasztyletowany przez samego Makbeta (ona jedynie podłożyła sztylety strażnikom).",
+        3: "Pozostała wierna mężowi aż do obłędu i śmierci."
+      },
+      examTip: "Pamiętaj o odwróceniu ról: na początku silna Lady Makbet i słaby Makbet; na końcu obłąkana Lady Makbet i skamieniały tyran Makbet."
+    },
+    {
+      q: "Który wiersz barokowy najlepiej ilustruje konceptyzm poprzez zestawienie stanu zakochanego z sytuacją nieboszczyka?",
+      options: [
+        "„Do trupa” Jana Andrzeja Morsztyna",
+        "„Krótkość żywota” Daniela Naborowskiego",
+        "„Pijaństwo” Ignacego Krasickiego",
+        "„Pieśń IX” Jana Kochanowskiego"
+      ],
+      correct: 0,
+      explanation: "W sonecie „Do trupa” Morsztyn buduje kunsztowny koncept na kontraście: trup ma spokój, natomiast zakochany płonie wiecznym ogniem namiętności i cierpi jeszcze bardziej.",
+      whyWrong: {
+        1: "„Krótkość żywota” to poezja metafizyczna o przemijaniu czasu (vanitas).",
+        2: "„Pijaństwo” to satyra oświeceniowa.",
+        3: "„Pieśń IX” Kochanowskiego to renesansowa liryka stoicka."
+      },
+      examTip: "Barokowy koncept = zaskakujące, paradoksalne porównanie dwóch odległych sfer rzeczywistości (np. miłość i śmierć)."
+    },
+    {
+      q: "Wskaż scenę ze „Skąpca” Moliera, która najpełniej obnaża komizm i chorobliwą obsesję Harpagona:",
+      options: [
+        "Przesłuchanie kucharza Jakuba i słynny monolog po kradzieży szkatułki, gdy Harpagon chwyta za własne ramię.",
+        "Scena pojedynku Harpagona z królem Francji o prawo do noszenia peruki.",
+        "Dobrowolne rozdanie całego majątku biedakom po rozmowie z Kleantem.",
+        "Podróż Harpagona statkiem do Ameryki w poszukiwaniu złota."
+      ],
+      correct: 0,
+      explanation: "Po stracie szkatułki z dziesięcioma tysiącami talarów Harpagon w szale oskarża cały świat i samego siebie, chwytając się za własną rękę w przekonaniu, że złapał złodzieja.",
+      whyWrong: {
+        1: "W utworze nie ma wątku pojedynku z królem.",
+        2: "Harpagon do samego końca kocha wyłącznie swoją szkatułkę.",
+        3: "Akcja dramatu rozgrywa się w jednym dniu w Paryżu."
+      },
+      examTip: "Molier łączy komizm słowny, sytuacyjny i charakterów, by pokazać, jak obsesja na punkcie pieniądza odczłowiecza."
+    },
+    {
+      q: "Jaki główny wniosek płynie z analizy „Pamiętników” Jana Chryzostoma Paska jako dokumentu epoki sarmackiej?",
+      options: [
+        "Sarmaci łączyli autentyczną odwagę rycerską i przywiązanie do wolności z kłótliwością, pijaństwem, zabobonem i pogardą dla cudzoziemców.",
+        "Szlachta polska XVII wieku odrzuciła tradycję katolicką i budowała nowoczesne fabryki.",
+        "Pasek krytykuje polską szlachtę z pozycji oświeconego racjonalisty i mieszczanina.",
+        "„Pamiętniki” to traktat naukowy napisany wierszem o historii starożytnej Grecji."
+      ],
+      correct: 0,
+      explanation: "Pasek bezkrytycznie opisuje własne awantury, procesy i bitwy, dając niezwykle barwny, realistyczny portret sarmatyzmu ze wszystkimi jego blaskami i cieniami.",
+      whyWrong: {
+        1: "Szlachta sarmacka była głęboko przywiązana do powierzchownie rozumianego katolicyzmu i ziemiańskiego stylu życia.",
+        2: "Pasek sam był typowym sarmatą, nie krytykiem z epoki Oświecenia.",
+        3: "Dzieło napisane jest barwną prozą pamiętnikarską (gawędą szlachecką)."
+      },
+      examTip: "Kontrastuj sarmacką mentalność Paska z oświeceniową krytyką szlacheckich wad u Ignacego Krasickiego."
+    },
+    {
+      q: "Dlaczego w satyrze „Do króla” Ignacy Krasicki posłużył się przewrotną ironią?",
+      options: [
+        "Aby wyliczając rzekome „wady” króla (młodość, pochodzenie polskie, łagodność, mądrość), ośmieszyć zacofanie i zawiść szlachty sarmackiej.",
+        "Aby otwarcie wezwać szlachtę do detronizacji Stanisława Augusta Poniatowskiego.",
+        "Aby skrytykować francuskich filozofów za wprowadzanie reform edukacyjnych.",
+        "Aby napisać panegiryk na cześć magnaterii zwalczającej Konstytucję."
+      ],
+      correct: 0,
+      explanation: "Pozorny atak na króla jest w istocie pochwałą oświeconego władcy i bezlitosną kpiną z sarmackich uprzedzeń (np. niechęci do uczoności i młodości).",
+      whyWrong: {
+        1: "Krasicki należał do obozu zwolenników reform królewskich.",
+        2: "Poeta sam czerpał z idei francuskiego Oświecenia.",
+        3: "Satyra ośmiesza właśnie wrogów króla i reform."
+      },
+      examTip: "Ironia to jedno z najważniejszych narzędzi dydaktycznych literatury Oświecenia."
+    },
+    {
+      q: "Co oznacza metaforyczne porównanie ojczyzny do tonącego okrętu w „Kazaniach sejmowych” Piotra Skargi?",
+      options: [
+        "Wskazuje, że w chwili zagrożenia państwa ratowanie własnej „skrzynki” (prywaty) jest szaleństwem, bo zatonie cały okręt wraz z majątkiem.",
+        "Zachęca polską szlachtę do emigracji morskiej do Ameryki Południowej.",
+        "Chwali rozwój handlu morskiego w Gdańsku w XVI wieku.",
+        "Oznacza, że król powinien zrzec się władzy na rzecz marynarki wojennej."
+      ],
+      correct: 0,
+      explanation: "Skarga używa sugestywnej przypowieści: gdy okręt (ojczyzna) tonie, głupcem jest ten, kto zamiast ratować statek, pilnuje tylko swoich prywatnych skarbów w kajucie.",
+      whyWrong: {
+        1: "Metafora nie dotyczy emigracji zamorskiej.",
+        2: "Nie jest to pochwała handlu, lecz dramatyczna przestroga polityczna.",
+        3: "Skarga postulował właśnie wzmocnienie władzy królewskiej."
+      },
+      examTip: "Cytat o tonącym okręcie Skargi świetnie sprawdza się w rozprawkach o odpowiedzialności za dobro wspólne."
     }
   ]
 };
