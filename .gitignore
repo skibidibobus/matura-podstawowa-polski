@@ -1,0 +1,15 @@
+# Dependencies & builds
+node_modules/
+matura-app/node_modules/
+matura-app/dist/
+server/node_modules/
+
+# Local runtime data & secrets (never commit user credentials or DB)
+server/data/
+.env
+.env.local
+*.log
+
+# OS & internal agent artifacts
+.DS_Store
+.agents/

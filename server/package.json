@@ -1,0 +1,13 @@
+{
+  "name": "matura-polski-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test tests/server.test.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
