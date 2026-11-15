@@ -37,6 +37,7 @@ export function Sidebar({
   onToggleRankingMode,
   onOpenWelcome,
   allowedCourses = ['probna', 'kurs', 'ustna'],
+  isGuestPreviewLimited = false,
 }) {
   const [expandedLevels, setExpandedLevels] = useState(() =>
     activeLevelId ? { [activeLevelId]: true } : {}
@@ -194,21 +195,26 @@ export function Sidebar({
       </div>
 
       <nav className="level-list" aria-label="Poziomy nauki">
-        {(levels || []).map((lvl) => {
-          const done = isLevelCompleted(lvl);
+        {(levels || []).map((lvl, idx) => {
+          const isLockedForGuest = isGuestPreviewLimited && idx > 0;
+          const done = !isLockedForGuest && isLevelCompleted(lvl);
           const active = !reviewMode && activeLevelId === lvl.id;
           const levelNotes = lvl.notes || [];
           const checkedCount = levelNotes.filter((n) => checkedNotes[n.id]).length;
           const allNotesDone = levelNotes.length > 0 && checkedCount === levelNotes.length;
-          const isExpanded = !!expandedLevels[lvl.id];
+          const isExpanded = !isLockedForGuest && !!expandedLevels[lvl.id];
 
           return (
             <div key={lvl.id} className="level-group">
               <div className="level-row">
                 <button
                   type="button"
-                  className={`level-item ${active ? 'active' : ''} ${done ? 'completed' : ''}`}
+                  className={`level-item ${active ? 'active' : ''} ${done ? 'completed' : ''} ${isLockedForGuest ? 'locked' : ''}`}
                   onClick={() => {
+                    if (isLockedForGuest) {
+                      onSelectLevel(lvl.id);
+                      return;
+                    }
                     if (active) {
                       setExpandedLevels((prev) => ({ ...prev, [lvl.id]: !prev[lvl.id] }));
                     } else {
@@ -218,22 +224,28 @@ export function Sidebar({
                   }}
                 >
                   <span className="level-num">
-                    {done ? <CheckCircle2 size={15} /> : (lvl.displayNum ?? lvl.id)}
+                    {isLockedForGuest ? <Lock size={14} /> : done ? <CheckCircle2 size={15} /> : (lvl.displayNum ?? lvl.id)}
                   </span>
                   <span className="level-meta">
                     <div className="level-name">{lvl.title}</div>
                     <div className="level-sub">
-                      {lvl.code} • {levelNotes.length > 0 ? `${checkedCount}/${levelNotes.length} tematów` : lvl.duration}
-                      {allNotesDone && !done ? ' • quiz do zrobienia' : ''}
+                      {isLockedForGuest
+                        ? `${lvl.code} • Tylko po zalogowaniu`
+                        : (
+                          <>
+                            {lvl.code} • {levelNotes.length > 0 ? `${checkedCount}/${levelNotes.length} tematów` : lvl.duration}
+                            {allNotesDone && !done ? ' • quiz do zrobienia' : ''}
+                          </>
+                        )}
                     </div>
                   </span>
-                  {levelNotes.length > 0 && (
+                  {!isLockedForGuest && levelNotes.length > 0 && (
                     <span className="level-chevron" aria-hidden="true">
                       {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
                     </span>
                   )}
                 </button>
-                {levelNotes.length > 0 && onToggleLevelNotes && (
+                {!isLockedForGuest && levelNotes.length > 0 && onToggleLevelNotes && (
                   <button
                     type="button"
                     className={`level-block-check ${allNotesDone ? 'checked' : ''}`}

@@ -440,6 +440,10 @@ export function App() {
     });
   };
 
+  const isBrowser =
+    typeof window !== 'undefined' && Boolean(window.location?.protocol?.startsWith('http'));
+  const isGuestPreviewLimited = isBrowser && !authSession?.user;
+
   const allowedCourses = useMemo(() => {
     if (!authSession?.user || authSession.user.role === 'admin') return VALID_COURSES;
     return Array.isArray(authSession.user.allowedCourses) ? authSession.user.allowedCourses : [];
@@ -449,6 +453,8 @@ export function App() {
     Boolean(authSession?.user) &&
     authSession.user.role !== 'admin' &&
     !allowedCourses.includes(activeCourse);
+
+  const isGuestLevelLocked = isGuestPreviewLimited && (activeIndex > 0 || reviewMode);
 
   const notesDoneCount = activeLevel?.notes?.filter((n) => checkedNotes[n.id]).length || 0;
   const cardsDoneCount = activeLevel?.flashcards?.filter((c) => cardStatus[c.id] === 'known').length || 0;
@@ -500,6 +506,7 @@ export function App() {
         }}
         onOpenWelcome={() => setShowWelcome(true)}
         allowedCourses={allowedCourses}
+        isGuestPreviewLimited={isGuestPreviewLimited}
         reviewCount={reviewCards.length}
         completedLevelsCount={completedLevelsCount}
         masteredCardsCount={masteredCardsCount}
@@ -574,6 +581,32 @@ export function App() {
                 }}
               >
                 Zobacz Rankingi
+              </button>
+            </div>
+          </div>
+        ) : isGuestLevelLocked ? (
+          <div className="locked-course-card">
+            <div className="locked-course-icon">
+              <Lock size={28} />
+            </div>
+            <h2>Podgląd ograniczony dla gościa</h2>
+            <p>
+              Jako gość masz dostęp wyłącznie do pierwszego tematu z każdego kursu. Zaloguj się na swoje konto, aby odblokować wszystkie bloki, fiszki, quizy oraz powtórki.
+            </p>
+            <div className="locked-course-actions">
+              <button
+                type="button"
+                className="primary-btn"
+                onClick={() => setAccountModalOpen(true)}
+              >
+                Zaloguj się
+              </button>
+              <button
+                type="button"
+                className="secondary-btn"
+                onClick={() => handleSelectLevel(currentLevels[0].id)}
+              >
+                Wróć do 1. tematu
               </button>
             </div>
           </div>
