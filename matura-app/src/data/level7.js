@@ -2,7 +2,7 @@ export const LEVEL_7 = {
   id: 7,
   code: 'BLOK 7',
   title: 'Wielka Matryca Motywów i Warsztat Rozprawki (35/35)',
-  subtitle: '10 głównych motywów z gotowymi tezami, scenami z lektur i kontekstami + szablon rozprawki dla debatanta',
+  subtitle: '10 głównych motywów z gotowymi tezami, scenami z lektur i kontekstami + szablon rozprawki na 35/35 pkt',
   duration: '60 min',
   xp: 220,
   notes: [
@@ -11,7 +11,7 @@ export const LEVEL_7 = {
       title: '1. Wielka Matryca Motywów Maturalnych (Kliknij motyw po gotowe argumenty!)',
       badge: 'Gotowce pod wypracowanie',
       intro:
-        'Na maturze z polskiego tematy rozprawek krążą wokół około 10 uniwersalnych motywów. Kliknij każdy z poniższych motywów, aby zobaczyć gotową tezę niuansującą (debaterską!), 3–4 rozpisane argumenty z lektur obowiązkowych ze wskazaniem konkretnej sceny oraz pasujące konteksty.',
+        'Na maturze z polskiego tematy rozprawek krążą wokół około 10 uniwersalnych motywów. Kliknij każdy z poniższych motywów, aby zobaczyć gotową tezę niuansującą, 3–4 rozpisane argumenty z lektur obowiązkowych ze wskazaniem konkretnej sceny oraz pasujące konteksty.',
       blocks: [
         {
           type: 'grid',
@@ -25,7 +25,7 @@ export const LEVEL_7 = {
                 bullets: [
                   'Argument 1 — „Makbet” W. Szekspira: władza zdobyta przez zbrodnię rodzi paranoję i spiralę przemocy. Sceny: zamordowanie śpiącego króla Dunkana pod wpływem Lady Makbet; zlecenie morderstwa przyjaciela Banka ze strachu przed utratą tronu i ukazanie się ducha Banka na uczcie; rzeź niewinnej rodziny Makdufa.',
                   'Argument 2 — „Rok 1984” G. Orwella: władza totalitarna jako cel sam w sobie, dążący do całkowitego zniszczenia wolnej myśli i uczuć jednostki. Sceny: praca Winstona w Ministerstwie Prawdy nad fałszowaniem przeszłości; tortury O’Briena w Ministerstwie Miłości i złamanie Winstona szczurami w Pokoju 101 (zdrada Julii).',
-                  'Argument 3 — „Antygona” Sofoklesa: zaślepienie władzą (hybris) prowadzące władcę do postawienia własnego rozkazu ponad prawo boskie i głos obywateli. Sceny: spór Kreona z Antygoną i synem Hajmonem („Państwo to ja!”) oraz tragiczny finał (samobójstwo bliskich Kreona).',
+                  'Argument 3 — „Antygona” Sofoklesa: zaślepienie władzą (hybris) prowadzące władcę do postawienia własnego rozkazu ponad prawo boskie i głos obywateli. Sceny: spór Kreona z Antygoną i synem Hajmonem (Kreon utożsamia państwo z własną wolą i żąda ślepego posłuszeństwa) oraz tragiczny finał (samobójstwo bliskich Kreona).',
                   'Argument 4 — „Tango” S. Mrożka: w świecie pozbawionym zasad i autorytetów władzę przejmuje brutalna, prymitywna siła. Scena: zabójstwo intelektualisty Artura przez Edka i finałowe tango Edka z uległym wujem Eugeniuszem.'
                 ],
                 essayUse: 'Konteksty: „Książę” Niccolò Machiavellego (makiawelizm), ustroje totalitarne XX wieku (stalinizm, III Rzesza), eksperyment więzienny Zimbardo lub eksperyment Milgrama.'
@@ -54,7 +54,7 @@ export const LEVEL_7 = {
                   'Gotowa teza: Najcięższą karą za popełnioną zbrodnię nie jest wyrok sądu, lecz nieuchronny głos ludzkiego sumienia, który może jednak — poprzez cierpienie i pokutę — stać się początkiem moralnego odrodzenia.',
                 bullets: [
                   'Argument 1 — „Zbrodnia i kara” F. Dostojewskiego: zbrodnia popełniona w imię racjonalnej teorii wywołuje natychmiastową karę psychologiczną i alienację, a ratunek przynosi dopiero wyznanie winy i miłość. Sceny: zabójstwo lichwiarki Alony i niewinnej Lizawiety; gorączka i gra psychologiczna z Porfirym; czytanie z Sonią Ewangelii o wskrzeszeniu Łazarza i przemiana na katordze na Syberii.',
-                  'Argument 2 — „Pan Tadeusz” A. Mickiewicza (oraz „Potop” H. Sienkiewicza): odkupienie dawnej winy poprzez wieloletnią, pokorną służbę ojczyźnie pod przybranym imieniem. Sceny: dumna młodość Jacka Soplicy i zabójstwo Stolnika Horeszki w afekcie → przyjęcie habitu bernardyna Księdza Robaka, ocalenie życia Gerwazemu i Hrabiemu oraz przedśmiertna spowiedź.',
+                  'Argument 2 — „Pan Tadeusz” A. Mickiewicza (SP / przejściowo na wypracowaniu w latach 2025–2028) oraz „Potop” H. Sienkiewicza (we fragmentach): odkupienie dawnej winy poprzez wieloletnią, pokorną służbę ojczyźnie pod przybranym imieniem. Sceny: dumna młodość Jacka Soplicy i zabójstwo Stolnika Horeszki w afekcie → przyjęcie habitu bernardyna Księdza Robaka, ocalenie życia Gerwazemu i Hrabiemu oraz przedśmiertna spowiedź.',
                   'Argument 3 — „Makbet” W. Szekspira: próba zagłuszenia sumienia kolejnymi zbrodniami prowadzi do całkowitego rozpadu osobowości i samobójstwa. Scena: lunatykowanie Lady Makbet w V akcie („Precz, przeklęta plamo!”).'
                 ],
                 essayUse: 'Konteksty: imperatyw kategoryczny Immanuela Kanta, biblijny Kain lub syn marnotrawny.'
@@ -62,14 +62,14 @@ export const LEVEL_7 = {
             },
             {
               term: '4. Miłość — siła niszcząca czy ocalająca człowieka?',
-              desc: 'Lalka + Zbrodnia i kara + Rok 1984 + Kamizelka / Romantyczność.',
+              desc: 'Lalka + Zbrodnia i kara + Rok 1984 + Romantyczność (oraz Kamizelka jako kontekst).',
               details: {
                 summary:
                   'Gotowa teza: Miłość ma dwoistą naturę — gdy jest dojrzała i bezinteresowna, potrafi ocalić człowieka w najtrudniejszej próbie, natomiast gdy zamienia się w jednostronną obsesję i idealizację, prowadzi do życiowej katastrofy.',
                 bullets: [
                   'Argument 1 (Miłość destrukcyjna) — „Lalka” B. Prusa: romantyczna idealizacja próżnej arystokratki zaślepia wybitnego człowieka czynu i doprowadza go do autodestrukcji. Sceny: podporządkowanie całego życia zdobyciu Izabeli Łęckiej; porzucenie badań naukowych u Geista w Paryżu; scena w pociągu (rozmowa Izabeli ze Starskim po angielsku) i próba samobójcza Wokulskiego w Skierniewicach.',
                   'Argument 2 (Miłość ocalająca) — „Zbrodnia i kara” F. Dostojewskiego: bezwarunkowa, chrześcijańska miłość Soni Marmieładowej ratuje mordercę przed rozpaczą i samobójstwem. Scena: wyznanie zbrodni w pokoju Soni, ofiarowanie krzyżyka i wyjazd Soni za Raskolnikowem na Syberię.',
-                  'Argument 3 (Miłość codzienna i czuła) — „Kamizelka” B. Prusa: ciche poświęcenie małżonków chroniących się wzajemnie przed lękiem o śmierć (przesuwanie paska kamizelki).',
+                  'Argument 3 (Miłość codzienna i czuła — kontekst z dawnej PP) — „Kamizelka” B. Prusa: ciche poświęcenie małżonków chroniących się wzajemnie przed lękiem o śmierć (przesuwanie paska kamizelki).',
                   'Argument 4 (Miłość zniszczona przez system) — „Rok 1984” G. Orwella: romans Winstona i Julii jako akt buntu przeciw Partii, brutalnie złamany przez tortury w Pokoju 101.'
                 ],
                 essayUse: 'Konteksty: mit o Orfeuszu i Eurydyce, biblijny „Hymn o miłości” św. Pawła lub „Pieśń nad Pieśniami”.'
@@ -99,7 +99,7 @@ export const LEVEL_7 = {
                   'Argument 1 — „Wesele” S. Wyspiańskiego: demaskacja pozornego zjednoczenia inteligencji i chłopów oraz niezdolności Polaków do wspólnego czynu. Sceny: rozmowy w I akcie (chłopomania), zjawy II aktu (Stańczyk, Upiór-Szela, Wernyhora), zgubienie Złotego Rogu przez Jaśka dla czapki z piórami i chocholi taniec.',
                   'Argument 2 — „Dziady cz. III” A. Mickiewicza: kontrast między męczeństwem młodych patriotów a kosmopolityczną obojętnością elit oraz wiara w podziemną siłę narodu. Sceny: opowiadanie Sobolewskiego o wywózce na Sybir; Salon Warszawski i słowa Wysockiego („Nasz naród jak lawa”).',
                   'Argument 3 — „Przedwiośnie” S. Żeromskiego: zderzenie utopijnego mitu o niepodległej Polsce z trudną rzeczywistością społeczną II RP. Sceny: opowieść ojca o szklanych domach vs nędza po przekroczeniu granicy; kontrast próżniaczej szlachty w Nawłoci i biedoty w Chłodku; spór Gajowca z Lulkiem.',
-                  'Argument 4 — „Pan Tadeusz” A. Mickiewicza: wizja ojczyzny jako harmonijnej arkadii (Soplicowo), w której w obliczu walki o wolność udaje się przezwyciężyć dawne spory (zgoda rodów i Koncert Jankiela).'
+                  'Argument 4 — „Pan Tadeusz” A. Mickiewicza (SP / przejściowo 2025–2028): wizja ojczyzny jako harmonijnej arkadii (Soplicowo), w której w obliczu walki o wolność udaje się przezwyciężyć dawne spory (zgoda rodów i Koncert Jankiela).'
                 ],
                 essayUse: 'Konteksty: powstania narodowe (1830, 1863), odzyskanie niepodległości w 1918 r., „Kazania sejmowe” Piotra Skargi (metafora tonącego okrętu).'
               }
@@ -128,7 +128,7 @@ export const LEVEL_7 = {
                   'Argument 1 — „Tango” S. Mrożka: kryzys rodziny pozbawionej jakichkolwiek norm i autorytetów rodzicielskich (Stomil i Eleonora), zmuszający syna (Artura) do desperackiej próby przywrócenia porządku.',
                   'Argument 2 — „Przedwiośnie” S. Żeromskiego: ewolucja relacji Cezarego Baryki z rodzicami — od młodzieńczego buntu i zapatrzenia w rewolucję po głęboki wstrząs po śmierci matki Jadwigi i przejęcie od ojca Seweryna troski o Polskę.',
                   'Argument 3 — „Skąpiec” Moliera / „Antygona” Sofoklesa: toksyczny autorytaryzm ojca niszczący szczęście dzieci (Harpagon przedkładający szkatułkę z pieniędzmi nad dzieci Kleanta i Elizę; Kreon doprowadzający syna Hajmona do samobójstwa).',
-                  'Argument 4 — „Treny” J. Kochanowskiego: bezgraniczna miłość ojca do zmarłej córeczki Urszulki oraz matka poety przynosząca mu pocieszenie we śnie (Tren XIX).'
+                  'Argument 4 — „Treny” J. Kochanowskiego (PP: IX, X, XI; XIX — PR / przejściowo 2025–2028): bezgraniczna miłość ojca do zmarłej córeczki Urszulki oraz matka poety przynosząca mu pocieszenie we śnie (Tren XIX).'
                 ],
                 essayUse: 'Konteksty: przypowieść o synu marnotrawnym, przemiany obyczajowe XX i XXI wieku.'
               }
@@ -154,7 +154,7 @@ export const LEVEL_7 = {
                 summary:
                   'Gotowa teza: Społeczeństwo nieustannie narzuca jednostce gotowe schematy zachowań i maski, dlatego zachowanie autentyczności i wierności własnym zasadom wymaga od człowieka szczególnej odwagi.',
                 bullets: [
-                  'Argument 1 — „Ferdydurke” W. Gombrowicza: człowiek jako istota uwięziona w Formie, Gębie i Pupie — niezdolna do pełnej autentyczności w relacji z innymi (upupienie Józia przez prof. Pimkę, zakłamanie szkoły Bladaczki i nowoczesnego domu Młodziaków).',
+                  'Argument 1 — „Ferdydurke” W. Gombrowicza (od 2024 r. we fragmentach): człowiek jako istota uwięziona w Formie, Gębie i Pupie — niezdolna do pełnej autentyczności w relacji z innymi (upupienie Józia przez prof. Pimkę, zakłamanie szkoły Bladaczki i nowoczesnego domu Młodziaków).',
                   'Argument 2 — „Lalka” B. Prusa: hipokryzja i kastowość arystokracji warszawskiej, która gardzi Wokulskim jako kupcem, jednocześnie chętnie korzystając z jego pieniędzy.',
                   'Argument 3 — „Przesłanie Pana Cogito” Z. Herberta: wezwanie do nonkonformizmu i zachowania wyprostowanej postawy moralnej w świecie ludzi idących na łatwe kompromisy („idź wyprostowany wśród tych co na kolanach”).'
                 ],
@@ -167,15 +167,15 @@ export const LEVEL_7 = {
     },
     {
       id: '7-2',
-      title: '2. Szablon Rozprawki dla Debatanta (Jak wycisnąć 35/35 pkt)',
+      title: '2. Szablon Rozprawki (Jak wycisnąć 35/35 pkt)',
       badge: 'Architektura wypracowania',
       intro:
-        'Jako debatant masz naturalną przewagę: potrafisz budować tezę z warunkiem (niuansowaniem) i prowadzić logiczny wywód przyczynowo-skutkowy. Poniżej masz dokładny schemat kompozycyjny, dzięki któremu sprawdzający przyzna Ci maksymalną punktację w każdym kryterium CKE.',
+        'Kluczem do najwyższej oceny jest teza z warunkiem (niuansowaniem) oraz logiczny wywód przyczynowo-skutkowy. Poniżej masz dokładny schemat kompozycyjny, dzięki któremu sprawdzający przyzna Ci maksymalną punktację w każdym kryterium CKE.',
       blocks: [
         {
           type: 'callout',
           variant: 'emerald',
-          title: 'Złota struktura 5 akapitów (ok. 500–600 słów)',
+          title: 'Złota struktura 4–5 akapitów (ok. 450–600 słów)',
           items: [
             'Akapit 1 — Wstęp (ok. 60–80 słów): 1–2 zdania wprowadzenia w pojęcie z tematu (definicja) + jednoznaczna TEZA NIUANSUJĄCA (np. „W zależności od postawy człowieka i okoliczności, zjawisko X może stać się zarówno siłą budującą, jak i przyczyną upadku”).',
             'Akapit 2 — Argument 1 z Lektury Obowiązkowej nr 1 (ok. 160–200 słów): Teza cząstkowa (Zdanie otwierające akapit) → Przywołanie lektury i bohatera → Dokładna analiza KONKRETNEJ SCENY pod kątem tematu → Funkcjonalny KONTEKST nr 1 (np. filozoficzny lub historyczny) → Wniosek cząstkowy.',
@@ -188,8 +188,8 @@ export const LEVEL_7 = {
     }
   ],
   flashcards: [
-    { id: 'f7-1', front: 'Jakie są 4 obowiązkowe elementy wypracowania maturalnego (min. 300 słów)?', back: '1) Jasna teza, 2) Lektura obowiązkowa, 3) Drugi utwór literacki, 4) Dwa konteksty + brak błędu kardynalnego.' },
-    { id: 'f7-2', front: 'Co to jest błąd kardynalny i czym grozi?', back: 'Rażący błąd rzeczowy świadczący o nieznajomości lektury obowiązkowej (np. pomylenie głównych bohaterów lub finału). Skutkuje 0 pkt za całe wypracowanie.' },
+    { id: 'f7-1', front: 'Jakie są kluczowe warunki formalne i merytoryczne wypracowania maturalnego (min. 300 słów)?', back: '1) Stanowisko (teza lub hipoteza) wobec problemu z tematu, 2) Co najmniej 2 utwory literackie (w tym lektura obowiązkowa; przynajmniej jeden musi być epicki albo dramatyczny), 3) Co najmniej 2 funkcjonalne konteksty, 4) Brak błędu kardynalnego.' },
+    { id: 'f7-2', front: 'Co to jest błąd kardynalny i czym grozi?', back: 'Rażący błąd rzeczowy świadczący o nieznajomości lektury obowiązkowej w zakresie głównych wątków (np. pomylenie głównych bohaterów lub finału). Skutkuje 0 pkt w kryterium formalnym, a przez to wyzerowaniem całego wypracowania (0/35 pkt).' },
     { id: 'f7-3', front: 'Jak bezpiecznie uniknąć błędu kardynalnego, gdy nie pamiętasz nazwiska pobocznej postaci?', back: 'Nigdy nie zgaduj imienia! Użyj określenia opisowego (np. „stary subiekt”, „sędzia śledczy”, „parobek z wesela”).' },
     { id: 'f7-4', front: 'Podaj 2 najlepsze lektury do tematu „Czy władza zawsze deprawuje człowieka?”', back: '„Makbet” (przemiana dzielnego wodza w paranoicznego tyrana) + „Rok 1984” (mechanizm totalitarnej kontroli Partii).' },
     { id: 'f7-5', front: 'Podaj 2 najlepsze lektury do tematu „Rola marzeń i złudzeń w życiu człowieka”.', back: '„Lalka” (idealizacja Izabeli przez Wokulskiego) + „Przedwiośnie” (mit szklanych domów i rozczarowanie Polską).' },
@@ -200,14 +200,14 @@ export const LEVEL_7 = {
     { id: 'f7-10', front: 'Jakich błędów unikać w kontekstach?', back: 'Kontekst nie może być „doczepionym” jednym zdaniem na końcu — musi realnie pogłębiać analizę i wiązać się z argumentem.' },
     { id: 'f7-11', front: 'Podaj 2 lektury idealne pod temat „Przemiana wewnętrzna człowieka”.', back: '„Pan Tadeusz” (Jacek Soplica → pokorny Ksiądz Robak) + „Zbrodnia i kara” (Raskolnikow od zbrodniarza do skruszonego na Syberii).' },
     { id: 'f7-12', front: 'Co zrobić, jeśli na wypracowaniu wpadnie nietypowy temat (np. samotność lub praca)?', back: 'Użyj lektur uniwersalnych: „Lalka” (samotność Wokulskiego, praca w sklepie) + „Dżuma” (samotność Rieux, solidarna praca sanitarna).' },
-    { id: 'f7-13', front: 'Jak dokładnie rozłożone są 35 punktów za wypracowanie maturalne w Formule 2023?', back: 'Spełnienie warunków formalnych (1 pkt), kompetencje literackie i kulturowe (16 pkt), kompozycja tekstu (7 pkt) oraz język: styl, poprawność językowa, ortografia i interpunkcja (11 pkt).' },
+    { id: 'f7-13', front: 'Jak dokładnie rozłożone są 35 punktów za wypracowanie maturalne w Formule 2023?', back: 'Spełnienie warunków formalnych (1 pkt), kompetencje literackie i kulturowe (16 pkt), kompozycja tekstu — w tym struktura, spójność i styl (7 pkt) oraz język: poprawność i zakres środków, ortografia i interpunkcja (11 pkt).' },
     { id: 'f7-14', front: 'Czym różni się teza od hipotezy we wstępie wypracowania maturalnego?', back: 'Teza to kategoryczne stanowisko, którego bronisz przez całą pracę; hipoteza to pytanie lub przypuszczenie wymagające weryfikacji w toku argumentacji i jednoznacznej odpowiedzi w zakończeniu.' },
     { id: 'f7-15', front: 'Jakie są 3 groźne błędy kardynalne w „Dziadach cz. III”, „Panu Tadeuszu” i „Roku 1984”?', back: '1) Przypisanie Konradowi z „Dziadów” przywództwa powstania listopadowego; 2) Twierdzenie, że Jacek Soplica nie wyznał winy przed śmiercią; 3) Pisanie, że Winston Smith pokonał Partię i uciekł z Oceanii.' },
-    { id: 'f7-16', front: 'Wymień 3 najgroźniejsze błędy kardynalne w „Antygonie”, „Makbecie” i „Kordianie”.', back: '1) Pisanie, że Antygona została spalona na stosie (powiesiła się w jaskini); 2) Pisanie, że czarownice zmusiły Makbeta do zbrodni (miał wolną wolę); 3) Pisanie, że Kordian zabił cara (zemdlał przed sypialnią).' },
+    { id: 'f7-16', front: 'Wymień 3 najgroźniejsze błędy kardynalne w „Antygonie”, „Makbecie” i „Kordianie”.', back: '1) Pisanie, że Antygona została spalona na stosie (powiesiła się w jaskini); 2) Pisanie, że czarownice zmusiły Makbeta do zbrodni (miał wolną wolę); 3) Pisanie, że Kordian [PR / przejściowo 2025–2028] zabił cara (zemdlał przed sypialnią).' },
     { id: 'f7-17', front: 'Wymień 3 najgroźniejsze błędy kardynalne w „Lalce”, „Weselu” i „Dżumie”.', back: '1) Pisanie, że Wokulski utopił się w Wiśle (próbował skoczyć pod pociąg w Skierniewicach, finał jest otwarty); 2) Pisanie, że Gospodarz zgubił Złoty Róg (zgubił go Jasiek); 3) Pisanie, że Tarrou przeżył dżumę (zmarł tuż przed końcem epidemii).' },
     { id: 'f7-18', front: 'Jakie łączniki logiczne (spójniki i zwroty) budują spójność między akapitami argumentacyjnymi?', back: 'Kontrast: „Zupełnie inaczej problem ten ukazuje...”; dopełnienie: „Podobną prawidłowość można zaobserwować w...”; pogłębienie: „Kolejnym dowodem potwierdzającym tezę jest...”.' },
     { id: 'f7-19', front: 'Czym różni się analiza sceny od jej streszczenia?', back: 'Streszczenie odpowiada na pytanie „co się stało?”; analiza odpowiada na pytanie „DLACZEGO bohater tak postąpił i CO TO ZNACZY dla problemu z tematu?”.' },
-    { id: 'f7-20', front: 'Podaj 2 lektury idealne do motywu „Cena buntu i walki o wolność”.', back: '„Antygona” (bunt jednostki w imię sumienia przeciw prawu państwa) + „Dziady cz. III” / „Kordian” (bunt przeciw tyranii zaborcy) lub „Rok 1984” (klęska buntu w totalitaryzmie).' },
+    { id: 'f7-20', front: 'Podaj 2 lektury idealne do motywu „Cena buntu i walki o wolność”.', back: '„Antygona” (bunt jednostki w imię sumienia przeciw prawu państwa) + „Dziady cz. III” / „Kordian” (PR / przejściowo 2025–2028) lub „Rok 1984” (klęska buntu w totalitaryzmie).' },
     { id: 'f7-21', front: 'Podaj 2 lektury idealne do motywu „Wpływ przeszłości i historii na los człowieka”.', back: '„Pan Tadeusz” (historia Jacka Soplicy i nadzieje napoleońskie 1812) + „Lalka” (powstanie styczniowe w życiorysie Wokulskiego i kult Napoleona u Rzeckiego) lub „Inny świat”.' },
     { id: 'f7-22', front: 'Podaj 2 lektury idealne do motywu „Człowiek wobec cierpienia i zła”.', back: '„Księga Hioba” (niezawinione cierpienie i wierność) + „Dżuma” (solidarna walka ze złem przez Rieux) lub „Zbrodnia i kara” (cierpienie prowadzące do odkupienia).' },
     { id: 'f7-23', front: 'Czego absolutnie NIE wolno robić w zakończeniu wypracowania maturalnego?', back: 'Nie wolno wprowadzać nowych lektur, nowych argumentów ani zmieniać tezy postawionej we wstępie — zakończenie to synteza dotychczasowego dowodzenia.' },
@@ -293,35 +293,40 @@ export const LEVEL_7 = {
       explanation: '„Lalka” pasuje do większości tematów maturalnych dzięki bogactwu motywów i psychologii Wokulskiego.'
     },
     {
-      q: 'Ile co najmniej słów musi liczyć wypracowanie maturalne z języka polskiego (Formuła 2023)?',
-      options: ['150 słów', '250 słów', '300 słów', '500 słów'],
+      q: 'Jaki wymóg rodzajowy obowiązuje przy wyborze dwóch utworów literackich w wypracowaniu maturalnym?',
+      options: [
+        'Oba utwory muszą być wierszami lirycznymi',
+        'Oba utwory muszą należeć do literatury polskiej',
+        'Co najmniej jeden z utworów musi być utworem epickim albo dramatycznym',
+        'Oba utwory muszą pochodzić z epoki romantyzmu'
+      ],
       correct: 2,
-      explanation: 'Bezwzględne minimum objętości wypracowania maturalnego na poziomie podstawowym to 300 wyrazów.'
+      explanation: 'Odwołanie wyłącznie do dwóch wierszy lirycznych nie spełnia wymogu formalnego CKE — potrzebny jest przynajmniej jeden utwór epicki albo dramatyczny.'
     },
     {
       q: 'Ile utworów literackich i kontekstów należy przywołać w wypracowaniu maturalnym?',
       options: [
         'Minimum 1 utwór literacki i brak kontekstów',
-        'Minimum 2 utwory literackie (w tym min. 1 lekturę obowiązkową) oraz minimum 2 funkcjonalne konteksty',
+        'Minimum 2 utwory literackie (w tym lekturę obowiązkową i min. 1 utwór epicki/dramatyczny) oraz minimum 2 funkcjonalne konteksty',
         'Minimum 5 lektur obowiązkowych bez żadnych kontekstów',
         'Wyłącznie 2 filmy i 1 wiersz'
       ],
       correct: 1,
-      explanation: 'Standard CKE wymaga co najmniej dwóch utworów literackich (z min. jedną lekturą obowiązkową) oraz funkcjonalnych kontekstów pogłębiających argumentację.'
+      explanation: 'Standard CKE wymaga co najmniej dwóch utworów literackich (z lekturą obowiązkową i przynajmniej jednym utworem epickim albo dramatycznym) oraz funkcjonalnych kontekstów.'
     },
     {
-      q: 'Która z poniższych sytuacji spowoduje wyzerowanie całego wypracowania (błąd kardynalny)?',
+      q: 'Do którego kryterium oceniania wypracowania w Formule 2023 należy „styl wypowiedzi”?',
       options: [
-        'Napisanie, że Wokulski w „Lalce” ożenił się z Izabelą Łęcką i wyjechał z nią do Ameryki',
-        'Zastosowanie krótszego akapitu wstępnego (3 zdania)',
-        'Brak cytatu dosłownego z pamięci',
-        'Popełnienie dwóch błędów przecinkowych'
+        'Kompozycja tekstu (0–7 pkt)',
+        'Język wypowiedzi (0–11 pkt)',
+        'Spełnienie warunków formalnych (0–1 pkt)',
+        'Styl nie jest oceniany na maturze podstawowej'
       ],
       correct: 0,
-      explanation: 'Rażące zniekształcenie głównych faktów lub sensu lektury obowiązkowej to błąd kardynalny skutkujący 0/35 pkt.'
+      explanation: 'W zasadach oceniania CKE dla Formuły 2023 styl (0–1 pkt) wchodzi w skład kryterium „Kompozycja tekstu” (0–7 pkt), a nie „Język wypowiedzi” (0–11 pkt).'
     },
     {
-      q: 'Czym różni się dobry akapit argumentacyjny (TSACW) od streszczenia lektury?',
+      q: 'Czym różni się dobry akapit argumentacyjny (TSAKW) od streszczenia lektury?',
       options: [
         'Akapit argumentacyjny dokładnie opisuje każdy rozdział po kolei',
         'Akapit argumentacyjny przywołuje konkretną scenę tylko po to, by przeanalizować „dlaczego?” i „co z tego wynika dla tezy?”',

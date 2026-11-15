@@ -1,7 +1,7 @@
 export const LEVEL_5 = {
   id: 5,
   code: 'BLOK 5',
-  title: 'Złoty Rdzeń 3: Współczesność, Wojna i Twoje 3 Lektury',
+  title: 'Złoty Rdzeń 3: Współczesność, Wojna i Kluczowe Lektury',
   subtitle: 'Tango, Dżuma, Krall, Grudziński, Borowski + pełne kompendium Roku 1984, Przedwiośnia i Pana Tadeusza',
   duration: '60 min',
   xp: 200,
@@ -91,10 +91,10 @@ export const LEVEL_5 = {
     },
     {
       id: '5-3',
-      title: '3. Pełne Kompendium Twoich 3 Lektur: „Rok 1984”, „Przedwiośnie”, „Pan Tadeusz”',
+      title: '3. Pełne Kompendium 3 Kluczowych Lektur: „Rok 1984”, „Przedwiośnie”, „Pan Tadeusz”',
       badge: 'Rozwiń karty, aby utrwalić szczegóły bez błędu kardynalnego',
       intro:
-        'Skoro znasz już te trzy lektury, poniżej masz ich kompletne, uporządkowane opracowanie pod kątem rozprawki i testu — ze wszystkimi imionami, scenami i symbolami, żebyś mógł z nich swobodnie korzystać przy każdym temacie.',
+        'Poniżej znajduje się kompletne, uporządkowane opracowanie trzech kluczowych lektur pod kątem rozprawki i testu — ze wszystkimi imionami, scenami i symbolami, żeby móc z nich swobodnie korzystać przy każdym temacie.',
       blocks: [
         {
           type: 'grid',
