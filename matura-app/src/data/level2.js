@@ -28,7 +28,7 @@ export const LEVEL_2 = {
                   'Kalokagatia (piękny i dobry): grecki ideał człowieka łączącego piękno fizyczne (sprawność ciała) z doskonałością moralną i mądrością.',
                   'Mimesis: zasada naśladowania natury i rzeczywistości przez sztukę (dzieło ma być prawdopodobne i harmonijne).',
                   'Katharsis: duchowe oczyszczenie widza oglądającego tragedię — poprzez przeżycie litości (wobec cierpiącego bohatera) i trwogi (przed losem) widz wychodzi z teatru wewnętrznie uspokojony.',
-                  'Stoicyzm (Zenon z Kittion, Marek Aureliusz): filozofia nakazująca zachowanie wewnętrznego spokoju, równowagi ducha i opanowania emocji zarówno w obliczu nieszczęścia, jak i sukcesu.',
+                  'Stoicyzm (Zenon z Kition, Marek Aureliusz): filozofia nakazująca zachowanie wewnętrznego spokoju, równowagi ducha i opanowania emocji (apatheia) zarówno w obliczu nieszczęścia, jak i sukcesu.',
                   'Epikureizm (Epikur, w poezji Horacy): sztuka mądrego korzystania z życia, unikanie cierpienia i lęku przed śmiercią, cieszenie się chwilą obecną — „Carpe diem” (chwytaj dzień) połączone z „Aurea mediocritas” (złotym środkiem, umiarem).'
                 ],
                 essayUse: 'Pojęcia fatum, hybris, stoicyzmu i carpe diem to idealne konteksty filozoficzne do niemal każdej rozprawki!'
@@ -39,15 +39,15 @@ export const LEVEL_2 = {
               desc: 'Teocentryzm, uniwersalizm, memento mori, danse macabre, franciszkanizm, asceta i rycerz.',
               details: {
                 summary:
-                  'Epoka zdominowana przez chrześcijaństwo i Kościół. Życie ziemskie jest traktowane tylko jako krótka pielgrzymka i próba przed życiem wiecznym. Sztuka jest w większości anonimowa i służy chwale Bożej (*Ad maiorem Dei gloriam*).',
+                  'Epoka zdominowana przez chrześcijaństwo i Kościół. Życie ziemskie jest traktowane tylko jako krótka pielgrzymka i próba przed życiem wiecznym. Sztuka jest w większości anonimowa i powstaje przede wszystkim na chwałę Bożą.',
                 bullets: [
                   'Teocentryzm: Bóg znajduje się w absolutnym centrum wszechświata, kultury, nauki i ludzkich dążeń.',
                   'Uniwersalizm średniowieczny: cała chrześcijańska Europa posługuje się jednym językiem kultury i nauki (łaciną), wyznaje jedną religię i ma ten sam system wartości.',
                   'Dualizm (dwoistość) człowieka: człowiek składa się z grzesznego, śmiertelnego ciała (ciągnącego go ku ziemi) oraz nieśmiertelnej duszy (dążącej do nieba).',
                   'Memento mori (pamiętaj o śmierci) & Ars moriendi (sztuka godnego umierania): przypomnienie, że w każdej chwili należy być gotowym na Sąd Ostateczny.',
                   'Danse macabre (taniec śmierci): motyw ukazujący Śmierć prowadzącą w korowodzie przedstawicieli wszystkich stanów (papieża, króla, rycerza, kupca i chłopa) — dowód na to, że w obliczu śmierci wszyscy ludzie są równi („Rozmowa Mistrza Polikarpa ze Śmiercią”).',
-                  'Trzy wzorce osobowe (pareneza): 1) Święty asceta — umartwia ciało i rezygnuje z bogactwa dla Boga („Legenda o św. Aleksym”); 2) Rycerz bez skazy — waleczny, wierny Bogu, królowi i ojczyźnie, dba o honor („Pieśń o Rolandzie”); 3) Władca sprawiedliwy (Karol Wielki).',
-                  'Franciszkanizm („Kwiatki św. Franciszka”): jasny, radosny nurt wiary oparty na miłości do każdego stworzenia (braci mniejszych — zwierząt i przyrody) oraz dobrowolnym ubóstwie, w opozycji do surowej ascezy.'
+                  'Trzy wzorce osobowe (pareneza): 1) Święty asceta — umartwia ciało i rezygnuje z bogactwa dla Boga („Legenda o św. Aleksym” — od 2024 r. poza listą PP, kontekst / przejściowo 2025–2028); 2) Rycerz bez skazy — waleczny, wierny Bogu, królowi i ojczyźnie, dba o honor („Pieśń o Rolandzie”); 3) Władca sprawiedliwy (Karol Wielki).',
+                  'Franciszkanizm („Kwiatki św. Franciszka” — od 2024 r. poza listą PP, cenny kontekst): jasny, radosny nurt wiary oparty na miłości do każdego stworzenia (braci mniejszych — zwierząt i przyrody) oraz dobrowolnym ubóstwie, w opozycji do surowej ascezy.'
                 ],
                 essayUse: 'Wzorzec rycerza (Roland) i ascety (Aleksy) świetnie kontrastuje z późniejszymi bohaterami pełnymi wątpliwości (np. Kordian, Wokulski).'
               }
@@ -61,6 +61,7 @@ export const LEVEL_2 = {
                 bullets: [
                   'Antropocentryzm i Humanizm: zainteresowanie człowiekiem, jego rozumem, godnością i doczesnym szczęściem. Hasło Terencjusza: „Człowiekiem jestem i nic, co ludzkie, nie jest mi obce”.',
                   'Ad fontes (powrót do źródeł): badanie oryginalnych dzieł starożytnych Greków i Rzymian oraz tłumaczenie Biblii na języki narodowe.',
+                  'Reformacja (od 1517 r. — wystąpienie Marcina Lutra, następnie Jan Kalwin): ruch religijno-społeczny w XVI w. dążący do odnowy Kościoła, odrzucenia nadużyć (np. sprzedaży odpustów) i autorytetu papieża na rzecz samej Biblii (Sola Scriptura) oraz wiary (Sola Fide). Doprowadziła do powstania protestantyzmu (luteranizm, kalwinizm, w Polsce też bracia polscy/arianie) i dynamicznego rozwoju literatury w językach narodowych (Mikołaj Rej, przekład Biblii brzeskiej i Jakuba Wujka).',
                   'Irenizm: idea pokoju religijnego i tolerancji (Polska w XVI w. była „państwem bez stosów”).',
                   'Filozofia Jana Kochanowskiego (w „Pieśniach” i „Fraszkach”): chrześcijańskie połączenie stoicyzmu (spokój wobec wyroków Fortuny, czyste sumienie) z epikureizmem (radość z biesiady, przyrody i poezji) oraz patriotyzmem (troska o Rzeczpospolitą).',
                   'Kryzys światopoglądu renesansowego („Treny” Kochanowskiego): po śmierci 2,5-letniej córeczki Urszulki poeta odkrywa, że stoicki spokój i humanistyczna mądrość są bezsilne wobec prawdziwego cierpienia ojca.'
@@ -70,14 +71,15 @@ export const LEVEL_2 = {
             },
             {
               term: '4. Barok (koniec XVI – poł. XVIII w.)',
-              desc: 'Vanitas, rozdarcie wewnętrzne, konceptyzm, marinizm i polski sarmatyzm.',
+              desc: 'Kontrreformacja, vanitas, rozdarcie wewnętrzne, konceptyzm, marinizm i polski sarmatyzm.',
               details: {
                 summary:
                   'Po wojnach religijnych i kontrreformacji znika renesansowy spokój. Człowiek baroku („wątła trzcina na wietrze” Pascala) czuje się zagubiony między pokusami ciała a lękiem przed piekłem i przemijaniem.',
                 bullets: [
-                  'Vanitas (marność): obsesyjny motyw przemijania czasu, urody i dóbr ziemskich (wiersze Daniela Naborowskiego „Krótkość żywota”, „Marność” — życie ludzkie to „cień, dym, wiatr, błysk, głos, punkt”).',
-                  'Konceptyzm i Marinizm (Jan Andrzej Morsztyn): poezja dworska ma zaskoczyć, zaszokować czytelnika błyskotliwym pomysłem konstrukcyjnym (konceptem), np. porównaniem zakochanych do trupa w wierszu „Do trupa”.',
-                  'Sarmatyzm (specyfika polska!): przekonanie polskiej szlachty, że pochodzi od starożytnych wojowników Sarmatów. Z jednej strony rodziło to odwagę rycerską, umiłowanie „złotej wolności” i przywiązanie do tradycji, ale z drugiej — megalomanię narodową, ksenofobię, pijaństwo, warcholstwo i prywatę („Pamiętniki” Jana Chryzostoma Paska).',
+                  'Kontrreformacja (Sobór Trydencki 1545–1563, zakon jezuitów): ruch odnowy i obrony Kościoła katolickiego przed reformacją. Wprowadzono dyscyplinę duchowieństwa, Indeks ksiąg zakazanych i sieć kolegiów jezuickich; sztuka barokowa (przepych kościołów, muzyka, literatura religijna, np. Piotr Skarga) miała zachwycać zmysły i umacniać wiarę wiernych.',
+                  'Vanitas (marność): obsesyjny motyw przemijania czasu, urody i dóbr ziemskich (wiersze Daniela Naborowskiego „Krótkość żywota”, „Marność” — życie ludzkie to „dźwięk, cień, dym, wiatr, błysk, głos, punkt”).',
+                  'Konceptyzm i Marinizm (Jan Andrzej Morsztyn): poezja dworska ma zaskoczyć, zaszokować czytelnika błyskotliwym pomysłem konstrukcyjnym (konceptem), np. porównaniem siebie (nieszczęśliwie zakochanego) do trupa w wierszu „Do trupa”.',
+                  'Sarmatyzm (specyfika polska!): przekonanie polskiej szlachty, że pochodzi od starożytnych wojowników Sarmatów. Z jednej strony rodziło to odwagę rycerską, umiłowanie „złotej wolności” i przywiązanie do tradycji, ale z drugiej — megalomanię narodową, ksenofobię, pijaństwo, warcholstwo i prywatę („Pamiętniki” Jana Chryzostoma Paska — od 2024 r. wykreślone z PP, kontekst / przejściowo 2025–2028).',
                   'Klasycyzm francuski XVII w. (Molier „Skąpiec”): równolegle do baroku we Francji rozwija się nurt racjonalny i harmonijny, zapowiadający Oświecenie.'
                 ],
                 essayUse: 'Sarmatyzm (Pasek, a później Kmicic w „Potopie” i szlachta w „Panu Tadeuszu”) to klucz do każdego tematu o polskich wadach i zaletach narodowych.'
@@ -99,6 +101,12 @@ export const LEVEL_2 = {
               }
             }
           ]
+        },
+        {
+          type: 'callout',
+          variant: 'info',
+          title: 'Reformacja (Renesans) vs Kontrreformacja (Barok) — szybkie porównanie na maturę',
+          text: 'Reformacja (XVI w., Marcin Luter 1517 r., Jan Kalwin) była buntem przeciwko nadużyciom w Kościele katolickim (sprzedaży odpustów) i zaowocowała powstaniem wyznań protestanckich, przekładami Biblii na języki narodowe oraz rozwojem piśmiennictwa po polsku („Polacy nie gęsi, iż swój język mają” — Mikołaj Rej). Kontrreformacja (od Soboru Trydenckiego 1545–1563, zakon jezuitów) była odpowiedzią Kościoła katolickiego: wewnętrzną reformą dyscypliny, walką z herezją (Indeks ksiąg zakazanych), edukacją w kolegiach jezuickich oraz barokową sztuką pełną przepychu, która miała poruszać emocje i przyciągać wiernych z powrotem do katolicyzmu.'
         }
       ]
     },
@@ -124,8 +132,8 @@ export const LEVEL_2 = {
                   'Bohater romantyczny (bajroniczny / werteryczny): wybitna, nadwrażliwa jednostka skłócona ze światem, przeżywająca najpierw nieszczęśliwą miłość i ból istnienia (weltschmerz), a następnie przemieniająca się w samotnego bojownika o wolność narodu (Gustaw → Konrad, Kordian).',
                   'Prometeizm (Konrad w Wielkiej Improwizacji): samotny bunt wybitnej jednostki przeciw Bogu w imię miłości do cierpiącego narodu i ludzkości.',
                   'Mesjanizm (Widzenie ks. Piotra w „Dziadach cz. III”): wizja Polski jako Chrystusa narodów — niewinnie ukrzyżowana przez zaborców, swoim cierpieniem odkupi grzechy Europy i zmartwychwstanie.',
-                  'Winkelriedyzm („Kordian” Słowackiego): polemika z biernym mesjanizmem! Polska ma być jak szwajcarski rycerz Arnold Winkelried — rzucić się do czynnej walki, zebrać w swoją pierś włócznie wrogów i przebić drogę do wolności innym narodom.',
-                  'Wallenrodyzm („Konrad Wallenrod”): tragiczna koncepcja walki z potężniejszym wrogiem za pomocą zdrady, maski i podstępu (metoda lisa i lwa z Machiavellego), która niszczy moralnie samego bohatera.'
+                  'Winkelriedyzm („Kordian” Słowackiego — od 2024 r. na PR; w wypracowaniu PP dopuszczony przejściowo 2025–2028): polemika z biernym mesjanizmem! Polska ma być jak szwajcarski rycerz Arnold Winkelried — rzucić się do czynnej walki, zebrać w swoją pierś włócznie wrogów i przebić drogę do wolności innym narodom.',
+                  'Wallenrodyzm („Konrad Wallenrod” — od 2024 r. wykreślony z listy PP; w wypracowaniu przejściowo 2025–2028): tragiczna koncepcja walki z potężniejszym wrogiem za pomocą zdrady, maski i podstępu (metoda lisa i lwa z Machiavellego), która niszczy moralnie samego bohatera.'
                 ],
                 essayUse: 'Zestawienie mesjanizmu Mickiewicza z winkelriedyzmem Słowackiego to pewniak przy każdym temacie o patriotyzmie, poświęceniu i walce.'
               }
@@ -212,7 +220,7 @@ export const LEVEL_2 = {
     { id: 'f2-10', front: 'Czym jest prometeizm i wallenrodyzm w Romantyzmie?', back: 'Prometeizm = bunt jednostki przeciw Bogu w imię dobra ludzkości (Konrad). Wallenrodyzm = walka podstępem i zdradą w imię ocalenia ojczyzny.' },
     { id: 'f2-11', front: 'Co to jest dekadentyzm w Młodej Polsce?', back: 'Poczucie schyłku wieku (fin de siècle), bezsensu istnienia, zmęczenia kulturą i bierności wobec świata.' },
     { id: 'f2-12', front: 'Jaką postawę reprezentowali Skamandryci na początku Dwudziestolecia międzywojennego?', back: 'Witalizm, radość z odzyskanej niepodległości, pochwałę codzienności i zwykłego człowieka (Tuwim, Lechoń, Wierzyński).' },
-    { id: 'f2-13', front: 'Czym różni się stoicyzm od epikureizmu w filozofii antycznej?', back: 'Stoicyzm zalecał spokój ducha (ataraksję) i rozumne przyjęcie losu niezależnie od emocji; epikureizm uczył rozumnego cieszenia się życiem („carpe diem”) bez lęku przed śmiercią i bogami.' },
+    { id: 'f2-13', front: 'Czym różni się stoicyzm od epikureizmu w filozofii antycznej?', back: 'Stoicyzm zalecał spokój ducha, wyzbycie się namiętności (apatheia) i rozumne przyjęcie losu niezależnie od emocji; epikureizm uczył rozumnego cieszenia się życiem („carpe diem”) i osiągania spokoju (ataraksji) bez lęku przed śmiercią i bogami.' },
     { id: 'f2-14', front: 'Jakie trzy wzorce osobowe (parenetyczne) dominowały w Średniowieczu?', back: '1) Rycerz (Roland — honor, wiara, wierność suwerenowi); 2) Asceta (św. Aleksy — wyrzeczenie się majątku dla Boga); 3) Władca (Karol Wielki — sprawiedliwy obrońca chrześcijaństwa).' },
     { id: 'f2-15', front: 'Co oznaczają średniowieczne toposy „Danse Macabre” i „Memento Mori”?', back: 'Danse Macabre (taniec śmierci) ukazuje równość wszystkich stanów wobec śmierci; Memento Mori („pamiętaj o śmierci”) przypomina o przemijaniu i potrzebie zbawienia.' },
     { id: 'f2-16', front: 'Czym charakteryzuje się barokowy konceptyzm oraz sarmatyzm?', back: 'Konceptyzm to budowanie utworu na zaskakującym pomyśle i paradoksie (Morsztyn); sarmatyzm to ideologia polskiej szlachty łącząca dumę ze złotej wolności z ksenofobią i przywiązaniem do tradycji.' },
@@ -288,7 +296,7 @@ export const LEVEL_2 = {
       q: 'Która filozofia antyczna zalecała wewnętrzny spokój, dystans wobec namiętności i zgodę na los?',
       options: ['Epikureizm', 'Stoicyzm', 'Sceptycyzm', 'Sofistyka'],
       correct: 1,
-      explanation: 'Stoicyzm uczył równowagi ducha (ataraksji) i kierowania się rozumem zarówno w szczęściu, jak i w nieszczęściu.'
+      explanation: 'Stoicyzm uczył równowagi ducha oraz opanowania namiętności (apatheia) i kierowania się rozumem zarówno w szczęściu, jak i w nieszczęściu.'
     },
     {
       q: 'Jakie trzy wzorce osobowe (parenetyczne) są najbardziej reprezentatywne dla Średniowiecza?',
