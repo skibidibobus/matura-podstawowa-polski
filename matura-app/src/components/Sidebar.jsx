@@ -1,4 +1,5 @@
-import { BookOpen, CheckCircle2, Maximize2, Minimize2, Moon, RotateCcw, Sun, Trophy, User } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { BookOpen, Check, CheckCircle2, ChevronDown, ChevronRight, Maximize2, Minimize2, Moon, RotateCcw, Sun, Trophy, User } from 'lucide-react';
 
 const COURSE_BRAND_SUBTITLES = {
   ustna: 'Kurs 76 pytań jawnych • CKE 2026–2028',
@@ -26,7 +27,22 @@ export function Sidebar({
   authUser = null,
   onOpenAccount,
   isLevelCompleted,
+  checkedNotes = {},
+  onToggleNote,
+  activeNoteId = null,
+  onSelectNote,
+  onToggleLevelNotes,
 }) {
+  const [expandedLevels, setExpandedLevels] = useState(() =>
+    activeLevelId ? { [activeLevelId]: true } : {}
+  );
+
+  useEffect(() => {
+    if (activeLevelId) {
+      setExpandedLevels((prev) => (prev[activeLevelId] ? prev : { ...prev, [activeLevelId]: true }));
+    }
+  }, [activeLevelId]);
+
   const totalLevels = levels?.length || 0;
   const progressPct = totalLevels > 0 ? Math.round((completedLevelsCount / totalLevels) * 100) : 0;
 
@@ -148,23 +164,98 @@ export function Sidebar({
         {(levels || []).map((lvl) => {
           const done = isLevelCompleted(lvl);
           const active = !reviewMode && activeLevelId === lvl.id;
+          const levelNotes = lvl.notes || [];
+          const checkedCount = levelNotes.filter((n) => checkedNotes[n.id]).length;
+          const allNotesDone = levelNotes.length > 0 && checkedCount === levelNotes.length;
+          const isExpanded = !!expandedLevels[lvl.id];
+
           return (
-            <button
-              key={lvl.id}
-              type="button"
-              className={`level-item ${active ? 'active' : ''} ${done ? 'completed' : ''}`}
-              onClick={() => onSelectLevel(lvl.id)}
-            >
-              <span className="level-num">
-                {done ? <CheckCircle2 size={15} /> : (lvl.displayNum ?? lvl.id)}
-              </span>
-              <span className="level-meta">
-                <div className="level-name">{lvl.title}</div>
-                <div className="level-sub">
-                  {lvl.code} • {lvl.duration}
+            <div key={lvl.id} className="level-group">
+              <div className="level-row">
+                <button
+                  type="button"
+                  className={`level-item ${active ? 'active' : ''} ${done || allNotesDone ? 'completed' : ''}`}
+                  onClick={() => {
+                    if (active) {
+                      setExpandedLevels((prev) => ({ ...prev, [lvl.id]: !prev[lvl.id] }));
+                    } else {
+                      setExpandedLevels((prev) => ({ ...prev, [lvl.id]: true }));
+                      onSelectLevel(lvl.id);
+                    }
+                  }}
+                >
+                  <span className="level-num">
+                    {done || allNotesDone ? <CheckCircle2 size={15} /> : (lvl.displayNum ?? lvl.id)}
+                  </span>
+                  <span className="level-meta">
+                    <div className="level-name">{lvl.title}</div>
+                    <div className="level-sub">
+                      {lvl.code} • {levelNotes.length > 0 ? `${checkedCount}/${levelNotes.length} tematów` : lvl.duration}
+                    </div>
+                  </span>
+                  {levelNotes.length > 0 && (
+                    <span className="level-chevron" aria-hidden="true">
+                      {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+                    </span>
+                  )}
+                </button>
+                {levelNotes.length > 0 && onToggleLevelNotes && (
+                  <button
+                    type="button"
+                    className={`level-block-check ${allNotesDone ? 'checked' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onToggleLevelNotes(lvl);
+                    }}
+                    title={allNotesDone ? 'Odznacz wszystkie tematy w bloku' : 'Oznacz cały blok jako zrobiony'}
+                    aria-label={allNotesDone ? 'Odznacz cały blok' : 'Oznacz cały blok jako zrobiony'}
+                  >
+                    <Check size={13} />
+                  </button>
+                )}
+              </div>
+
+              {isExpanded && levelNotes.length > 0 && (
+                <div className="level-sublist">
+                  {levelNotes.map((note, idx) => {
+                    const noteChecked = !!checkedNotes[note.id];
+                    const noteActive = active && activeNoteId === note.id;
+                    return (
+                      <div key={note.id} className={`subtopic-row ${noteActive ? 'active' : ''} ${noteChecked ? 'done' : ''}`}>
+                        <button
+                          type="button"
+                          className="subtopic-link"
+                          onClick={() => {
+                            if (onSelectNote) {
+                              onSelectNote(lvl.id, note.id);
+                            } else {
+                              onSelectLevel(lvl.id);
+                            }
+                          }}
+                        >
+                          <span className="subtopic-idx">{idx + 1}.</span>
+                          <span className="subtopic-title">{note.title}</span>
+                        </button>
+                        {onToggleNote && (
+                          <button
+                            type="button"
+                            className={`subtopic-check ${noteChecked ? 'checked' : ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onToggleNote(note.id);
+                            }}
+                            title={noteChecked ? 'Odznacz temat' : 'Oznacz temat jako zrobiony'}
+                            aria-label={`Oznacz temat: ${note.title}`}
+                          >
+                            <Check size={12} />
+                          </button>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
-              </span>
-            </button>
+              )}
+            </div>
           );
         })}
 

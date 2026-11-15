@@ -1279,3 +1279,183 @@ button {
   border-color: var(--danger);
   color: var(--danger);
 }
+
+/* Sidebar expandable sub-topics & block checkmarks */
+.level-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.level-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.level-row .level-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.level-chevron {
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.level-block-check {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--bg-panel);
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.level-block-check:hover {
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.level-block-check.checked {
+  background: rgba(16, 185, 129, 0.16);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.level-sublist {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-left: 14px;
+  margin-left: 12px;
+  border-left: 1px solid var(--border);
+}
+
+.subtopic-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  border-radius: 7px;
+  transition: background 0.14s ease;
+}
+
+.subtopic-row:hover {
+  background: var(--bg-hover);
+}
+
+.subtopic-row.active {
+  background: rgba(124, 92, 255, 0.14);
+}
+
+.subtopic-link {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  line-height: 1.3;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+.subtopic-row.active .subtopic-link,
+.subtopic-link:hover {
+  color: var(--text);
+}
+
+.subtopic-row.done .subtopic-link {
+  color: var(--success);
+}
+
+.subtopic-idx {
+  font-weight: 700;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+.subtopic-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.subtopic-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.subtopic-check:hover {
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.subtopic-check.checked {
+  background: var(--success);
+  border-color: var(--success);
+  color: #fff;
+}
+
+/* Topic pills bar inside NotesView */
+.topic-pills-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.topic-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.topic-pill:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.topic-pill.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.topic-pill.done:not(.active) {
+  border-color: var(--success);
+  color: var(--success);
+}

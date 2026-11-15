@@ -1,7 +1,14 @@
 import { useState } from 'react';
-import { Check, ArrowRight, ChevronDown, ChevronUp, Sparkles, BookOpen } from 'lucide-react';
+import { Check, ArrowLeft, ArrowRight, ChevronDown, ChevronUp, Sparkles, BookOpen } from 'lucide-react';
 
-export function NotesView({ level, checkedNotes, onToggleNote, onGoToFlashcards }) {
+export function NotesView({
+  level,
+  checkedNotes,
+  onToggleNote,
+  onGoToFlashcards,
+  activeNoteId = null,
+  onSelectNoteId,
+}) {
   const [expandedCards, setExpandedCards] = useState({});
 
   const toggleCard = (cardKey) => {
@@ -26,10 +33,41 @@ export function NotesView({ level, checkedNotes, onToggleNote, onGoToFlashcards 
   };
 
   const notes = level?.notes || [];
+  const selectedIndex = activeNoteId ? notes.findIndex((n) => n.id === activeNoteId) : -1;
+  const visibleNotes = selectedIndex >= 0 ? [notes[selectedIndex]] : notes;
 
   return (
     <div className="notes-stack">
-      {notes.map((section) => {
+      {notes.length > 1 && onSelectNoteId && (
+        <div className="topic-pills-bar" role="navigation" aria-label="Tematy w bloku">
+          <button
+            type="button"
+            className={`topic-pill ${selectedIndex < 0 ? 'active' : ''}`}
+            onClick={() => onSelectNoteId(null)}
+          >
+            Wszystkie tematy ({notes.length})
+          </button>
+          {notes.map((n, idx) => {
+            const done = !!checkedNotes[n.id];
+            const isSel = selectedIndex === idx;
+            return (
+              <button
+                key={n.id}
+                type="button"
+                className={`topic-pill ${isSel ? 'active' : ''} ${done ? 'done' : ''}`}
+                onClick={() => onSelectNoteId(n.id)}
+              >
+                {done && <Check size={12} />}
+                <span>
+                  {idx + 1}. {n.title}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      {visibleNotes.map((section) => {
         const isChecked = !!checkedNotes[section.id];
         const blocks = section.blocks || [];
         const hasExpandable = blocks.some(
@@ -200,13 +238,55 @@ export function NotesView({ level, checkedNotes, onToggleNote, onGoToFlashcards 
       })}
 
       <div className="footer-actions">
-        <span style={{ fontSize: '0.86rem', color: 'var(--text-muted)' }}>
-          Kliknij dowolną kartę powyżej, aby rozwinąć pełne wyjaśnienie, streszczenie i argumenty.
-        </span>
-        <button type="button" className="primary-btn" onClick={onGoToFlashcards}>
-          Przejdź do fiszek
-          <ArrowRight size={16} />
-        </button>
+        {selectedIndex >= 0 && onSelectNoteId ? (
+          <>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              <button
+                type="button"
+                className="secondary-btn"
+                onClick={() => onSelectNoteId(null)}
+              >
+                <ArrowLeft size={15} />
+                Wszystkie tematy
+              </button>
+              {selectedIndex > 0 && (
+                <button
+                  type="button"
+                  className="secondary-btn"
+                  onClick={() => onSelectNoteId(notes[selectedIndex - 1].id)}
+                >
+                  <ArrowLeft size={15} />
+                  Poprzedni temat
+                </button>
+              )}
+            </div>
+            {selectedIndex < notes.length - 1 ? (
+              <button
+                type="button"
+                className="primary-btn"
+                onClick={() => onSelectNoteId(notes[selectedIndex + 1].id)}
+              >
+                Następny temat
+                <ArrowRight size={16} />
+              </button>
+            ) : (
+              <button type="button" className="primary-btn" onClick={onGoToFlashcards}>
+                Przejdź do fiszek
+                <ArrowRight size={16} />
+              </button>
+            )}
+          </>
+        ) : (
+          <>
+            <span style={{ fontSize: '0.86rem', color: 'var(--text-muted)' }}>
+              Kliknij dowolną kartę powyżej, aby rozwinąć pełne wyjaśnienie, streszczenie i argumenty.
+            </span>
+            <button type="button" className="primary-btn" onClick={onGoToFlashcards}>
+              Przejdź do fiszek
+              <ArrowRight size={16} />
+            </button>
+          </>
+        )}
       </div>
     </div>
   );

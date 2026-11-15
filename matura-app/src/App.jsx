@@ -70,6 +70,7 @@ export function App() {
     normalizeActiveLevels(initial)
   );
   const [stage, setStage] = useState('notes'); // 'notes' | 'flashcards' | 'quiz'
+  const [activeNoteId, setActiveNoteId] = useState(null);
   const [reviewMode, setReviewMode] = useState(false);
   const [checkedNotes, setCheckedNotes] = useState(initial.checkedNotes || {});
   const [cardStatus, setCardStatus] = useState(initial.cardStatus || {});
@@ -282,12 +283,34 @@ export function App() {
     setActiveCourse(course);
     setReviewMode(false);
     setStage('notes');
+    setActiveNoteId(null);
   };
 
   const handleSelectLevel = (id) => {
     setReviewMode(false);
     setActiveLevelByCourse((prev) => ({ ...prev, [activeCourse]: id }));
     setStage('notes');
+    setActiveNoteId(null);
+  };
+
+  const handleSelectNote = (levelId, noteId) => {
+    setReviewMode(false);
+    setActiveLevelByCourse((prev) => ({ ...prev, [activeCourse]: levelId }));
+    setStage('notes');
+    setActiveNoteId(noteId);
+  };
+
+  const handleToggleLevelNotes = (lvl) => {
+    const notes = lvl?.notes || [];
+    if (notes.length === 0) return;
+    setCheckedNotes((prev) => {
+      const allDone = notes.every((n) => !!prev[n.id]);
+      const next = { ...prev };
+      for (const n of notes) {
+        next[n.id] = !allDone;
+      }
+      return next;
+    });
   };
 
   const notesDoneCount = activeLevel?.notes?.filter((n) => checkedNotes[n.id]).length || 0;
@@ -316,6 +339,11 @@ export function App() {
         authUser={authSession?.user || null}
         onOpenAccount={() => setAccountModalOpen(true)}
         isLevelCompleted={isLevelCompleted}
+        checkedNotes={checkedNotes}
+        onToggleNote={handleToggleNote}
+        activeNoteId={activeNoteId}
+        onSelectNote={handleSelectNote}
+        onToggleLevelNotes={handleToggleLevelNotes}
       />
 
       <AccountModal
@@ -430,6 +458,8 @@ export function App() {
                 checkedNotes={checkedNotes}
                 onToggleNote={handleToggleNote}
                 onGoToFlashcards={() => setStage('flashcards')}
+                activeNoteId={activeNoteId}
+                onSelectNoteId={setActiveNoteId}
               />
             )}
 
