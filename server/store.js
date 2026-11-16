@@ -3,7 +3,8 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { hashPassword } from './auth.js';
 
-export const ALL_COURSES = ['probna', 'kurs', 'ustna'];
+export const ALL_COURSES = ['probna', 'kurs', 'ustna', 'fizyka'];
+export const DEFAULT_STUDENT_COURSES = ['probna', 'kurs', 'ustna'];
 const LEGACY_FULL_ACCESS_USERNAMES = new Set(['dominik-3607', 'blanka-6113', 'hubert-9626']);
 
 export function sanitizeAllowedCourses(raw) {
@@ -86,7 +87,7 @@ function normalizeUserCourses(user) {
   }
 
   if (isLegacyPermanent) {
-    user.allowedCourses = [...ALL_COURSES];
+    user.allowedCourses = [...DEFAULT_STUDENT_COURSES];
     user.accessExpiresAt = null;
     user.accountType = 'long_term';
     return user;
@@ -101,11 +102,11 @@ function normalizeUserCourses(user) {
   }
 
   // Migrate existing non-permanent students without an expiration date to 14 days free access,
-  // preserving any existing access and unlocking all courses if they had none yet.
+  // preserving any existing access and unlocking default courses if they had none yet.
   if (user.accessExpiresAt === undefined) {
     user.accessExpiresAt = computeTrialExpiresAt(DEFAULT_TRIAL_DAYS);
     if (user.allowedCourses.length === 0) {
-      user.allowedCourses = [...ALL_COURSES];
+      user.allowedCourses = [...DEFAULT_STUDENT_COURSES];
     }
   }
 
@@ -119,8 +120,10 @@ export const DEFAULT_PROGRESS = {
     probna: 1,
     ustna: 101,
     kurs: 'dept-01',
+    fizyka: 'phys-01',
   },
   checkedNotes: {},
+  completedTasks: {},
   cardStatus: {},
   quizScores: {},
   quizAttempts: {},
@@ -130,7 +133,7 @@ export function sanitizeProgress(raw) {
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) {
     return structuredClone(DEFAULT_PROGRESS);
   }
-  const validCourses = ['probna', 'kurs', 'ustna'];
+  const validCourses = ['probna', 'kurs', 'ustna', 'fizyka'];
   const validThemes = ['dark', 'light'];
   const savedLevels =
     raw.activeLevelByCourse && typeof raw.activeLevelByCourse === 'object' && !Array.isArray(raw.activeLevelByCourse)
@@ -144,10 +147,15 @@ export function sanitizeProgress(raw) {
       probna: savedLevels.probna ?? 1,
       ustna: savedLevels.ustna ?? 101,
       kurs: savedLevels.kurs ?? 'dept-01',
+      fizyka: savedLevels.fizyka ?? 'phys-01',
     },
     checkedNotes:
       raw.checkedNotes && typeof raw.checkedNotes === 'object' && !Array.isArray(raw.checkedNotes)
         ? raw.checkedNotes
+        : {},
+    completedTasks:
+      raw.completedTasks && typeof raw.completedTasks === 'object' && !Array.isArray(raw.completedTasks)
+        ? raw.completedTasks
         : {},
     cardStatus:
       raw.cardStatus && typeof raw.cardStatus === 'object' && !Array.isArray(raw.cardStatus)
@@ -169,6 +177,7 @@ const MAX_LOGS = 300;
 
 function classifyNoteCourse(noteId) {
   const id = String(noteId || '');
+  if (id.startsWith('pn')) return 'fizyka';
   if (id.startsWith('kn')) return 'kurs';
   if (id.startsWith('u')) return 'ustna';
   return 'probna';
@@ -176,6 +185,7 @@ function classifyNoteCourse(noteId) {
 
 function classifyCardCourse(cardId) {
   const id = String(cardId || '');
+  if (id.startsWith('pf')) return 'fizyka';
   if (id.startsWith('kf')) return 'kurs';
   if (id.startsWith('uf')) return 'ustna';
   return 'probna';
@@ -183,6 +193,7 @@ function classifyCardCourse(cardId) {
 
 function classifyQuizCourse(quizKey) {
   const key = String(quizKey || '');
+  if (key.startsWith('phys-')) return 'fizyka';
   if (key.startsWith('dept-')) return 'kurs';
   const num = Number(key);
   if (Number.isFinite(num) && num >= 100) return 'ustna';
@@ -195,6 +206,7 @@ export function computeProgressStats(progress) {
     probna: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, quizAttempts: 0, xp: 0 },
     kurs: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, quizAttempts: 0, xp: 0 },
     ustna: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, quizAttempts: 0, xp: 0 },
+    fizyka: { notesCount: 0, knownCards: 0, reviewCards: 0, quizzesTaken: 0, quizAttempts: 0, xp: 0 },
   };
 
   for (const [noteId, done] of Object.entries(p.checkedNotes || {})) {
@@ -219,17 +231,22 @@ export function computeProgressStats(progress) {
     }
   }
 
-  for (const c of ['probna', 'kurs', 'ustna']) {
+  for (const c of ['probna', 'kurs', 'ustna', 'fizyka']) {
     const s = byCourse[c];
     s.quizAttempts = Math.max(s.quizzesTaken, s.quizAttempts);
     s.xp = s.notesCount * 15 + s.knownCards * 10 + s.quizzesTaken * 80;
   }
 
-  const notesCount = byCourse.probna.notesCount + byCourse.kurs.notesCount + byCourse.ustna.notesCount;
-  const knownCards = byCourse.probna.knownCards + byCourse.kurs.knownCards + byCourse.ustna.knownCards;
-  const reviewCards = byCourse.probna.reviewCards + byCourse.kurs.reviewCards + byCourse.ustna.reviewCards;
-  const quizzesTaken = byCourse.probna.quizzesTaken + byCourse.kurs.quizzesTaken + byCourse.ustna.quizzesTaken;
-  const quizAttempts = byCourse.probna.quizAttempts + byCourse.kurs.quizAttempts + byCourse.ustna.quizAttempts;
+  const notesCount =
+    byCourse.probna.notesCount + byCourse.kurs.notesCount + byCourse.ustna.notesCount + byCourse.fizyka.notesCount;
+  const knownCards =
+    byCourse.probna.knownCards + byCourse.kurs.knownCards + byCourse.ustna.knownCards + byCourse.fizyka.knownCards;
+  const reviewCards =
+    byCourse.probna.reviewCards + byCourse.kurs.reviewCards + byCourse.ustna.reviewCards + byCourse.fizyka.reviewCards;
+  const quizzesTaken =
+    byCourse.probna.quizzesTaken + byCourse.kurs.quizzesTaken + byCourse.ustna.quizzesTaken + byCourse.fizyka.quizzesTaken;
+  const quizAttempts =
+    byCourse.probna.quizAttempts + byCourse.kurs.quizAttempts + byCourse.ustna.quizAttempts + byCourse.fizyka.quizAttempts;
   const xp = notesCount * 15 + knownCards * 10 + quizzesTaken * 80;
 
   return {
@@ -544,7 +561,7 @@ export class JsonStore {
     displayName,
     passwordHash,
     role = 'student',
-    allowedCourses = ALL_COURSES,
+    allowedCourses = DEFAULT_STUDENT_COURSES,
     durationDays = DEFAULT_TRIAL_DAYS,
     accountType = 'long_term',
     initialProgress = null,
@@ -622,7 +639,7 @@ export class JsonStore {
             : Date.now();
         user.accessExpiresAt = new Date(baseMs + d * MS_PER_DAY).toISOString();
         if (!Array.isArray(user.allowedCourses) || user.allowedCourses.length === 0) {
-          user.allowedCourses = [...ALL_COURSES];
+          user.allowedCourses = [...DEFAULT_STUDENT_COURSES];
         }
       }
     }

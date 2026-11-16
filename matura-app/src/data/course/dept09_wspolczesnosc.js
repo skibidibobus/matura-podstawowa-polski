@@ -3,7 +3,7 @@ export const DEPT_09 = {
   displayNum: 9,
   code: 'DZIAŁ 9',
   title: 'Literatura Współczesna — Poezja i Groteska',
-  subtitle: '„Tango” Mrożka (w całości), powojenna poezja świadectwa (Różewicz, Herbert, Szymborska, Miłosz) i proza stanu wojennego',
+  subtitle: '„Tango” Mrożka (w całości), powojenna poezja świadectwa (Różewicz, Herbert, Szymborska, Miłosz) i proza współczesna (Nowakowski)',
   duration: '85 min',
   xp: 260,
   notes: [
@@ -20,7 +20,7 @@ export const DEPT_09 = {
           title: 'Uwaga na błąd kardynalny w „Tangu” Mrożka!',
           items: [
             '1. Artur NIE buntuje się przeciwko rygorom tradycji, lecz PRZECIWKO ICH BRAKOWI! To syn domaga się zakazów, obyczaju i ślubu, a rodzice (Stomil i Eleonora) forsują całkowitą anarchię i swobodę seksualną.',
-            '2. Artur NIE ginie w pojedynku ani przez samobójstwo — zostaje zdradziecko zabity ciosem w kark (kaniakiem) przez Edka tuż po tym, gdy dowiaduje się o zdradzie narzeczonej Ali.',
+            '2. Artur NIE ginie w pojedynku ani przez samobójstwo — zostaje zdradziecko zabity przez Edka uderzeniem kolbą rewolweru i ciosem splecionymi dłońmi w kark tuż po tym, gdy dowiaduje się o zdradzie narzeczonej Ali.',
             '3. Finałowy taniec la cumparsita tańczy Edek z wujem Eugeniuszem (reprezentantem dawnej inteligencji, który oportunistycznie zakłada lokajskie getry i podporządkowuje się nowemu władcy), a NIE Artur czy Stomil.'
           ]
         },
@@ -39,7 +39,7 @@ export const DEPT_09 = {
           type: 'quote',
           label: 'Finałowe didaskalia dramatu — taniec La Cumparsita',
           text:
-            '„Edek bierze Eugeniusza wpół. [...] Z głośnika rozlega się z całą siłą ostre, huczne, zmysłowe tango „La Cumparsita”. Grają je same instrumenty dęte, głośno, brutalnie, z ogromnym wyrazem. Edek tańczy z Eugeniuszem tango. Edek prowadzi. Eugeniusz posłusznie stawia kroki. Tańczą poprawnie, z wielką powagą, z elegancją typową dla tanga. Edek ma na sobie za ciasną marynarkę Artura. [...] Kurtyna zapada powoli”.'
+            '„Ustawiają się w prawidłowej pozycji, czekają na takt i ruszają. Edek prowadzi. Tańczą. Eugeniusz siwy, dostojny, w czarnym żakiecie, sztuczkowych spodniach, z czerwonym goździkiem w butonierce. Edek w zbyt ciasnej marynarce Artura, z rękawów za krótkich wystają jego potężne ręce, obejmuje Eugeniusza wpół. Tańczą poprawnie, z wielką powagą, z figurami i przejściami tanga popisowego. Tańczą, dopóki nie spadnie kurtyna”.'
         },
         {
           type: 'grid',
@@ -76,8 +76,8 @@ export const DEPT_09 = {
               }
             },
             {
-              term: 'Edek (Edward Wachmistrz) — bezwzględny brutal',
-              desc: 'Prymitywny sługus, karciarz i kochanek matki, który ostatecznie przejmuje absolutną władzę.',
+              term: 'Edek — bezwzględny brutal i prostak',
+              desc: 'Prymitywny osobnik, karciarz i kochanek matki, który ostatecznie przejmuje absolutną władzę.',
               details: {
                 summary:
                   'Początkowo tolerowany jako nieszkodliwy „prostaczek z ludu”. W rzeczywistości cyniczny pragmatyk, który bez skrupułów wykorzystuje naiwność gospodarzy.',
@@ -99,7 +99,7 @@ export const DEPT_09 = {
                 bullets: [
                   'Nawiązanie do „Hamleta” Szekspira: Artur jak Hamlet chce pomścić upadek moralny matki i zabić jej kochanka, lecz paraliżuje go groteskowa rzeczywistość.',
                   'Nawiązanie do „Wesela” Wyspiańskiego: finałowe tango La Cumparsita to współczesny odpowiednik chocholego tańca — letarg i zniewolenie narodu przez obcą, prymitywną siłę.',
-                  'Klamra dramatu: sztuka zaczyna się i kończy grą w karty oraz zmysłowym tangiem.'
+                  'Klamra dramatu: sztuka zaczyna się groteskową grą w karty przy katafalku, a kończy zmysłowym tangiem „La Cumparsita” tańczonym przez Edka i Eugeniusza.'
                 ],
                 essayUse:
                   'W pytaniach i wypracowaniach o roli groteski, funkcji intertekstualności i nawiązaniach do dramatu narodowego.'
@@ -124,7 +124,7 @@ export const DEPT_09 = {
           title: 'Wiersz „Ocalony” (1947) — kluczowe tezy interpretacyjne',
           items: [
             'Dramat 24-letniego podmiotu lirycznego: ocalał fizycznie z wojennej rzezi, lecz został doszczętnie zniszczony moralnie i psychicznie.',
-            'Zrównanie wartości: wojna unieważniła fundamenty etyki europejskiej — pojęcia stały się pustymi dźwiękami („cnota i występek / prawda i kłamstwo / piękno i brzydota / męstwo i tchórzostwo — znaczyły dokładnie to samo”).',
+            'Zrównanie wartości: wojna unieważniła fundamenty etyki europejskiej — pojęcia stały się pustymi dźwiękami („Pojęcia są tylko wyrazami: / cnota i występek / prawda i kłamstwo / piękno i brzydota / męstwo i tchórzostwo. / Jednako waży cnota i występek”).',
             'Zatarte granice: człowiek okazał się tożsamy ze zwierzęciem i rzeczą („człowieka tak się zabija jak zwierzę / widziałem: / furgony porąbanych ludzi / którzy nie zostaną zbawieni”).',
             'Błaganie o mistrza: finałowa prośba o nauczyciela, który „od nowa nazwie rzeczy i pojęcia / i oddzieli światło od ciemności” to krzyk o odbudowę Dekalogu od zera.'
           ]
@@ -145,7 +145,7 @@ export const DEPT_09 = {
                 summary:
                   'Po Auschwitz tradycyjna, ozdobna poezja wydała się Różewiczowi niemoralna. Stworzył język ogołocony z metafor.',
                 bullets: [
-                  'Brak rymów, brak regularnego metrum i brak znaków interpunkcyjnych.',
+                  'Brak rymów, brak regularnego metrum oraz skrajnie oszczędna interpunkcja (częsta rezygnacja ze znaków przestankowych).',
                   'Krótkie, jedno- lub dwuwyrazowe wersy nadające wagę każdemu słowu.',
                   'Oparcie dynamiki na pauzach i przerzutniach semantycznych.',
                   'Styl zbliżony do oszczędnego protokołu sądowego lub zeznania naocznego świadka.'
@@ -159,7 +159,7 @@ export const DEPT_09 = {
               desc: 'Gorzka satyra i zarazem uniwersalny apel przeciwko codziennemu egoizmowi.',
               details: {
                 summary:
-                  'Wiersz z podtytułem „szkic do dramatu współczesnego”. Ludożercami poeta nazywa zwykłych ludzi, którzy w powojennej szarzyźnie traktują innych jak wrogów.',
+                  'Wiersz z tomu „Formy” (1958). Ludożercami poeta nazywa zwykłych ludzi, którzy w powszechnej znieczulicy traktują innych jak wrogów.',
                 bullets: [
                   'Obrazy codziennej agresji: walka o miejsce w przedziale kolejowym, kupowanie gazety z pogardą, zgrzytanie zębami na drugiego człowieka.',
                   'Przesłanie etyczne: „Nie zjadajmy się Dobrze / bo nie zmartwychwstaniemy / Naprawdę”.',
@@ -247,7 +247,7 @@ export const DEPT_09 = {
           title: 'Czesław Miłosz — poeta jako pamięć i sumienie',
           items: [
             '„Który skrzywdziłeś” (1950): wiersz-ostrzeżenie przed pychą totalitarnych dyktatorów. Poeta staje się trybunałem skrzywdzonych: tyran może wymordować poddanych, ale słowo poety ocali pamięć o zbrodni („Nie bądź bezpieczny. Poeta pamięta. / Możesz go zabić — narodzi się nowy. / Spisane będą czyny i rozmowy”).',
-            '„Campo di Fiori” (1943): zestawienie męczeńskiej śmierci filozofa Giordana Bruna na rzymskim stosie w 1600 r. z zagładą getta warszawskiego w 1643 r. Symbolem obojętności jest wirująca warszawska karuzela obok płonącego getta. Poeta postuluje „bunt poetyckiego słowa” przeciwko samotności ofiar.'
+            '„Campo di Fiori” (1943): zestawienie męczeńskiej śmierci filozofa Giordana Bruna na rzymskim stosie w 1600 r. z zagładą getta warszawskiego w 1943 r. Symbolem obojętności jest wirująca warszawska karuzela obok płonącego getta. Poeta postuluje „bunt poetyckiego słowa” przeciwko samotności ofiar.'
           ]
         },
         {
@@ -255,8 +255,8 @@ export const DEPT_09 = {
           variant: 'blue',
           title: 'Wisława Szymborska — filozofia zachwytu i mikrokosmosu',
           items: [
-            '„Nic dwa razy” (1957): afirmacja niepowtarzalności ludzkiego losu i heraklitejskiej zmienności („Żaden dzień się nie powtórzy / nie ma dwóch podobnych nocy / dwóch tych samych spojrzeń w oczy”).',
-            '„Kot w pustym mieszkaniu” (1993): przejmujący obraz żałoby i pustki po stracie bliskiej osoby ukazany oczami osamotnionego zwierzęcia („Umrzeć — tego nie robi się kotu / Bo co ma począć kot w pustym mieszkaniu”). Brak patosu potęguje tragizm śmierci.',
+            '„Nic dwa razy” (1957): afirmacja niepowtarzalności ludzkiego losu i heraklitejskiej zmienności („Żaden dzień się nie powtórzy, / nie ma dwóch podobnych nocy, / dwóch tych samych pocałunków, / dwóch jednakich spojrzeń w oczy”).',
+            '„Kot w pustym mieszkaniu” (1993): przejmujący obraz żałoby i pustki po stracie bliskiej osoby ukazany oczami osamotnionego zwierzęcia („Umrzeć — tego nie robi się kotu. / Bo co ma począć kot / w pustym mieszkaniu”). Brak patosu potęguje tragizm śmierci.',
             '„Radość pisania” (1967): autotematyczny manifest potęgi twórczej poety. Pisanie to „zemsta ręki śmiertelnej” nad niszczącym czasem — pisarz zachowuje istnienie wbrew śmierci.'
           ]
         },
@@ -264,13 +264,13 @@ export const DEPT_09 = {
           type: 'grid',
           items: [
             {
-              term: 'Marek Nowakowski — „Górą Edek” i proza stanu wojennego',
-              desc: 'Współczesne opowiadanie nawiązujące tytułem i przesłaniem do „Tanga” Mrożka.',
+              term: 'Marek Nowakowski — „Górą «Edek»” (z tomu „Prawo prerii”, 1999)',
+              desc: 'Opowiadanie z lat 90. nawiązujące tytułem i przesłaniem do „Tanga” Mrożka.',
               details: {
                 summary:
-                  'Znakomite opowiadanie obyczajowe ukazujące konfrontację inteligenta w małym Fiacie z chamskim kierowcą dużego Fiata (lub Forda) na warszawskim skrzyżowaniu.',
+                  'Znakomite opowiadanie obyczajowe ukazujące konfrontację inteligenta w małym fiacie („maluchu”) z chamskim kierowcą szafirowego forda walczącym o miejsce parkingowe przy warszawskiej ulicy.',
                 bullets: [
-                  'Inteligent jest spychany z pasa ruchu przez bezczelnego kierowcę. Chce zaprotestować, lecz gdy widzi potężnego, prostackiego osiłka w skórzanej kurtce, spuszcza wzrok i ustępuje.',
+                  'Inteligent znajduje wolne miejsce przy krawężniku, lecz zostaje bezczelnie ubiegnięty przez kierowcę większego, zachodniego auta. Chce zaprotestować, lecz gdy widzi potężnego, prostackiego osiłka, rezygnuje z kłótni i ustępuje.',
                   'Tytułowy „Edek” to ucieleśnienie triumfu chamstwa, siły i bezprawia — wprost nawiązujący do Edka z „Tanga” Mrożka.',
                   'Autor stawia diagnozę polskiemu społeczeństwu: kultura, maniery i inteligencja kapitulują przed agresywnym prymitywizmem.'
                 ],
@@ -289,7 +289,7 @@ export const DEPT_09 = {
     {
       id: 'kf9-1',
       front: 'Jaka jest rola katafalku i wózka dziecięcego w salonie Stomila w „Tangu” Mrożka?',
-      back: 'Katafalk po dziadku (sprzed 5 lat) i wózek Artura to symbole chaosu, braku formy i odrzucenia tradycji przez pokolenie rodziców.',
+      back: 'Katafalk po dziadku (sprzed 10 lat) i wózek Artura to symbole chaosu, braku formy i odrzucenia tradycji przez pokolenie rodziców.',
       hint: 'Pomyśl o przedmiotach z różnych etapów życia porzuconych w salonie.',
       category: 'lektura'
     },
@@ -303,13 +303,13 @@ export const DEPT_09 = {
     {
       id: 'kf9-3',
       front: 'Kto i w jaki sposób zabija Artura w finale „Tanga”?',
-      back: 'Edek zabija Artura ciosem w kark (kaniakiem) od tyłu, po tym gdy Artur załamał się zdradą Ali.',
+      back: 'Edek zabija Artura od tyłu uderzeniem kolbą rewolweru i ciosem splecionych dłoni w kark, po tym gdy Artur załamał się zdradą Ali.',
       hint: 'Prymitywna siła vs bezbronny intelektualista.',
       category: 'bohater'
     },
     {
       id: 'kf9-4',
-      front: 'Jakie znaczenie ma finałowy taniec la cumparsita w „Tangu” i kto go tańczy?',
+      front: 'Jakie znaczenie ma finałowy taniec „La Cumparsita” w „Tangu” i kto go tańczy?',
       back: 'Tańczą go Edek z wujem Eugeniuszem. Oznacza triumf prymitywnej siły fizycznej (Edek) i kapitulację konformistycznych elit (Eugeniusz).',
       hint: 'Aluzja do chocholego tańca z „Wesela”.',
       category: 'cytat'
@@ -324,7 +324,7 @@ export const DEPT_09 = {
     {
       id: 'kf9-6',
       front: 'Czym jest tzw. „wiersz różewiczowski”?',
-      back: 'Wiersz wolny, bezrymowy, pozbawiony znaków interpunkcyjnych i ozdobnych metafor; oparty na ascezie słowa i pauzach semantycznych.',
+      back: 'Wiersz wolny, bezrymowy, oszczędny w interpunkcji (często bez znaków przestankowych) i pozbawiony ozdobnych metafor; oparty na ascezie słowa i pauzach semantycznych.',
       hint: 'Poezja ściśniętego gardła po Zagładzie.',
       category: 'pojecie'
     },
@@ -386,8 +386,8 @@ export const DEPT_09 = {
     },
     {
       id: 'kf9-15',
-      front: 'Kim jest tytułowy bohater opowiadania Marka Nowakowskiego „Górą Edek”?',
-      back: 'To bezczelny, silny fizycznie kierowca w skórzanej kurtce, który zajeżdża drogę inteligentowi i zmusza go do pokornego ustąpienia.',
+      front: 'Kim jest tytułowy bohater opowiadania Marka Nowakowskiego „Górą «Edek»”?',
+      back: 'To bezczelny, silny fizycznie kierowca szafirowego forda, który bez pardonu zajmuje miejsce parkingowe przed inteligentem w małym fiacie („maluchu”), zmuszając go do ustąpienia.',
       hint: 'Współczesna reinkarnacja Edka z dramatu Mrożka.',
       category: 'bohater'
     },
@@ -408,7 +408,7 @@ export const DEPT_09 = {
     {
       id: 'kf9-18',
       front: 'Czym różni się postawa Różewicza od postawy Herberta wobec katastrofy wojennej?',
-      back: 'Różewicz uważa, że wojna zniszczyła dawne wartości i język (nihilizm etyczny), a Herbert nakazuje trwać przy dawnych wartościach mimo klęski (stoicyzm).',
+      back: 'Różewicz uważa, że wojna zniszczyła dawne wartości i język poezji (kryzys wartości i poszukiwanie nowego ładu po Zagładzie), a Herbert nakazuje trwać przy dawnych wartościach mimo klęski (stoicyzm).',
       hint: 'Ocalony (pustka) vs Pan Cogito (wierność).',
       category: 'kontekst'
     },
@@ -417,13 +417,13 @@ export const DEPT_09 = {
     { id: 'kf9-21', front: 'Na czym polega paradoks roli Edka w dramacie „Tango” Sławomira Mrożka?', back: 'Edek jest prymitywny, bezmyślny i leniwy, ale jako jedyny posiada realną siłę fizyczną oraz brak skrupułów — podczas gdy intelektualiści dyskutują o ideach, Edek po prostu zabija Artura i przejmuje władzę.', hint: 'Prymityw z siłą pokonuje bezradną inteligencję.', category: 'bohater' },
     { id: 'kf9-22', front: 'Dlaczego podmiot liryczny wiersza „Ocalony” Tadeusza Różewicza mówi: „Mam dwadzieścia cztery lata / ocalałem / prowadzony na rzeź”?', back: 'Ocalał fizycznie z zagłady II wojny światowej, ale wewnętrznie czuje się martwy moralnie — wojna zrównała w jego doświadczeniu pojęcia takie jak „człowiek i zwierzę”, „cnota i występek”, odbierając słowom sens.', hint: 'Fizyczne ocalenie vs duchowa pustka po wojnie.', category: 'cytat' },
     { id: 'kf9-23', front: 'Czego szuka bohater wiersza „Ocalony” Tadeusza Różewicza w finale utworu?', back: 'Szuka „nauczyciela i mistrza”, który na nowo przywróci mu wzrok, słuch i mowę, oddzieli światło od ciemności i nazwie rzeczy po imieniu — odbuduje zburzony po wojnie system wartości.', hint: 'Prośba o mistrza i przywrócenie słów.', category: 'lektura' },
-    { id: 'kf9-24', front: 'Co oznaczają słowa „Patrzę na to wszystko / jak na coś, co było” oraz ostrzeżenie w „List do ludożerców” Różewicza?', back: 'W „Liście do ludożerców” tytułowi „ludożercy” to zwykli, współcześni ludzie żyjący w pośpiechu i egoizmie PRL-u/nowoczesności (nie ustępują miejsca, popychają słabszych, patrzą z nienawiścią), których poeta ironicznie prosi: „Kochani ludożercy / nie zjadajmy się Dobrze”.', hint: 'Współczesny egoizm i znieczulica w masie.', category: 'motyw' },
+    { id: 'kf9-24', front: 'Kogo i co piętnuje Tadeusz Różewicz w wierszu „List do ludożerców”?', back: 'Tytułowi „ludożercy” to zwykli współcześni ludzie żyjący w pośpiechu, znieczulicy i egoizmie (popychający się w pociągach, patrzący z wrogością w sklepach), których poeta ironicznie prosi: „Kochani ludożercy / nie zjadajmy się Dobrze”.', hint: 'Współczesny egoizm i znieczulica w masie.', category: 'motyw' },
     { id: 'kf9-25', front: 'Jakie dwie główne przykazania etyczne zawiera „Przesłanie Pana Cogito” Zbigniewa Herberta?', back: '1) Bądź wierny, idź wyprostowany wśród tych, co na kolanach (nie idź na kompromis ze złem, nawet jeśli grozi śmierć); 2) Czuwaj, powtarzaj stare zaklęcia ludzkości, przebaczaj w imieniu własnym, ale nigdy w imieniu zdradzonych o świcie.', hint: 'Postawa wyprostowana i zakaz wybaczania w imieniu ofiar.', category: 'lektura' },
     { id: 'kf9-26', front: 'Dlaczego w „Przesłaniu Pana Cogito” nagrodą za wierność zasadom nie jest „złote runo”, lecz pogarda i śmierć?', back: 'Herbert proponuje etykę heroiczną bez żadnej gwarancji sukcesu czy nagrody — człowiek ma postępować szlachetnie dla samej wierności prawdzie i godności, a nie dla korzyści czy chwały.', hint: 'Etyka bezinteresowna (bez nagrody).', category: 'pojecie' },
     { id: 'kf9-27', front: 'Na czym polega ironia i filozofia przypadku w wierszu Wisławy Szymborskiej „Nic dwa razy”?', back: 'Każda chwila, uśmiech i człowiek są jednorazowe i niepowtarzalne („żaden dzień się nie powtórzy”), dlatego zamiast bać się przemijania, warto przyjąć ulotność życia z czułą uważnością i uśmiechem.', hint: 'Jednorazowość każdej chwili życia.', category: 'lektura' },
     { id: 'kf9-28', front: 'Jaką funkcję pełni kocia perspektywa w wierszu Wisławy Szymborskiej „Kot w pustym mieszkaniu”?', back: 'Unika sentymentalnego patosu: śmierć człowieka pokazana jest oczami zwierzęcia, które nie rozumie pojęcia śmierci, czuje się porzucone i urażone zniknięciem pana, co jeszcze mocniej wyraża ból pustki po stracie bliskiego.', hint: 'Pustka po śmierci pokazana bez patosu, oczami kota.', category: 'motyw' },
     { id: 'kf9-29', front: 'Co oznacza kontrast między losem Giordana Bruna a karuzelą na placu Krasińskich w wierszu „Campo di Fiori” Czesława Miłosza?', back: 'Zarówno w XVI-wiecznym Rzymie (spalenie Bruna na stosie przy wesołym tłumie), jak i w Warszawie w 1943 r. (płonące getto przy wesołej karuzeli) świat pozostaje obojętny na cierpienie ginących w samotności — dopiero „słowo poety” przełamuje tę samotność i pamięta.', hint: 'Obojętność świata wobec zbrodni i ocalająca moc poezji.', category: 'lektura' },
-    { id: 'kf9-30', front: 'Jaką rzeczywistość PRL ukazują opowiadania Marka Nowakowskiego (np. „Górą «Edek»” lub „Raport o stanie wojennym”)?', back: 'Absurd, braki materialne, cwaniactwo i bezwzględność w realiach schyłkowego PRL-u oraz stanu wojennego — pokazane w krótkich, realistycznych scenkach obyczajowych (np. walka o miejsce parkingowe, w której wygrywa bezczelny cwaniak).', hint: 'Realia PRL, absurd kolejki/parkingu i triumf cwaniactwa.', category: 'epoka' }
+    { id: 'kf9-30', front: 'Jaką rzeczywistość ukazują opowiadania Marka Nowakowskiego („Górą «Edek»” vs „Raport o stanie wojennym”)?', back: '„Raport o stanie wojennym” opisuje realia PRL stanu wojennego, natomiast „Górą «Edek»” (z tomu „Prawo prerii”, 1999) ukazuje Polskę lat 90. — konfrontację bezradnego inteligenta w małym fiacie z agresywnym cwaniakiem w szafirowym fordzie walczącym o miejsce parkingowe.', hint: 'Realia stanu wojennego oraz triumf cwaniactwa w latach 90.', category: 'epoka' }
   ],
   quiz: [
     {
@@ -448,13 +448,13 @@ export const DEPT_09 = {
       id: "kq9-2",
       q: "W jaki sposób ginie Artur w finale „Tanga”?",
       options: [
-        "Popełnia samobójstwo z rozpaczy po zradzie Ali",
+        "Popełnia samobójstwo z rozpaczy po zdradzie Ali",
         "Zostaje zastrzelony z rewolweru przez zazdrosnego Stomila",
         "Zostaje zabity ciosem w kark z zaskoczenia przez Edka",
         "Umiera na katafalku z powodu nieuleczalnej choroby"
       ],
       correct: 2,
-      explanation: "Gdy załamany zdradą Ali Artur traci panowanie nad sobą, Edek podstępnie zachodzi go od tyłu i zadaje mu śmiertelny cios kaniakiem w kark.",
+      explanation: "Gdy załamany zdradą Ali Artur traci panowanie nad sobą, Edek podstępnie zachodzi go od tyłu, uderza kolbą rewolweru i dobija ciosem splecionych dłoni w kark.",
       whyWrong: {
         0: "Artur nie popełnia samobójstwa — to Edek fizycznie pozbawia go życia.",
         1: "Stomil nie potrafi strzelać i zamiast tego gra w karty.",
@@ -464,7 +464,7 @@ export const DEPT_09 = {
     },
     {
       id: "kq9-3",
-      q: "Finałowy taniec la cumparsita w „Tangu” tańczą:",
+      q: "Finałowy taniec „La Cumparsita” w „Tangu” tańczą:",
       options: [
         "Artur i Ala nad ciałem babci Eugenii",
         "Edek i Eleonora świętując przejęcie majątku",
@@ -490,7 +490,7 @@ export const DEPT_09 = {
         "Należy zapomnieć o przeszłości i bezrefleksyjnie cieszyć się ocalonym życiem"
       ],
       correct: 0,
-      explanation: "Podmiot liryczny wyznaje, że cnota i występek, prawda i kłamstwo znaczyły dokładnie to samo — wojna doprowadziła do całkowitej ruiny tradycyjnego systemu wartości.",
+      explanation: "Podmiot liryczny wyznaje, że „jednako waży cnota i występek”, a dawne wartości stały się pustymi wyrazami — wojna doprowadziła do całkowitej ruiny tradycyjnego systemu etycznego.",
       whyWrong: {
         1: "Różewicz odrzuca wiarę w łatwą moc sztuki; poezja tradycyjna wydała mu się bezradna.",
         2: "W wierszu pada wstrząsające zdanie, że furgony porąbanych ludzi „nie zostaną zbawieni”.",
@@ -505,7 +505,7 @@ export const DEPT_09 = {
         "Kunsztowną formą sonetu z bogatymi rymami okalającymi",
         "Użyciem wyłącznie patetycznych archaizmów i inwokacji do bóstwa",
         "Trzynastozgłoskowcem ze średniówką po siódmej sylabie na wzór „Pana Tadeusza”",
-        "Wierszem wolnym, bezrymowym, asyntaktycznym, pozbawionym znaków interpunkcyjnych i ozdobników"
+        "Wierszem wolnym, bezrymowym, asyntaktycznym, o skrajnie oszczędnej interpunkcji i pozbawionym ozdobników"
       ],
       correct: 3,
       explanation: "Wiersz różewiczowski rezygnuje z rymów, metrum, interpunkcji i metafor na rzecz maksymalnego ascetyzmu i surowości języka.",
@@ -590,7 +590,7 @@ export const DEPT_09 = {
     },
     {
       id: "kq9-10",
-      q: "Jaki problem społeczno-moralny podejmuje Marek Nowakowski w opowiadaniu „Górą Edek”?",
+      q: "Jaki problem społeczno-moralny podejmuje Marek Nowakowski w opowiadaniu „Górą «Edek»”?",
       options: [
         "Heroiczną walkę podziemia solidarnościowego z milicją w czasie stanu wojennego",
         "Dylematy moralne lekarzy w realiach powojennego getta warszawskiego",
@@ -598,9 +598,9 @@ export const DEPT_09 = {
         "Konflikt pokoleniowy między powstańcami warszawskimi a młodzieżą PRL"
       ],
       correct: 2,
-      explanation: "Kierowca-inteligent zostaje bezprawnie zepchnięty z drogi przez chama w skórzanej kurtce i ze strachu ustępuje, co Nowakowski puentuje jako zwycięstwo prymitywizmu nad kulturą.",
+      explanation: "Kierowca-inteligent w małym fiacie zostaje bezpardonowo ubiegnięty na parkingu przez chamskiego właściciela szafirowego forda i ze strachu ustępuje, co Nowakowski puentuje jako zwycięstwo prymitywizmu nad kulturą.",
       whyWrong: {
-        0: "To opowiadanie obyczajowe o ruchu ulicznym i relacjach społecznych, a nie opis walki partyzanckiej.",
+        0: "To opowiadanie obyczajowe o walce o miejsce parkingowe i relacjach społecznych lat 90., a nie opis walki partyzanckiej.",
         1: "O lekarzach w getcie pisała Hanna Krall w „Zdążyć przed Panem Bogiem”.",
         3: "Bohaterowie reprezentują zderzenie chamstwa z inteligencją, a nie konflikt weteranów."
       },
@@ -662,7 +662,7 @@ export const DEPT_09 = {
     },
     {
       id: "kq9-14",
-      q: "Co w „Tangu” Mrożka symbolizuje finałowy taniec Edka i wuja Eugeniusza w rytm „La cumparsity”?",
+      q: "Co w „Tangu” Mrożka symbolizuje finałowy taniec Edka i wuja Eugeniusza w rytm „La Cumparsity”?",
       options: [
         "Triumf brutalnej, prymitywnej dyktatury (Edek) wspieranej przez uległą, konformistyczną inteligencję (wuj Eugeniusz).",
         "Pojednanie pokoleń w duchu narodowej solidarności.",
@@ -726,7 +726,7 @@ export const DEPT_09 = {
       correct: 0,
       explanation: "Szymborska łączy świadomość przemijania z pogodną mądrością: jesteśmy w „szkole” świata bez możliwości powtórki, więc każda chwila i relacja są bezcenne.",
       whyWrong: {
-        1: "Wiersz kończy się czułą próbą porozumienia („uśmiechnięci, współobjęci”), nie rozpaczą.",
+        1: "Wiersz kończy się czułą próbą porozumienia („uśmiechnięci, wpółobjęci”), nie rozpaczą.",
         2: "Poetka podkreśla właśnie brak powtarzalności, nie rutynę.",
         3: "To refleksja egzystencjalna, nie krytyka nauki."
       },
@@ -770,19 +770,19 @@ export const DEPT_09 = {
     },
     {
       id: "kq9-20",
-      q: "Co piętnuje Marek Nowakowski w swoich krótkich opowiadaniach o realiach PRL (np. „Górą «Edek»”)?",
+      q: "Co piętnuje Marek Nowakowski w swoich krótkich opowiadaniach obyczajowych (np. „Górą «Edek»” z tomu „Prawo prerii”)?",
       options: [
-        "Zwycięstwo bezczelnego cwaniactwa, egoizmu i siły nad bezradnym, przyzwoitym inteligentem w szarej rzeczywistości Polski Ludowej.",
+        "Zwycięstwo bezczelnego cwaniactwa, egoizmu i siły nad bezradnym, przyzwoitym inteligentem w realiach przemian lat 90.",
         "Nadmierną uprzejmość urzędników państwowych w czasach stanu wojennego.",
         "Zbyt szybki rozwój nowoczesnych autostrad w Polsce lat 80.",
         "Romantyczne ideały powstańców styczniowych na Litwie."
       ],
       correct: 0,
-      explanation: "W mikroscenkach Nowakowskiego (nawiązujących do tradycji Mrożkowego Edka) brutalny, pewny siebie cwaniak bez skrupułów wygrywa z kulturalnym, wahającym się człowiekiem.",
+      explanation: "W mikroscence Nowakowskiego z lat 90. (nawiązującej do tradycji Mrożkowego Edka) brutalny, pewny siebie kierowca forda bez skrupułów wygrywa o miejsce parkingowe z kulturalnym, wahającym się inteligentem w małym fiacie.",
       whyWrong: {
-        1: "Opowiadania ukazują właśnie brak kultury i chamstwo w życiu publicznym.",
-        2: "Tematem są codzienne absurdy i deficyty PRL.",
-        3: "Akcja toczy się we współczesnej Polsce PRL, nie w XIX wieku."
+        1: "Opowiadanie ukazuje właśnie brak kultury i chamstwo w przestrzeni publicznej.",
+        2: "Tematem jest codzienny konflikt o miejsce parkingowe na zatłoczonej ulicy.",
+        3: "Akcja toczy się we współczesnej Warszawie lat 90., nie w XIX wieku."
       },
       examTip: "Zwróć uwagę na nazwę „Edek” u Nowakowskiego — to świadome nawiązanie do postaci Edka z „Tanga” Mrożka!"
     }

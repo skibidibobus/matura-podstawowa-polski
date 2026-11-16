@@ -60,7 +60,7 @@ export const ORAL_QUIZZES = {
       options: [
         'Pokazuje, że bogaci mogą wykupić się od śmierci dzięki modlitwom.',
         'Zrównuje wszystkie stany społeczne wobec śmierci i pełni funkcję dydaktyczno-satyryczną.',
-        'Sławí rycerską chwałę i śmierć na polu bitwy.',
+        'Sławi rycerską chwałę i śmierć na polu bitwy.',
         'Jest wyłącznie opisem obrzędów weselnych w średniowieczu.'
       ],
       correct: 1,
@@ -105,7 +105,7 @@ export const ORAL_QUIZZES = {
       q: 'Pytanie 18 (Krasicki, satyra): Czego dotyczy ważna zasada gatunkowa satyry oświeceniowej?',
       options: [
         'Satyra ma ośmieszać konkretną, żyjącą osobę z imienia i nazwiska.',
-        'Satyra piętnuje powszechne wady i zjawiska społeczne („szanujmy osoby, piętnujmy wady”), by uczyć bawiąc.',
+        'Satyra piętnuje powszechne wady i zjawiska społeczne (bez atakowania konkretnych osób z nazwiska), by uczyć bawiąc.',
         'Satyra służy wyłącznie do opiewania heroicznych czynów królów.',
         'Satyra unika ironii i karykatury.'
       ],
@@ -132,7 +132,7 @@ export const ORAL_QUIZZES = {
         'Kara spotyka wyłącznie ubogich chłopów, nigdy panów.'
       ],
       correct: 1,
-      explanation: 'W świecie ballad Mickiewicza przyroda ma wymiar moralny – „nie masz zbrodni bez kary” (śmierć w wodach Świtezi lub pod gruzami cerkwi).'
+      explanation: 'W świecie ballad Mickiewicza przyroda ma wymiar moralny – „nie masz zbrodni bez kary” (śmierć w wodach Świtezi lub zapadnięcie się cerkwi pod ziemię).'
     }
   ],
   103: [
@@ -181,17 +181,6 @@ export const ORAL_QUIZZES = {
       explanation: 'Sny w dramacie obnażają prawdę o bohaterze: Nowosilcow śni o zaszczytach i nagłym upadku z łask cara.'
     },
     {
-      q: 'Pytanie 27 (Dziady cz. III): Dzięki czemu Konrad zostaje ocalony przed potępieniem po Wielkiej Improwizacji?',
-      options: [
-        'Dzięki interwencji cara, który ułaskawia go w celi.',
-        'Dzięki temu, że słowo „carem!” wypowiada diabeł, a za Konrada modlą się niewinna Ewa i pokorny ks. Piotr (egzorcyzmy).',
-        'Dzięki ucieczce z więzienia do Paryża.',
-        'Ponieważ odwołuje całą miłość do ojczyzny.'
-      ],
-      correct: 1,
-      explanation: 'Konrad nie przekracza ostatecznej granicy bluźnierstwa sam (wyręcza go diabeł) i ratuje go modlitwa wspólnoty.'
-    },
-    {
       q: 'Pytanie 26 (Dziady cz. III): Który kontekst najlepiej wzbogaci odpowiedź o nawiązaniach biblijnych w utworze?',
       options: [
         '„Skąpiec” Moliera – komedia charakterów.',
@@ -201,6 +190,17 @@ export const ORAL_QUIZZES = {
       ],
       correct: 1,
       explanation: 'Aluzje do Męki Pańskiej i Sądu Ostatecznego w „Dziadach” świetnie łączą się z „Apokalipsą” lub polemicznym „Kordianem”.'
+    },
+    {
+      q: 'Pytanie 27 (Dziady cz. III): Dzięki czemu Konrad zostaje ocalony przed potępieniem po Wielkiej Improwizacji?',
+      options: [
+        'Dzięki interwencji cara, który ułaskawia go w celi.',
+        'Dzięki temu, że Konrad mdleje przed dopowiedzeniem słowa „carem!” (dopowiada je diabeł), a za Konrada modlą się niewinna Ewa i pokorny ks. Piotr (egzorcyzmy).',
+        'Dzięki ucieczce z więzienia do Paryża.',
+        'Ponieważ odwołuje całą miłość do ojczyzny.'
+      ],
+      correct: 1,
+      explanation: 'Konrad nie zdążył sam wypowiedzieć ostatniego słowa bluźnierstwa (mdleje, a dopowiada je zły duch) i ratuje go modlitwa wspólnoty.'
     }
   ],
   104: [
@@ -246,7 +246,7 @@ export const ORAL_QUIZZES = {
         'Akcja powieści toczy się niemal wyłącznie na wsi.'
       ],
       correct: 1,
-      explanation: 'Spacer Wokulskiego po Powiślu w Wielką Sobotę i jego zachwyt nad organizacją pracy w Paryżu tworzą wielowymiarowy portret miasta.'
+      explanation: 'Spacer Wokulskiego po Powiślu w Wielki Czwartek i jego zachwyt nad organizacją pracy w Paryżu tworzą wielowymiarowy portret miasta.'
     },
     {
       q: 'Pytanie 35 (Lalka): Która postać z „Lalki” przeżywa swoje wspomnienia w sposób dojrzały, budujący wrażliwość na innych?',
@@ -352,6 +352,17 @@ export const ORAL_QUIZZES = {
       explanation: 'Przedwiośnie to metafora II RP tuż po 1918 r. (już po zimie zaborów, ale jeszcze przed „wiosną” sprawiedliwości) oraz młodości Cezarego.'
     },
     {
+      q: 'Pytanie 49 (Przedwiośnie): Dlaczego Cezary Baryka nie staje się bezkrytycznym komunistą w Warszawie?',
+      options: [
+        'Ponieważ otrzymał wielki majątek po Hipolicie Wielosławskim.',
+        'Ponieważ widział krwawą rzeczywistość rewolucji w Baku (rzezie, śmierć matki) i nie wierzy w czyste hasła Lulka.',
+        'Ponieważ Gajowiec przekupił go stanowiskiem w ministerstwie.',
+        'Ponieważ w ogóle nie interesuje się losem robotników.'
+      ],
+      correct: 1,
+      explanation: 'Doświadczenie z Baku uodporniło Cezarego na propagandę Lulka – choć idzie w pochodzie na Belweder, zachowuje dystans.'
+    },
+    {
       q: 'Pytanie 50 (Przedwiośnie): Które trzy główne wizje odbudowy Polski zderza ze sobą Żeromski?',
       options: [
         'Monarchię, anarchizm i pozytywizm warszawski.',
@@ -361,17 +372,6 @@ export const ORAL_QUIZZES = {
       ],
       correct: 1,
       explanation: 'Każda z tych trzech dróg ma wady: szklane domy są mitem, reformy Gajowca są zbyt wolne, a rewolucja Lulka niesie krew (doświadczenie z Baku).'
-    },
-    {
-      q: 'Pytanie 49 (Przedwiośnie): Dlaczego Cezary Baryka nie staje się bezkrytycznym komunistą w Warszawie?',
-      options: [
-        'Ponieważ otrzymał wielki majątek po Hipolicie Wielosławskim.',
-        'Ponieważ widział krwawą rzeczywistość rewolucji w Baku (rzezie, śmierć rodziców) i nie wierzy w czyste hasła Lulka.',
-        'Ponieważ Gajowiec przekupił go stanowiskiem w ministerstwie.',
-        'Ponieważ w ogóle nie interesuje się losem robotników.'
-      ],
-      correct: 1,
-      explanation: 'Doświadczenie z Baku uodporniło Cezarego na propagandę Lulka – choć idzie w pochodzie na Belweder, zachowuje dystans.'
     },
     {
       q: 'Pytanie 52 (Przedwiośnie): Która postać pełni rolę cichego autorytetu moralnego docenionego przez Cezarego dopiero po śmierci?',
@@ -455,7 +455,7 @@ export const ORAL_QUIZZES = {
     {
       q: 'Pytanie 61 (Zdążyć przed Panem Bogiem): Co łączy wojenne i powojenne doświadczenie Marka Edelmana?',
       options: [
-        'Przekonanie, że walka o pojedyncze ludzkie życie (w getcie i na sali operacyjnej jako kardiochirurg) jest najważniejsza.',
+        'Przekonanie, że walka o pojedyncze ludzkie życie (w getcie i w szpitalu jako kardiolog) jest najważniejsza.',
         'Chęć napisania powieści historycznej o II wojnie światowej.',
         'Całkowita rezygnacja z zawodu lekarza po 1945 roku.',
         'Obojętność wobec śmierci pacjentów.'
@@ -529,7 +529,7 @@ export const ORAL_QUIZZES = {
         'Aby opowiedzieć o historii powstania warszawskiego.'
       ],
       correct: 1,
-      explanation: 'Intertekstualność łączy scenkę z parkingu lat 90. z diagnozą Mrożka – to ciągłość triumfu prostactwa nad kulturą.'
+      explanation: 'Intertekstualność łączy scenkę uliczną z parkowaniem z lat 90. z diagnozą Mrożka – to ciągłość triumfu prostactwa nad kulturą.'
     },
     {
       q: 'Pytanie 76 (Podróże z Herodotem): Czego – poza poznawaniem geografii – uczy podróżowanie u Ryszarda Kapuścińskiego?',

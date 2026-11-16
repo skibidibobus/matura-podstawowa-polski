@@ -15,13 +15,13 @@
   - Sklep Wokulskiego (symbol przedsiębiorczości), wyścigi konne, licytacja kamienicy Łęckich.
   - **Paryż:** Wokulski zachwyca się nauką i społeczeństwem, spotyka **Geista** (szalony naukowiec pracujący nad metalem lżejszym od powietrza) – wraca jednak na wezwanie Izabeli.
   - **Scena w pociągu:** Wokulski słyszy, jak Izabela flirtuje po angielsku ze **Starskim** (myśląc, że Wokulski nie zna angielskiego). Przejrzenie na oczy! Próbuje rzucić się pod pociąg w Skierniewicach (ratuje go dróżnik Wysocki).
-  - **Otwarte zakończenie:** Wokulski znika (wybuch w ruinach zamku w Zasławku lub wyjazd do Geista), Rzecki umiera w sklepie.
+  - **Otwarte zakończenie:** Wokulski znika (wybuch w ruinach zamku w Zasławiu lub wyjazd do Geista), Rzecki umiera na atak serca w swoim pokoiku przy sklepie.
 - **Obraz Warszawy i społeczeństwa:** Panorama trzech grup: arystokracja (próżna, egoistyczna), mieszczaństwo (Polacy, Niemcy, Żydzi – np. Szlangbaum; problem antysemityzmu), biedota (Powiśle – nędza, brak pracy).
 - **Motywy:** Nieszczęśliwa miłość / idealizacja ukochanej, pieniądz i awans społeczny, praca i nauka, miasto (Warszawa i Paryż), samotność, klęska idealisty.
 
 ---
 
-## 2. *Zbrodnia i kara* – Fiodor Dostojewski (Pozytywizm/Realizm psychologiczny, powieść)
+## 2. *Zbrodnia i kara* – Fiodor Dostojewski (Realizm psychologiczny II poł. XIX w. / omawiana w bloku pozytywizmu, powieść)
 - **Główny bohater:** **Rodion Raskolnikow** – biedny były student prawa w Petersburgu. Wymyśla **teorię o podziale ludzi na zwykłych („wszy”)** i **niezwykłych (Napoleonów)**, którym wolno łamać prawo moralne w imię wielkich celów.
 - **Zbrodnia:** Zabija siekierą starą, znienawidzoną lichwiarkę **Alonę Iwanowną** (i przypadkiem jej niewinną siostrę **Lizawietę**, co burzy jego „czystą” teorię!).
 - **Kara (psychologiczna, jeszcze przed sądem!):** Zamiast poczucia wielkości, Raskolnikow przeżywa koszmar: gorączka, paranoja, izolacja od rodziny (matka Pulcheria, siostra Dunia) i przyjaciela **Razumichina**.
@@ -37,7 +37,7 @@
 ## 3. *Wesele* – Stanisław Wyspiański (Młoda Polska, dramat symboliczny)
 - **Tło:** Autentyczne wesele poety Lucjana Rydla z chłopką Jadwigą Mikołajczykówną w **Bronowicach** pod Krakowem (1900 r.).
 - **Dwa światy w chacie:** **Inteligencja** (Poeta, Dziennikarz, Gospodarz, Pan Młody, Radczyni) vs **Chłopi** (Czepiec, Panna Młoda, Klimina, Jasiek).
-  - Inteligencja szuka na wsi siły i odrodzenia (**chłopomania**), ale nie rozumie wsi i traktuje ją powierzchownie (*„A niech na całym świecie wojna, byle polska wieś zaciszna”*).
+  - Inteligencja szuka na wsi siły i odrodzenia (**chłopomania**), ale nie rozumie wsi i traktuje ją powierzchownie (*„Niech na całym świecie wojna, byle polska wieś zaciszna”*).
   - Chłopi są skorzy do bójki, ale też pragmatyczni i pamiętają krzywdy (rabację galicyjską z 1846 r.).
 - **Akt II – Zjawy (osoby dramatu, czyli sumienie i lęki gości):**
   - **Widmo** (dawny kochanek Marysi) → przemijanie, niespełniona miłość.
@@ -46,5 +46,5 @@
   - **Hetman** (zdrajca Branicki) → przypomina **Panu Młodemu** o zdradzie narodowej i pustych gestach.
   - **Upiór** (Jakub Szela, przywódca rzezi galicyjskiej) → przypomina **Dziadowi** o krwawej historii między szlachtą a chłopami.
   - **Wernyhora** (legendarny wieszcz) → przynosi **Gospodarzowi** misję wywołania powstania: daje mu **Złoty Róg** (symbol czynu i jedności) i każe rozesłać wici.
-- **Finał (Akt III):** Gospodarz oddaje Złoty Róg parobkowi **Jaśkowi**, który gubi go, schylając się po **czapkę z pawimi piórami** (symbol próżności i prywaty). Nad ranem wszyscy zamiast iść do powstania, tańczą w hipnotycznym, bezwładnym **chocholim tańcu** do muzyki **Chochoła** (*„Miałeś, chamie, złoty róg, ostał ci się ino sznur”*).
+- **Finał (Akt III):** Gospodarz oddaje Złoty Róg drużbie **Jaśkowi**, który gubi go, schylając się po **czapkę z pawimi piórami** (symbol próżności i prywaty). Nad ranem wszyscy zamiast iść do powstania, tańczą w hipnotycznym, bezwładnym **chocholim tańcu** do muzyki **Chochoła** (*„Miałeś, chamie, złoty róg, ostał ci się ino sznur”*).
 - **Motywy:** Niemożność zjednoczenia narodu, mity narodowe, bezsilność i marazm społeczeństwa, wieś vs miasto, rola artysty/inteligencji, symbole narodowe.

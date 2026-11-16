@@ -12,8 +12,8 @@ Zadanie polega na zestawieniu stanowisk obu autorów wobec określonego zagadnie
 4. **Bezpośrednie zestawienie (synteza)** – musisz pokazać, w czym autorzy są zgodni, a w czym się różnią (albo jak się uzupełniają), a nie pisać dwóch osobnych streszczeń!
 5. **Koniecznie podaj nazwiska autorów / oznaczenia tekstów** (np. *Autorzy tekstów podejmują temat... Według Jana Kowalskiego... Podobne/Odmienne stanowisko prezentuje Anna Nowak...*).
 
-**Gotowy szkielet notatki (ok. 75 słów):**
-> Zarówno [Autor 1], jak i [Autor 2] analizują problem [temat z polecenia]. Obaj autorzy zgadzają się co do tego, że [wspólny wniosek / punkt styczny]. [Autor 1] skupia się jednak przede wszystkim na [główna teza tekstu 1], podkreślając [ważny argument]. Z kolei [Autor 2] zwraca uwagę na [główna teza tekstu 2] i dowodzi, że [ważny argument]. Podsumowując, podczas gdy pierwszy tekst akcentuje [aspekt A], drugi uwypukla [aspekt B].
+**Gotowy szkielet notatki (wypełniony daje ok. 70–80 słów — zawsze policz!):**
+> Zarówno [Autor 1], jak i [Autor 2] podejmują temat [temat z polecenia]. [Obaj / Oboje / Obie] autorzy zgadzają się, że [wspólny wniosek]. [Autor 1] akcentuje jednak [główna teza 1], wskazując na [argument 1]. Z kolei [Autor 2] skupia się na [główna teza 2] i dowodzi, że [argument 2]. W podsumowaniu pierwszy tekst uwypukla [aspekt A], drugi zaś – [aspekt B].
 
 ---
 
@@ -35,7 +35,7 @@ Zadanie polega na zestawieniu stanowisk obu autorów wobec określonego zagadnie
 - **Apostrofa** – bezpośredni, uroczysty zwrot do osoby, bóstwa, pojęcia lub przedmiotu (*Litwo! Ojczyzno moja!*).
 - **Inwokacja** – rozbudowana apostrofa na początku utworu epickiego (prośba o natchnienie).
 - **Oksymoron** – zestawienie wyrazów o sprzecznych znaczeniach (*żywy trup, gorzki miód, ciemne światło*).
-- **Antyteza** – zestawienie dwóch przeciwstawnych myśli/zdań (*miłość i nienawiść*).
+- **Antyteza** – figura składniowa zestawiająca dwa przeciwstawne sądy lub zdania (*„Zgoda buduje, niezgoda rujnuje”*, *„Z wierzchu zimny i plugawy, a wewnątrz gorący”*).
 - **Hiperbola** – wyolbrzymienie (*czekałem całą wieczność*).
 - **Ironia** – ukryta drwina, powiedzenie czegoś wprost przeciwnego do rzeczywistego sensu (częsta u Krasickiego, Prusa, Mrożka, Szymborskiej).
 - **Peryfraza (omówienie)** – zastąpienie jednego słowa opisem (*król zwierząt* zamiast *lew*).
@@ -49,9 +49,9 @@ Zadanie polega na zestawieniu stanowisk obu autorów wobec określonego zagadnie
 
 | Rodzaj | Cechy | Najważniejsze gatunki z listy lektur |
 | :--- | :--- | :--- |
-| **Epika** | Narrator, fabuła, świat przedstawiony, zazwyczaj proza (wyjątek: epos, poemat). | **Epos** (*Iliada*, *Pan Tadeusz*), **powieść** (*Lalka*, *Zbrodnia i kara*, *Rok 1984*, *Dżuma*, *Przedwiośnie*, *Ferdydurke*), **nowela** (*Kamizelka*), **opowiadanie** (Borowski, Tokarczuk), **reportaż** (*Zdążyć przed Panem Bogiem*). |
-| **Liryka** | Podmiot liryczny, wyrażanie przeżyć/refleksji, zazwyczaj wiersz. | **Pieśń** (Kochanowski), **fraszka** (Kochanowski), **tren** (cykl *Trenów* Kochanowskiego), **sonet** (*Sonety krymskie* Mickiewicza), **hymn**, **oda**, **wiersz wolny** (współczesna poezja: Herbert, Szymborska, Miłosz). |
-| **Dramat** | Podział na role, dialogi i monologi, tekst główny + didaskalia, brak narratora, przeznaczony na scenę. | **Tragedia antyczna** (*Antygona* – zasada 3 jedności, chór, fatum, katharsis), **tragedia szekspirowska** (*Makbet* – łamie 3 jedności, wprowadza duchy i humor), **komedia** (*Skąpiec*), **dramat romantyczny** (*Dziady cz. III*, *Kordian* – otwarta kompozycja, synkretyzm, sceny zbiorowe i fantastyczne), **dramat symboliczny** (*Wesele*), **dramat groteskowy/absurdu** (*Tango*). |
+| **Epika** | Narrator, fabuła, świat przedstawiony, zazwyczaj proza (wyjątek: epos, poemat). | **Epos** (*Iliada*, *Pan Tadeusz* – SP / przejściowo), **powieść** (*Lalka*, *Zbrodnia i kara*, *Rok 1984*, *Dżuma*, *Przedwiośnie*, *Ferdydurke* – fragm.), **nowela** (*Kamizelka* – spoza obecnej listy LO, kontekst), **opowiadanie** (Borowski, Nowakowski, Stasiuk, Tokarczuk), **reportaż** (*Zdążyć przed Panem Bogiem*). |
+| **Liryka** | Podmiot liryczny, wyrażanie przeżyć/refleksji, zazwyczaj wiersz. | **Pieśń** (Kochanowski), **fraszka** (Kochanowski – poza główną listą LO, kontekst), **tren** (wybrane *Treny* IX, X, XI Kochanowskiego), **sonet** (*Sonety krymskie* Mickiewicza), **hymn**, **oda**, **wiersz wolny** (współczesna poezja: Herbert, Szymborska, Miłosz). |
+| **Dramat** | Podział na role, dialogi i monologi, tekst główny + didaskalia, brak narratora, przeznaczony na scenę. | **Tragedia antyczna** (*Antygona* – zasada 3 jedności, chór, fatum, katharsis), **tragedia szekspirowska** (*Makbet* – łamie 3 jedności, wprowadza duchy i humor), **komedia** (*Skąpiec*), **dramat romantyczny** (*Dziady cz. III*; *Kordian* – PR / przejściowo 2025–2028 – otwarta kompozycja, synkretyzm, sceny zbiorowe i fantastyczne), **dramat symboliczny** (*Wesele*), **dramat groteskowy** (*Tango*). |
 
 **Synkretyzm rodzajowy** – łączenie w jednym utworze cech epiki, liryki i dramatu (np. ballada *Romantyczność*, *Dziady cz. III*).
 **Postawa / liryka:**

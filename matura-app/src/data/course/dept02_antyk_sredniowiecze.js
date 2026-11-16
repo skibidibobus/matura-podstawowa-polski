@@ -66,7 +66,7 @@ export const DEPT_02 = {
               details: {
                 summary: 'Postacie mitologiczne najczęściej przywoływane w tematach rozprawek.',
                 bullets: [
-                  'Prometeusz: archetyp bezinteresownego buntu i poświęcenia dla ludzkości (stworzył człowieka z gliny i łez, ukradł ogień z rydwanu słońca, za co został przykuty do skały Kaukazu, gdzie sęp wyjadał mu odrastającą wątrobę). Twórca prometeizmu.',
+                  'Prometeusz: archetyp bezinteresownego buntu i poświęcenia dla ludzkości (stworzył człowieka z gliny i łez, ukradł ogień z rydwanu słońca, za co został przykuty do skały Kaukazu, gdzie orzeł wyjadał mu odrastającą wątrobę). Twórca prometeizmu.',
                   'Syzyf: archetyp zmagania się z losem i absurdu ludzkiego trudu (król Koryntu skazany na wieczne wtaczanie na szczyt głazu, który tuż przed wierzchołkiem stacza się w dół).',
                   'Dedal i Ikar: archetyp dwóch dróg życiowych — dojrzały racjonalizm i rozwaga (Dedal) kontra młodzieńczy idealizm, emocje i marzycielstwo kończące się śmiercią (Ikar).',
                   'Orfeusz i Eurydyka: archetyp potęgi sztuki i tragicznej miłości silniejszej niż śmierć (pieśń Orfeusza wzrusza władców podziemi, ale chwila zwątpienia i spojrzenie wstecz gubi ukochaną).'
@@ -90,7 +90,7 @@ export const DEPT_02 = {
           title: 'Ostrzeżenie przed błędem kardynalnym!',
           items: [
             'Nigdy nie pisz, że Kreon jest bezdusznym tyranem od początku — to władca działający w imię ładu państwa po krwawej wojnie domowej, który popełnia błąd pychy (hybris).',
-            'Ismena NIE została stracona: chciała wziąć na siebie część winy, ale Antygona dumie odmówiła jej udziału w męczeństwie. Ismena przeżywa tragedię.',
+            'Ismena NIE została stracona: chciała wziąć na siebie część winy, ale Antygona dumnie odmówiła jej udziału w męczeństwie. Ismena przeżywa tragedię.',
             'Antygona NIE popełnia samobójstwa rzucając się z murów: wiesza się na chuście w kamiennym grobowcu, w którym zamurowano ją żywcem na rozkaz Kreona.'
           ]
         },
@@ -116,7 +116,7 @@ export const DEPT_02 = {
                   'Antygona: dumna, odważna, bezkompromisowa córka Edypa. Przedkłada nakaz sumienia i prawa bogów nad życie doczesne. Wie, że zginie, ale nie cofa się.',
                   'Kreon: król Teb, przekonany, że ustępstwo wobec kobiety osłabi jego autorytet. Utożsamia państwo ze swoją osobą („Czyż państwo nie należy do władcy?”). Zaślepiony pychą, lekceważy ostrzeżenia ludu i wróżbity Tyrezjasza.',
                   'Hajmon: syn Kreona i narzeczony Antygony. Próbuje przekonać ojca do dialogu i elastyczności. Reprezentuje głos rozsądku i opinię ludu tebańskiego, który współczuje dziewczynie. Po odnalezieniu powieszonej Antygony przebija się mieczem.',
-                  'Ismena: siostra Antygony, uosobienie ostrożności, bierności i konformizmu („Pamiętać trzeba, żeśmy są kobiety, / Którym z mężczyzną nie mierzyć się w boju”).',
+                  'Ismena: siostra Antygony, uosobienie ostrożności, bierności i konformizmu („Rozważmy i to, żeśmy są kobiety, / Że nie możemy z mężmi walczyć w boju”).',
                   'Tyrezjasz: ślepy wróżbita, obwieszczający gniew bogów (ptaki szarpią padlinę Polinejkesa i zanieczyszczają ołtarze). Dopiero jego proroctwo kruszy opór Kreona — lecz za późno.'
                 ],
                 essayUse: 'Idealne zestawienie w tematach: jednostka a władza, bunt w imię wartości, dylemat wyboru, tragizm.'
@@ -130,7 +130,7 @@ export const DEPT_02 = {
                 bullets: [
                   'Zasada trzech jedności: czasu (akcja zamyka się w 24 godzinach — od wschodu do zachodu słońca), miejsca (plac przed pałacem królewskim w Tebach), akcji (jeden wątek — konflikt o pochówek Polinejkesa).',
                   'Zasada decorum: jednorodność stylu (podniosły, patetyczny, brak humoru), brak scen krwawych na scenie (o samobójstwach informuje Posłaniec).',
-                  'Części kompozycyjne: Prologos (wstęp), Parodos (wejście chóru), Epeisodia (sceny dialogowe aktorów — max 3 na scenie), Stasima (pieśni komentującego Chóru starców tebańskich), Eksodos (pieśń końcowa, wyjście chóru).'
+                  'Części kompozycyjne: Prologos (wstęp), Parodos (wejście chóru), Epeisodia (sceny dialogowe aktorów — max 3 na scenie), Stasima (pieśni komentującego Chóru starców tebańskich), Eksodos (zakończenie dramatu i pieśń wyjścia chóru).'
                 ],
                 essayUse: 'Częste pytanie na teście: „Wykaż dwie cechy tragedii antycznej widoczne w podanym fragmencie”.'
               }
@@ -192,7 +192,7 @@ export const DEPT_02 = {
               details: {
                 summary: 'Wizja końca świata, ostatecznej walki dobra ze złem i Sądu Ostatecznego.',
                 bullets: [
-                  'Symbole apokaliptyczne: Baranek (Chrystus odkupiciel), Księga zapieczętowana siedmioma pieczęciami, Czterej Jeźdźcy Apokalipsy (Wojna/Zwycięstwo, Wojna domowa, Głód, Śmierć na trupiobladym koniu), Bestia o liczbie 666, Niewiasta obleczona w słońce.',
+                  'Symbole apokaliptyczne: Baranek (Chrystus odkupiciel), Księga zapieczętowana siedmioma pieczęciami, Czterej Jeźdźcy Apokalipsy (Zwycięzca na białym koniu, Wojna na ognistym, Głód na czarnym z wagą, Śmierć na trupiobladym koniu), Bestia o liczbie 666, Niewiasta obleczona w słońce.',
                   'Zakończenie: strącenie Szatana w czeluść, zstąpienie Nowego Jeruzalem z niebios — triumf zbawionych w świecie, gdzie „nie będzie już śmierci ani żałoby, ani krzyku, ani trudu”.'
                 ],
                 essayUse: 'W literaturze wojennej: pojęcie „Apokalipsy spełnionej” u Pokolenia Kolumbów (Baczyński, Borowski).'
@@ -218,16 +218,16 @@ export const DEPT_02 = {
       id: 'kn2-4',
       title: 'Średniowiecze — teocentryzm, uniwersalizm, danse macabre i parenetyka',
       badge: 'Epoka wiary i ascezy',
-      intro: 'Średniowiecze (w Polsce trwające od chrztu w 966 r. do końca XV w.) ukształtowało tożsamość religijną i państwową. Literatura miała charakter w przeważającej mierze religijny, parenetyczny (tworzący wzorce osobowe) i anonimowy (twórcy pisali na większą chwałę Bożą — Ad maiorem Dei gloriam).',
+      intro: 'Średniowiecze (w Polsce trwające od chrztu w 966 r. do końca XV w.) ukształtowało tożsamość religijną i państwową. Literatura miała charakter w przeważającej mierze religijny, parenetyczny (tworzący wzorce osobowe) i anonimowy (twórcy tworzyli z pokory dla chwały Bożej, zgodnie z duchem teocentryzmu).',
       blocks: [
         {
           type: 'callout',
           variant: 'emerald',
           title: '3 Średniowieczne Wzorce Osobowe (Parenetyka)',
           items: [
-            '1. Wzorzec ascety / świętego („Legenda o św. Aleksym”): dobrowolna rezygnacja z książęcego majątku, porzucenie młodej żony w noc poślubną, rozdanie bogactw biednym, 17 lat upokorzeń pod schodami własnego pałacu, pojenie pomyjami ze stołu ojca. Po śmierci dzwony w Rzymie same biją, a ciało wydziela uzdrawiającą woń. Cel: umartwienie ciała dla zbawienia wiecznego duszy.',
-            '2. Wzorzec idealnego rycerza („Pieśń o Rolandzie”): wierność Bogu, królowi (Karolowi Wielkiemu) i damie serca; bezwzględny honor, odwaga i pogarda dla śmierci w walce z poganami (Saracenami). Tragiczna duma: Roland odmawia zadęcia w róg Olifant, by nie splamić honoru wezwaniem pomocy. Śmierć na wzgórzu twarzą do wroga, powierzenie rękawicy aniołowi Gabrielowi.',
-            '3. Wzorzec idealnego władcy (Gall Anonim: „Kronika polska”): portret Bolesława Chrobrego i Krzywoustego — władca pobożny, sprawiedliwy dla poddanych, odważny wódz, obrońca granic państwa i Kościoła.'
+            '1. Wzorzec ascety / świętego („Legenda o św. Aleksym” — usunięta z PP w 2024 r., cenny kontekst / przejściowo 2025–2028): dobrowolna rezygnacja z książęcego majątku, porzucenie młodej żony w noc poślubną, rozdanie bogactw biednym, 16 lat w Syrii i kolejne 16 lat upokorzeń pod schodami własnego pałacu w Rzymie. Po śmierci dzwony same biją, a ciało uzdrawia chorych.',
+            '2. Wzorzec idealnego rycerza („Pieśń o Rolandzie” — fragmenty w PP): wierność Bogu, suzerenowi (Karolowi Wielkiemu) i ojczyźnie („słodkiej Francji”); bezwzględny honor, odwaga i pogarda dla śmierci w walce z Saracenami. Tragiczna duma: Roland odmawia zadęcia w róg Olifant, by nie splamić honoru wezwaniem pomocy. Śmierć na wzgórzu twarzą do wroga, powierzenie rękawicy archaniołowi Gabrielowi (towarzyszą mu Cherubin i św. Michał).',
+            '3. Wzorzec idealnego władcy (Gall Anonim: „Kronika polska” — kontekst / usunięta z PP LO w 2024 r.): portret Bolesława Chrobrego i Krzywoustego — władca pobożny, sprawiedliwy dla poddanych, odważny wódz, obrońca granic państwa i Kościoła.'
           ]
         },
         {
@@ -253,7 +253,7 @@ export const DEPT_02 = {
                 summary: 'Motyw Stabat Mater Dolorosa (Stała Matka Boleściwa).',
                 bullets: [
                   'Humanizacja postaci Maryi: Maryja nie przemawia jako niedostępna Królowa Niebios, lecz jako bezradna, cierpiąca ziemska matka opłakująca męczeńską śmierć jedynego syna.',
-                  'Trzy płaszczyzny wypowiedzi: 1. Zwrot do wszystkich ludzi z prośbą o współczucie („Posłuchajcie, bracia miła... pożałuj mię, stary, młody”). 2. Czuły monolog do umierającego Jezusa (pragnienie obtarcia ran, podparcia główki, podzielenia się krwią). 3. Gorzki wyrzut do archanioła Gabriela, który obiecywał Jej w Zwiastowaniu szczęście, a zgotował niezmierny ból. Końcowy zwrot do innych matek z życzeniem, by nie musiały patrzeć na śmierć swoich dzieci.'
+                  'Cztery płaszczyzny (adresaci) wypowiedzi: 1. Zwrot do wszystkich ludzi z prośbą o współczucie („Posłuchajcie, bracia miła... pożałuj mię, stary, młody”). 2. Czuły monolog do umierającego Jezusa (pragnienie obtarcia ran, podparcia główki, podzielenia się krwią). 3. Gorzki wyrzut do archanioła Gabriela, który obiecywał Jej w Zwiastowaniu pełnię radości, a zgotował niezmierny ból. 4. Końcowy zwrot do innych matek, by modliły się za swoje dzieci.'
                 ],
                 essayUse: 'Idealny kontekst w motywach: cierpienie matki, obraz cierpienia Chrystusa, humanizm w średniowieczu.'
               }
@@ -281,10 +281,10 @@ export const DEPT_02 = {
     { id: 'kf2-2', front: 'Zdefiniuj pojęcie hybris na przykładzie „Antygony”.', back: 'Pycha i zuchwalstwo bohatera przekonanego o własnej wszechwiedzy. Kreon uważał, że jego edykt stoi ponad prawami boskimi, co doprowadziło do śmierci jego bliskich.', hint: 'Grzech pychy władcy.', category: 'pojecie' },
     { id: 'kf2-3', front: 'Na czym polega konflikt tragiczny w „Antygonie” Sofoklesa?', back: 'Na zderzeniu dwóch równorzędnych racji: prawa boskiego (reprezentowanego przez Antygonę) z prawem stanowionym/państwowym (reprezentowanym przez Kreona).', hint: 'Prawo boskie vs prawo państwowe.', category: 'lektura' },
     { id: 'kf2-4', front: 'Jak zginęła Antygona w tragedii Sofoklesa?', back: 'Powiesiła się na swojej chuście w kamiennym grobowcu, w którym zamurowano ją żywcem na rozkaz Kreona.', hint: 'Samobójstwo w grobowcu przed przybyciem pomocy.', category: 'bohater' },
-    { id: 'kf2-5', front: 'Czym różni się stoicyzm od epikureizmu?', back: 'Stoicyzm nakazuje panowanie nad emocjami i zachowanie cnoty (apatheia) wobec wyroków losu. Epikureizm zaleca czerpanie rozumnych przyjemności i unikanie cierpienia (ataraksja, carpe diem).', hint: 'Stoik trzyma nerwy na wodzy; epikurejczyk chwyta dzień z umiarem.', category: 'epoka' },
+    { id: 'kf2-5', front: 'Czym różni się stoicyzm od epikureizmu?', back: 'Stoicyzm nakazuje kierowanie się cnotą (arete) i osiągnięcie wolności od namiętności (apatheia) wobec wyroków losu. Epikureizm zaleca czerpanie rozumnych przyjemności i unikanie cierpienia (ataraksja, carpe diem).', hint: 'Stoik trzyma nerwy na wodzy; epikurejczyk chwyta dzień z umiarem.', category: 'epoka' },
     { id: 'kf2-6', front: 'Jakie znaczenie ma topos Hioba w kulturze europejskiej?', back: 'Topos człowieka cierpiącego niewinnie, który mimo skrajnych prób losu i utraty wszystkiego zachowuje wiarę w Boga i odrzuca bunt nihilizmu.', hint: 'Niezawinione cierpienie i próba wiary.', category: 'motyw' },
     { id: 'kf2-7', front: 'Co oznacza sentencja Koheleta: „Vanitas vanitatum et omnia vanitas”?', back: '„Marność nad marnościami i wszystko marność” — przypomnienie o ulotności dóbr ziemskich (bogactwa, władzy, urody), które nie dają trwałego sensu wobec śmierci.', hint: 'Księga Koheleta i topos przemijania.', category: 'cytat' },
-    { id: 'kf2-8', front: 'Wymień 3 średniowieczne wzorce parenetyczne i utwory je reprezentujące.', back: '1. Święty/asceta („Legenda o św. Aleksym”), 2. Rycerz chrześcijański („Pieśń o Rolandzie”), 3. Idealny władca (Gall Anonim: „Kronika polska”).', hint: 'Asceta, rycerz, król.', category: 'epoka' },
+    { id: 'kf2-8', front: 'Wymień 3 średniowieczne wzorce parenetyczne i utwory je reprezentujące.', back: '1. Rycerz chrześcijański („Pieśń o Rolandzie” — PP we fragm.), 2. Asceta („Legenda o św. Aleksym” — kontekst / poza PP od 2024 r.), 3. Idealny władca (Gall Anonim: „Kronika polska” — kontekst / poza PP od 2024 r.).', hint: 'Asceta, rycerz, król.', category: 'epoka' },
     { id: 'kf2-9', front: 'Co to jest motyw Deesis w „Bogurodzicy”?', back: 'Układ orędownictwa: Chrystus jako Sędzia, a po bokach Maryja i Jan Chrzciciel, którzy pośredniczą między ludźmi a Bogiem.', hint: 'Chrystus, Maryja i Jan Chrzciciel.', category: 'motyw' },
     { id: 'kf2-10', front: 'Na czym polega humanizacja Maryi w „Lamencie świętokrzyskim”?', back: 'Maryja nie jest przedstawiona jako odległa Królowa Niebios, lecz jako cierpiąca, ziemska matka opłakująca mękę swojego syna i prosząca ludzi o współczucie.', hint: 'Matka płacząca pod krzyżem jak zwykła kobieta.', category: 'lektura' },
     { id: 'kf2-11', front: 'Co oznacza topos Danse Macabre w „Rozmowie Mistrza Polikarpa ze Śmiercią”?', back: 'Taniec śmierci ukazujący powszechny egalitaryzm wobec zgonu — Śmierć zabiera każdego (papieża, cesarza, żebraka) bez względu na stan społeczny i majątek.', hint: 'Wobec śmierci wszyscy są równi.', category: 'motyw' },
@@ -294,7 +294,7 @@ export const DEPT_02 = {
     { id: 'kf2-15', front: 'Wymień cechy eposu homeryckiego widoczne w „Iliadzie”.', back: 'Inwokacja, heksametr, stałe epitety („szybkonogi Achilles”), porównania homeryckie, wszechwiedzący i obiektywny narrator, sceny z udziałem bogów.', hint: 'Styl podniosły i rozbudowane porównania.', category: 'pojecie' },
     { id: 'kf2-16', front: 'Kim był Prometeusz i jaki topos zapoczątkował?', back: 'Tytanem, który ulepił człowieka z gliny i łez oraz ukradł bogom ogień, by pomóc ludziom. Zapoczątkował topos prometeizmu — bezinteresownego buntu i cierpienia za ludzkość.', hint: 'Dobroczyńca ludzi przykuty do Kaukazu.', category: 'motyw' },
     { id: 'kf2-17', front: 'Dlaczego Aleksy z „Legendy o św. Aleksym” porzucił swoją żonę?', back: 'Uważał małżeństwo i doczesne rozkosze za przeszkodę w dążeniu do doskonałości duchowej i zbawienia wiecznego; wybrał drogę ascezy.', hint: 'Ślub czystości i umartwienie ciała.', category: 'bohater' },
-    { id: 'kf2-18', front: 'Co oznacza łacińska dewiza średniowiecza: „Ad maiorem Dei gloriam”?', back: '„Na większą chwałę Bożą” — naczelna zasada teocentryzmu tłumacząca anonimowość artystów tworzących dla Boga, a nie dla doczesnego poklasku.', hint: 'Teocentryzm w sztuce i nauce.', category: 'epoka' },
+    { id: 'kf2-18', front: 'Dlaczego większość dzieł literackich średniowiecza pozostała anonimowa?', back: 'Z powodu teocentryzmu i średniowiecznej pokory — pisarze traktowali swój talent jako służbę Bogu i Kościołowi, nie szukając indywidualnej sławy ziemskiej (indywidualizm narodził się dopiero w renesansie).', hint: 'Teocentryzm i pokora wobec Stwórcy.', category: 'epoka' },
     { id: 'kf2-19', front: 'Czym różni się mimesis od fatum w estetyce antycznej?', back: 'Mimesis to zasada naśladowania rzeczywistości i ludzkich działań w sztuce (Arystoteles), natomiast fatum to nieuchronne, ślepe przeznaczenie ciążące nad losem człowieka w tragedii greckiej.', hint: 'Naśladowanie natury vs nieuchronny los.', category: 'pojecie' },
     { id: 'kf2-20', front: 'Jaką funkcję w tragedii antycznej pełnił chór oraz zasada trzech jedności?', back: 'Chór komentował wydarzenia i reprezentował głos opinii publicznej oraz sumienia; zasada trzech jedności (miejsca, czasu do jednej doby, jednego wątku akcji) skupiała uwagę widza na konflikcie tragicznym.', hint: 'Komentarz moralny + zwartość miejsca, czasu i akcji.', category: 'pojecie' },
     { id: 'kf2-21', front: 'Dlaczego w „Antygonie” nie wolno pisać, że „Kreon jest wyłącznie złym tyranem bez racji”?', back: 'Ponieważ to błąd podważający istotę konfliktu tragicznego — Kreon broni spójności państwa, porządku publicznego i zakazu gloryfikacji zdrajcy (Polinejkesa), zanim popadnie w pychę (hybris).', hint: 'Obie strony mają swoje racje prawne.', category: 'lektura' },
@@ -416,14 +416,14 @@ export const DEPT_02 = {
       options: [
         "Śmierć oszczędza ludzi bogatych i sprawujących wysokie urzędy kościelne.",
         "Śmierć ukazuje się jako piękna, młoda kobieta zapraszająca do zabawy.",
-        "Taniec z kościotrupem symbolizuje równość wszystkich ludzi wobec zgonu niezależnie od majątku i stanu.",
+        "Taniec ze Śmiercią symbolizuje równość wszystkich ludzi wobec zgonu niezależnie od majątku i stanu.",
         "Taniec ten mogą wykonywać wyłącznie rycerze polegli na polu chwały."
       ],
       correct: 2,
       explanation: "Danse macabre przypomina o egalitaryzmie śmierci — przed jej kosą żebrak i papież są dokładnie tacy sami.",
       whyWrong: {
         0: "Śmierć w wierszu wprost kpi z biskupów i sędziów biorących łapówki.",
-        1: "Śmierć jest odrażającym, rozkładającym się szkieletem kobiety.",
+        1: "Śmierć jest odrażającym, rozkładającym się trupem kobiety (a nie tylko szkieletem).",
         3: "Taniec śmierci obejmuje całe społeczeństwo, a nie tylko rycerzy."
       },
       examTip: "Połącz taniec śmierci z pojęciem egalitaryzmu (równości stanowej)."
@@ -539,7 +539,7 @@ export const DEPT_02 = {
         "Skupienie się wyłącznie na dobrach materialnych jako zabezpieczeniu przed śmiercią."
       ],
       correct: 0,
-      explanation: "Stoicyzm (Zenon z Kition, Seneka, Marek Aureliusz) zalecał równowagę ducha (ataraksję), panowanie nad emocjami i życie zgodne z rozumem i cnotą.",
+      explanation: "Stoicyzm (Zenon z Kition, Seneka, Marek Aureliusz) zalecał wewnętrzny spokój i wolność od namiętności (apatheię), panowanie nad emocjami oraz życie zgodne z rozumem i cnotą.",
       whyWrong: {
         1: "To zniekształcony (potoczny) obraz epikureizmu, tzw. hedonizm.",
         2: "To postawa prometejska lub romantyczna, obca stoickiemu spokojowi.",
@@ -647,7 +647,7 @@ export const DEPT_02 = {
         2: "Etos rycerski wyklucza zdradę suzerena i chciwość.",
         3: "To opis wzorca ascety (np. św. Aleksego), a nie rycerza."
       },
-      examTip: "Średniowieczna parenetyka opiera się na trzech filarach: rycerz (Roland), asceta (św. Aleksy), władca (Karol Wielki / Bolesław Chrobry)."
+      examTip: "Średniowieczna parenetyka opiera się na trzech filarach: rycerz (Roland — w PP we fragm.) oraz asceta (św. Aleksy) i władca (Gall Anonim — poza PP od 2024 r., ważne jako kontekst)."
     }
   ]
 };

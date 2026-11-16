@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CheckCircle2, Copy, RotateCcw, Shuffle, Trophy } from 'lucide-react';
+import { MathText } from './MathText';
 
 function createShuffledOrders(questions) {
   return (questions || []).map((q) => {
@@ -97,7 +98,7 @@ export function QuizView({ level, savedScore, onSaveScore, onNextLevel, hasNextL
         return (
           <div key={q.id || qIdx} className="quiz-card">
             <p className="quiz-q">
-              {qIdx + 1}. {q.q}
+              {qIdx + 1}. <MathText text={q.q} />
             </p>
             <div className="quiz-options">
               {order.map((origIdx, optIdx) => {
@@ -114,7 +115,7 @@ export function QuizView({ level, savedScore, onSaveScore, onNextLevel, hasNextL
                     disabled={isAnswered}
                     onClick={() => handleSelect(qIdx, optIdx)}
                   >
-                    {q.options[origIdx]}
+                    <MathText text={q.options[origIdx]} />
                   </button>
                 );
               })}
@@ -122,16 +123,16 @@ export function QuizView({ level, savedScore, onSaveScore, onNextLevel, hasNextL
             {isAnswered && (
               <div className="quiz-explain">
                 <div>
-                  <strong>{chosen === displayCorrect ? 'Dobrze!' : 'Błąd.'}</strong> {q.explanation}
+                  <strong>{chosen === displayCorrect ? 'Dobrze!' : 'Błąd.'}</strong> <MathText text={q.explanation} />
                 </div>
                 {distractorReason && (
                   <div className="quiz-why-wrong">
-                    <strong>Dlaczego to pułapka:</strong> {distractorReason}
+                    <strong>Dlaczego to pułapka:</strong> <MathText text={distractorReason} />
                   </div>
                 )}
                 {q.examTip && (
                   <div className="quiz-exam-tip">
-                    <strong>💡 Wskazówka CKE:</strong> {q.examTip}
+                    <strong>💡 Wskazówka CKE:</strong> <MathText text={q.examTip} />
                   </div>
                 )}
               </div>

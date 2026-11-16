@@ -21,6 +21,7 @@ await import('./tier1_features.test.js');
 await import('./tier2_boundaries.test.js');
 await import('./tier3_interactions.test.js');
 await import('./tier4_scenarios.test.js');
+await import('./fizyka.test.js');
 
 // 3. Gracefully clean up Vite SSR handles upon suite completion with exit-code awareness
 after(async () => {

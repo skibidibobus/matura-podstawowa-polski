@@ -3,7 +3,7 @@ export const DEPT_07 = {
   displayNum: 7,
   code: 'DZIAŁ 7',
   title: 'Dwudziestolecie Międzywojenne — Wolność, Formy i Awangarda',
-  subtitle: 'Przedwiośnie w całości, Ferdydurke, Skamander, Awangarda Krakowska, Schulz, Leśmian',
+  subtitle: 'Przedwiośnie w całości, Ferdydurke (fragmenty), Skamander, Awangarda Krakowska, Schulz, Leśmian',
   duration: '80 min',
   xp: 240,
   notes: [
@@ -113,7 +113,7 @@ export const DEPT_07 = {
                 summary:
                   'Po udziale w wojnie polsko-bolszewickiej 1920 r. (uratowanie życia Hipolitowi Wielosławskiemu) Cezary spędza czas w majątku Nawłoć.',
                 bullets: [
-                  'Sielankowe życie: beztroska, obfite posiłki (podwieczorki, kawy), polowania, bale i romanse (z Laurą Kościeniecką, Karoliną Szarłatowiczówną, Wandą Okszyńską).',
+                  'Sielankowe życie: beztroska, obfite posiłki (podwieczorki, kawy), polowania, bale i złożone relacje uczuciowe (burzliwy romans z Laurą Kościeniecką, flirt z Karoliną Szarłatowiczówną oraz tragicznie odwzajemnione zazdrością uczucie zakochanej w nim Wandy Okszyńskiej).',
                   'Obraz komorników w folwarku Chłodek: nędza, głód, spanie z bydłem w kurnych chatach — ziemiaństwo ignoruje los własnych fornali.',
                   'Tragiczny finał: Wanda z zazdrości truje Karolinę strychniną, a Laura wychodzi za mąż dla pieniędzy za Barwickiego, upokarzając Cezarego.'
                 ],
@@ -151,7 +151,7 @@ export const DEPT_07 = {
     {
       id: 'kn7-3',
       title: 'Witold Gombrowicz: „Ferdydurke” — Filozofia Formy, Gęby i Pupy',
-      badge: 'Lektura Obowiązkowa (w całości / fragmenty)',
+      badge: 'Lektura Obowiązkowa (od 2024 r. we fragmentach)',
       intro:
         'Powieść-prowokacja (1937 r.) będąca bezwzględną dekonstrukcją schematów społecznych. Gombrowicz dowodzi, że człowiek nigdy nie jest w pełni autentyczny, lecz nieustannie stwarzany i deformowany przez innych ludzi w relacjach międzyludzkich.',
       blocks: [
@@ -169,14 +169,14 @@ export const DEPT_07 = {
           type: 'grid',
           items: [
             {
-              term: 'Część I: Szkoła Dyzia i lekcja polskiego',
+              term: 'Część I: Szkoła Józia i lekcja polskiego',
               desc: 'Upupienie i tresura intelektualna.',
               details: {
                 summary:
                   '30-letni Józio Kowalski zostaje cofnięty przez profesora Pimkę do gimnazjum.',
                 bullets: [
                   'Szkoła dyrektora Piórkowskiego to instytucja służąca zdziecinnieniu młodzieży pod hasłem „wmawiania niewinności”.',
-                  'Lekcja polskiego u profesora Bladaczki: schematyzm i bezmyślne wbijanie formułek: „Słowacki wielkim poetą był, bo zachwyca!”. Gdy Gałkiewicz protestuje („Kiedy mnie nie zachwyca!”), profesor wpada w panikę, bo podważenie schematu grozi rozpadem autorytetu.',
+                  'Lekcja polskiego u profesora Bladaczki: schematyzm i bezmyślne wbijanie formułek: „Słowacki wielkim poetą był!” (i dlatego ma zachwycać). Gdy Gałkiewicz protestuje („Kiedy mnie nie zachwyca!”), profesor wpada w panikę, bo podważenie schematu grozi rozpadem autorytetu.',
                   'Pojedynek na miny Syfona (niewinność) i Miętusa (wulgarność) — zakończony brutalnym „gwałtem przez uszy” (uświadomieniem seksualnym).'
                 ],
                 essayUse: 'Do krytyki skostniałego systemu edukacji, tresury myślenia i mechanizmów władzy instytucjonalnej.'
@@ -191,7 +191,7 @@ export const DEPT_07 = {
                 bullets: [
                   'Młodziakowie zachęcają córkę Zutę do swobody obyczajowej i kpią z tradycji, lecz ich „nowoczesność” to kolejna sztuczna forma.',
                   'Prowokacja Józia: Józio pisze w imieniu Zuty dwa miłosne liściki do starego profesora Pimki i młodego Kopyrdy, wyznaczając im schadzkę w nocy w jej pokoju.',
-                  'Finał: rodzice zastają w szafie córki dwóch amatorów — natychmiast pęka maska tolerancji, dochodzi do groteskowej bójki na kułaki i rozpadu nowoczesnej formy.'
+                  'Finał: rodzice zastają ukrytych w pokoju córki (w osobnych szafach) dwóch adoratorów: Pimkę i Kopyrdę — natychmiast pęka maska tolerancji, dochodzi do groteskowej bójki na kułaki i rozpadu nowoczesnej formy.'
                 ],
                 essayUse: 'Do motywu fałszu obyczajowego, demaskowania pozorów i konfliktu pokoleń.'
               }
@@ -231,7 +231,7 @@ export const DEPT_07 = {
                 summary:
                   'Twórca własnego, autonomicznego uniwersum poetyckiego, pełnego słowiańskich demonów, neologizmów i panteizmu.',
                 bullets: [
-                  'Leśmianizmy: nowo tworzone wyrazy oddające stany niebytu i metamorfozy (np. znikomek, bezpowrotnie, zróżowienie).',
+                  'Leśmianizmy: nowo tworzone wyrazy oddające stany niebytu i metamorfozy (np. znikomek, niebywalec, zróżowienie, rozmajaczenie).',
                   '„Dusiołek”: filozoficzna ballada ludowa o Bajdale i jego zwierzętach; Bajdała we śnie duszony przez potwora budzi się i stawia odważne pytanie Bogu: „Nie dość ci, żeś potworzył mnie, szkapę i wołka, / Jeszcześ musiał takiego zmajstrować Dusiołka?”.',
                   '„Dziewczyna”: ballada o dwunastu braciach rozbijających potężny mur w pogoni za głosem dziewczyny; po śmierci braci mur rozbijają ich cienie, a potem młoty — za murem nie było nic prócz pustki (tragedia ludzkiego dążenia do ideału).',
                   '„W malinowym chruśniaku”: zmysłowy, panteistyczny erotyk osadzony w gęstwinie dzikiej natury.'
@@ -240,7 +240,7 @@ export const DEPT_07 = {
               }
             },
             {
-              term: 'Bruno Schulz: „Sklepy cynamonowe”',
+              term: 'Bruno Schulz: „Sklepy cynamonowe” (PR / przejściowo 2025–2028)',
               desc: 'Mitologizacja rzeczywistości i czas dzieciństwa.',
               details: {
                 summary:
@@ -267,11 +267,11 @@ export const DEPT_07 = {
     { id: 'kf7-6', front: 'Gdzie Cezary Baryka spędził wczesną młodość i zetknął się z rewolucją?', back: 'W Baku nad Morzem Kaspijskim, gdzie wybuchła rewolucja bolszewicka i doszło do krwawej rzezi Ormian.', hint: 'Baku', category: 'lektura' },
     { id: 'kf7-7', front: 'W jaki sposób zginęła Karolina Szarłatowiczówna w Nawłoci?', back: 'Została otruta strychniną dodaną do herbaty przez zazdrosną o Cezarego Wandę Okszyńską.', hint: 'Otrucie strychniną', category: 'lektura' },
     { id: 'kf7-8', front: 'Jakie dwa programy naprawy Polski ścierają się w III części „Przedwiośnia”?', back: 'Ewolucyjny program reform Szymona Gajowca (pozytywistyczny) oraz program krwawej rewolucji Antoniego Lulka (komunistyczny).', hint: 'Gajowiec vs Lulek', category: 'pojecie' },
-    { id: 'kf7-9', front: 'Jak kończy się „Przedwiośnie” Stefana Żeromskiego?', back: 'Cezary w mundurze legionisty idzie w robotniczej demonstracji na Belweder, ale kroczy ODDZIELNIE, OBOK tłumu.', hint: 'Marsz na Belweder', category: 'lektura' },
+    { id: 'kf7-9', front: 'Jak kończy się „Przedwiośnie” Stefana Żeromskiego?', back: 'Cezary w mundurze żołnierza polskiego z wojny 1920 r. idzie w robotniczej demonstracji na Belweder, ale kroczy ODDZIELNIE, OBOK tłumu.', hint: 'Marsz na Belweder', category: 'lektura' },
     { id: 'kf7-10', front: 'Czym jest „Forma” w filozofii Witolda Gombrowicza?', back: 'Narzucanym przez kulturę i innych ludzi schematem zachowania, pózą i rolą społeczną, z której nie można się całkowicie wyzwolić.', hint: 'Uniwersalny schemat zachowania', category: 'pojecie' },
     { id: 'kf7-11', front: 'Co w „Ferdydurke” oznacza termin „Gęba”?', back: 'Maskę i fałszywą rolę przyprawianą człowiekowi przez otoczenie („przyprawić komuś gębę”).', hint: 'Maska społeczna', category: 'pojecie' },
-    { id: 'kf7-12', front: 'Czym było „upupienie” w szkole Dyzia?', back: 'Sztucznym infantylizowaniem i narzucaniem zdziecinnienia oraz naiwności przez nauczycieli i autorytety.', hint: 'Pupa i infantylizm', category: 'pojecie' },
-    { id: 'kf7-13', front: 'Kto wypowiada słynne zdanie: „Słowacki wielkim poetą był, bo zachwyca!”?', back: 'Profesor Bladaczka podczas lekcji polskiego w szkole dyrektora Piórkowskiego w „Ferdydurke”.', hint: 'Profesor Bladaczka', category: 'cytat' },
+    { id: 'kf7-12', front: 'Czym było „upupienie” w szkole dyrektora Piórkowskiego w „Ferdydurke”?', back: 'Sztucznym infantylizowaniem i narzucaniem zdziecinnienia oraz naiwności przez nauczycieli i autorytety.', hint: 'Pupa i infantylizm', category: 'pojecie' },
+    { id: 'kf7-13', front: 'Kto wypowiada słynne zdanie: „Słowacki wielkim poetą był!”?', back: 'Profesor Bladaczka podczas lekcji polskiego w szkole dyrektora Piórkowskiego w „Ferdydurke”.', hint: 'Profesor Bladaczka', category: 'cytat' },
     { id: 'kf7-14', front: 'Kim była Zuta Młodziakówna w „Ferdydurke”?', back: 'Nowoczesną pensjonarką, symbolem kultu ciała, sportu, wyzwolenia seksualnego i „łydki”.', hint: 'Łydka i nowoczesność', category: 'bohater' },
     { id: 'kf7-15', front: 'Czym kończy się pobyt Józia w dworku w Bolimowie?', back: 'Porwaniem Zosi i uświadomieniem sobie, że nie ma ucieczki przed gębą inaczej niż w inną gębę.', hint: 'Ucieczka z Zosią', category: 'lektura' },
     { id: 'kf7-16', front: 'Czym są „leśmianizmy” w poezji Bolesława Leśmiana?', back: 'Oryginalnymi neologizmami poetyckimi tworzonymi przez autora dla oddania stanów niebytu i metamorfoz przyrody (np. znikomek).', hint: 'Neologizmy Leśmiana', category: 'pojecie' },
@@ -282,10 +282,10 @@ export const DEPT_07 = {
     { id: 'kf7-21', front: 'Jakie trzy wielkie etapy ideowe i życiowe przechodzi Cezary Baryka w „Przedwiośniu”?', back: '1) Baku — rewolucyjny zapał i brutalna rzeczywistość rzezi oraz głodu; 2) Nawłoć — sielankowe ziemiaństwo i romans z Laurą, ale też nędza Chłodka; 3) Warszawa — spór o kształt Polski z Gajowcem i Lulkiem oraz marsz na Belweder.', hint: 'Baku → Nawłoć → Warszawa.', category: 'lektura' },
     { id: 'kf7-22', front: 'Czym był mit „szklanych domów” w „Przedwiośniu” i kto go stworzył?', back: 'Opowieść umierającego ojca, Seweryna Baryki, o nowoczesnej, sprawiedliwej i czystej Polsce budowanej ze szkła — po przekroczeniu granicy okazała się bolesną utopią w zderzeniu z nędzą i błotem polskiego miasteczka.', hint: 'Utopia ojca vs rzeczywistość II RP.', category: 'motyw' },
     { id: 'kf7-23', front: 'Jakie dwie koncepcje odbudowy Polski zderzają się w trzeciej części „Przedwiośnia”?', back: 'Ewolucyjne reformy stopniowe (Szymon Gajowiec — praca u podstaw, oświata, waluta, podatki) vs gwałtowny przewrót komunistyczny i rewolucja (Antoni Lulek).', hint: 'Ewolucjonizm Gajowca vs rewolucjonizm Lulka.', category: 'pojecie' },
-    { id: 'kf7-24', front: 'Co symbolizuje finałowa scena marszu robotników na Belweder w „Przedwiośniu”?', back: 'Cezary Baryka idzie w pierwszym szeregu, lecz w osobnym, własnym rytmie — symbolizuje to dramatyczne ostrzeżenie Żeromskiego przed wybuchem społecznym i brak jednoznacznej odpowiedzi ideowej bohatera.', hint: 'Otwarte zakończenie i przestroga dla władzy.', category: 'lektura' },
+    { id: 'kf7-24', front: 'Co symbolizuje finałowa scena marszu robotników na Belweder w „Przedwiośniu”?', back: 'Cezary Baryka prze naprzód oddzielnie, obok tłumu robotników — symbolizuje to dramatyczne ostrzeżenie Żeromskiego przed wybuchem społecznym i brak jednoznacznej odpowiedzi ideowej bohatera.', hint: 'Otwarte zakończenie i przestroga dla władzy.', category: 'lektura' },
     { id: 'kf7-25', front: 'Zdefiniuj trzy kluczowe pojęcia z „Ferdydurke” Gombrowicza: „gęba”, „pupa” i „łydka”.', back: '„Gęba” to narzucona przez innych maska/rola społeczna; „pupa” to upupienie, czyli traktowanie dorosłego jak niedojrzałego dzieciaka (np. przez profesora Pimkę); „łydka” to kult nowoczesności, sportu i biologii u Młodziaków.', hint: 'Maska, zdziecinnienie, kult młodości.', category: 'pojecie' },
     { id: 'kf7-26', front: 'Na czym polega groteska w „Ferdydurke” na przykładzie lekcji języka polskiego u profesora Bladaczki?', back: 'Absurdalne, mechaniczne wmawianie uczniom na siłę, dlaczego Słowacki „wielkim poetą był” i ma „zachwycać, skoro nie zachwyca” — parodia skostniałej szkoły zabijającej autentyczność.', hint: '„Dlaczego Słowacki wzbudza zachwyt?”', category: 'lektura' },
-    { id: 'kf7-27', front: 'Jakie trzy środowiska (światy form) poznaje trzydziestoletni Józio Kowalski w „Ferdydurke”?', back: '1) Szkołę (tradycyjno-konserwatywna „pupa” Pimki i Bladaczki); 2) Stancję Młodziaków (pozornie wyzwolona nowoczesność i „łydka”); 3) Dworek Hurleckich w Bolimowie (feudalno-pański anachronizm i walka z parobkami).', hint: 'Szkoła, stancja Młodziaków, dworek w Bolimowie.', category: 'lektura' },
+    { id: 'kf7-27', front: 'Jakie trzy środowiska (światy form) poznaje trzydziestoletni Józio Kowalski w „Ferdydurke”?', back: '1) Szkołę (tradycyjno-konserwatywna „pupa” Pimki i Bladaczki); 2) Stancję Młodziaków (pozornie wyzwolona nowoczesność i „łydka”); 3) Dworek Hurleckich w Bolimowie (feudalno-pański anachronizm i próba „bratania się” Miętusa z parobkiem Walkiem zakończona bójką).', hint: 'Szkoła, stancja Młodziaków, dworek w Bolimowie.', category: 'lektura' },
     { id: 'kf7-28', front: 'Jaką rolę odgrywają grupy poetyckie „Skamander” oraz „Awangarda Krakowska” w Dwudziestoleciu?', back: 'Skamander (Tuwim, Lechoń, Wierzyński, Iwaszkiewicz, Słonimski) głosił witalizm, pochwałę codzienności i zwykłego człowieka; Awangarda Krakowska (Peiper, Przyboś) stawiała na „miasto, masę, maszynę” oraz maksymalną zwięzłość metafory.', hint: 'Codzienność i witalizm vs rygor i technika.', category: 'epoka' },
     { id: 'kf7-29', front: 'Co oznacza pojęcie „katastrofizm” w literaturze lat 30. XX wieku?', back: 'Przeczucie nieuchronnej zagłady cywilizacji europejskiej, nadchodzącej totalitarnej wojny i kryzysu wartości humanistycznych (widoczne m.in. w poezji Czechowicza, Miłosza oraz w dramatach Witkacego).', hint: 'Lęk przed II wojną światową i upadkiem kultury.', category: 'epoka' },
     { id: 'kf7-30', front: 'Jaki sens filozoficzny ma „Traktat o manekinach” głoszony przez Ojca Jakuba w „Sklepach cynamonowych”?', back: 'Ojciec występuje jako zbuntowany demiurg, który chce tworzyć „wtórą kreację” z tandetnej, kruchej materii (manekiny, ptaki) na wzór człowieka, broniąc prawa do niedoskonałości i fantazji wbrew szarej nudzie świata.', hint: 'Pochwała tandety i wtórna kreacja.', category: 'motyw' }
@@ -304,7 +304,7 @@ export const DEPT_07 = {
       explanation: "Baryka NIE został bolszewikiem ani przywódcą komunistów — kroczył obok tłumu, co podkreślało jego ideowe osamotnienie i bunt przeciw złu.",
       whyWrong: {
         1: "Prawda: Pochód robotników zmierza w stronę Belwederu.",
-        2: "Prawda: Cezary włożył swój dawny mundur legionisty.",
+        2: "Prawda: Cezary ma na sobie czapkę i mundur żołnierza polskiego z wojny 1920 r.",
         3: "Prawda: Żeromski wyraźnie zaznacza, że Cezary parł naprzód „obok tłumu”."
       },
       examTip: "To jedno z najczęstszych pytań pułapkowych na maturze CKE z języka polskiego — Baryka nigdy nie zaakceptował programu komunistów!"
@@ -355,7 +355,7 @@ export const DEPT_07 = {
         "Wyzywa inżyniera Młodziaka na tradycyjny pojedynek na szable."
       ],
       correct: 0,
-      explanation: "Prowokacja z listami obnażyła rzekomą tolerancję Młodziaków: widząc w szafie córki dwóch mężczyzn, rodzice wpadli w furię i zaczęli się bić.",
+      explanation: "Prowokacja z listami obnażyła rzekomą tolerancję Młodziaków: widząc ukrytych w pokoju córki w osobnych szafach dwóch mężczyzn (Pimkę i Kopyrdę), rodzice wpadli w furię i zaczęli się bić.",
       whyWrong: {
         1: "Błąd: Józio nie dopuścił się podpalenia.",
         2: "Błąd: W intrydze nie było motywu kradzieży pieniędzy.",
@@ -463,7 +463,7 @@ export const DEPT_07 = {
         "Ksiądz Anastazy"
       ],
       correct: 1,
-      explanation: "Seweryn Baryka w pociągu do Polski opowiedział Cezaremu bajkę o rzekomym inżynierze Baryce budującym szklane domy.",
+      explanation: "Seweryn Baryka w pociągu do Polski opowiedział Cezaremu legendę o dalekim krewnym, inżynierze Baryce, który rzekomo buduje w Polsce szklane domy.",
       whyWrong: {
         0: "Błąd: Hipolit zaprosił Cezarego do tradycyjnego dworku w Nawłoci.",
         2: "Błąd: Gajowiec głosił ewolucjonizm państwowy, nie bajki o szkle.",
@@ -473,7 +473,7 @@ export const DEPT_07 = {
     },
     {
       id: "kq7-11",
-      q: "Pojedynek na miny w szkole Dyzia w „Ferdydurke” rozegrał się pomiędzy:",
+      q: "Pojedynek na miny w szkole dyrektora Piórkowskiego w „Ferdydurke” rozegrał się pomiędzy:",
       options: [
         "Józiem a profesorem Pimką",
         "Gałkiewiczem a Bladaczką",
@@ -613,7 +613,7 @@ export const DEPT_07 = {
         2: "Awangarda Krakowska operowała słownictwem urbanistycznym i technicznym, zupełnie innym niż baśniowy świat Leśmiana.",
         3: "Nie są to kryptonimy wojenne."
       },
-      examTip: "Gdy w arkuszu pojawi się wiersz z wyrazami typu „śniedź”, „znikomek”, „rozśpiew” — od razu szukaj Leśmiana i neologizmów."
+      examTip: "Gdy w arkuszu pojawi się wiersz z wyrazami typu „niebywalec”, „znikomek”, „rozśpiew” — od razu szukaj Leśmiana i neologizmów."
     },
     {
       id: "kq7-19",
@@ -643,7 +643,7 @@ export const DEPT_07 = {
         "Głoszenie apokaliptycznej zagłady już od 1918 roku."
       ],
       correct: 0,
-      explanation: "Po odzyskaniu niepodległości w 1918 r. Skamandryci zachłysnęli się wolnością i codziennością („Niechaj prawo zawsze prawo znaczy, a sprawiedliwość — sprawiedliwość”), pisząc o zwykłych ludziach i witalnej radości.",
+      explanation: "Po odzyskaniu niepodległości w 1918 r. Skamandryci zachłysnęli się wolnością i codziennością (np. Lechoń w „Herostratesie”: „A wiosną — niechaj wiosnę, nie Polskę zobaczę” czy witalistyczny wiersz Tuwima „Do krytyków”), pisząc o zwykłych ludziach i radości życia.",
       whyWrong: {
         1: "Skamandryci chętnie korzystali z tradycyjnej wersyfikacji i rymów (w przeciwieństwie do Awangardy).",
         2: "Czerpali z języka współczesnego i codziennego.",

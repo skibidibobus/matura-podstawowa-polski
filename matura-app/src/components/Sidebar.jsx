@@ -6,6 +6,7 @@ const COURSE_BRAND_SUBTITLES = {
   ustna: 'Kurs 76 pytań jawnych • CKE 2026–2028',
   kurs: 'Kurs 10 Działów CKE • Formuła 2023',
   probna: 'Sprint 7h • Matura Próbna',
+  fizyka: 'Matura Rozszerzona • 12 Działów CKE',
 };
 
 export function Sidebar({
@@ -70,7 +71,9 @@ export function Sidebar({
         >
           <BrandLogo size={34} />
           <div>
-            <div className="brand-title">Matura Polski</div>
+            <div className="brand-title">
+              {activeCourse === 'fizyka' ? 'Matura Fizyka' : 'Matura Polski'}
+            </div>
             <div className="brand-sub">
               {COURSE_BRAND_SUBTITLES[activeCourse] || COURSE_BRAND_SUBTITLES.probna}
             </div>
@@ -136,44 +139,73 @@ export function Sidebar({
         </button>
       )}
 
-      <div className="course-switcher" role="tablist" aria-label="Wybór kursu">
+      <div className="subject-switcher" role="navigation" aria-label="Wybór przedmiotu">
         <button
           type="button"
-          role="tab"
-          aria-selected={activeCourse === 'probna'}
-          className={`course-tab ${activeCourse === 'probna' ? 'active' : ''} ${
-            !allowedCourses.includes('probna') ? 'locked' : ''
-          }`}
-          onClick={() => onSelectCourse('probna')}
+          className={`subject-tab ${activeCourse !== 'fizyka' ? 'active' : ''}`}
+          onClick={() => {
+            if (activeCourse === 'fizyka') onSelectCourse('kurs');
+          }}
         >
-          {!allowedCourses.includes('probna') && <Lock size={11} style={{ marginRight: 3 }} />}
-          Matura Próbna
+          Język Polski
         </button>
         <button
           type="button"
-          role="tab"
-          aria-selected={activeCourse === 'kurs'}
-          className={`course-tab ${activeCourse === 'kurs' ? 'active' : ''} ${
-            !allowedCourses.includes('kurs') ? 'locked' : ''
+          className={`subject-tab ${activeCourse === 'fizyka' ? 'active' : ''} ${
+            !allowedCourses.includes('fizyka') ? 'locked' : ''
           }`}
-          onClick={() => onSelectCourse('kurs')}
+          onClick={() => onSelectCourse('fizyka')}
         >
-          {!allowedCourses.includes('kurs') && <Lock size={11} style={{ marginRight: 3 }} />}
-          Kurs Główny
-        </button>
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeCourse === 'ustna'}
-          className={`course-tab ${activeCourse === 'ustna' ? 'active' : ''} ${
-            !allowedCourses.includes('ustna') ? 'locked' : ''
-          }`}
-          onClick={() => onSelectCourse('ustna')}
-        >
-          {!allowedCourses.includes('ustna') && <Lock size={11} style={{ marginRight: 3 }} />}
-          Matura Ustna
+          {!allowedCourses.includes('fizyka') && <Lock size={11} style={{ marginRight: 4 }} />}
+          Fizyka (PR)
         </button>
       </div>
+
+      {activeCourse !== 'fizyka' ? (
+        <div className="course-switcher" role="tablist" aria-label="Wybór kursu">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeCourse === 'probna'}
+            className={`course-tab ${activeCourse === 'probna' ? 'active' : ''} ${
+              !allowedCourses.includes('probna') ? 'locked' : ''
+            }`}
+            onClick={() => onSelectCourse('probna')}
+          >
+            {!allowedCourses.includes('probna') && <Lock size={11} style={{ marginRight: 3 }} />}
+            Matura Próbna
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeCourse === 'kurs'}
+            className={`course-tab ${activeCourse === 'kurs' ? 'active' : ''} ${
+              !allowedCourses.includes('kurs') ? 'locked' : ''
+            }`}
+            onClick={() => onSelectCourse('kurs')}
+          >
+            {!allowedCourses.includes('kurs') && <Lock size={11} style={{ marginRight: 3 }} />}
+            Kurs Główny
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeCourse === 'ustna'}
+            className={`course-tab ${activeCourse === 'ustna' ? 'active' : ''} ${
+              !allowedCourses.includes('ustna') ? 'locked' : ''
+            }`}
+            onClick={() => onSelectCourse('ustna')}
+          >
+            {!allowedCourses.includes('ustna') && <Lock size={11} style={{ marginRight: 3 }} />}
+            Matura Ustna
+          </button>
+        </div>
+      ) : (
+        <div className="physics-course-banner">
+          <span>Od 0 do 100% • Maj 2027</span>
+          <span>Zadania: arkuszownik.pl</span>
+        </div>
+      )}
 
       {onToggleRankingMode && (
         <button

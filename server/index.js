@@ -9,7 +9,7 @@ import {
   verifyPassword,
   verifyToken,
 } from './auth.js';
-import { ALL_COURSES, JsonStore, computeProgressStats, getEffectiveAccess } from './store.js';
+import { ALL_COURSES, DEFAULT_STUDENT_COURSES, JsonStore, computeProgressStats, getEffectiveAccess } from './store.js';
 import { handleMonetizationRoute } from './monetization.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -190,7 +190,7 @@ export function createAppServer({
           displayName,
           passwordHash: hashPassword(plainPassword),
           role: 'student',
-          allowedCourses: [...ALL_COURSES],
+          allowedCourses: [...DEFAULT_STUDENT_COURSES],
           durationDays: 1,
           accountType: 'one_time',
         });
@@ -331,7 +331,7 @@ export function createAppServer({
                   : 14;
             const allowedCourses = Array.isArray(body.allowedCourses)
               ? body.allowedCourses
-              : [...ALL_COURSES];
+              : [...DEFAULT_STUDENT_COURSES];
 
             const created = store.createUser({
               username,

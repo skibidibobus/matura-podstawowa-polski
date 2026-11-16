@@ -19,7 +19,7 @@ export const DEPT_08 = {
           heading: 'Pokolenie Kolumbów — Tragizm Skażenia i Przedwczesnej Śmierci',
           paragraphs: [
             'Mianem Pokolenia Kolumbów (od tytułu powieści Romana Bratnego „Kolumbowie. Rocznik 20”) określa się młodych twórców urodzonych ok. 1920 r., których wkraczanie w dorosłość zbiegło się z wybuchem wojny.',
-            'Ich tragizm polegał na konieczności porzucenia młodzieńczych marzeń, miłości i talentu poetyckiego na rzecz walki z bronią w ręku. Stali przed potwornym dylematem etycznym: aby bronić ojczyzny, musieli zabijać, co rodziło poczucie nieodwracalnego skażenia moralnego („nauczono nas, że nie ma sumienia”).',
+            'Ich tragizm polegał na konieczności porzucenia młodzieńczych marzeń, miłości i talentu poetyckiego na rzecz walki z bronią w ręku. Stali przed potwornym dylematem etycznym: aby bronić ojczyzny, musieli zabijać, co rodziło poczucie nieodwracalnego skażenia moralnego („Nas nauczono. Nie ma sumienia.”).',
             'Najwybitniejsi przedstawiciele: Krzysztof Kamil Baczyński (zginął 4 sierpnia 1944 r. w powstaniu warszawskim), Tadeusz Gajcy (poległ 16 sierpnia 1944 r.), Andrzej Trzebiński (rozstrzelany w ulicznej egzekucji) oraz Tadeusz Borowski.'
           ]
         },
@@ -34,8 +34,8 @@ export const DEPT_08 = {
                   'Wstrząsający wiersz ukazujący dehumanizację i zniszczenie ludzkiej psychiki przez wojnę.',
                 bullets: [
                   'Monstrualne obrazy przyrody skażonej śmiercią: ziemia ociekająca krwią, ciała wiszące na drzewach, pękające czaszki.',
-                  'Wersy-klucze o utracie dekalogu: „Nas nauczono. Nie ma pamięci. / [...] Nas nauczono. Trzeba zapomnieć, / żeby nie widzieć wilczych kłów na niebie”.',
-                  'Dramatyczne pytanie finałowe: czy potomni docenią ich ofiarę, czy uznają ich jedynie za zbrodniarzy („Czy my postaniem na grobach, czy na nas postawią grób?”).'
+                  'Wersy-klucze o utracie dekalogu i zdziczeniu: „Nas nauczono. Nie ma litości. / [...] Nas nauczono. Nie ma sumienia.” oraz „Usta ściśnięte mamy, twarz wilczą”.',
+                  'Dramatyczne pytanie finałowe: czy przyszłe pokolenia okażą im chociaż pamięć i współczucie („czy nam postawią, z litości chociaż, / nad grobem krzyż”).'
                 ],
                 essayUse: 'Fundament do każdego tematu o losach pokolenia wojennego, zniszczeniu wartości i heroizmie tragicznym.'
               }
@@ -48,7 +48,7 @@ export const DEPT_08 = {
                   'Dwa przejmujące liryki elegijne o cenie walki podziemnej.',
                 bullets: [
                   '„Z głową na karabinie”: przeczucie nieuchronnej śmierci młodego żołnierza-poety, który musi wybierać między miłością a karabinem; czas wojny jako „krąg widm”.',
-                  '„Elegia o... [chłopcu polskim]”: matczyny lament nad synem idącym do powstania; kontrast dziecięcej niewinności („haftowali ci, syneczku, smutne oczy rudą krwią”) z okrucieństwem śmierci od kuli w skroń.'
+                  '„Elegia o... [chłopcu polskim]”: matczyny lament nad synem idącym na konspiracyjną walkę w czasie okupacji (marzec 1944 r.); kontrast dziecięcej niewinności („haftowali ci, syneczku, smutne oczy rudą krwią”) z okrucieństwem śmierci od kuli w skroń.'
                 ],
                 essayUse: 'Do motywu cierpienia matki, utraty niewinności przez młodzież i tragizmu powstańczego.'
               }
@@ -60,7 +60,7 @@ export const DEPT_08 = {
     {
       id: 'kn8-2',
       title: 'Tadeusz Borowski: „Opowiadania” — Anatomia Człowieka Zlagrowanego',
-      badge: 'Lektura Obowiązkowa',
+      badge: 'Lektura Obowiązkowa („Proszę państwa do gazu” w PP; pozostałe — kontekst)',
       intro:
         'Tadeusz Borowski, więzień Auschwitz i Dachau, stworzył najbardziej bezwzględny, odarty z iluzji obraz niemieckiego obozu koncentracyjnego. Odrzucił tradycyjne podziały na szlachetne ofiary i potwornych katów, ukazując, jak system obozowy zmuszał samych więźniów do współudziału w zbrodni.',
       blocks: [
@@ -82,7 +82,7 @@ export const DEPT_08 = {
                 summary:
                   'Narrator Tadek bierze bezpośredni udział w rozładunku bydlęcych wagonów wiozących Żydów na śmierć.',
                 bullets: [
-                  'Więźniowie komanda „Kanada” nie współczują ofiarom — są wściekli na przybywających ludzi za to, że przez nich muszą pracować w upale i smrodzie („U nas nie ma litości dla tych, co idą do gazu”). Chodzi im o zdobycie jedzenia i butów z bagaży.',
+                  'Więźniowie komanda „Kanada” nie współczują ofiarom — są wściekli na przybywających ludzi za to, że przez nich muszą pracować w upale i smrodzie („Jest prawo obozu, że ludzi idących na śmierć oszukuje się do ostatniej chwili. Jest to jedyna dopuszczalna forma litości.”). Zależy im na zdobyciu jedzenia, ubrań i cennych rzeczy z bagaży.',
                   'Wstrząsające sceny: matka uciekająca przed własnym dzieckiem ze strachu przed natychmiastowym skierowaniem do komory gazowej; trupy niemowląt noszone jak kurczęta.',
                   'Fizyczna niemoc Tadka: wymiotuje za wagonami, czując obrzydzenie do samego siebie, lecz wraca do pracy, by nie zginąć.'
                 ],
@@ -90,14 +90,14 @@ export const DEPT_08 = {
               }
             },
             {
-              term: '„U nas w Auschwitzu” — Powszedniość potworności',
-              desc: 'Listy do narzeczonej Marii i mechanizm zbrodni.',
+              term: '„Ludzie, którzy szli” i „U nas, w Auschwitzu...” — Powszedniość potworności',
+              desc: 'Rutyna lagru oraz listy do narzeczonej Marii o mechanizmie zbrodni.',
               details: {
                 summary:
-                  'Tadek opisuje codzienność obozową z perspektywy więźnia funkcyjnego.',
+                  'Tadek opisuje codzienność obozową Auschwitz-Birkenau z perspektywy więźnia funkcyjnego.',
                 bullets: [
-                  'Kult pracy niewolniczej: uświadomienie sobie, że cała kultura europejska i starożytny Rzym opierały się na niewolnictwie, a Auschwitz jest tego logiczną, nowoczesną kontynuacją.',
-                  'Szokujące sceny obojętności: gra w piłkę nożną — między wybiciem piłki na aut a jej podaniem do komór gazowych skierowano trzy tysiące ludzi.',
+                  'Kult pracy niewolniczej („U nas, w Auschwitzu...”): uświadomienie sobie, że cała kultura europejska i starożytny Rzym opierały się na niewolnictwie, a Auschwitz jest tego logiczną, nowoczesną kontynuacją.',
+                  'Szokujące sceny obojętności („Ludzie, którzy szli”): gra w piłkę nożną tuż obok rampy — między jednym a drugim kornerem (rzutem rożnym) do komór gazowych skierowano trzy tysiące ludzi.',
                   'Cynizm i brak złudzeń: nadzieja jest w obozie największą trucizną, bo każe ludziom bezwolnie iść na rzeź w nadziei, że to nie ich spotka śmierć.'
                 ],
                 essayUse: 'Do tematów o niszczeniu tożsamości, roli nadziei w niewoli i mechanizmach totalitaryzmu.'
@@ -119,7 +119,7 @@ export const DEPT_08 = {
     {
       id: 'kn8-3',
       title: 'Gustaw Herling-Grudziński: „Inny świat” oraz Hanna Krall: „Zdążyć przed Panem Bogiem”',
-      badge: 'Lektury Obowiązkowe',
+      badge: 'Lektury Obowiązkowe („Inny świat” od 2024 r. we fragmentach; „Zdążyć przed Panem Bogiem” w całości)',
       intro:
         'Dwa dokumentalne świadectwa totalitaryzmu i Zagłady. Grudziński analizuje niszczenie człowieka w sowieckim Gułagu, dowodząc jednak możliwości ocalenia godności. Krall w rozmowie z Markiem Edelmanem odbrązawia mit powstania w getcie warszawskim.',
       blocks: [
@@ -127,30 +127,30 @@ export const DEPT_08 = {
           type: 'grid',
           items: [
             {
-              term: 'Gustaw Herling-Grudziński: „Inny świat”',
+              term: 'Gustaw Herling-Grudziński: „Inny świat” (od 2024 r. we fragmentach)',
               desc: 'Zapiski z sowieckiego łagru w Jercewie (1940–1942).',
               details: {
                 summary:
                   'Anatomia komunistycznego obozu pracy przymusowej pod Archangielskiem.',
                 bullets: [
-                  'Mechanizm Gułagu: niszczenie godności przez katorżniczą pracę w tajdze przy wyrębie lasu, głód (kocioł I, II i III zależne od procentu normy urobku), donosicielstwo i nocne gwałty w barakach (tzw. domorocznice).',
+                  'Mechanizm Gułagu: niszczenie godności przez katorżniczą pracę w tajdze przy wyrębie lasu, głód (kocioł I, II i III zależne od procentu normy urobku), donosicielstwo i nocne gwałty w barakach (tzw. nocne łowy).',
                   'Ocalenie człowieczeństwa: wbrew Borowskiemu Grudziński dowodzi, że w skrajnych warunkach można zachować godność.',
                   'Postawa Michaiła Kostylewa: inżynier, który celowo przypalał sobie rękę w ogniu, cierpiąc potworny ból, by nie pracować dla nienawistnego systemu Stalina; ostatecznie popełnia samobójstwo, oblewając się wrzątkiem.',
-                  'Epilog w Rzymie (1945 r.): dawny więzień (Żyd ze Stalingradu) prosi autora o jedno słowo usprawiedliwienia („rozumiem”) za to, że złożył fałszywy donos na czterech Niemców, by ratować życie. Grudziński milczy — odrzuca relatywizm moralny: „Człowiek jest ludzki w ludzkich warunkach”.'
+                  'Epilog w Rzymie (1945 r.): dawny współwięzień z łagru (więzień z Witebska) prosi narratora o jedno słowo usprawiedliwienia („rozumiem”) za to, że złożył fałszywy donos na czterech współwięźniów (Niemców), by ratować życie. Grudziński milczy — odrzuca relatywizm moralny: „Człowiek jest ludzki w ludzkich warunkach”.'
                 ],
                 essayUse: 'Do tematów o granicach człowieczeństwa, obronie godności, sowieckich łagrach i dylematach etycznych po wojnie.'
               }
             },
             {
               term: 'Hanna Krall: „Zdążyć przed Panem Bogiem”',
-              desc: 'Rozmowy z Markiem Edelmanem o getcie i kardiochirurgii.',
+              desc: 'Rozmowy z Markiem Edelmanem o getcie i pracy kardiologa.',
               details: {
                 summary:
-                  'Wywiad-rzeka z ostatnim żyjącym przywódcą powstania w getcie warszawskim (kwiecień 1943 r.), a po wojnie wybitnym kardiochirurgiem w Łodzi.',
+                  'Wywiad-rzeka z ostatnim żyjącym przywódcą powstania w getcie warszawskim (kwiecień 1943 r.), a po wojnie wybitnym kardiologiem w Łodzi.',
                 bullets: [
                   'Demitologizacja heroizmu: Edelman odrzuca patos. Powstańcy wiedzieli, że zginą — chodziło jedynie o wybór godnego sposobu umierania (śmierć z bronią w ręku na ulicy zamiast bezimiennego zagazowania w komorze Treblinki).',
-                  'Obrazy getta: Umschlagplatz, handel numerkami na życie (chleb i marmolada), matki poświęcające dzieci, samobójstwo Anielewicza na Miłej 18.',
-                  'Praca kardiochirurga jako wyścig z Bogiem: Edelman na sali operacyjnej kontynuuje walkę o ludzkie życie — Bóg chce zdmuchnąć świeczkę człowieka, a lekarz stara się osłonić płomień choć na chwilę („Zdążyć przed Panem Bogiem”).'
+                  'Obrazy getta: Umschlagplatz, handel numerkami na życie (chleb i marmolada), matki ratujące dzieci (np. Tenenbaumowa oddająca córce Tosi jedyny numerek na życie i zażywająca cyjanek), samobójstwo Anielewicza na Miłej 18.',
+                  'Praca kardiologa jako wyścig z Bogiem: Edelman w szpitalu kontynuuje walkę o ludzkie życie — „Pan Bóg już chce zgasić świeczkę, a ja muszę szybko osłonić płomień” („Zdążyć przed Panem Bogiem”).'
                 ],
                 essayUse: 'Do motywu powstania w getcie, Holokaustu, sensu życia, godności śmierci i powołania lekarskiego.'
               }
@@ -313,9 +313,9 @@ export const DEPT_08 = {
     { id: 'kf8-7', front: 'O jakim sowieckim obozie pracy opowiada „Inny świat” Grudzińskiego?', back: 'O łagrze w Jercewie pod Archangielskiem (część systemu Gułag w ZSRR).', hint: 'Jercewo', category: 'lektura' },
     { id: 'kf8-8', front: 'Kim był Michaił Kostylew w „Innym świecie”?', back: 'Więźniem łagru, który celowo przypalał sobie rękę w ogniu, by cierpieć fizycznie, lecz nie pracować niewolniczo dla sowieckiego systemu.', hint: 'Przypalana ręka', category: 'bohater' },
     { id: 'kf8-9', front: 'Dlaczego Grudziński w epilogu w Rzymie nie powiedział słowa „rozumiem” dawnemu współwięźniowi?', back: 'Uznał, że praw obozowych nie można przenosić do wolnego świata i nie wolno usprawiedliwiać donosu ratującego własne życie.', hint: 'Brak rozgrzeszenia w Rzymie', category: 'motyw' },
-    { id: 'kf8-10', front: 'Z kim Hanna Krall przeprowadziła wywiad w książce „Zdążyć przed Panem Bogiem”?', back: 'Z Markiem Edelmanem — ostatnim żyjącym przywódcą powstania w getcie warszawskim i wybitnym kardiochirurgiem.', hint: 'Marek Edelman', category: 'bohater' },
+    { id: 'kf8-10', front: 'Z kim Hanna Krall przeprowadziła wywiad w książce „Zdążyć przed Panem Bogiem”?', back: 'Z Markiem Edelmanem — ostatnim żyjącym przywódcą powstania w getcie warszawskim i wybitnym kardiologiem.', hint: 'Marek Edelman', category: 'bohater' },
     { id: 'kf8-11', front: 'W jaki sposób Marek Edelman odbrązawia mit powstania w getcie?', back: 'Twierdzi, że nie walczyli o zwycięstwo ani wolność, lecz o godny wybór sposobu umierania (z bronią w ręku zamiast w komorze gazowej).', hint: 'Wybór sposobu umierania', category: 'motyw' },
-    { id: 'kf8-12', front: 'Jak Marek Edelman postrzegał swoją pracę kardiochirurga po wojnie?', back: 'Jako wyścig ze śmiercią i spór z Bogiem: Bóg chce zdmuchnąć świeczkę ludzkiego życia, a lekarz stara się osłonić płomień.', hint: 'Wyścig z Bogiem o życie', category: 'motyw' },
+    { id: 'kf8-12', front: 'Jak Marek Edelman postrzegał swoją pracę kardiologa po wojnie?', back: 'Jako wyścig ze śmiercią i spór z Bogiem: „Pan Bóg już chce zgasić świeczkę, a ja muszę szybko osłonić płomień”.', hint: 'Wyścig z Bogiem o życie', category: 'motyw' },
     { id: 'kf8-13', front: 'Czym była „nowomowa” (Newspeak) w „Roku 1984” Orwella?', back: 'Sztucznym językiem tworzonym przez Partię w celu zawężenia zakresu myśli i uniemożliwienia popełnienia zbrodni myśli.', hint: 'Język totalitarny', category: 'pojecie' },
     { id: 'kf8-14', front: 'Na czym polegało „dwójmyślenie” (Doublethink) w Oceanii?', back: 'Na zdolności jednoczesnego wyznawania dwóch sprzecznych poglądów i szczerej wiary w oba (np. „Wojna to pokój”).', hint: 'Dwie sprzeczne myśli naraz', category: 'pojecie' },
     { id: 'kf8-15', front: 'Co znajdowało się w Pokoju 101 w Ministerstwie Miłości?', back: 'To, czego dany człowiek boi się najbardziej na świecie — w przypadku Winstona klatka ze szczurami przymocowana do twarzy.', hint: 'Najgłębszy lęk: szczury', category: 'lektura' },
@@ -330,9 +330,9 @@ export const DEPT_08 = {
     { id: 'kf8-24', front: 'Dlaczego obóz w opowiadaniach Borowskiego („U nas, w Auschwitzu...”) odwraca tradycyjną etykę europejską?', back: 'W rzeczywistości lagrowej instynkt przetrwania znosi dekalog — kradzież chleba, donos czy obojętność na śmierć sąsiada stają się normą („człowiek zlagrowany”), a przeżycie jednego odbywa się kosztem drugiego.', hint: 'Odwrócony dekalog w warunkach obozowych.', category: 'pojecie' },
     { id: 'kf8-25', front: 'Jak działał system trzech kotłów żywnościowych w sowieckim łagrze w „Innym świecie”?', back: 'Wielkość racji chleba i zupy zależała od wyrobienia normy pracy (np. przy wyrębie lasu): I kocioł (głodowy) prowadził do szybkiego wycieńczenia i „trupiarni”, a III kocioł dawał szanse na przetrwanie — głód służył do wyciskania z ludzi ostatnich sił.', hint: 'Głód jako narzędzie zmuszania do pracy.', category: 'lektura' },
     { id: 'kf8-26', front: 'Czego symbolem jest postać Michaiła Kostylewa w „Innym świecie” Gustawa Herlinga-Grudzińskiego?', back: 'Tragicznej ceny zachowania godności w łagrze: Kostylew wolał codziennie opalać własną rękę w ogniu, aby nie pracować dla sowieckiego reżimu, niż zrezygnować z wewnętrznej wolności.', hint: 'Opór przez samookaleczenie — wolność ponad ból.', category: 'bohater' },
-    { id: 'kf8-27', front: 'Dlaczego Marek Edelman w książce „Zdążyć przed Panem Bogiem” porównuje swoją pracę kardiochirurga do walki w getcie?', back: 'Zarówno w getcie, jak i na sali operacyjnej walczy o ocalenie pojedynczego ludzkiego życia — uważa, że „Pan Bóg chce już zgasić świeczkę, a ja muszę szybko osłonić płomień”, czyli wydrzeć śmierci choćby kilka dodatkowych lat.', hint: 'Osłanianie płomienia życia przed śmiercią.', category: 'cytat' },
+    { id: 'kf8-27', front: 'Dlaczego Marek Edelman w książce „Zdążyć przed Panem Bogiem” porównuje swoją pracę kardiologa do walki w getcie?', back: 'Zarówno w getcie, jak i w szpitalu walczy o ocalenie pojedynczego ludzkiego życia — uważa, że „Pan Bóg już chce zgasić świeczkę, a ja muszę szybko osłonić płomień”, czyli wydrzeć śmierci choćby kilka dodatkowych lat.', hint: 'Osłanianie płomienia życia przed śmiercią.', category: 'cytat' },
     { id: 'kf8-28', front: 'W jaki sposób Marek Edelman polemizuje z tradycyjnym mitem bohaterskiej śmierci w powstaniu w getcie warszawskim?', back: 'Mówi bez patosu o brudzie, strachu, głodzie i bezradności powstańców; twierdzi, że „śmierć z bronią w ręku” nie była lepsza niż cicha śmierć w komorze gazowej, a najważniejsza była godność wyboru sposobu umierania.', hint: 'Antypatetyczna prawda o powstaniu w getcie.', category: 'motyw' },
-    { id: 'kf8-29', front: 'Jakie trzy ministerstwa rządzą w Oceanii w „Roku 1984” i na czym polega ich ironiczna nazwa?', back: 'Ministerstwo Prawdy (zajmuje się cenzurą i fałszowaniem historii), Ministerstwo Pokoju (prowadzi nieustanną wojnę), Ministerstwo Miłości (torturuje i łamie opozycjonistów) oraz Ministerstwo Obfitości (zarządza niedoborem).', hint: 'Orwellowska ironia: nazwa odwrotna do funkcji.', category: 'lektura' },
+    { id: 'kf8-29', front: 'Jakie cztery ministerstwa rządzą w Oceanii w „Roku 1984” i na czym polega ich ironiczna nazwa?', back: 'Ministerstwo Prawdy (zajmuje się cenzurą i fałszowaniem historii), Ministerstwo Pokoju (prowadzi nieustanną wojnę), Ministerstwo Miłości (torturuje i łamie opozycjonistów) oraz Ministerstwo Obfitości (zarządza niedoborem).', hint: 'Orwellowska ironia: nazwa odwrotna do funkcji.', category: 'lektura' },
     { id: 'kf8-30', front: 'Co symbolizuje ostateczne zdanie powieści „Rok 1984”: „Kochał Wielkiego Brata”?', back: 'Totalne zwycięstwo totalitaryzmu nad jednostką — system nie zadowala się samym zabiciem buntownika, lecz najpierw łamie jego psychikę w Pokoju 101 (zdrada Julii), zmuszając go do szczerego pokochania oprawcy.', hint: 'Całkowite złamanie duszy i zdrada miłości.', category: 'cytat' },
     { id: 'kf8-31', front: 'Kim był Jean Tarrou w „Dżumie” Alberta Camusa i na czym polega jego koncepcja „świętego bez Boga”?', back: 'Przyjaciel doktora Rieux i organizator oddziałów sanitarnych; uważa, że każdy człowiek nosi w sobie „bakcyla dżumy” (skłonność do zła), więc jedynym wyjściem jest ciągła czujność i solidarność z ofiarami bez religijnej nagrody.', hint: 'Świecka etyka i nieustanna czujność wobec zła.', category: 'bohater' },
     { id: 'kf8-32', front: 'Jakie jest przesłanie finału „Dżumy” Alberta Camusa mimo chwilowego ustąpienia zarazy w Oranie?', back: 'Doktor Rieux wie, że radość tłumu jest zagrożona, ponieważ „bakcyl dżumy nigdy nie umiera i nie znika” — może uśpiony czekać wiele lat, by znów obudzić szczury w szczęśliwym mieście (przestroga przed powrotem zła i totalitaryzmu).', hint: 'Uśpiony bakcyl zła zawsze może powrócić.', category: 'motyw' }
@@ -358,7 +358,7 @@ export const DEPT_08 = {
     },
     {
       id: "kq8-2",
-      q: "Dlaczego Gustaw Herling-Grudziński w epilogu „Innego świata” odmówił wypowiedzenia słowa „rozumiem” dawnemu współwięźniowi ze Stalingradu?",
+      q: "Dlaczego Gustaw Herling-Grudziński w epilogu „Innego świata” odmówił wypowiedzenia słowa „rozumiem” dawnemu współwięźniowi z Witebska?",
       options: [
         "Ponieważ go osobiście nienawidził i mścił się za dawne krzywdy.",
         "Ponieważ uważał, że współwięzień kłamał i nigdy nie był w Jercewie.",
@@ -502,7 +502,7 @@ export const DEPT_08 = {
     },
     {
       id: "kq8-10",
-      q: "W opowiadaniu Tadeusza Borowskiego „U nas w Auschwitzu” gra w piłkę nożną przez więźniów została zestawiona z:",
+      q: "W opowiadaniu Tadeusza Borowskiego „Ludzie, którzy szli” gra w piłkę nożną przez więźniów została zestawiona z:",
       options: [
         "Uroczystym apelem z udziałem komendanta obozu.",
         "Udaną ucieczką grupy więźniów z obozu.",
@@ -510,7 +510,7 @@ export const DEPT_08 = {
         "Wizytacją przedstawicieli Czerwonego Krzyża."
       ],
       correct: 2,
-      explanation: "To jedna z najbardziej wstrząsających scen Borowskiego: Tadek gra na bramce, a w przerwie między wybiciem piłki a jej złapaniem za plecami graczy ginie w komorach 3000 ludzi.",
+      explanation: "To jedna z najbardziej wstrząsających scen Borowskiego (z opowiadania „Ludzie, którzy szli”): Tadek stoi na bramce, a między jednym a drugim kornerem (rzutem rożnym) za plecami graczy poprowadzono do komór 3000 ludzi.",
       whyWrong: {
         0: "Błąd: Scena dotyczyła kontrastu sportu i masowej rzezi, nie apelu.",
         1: "Błąd: Ucieczka nie miała miejsca w tej scenie.",
@@ -592,9 +592,9 @@ export const DEPT_08 = {
     },
     {
       id: "kq8-15",
-      q: "Co w „Zdążyć przed Panem Bogiem” Hanny Krall symbolizuje postać Marka Edelmana jako powojennego kardiochirurga?",
+      q: "Co w „Zdążyć przed Panem Bogiem” Hanny Krall symbolizuje postać Marka Edelmana jako powojennego kardiologa?",
       options: [
-        "Kontynuację walki o ludzkie życie — tym razem z czasem i śmiercią na stole operacyjnym zamiast z bronią w getcie.",
+        "Kontynuację walki o ludzkie życie — tym razem z czasem i śmiercią na oddziale kardiologicznym zamiast z bronią w getcie.",
         "Chęć ucieczki od wspomnień z getta i całkowitego zapomnienia o kolegach z ŻOB.",
         "Dążenie do sławy medialnej i bogactwa w PRL.",
         "Wiarę w to, że medycyna może całkowicie zastąpić pamięć historyczną."

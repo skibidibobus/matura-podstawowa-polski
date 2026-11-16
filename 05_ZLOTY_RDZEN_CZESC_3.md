@@ -18,7 +18,7 @@
   - **Doktor Bernard Rieux** (narrator – ujawnia się na końcu): działa z poczucia obowiązku i solidarności z ludźmi, bez patosu i wiary w Boga (*„W ludziach więcej rzeczy zasługuje na podziw niż na pogardę”*).
   - **Jean Tarrou:** tworzy oddziały sanitarne, szuka „świętości bez Boga”.
   - **Raymond Rambert:** dziennikarz, który najpierw chce uciec do ukochanej w Paryżu, ale w końcu zostaje, bo wstydziłby się być szczęśliwym samemu.
-  - **Ojciec Paneloux:** jezuita – najpierw uważa dżumę za karę Bożą za grzechy, ale po śmierci niewinnego dziecka zmienia zdanie i przyłącza się do pomocy.
+  - **Ojciec Paneloux:** jezuita – początkowo uważa dżumę za karę Bożą za grzechy; po śmierci niewinnego synka sędziego Othona wygłasza drugie kazanie (mówi o bezsilności rozumu wobec cierpienia dzieci, ale wymaga od wierzących bezwzględnego zaufania woli Bożej: „wszystko albo nic”) i sam aktywnie działa w oddziałach sanitarnych.
   - **Cottard:** przestępca, który cieszy się z dżumy, bo w chaosie nikt go nie ściga i zarabia na przemycie.
 - **Finał:** Dżuma ustępuje, ale Rieux ostrzega, że **bakcyl dżumy nigdy nie umiera** – zło zawsze może wrócić.
 - **Motywy:** Walka ze złem, solidarność międzyludzka, poświęcenie, cierpienie niewinnych, sytuacja graniczna.
@@ -28,7 +28,7 @@
 ## 3. Literatura Wojny i Totalitaryzmu (3 obowiązkowe pozycje w pigułce)
 
 ### A. *Zdążyć przed Panem Bogiem* – Hanna Krall (reportaż)
-- Rozmowa z **Markiem Edelmanem** (ostatnim przywódcą powstania w getcie warszawskim z 1943 r., a po wojnie wybitnym kardiochirurgiem).
+- Rozmowa z **Markiem Edelmanem** (jednym z przywódców – zastępcą Anielewicza – i po śmierci Anielewicza ostatnim dowódcą powstania w getcie warszawskim z 1943 r., a po wojnie wybitnym kardiologiem).
 - **Kluczowe idee:** Obalenie mitu „heroicznej śmierci” (ludzie w getcie walczyli nie o zwycięstwo, lecz o **wybór sposobu umierania** – śmierć z bronią w ręku, by zachować godność). Edelman jako lekarz ściga się ze śmiercią (tytułowe *„zdążyć przed Panem Bogiem”* – osłonić płomyk życia).
 - **Motywy:** Godność w sytuacji bez wyjścia, prawda o wojnie vs mit, pamięć, rola lekarza/ratowanie życia.
 
@@ -37,13 +37,13 @@
 - **Kluczowe wątki:** **Michaił Kostylew** (opalający sobie rękę w ogniu, by nie pracować dla systemu – akt buntu i obrony godności), **Dom Swidanij** (chwila normalności), **sprawa „zabójcy Stalina”** (człowiek zmuszony torturami do absurdu).
 - **Przesłanie:** Nawet w nieludzkich warunkach można próbować ocalić resztki moralności (w przeciwieństwie do pesymizmu Borowskiego).
 
-### C. Opowiadania Tadeusza Borowskiego (*Proszę państwa do gazu*, *Ludzie, którzy szli*)
+### C. Opowiadania Tadeusza Borowskiego (*Proszę państwa do gazu*; z podstawy 2018 – przejściowo 2025–2028: *Ludzie, którzy szli*)
 - **Człowiek zlagrowany:** W obozie Auschwitz-Birkenau znika tradycyjna moralność – żeby przeżyć, więzień sam staje się częścią obozowej machiny (narrator Tadek pracuje przy rozładunku transportów na rampie – tzw. *Kanada*).
-- **Zimny, behawiorystyczny styl:** Brak ocen moralnych, suchy opis codzienności zagłady (np. matka wypierająca się własnego dziecka, żeby uniknąć gazu; ludzie grający w piłkę nożną między transportami do komór gazowych).
+- **Zimny, behawiorystyczny styl:** Brak ocen moralnych, suchy opis codzienności zagłady (w *Proszę państwa do gazu*: matka wypierająca się własnego dziecka, żeby uniknąć gazu; w *Ludziach, którzy szli*: ludzie grający w piłkę nożną między transportami do komór gazowych).
 
 ---
 
 ## 4. Szybkie utrwalenie lektur, które już znasz (pod motywy i unikanie błędu kardynalnego)
 - ***Rok 1984* (George Orwell):** **Winston Smith** i **Julia**; **Wielki Brat**, Ministerstwo Prawdy (nowomowa, dwójmyślenie), **O’Brien** (zdradziecki oprawca z Partii Wewnętrznej), **Pokój 101** (szczury – złamanie Winstona, zdrada Julii). *Motywy: totalitaryzm, propaganda, zniewolenie umysłu, miłość jako bunt, klęska jednostki.*
-- ***Przedwiośnie* (Stefan Żeromski):** **Cezary Baryka** (Baku – rewolucja, rozczarowanie; opowieść ojca Seweryna o **szklanych domach**; wojna polsko-bolszewicka, majątek w **Nawłoci** – sielanka szlachecka i romans z Laurą/Karoliną/Wandą; **Szymon Gajowiec** – powolne reformy vs **Antoni Lulek** – komuniści). Finał: marsz na Belweder. *Motywy: młodość i dojrzewanie, rewolucja, utrata złudzeń, wizje Polski.*
-- ***Pan Tadeusz* (Adam Mickiewicz):** Soplicowo (centrum polszczyzny), **Jacek Soplica / Ksiądz Robak** (przemiana z gwałtownego zabójcy Stolnika w pokornego emisariusza), **Tadeusz i Zosia** (miłość), **Telimena**, **Gerwazy** (zemsta) vs **Protazy**, spór o zamek, **Koncert Jankiela** (historia Polski w muzyce), **Księga XII: Kochajmy się!** *Motywy: ojczyzna/dom, przemiana wewnętrzna, tradycja szlachecka, wina i odkupienie.*
+- ***Przedwiośnie* (Stefan Żeromski):** **Cezary Baryka** (Baku – rewolucja, rozczarowanie; opowieść ojca Seweryna o **szklanych domach**; wojna polsko-bolszewicka, majątek w **Nawłoci** – sielanka szlachecka, romanse z Laurą i Karoliną oraz jednostronna, zazdrosna miłość Wandy; **Szymon Gajowiec** – powolne reformy vs **Antoni Lulek** – komuniści). Finał: marsz na Belweder. *Motywy: młodość i dojrzewanie, rewolucja, utrata złudzeń, wizje Polski.*
+- ***Pan Tadeusz* (Adam Mickiewicz – lektura SP: ks. I, II, IV, X, XI, XII; przejściowo w wypracowaniu 2025–2028):** Soplicowo (centrum polszczyzny), **Jacek Soplica / Ksiądz Robak** (przemiana z gwałtownego zabójcy Stolnika w pokornego emisariusza), **Tadeusz i Zosia** (miłość), **Telimena**, **Gerwazy** (zemsta) vs **Protazy**, spór o zamek, **Koncert Jankiela** (historia Polski w muzyce), **Księga XII: Kochajmy się!** *Motywy: ojczyzna/dom, przemiana wewnętrzna, tradycja szlachecka, wina i odkupienie.*

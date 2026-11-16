@@ -6,7 +6,7 @@
 
 ## Wskazówka startowa (Matura Ustna – Zadanie 1)
 
-### Karta 0: Jak ułożyć pełną wypowiedź na 100% (ok. 5–7 minut)
+### Karta 0: Jak ułożyć pełną wypowiedź na 100% (ok. 4–5 minut; na oba zadania jest łącznie 10 min)
 - **Otwarcie:** Zacznij od autora, tytułu, epoki i gatunku (masz to w każdym pytaniu w polu **Start**) i od razu postaw **Tezę**.
 - **Dowody z lektury:** Rozwiń kolejno **3 argumenty** – przy każdym nazwij bohatera, konkretną scenę i jednym zdaniem dopowiedz, **czego to dowodzi**.
 - **Kontekst (obowiązkowy):** Powiedz *„Przechodząc do kontekstu [historycznego / społecznego / literackiego]...”* i rozwiń go w **2–3 pełnych zdaniach**, pokazując podobieństwo albo różnicę względem głównej lektury.
@@ -18,13 +18,13 @@
 
 ### Pytanie 1
 **Motyw cierpienia niezawinionego. Omów zagadnienie na podstawie znanych Ci fragmentów Księgi Hioba. W swojej odpowiedzi uwzględnij również wybrany kontekst.**
-- **Start (epoka i gatunek):** Starożytność (Stary Testament), poemat filozoficzny i przypowieść biblijna o sensie bólu i wierności Bogu.
+- **Start (epoka i gatunek):** Starożytność (Stary Testament), biblijna księga mądrościowa (poemat dramatyczno-filozoficzny) o sensie cierpienia i wierności Bogu.
 - **Teza:** Cierpienie nie zawsze jest karą za grzechy – w Księdze Hioba staje się próbą wiary i tajemnicą, której człowiek nie potrafi w pełni pojąć rozumem.
 - **Dowody z lektury:**
   - **Zakład Boga z Szatanem:** Hiob żyje w ziemi Uz jako człowiek prawy i bogobojny, a mimo to w jednej chwili traci majątek, dziesięcioro dzieci i zdrowie (zapada na trąd) – co od początku wyklucza winę po jego stronie.
   - **Spór z przyjaciółmi (Elifaz, Bildad, Sofar):** przyjaciele bronią starego schematu „cierpisz, więc musiałeś zgrzeszyć”; Hiob stanowczo broni swojej niewinności i nie zgadza się na fałszywe przyznanie do winy.
   - **Przemowa Boga z wichru i finał:** Bóg nie daje Hiobowi logicznego wykładu o przyczynach zła, lecz ukazuje swoją nieograniczoną potęgę stwórczą; Hiob pokornie uznaje granice ludzkiego rozumu i otrzymuje przywrócenie zdrowia oraz podwójny majątek.
-- **Kontekst:** Kontekst filozoficzny – problem *teodycei* (próby pogodzenia wiary w wszechmocnego i dobrego Boga z istnieniem zła na świecie). Widać go także w *Dżumie* Alberta Camusa, gdzie doktor Rieux przy śmierci niewinnego dziecka buntuje się przeciw światu opartemu na cierpieniu, podczas gdy Hiob – mimo bólu – zachowuje ufność wobec Stwórcy.
+- **Kontekst:** Kontekst filozoficzny – problem *teodycei* (próby pogodzenia wiary we wszechmocnego i dobrego Boga z istnieniem zła na świecie). Widać go także w *Dżumie* Alberta Camusa, gdzie doktor Rieux przy śmierci niewinnego dziecka buntuje się przeciw światu opartemu na cierpieniu, podczas gdy Hiob – mimo bólu – zachowuje ufność wobec Stwórcy.
 - **Pułapka i rozmowa:** Nie mów, że Hiob „zbuntował się i odrzucił Boga” – on dyskutował i skarżył się Bogu, ale nigdy Go nie przeklął. Komisja może zapytać, po co w tekście pojawili się trzej przyjaciele (reprezentują stereotypową, bezduszną religijność).
 
 ### Pytanie 2
@@ -35,7 +35,7 @@
   - **Hasło *„Marność nad marnościami, wszystko marność”*:** Kohelet (mądry król) sprawdza w życiu bogactwo, rozkosz, pracę i wiedzę, dochodząc do wniosku, że wobec śmierci wszystkie ziemskie dobra są nietrwałe jak „pogoń za wiatrem”.
   - **Cykliczność czasu (*„Wszystko ma swój czas”*):** istnieje czas rodzenia i umierania, płaczu i śmiechu, budowania i burzenia – człowiek nie ma pełnej władzy nad biegiem wydarzeń i musi zaakceptować porządek świata.
   - **Praktyczna rada na życie:** skoro przyszłość jest niepewna, należy zachować umiar, cieszyć się prostym dobrem (jedzeniem, piciem, owocem swojej pracy) i szanować Boga.
-- **Kontekst:** Kontekst filozoficzny – starożytny stoicyzm, który również nakazywał zachować spokój ducha wobec spraw niezależnych od człowieka (jak śmierć, zmiana losu czy upływ czasu). W literaturze późniejszej do motywu *vanitas* wrócił barok (np. w *Makbecie* Szekspira, gdzie władza i życie okazują się „wędrującym cieniem”), ale w przeciwieństwie do Koheleta barok częściej budził lęk przed śmiercią.
+- **Kontekst:** Kontekst filozoficzny – starożytny stoicyzm, który również nakazywał zachować spokój ducha wobec spraw niezależnych od człowieka (jak śmierć, zmiana losu czy upływ czasu). W literaturze późniejszej motyw *vanitas* stał się fundamentem baroku (np. *Marność* Daniela Naborowskiego czy refleksja o życiu jako „wędrującym cieniu” w *Makbecie* Szekspira z przełomu renesansu i baroku), który jednak w przeciwieństwie do Koheleta częściej budził lęk przed śmiercią.
 - **Pułapka i rozmowa:** Nie myl postawy Koheleta z nihilizmem („nic nie ma sensu”) – on zachęca do mądrej, pokornej radości z dnia dzisiejszego. Komisja może dopytać o znaczenie łacińskiego słowa *vanitas* (marność, nietrwałość rzeczy doczesnych).
 
 ### Pytanie 3
@@ -138,7 +138,7 @@
 - **Dowody z lektury:**
   - **Pragnienie współcierpienia:** Maryja patrzy na konającego Jezusa, chce podzielić Jego mękę (*„Rozdziel z matką swoję rany”*) i skarży się, że nie może nawet otrzeć Jego krwi ani podać Mu wody.
   - **Solidarność z innymi matkami:** zwraca się do zebranych matek (*„Miłe matki”*), prosząc je o modlitwę, aby nigdy nie musiały patrzeć na śmierć swoich dzieci.
-  - **Wyrzut wobec Archanioła Gabriela:** gorzko przypomina mu radosną obietnicę ze Zwiastowania (*„pełna łaski”*), kontrastując ją z obecną samotnością i rozpaczą pod krzyżem.
+  - **Wyrzut wobec Archanioła Gabriela:** gorzko przypomina mu radosną zapowiedź ze Zwiastowania (*„Panno, pełna jeś miłości!”*), kontrastując ją z obecną samotnością i rozpaczą pod krzyżem (*„pełna smutku i żałości”*).
 - **Kontekst:** Kontekst kulturowy (sztuka) i historyczno-literacki – rzeźbiarski motyw *Piety* (np. słynna *Pieta* Michała Anioła przedstawiająca Maryję z ciałem Jezusa na kolanach) oraz późniejszy dramat romantyczny *Dziady cz. III* Mickiewicza. Tam również cierpienie matki staje się symbolem najwyższej krzywdy: ślepa pani Rollison błaga senatora Nowosilcowa o litość dla torturowanego syna, pokazując bezsilność matczynej miłości wobec okrucieństwa świata.
 - **Pułapka i rozmowa:** Kluczowe słowo to **humanizacja (uczłowieczenie) świętej postaci** – średniowiecze nie zawsze było sztywne i odległe, tu pokazało bardzo ludzki ból. Komisja może zapytać o adresatów monologu Maryi (Jezus, inne matki, Archanioł Gabriel).
 
@@ -151,7 +151,7 @@
 - **Start (epoka i gatunek):** Średniowiecze (XV w.), wierszowany dialog dydaktyczno-satyryczny realizujący popularny motyw *danse macabre* (tańca śmierci) i *memento mori* („pamiętaj o śmierci”).
 - **Teza:** Motyw tańca śmierci pełni w utworze podwójną rolę: uczy pokory wobec przemijania oraz bezlitośnie zrównuje wszystkie stany społeczne, wytykając im grzechy.
 - **Dowody z lektury:**
-  - **Turpistyczny portret Śmierci:** uczony Polikarp modli się o zobaczenie Śmierci, a gdy ta staje przed nim jako gnijący, chudy trup kobiety z kosą (z odpadającym kawałkiem nosa i robakami), pada przerażony na ziemię.
+  - **Turpistyczny portret Śmierci:** uczony Polikarp modli się o zobaczenie Śmierci, a gdy ta staje przed nim jako gnijący, chudy trup kobiety z kosą (z odpadającym kawałkiem nosa), pada przerażony na ziemię.
   - **Demokratyzacja wobec śmierci:** Śmierć zapowiada, że w jej korowodzie muszą zatańczyć wszyscy – papieże, królowie, książęta, sędziowie, bogacze i chłopi; nikt nie wykupi się majątkiem ani tytułem.
   - **Satyra stanowa i komizm:** Śmierć ironicznie wyśmiewa konkretne grzechy różnych zawodów (m.in. przekupnych sędziów, chciwych lekarzy, nieuczciwych karczmarzy i rozwiązłych księży), co miesza grozę z czarnym humorem.
 - **Kontekst:** Kontekst społeczno-historyczny – średniowieczne społeczeństwo było podzielone na sztywne, nierówne stany (szlachta, duchowieństwo, mieszczaństwo, chłopi), a także pustoszone przez wielkie epidemie dżumy („czarna śmierć”) i wojny. W tej sytuacji motyw *danse macabre* dawał zwykłym ludziom poczucie sprawiedliwości (bogacz i król umierają tak samo jak chłop), a literacko powrócił później m.in. w *Weselu* Wyspiańskiego jako chocholi taniec bezsilności.
@@ -166,8 +166,8 @@
 - **Start (epoka i gatunek):** Średniowiecze (XI/XII w.), francuski epos rycerski (*chanson de geste* – pieśń o czynach), pokazujący chrześcijański ideał wojownika.
 - **Teza:** Średniowieczny wzorzec rycerza łączy bezgraniczną odwagę i wierność władcy z głęboką pobożnością – dla rycerza honor i zbawienie duszy są ważniejsze niż własne życie.
 - **Dowody z lektury:**
-  - **Odwaga i poczucie honoru w wąwozie Roncevaux:** Roland, otoczony przez przeważające siły Saracenów (zdrada Ganelona), początkowo mimo rad przyjaciela Oliwiera odmawia zadęcia w róg Olifant, bo uważa proszenie o pomoc za hańbę; dmie w róg dopiero tuż przed śmiercią (tak mocno, że pękają mu skronie), aby Karol Wielki mógł pomścić poległych.
+  - **Odwaga i poczucie honoru w wąwozie Roncevaux:** Roland, otoczony przez przeważające siły Saracenów (zdrada Ganelona), początkowo mimo rad przyjaciela Oliwiera odmawia zadęcia w róg Olifant, bo uważa proszenie o pomoc za hańbę; dmie w róg dopiero u kresu bitwy (tak mocno, że pęka mu skroń), aby Karol Wielki mógł pomścić poległych.
   - **Śmierć godna rycerza (*ars moriendi* – sztuka umierania):** konający Roland wspina się na wzgórze, kładzie pod sobą miecz Durendal (by nie wpadł w ręce pogan) i obraca głowę w stronę wrogiej Hiszpanii na znak, że nie cofnął się przed wrogiem.
-  - **Wierność Bogu i świętość czynu:** tuż przed zgonem bije się w pierś i wyciąga prawą rękawicę ku niebu na znak lennej służby Bogu, a jego duszę do raju zabierają archaniołowie Gabriel i Michał.
+  - **Wierność Bogu i świętość czynu:** tuż przed zgonem bije się w pierś i wyciąga prawą rękawicę ku niebu na znak lennej służby Bogu, a jego duszę do raju zabierają aniołowie: Cherubin, św. Michał i św. Gabriel.
 - **Kontekst:** Kontekst historyczny – epoka wypraw krzyżowych (krucjat) i rycerskiego etosu chrześcijańskiej Europy, w którym walka z innowiercami była uznawana za święty obowiązek wobec Boga i króla. Dla porównania w antycznej *Iliadzie* Homera Hektor kierował się głównie honorem rodu i obroną miasta przed ludzkim losem, natomiast u Rolanda ten sam etos odwagi zostaje w pełni podporządkowany wierze i obietnicy raju.
 - **Pułapka i rozmowa:** Zauważ, że duma Rolanda miała wysoką cenę – przez jego początkowy upór zginął cały tylny oddział (stąd w utworze pojawia się mądry i rozważny Oliwier jako kontrast). Komisja może zapytać o elementy **parenetyczne** utworu (ukazywanie wzorca osobowego do naśladowania).

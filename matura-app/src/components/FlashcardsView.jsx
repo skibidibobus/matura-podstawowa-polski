@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, CheckCircle2, RotateCcw, Shuffle, XCircle } from 'lucide-react';
+import { MathText } from './MathText';
 
 function findFirstUnansweredIndex(list, statusMap) {
   if (!Array.isArray(list) || list.length === 0) return 0;
@@ -199,10 +200,10 @@ export function FlashcardsView({
                 <span className="fc-category-badge">{currentCard.category}</span>
               )}
             </div>
-            <div className="fc-text">{currentCard.front}</div>
+            <div className="fc-text"><MathText text={currentCard.front} /></div>
             <div className="fc-face-bottom">
               {currentCard.hint && (
-                <div className="fc-card-hint">💡 Wskazówka: {currentCard.hint}</div>
+                <div className="fc-card-hint">💡 Wskazówka: <MathText text={currentCard.hint} /></div>
               )}
               <span className="fc-hint">Kliknij lub naciśnij Spację, aby zobaczyć odpowiedź</span>
             </div>
@@ -214,7 +215,7 @@ export function FlashcardsView({
                 <span className="fc-category-badge">{currentCard.category}</span>
               )}
             </div>
-            <div className="fc-text">{currentCard.back}</div>
+            <div className="fc-text"><MathText text={currentCard.back} /></div>
             <span className="fc-hint">Oceń: [1] Do powtórki • [2] Umiem</span>
           </div>
         </div>

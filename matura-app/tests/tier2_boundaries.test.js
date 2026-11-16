@@ -30,7 +30,7 @@ describe('Tier 2: Boundary & Corner Cases (Limits, Nulls, Stress, Error Resilien
     const dept1 = levels.find((l) => l.id === 'dept-01');
     const dept10 = levels.find((l) => l.id === 'dept-10');
 
-    it('2.1.1 F07: Synthesizing Note curriculum boundary codifies 59-word underflow penalty & <30-word zeroing', () => {
+    it('2.1.1 F07: Synthesizing Note curriculum boundary codifies 59-word underflow penalty & non-zeroing below 30 words', () => {
       assert.ok(dept1, 'dept-01 must be present in course levels');
       const note1 = dept1.notes.find((n) => n.id === 'kn1-1');
       assert.ok(note1, 'kn1-1 (Synthesizing Note) must exist in Dział 1');
@@ -109,7 +109,7 @@ describe('Tier 2: Boundary & Corner Cases (Limits, Nulls, Stress, Error Resilien
       );
     });
 
-    it('2.1.4 F07: Synthesizing Note curriculum codifies 91-word overflow penalty in Criterion D', () => {
+    it('2.1.4 F07: Synthesizing Note curriculum codifies 91-word overflow penalty in CKE scoring', () => {
       assert.ok(dept1, 'dept-01 must be present');
       const note1 = dept1.notes.find((n) => n.id === 'kn1-1');
       const calloutBlock = note1.blocks.find(
@@ -133,7 +133,7 @@ describe('Tier 2: Boundary & Corner Cases (Limits, Nulls, Stress, Error Resilien
       );
     });
 
-    it('2.1.5 F08: Problem essay formal boundary (300 words min vs 299 words underflow = 0/35 pts)', () => {
+    it('2.1.5 F08: Problem essay formal boundary (300 words min vs 299 words underflow = 0 pkt kompozycja/język, max 17/35 pts)', () => {
       assert.ok(dept10, 'dept-10 must be present');
       const note1 = dept10.notes.find((n) => n.id === 'kn10-1');
       assert.ok(note1, 'kn10-1 (Algorytm wypracowania) must exist in Dział 10');
@@ -150,16 +150,18 @@ describe('Tier 2: Boundary & Corner Cases (Limits, Nulls, Stress, Error Resilien
         'Must specify minimal formal length of 300 words'
       );
       assert.ok(
-        lengthRule.includes('299 słów') && lengthRule.includes('0 pkt za całe wypracowanie'),
-        'Must explicitly state that 299 words zeroes the entire essay (0 pkt)'
+        lengthRule.includes('299 słów') &&
+          lengthRule.includes('0 pkt w kryteriach kompozycji') &&
+          lengthRule.includes('17/35 pkt'),
+        'Must explicitly state that 299 words gives 0 pts in kompozycja/język (max 17/35 pkt)'
       );
 
       // Verify flashcard kf10-1
       const fc1 = dept10.flashcards.find((f) => f.id === 'kf10-1');
       assert.ok(fc1, 'Flashcard kf10-1 must exist');
       assert.ok(
-        fc1.back.includes('299 słów lub mniej') && fc1.back.includes('0/35 pkt za całe wypracowanie'),
-        'Flashcard kf10-1 must state that 299 words gives 0/35 pts'
+        fc1.back.includes('299 słów lub mniej') && fc1.back.includes('17/35 pkt'),
+        'Flashcard kf10-1 must state that 299 words caps score at 17/35 pts'
       );
 
       // Verify quiz question kq10-1
@@ -171,8 +173,8 @@ describe('Tier 2: Boundary & Corner Cases (Limits, Nulls, Stress, Error Resilien
         'Correct quiz option must be exactly 300 words'
       );
       assert.ok(
-        quiz1.explanation.includes('299 słów') && quiz1.explanation.includes('0 punktów'),
-        'Quiz explanation must explain the 299 word zeroing rule'
+        quiz1.explanation.includes('299 słów') && quiz1.explanation.includes('17/35 pkt'),
+        'Quiz explanation must explain the 299 word kompozycja/język zeroing rule (max 17/35 pkt)'
       );
     });
 

@@ -49,7 +49,7 @@ export const DEPT_05 = {
                   'Moralny i patriotyczny obowiązek warstw uprzywilejowanych (inteligencji, ziemiaństwa) wobec „podstaw” społeczeństwa — chłopów, miejskiej biedoty i robotników.',
                 bullets: [
                   'Walka z plagą analfabetyzmu na wsi i w suterenach miejskich, szerzenie higieny i nowoczesnego rolnictwa.',
-                  'W literaturze: Wokulski pomagający braciom Wysockim, stolarzowi Węgiełkowi i nawracający prostytutkę Mariannę; nowele Sienkiewicza („Janko Muzyk”) i Prusa („Antek”).'
+                  'W literaturze: Wokulski pomagający braciom Wysockim, stolarzowi Węgiełkowi i nawracający prostytutkę Mariannę; nowele Sienkiewicza („Janko Muzykant”) i Prusa („Antek”).'
                 ],
                 essayUse: 'Kluczowy topos w tematach dotyczących powinności człowieka wykształconego wobec wykluczonych i słabych.'
               }
@@ -106,7 +106,7 @@ export const DEPT_05 = {
           heading: 'Stanisław Wokulski — Człowiek Epoki Przejściowej',
           paragraphs: [
             'Wokulski to postać tragiczna, łącząca w sobie sprzeczne cechy dwóch epok. Jako romantyk: w młodości walczył w powstaniu styczniowym (1863), został zesłany do Irkucka, a całe swoje dojrzałe życie podporządkował szalonej, wyidealizowanej miłości do salonowej arystokratki Izabeli Łęckiej, dla której zdobywał majątek.',
-            'Jako pozytywista: ukończył Szkołę Główną, wierzy w naukę, prowadzi handel na wielką skalę, zakłada spółkę handlową, finansuje badania Ochockiego i Geista oraz bezinteresownie ratuje ludzi z nizin społecznych (dróżnika Wysockiego, stolarza Węgiełka, prostytutkę Mariannę).',
+            'Jako pozytywista: studiował w Szkole Głównej (studia przerwało powstanie), wierzy w naukę, prowadzi handel na wielką skalę, zakłada spółkę handlową, finansuje badania Ochockiego i Geista oraz bezinteresownie ratuje ludzi z nizin społecznych (dróżnika Wysockiego, stolarza Węgiełka, prostytutkę Mariannę).',
             'Jego tragedia polega na tym, że żadna z epok nie daje mu oparcia: dla arystokracji jest pogardzanym „kupcem galanteryjnym”, a dla pozytywistów marzycielem marnującym energię dla kobiety, która nim gardzi.'
           ]
         },
@@ -122,7 +122,7 @@ export const DEPT_05 = {
                 bullets: [
                   'Świat postrzega przez pryzmat marmurowego posągu Apollina — żyje ułudą, nie ma pojęcia o realnej wartości pieniądza ani pracy.',
                   'Traktuje Wokulskiego z wyższością jako dorobkiewicza, choć korzysta z jego pomocy finansowej (licytacja kamienicy, wykupienie weksli ojca).',
-                  'Kluczowa scena w pociągu do Krakowa: Wokulski podsłuchuje jej flirt w języku angielskim z Kazimierzem Starskim (sprawa zaginionego medalionu z Zasławka), co bezpowrotnie niszczy jego idealizm i prowadzi do próby samobójczej w Skierniewicach.'
+                  'Kluczowa scena w pociągu do Krakowa: Wokulski podsłuchuje jej flirt w języku angielskim z Kazimierzem Starskim (m.in. rozmowa o medalionie z metalem Geista podarowanym przez Wokulskiego), co bezpowrotnie niszczy jego idealizm i prowadzi do próby samobójczej w Skierniewicach.'
                 ],
                 essayUse: 'Wzór do motywu miłości destrukcyjnej, maski społecznej i krytyki pasożytnictwa arystokracji.'
               }
@@ -137,7 +137,7 @@ export const DEPT_05 = {
                   'Jego pamiętnik tworzy drugą perspektywę narracyjną powieści, odsłaniając przeszłość Wokulskiego i historię XIX wieku.',
                   'Wzorzec absolutnej uczciwości kupieckiej i skromności; czuje się obco w świecie drapieżnego kapitalizmu.',
                   'Scena z nakręcanymi lalkami w oknie sklepu: Rzecki rozmyśla nad losem ludzkim jako theatrum mundi — ludzie są marionetkami w rękach ślepego losu.',
-                  'Umiera samotnie w pustym sklepie przy biurku; doktor Szuman kwituje jego śmierć słowami Horacego: „Non omnis moriar” w odniesieniu do zaginionego Wokulskiego.'
+                  'Umiera w swoim pokoiku przy sklepie; doktor Szuman mówi o nim „Ostatni to romantyk!”, a Julian Ochocki znajduje w kieszeni Rzeckiego list od Węgiełka z informacją o wyryciu słów Horacego „Non omnis moriar” na krzyżu na ruinach zamku w Zasławiu (w odniesieniu do zaginionego Wokulskiego).'
                 ],
                 essayUse: 'Motyw pamiętnika, motyw theatrum mundi (świat jako teatr) oraz idealizm polityczny.'
               }
@@ -178,14 +178,14 @@ export const DEPT_05 = {
           title: 'Błąd Kardynalny CKE — Tego nigdy nie pisz!',
           items: [
             'NIE PISZ, że Wokulski na pewno zginął pod kołami pociągu w Skierniewicach! Został uratowany w ostatniej chwili przez dróżnika Wysockiego.',
-            'NIE PISZ, że zakończenie powieści rozstrzyga o śmierci Wokulskiego w ruinach zamku w Zasławku. Jego zniknięcie jest całkowicie otwarte — doktor Szuman i Rzecki biorą pod uwagę wyjazd do Paryża do Geista, wyjazd do Indii lub Ameryki, albo samobójstwo.',
+            'NIE PISZ, że zakończenie powieści rozstrzyga o śmierci Wokulskiego w ruinach zamku w Zasławiu. Jego zniknięcie jest całkowicie otwarte — znajomi biorą pod uwagę wyjazd do Paryża do Geista, wyjazd do Indii lub Ameryki, albo śmierć pod gruzami wysadzonej ruiny w Zasławiu.',
             'NIE PISZ, że Izabela Łęcka kochała Wokulskiego. Izabela była nim zafascynowana wyłącznie jako osobliwym zjawiskiem i człowiekiem zyskującym wpływy, ale brzydziła się jego kupieckim pochodzeniem.'
           ]
         },
         {
           type: 'quote',
           label: 'Słynny monolog Wokulskiego o Powiślu',
-          text: '„Oto miniatura kraju — myślał — w którym wszystko dąży do zniszczenia: rządy, przemysł, społeczeństwo, a nawet sama ziemia! [...] Nic, prócz błota, śmieci i ruin.”'
+          text: '„Oto miniatura kraju — myślał — w którym wszystko dąży do spodlenia i wytępienia rasy. Jedni giną z niedostatku, drudzy z rozpusty. Praca odejmuje sobie od ust, ażeby karmić niedołęgów; miłosierdzie hoduje bezczelnych próżniaków [...]”'
         }
       ]
     },
@@ -245,7 +245,7 @@ export const DEPT_05 = {
                   'Dwie kluczowe postacie konstytuujące dramat psychologiczny Raskolnikowa.',
                 bullets: [
                   'Porfiry Pietrowicz: genialny sędzia śledczy prowadzący z Rodionem subtelną grę psychologiczną. Zna prawdę, lecz nie aresztuje go od razu, dając mu czas na samodzielne przyznanie się do winy dla ocalenia duszy.',
-                  'Arkadiusz Swidrygajłow: mroczne zwierciadło Raskolnikowa — człowiek, który naprawdę żyje poza dobrem i złem (cynik, pedofil, rozpustnik). Jego samobójstwo uświadamia Rodionowi, że droga całkowitego nihilizmu kończy się wieczną pustką.'
+                  'Arkadiusz Swidrygajłow: mroczne zwierciadło Raskolnikowa — człowiek, który naprawdę żyje poza dobrem i złem (cynik i bezwzględny rozpustnik). Jego samobójstwo uświadamia Rodionowi, że droga całkowitego nihilizmu kończy się wieczną pustką.'
                 ],
                 essayUse: 'Kontekst psychologiczny w tematach o naturze zła, sprawiedliwości i granicach ludzkiej wolności.'
               }
@@ -279,7 +279,7 @@ export const DEPT_05 = {
     {
       id: 'kn5-4',
       title: 'Nowelistyka („Kamizelka”, „Gloria victis”) oraz Henryk Sienkiewicz: „Potop”',
-      badge: 'Lektury Uzupełniające i Fragmenty',
+      badge: 'Lektury we fragmentach / kontekst',
       intro:
         'Nowelistyka pozytywistyczna realizowała postulat dydaktyzmu i zwięzłości kompozycyjnej. Z kolei twórczość Henryka Sienkiewicza przywracała narodowi dumę z chlubnej przeszłości, pełniąc funkcję terapeutyczną.',
       blocks: [
@@ -287,13 +287,13 @@ export const DEPT_05 = {
           type: 'grid',
           items: [
             {
-              term: 'Bolesław Prus: „Kamizelka”',
+              term: 'Bolesław Prus: „Kamizelka” [poza PP LO w Formule 2023 — kontekst]',
               desc: 'Mistrzostwo formy nowelistycznej i teoria sokoła.',
               details: {
                 summary:
                   'Nowela zbudowana wokół centralnego motywu materialnego (kamizelki) zgodnie z klasyczną teorią sokoła Boccaccia.',
                 bullets: [
-                  'Fabuła: narrator kupuje od żydowskiego handlarza zniszczoną kamizelkę za 40 groszy i rekonstruuje historię młodego małżeństwa urzędnika chorującego na gruźlicę.',
+                  'Fabuła: narrator obserwuje z okna sprzedaż zniszczonej kamizelki przez wdowę handlarzowi za 40 groszy, odkupuje ją za pół rubla i rekonstruuje historię młodego małżeństwa urzędnika chorującego na gruźlicę.',
                   'Wzajemne, szlachetne kłamstwo: mąż przesuwał sprzączkę paska kamizelki, by udowodnić żonie, że tyje i zdrowieje; żona w tajemnicy skracała pasek, by podtrzymać męża na duchu.',
                   'Wymowa: pochwała cichej, heroicznej miłości i poświęcenia w szarej codzienności bez wielkich słów.'
                 ],
@@ -301,11 +301,11 @@ export const DEPT_05 = {
               }
             },
             {
-              term: 'Eliza Orzeszkowa: „Gloria victis”',
+              term: 'Eliza Orzeszkowa: „Gloria victis” [poza PP od 2024 r. — kontekst / przejściowo 2025–2028]',
               desc: 'Chwała zwyciężonym — pamięć o powstaniu 1863 r.',
               details: {
                 summary:
-                  'Opowiadanie z 1908 r. oddające hołd bezimiennym bohaterom powstania styczniowego w poleskim lesie.',
+                  'Opowiadanie z tomu wydanego w 1910 r., oddającego hołd bezimiennym bohaterom powstania styczniowego w poleskim lesie.',
                 bullets: [
                   'Personifikacja przyrody: historię walki powstańczego oddziału Romualda Traugutta opowiadają drzewa (wielowiekowy Dąb, Świerk, Brzoza) oraz Wiatr.',
                   'Młodzi bohaterowie: delikatny humanista Maryś Tarłowski i dzielny oficer Jagmin, ginący w obronie rannego przyjaciela przed carskimi kozakami.',
@@ -315,7 +315,7 @@ export const DEPT_05 = {
               }
             },
             {
-              term: 'Henryk Sienkiewicz: „Potop”',
+              term: 'Henryk Sienkiewicz: „Potop” (w PP we fragmentach)',
               desc: 'Powieść historyczna pisana „ku pokrzepieniu serc”.',
               details: {
                 summary:
@@ -349,18 +349,18 @@ export const DEPT_05 = {
     { id: 'kf5-12', front: 'Jaką rolę odgrywa fragment o wskrzeszeniu Łazarza w „Zbrodni i karze”?', back: 'Jest zapowiedzią duchowego i moralnego zmartwychwstania Raskolnikowa pod wpływem wiary i miłości Soni.', hint: 'Ewangelia czytana z Sonią', category: 'motyw' },
     { id: 'kf5-13', front: 'Kim był Porfiry Pietrowicz?', back: 'Sędzią śledczym prowadzącym sprawę morderstwa lichwiarki, mistrzem psychologicznego osaczania podejrzanego.', hint: 'Śledczy psycholog', category: 'bohater' },
     { id: 'kf5-14', front: 'Jak kończy się wątek Swidrygajłowa w „Zbrodni i karze”?', back: 'Popełnia samobójstwo strzałem z rewolweru na ulicy Petersburga, uświadamiając bezsens absolutnego nihilizmu.', hint: 'Samobójstwo nihilisty', category: 'bohater' },
-    { id: 'kf5-15', front: 'Jaka kara spotkała Raskolnikowa za morderstwo?', back: 'Został skazany na 8 lat katorgi na Syberii (złagodzenie wyroku dzięki oddaniu skradzionych rzeczy i niepoczytalności).', hint: 'Syberia i katorga', category: 'lektura' },
+    { id: 'kf5-15', front: 'Jaka kara spotkała Raskolnikowa za morderstwo?', back: 'Został skazany na 8 lat katorgi na Syberii (sąd złagodził wyrok ze względu na dobrowolne przyznanie się, uratowanie Mikołki przed niesłusznym skazaniem i dawne szlachetne uczynki Rodiona).', hint: 'Syberia i katorga', category: 'lektura' },
     { id: 'kf5-16', front: 'Jaki jest sens tytułowej kamizelki w noweli Bolesława Prusa?', back: 'To symbol wzajemnego, szlachetnego oszukiwania się małżonków w chorobie z miłości (mąż przesuwał sprzączkę, żona skracała pasek).', hint: 'Szlachetne kłamstwo', category: 'motyw' },
     { id: 'kf5-17', front: 'Co oznacza tytuł noweli Orzeszkowej „Gloria victis”?', back: '„Chwała zwyciężonym” — odwrócenie rzymskiego „Vae victis”, hołd dla moralnego zwycięstwa powstańców styczniowych.', hint: 'Przeciwieństwo Vae victis', category: 'lektura' },
     { id: 'kf5-18', front: 'Pod jakim nazwiskiem pokutował Andrzej Kmicic w „Potopie”?', back: 'Jako Babinicz — pod tym nazwiskiem wsławił się m.in. wysadzeniem kolubryny na Jasnej Górze i ocaleniem króla.', hint: 'Babinicz', category: 'bohater' },
     { id: 'kf5-19', front: 'W jakim celu Sienkiewicz pisał Trylogię?', back: '„Ku pokrzepieniu serc” — by podtrzymać ducha narodowego Polaków pod zaborami pamięcią o dawnych triumfach.', hint: 'Pokrzepienie serc', category: 'epoka' },
-    { id: 'kf5-20', front: 'Kto wypowiada słowa „Non omnis moriar” w finale „Lalki”?', back: 'Doktor Szuman, cytując Horacego po odczytaniu listu o losie Wokulskiego i śmierci Rzeckiego.', hint: 'Szuman o Wokulskim', category: 'cytat' },
+    { id: 'kf5-20', front: 'W jakich okolicznościach w finale „Lalki” pojawiają się słowa Horacego „Non omnis moriar”?', back: 'W liście od stolarza Węgiełka (znalezionym przy zmarłym Rzeckim przez Szumana i Ochockiego) — napis ten wyryto na krzyżu na ruinach zamku w Zasławiu jako znak wiary w przetrwanie Wokulskiego.', hint: 'List Węgiełka przy Rzeckim i słowa Ochockiego/Szumana', category: 'cytat' },
     { id: 'kf5-21', front: 'Jakie były cztery główne hasła programowe polskiego pozytywizmu?', back: '1) Praca organiczna (rozwój gospodarki i przemysłu całego społeczeństwa); 2) Praca u podstaw (oświata i wsparcie dla najniższych warstw, chłopów i biedoty); 3) Emancypacja kobiet; 4) Asymilacja Żydów.', hint: 'Cztery filary programu pozytywistów.', category: 'epoka' },
     { id: 'kf5-22', front: 'Czym był scjentyzm i utylitaryzm w filozofii pozytywistycznej?', back: 'Scjentyzm to zaufanie wyłącznie do wiedzy naukowej opartej na doświadczeniu i faktach; utylitaryzm (J.S. Mill) to uznanie za wartościowe tego, co przynosi wymierny pożytek jak największej liczbie ludzi.', hint: 'Nauka empiryczna + użyteczność społeczna.', category: 'pojecie' },
     { id: 'kf5-23', front: 'Dlaczego Stanisława Wokulskiego nazywa się „człowiekiem epoki przejściowej”?', back: 'Łączy w sobie cechy romantyka (udział w powstaniu styczniowym, ślepa i niszcząca miłość do Izabeli Łęckiej, próba samobójcza) z cechami pozytywisty (zmysł handlowy, spółka do handlu ze Wschodem, wspieranie nauki Geista i pomoc biedocie).', hint: 'Romantyczne serce + pozytywistyczny rozum.', category: 'bohater' },
     { id: 'kf5-24', front: 'Co oznaczają pojęcia „Powiśle” i „Krakowskie Przedmieście” w topografii „Lalki”?', back: 'Krakowskie Przedmieście to reprezentacyjna ulica bogatego mieszczaństwa, sklepu Wokulskiego i arystokracji; Powiśle to dzielnica skrajnej nędzy, bezrobocia i chorób, która wstrząsa Wokulskim podczas spaceru.', hint: 'Kontrast nędzy Powiśla i przepychu centrum.', category: 'motyw' },
     { id: 'kf5-25', front: 'Kim był Ignacy Rzecki w „Lalce” i jakie trzy idee wyznawał w swoim „Pamiętniku starego subiekta”?', back: 'Oddanym subiektem i przyjacielem Wokulskiego, „starym romantykiem” wiernym: 1) kultowi Napoleona (nadzieja na odzyskanie niepodległości); 2) rzetelnej pracy kupieckiej; 3) wiernej przyjaźni (do śmierci troszczył się o Stacha).', hint: 'Bonapartyzm, etos pracy i przyjaźń.', category: 'bohater' },
-    { id: 'kf5-26', front: 'Dlaczego nie wolno pisać w wypracowaniu, że „Wokulski popełnił samobójstwo w Zasławku”?', back: 'To błąd kardynalny! Wokulski próbował rzucić się pod pociąg w Skierniewicach (uratował go dróżnik Wysocki), a jego ostateczny los po wyjeździe w finale powieści pozostaje otwarty (domysły: wyjazd do Geista lub śmierć w ruinach zamku w Zasławiu).', hint: 'Skierniewice (uratowany), finał otwarty.', category: 'lektura' },
+    { id: 'kf5-26', front: 'Dlaczego nie wolno pisać w wypracowaniu, że „Wokulski popełnił samobójstwo w Zasławiu”?', back: 'To błąd kardynalny! Wokulski próbował rzucić się pod pociąg w Skierniewicach (uratował go dróżnik Wysocki), a jego ostateczny los po wyjeździe w finale powieści pozostaje otwarty (domysły: wyjazd do Geista lub śmierć w ruinach zamku w Zasławiu).', hint: 'Skierniewice (uratowany), finał otwarty.', category: 'lektura' },
     { id: 'kf5-27', front: 'Kim byli Julian Ochocki i profesor Geist w „Lalce”?', back: 'Ochocki to młody arystokrata-wynalazca marzący o skonstruowaniu maszyny latającej; Geist to paryski uczony pracujący nad metalem lżejszym od powietrza — obaj symbolizują bezinteresowną wiarę w naukę (scjentyzm).', hint: 'Naukowcy-idealiści i maszyna latająca.', category: 'bohater' },
     { id: 'kf5-28', front: 'Na czym polegała teoria Raskolnikowa o „ludziach zwykłych i niezwykłych” w „Zbrodni i karze”?', back: 'Raskolnikow podzielił ludzkość na posłuszne „wszy” (ludzi zwykłych) oraz „Napoleonów” (jednostki wybitne), którym rzekomo wolno łamać prawo moralne i przelewać krew w imię wyższego celu — teoria ta poniosła klęskę w starciu z sumieniem.', hint: 'Filozofia nadczłowieka i klęska zbrodni.', category: 'pojecie' },
     { id: 'kf5-29', front: 'Jaką rolę odegrała Sonia Marmieładowa w duchowym odrodzeniu Rodiona Raskolnikowa?', back: 'Będąc sama skrzywdzoną przez biedę (została prostytutką, by utrzymać rodzinę), nie potępiła Raskolnikowa, skłoniła go do wyznania winy i ucałowania ziemi na Placu Siennym oraz poszła za nim na katorgę na Syberię, prowadząc go do Ewangelii i skruchy.', hint: 'Ewangeliczne miłosierdzie i wspólna katorga.', category: 'bohater' },
@@ -400,7 +400,7 @@ export const DEPT_05 = {
       explanation: "Scena w pociągu jest przełomem dramatycznym: Izabela flirtuje po angielsku ze Starskim sądząc, że Wokulski nie zna tego języka. Wokulski rozumie wszystko, wysiada w Skierniewicach i próbuje popełnić samobójstwo.",
       whyWrong: {
         0: "Błąd: Nie chodziło o list, lecz o rozmowę w przedziale pociągu.",
-        1: "Błąd: W Zasławku Wokulski spędzał z Izabelą szczęśliwe chwile; dramat rozegrał się w pociągu.",
+        1: "Błąd: W Zasławiu Wokulski spędzał z Izabelą szczęśliwe chwile; dramat rozegrał się w pociągu.",
         2: "Błąd: Baronowa Krzeszowska toczyła spory sąsiedzkie, ale to nie ona zdemaskowała Izabelę."
       },
       examTip: "Dokładna znajomość sceny w pociągu i próby samobójczej w Skierniewicach to częsty wymóg pytań w części testowej CKE."
@@ -448,16 +448,16 @@ export const DEPT_05 = {
         "Raskolnikow przyznał się sam na komisariacie pod wpływem sumienia i rozmów z Porfirym oraz Sonią.",
         "Sonia Marmieładowa po ucieczce z Petersburga.",
         "Jego przyjaciel Razumichin po znalezieniu skradzionych fantów.",
-        "Malarz Mikołajka, który złożył zeznania obciążające studenta."
+        "Malarz Mikołka, który złożył zeznania obciążające studenta."
       ],
       correct: 0,
       explanation: "Raskolnikow sam wchodzi na komisariat i wyznaje prawdę. Nie było twardych dowodów rzeczowych — Porfiry Pietrowicz stosował presję psychologiczną, a Sonia skłoniła go do pokuty.",
       whyWrong: {
         1: "Błąd: Sonia kochała Rodiona i nakłaniała go do dobrowolnego wyznania winy, nie doniosła na niego.",
         2: "Błąd: Razumichin do końca wierzył w niewinność przyjaciela.",
-        3: "Błąd: Malarz Mikołajka wziął winę na siebie z powodów religijnych, co zmyliło śledztwo."
+        3: "Błąd: Malarz Mikołka wziął winę na siebie z powodów religijnych, co zmyliło śledztwo."
       },
-      examTip: "Pamiętaj: Mikołajka niesłusznie przyznał się do morderstwa, co było jednym z genialnych zwrotów akcji w śledztwie Porfirego."
+      examTip: "Pamiętaj: Mikołka niesłusznie przyznał się do morderstwa, co było jednym z genialnych zwrotów akcji w śledztwie Porfirego."
     },
     {
       id: "kq5-6",
@@ -541,7 +541,7 @@ export const DEPT_05 = {
         "Przestrzeń martwa, opanowana przez arystokratyczne salony bez perspektyw rozwoju."
       ],
       correct: 2,
-      explanation: "Wokulski zachwyca się Paryżem jako wielkim, logicznym mechanizmem: podziwia układ ulic, metro, pracę robotników i spotyka Geista. Warszawa przy nim wypada chaotycznie i sennie.",
+      explanation: "Wokulski zachwyca się Paryżem jako wielkim, logicznym mechanizmem: podziwia symetryczny układ bulwarów, nowoczesną technikę, pracę robotników i spotyka Geista. Warszawa przy nim wypada chaotycznie i sennie.",
       whyWrong: {
         0: "Błąd: To Petersburg u Dostojewskiego jest przestrzenią zaduchu i upadku moralnego.",
         1: "Błąd: Paryż w XIX wieku był tętniącą życiem stolicą świata.",
@@ -607,10 +607,10 @@ export const DEPT_05 = {
       id: "kq5-14",
       q: "W jakich okolicznościach Wokulski ostatecznie przejrzał na oczy i zerwał z Izabelą Łęcką?",
       options: [
-        "W pociągu do Krakowa podsłuchał rozmowę Izabeli ze Starskim po angielsku, gdy szydziła z niego i nazwała go śmiesznym, gubiąc medalion od Geista.",
+        "W pociągu do Krakowa podsłuchał rozmowę Izabeli ze Starskim po angielsku, gdy szydziła z niego i nazwała go śmiesznym, żartując z podarowanego medalionu z metalem Geista.",
         "W Paryżu zobaczył Izabelę wychodzącą za mąż za barona Krzeszowskiego.",
         "Ignacy Rzecki zabronił mu wstępu do sklepu, jeśli nie zerwie zaręczyn.",
-        "Izabela otwarcie odmówiła wyjazdu do Zasławka na polowanie."
+        "Izabela otwarcie odmówiła wyjazdu do Zasławia na polowanie."
       ],
       correct: 0,
       explanation: "Izabela nie wiedziała, że Wokulski zna angielski; w wagonie flirtowała ze Starskim i żartowała z podarowanego jej przez Stacha medalionu z metalu Geista.",

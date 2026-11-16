@@ -33,7 +33,7 @@ export const DEPT_04 = {
         {
           type: 'quote',
           label: 'Manifest polskiego romantyzmu — „Romantyczność” (1822)',
-          text: '„Czucie i wiara silniej mówi do mnie / Niż mędrca szkiełko i oko. / Martwe znasz prawdy, nieznane dla ludu, / Widzisz świat w proszku, w każdej gwiazd iskierce. / Nie znasz prawd żywych, nie obaczysz cudu! / Miej serce i patrzaj w serce!”',
+          text: '„Czucie i wiara silniej mówi do mnie / Niż mędrca szkiełko i oko. [...] Martwe znasz prawdy, nieznane dla ludu, / Widzisz świat w proszku, w każdej gwiazd iskierce. / Nie znasz prawd żywych, nie obaczysz cudu! / Miej serce i patrzaj w serce!”',
           author: 'Adam Mickiewicz',
           analysis: 'Podsumowanie sporu między racjonalistą Starcem (reprezentującym profesora Jana Śniadeckiego) a Poetą stającym w obronie obłąkanej z miłości Karusi rozmawiającej z duchem Jasieńka.'
         },
@@ -54,8 +54,8 @@ export const DEPT_04 = {
               }
             },
             {
-              term: '„Konrad Wallenrod” i pojęcie wallenrodyzmu',
-              desc: 'Powieść poetycka o cenie zdrady w imię ocalenia ojczyzny.',
+              term: '„Konrad Wallenrod” i pojęcie wallenrodyzmu [poza PP od 2024 r.]',
+              desc: 'Powieść poetycka o cenie zdrady (kontekst / przejściowo 2025–2028).',
               details: {
                 summary: 'Litwin Walter Alf wychowany przez Krzyżaków podstępem zostaje Wielkim Mistrzem Zakonu, by doprowadzić wrogą armię do klęski.',
                 bullets: [
@@ -130,7 +130,7 @@ export const DEPT_04 = {
               details: {
                 summary: 'Bal u Senatora w Wilnie oraz poemat epicki zamykający dzieło.',
                 bullets: [
-                  'Scena u Senatora: niewidoma Pani Rollison błaga Nowosilcowa o litość dla wyrzuconego przez okno syna; cynizm Doktora (który ginie rażony piorunem zgodnie z przepowiednią ks. Piotra).',
+                  'Scena u Senatora: niewidoma Pani Rollison błaga Nowosilcowa o litość dla więzionego syna (który zostaje później wyrzucony przez okno, ale cudem przeżywa upadek); cynizm Doktora (który ginie rażony piorunem zgodnie z przepowiednią ks. Piotra).',
                   'Ustęp: epicki opis Rosji carskiej — bezludne przestrzenie („Droga do Rosji”), militaryzm i deptanie ludzi („Przegląd wojska”), pomnik Piotra Wielkiego (rozmowa z rosyjskim poetą-dekabrystą o tyranii) oraz dedykacja „Do przyjaciół Moskali” (rozróżnienie narodu rosyjskiego od carskiego aparatu przemocy).'
                 ],
                 essayUse: 'W motywach: tyrania, solidarność ponadnarodowa, despotyzm.'
@@ -143,7 +143,7 @@ export const DEPT_04 = {
     {
       id: 'kn4-3',
       title: 'Juliusz Słowacki: „Kordian” — winkelriedyzm, spisek koronacyjny i słabość psychiki',
-      badge: 'Lektura w całości (*)',
+      badge: 'PR / przejściowo 2025–2028',
       intro: '„Kordian” Juliusza Słowackiego (1834 r., Paryż) to dramat romantyczny będący bezpośrednią polemiką z koncepcją mesjanizmu Mickiewicza oraz bezwzględnym rozliczeniem z przyczynami klęski powstania listopadowego. Ukazuje tragedię młodego marzyciela, którego psychika nie udźwignęła ciężaru rewolucyjnego czynu.',
       blocks: [
         {
@@ -163,7 +163,7 @@ export const DEPT_04 = {
               term: 'Akt I i II — Ewolucja bohatera i utrata złudzeń w Europie',
               desc: 'Droga od romantycznego weltschmerzu do dojrzałości ideowej.',
               details: {
-                summary: '15-letni marzyciel Kordian wyrusza w podróż edukacyjną po Europie, gdzie brutalna rzeczywistość niszczy jego idealistyczne wyobrażenia.',
+                summary: 'W Akcie I 15-letni marzyciel Kordian cierpi na ból istnienia, a w Akcie II (jako ok. 20-letni młodzieniec) wyrusza w podróż po Europie, gdzie brutalna rzeczywistość niszczy jego złudzenia.',
                 bullets: [
                   'Akt I: młody Kordian cierpi na „jaskółczy niepokój” (weltschmerz, ból istnienia, brak celu życiowego). Nieodwzajemniona miłość do starszej Laury popycha go do próby samobójczej w parku (strzał w głowę, który przeżywa).',
                   'Londyn (park Jamesa): dozorca uświadamia mu, że światem rządzą pieniądze, a za złoto można kupić pozycję i honor.',
@@ -209,7 +209,7 @@ export const DEPT_04 = {
     {
       id: 'kn4-4',
       title: 'Adam Mickiewicz: „Pan Tadeusz” — epos narodowy, arkadia Soplicowa i przemiana Jacka Soplicy',
-      badge: 'Lektura w całości (*)',
+      badge: 'SP / przejściowo 2025–2028',
       intro: '„Pan Tadeusz, czyli Ostatni zajazd na Litwie” (Paryż 1834 r.) to 12-księgowy epos narodowy pisany trzynastozgłoskowcem. Powstał z emigracyjnej nostalgii poety za „krajem lat dziecinnych”. Ukazuje harmonijny, wyidealizowany świat szlacheckiej tradycji u progu wkroczenia wojsk napoleońskich na Litwę w 1812 roku.',
       blocks: [
         {
@@ -233,7 +233,7 @@ export const DEPT_04 = {
                 bullets: [
                   'Etap 1 (Młodość — Jacek Soplica): dumny szlachcic, przywódca sejmikowy („Wąsal”), zakochany z wzajemnością w Ewie Horeszkównie. Odrzucony przez jej ojca, Stolnika (podanie „czarnej polewki”), popada w pijaństwo, żeni się bez miłości. W chwili najazdu Moskali na zamek w afekcie i gniewie strzela do Stolnika. Uznany przez okolicę za zdrajcę.',
                   'Etap 2 (Pokuta — Ksiądz Robak): wstępuje do zakonu bernardynów, przyjmuje nazwisko „Robak” (znak pokory). Zamiast jednostkowego buntu podejmuje mrówczą, anonimową pracę organiczną — jest emisariuszem przenoszącym rozkazy generała Dąbrowskiego i przygotowującym powstanie szlachty na Litwie.',
-                  'Etap 3 (Rehabilitacja): ratuje życie Hrabiemu i Gerwazemu podczas polowania na niedźwiedzia, zasłania własnym ciałem Tadeusza i Hrabiego przed kulami Moskali podczas bitwy w Soplicowie. Spowiedź na łożu śmierci (Księga X), wybaczenie od Gerwazego i pośmiertne odznaczenie Legią Honorową przez Napoleona.'
+                  'Etap 3 (Rehabilitacja): ratuje życie Tadeuszowi i Hrabiemu podczas polowania na niedźwiedzia (Ks. IV), a podczas bitwy w Soplicowie (Ks. IX) zasłania własnym ciałem Hrabiego przed strzałem Moskali i ratuje Gerwazego. Spowiedź na łożu śmierci (Ks. X), wybaczenie od Gerwazego i pośmiertne odznaczenie Legią Honorową przez Napoleona.'
                 ],
                 essayUse: 'Absolutny fundament maturalny przy tematach: przemiana wewnętrzna, wina i odkupienie, patriotyzm czynu.'
               }
@@ -273,7 +273,7 @@ export const DEPT_04 = {
     {
       id: 'kn4-5',
       title: 'Cyprian Kamil Norwid — poeta myśli, praca, sztuka i tragizm wielkości',
-      badge: 'Późny romantyzm',
+      badge: 'Późny romantyzm (PP: „Coś ty Atenom...”; reszta — kontekst)',
       intro: 'Cyprian Kamil Norwid, zaliczany do czwórki wieszczów, był poetą myśli, prekursorem nowoczesnej liryki, niedocenionym za życia i zmarłym w nędzy w paryskim przytułku. Jego poezja odrzucała łatwy sentymentalizm i mesjanizm na rzecz trudnego intelektualizmu, kultu pracy i chrześcijańskiego uniwersalizmu.',
       blocks: [
         {
@@ -295,8 +295,8 @@ export const DEPT_04 = {
               details: {
                 summary: 'Poemat stylizowany na archaiczny pochówek średniowiecznego rycerza i wodza.',
                 bullets: [
-                  'Obraz orszaku pogrzebowego: koń wodza z przypiętym mieczem, panny żałobne tłukące gliniane naczynia, pachołki dławiące toporami tarcze.',
-                  'Przesłanie uniwersalne: śmierć Bema nie kończy walki; jego duch porywa za sobą kolejne pokolenia: „Idą dalej, / Dalej — aż w grobowcu cienie / Kruszą się i budzą...”. Prawdziwa wielkość budzi ludzkość z uśpienia.',
+                  'Obraz orszaku pogrzebowego: koń wodza z przypiętym mieczem, panny żałobne tłukące gliniane naczynia, chłopcy bijący w topory i pachołki bijące w tarcze („W tarcze rude od świateł bijają pachołki służebne”).',
+                  'Przesłanie uniwersalne: śmierć Bema nie kończy walki; żałobny korowód zamienia się w pochód ludzkości ku przyszłości: „Dalej – dalej – aż kiedyś stoczyć się przyjdzie do grobu [...] Serca zmdlałe ocucą – pleśń z oczu zgarną narody...”. Prawdziwa wielkość budzi świat z uśpienia.',
                   'Forma: heksametr polski, kunsztowna onomatopeja i rytmika marsza żałobnego.'
                 ],
                 essayUse: 'W motywach: pamięć o bohaterach, śmierć wodza, poezja patriotyczna.'
@@ -310,7 +310,7 @@ export const DEPT_04 = {
                 bullets: [
                   'Portret sztuki Chopina: synteza antycznego ideału piękna (starożytna Grecja) z prostą, chrześcijańską nutą wiejską polskiego ludu („Polska z zenitu wszechdoskonałości dziejów”).',
                   'Zderzenie Sacrum i Profanum: czyste, uduchowione Piękno zostaje skonfrontowane z barbarzyńską, tępą przemocą carskich sołdatów.',
-                  'Puenta wiersza: „Idea — osiągnęła bruk”. Pozorna klęska sztuki jest jej zwycięstwem — upadek na bruk oznacza, że idea weszła między zwykłych ludzi i ich przebudzi („Ciesz się, późny wnuku! / Jękły głuche kamienie”).'
+                  'Puenta wiersza: „Ideał — sięgnął bruku”. Pozorna klęska sztuki jest jej zwycięstwem — upadek na bruk oznacza, że idea weszła między zwykłych ludzi i ich przebudzi („Ciesz się, późny wnuku! / Jękły głuche kamienie”).'
                 ],
                 essayUse: 'W tematach: rola sztuki i artysty, barbarzyństwo wojny, cierpienie kultury pod zaborem.'
               }
@@ -321,7 +321,7 @@ export const DEPT_04 = {
               details: {
                 summary: 'Zbudowany na refrenie modlitewnym: „Tęskno mi, Panie...”.',
                 bullets: [
-                  'Idealizacja etyki polskiej: tęsknota za krajem, gdzie „kruszynę chleba podnoszą z ziemi przez uszanowanie”, gdzie szanuje się bocianie gniazdo na dachu, a ludzie witają się ewangelicznym „Bądź pochwalony Chrystus!”.',
+                  'Idealizacja etyki polskiej: tęsknota za krajem, gdzie „kruszynę chleba podnoszą z ziemi przez uszanowanie”, gdzie winą jest zepsuć bocianie gniazdo na gruszy, a ludzie witają się słowami „Bądź pochwalony!”.',
                   'Poczucie obcości: wyobcowanie poety na emigracji w świecie rządzonym przez fałsz i materializm.'
                 ],
                 essayUse: 'W tematach: nostalgia emigranta, tradycja chrześcijańska, etos chleba, samotność.'
@@ -346,17 +346,17 @@ export const DEPT_04 = {
     { id: 'kf4-11', front: 'Kim był Jacek Soplica i dlaczego przyjął przydomek Ksiądz Robak?', back: 'Szlachcicem, który w afekcie zabił Stolnika Horeszkę; habit bernardyna i miano Robaka przyjął na znak pokory, stając się tajnym emisariuszem niepodległościowym.', hint: 'Warchoł pokutujący jako cichy bernardyn.', category: 'bohater' },
     { id: 'kf4-12', front: 'Jakie wydarzenia historyczne zagrał Jankiel w swoim koncercie na cymbałach?', back: 'Uchwalenie Konstytucji 3 Maja, zdradę Targowicy, rzeź warszawskiej Pragi przez wojska Suworowa oraz powstanie Legionów Dąbrowskiego (Mazurek Dąbrowskiego).', hint: 'Muzyczna lekcja historii od 1791 do 1812 roku.', category: 'lektura' },
     { id: 'kf4-13', front: 'Jaką decyzję podjęli Tadeusz i Zosia podczas swoich zaręczyn w Księdze XII?', back: 'Postanowili znieść pańszczyznę i uwłaszczyć podległych im chłopów w swoim majątku.', hint: 'Darowanie wolności chłopom.', category: 'bohater' },
-    { id: 'kf4-14', front: 'Co symbolizuje wyrzucenie fortepianu Chopina na bruk w wierszu Norwida?', back: 'Profanację i starcie sztuki najwyższej (sacrum) z brutalnym barbarzyństwem caratu (profanum), ale też zwycięstwo idei, która trafia pod strzechy.', hint: '„Idea — osiągnęła bruk”.', category: 'motyw' },
+    { id: 'kf4-14', front: 'Co symbolizuje wyrzucenie fortepianu Chopina na bruk w wierszu Norwida?', back: 'Profanację i starcie sztuki najwyższej (sacrum) z brutalnym barbarzyństwem caratu (profanum), ale też zwycięstwo idei, która trafia między ludzi.', hint: '„Ideał — sięgnął bruku”.', category: 'motyw' },
     { id: 'kf4-15', front: 'Czym charakteryzuje się kult pracy w twórczości Cypriana Kamila Norwida?', back: 'Praca jest rozumiana jako „miłość znojąca się” — uduchowienie materii i najwyższa forma ludzkiej twórczości łącząca człowieka z Bogiem.', hint: 'Praca jako miłość i znojenie ducha.', category: 'pojecie' },
     { id: 'kf4-16', front: 'Jak w „Bema pamięci żałobnym-rapsodzie” Norwid ukazał śmierć wodza?', back: 'Jako stylizowany pochówek średniowiecznego rycerza, który nie kończy się w grobie, lecz budzi kolejne pokolenia do nieustannego marszu ku wolności.', hint: 'Śmierć bohatera budząca naród.', category: 'lektura' },
     { id: 'kf4-17', front: 'Kim był Cichowski w „Dziadach cz. III”?', back: 'Młodym Polakiem porwanym przez carską policję, więzionym i torturowanym przez lata w lochach; mimo że nikogo nie wydał, po powrocie był wrakiem człowieka zniszczonym obłędem i lękiem.', hint: 'Symbol milczenia pod carskimi torturami.', category: 'bohater' },
     { id: 'kf4-18', front: 'Wskaż cechy dramatu romantycznego na przykładzie „Dziadów cz. III”.', back: 'Kompozycja otwarta i luźna (fragmentaryczność), synkretyzm rodzajowy (liryka, epika, dramat), łączenie scen realistycznych z fantastycznymi (anioły, diabły), bohater prometejski.', hint: 'Otwarta forma, synkretyzm i metafizyka.', category: 'pojecie' },
     { id: 'kf4-19', front: 'Jaka jest wymowa programowa ballady „Romantyczność” Adama Mickiewicza (1822)?', back: 'Manifest polskiego romantyzmu przeciwstawiający „szkiełko i oko” (chłodny racjonalizm Starca) poznaniu przez „czucie i wiarę” (empatia, intuicja i ludowa prawda serca Karusi).', hint: '„Miej serce i patrzaj w serce”.', category: 'lektura' },
-    { id: 'kf4-20', front: 'Czym jest orientalizm w „Sonetach krymskich” Adama Mickiewicza?', back: 'Fascynacja egzotyką Wschodu (stepy Akermanu, Krym, islam, słowa takie jak „muezim”, „mirza”, „czatyrdah”), łącząca zachwyt potęgą natury z nostalgią Pielgrzyma za utraconą ojczyzną.', hint: 'Krym jako pejzaż metafizyczny i tęsknota wygnańca.', category: 'epoka' },
+    { id: 'kf4-20', front: 'Czym jest orientalizm w „Sonetach krymskich” Adama Mickiewicza?', back: 'Fascynacja egzotyką Wschodu (stepy Akermanu, Krym, islam, słowa takie jak „muezin”, „mirza”, „czatyrdah”), łącząca zachwyt potęgą natury z nostalgią Pielgrzyma za utraconą ojczyzną.', hint: 'Krym jako pejzaż metafizyczny i tęsknota wygnańca.', category: 'epoka' },
     { id: 'kf4-21', front: 'Na czym polega tragizm wallenrodyzmu w „Konradzie Wallenrodzie”?', back: 'Bohater wybiera walkę za pomocą podstępu i zdrady (wbrew kodeksowi rycerskiemu), ratuje ojczyznę przed Zakonem, ale płaci za to utratą honoru, szczęścia osobistego i samobójczą śmiercią.', hint: 'Skuteczna zdrada w imię ojczyzny za cenę duszy.', category: 'motyw' },
-    { id: 'kf4-22', front: 'Czym jest opowiadanie Jana Sobolewskiego w I scenie „Dziadów cz. III”?', back: 'Relacją naocznego świadka o wywózce polskich dzieci i studentów kibitkami na Sybir (m.in. małego Wasilewskiego i Janczewskiego), ukazującą bezbronność i heroizm młodzieży pod carskim terrorem.', hint: 'Kibitki, kajdany i okrzyk „Jeszcze Polska nie zginęła”.', category: 'lektura' },
+    { id: 'kf4-22', front: 'Czym jest opowiadanie Jana Sobolewskiego w I scenie „Dziadów cz. III”?', back: 'Relacją naocznego świadka o wywózce polskich dzieci i studentów kibitkami na Sybir (m.in. małego 10-letniego chłopczyka w kajdanach, Janczewskiego i skatowanego Wasilewskiego), ukazującą heroizm młodzieży pod carskim terrorem.', hint: 'Kibitki, kajdany i okrzyk „Jeszcze Polska nie zginęła”.', category: 'lektura' },
     { id: 'kf4-23', front: 'Co symbolizuje metafora lawy wypowiedziana przez Piotra Wysockiego w Scenie VII „Dziadów cz. III”?', back: 'Podział narodu na „z wierzchu zimną i twardą, suchą i plugawą” skorupę (serwilistyczną arystokrację) oraz „wewnętrzny ogień”, którego sto lat nie wyziębi (patriotyczną młodzież i lud).', hint: 'Skorupa vs wewnętrzny ogień narodu.', category: 'cytat' },
-    { id: 'kf4-24', front: 'Kim był Senator Nowosilcow w „Dziadach cz. III” i co robił w Wilnie?', back: 'Carskim dygnitarzem prowadzącym brutalne śledztwo przeciwko filomatom i filaretom w celu przypodobania się carowi; otoczony pochlebcami (Doktor, Bajkow, Pelikan), symbolizuje zepsucie władzy.', hint: 'Bal u Senatora i śmierć Rollisona/Doktora.', category: 'bohater' },
+    { id: 'kf4-24', front: 'Kim był Senator Nowosilcow w „Dziadach cz. III” i co robił w Wilnie?', back: 'Carskim dygnitarzem prowadzącym brutalne śledztwo przeciwko filomatom i filaretom w celu przypodobania się carowi; otoczony pochlebcami (Doktor, Bajkow, Pelikan), symbolizuje zepsucie władzy.', hint: 'Bal u Senatora, krzywda Rollisona i śmierć Doktora.', category: 'bohater' },
     { id: 'kf4-25', front: 'Czym jest winkelriedyzm w dramacie Juliusza Słowackiego „Kordian”?', back: 'Koncepcja czynnej walki zbrojnej i poświęcenia jednego narodu („Polska Winkelriedem narodów”), który ściąga na siebie ostrza tyranów, by torować wolność innym ludom — w polemice z biernym mesjanizmem.', hint: 'Czyn zbrojny i ofiara za wolność innych.', category: 'pojecie' },
     { id: 'kf4-26', front: 'Dlaczego Kordian nie zabił cara Mikołaja I w sypialni Zamku Królewskiego (Akt III)?', back: 'W decydującej chwili przed drzwiami sypialni jego słabą psychikę opanowały Strach i Imaginacja (halucynacje), w wyniku czego Kordian zemdlał na progu i został aresztowany.', hint: 'Strach i Imaginacja pokonały spiskowca.', category: 'bohater' },
     { id: 'kf4-27', front: 'Jakich złudzeń pozbył się Kordian podczas podróży po Europie w Akcie II?', back: 'W Londynie odkrył, że światem rządzi pieniądz; w Dover zrozumiał rozdźwięk między poezją Szekspira a prozą życia; we Włoszech doznał zawodu w miłości do Wioletty; w Watykanie papież potępił polskie powstanie.', hint: 'Pieniądz, miłość interesowna i brak poparcia Watykanu.', category: 'lektura' },
@@ -482,7 +482,7 @@ export const DEPT_04 = {
         1: "Wiersz nie dotyczy choroby Chopina, lecz losu jego dzieła w Warszawie w 1863 r.",
         2: "Zniszczenie pałacu Zamoyskich było celową carską represją po zamachu."
       },
-      examTip: "Fraza: „Idea — osiągnęła bruk” to jedno z najsłynniejszych zdań poezji Norwida."
+      examTip: "Fraza: „Ideał — sięgnął bruku” to jedno z najsłynniejszych zdań poezji Norwida."
     },
     {
       q: "Wskaż cechę, która NIE charakteryzuje dramatu romantycznego:",
@@ -666,7 +666,7 @@ export const DEPT_04 = {
       explanation: "Gerwazy był wiernym sługą Stolnika i po jego śmierci mścił się na Soplicach, ale wyznanie umierającego księdza Robaka oraz fakt, że Stolnik przed śmiercią wybaczył Jackowi znakiem krzyża, skłoniły Klucznika do pojednania.",
       whyWrong: {
         1: "Gerwazy nie walczył o własne bogactwo, lecz o pamięć rodu Horeszków.",
-        2: "Gerwazy walczył przeciwko Moskalom podczas zajazdu w Księdze IX.",
+        2: "Gerwazy walczył przeciwko Moskalom podczas bitwy w Księdze IX (po zajeździe z Księgi VIII).",
         3: "Nie miał wątku miłosnego z Telimeną."
       },
       examTip: "Spowiedź Jacka Soplicy przed Gerwazym (Księga X) to szczytowy moment motywu winy, pokuty i przebaczenia w literaturze polskiej."

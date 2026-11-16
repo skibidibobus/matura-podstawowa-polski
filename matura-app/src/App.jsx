@@ -1,13 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { BookOpen, CheckCircle2, Eye, HelpCircle, Layers, Lock, Menu, User } from 'lucide-react';
+import { BookOpen, CheckCircle2, Eye, HelpCircle, Layers, Lock, Menu, Target, User } from 'lucide-react';
 import { LEVELS } from './data/levels';
 import { ORAL_LEVELS } from './data/oralLevels';
 import { KURS_PODSTAWOWY_LEVELS } from './data/kursPodstawowyLevels';
+import { FIZYKA_LEVELS } from './data/fizyka';
 import { Sidebar } from './components/Sidebar';
 import { BrandLogo } from './components/BrandLogo';
 import { NotesView } from './components/NotesView';
 import { FlashcardsView } from './components/FlashcardsView';
 import { QuizView } from './components/QuizView';
+import { ExamTaskView } from './components/ExamTaskView';
 import { AccountModal } from './components/AccountModal';
 import { RankingView } from './components/RankingView';
 import { AdminDashboardView } from './components/AdminDashboardView';
@@ -17,12 +19,14 @@ import { apiClient } from './api/client';
 const STORAGE_KEY = 'matura-polski-progress-v1';
 const AUTH_STORAGE_KEY = 'matura-polski-auth-v1';
 
-const VALID_COURSES = ['probna', 'kurs', 'ustna'];
+const VALID_COURSES = ['probna', 'kurs', 'ustna', 'fizyka'];
+const DEFAULT_PUBLIC_COURSES = ['probna', 'kurs', 'ustna'];
 
 const DEFAULT_LEVEL_BY_COURSE = {
   probna: 1,
   ustna: 101,
   kurs: 'dept-01',
+  fizyka: 'phys-01',
 };
 
 function getUserStorageKey(username) {
@@ -77,6 +81,7 @@ function normalizeActiveLevels(raw) {
     probna: (saved && saved.probna) || raw?.activeLevelId || DEFAULT_LEVEL_BY_COURSE.probna,
     ustna: (saved && saved.ustna) || DEFAULT_LEVEL_BY_COURSE.ustna,
     kurs: (saved && saved.kurs) || DEFAULT_LEVEL_BY_COURSE.kurs,
+    fizyka: (saved && saved.fizyka) || DEFAULT_LEVEL_BY_COURSE.fizyka,
   };
 }
 
@@ -120,6 +125,7 @@ export function App() {
     }
   });
   const [checkedNotes, setCheckedNotes] = useState(initial.checkedNotes || {});
+  const [completedTasks, setCompletedTasks] = useState(initial.completedTasks || {});
   const [cardStatus, setCardStatus] = useState(initial.cardStatus || {});
   const [quizScores, setQuizScores] = useState(initial.quizScores || {});
   const [quizAttempts, setQuizAttempts] = useState(initial.quizAttempts || {});
@@ -196,6 +202,7 @@ export function App() {
     setActiveCourse(VALID_COURSES.includes(src.activeCourse) ? src.activeCourse : 'probna');
     setActiveLevelByCourse(normalizeActiveLevels(src));
     setCheckedNotes(src.checkedNotes || {});
+    setCompletedTasks(src.completedTasks || {});
     setCardStatus(src.cardStatus || {});
     setQuizScores(src.quizScores || {});
     setQuizAttempts(src.quizAttempts || {});
@@ -285,6 +292,7 @@ export function App() {
       activeCourse,
       activeLevelByCourse,
       checkedNotes,
+      completedTasks,
       cardStatus,
       quizScores,
       quizAttempts,
@@ -319,7 +327,7 @@ export function App() {
     }, 150);
 
     return () => clearTimeout(timer);
-  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, cardStatus, quizScores, quizAttempts, authSession?.token, authSession?.user?.username, previewUser]);
+  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, completedTasks, cardStatus, quizScores, quizAttempts, authSession?.token, authSession?.user?.username, previewUser]);
 
   const handleLoginSuccess = (loginData) => {
     const session = { token: loginData.token, user: loginData.user };
@@ -374,6 +382,7 @@ export function App() {
       activeCourse,
       activeLevelByCourse,
       checkedNotes,
+      completedTasks,
       cardStatus,
       quizScores,
       quizAttempts,
@@ -405,7 +414,9 @@ export function App() {
   };
 
   const currentLevels =
-    activeCourse === 'ustna'
+    activeCourse === 'fizyka'
+      ? FIZYKA_LEVELS
+      : activeCourse === 'ustna'
       ? ORAL_LEVELS
       : activeCourse === 'kurs'
       ? KURS_PODSTAWOWY_LEVELS
@@ -444,6 +455,10 @@ export function App() {
 
   const handleToggleNote = (noteId) => {
     setCheckedNotes((prev) => ({ ...prev, [noteId]: !prev[noteId] }));
+  };
+
+  const handleToggleTask = (taskId) => {
+    setCompletedTasks((prev) => ({ ...prev, [taskId]: !prev[taskId] }));
   };
 
   const handleSetCardStatus = (cardId, status) => {
@@ -515,14 +530,13 @@ export function App() {
   const isGuestPreviewLimited = isBrowser && !effectiveUser;
 
   const allowedCourses = useMemo(() => {
-    if (!effectiveUser || effectiveUser.role === 'admin') return VALID_COURSES;
+    if (effectiveUser?.role === 'admin') return VALID_COURSES;
+    if (!effectiveUser) return DEFAULT_PUBLIC_COURSES;
     return Array.isArray(effectiveUser.allowedCourses) ? effectiveUser.allowedCourses : [];
   }, [effectiveUser]);
 
   const isCourseLocked =
-    Boolean(effectiveUser) &&
-    effectiveUser.role !== 'admin' &&
-    !allowedCourses.includes(activeCourse);
+    effectiveUser?.role !== 'admin' && !allowedCourses.includes(activeCourse);
 
   const isGuestLevelLocked = isGuestPreviewLimited && (activeIndex > 0 || reviewMode);
 
@@ -860,6 +874,30 @@ export function App() {
                   )}
                 </span>
               </button>
+
+              {activeCourse === 'fizyka' && (
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected={stage === 'tasks'}
+                  className={`stage-tab ${stage === 'tasks' ? 'active' : ''} ${
+                    (activeLevel?.examTasks?.length || 0) > 0 &&
+                    activeLevel.examTasks.every((t) => completedTasks[t.id])
+                      ? 'done'
+                      : ''
+                  }`}
+                  onClick={() => setStage('tasks')}
+                >
+                  <span className="stage-left">
+                    <Target size={17} />
+                    4. Zadania CKE
+                  </span>
+                  <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                    {(activeLevel?.examTasks || []).filter((t) => completedTasks[t.id]).length}/
+                    {activeLevel?.examTasks?.length || 0}
+                  </span>
+                </button>
+              )}
             </div>
 
             {stage === 'notes' && (
@@ -890,6 +928,17 @@ export function App() {
                 level={activeLevel}
                 savedScore={quizBest}
                 onSaveScore={handleSaveQuizScore}
+                hasNextLevel={activeIndex >= 0 && activeIndex < currentLevels.length - 1}
+                onNextLevel={() => handleSelectLevel(currentLevels[activeIndex + 1].id)}
+              />
+            )}
+
+            {stage === 'tasks' && activeCourse === 'fizyka' && (
+              <ExamTaskView
+                key={`tasks-${activeLevel.id}`}
+                level={activeLevel}
+                completedTasks={completedTasks}
+                onToggleTask={handleToggleTask}
                 hasNextLevel={activeIndex >= 0 && activeIndex < currentLevels.length - 1}
                 onNextLevel={() => handleSelectLevel(currentLevels[activeIndex + 1].id)}
               />

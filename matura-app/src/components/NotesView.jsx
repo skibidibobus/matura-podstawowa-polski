@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Check, ArrowLeft, ArrowRight, ChevronDown, ChevronUp, Sparkles, BookOpen } from 'lucide-react';
+import { MathText } from './MathText';
+import { DiagramRenderer } from './DiagramRenderer';
 
 export function NotesView({
   level,
@@ -103,16 +105,31 @@ export function NotesView({
               </div>
             </div>
 
-            {section.intro && <div className="section-intro">{section.intro}</div>}
+            {section.intro && (
+              <div className="section-intro">
+                <MathText text={section.intro} />
+              </div>
+            )}
 
             {blocks.map((block, bIdx) => {
+              if (block.type === 'diagram') {
+                return (
+                  <DiagramRenderer
+                    key={bIdx}
+                    svgId={block.svgId}
+                    title={block.title}
+                    caption={block.caption}
+                    alt={block.alt}
+                  />
+                );
+              }
               if (block.type === 'prose') {
                 return (
                   <div key={bIdx} className="prose-block">
-                    {block.heading && <h3 className="prose-heading">{block.heading}</h3>}
+                    {block.heading && <h3 className="prose-heading"><MathText text={block.heading} /></h3>}
                     {(block.paragraphs || []).map((p, pIdx) => (
                       <p key={pIdx} className="prose-p">
-                        {p}
+                        <MathText text={p} />
                       </p>
                     ))}
                   </div>
@@ -130,10 +147,10 @@ export function NotesView({
                     key={bIdx}
                     className={`callout ${variantClass}`}
                   >
-                    <div className="callout-title">{block.title}</div>
+                    <div className="callout-title"><MathText text={block.title} /></div>
                     <ul>
                       {(block.items || []).map((item, i) => (
-                        <li key={i}>{item}</li>
+                        <li key={i}><MathText text={item} /></li>
                       ))}
                     </ul>
                   </div>
@@ -142,10 +159,10 @@ export function NotesView({
               if (block.type === 'quote') {
                 return (
                   <div key={bIdx} className="quote-box">
-                    <span className="quote-label">{block.label}</span>
-                    {block.text}
+                    <span className="quote-label"><MathText text={block.label} /></span>
+                    <MathText text={block.text} />
                     {block.analysis && (
-                      <div className="quote-analysis">{block.analysis}</div>
+                      <div className="quote-analysis"><MathText text={block.analysis} /></div>
                     )}
                   </div>
                 );
@@ -179,7 +196,7 @@ export function NotesView({
                           }
                         >
                           <div className="term-card-top">
-                            <div className="term-title">{item.term}</div>
+                            <div className="term-title"><MathText text={item.term} /></div>
                             {hasDetails && (
                               <span className="expand-pill">
                                 {isExpanded ? (
@@ -194,7 +211,7 @@ export function NotesView({
                               </span>
                             )}
                           </div>
-                          <p className="term-desc">{item.desc}</p>
+                          <p className="term-desc"><MathText text={item.desc} /></p>
 
                           {hasDetails && isExpanded && (
                             <div
@@ -202,14 +219,14 @@ export function NotesView({
                               onClick={(e) => e.stopPropagation()}
                             >
                               {item.details.summary && (
-                                <p className="detail-summary">{item.details.summary}</p>
+                                <p className="detail-summary"><MathText text={item.details.summary} /></p>
                               )}
                               {item.details.bullets && item.details.bullets.length > 0 && (
                                 <div className="detail-group">
-                                  <div className="detail-label">Kluczowe informacje i sceny:</div>
+                                  <div className="detail-label">Kluczowe informacje:</div>
                                   <ul className="detail-list">
                                     {item.details.bullets.map((b, bi) => (
-                                      <li key={bi}>{b}</li>
+                                      <li key={bi}><MathText text={b} /></li>
                                     ))}
                                   </ul>
                                 </div>
@@ -218,8 +235,8 @@ export function NotesView({
                                 <div className="detail-essay">
                                   <Sparkles size={14} style={{ flexShrink: 0, marginTop: 2 }} />
                                   <div>
-                                    <strong>Jak użyć w rozprawce / na teście:</strong>{' '}
-                                    {item.details.essayUse}
+                                    <strong>Zastosowanie na maturze:</strong>{' '}
+                                    <MathText text={item.details.essayUse} />
                                   </div>
                                 </div>
                               )}

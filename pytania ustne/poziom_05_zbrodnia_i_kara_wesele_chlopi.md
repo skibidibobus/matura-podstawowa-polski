@@ -103,11 +103,11 @@
 - **Start (epoka i gatunek):** Młoda Polska (1901 r.), dramat symboliczny, w którym w II akcie obok postaci realistycznych pojawiają się tzw. „osoby dramatu” (widma).
 - **Teza:** Widma i zjawy w *Weselu* (poza Wernyhorą) nie są ludowymi duchami zza światów, lecz zewnętrznym odbiciem psychiki, sumienia, lęków oraz historycznych kompleksów poszczególnych gości.
 - **Dowody z lektury:**
-  - **Stańczyk (ukazuje się Dziennikarzowi):** błazen królewski z czasów Zygmunta Starego jest symbolem mądrej, gorzkiej troski o losy państwa; wyśmiewa polityczny marazm Dziennikarza i wręcza mu kaduceusz, by „mącił narodową kadź” zamiast usypiać czytelników.
+  - **Stańczyk (ukazuje się Dziennikarzowi):** błazen królewski z czasów Zygmunta Starego jest symbolem mądrej, gorzkiej troski o losy państwa; wyśmiewa polityczny marazm Dziennikarza i wręcza mu kaduceusz, by nim „mącił wodę” zamiast usypiać czytelników.
   - **Rycerz Czarny – Zawisza Czarny (Poeta) i Hetman Branicki (Pan Młody):** Rycerz symbolizuje utraconą siłę i męstwo (obnaża słabość młodopolskiego Poety), natomiast zdrajca z Targowicy Hetman Branicki przypomina Panu Młodemu szlachecki egoizm i grzechy stanu.
   - **Upiór – Jakub Szela (Dziad) oraz Wernyhora (Gospodarz):** zakrwawiony Szela symbolizuje krwawą zadrę między panami a chłopami (rabacja 1846 r.), natomiast Wernyhora jako jedyna zjawa z zewnątrz niesie szansę na ogólnonarodowe powstanie (Złoty Róg).
 - **Kontekst:** Kontekst literacki – *Dziady cz. II* i *cz. III* Adama Mickiewicza oraz *Makbet* Szekspira. W *Dziadach cz. II* duchy przybywają z zaświatów, by prosić o pomoc i dać naukę moralną całej gromadzie, podczas gdy w *Weselu* Wyspiański (podobnie jak Szekspir z duchem Banka w *Makbecie*) wykorzystuje zjawy jako lustro psychiki i historycznego sumienia konkretnej jednostki.
-- **Pułapka i rozmowa:** Rozróżnij **osoby dramatu przypisane konkretnym bohaterom** (Widmo Marysi, Stańczyk, Rycerz, Hetman, Upiór) od **Wernyhory** (daje realny Złoty Róg i podkowę) i **Chochoła** (symbol całego uśpionego społeczeństwa). Komisja może zapytać, dlaczego zjawy pojawiają się po północy w Akcie II (przejście od realistycznego wesela do sfery podświadomości i symbolu).
+- **Pułapka i rozmowa:** Rozróżnij **osoby dramatu przypisane konkretnym bohaterom** (Widmo — duch zmarłego ukochanego Marysi, Stańczyk, Rycerz, Hetman, Upiór) od **Wernyhory** (daje realny Złoty Róg i podkowę) i **Chochoła** (symbol całego uśpionego społeczeństwa). Komisja może zapytać, dlaczego zjawy pojawiają się po północy w Akcie II (przejście od realistycznego wesela do sfery podświadomości i symbolu).
 
 ### Pytanie 46
 **Motyw tańca. Omów zagadnienie na podstawie Wesela Stanisława Wyspiańskiego. W swojej odpowiedzi uwzględnij również wybrany kontekst.**
