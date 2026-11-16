@@ -107,7 +107,7 @@ export const phys04BrylaSztywna = {
       title: 'Prędkość walca staczającego się z równi pochyłej',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-04-staczanie-rownia',
       prompt:
         'Jednorodny walec ($I = \\frac{1}{2}mR^2$) stacza się bez poślizgu ze spoczynku z równi pochyłej o wysokości $h = 1{,}5\\text{ m}$ ($g = 10\\text{ m/s}^2$). Oblicz prędkość liniową środka masy walca u podnóża równi.',
@@ -132,7 +132,7 @@ export const phys04BrylaSztywna = {
       title: 'Dziecko przechodzi do środka obracającej się tarczy',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Pozioma tarcza karuzeli o momencie bezwładności $I_t = 120\\text{ kg}\\cdot\\text{m}^2$ i promieniu $R = 2{,}0\\text{ m}$ obraca się z prędkością kątową $\\omega_1 = 1{,}0\\text{ rad/s}$. Na jej brzegu stoi dziecko o masie $m = 30\\text{ kg}$ (traktuj jako punkt materialny). Dziecko przechodzi na sam środek tarczy ($r = 0$). Oblicz nową prędkość kątową karuzeli $\\omega_2$.',
       expectedValue: 2.0,

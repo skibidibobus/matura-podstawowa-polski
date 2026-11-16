@@ -124,6 +124,7 @@ export const DEFAULT_PROGRESS = {
   },
   checkedNotes: {},
   completedTasks: {},
+  examScores: {},
   cardStatus: {},
   quizScores: {},
   quizAttempts: {},
@@ -156,6 +157,10 @@ export function sanitizeProgress(raw) {
     completedTasks:
       raw.completedTasks && typeof raw.completedTasks === 'object' && !Array.isArray(raw.completedTasks)
         ? raw.completedTasks
+        : {},
+    examScores:
+      raw.examScores && typeof raw.examScores === 'object' && !Array.isArray(raw.examScores)
+        ? raw.examScores
         : {},
     cardStatus:
       raw.cardStatus && typeof raw.cardStatus === 'object' && !Array.isArray(raw.cardStatus)

@@ -54,7 +54,7 @@ flowchart TD
   - `svg-01-rozklad-na-osie.svg` — rzutowanie wektora pod kątem $\alpha$ na układ $XY$.
   - `svg-01-wykres-styczna-pole.svg` — interpretacja nachylenia stycznej i pola pod krzywą.
   - `svg-01-niepewnosci-prosta.svg` — punkty pomiarowe ze słupkami błędów i prostą dopasowania.
-- **Zadania CKE (`arkuszownik.pl`):** zadania doświadczalne z wykresami i niepewnościami z arkuszy 2015–2026 (np. wyznaczanie stałej z nachylenia prostej).
+- **Zadania CKE (`arkusze.pl`):** zadania doświadczalne z wykresami i niepewnościami z arkuszy 2015–2026 (np. wyznaczanie stałej z nachylenia prostej).
 
 ---
 
@@ -70,7 +70,7 @@ flowchart TD
   - `svg-02-wykresy-ruchu.svg` — zestaw sparowanych wykresów $x(t), v(t), a(t)$ dla ruchu przyspieszonego i opóźnionego.
   - `svg-02-rzut-ukosny.svg` — parabola rzutu ukośnego z wektorami $v_x, v_y, \vec{v}$ w wybranych punktach toru.
   - `svg-02-ruch-okrag.svg` — wektory $\vec{v}$ (styczny) i $\vec{a}_d$ (do środka) na okręgu.
-- **Zadania CKE (`arkuszownik.pl`):** klasyczne zadania z wykresami $v(t)$, zderzeniem/wyprzedzaniem dwóch ciał, rzutami z wysokości i ruchem po okręgu.
+- **Zadania CKE (`arkusze.pl`):** klasyczne zadania z wykresami $v(t)$, zderzeniem/wyprzedzaniem dwóch ciał, rzutami z wysokości i ruchem po okręgu.
 
 ---
 
@@ -87,7 +87,7 @@ flowchart TD
   - `svg-03-uklad-bloczki.svg` — dwa ciała na równi/stole połączone nicią przez bloczek.
   - `svg-03-wahadlo-stozkowe.svg` — siły na masie wirującej na nici i na zakręcie profilowanym.
   - `svg-03-zderzenie-wektory.svg` — bilans pędu przed i po zderzeniu (1D i 2D).
-- **Zadania CKE (`arkuszownik.pl`):** zderzenia na lodzie/wózkach, równia z tarciem i sprężyną, pętla w wesołym miasteczku, wahadło balistyczne.
+- **Zadania CKE (`arkusze.pl`):** zderzenia na lodzie/wózkach, równia z tarciem i sprężyną, pętla w wesołym miasteczku, wahadło balistyczne.
 
 ---
 
@@ -101,7 +101,7 @@ flowchart TD
   - `svg-04-ramie-sily.svg` — definicja ramienia siły $d = r \sin\alpha$ i znak momentu siły.
   - `svg-04-belka-rownowaga.svg` — belka na dwóch podporach / drabina oparta o ścianę.
   - `svg-04-staczanie-rownia.svg` — toczenie bez poślizgu z zaznaczonym punktem styku i siłą tarcia statycznego.
-- **Zadania CKE (`arkuszownik.pl`):** równowaga dźwigni/drabiny, rozpędzanie krążka przez spadający ciężarek, wyścig brył na równi, łyżwiarz/karuzela (zachowanie momentu pędu).
+- **Zadania CKE (`arkusze.pl`):** równowaga dźwigni/drabiny, rozpędzanie krążka przez spadający ciężarek, wyścig brył na równi, łyżwiarz/karuzela (zachowanie momentu pędu).
 
 ---
 
@@ -115,7 +115,7 @@ flowchart TD
   - `svg-05-natężenie-g-r.svg` — wykres $g(r)$ od środka Ziemi ($r < R_Z$ liniowo, $r > R_Z$ jak $1/r^2$).
   - `svg-05-orbita-kepler.svg` — elipsa z ogniskiem w Słońcu, peryhelium, aphelium i wektory prędkości.
   - `svg-05-studnia-potencjalu.svg` — wykres $E_p(r) = -GMm/r$.
-- **Zadania CKE (`arkuszownik.pl`):** satelity geostacjonarne, zmiana orbity (peryhelium/aphelium), obliczanie masy planety z okresu księżyca.
+- **Zadania CKE (`arkusze.pl`):** satelity geostacjonarne, zmiana orbity (peryhelium/aphelium), obliczanie masy planety z okresu księżyca.
 
 ---
 
@@ -131,7 +131,7 @@ flowchart TD
   - `svg-06-energia-drgan.svg` — parabole $E_p(x)$, $E_k(x)$ i linia $E_c = \text{const}$.
   - `svg-06-fale-stojace.svg` — 1., 2. i 3. harmoniczna na strunie oraz w rurze otwartej/zamkniętej.
   - `svg-06-doppler.svg` — zagęszczanie i rozrzedzanie czół falowych przed i za poruszającym się źródłem.
-- **Zadania CKE (`arkuszownik.pl`):** odczyt $A, T, \lambda$ z wykresów $y(x)$ i $y(t)$, rezonans, częstotliwość gwizdka pociągu, struny gitary.
+- **Zadania CKE (`arkusze.pl`):** odczyt $A, T, \lambda$ z wykresów $y(x)$ i $y(t)$, rezonans, częstotliwość gwizdka pociągu, struny gitary.
 
 ---
 
@@ -147,7 +147,7 @@ flowchart TD
   - `svg-07-archimedes.svg` — siła wyporu i siła ciężkości dla ciała zanurzonego częściowo/całkowicie.
   - `svg-07-przemiany-pv.svg` — wszystkie 4 przemiany na wspólnym wykresie $p(V)$ (porównanie nachylenia izotermy i adiabaty).
   - `svg-07-cykl-silnika.svg` — zamknięty cykl na wykresie $p(V)$ z zaznaczoną pracą użyteczną (pole pętli).
-- **Zadania CKE (`arkuszownik.pl`):** bryła lodu z kamieniem w środku, pęcherzyk powietrza wypływający z jeziora, cykle termodynamiczne na wykresach $p(V)$ i $p(T)$, bilans cieplny z topnieniem lodu.
+- **Zadania CKE (`arkusze.pl`):** bryła lodu z kamieniem w środku, pęcherzyk powietrza wypływający z jeziora, cykle termodynamiczne na wykresach $p(V)$ i $p(T)$, bilans cieplny z topnieniem lodu.
 
 ---
 
@@ -162,7 +162,7 @@ flowchart TD
   - `svg-08-linie-pola.svg` — linie pola dwóch ładunków różnoimiennych i jednoimiennych oraz kondensatora płaskiego.
   - `svg-08-elektron-w-kondensatorze.svg` — tor paraboliczny ładunku wlatującego prostopadle do $\vec{E}$.
   - `svg-08-kondensator-dielektryk.svg` — schemat zmiany $C, Q, U, E$ po wsunięciu dielektryka.
-- **Zadania CKE (`arkuszownik.pl`):** dwie kulki na nitkach, ruch elektronu między okładkami, wsuwanie dielektryka do kondensatora (podłączonego/odłączonego).
+- **Zadania CKE (`arkusze.pl`):** dwie kulki na nitkach, ruch elektronu między okładkami, wsuwanie dielektryka do kondensatora (podłączonego/odłączonego).
 
 ---
 
@@ -178,7 +178,7 @@ flowchart TD
   - `svg-09-kirchhoff-petla.svg` — schemat obwodu z dwoma oczkami, strzałkowaniem prądów i spadków napięć.
   - `svg-09-sem-wykres.svg` — wykres $U(I) = \mathcal{E} - Ir$ z odczytem $\mathcal{E}$ i $r$.
   - `svg-09-mierniki.svg` — dwa układy pomiaru oporu (poprawnie mierzony prąd vs poprawnie mierzone napięcie).
-- **Zadania CKE (`arkuszownik.pl`):** wykres $U(I)$ ogniwa, obwody z przełącznikiem (zamknięty/otwarty), żarówki wpięte szeregowo/równolegle, wpływ oporu woltomierza.
+- **Zadania CKE (`arkusze.pl`):** wykres $U(I)$ ogniwa, obwody z przełącznikiem (zamknięty/otwarty), żarówki wpięte szeregowo/równolegle, wpływ oporu woltomierza.
 
 ---
 
@@ -194,7 +194,7 @@ flowchart TD
   - `svg-10-pret-na-szynach.svg` — pręt zamykający obwód z opornikiem $R$ w polu $\vec{B}$ z zaznaczonym $I_{ind}$ i siłą hamującą $F_{ed}$.
   - `svg-10-transformator.svg` — schemat rdzenia z uzwojeniami $N_1, N_2$.
   - `svg-10-widmo-em.svg` — pełna skala fal EM (od radiowych po gamma) z długościami $\lambda$ i częstotliwościami $f$.
-- **Zadania CKE (`arkuszownik.pl`):** spektrometr mas, spadająca ramka w polu magnetycznym, pręt zsuwający się po szynach pochyłych, transformator i przesył mocy.
+- **Zadania CKE (`arkusze.pl`):** spektrometr mas, spadająca ramka w polu magnetycznym, pręt zsuwający się po szynach pochyłych, transformator i przesył mocy.
 
 ---
 
@@ -208,7 +208,7 @@ flowchart TD
   - `svg-11-snell-cio.svg` — bieg promienia na granicy ośrodków i kąt graniczny $\alpha_{gr}$.
   - `svg-11-soczewka-konstrukcje.svg` — 3 promienie konstrukcyjne dla obrazu rzeczywistego i pozornego.
   - `svg-11-siatka-dyfrakcyjna.svg` — siatka o stałej $d$ i wiązki ugięte pod kątami $\alpha_1, \alpha_2$.
-- **Zadania CKE (`arkuszownik.pl`):** wyznaczanie współczynnika załamania, układ dwóch soczewek / soczewka na ekranie (metoda Bessela), siatka dyfrakcyjna z laserem o dwóch barwach.
+- **Zadania CKE (`arkusze.pl`):** wyznaczanie współczynnika załamania, układ dwóch soczewek / soczewka na ekranie (metoda Bessela), siatka dyfrakcyjna z laserem o dwóch barwach.
 
 ---
 
@@ -223,11 +223,11 @@ flowchart TD
   - `svg-12-fotoefekt-wykres.svg` — wykres $E_{k\max}(f)$ z zaznaczoną częstotliwością graniczną $f_0$, pracą wyjścia $-W$ i nachyleniem $h$.
   - `svg-12-poziomy-bohra.svg` — schemat przejść elektronowych w atomie wodoru (emisja vs absorpcja).
   - `svg-12-rozpad-wykres.svg` — krzywa zaniku wykładniczego $N(t)$ z zaznaczonymi wielokrotnościami $T_{1/2}$.
-- **Zadania CKE (`arkuszownik.pl`):** wyznaczanie stałej Plancka z wykresu $U_h(f)$, przejścia w atomie wodoru, bilans energii w reakcji jądrowej (MeV), datowanie radiowęglowe $^{14}\text{C}$.
+- **Zadania CKE (`arkusze.pl`):** wyznaczanie stałej Plancka z wykresu $U_h(f)$, przejścia w atomie wodoru, bilans energii w reakcji jądrowej (MeV), datowanie radiowęglowe $^{14}\text{C}$.
 
 ---
 
-## 3. Strategia Pozyskiwania i Weryfikacji Zadań z `arkuszownik.pl`
+## 3. Strategia Pozyskiwania i Weryfikacji Zadań z `arkusze.pl`
 
 1. **Zakres lat:** arkusze główne (maj), dodatkowe (czerwiec), próbne CKE i pokazowe z lat **2015–2026**.
 2. **Filtrowanie pod podstawę 2027:** każde zadanie przed dodaniem do bazy kursu jest oznaczane rokiem, formułą i tagiem działu (`phys-01`..`phys-12`). Zagadnienia wykreślone z podstawy programowej na rok 2027 są pomijane lub oznaczane jako *ponadprogramowe (opcjonalne)*.
@@ -254,7 +254,7 @@ Ponieważ kurs Fizyki ma stanowić spójną całość z kursem Polskiego na jedn
 │       ├── data/
 │       │   ├── courses.js       # rejestr kursów: [{ id: 'polski', ... }, { id: 'fizyka', ... }]
 │       │   ├── polski/          # przeniesione obecne course/ + levels.js + oralLevels.js
-│       │   └── fizyka/          # phys01..phys12.js, physicsTasks.js (zadania z arkuszownik.pl)
+│       │   └── fizyka/          # phys01..phys12.js, physicsTasks.js (zadania z arkusze.pl)
 │       ├── components/
 │       │   ├── CourseSwitcher.jsx   # przełącznik kursu w Sidebarze i na WelcomePage
 │       │   ├── MathText.jsx         # renderer KaTeX dla tekstu mieszanego (prose, fiszki, quizy, zadania)
@@ -269,7 +269,7 @@ Ponieważ kurs Fizyki ma stanowić spójną całość z kursem Polskiego na jedn
 Istniejące komponenty (`NotesView`, `FlashcardsView`, `QuizView`) zostaną zachowane i rozszerzone tak, aby obsługiwały oba kursy bez duplikacji logiki:
 - **`ContentBlock` w `StudyNote`:** dodanie nowego typu bloku `DiagramBlock` (`{ type: 'diagram', svgId: string, caption: string, alt: string }`) oraz renderowanie `$...$` i `$$...$$` przez `MathText.jsx` (KaTeX).
 - **`Flashcard`:** rozszerzenie kategorii o kategorie fizyczne (`'wzor' | 'jednostka' | 'prawo' | 'zjawisko' | 'wykres' | 'doswiadczenie'`).
-- **`CourseDepartment`:** opcjonalne pole `examTasks: ExamTask[]` z zadaniami maturalnymi CKE z `arkuszownik.pl` przypisanymi do danego działu.
+- **`CourseDepartment`:** opcjonalne pole `examTasks: ExamTask[]` z zadaniami maturalnymi CKE z `arkusze.pl` przypisanymi do danego działu.
 
 ### 4.3. Backend (`server/`) i postępy użytkownika
 - Jedno konto użytkownika (logowanie JWT w `server/auth.js`) przechowuje postępy dla obu kursów osobno (`courses: { polski: {...}, fizyka: {...} }`), z zachowaniem pełnej kompatybilności wstecznej dla dotychczasowych kont kursu Polskiego.
@@ -280,7 +280,7 @@ Istniejące komponenty (`NotesView`, `FlashcardsView`, `QuizView`) zostaną zach
 ## 5. Kolejność Wdrożenia po Akceptacji Planu
 
 1. **Etap 1 (Architektura wielokursowa):** Refaktoryzacja `matura-app/` i `server/` pod obsługę wielu kursów + instalacja `katex` i budowa `MathText.jsx`, `DiagramRenderer.jsx`, `CourseSwitcher.jsx` oraz `ExamTaskView.jsx`.
-2. **Etap 2 (Faza I — Mechanika):** Utworzenie `phys-01` do `phys-05`, wygenerowanie wszystkich rysunków SVG i osadzenie zadań CKE (2015–2026) z `arkuszownik.pl`.
+2. **Etap 2 (Faza I — Mechanika):** Utworzenie `phys-01` do `phys-05`, wygenerowanie wszystkich rysunków SVG i osadzenie zadań CKE (2015–2026) z `arkusze.pl`.
 3. **Etap 3 (Faza II — Drgania, Termodynamika, Elektryczność):** Utworzenie `phys-06` do `phys-09` + SVG + zadania CKE.
 4. **Etap 4 (Faza III — Magnetyzm, Optyka, Fizyka Współczesna):** Utworzenie `phys-10` do `phys-12` + SVG + zadania CKE.
 5. **Etap 5 (Faza IV — Pełne arkusze i testy):** Dodanie trybu pełnych arkuszy próbnych + testy E2E i build produkcyjny.

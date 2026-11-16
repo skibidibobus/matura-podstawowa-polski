@@ -124,7 +124,7 @@ export const phys12Wspolczesna = {
       title: 'Emisja fotonu przy przejściu w atomie wodoru',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-12-poziomy-bohra',
       prompt:
         'Elektron w atomie wodoru przeszedł ze stanu o energii $E_3 = -1{,}51\\text{ eV}$ do stanu o energii $E_2 = -3{,}40\\text{ eV}$. Oblicz długość fali wyemitowanego fotonu w nanometrach ($h = 6{,}63\\cdot 10^{-34}\\text{ J}\\cdot\\text{s}$, $c = 3{,}00\\cdot 10^8\\text{ m/s}$, $1\\text{ eV} = 1{,}60\\cdot 10^{-19}\\text{ J}$).',
@@ -149,7 +149,7 @@ export const phys12Wspolczesna = {
       title: 'Energia wiązania jądra helu $^4_2\\text{He}$',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Masa protonu wynosi $m_p = 1{,}0073\\text{ u}$, masa neutronu $m_n = 1{,}0087\\text{ u}$, a masa jądra helu $^4_2\\text{He}$ wynosi $m_{\\text{He}} = 4{,}0015\\text{ u}$. Przyjmij $1\\text{ u} \\cdot c^2 = 931{,}5\\text{ MeV}$. Oblicz energię wiązania jądra helu (w $\\text{MeV}$).',
       expectedValue: 28.4,

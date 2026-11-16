@@ -194,7 +194,7 @@ export const phys03Dynamika = {
       title: 'Zsuwanie klocka z równi i ściskanie sprężyny',
       maxPoints: 4,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-03-rownia-pochyla',
       prompt:
         'Klocek o masie $m = 1{,}0\\text{ kg}$ puszczono swobodnie z wysokości $h = 0{,}80\\text{ m}$ na równię pochyłą o kącie $\\alpha = 30^\\circ$ ($\\sin 30^\\circ = 0{,}5$, $g = 10\\text{ m/s}^2$). Współczynnik tarcia kinetycznego klocka o równię wynosi $\\mu = 0{,}20$. Oblicz energię kinetyczną klocka u podnóża równi.',
@@ -221,7 +221,7 @@ export const phys03Dynamika = {
       title: 'Wahadło balistyczne — pocisk uderza w drewniany blok',
       maxPoints: 4,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-03-zderzenie-wektory',
       prompt:
         'Pocisk o masie $m = 10\\text{ g}$ lecący poziomo z prędkością $v = 400\\text{ m/s}$ wbija się w spoczywający na nici worek z piaskiem o masie $M = 1{,}99\\text{ kg}$ i pozostaje w nim. Oblicz maksymalną wysokość $h$, na jaką wzniesie się worek z pociskiem ($g = 10\\text{ m/s}^2$).',
@@ -247,7 +247,7 @@ export const phys03Dynamika = {
       title: 'Przyspieszenie i naciąg nici w układzie z bloczkiem',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-03-uklad-bloczki',
       prompt:
         'Na gładkim poziomym stole (bez tarcia) leży klocek o masie $m_1 = 3{,}0\\text{ kg}$, połączony lekką nicią przez bloczek z wiszącym klockiem o masie $m_2 = 2{,}0\\text{ kg}$ ($g = 10\\text{ m/s}^2$). Oblicz wartość siły naciągu nici $N_n$ podczas ruchu układu.',

@@ -107,7 +107,7 @@ export const phys11Optyka = {
       title: 'Wyznaczanie długości fali lasera za pomocą siatki dyfrakcyjnej',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-11-siatka-dyfrakcyjna',
       prompt:
         'Światło lasera pada prostopadle na siatkę dyfrakcyjną mającą $500\\text{ rys}$ na $1\\text{ mm}$. Na ekranie odległym o $L = 2{,}0\\text{ m}$ prążek pierwszego rzędu ($n = 1$) zaobserwowano w odległości $y = 0{,}66\\text{ m}$ od prążka zerowego (użyj przybliżenia $\\sin\\alpha \\approx \\operatorname{tg}\\alpha$ lub dokładnej funkcji z Pitagorasa: $\\sin\\alpha = \\frac{y}{\\sqrt{L^2 + y^2}}$). Oblicz długość fali $\\lambda$ tego lasera w nanometrach.',
@@ -132,7 +132,7 @@ export const phys11Optyka = {
       title: 'Obraz pozorny i powiększony w lupie',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-11-soczewka-konstrukcje',
       prompt:
         'Soczewka skupiająca o zdolności skupiającej $Z = +10\\text{ D}$ daje obraz pozorny, prosty i $3$-krotnie powiększony ($p = 3$). Oblicz odległość $x$ przedmiotu od soczewki (w centymetrach).',

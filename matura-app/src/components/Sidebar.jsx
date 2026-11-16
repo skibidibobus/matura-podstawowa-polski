@@ -203,7 +203,7 @@ export function Sidebar({
       ) : (
         <div className="physics-course-banner">
           <span>Od 0 do 100% • Maj 2027</span>
-          <span>Zadania: arkuszownik.pl</span>
+          <span>Zadania: arkusze.pl</span>
         </div>
       )}
 

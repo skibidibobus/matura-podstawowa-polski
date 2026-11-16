@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { BookOpen, CheckCircle2, Eye, HelpCircle, Layers, Lock, Menu, Target, User } from 'lucide-react';
+import { BookOpen, CheckCircle2, ClipboardCheck, Eye, HelpCircle, Layers, Lock, Menu, Target, User } from 'lucide-react';
 import { LEVELS } from './data/levels';
 import { ORAL_LEVELS } from './data/oralLevels';
 import { KURS_PODSTAWOWY_LEVELS } from './data/kursPodstawowyLevels';
@@ -10,6 +10,7 @@ import { NotesView } from './components/NotesView';
 import { FlashcardsView } from './components/FlashcardsView';
 import { QuizView } from './components/QuizView';
 import { ExamTaskView } from './components/ExamTaskView';
+import { DepartmentExamView } from './components/DepartmentExamView';
 import { AccountModal } from './components/AccountModal';
 import { RankingView } from './components/RankingView';
 import { AdminDashboardView } from './components/AdminDashboardView';
@@ -126,6 +127,7 @@ export function App() {
   });
   const [checkedNotes, setCheckedNotes] = useState(initial.checkedNotes || {});
   const [completedTasks, setCompletedTasks] = useState(initial.completedTasks || {});
+  const [examScores, setExamScores] = useState(initial.examScores || {});
   const [cardStatus, setCardStatus] = useState(initial.cardStatus || {});
   const [quizScores, setQuizScores] = useState(initial.quizScores || {});
   const [quizAttempts, setQuizAttempts] = useState(initial.quizAttempts || {});
@@ -203,6 +205,7 @@ export function App() {
     setActiveLevelByCourse(normalizeActiveLevels(src));
     setCheckedNotes(src.checkedNotes || {});
     setCompletedTasks(src.completedTasks || {});
+    setExamScores(src.examScores || {});
     setCardStatus(src.cardStatus || {});
     setQuizScores(src.quizScores || {});
     setQuizAttempts(src.quizAttempts || {});
@@ -293,6 +296,7 @@ export function App() {
       activeLevelByCourse,
       checkedNotes,
       completedTasks,
+      examScores,
       cardStatus,
       quizScores,
       quizAttempts,
@@ -327,7 +331,7 @@ export function App() {
     }, 150);
 
     return () => clearTimeout(timer);
-  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, completedTasks, cardStatus, quizScores, quizAttempts, authSession?.token, authSession?.user?.username, previewUser]);
+  }, [theme, activeCourse, activeLevelByCourse, checkedNotes, completedTasks, examScores, cardStatus, quizScores, quizAttempts, authSession?.token, authSession?.user?.username, previewUser]);
 
   const handleLoginSuccess = (loginData) => {
     const session = { token: loginData.token, user: loginData.user };
@@ -383,6 +387,7 @@ export function App() {
       activeLevelByCourse,
       checkedNotes,
       completedTasks,
+      examScores,
       cardStatus,
       quizScores,
       quizAttempts,
@@ -459,6 +464,13 @@ export function App() {
 
   const handleToggleTask = (taskId) => {
     setCompletedTasks((prev) => ({ ...prev, [taskId]: !prev[taskId] }));
+  };
+
+  const handleSaveExamScore = (levelId, score) => {
+    setExamScores((prev) => ({
+      ...prev,
+      [levelId]: Math.max(prev[levelId] || 0, score),
+    }));
   };
 
   const handleSetCardStatus = (cardId, status) => {
@@ -876,27 +888,49 @@ export function App() {
               </button>
 
               {activeCourse === 'fizyka' && (
-                <button
-                  type="button"
-                  role="tab"
-                  aria-selected={stage === 'tasks'}
-                  className={`stage-tab ${stage === 'tasks' ? 'active' : ''} ${
-                    (activeLevel?.examTasks?.length || 0) > 0 &&
-                    activeLevel.examTasks.every((t) => completedTasks[t.id])
-                      ? 'done'
-                      : ''
-                  }`}
-                  onClick={() => setStage('tasks')}
-                >
-                  <span className="stage-left">
-                    <Target size={17} />
-                    4. Zadania CKE
-                  </span>
-                  <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-                    {(activeLevel?.examTasks || []).filter((t) => completedTasks[t.id]).length}/
-                    {activeLevel?.examTasks?.length || 0}
-                  </span>
-                </button>
+                <>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={stage === 'tasks'}
+                    className={`stage-tab ${stage === 'tasks' ? 'active' : ''} ${
+                      (activeLevel?.examTasks?.length || 0) > 0 &&
+                      activeLevel.examTasks.every((t) => completedTasks[t.id])
+                        ? 'done'
+                        : ''
+                    }`}
+                    onClick={() => setStage('tasks')}
+                  >
+                    <span className="stage-left">
+                      <Target size={17} />
+                      4. Zadania CKE
+                    </span>
+                    <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                      {(activeLevel?.examTasks || []).filter((t) => completedTasks[t.id]).length}/
+                      {activeLevel?.examTasks?.length || 0}
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={stage === 'exam'}
+                    className={`stage-tab ${stage === 'exam' ? 'active' : ''} ${
+                      examScores[activeLevel?.id] !== undefined ? 'done' : ''
+                    }`}
+                    onClick={() => setStage('exam')}
+                  >
+                    <span className="stage-left">
+                      <ClipboardCheck size={17} />
+                      5. Sprawdzian
+                    </span>
+                    <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                      {examScores[activeLevel?.id] !== undefined
+                        ? `${examScores[activeLevel.id]} pkt`
+                        : `${activeLevel?.exam?.timeLimitMin || 20} min`}
+                    </span>
+                  </button>
+                </>
               )}
             </div>
 
@@ -939,6 +973,17 @@ export function App() {
                 level={activeLevel}
                 completedTasks={completedTasks}
                 onToggleTask={handleToggleTask}
+                hasNextLevel={activeIndex >= 0 && activeIndex < currentLevels.length - 1}
+                onNextLevel={() => handleSelectLevel(currentLevels[activeIndex + 1].id)}
+              />
+            )}
+
+            {stage === 'exam' && activeCourse === 'fizyka' && (
+              <DepartmentExamView
+                key={`exam-${activeLevel.id}`}
+                level={activeLevel}
+                savedExamScore={examScores[activeLevel.id]}
+                onSaveExamScore={handleSaveExamScore}
                 hasNextLevel={activeIndex >= 0 && activeIndex < currentLevels.length - 1}
                 onNextLevel={() => handleSelectLevel(currentLevels[activeIndex + 1].id)}
               />

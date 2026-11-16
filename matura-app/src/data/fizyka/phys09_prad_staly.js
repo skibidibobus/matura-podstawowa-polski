@@ -115,7 +115,7 @@ export const phys09PradStaly = {
       title: 'Wyznaczanie SEM i oporu wewnętrznego z dwóch pomiarów',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-09-sem-wykres',
       prompt:
         'Do źródła o sile elektromotorycznej $\\mathcal{E}$ i oporze wewnętrznym $r$ podłączono opornik $R_1 = 5{,}0\\,\\Omega$, mierząc natężenie prądu $I_1 = 1{,}0\\text{ A}$. Po zastąpieniu go opornikiem $R_2 = 11{,}0\\,\\Omega$ natężenie zmalało do $I_2 = 0{,}50\\text{ A}$. Oblicz $\\mathcal{E}$ źródła.',
@@ -140,7 +140,7 @@ export const phys09PradStaly = {
       title: 'Ładunek na kondensatorze wpiętym równolegle do opornika',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Do źródła o $\\mathcal{E} = 12\\text{ V}$ i oporze wewnętrznym $r = 1{,}0\\,\\Omega$ podłączono szeregowo oporniki $R_1 = 2{,}0\\,\\Omega$ i $R_2 = 3{,}0\\,\\Omega$. Równolegle do opornika $R_2$ wpięto kondensator o pojemności $C = 10\\,\\mu\\text{F}$. Oblicz ładunek $Q$ zgromadzony na okładkach kondensatora po ustaleniu się prądu (w $\\mu\\text{C}$).',
       expectedValue: 60,

@@ -61,6 +61,16 @@ test('Physics Course (FIZYKA_LEVELS): 12 departments, unique IDs, valid SVG diag
           `Missing task SVG diagram ${t.svgId} in ${t.id}`
         );
       }
+      if (t.arkuszeUrl) {
+        assert.ok(t.arkuszeUrl.startsWith('https://arkusze.pl/'), `Expected arkusze.pl URL in ${t.id}`);
+      }
+    }
+
+    assert.ok(dept.exam && dept.exam.timeLimitMin > 0, `${dept.id} should have timed exam`);
+    assert.ok(Array.isArray(dept.exam.tasks) && dept.exam.tasks.length >= 3, `${dept.id} exam should have >=3 tasks`);
+    for (const ex of dept.exam.tasks) {
+      assert.ok(ex.roundingRule && ex.officialAnswer && ex.shortExplanation);
+      assert.equal(typeof ex.expectedValue, 'number');
     }
   });
 });
@@ -93,6 +103,7 @@ test('App SSR: locks Physics course by default for guests and unlocks for admin'
   const adminHtml = renderToStaticMarkup(React.createElement(App));
   assert.ok(adminHtml.includes('Matura Fizyka'), 'Admin should render Matura Fizyka brand');
   assert.ok(adminHtml.includes('4. Zadania CKE'), 'Admin should render 4. Zadania CKE tab');
+  assert.ok(adminHtml.includes('5. Sprawdzian'), 'Admin should render 5. Sprawdzian tab');
   assert.ok(adminHtml.includes('Fundamenty Matematyczne'), 'Admin should render Dział 1');
   globalThis.localStorage.clear();
 });

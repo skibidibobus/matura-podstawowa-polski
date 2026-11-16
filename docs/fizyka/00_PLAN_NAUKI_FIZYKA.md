@@ -3,7 +3,7 @@
 > **Start:** 16 listopada 2026 | **Cel:** Matura Rozszerzona z Fizyki — maj 2027 (ok. 24 tygodnie nauki)  
 > **Poziom wejściowy:** Od 0 (włącznie z fundamentami matematycznymi) do 100%  
 > **Zakładany nakład czasu:** **6–8 godzin tygodniowo** (ok. 160–185 godzin łącznie)  
-> **Źródło zadań:** Oficjalne arkusze CKE z lat **2015–2026** (pobierane i weryfikowane z `arkuszownik.pl` wraz z zasadami oceniania CKE, przefiltrowane pod aktualną podstawę programową na rok 2027)
+> **Źródło zadań:** Oficjalne arkusze CKE z lat **2015–2026** (pobierane i weryfikowane z `arkusze.pl` wraz z zasadami oceniania CKE, przefiltrowane pod aktualną podstawę programową na rok 2027)
 
 ---
 
@@ -15,7 +15,7 @@ Każdy tydzień realizuje ten sam, powtarzalny schemat, który łączy budowanie
 | :--- | :---: | :--- |
 | **Blok A — Teoria i Rysunki** | 2,0–2,5 h | Czytasz notatki w aplikacji (`phys-XX`), analizujesz wyprowadzenia wzorów, diagramy SVG i wskazówki do Karty Wzorów CKE. |
 | **Blok B — Fiszki i Quiz pojęciowy** | 1,0 h | Przerabiasz fiszki (jednostki, definicje, pułapki) oraz szybki quiz sprawdzający zrozumienie zjawisk *zanim* zaczniesz liczyć. |
-| **Blok C — Zadania CKE z `arkuszownik.pl`** | 2,5–3,5 h | Rozwiązujesz zestaw zadań maturalnych z ubiegłych lat przypisanych do bieżącego działu (samodzielna próba -> sprawdzenie krok po kroku -> analiza klucza CKE). |
+| **Blok C — Zadania CKE z `arkusze.pl`** | 2,5–3,5 h | Rozwiązujesz zestaw zadań maturalnych z ubiegłych lat przypisanych do bieżącego działu (samodzielna próba -> sprawdzenie krok po kroku -> analiza klucza CKE). |
 | **Blok D — Powtórka spiralna** | 0,5–1,0 h | Wracasz do 2–3 zadań z poprzednich działów (szczególnie tych oznaczonych jako trudne), aby wiedza nie uciekała. |
 
 ---

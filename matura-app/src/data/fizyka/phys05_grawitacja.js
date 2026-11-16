@@ -109,7 +109,7 @@ export const phys05Grawitacja = {
       title: 'Wyznaczanie masy planety z ruchu jej księżyca',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-05-orbita-kepler',
       prompt:
         'Księżyc krąży wokół planety po orbicie kołowej o promieniu $r = 2{,}0\\cdot 10^8\\text{ m}$ z okresem $T = 1{,}0\\cdot 10^5\\text{ s}$. Oblicz masę tej planety ($G = 6{,}67\\cdot 10^{-11}\\,\\frac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$, $\\pi^2 \\approx 9{,}87$).',
@@ -134,7 +134,7 @@ export const phys05Grawitacja = {
       title: 'Praca potrzebna na wyniesienie satelity na wysokość h = R_Z',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-05-studnia-potencjalu',
       prompt:
         'Ile razy większa jest minimalna praca potrzebna do **umieszczenia satelity na orbicie kołowej** na wysokości $h = R_Z$ od pracy potrzebnej jedynie na **podniesienie go bez prędkości** na tę wysokość? (Zapisz sam iloraz jako liczbę).',

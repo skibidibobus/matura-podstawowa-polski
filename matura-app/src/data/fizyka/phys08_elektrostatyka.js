@@ -114,7 +114,7 @@ export const phys08Elektrostatyka = {
       title: 'Odchylenie wiązki elektronów w kondensatorze płaskim',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-08-elektron-w-kondensatorze',
       prompt:
         'Elektron wlatuje z prędkością $v_0 = 2{,}0\\cdot 10^7\\text{ m/s}$ równolegle do okładek kondensatora o długości $L = 0{,}10\\text{ m}$ i odległości między okładkami $d = 0{,}020\\text{ m}$. Napięcie na kondensatorze wynosi $U = 100\\text{ V}$. Oblicz pionowe odchylenie $y$ elektronu w chwili wylotu z kondensatora ($e/m_e = 1{,}76\\cdot 10^{11}\\text{ C/kg}$).',
@@ -139,7 +139,7 @@ export const phys08Elektrostatyka = {
       title: 'Dwie jednakowe naładowane kulki na nitkach',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Dwie małe jednakowe kulki o masie $m = 1{,}0\\text{ g}$ każda zawieszono w jednym punkcie na jedwabnych nitkach. Po naładowaniu ich jednakowym ładunkiem $q$ kulki odpychają się i nitki tworzą z pionem kąt $\\alpha = 45^\\circ$, a odległość między kulkami wynosi $r = 0{,}30\\text{ m}$ ($g = 10\\text{ m/s}^2$, $k = 9{,}0\\cdot 10^9\\,\\frac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2}$). Oblicz wartość ładunku $q$ w mikrokulombach ($\\mu\\text{C}$).',
       expectedValue: 0.32,

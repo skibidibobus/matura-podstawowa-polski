@@ -158,7 +158,7 @@ export const phys02Kinematyka = {
       title: 'Wyznaczanie drogi i przyspieszenia z wykresu prędkości od czasu',
       maxPoints: 3,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-02-wykresy-ruchu',
       diagramTitle: 'Zależność prędkości od czasu',
       prompt:
@@ -184,7 +184,7 @@ export const phys02Kinematyka = {
       title: 'Rzut ukośny z balkonu lub pod kątem',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-02-rzut-ukosny',
       prompt:
         'Piłkę kopnięto z powierzchni boiska z prędkością początkową $v_0 = 20\\text{ m/s}$ pod kątem $\\alpha = 30^\\circ$ do poziomu. Pomiń opory powietrza i przyjmij $g = 10\\text{ m/s}^2$. Oblicz maksymalną wysokość $H_{\\max}$, na jaką wzniesie się piłka.',
@@ -209,7 +209,7 @@ export const phys02Kinematyka = {
       title: 'Przeprawa łódki przez rzekę z prądem wody',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Motorówka płynie z prędkością $v_m = 5{,}0\\text{ m/s}$ względem wody, kierując dziób prostopadle do brzegu rzeki o szerokości $d = 120\\text{ m}$. Prąd rzeki ma prędkość $v_r = 3{,}0\\text{ m/s}$. Oblicz, o ile metrów poniżej punktu na wprost miejsca startu motorówka dobije do przeciwległego brzegu.',
       expectedValue: 72,
@@ -232,7 +232,7 @@ export const phys02Kinematyka = {
       title: 'Pościg samochodu za rowerzystą',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'W chwili $t = 0$ samochód rusza z miejsca ze stałym przyspieszeniem $a = 2{,}0\\text{ m/s}^2$. W tej samej chwili mija go rowerzysta jadący ze stałą prędkością $v_r = 10\\text{ m/s}$. Po jakim czasie samochód dogoni rowerzystę?',
       expectedValue: 10,

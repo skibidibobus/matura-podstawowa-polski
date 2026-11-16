@@ -131,7 +131,7 @@ export const phys10Magnetyzm = {
       title: 'Pręt poruszający się po szynach w polu magnetycznym',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-10-pret-na-szynach',
       prompt:
         'Metalowy pręt o długości $l = 0{,}50\\text{ m}$ przesuwa się ze stałą prędkością $v = 4{,}0\\text{ m/s}$ po dwóch równoległych szynach połączonych opornikiem $R = 2{,}0\\,\\Omega$, w jednorodnym polu magnetycznym $B = 0{,}40\\text{ T}$ prostopadłym do płaszczyzny szyn. Oblicz wartość siły zewnętrznej potrzebnej do utrzymania stałej prędkości pręta (pomiń tarcie i opór szyn).',
@@ -156,7 +156,7 @@ export const phys10Magnetyzm = {
       title: 'Rozdzielanie izotopów w polu magnetycznym (spektrometr mas)',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-10-lorentz-okrag',
       prompt:
         'Jednokrotnie zjonizowany jon węgla $^{12}\\text{C}^+$ wpada z prędkością $v = 1{,}0\\cdot 10^5\\text{ m/s}$ prostopadle do jednorodnego pola magnetycznego o indukcji $B = 0{,}50\\text{ T}$. Przyjmij masę jonu $m = 12\\cdot 1{,}66\\cdot 10^{-27}\\text{ kg}$ oraz ładunek $q = 1{,}60\\cdot 10^{-19}\\text{ C}$. Oblicz promień okręgu $R$, po którym porusza się jon (w centymetrach).',

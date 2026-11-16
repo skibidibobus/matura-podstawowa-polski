@@ -6,7 +6,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Zanurzenie góry lodowej w wodzie morskiej',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-07-archimedes',
       prompt:
         'Gęstość lodu wynosi $\\rho_l = 917\\,\\text{kg/m}^3$, a gęstość wody morskiej $\\rho_w = 1025\\,\\text{kg/m}^3$. Jaki procent objętości góry lodowej znajduje się **ponad** powierzchnią wody?',
@@ -26,7 +26,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Wypływanie pęcherzyka powietrza z dna jeziora (przemiana izotermiczna)',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Pęcherzyk powietrza odrywa się od dna jeziora na głębokości $h = 20\\text{ m}$ (temperatura wody jest stała, $p_{\\text{atm}} = 1{,}0\\cdot 10^5\\text{ Pa}$, $\\rho_w = 1000\\,\\text{kg/m}^3$, $g = 10\\text{ m/s}^2$). Ile razy wzrośnie objętość pęcherzyka tuż pod powierzchnią wody?',
       expectedValue: 3.0,
@@ -45,7 +45,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Masa gazu uciekającego z nieszczelnej butli',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'W stalowej butli o stałej objętości znajduje się $m_1 = 4{,}0\\text{ kg}$ gazu pod ciśnieniem $p_1 = 12\\text{ MPa}$ w temperaturze $27^\\circ\\text{C}$. Po otwarciu zaworu część gazu uleciała, ciśnienie spadło do $p_2 = 3{,}0\\text{ MPa}$, a temperatura do $-48^\\circ\\text{C}$. Oblicz masę gazu, która pozostała w butli.',
       expectedValue: 1.33,
@@ -65,7 +65,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Ciepło dostarczone w przemianie izobarycznej gazu jednoatomowego',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-07-przemiany-pv',
       prompt:
         'Dwa mole ($n = 2{,}0\\text{ mol}$) jednoatomowego gazu doskonałego ogrzano izobarycznie o $\\Delta T = 100\\text{ K}$ ($R = 8{,}31\\,\\frac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$). Oblicz ilość ciepła $Q$ dostarczonego do gazu.',
@@ -86,7 +86,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Średnia prędkość kwadratowa cząsteczek tlenu',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Oblicz średnią kwadratową prędkość cząsteczek tlenu ($M = 0{,}032\\text{ kg/mol}$) w temperaturze $T = 300\\text{ K}$ ($R = 8{,}31\\,\\frac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$).',
       expectedValue: 483.4,
@@ -104,7 +104,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Prawo Pascala w podnośniku hydraulicznym',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Średnica małego tłoka prasy hydraulicznej wynosi $d_1 = 2{,}0\\text{ cm}$, a dużego $d_2 = 20\\text{ cm}$. Jaką siłą $F_1$ należy naciskać na mały tłok, aby podnieść samochód o ciężarze $Q = 15000\\text{ N}$?',
       expectedValue: 150,
@@ -122,7 +122,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Ciepło oddane chłodnicy przez silnik cieplny',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Silnik cieplny o sprawności $\\eta = 30\\%$ pobiera w każdym cyklu $Q_1 = 2000\\text{ J}$ ciepła z grzejnicy. Ile ciepła oddaje chłodnicy w jednym cyklu?',
       expectedValue: 1400,
@@ -140,7 +140,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Rozszerzalność liniowa stalowej szyny',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Stalowa szyna ma w temperaturze $0^\\circ\\text{C}$ długość $l_0 = 25\\text{ m}$. Współczynnik rozszerzalności liniowej stali wynosi $\\alpha = 1{,}2\\cdot 10^{-5}\\text{ K}^{-1}$. O ile milimetrów wydłuży się szyna, gdy jej temperatura wzrośnie do $40^\\circ\\text{C}$?',
       expectedValue: 12,
@@ -161,7 +161,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Punkt zerowego natężenia pola dwóch ładunków',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Dwa punktowe ładunki $q_1 = +4{,}0\\,\\mu\\text{C}$ oraz $q_2 = +1{,}0\\,\\mu\\text{C}$ znajdują się w odległości $d = 0{,}60\\text{ m}$ od siebie. W jakiej odległości $x$ od ładunku $q_1$ (między ładunkami) wypadkowe natężenie pola elektrycznego jest równe zero?',
       expectedValue: 0.4,
@@ -180,7 +180,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Łączenie kondensatorów i podział ładunku',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Kondensator o pojemności $C_1 = 4{,}0\\,\\mu\\text{F}$ naładowano do napięcia $U_1 = 120\\text{ V}$ i odłączono od źródła. Następnie połączono go równolegle z nienaładowanym kondensatorem $C_2 = 2{,}0\\,\\mu\\text{F}$. Oblicz wspólne napięcie $U_k$ na obu kondensatorach po połączeniu.',
       expectedValue: 80,
@@ -199,7 +199,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Praca przy zbliżaniu dwóch ładunków punktowych',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Ładunek $q_1 = +2{,}0\\,\\mu\\text{C}$ jest nieruchomy. Z odległości $r_1 = 0{,}60\\text{ m}$ przenosimy ładunek $q_2 = +3{,}0\\,\\mu\\text{C}$ na odległość $r_2 = 0{,}20\\text{ m}$ od $q_1$ ($k = 9{,}0\\cdot 10^9$). Oblicz pracę wykonaną przez siłę zewnętrzną (w $\\text{J}$).',
       expectedValue: 0.18,
@@ -218,7 +218,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Zawieszenie naładowanej kropelki w kondensatorze (doświadczenie Millikana)',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-08-linie-pola',
       prompt:
         'Naładowana kropelka oleju o masie $m = 3{,}2\\cdot 10^{-15}\\text{ kg}$ unosi się nieruchomo między poziomymi okładkami kondensatora odległymi o $d = 0{,}020\\text{ m}$, do których przyłożono napięcie $U = 400\\text{ V}$ ($g = 10\\text{ m/s}^2$, $e = 1{,}6\\cdot 10^{-19}\\text{ C}$). Ile nadmiarowych elektronów znajduje się na kropelce?',
@@ -238,7 +238,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Pojemność kondensatora płaskiego z dielektrykiem',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-08-kondensator-dielektryk',
       prompt:
         'Okładki kondensatora płaskiego o powierzchni $S = 0{,}10\\text{ m}^2$ oddalone są o $d = 0{,}885\\text{ mm}$, a przestrzeń między nimi wypełnia dielektryk o $\\varepsilon_r = 4{,}0$ ($\\varepsilon_0 = 8{,}85\\cdot 10^{-12}\\text{ F/m}$). Oblicz pojemność tego kondensatora w nanofaradach ($\\text{nF}$).',
@@ -257,7 +257,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Zmiana energii kondensatora przy zmianie napięcia',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Kondensator o pojemności $C = 200\\,\\mu\\text{F}$ naładowano do napięcia $U_1 = 10\\text{ V}$, a następnie doładowano do $U_2 = 30\\text{ V}$. Oblicz przyrost energii zgromadzonej w kondensatorze (w $\\text{mJ}$).',
       expectedValue: 80,
@@ -275,7 +275,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Napięcia na dwóch kondensatorach połączonych szeregowo',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Dwa kondensatory o pojemnościach $C_1 = 2{,}0\\,\\mu\\text{F}$ i $C_2 = 6{,}0\\,\\mu\\text{F}$ połączono szeregowo i podłączono do napięcia $U = 24\\text{ V}$. Oblicz napięcie $U_1$ na pierwszym kondensatorze.',
       expectedValue: 18,
@@ -294,7 +294,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Prędkość protonu przyspieszonego w polu elektrycznym',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Proton ($m_p = 1{,}67\\cdot 10^{-27}\\text{ kg}$, $e = 1{,}60\\cdot 10^{-19}\\text{ C}$) rusza ze spoczynku i przelatuje różnicę potencjałów $U = 1000\\text{ V}$. Oblicz prędkość końcową protonu w $\\text{km/s}$.',
       expectedValue: 438,
@@ -315,7 +315,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Opór i moc grzałki po przecięciu na połowę',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Grzałka o stałym oporze podłączona do napięcia $230\\text{ V}$ ma moc $P_1 = 600\\text{ W}$. Drut grzejny przecięto na dwie równe połowy i połączono je **równolegle** pod to samo napięcie $230\\text{ V}$. Oblicz nową moc grzałki (w watach).',
       expectedValue: 2400,
@@ -334,7 +334,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Straty mocy w linii przesyłowej',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Odbiornik o mocy $P = 20\\text{ kW}$ zasilany jest linią o łącznym oporze przewodów $R_L = 0{,}50\\,\\Omega$ pod napięciem na odbiorniku $U = 200\\text{ V}$. Oblicz moc tracona w przewodach linii przesyłowej (w $\\text{kW}$).',
       expectedValue: 5.0,
@@ -353,7 +353,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Prąd w obwodzie z dwoma ogniwami (II prawo Kirchhoffa)',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-09-kirchhoff-petla',
       prompt:
         'W jednym oczku połączono szeregowo dwa ogniwa o $\\mathcal{E}_1 = 12\\text{ V}$ ($r_1 = 1{,}0\\,\\Omega$) i $\\mathcal{E}_2 = 6{,}0\\text{ V}$ ($r_2 = 1{,}0\\,\\Omega$) skierowane **przeciwnie** do siebie oraz opornik $R = 4{,}0\\,\\Omega$. Oblicz natężenie prądu w obwodzie.',
@@ -372,7 +372,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Maksymalna moc oddawana przez źródło do odbiornika',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Ogniwo ma SEM $\\mathcal{E} = 12\\text{ V}$ i opór wewnętrzny $r = 2{,}0\\,\\Omega$. Jaką maksymalną moc $P_{\\max}$ można wydzielić na zewnętrznym oporniku $R$ podłączonym do tego ogniwa?',
       expectedValue: 18,
@@ -391,7 +391,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Rozszerzanie zakresu pomiarowego amperomierza (bocznik)',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Amperomierz ma zakres $I_A = 0{,}10\\text{ A}$ i opór wewnętrzny $R_A = 9{,}0\\,\\Omega$. Jaki opornik (bocznik $R_b$) należy wpiąć **równolegle**, aby mierzyć prądy do $I = 1{,}0\\text{ A}$?',
       expectedValue: 1.0,
@@ -410,7 +410,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Wyznaczanie temperatury włókna żarówki z oporu',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-09-charakterystyka-iu',
       prompt:
         'Włókno wolframowe żarówki w temperaturze $0^\\circ\\text{C}$ ma opór $R_0 = 40\\,\\Omega$. Podczas świecenia jego opór wzrósł do $R = 440\\,\\Omega$. Oblicz temperaturę świecącego włókna (w $^\\circ\\text{C}$), przyjmując $\\alpha = 5{,}0\\cdot 10^{-3}\\text{ K}^{-1}$.',
@@ -429,7 +429,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Czas zagotowania wody w czajniku elektrycznym',
       maxPoints: 3,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Czajnik elektryczny o mocy $P = 2100\\text{ W}$ i sprawności $\\eta = 80\\%$ zawiera $m = 1{,}0\\text{ kg}$ wody o temperaturze $20^\\circ\\text{C}$ ($c_w = 4200\\,\\frac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). Po jakim czasie woda zacznie wrzeć ($100^\\circ\\text{C}$)?',
       expectedValue: 200,
@@ -449,7 +449,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Opór zastępczy układu mieszanego (szeregowo-równoległego)',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Oporniki $R_1 = 6{,}0\\,\\Omega$ i $R_2 = 3{,}0\\,\\Omega$ połączono równolegle, a do nich szeregowo dołączono opornik $R_3 = 8{,}0\\,\\Omega$. Oblicz całkowity opór zastępczy układu.',
       expectedValue: 10,
@@ -470,7 +470,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Selektor prędkości w skrzyżowanych polach E i B',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'W selektorze prędkości panują wzajemnie prostopadłe jednorodne pola: elektryczne $E = 2{,}0\\cdot 10^4\\text{ V/m}$ i magnetyczne $B = 0{,}050\\text{ T}$. Jaką prędkość musi mieć elektron, aby przeleciał przez selektor bez odchylenia (w $\\text{km/s}$)?',
       expectedValue: 400,
@@ -488,7 +488,7 @@ export const CKE_TASKS_7_12 = {
       title: 'SEM indukcji w zwojnicy przy zmianie indukcji B',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Zwojnica ma $N = 200$ zwojów o polu powierzchni $S = 5{,}0\\cdot 10^{-3}\\text{ m}^2$ każdy, ustawionych prostopadle do linii pola magnetycznego. W czasie $\\Delta t = 0{,}20\\text{ s}$ indukcja pola wzrosła jednostajnie od $0{,}10\\text{ T}$ do $0{,}50\\text{ T}$. Oblicz wartość wyindukowanej SEM.',
       expectedValue: 2.0,
@@ -506,7 +506,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Prąd w uzwojeniu pierwotnym transformatora',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-10-transformator',
       prompt:
         'Transformator idealny obniża napięcie z $U_1 = 230\\text{ V}$ do $U_2 = 11{,}5\\text{ V}$. Do uzwojenia wtórnego podłączono żarówkę o oporze $R = 5{,}75\\,\\Omega$. Oblicz natężenie prądu w uzwojeniu **pierwotnym**.',
@@ -526,7 +526,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Maksymalna SEM w prądnicy prądu przemiennego',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Płaska ramka o powierzchni $S = 0{,}020\\text{ m}^2$ mająca $N = 100$ zwojów obraca się z częstotliwością $f = 50\\text{ Hz}$ w jednorodnym polu magnetycznym $B = 0{,}10\\text{ T}$. Oblicz maksymalną (amplitudową) wartość SEM indukowanej w ramce ($\\pi \\approx 3{,}14$).',
       expectedValue: 62.8,
@@ -545,7 +545,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Przewodnik zawieszony w powietrzu przez siłę elektrodynamiczną',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Poziomy pręt miedziany o długości $l = 0{,}50\\text{ m}$ i masie $m = 20\\text{ g}$ znajduje się w poziomym polu magnetycznym $B = 0{,}20\\text{ T}$ prostopadłym do pręta ($g = 10\\text{ m/s}^2$). Jakie minimalne natężenie prądu $I$ musi płynąć przez pręt, aby siła elektrodynamiczna zrównoważyła jego ciężar?',
       expectedValue: 2.0,
@@ -563,7 +563,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Czas pełnego obiegu elektronu w polu magnetycznym',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Elektron ($m_e = 9{,}11\\cdot 10^{-31}\\text{ kg}$, $e = 1{,}60\\cdot 10^{-19}\\text{ C}$) wpada prostopadle w pole magnetyczne $B = 3{,}57\\cdot 10^{-3}\\text{ T}$. Oblicz okres obiegu elektronu po okręgu w nanosekundach ($\\text{ns}$).',
       expectedValue: 10.0,
@@ -581,7 +581,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Całkowity ładunek indukowany przy obrocie ramki w polu B',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Zamknięta ramka o oporze $R = 2{,}0\\,\\Omega$ i polu $S = 0{,}10\\text{ m}^2$ ustawiona prostopadle do linii pola $B = 0{,}50\\text{ T}$ zostaje w krótkim czasie obrócona o $180^\\circ$. Oblicz całkowity ładunek $\\Delta q$, jaki przepłynie przez ramkę (w $\\text{mC}$).',
       expectedValue: 50,
@@ -600,7 +600,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Długość fali nadajnika radiowego',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-10-widmo-em',
       prompt:
         'Stacja radiowa nadaje na częstotliwości $f = 100\\text{ MHz}$ ($c = 3{,}00\\cdot 10^8\\text{ m/s}$). Oblicz długość emitowanej fali radiowej.',
@@ -622,7 +622,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Kąt graniczny na granicy szkło–powietrze',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-11-snell-cio',
       prompt:
         'Współczynnik załamania szkła wynosi $n = 1{,}50$, a powietrza $1{,}00$. Oblicz sinus kąta granicznego $\\sin\\alpha_{\\text{gr}}$ przy przejściu światła ze szkła do powietrza.',
@@ -641,7 +641,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Długość fali światła w wodzie',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Światło lasera o długości fali w próżni $\\lambda_0 = 600\\text{ nm}$ wnika do wody o współczynniku załamania $n = 1{,}33$. Oblicz długość fali tego światła w wodzie (w $\\text{nm}$).',
       expectedValue: 451,
@@ -659,7 +659,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Obraz w soczewce rozpraszającej',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Przedmiot ustawiono w odległości $x = 30\\text{ cm}$ przed soczewką rozpraszającą o ogniskowej $f = -15\\text{ cm}$. Oblicz powiększenie liniowe $p$ uzyskanego obrazu.',
       expectedValue: 0.333,
@@ -678,7 +678,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Załamanie na granicy ośrodków pod kątem 60°',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Promień światła pada z powietrza ($n_1 = 1{,}00$) na płytkę szklaną pod kątem $\\alpha = 60^\\circ$ ($\\sin 60^\\circ \\approx 0{,}866$) i załamuje się pod kątem $\\beta = 30^\\circ$ ($\\sin 30^\\circ = 0{,}50$). Oblicz współczynnik załamania szkła $n_2$.',
       expectedValue: 1.73,
@@ -696,7 +696,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Całkowita liczba prążków na siatce dyfrakcyjnej',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-11-siatka-dyfrakcyjna',
       prompt:
         'Na siatkę dyfrakcyjną o stałej $d = 2{,}5\\,\\mu\\text{m}$ pada światło o długości fali $\\lambda = 600\\text{ nm}$. Oblicz maksymalną całkowitą liczbę jasnych prążków (łącznie z zerowym), jakie można zaobserwować na szerokim ekranie.',
@@ -716,7 +716,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Ogniskowa soczewki dla obrazu rzeczywistego równej wielkości',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Ostry obraz rzeczywisty o tej samej wielkości co przedmiot ($p = 1$) otrzymano na ekranie oddalonym od przedmiotu o $D = 80\\text{ cm}$. Oblicz ogniskową $f$ tej soczewki (w $\\text{cm}$).',
       expectedValue: 20,
@@ -734,7 +734,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Zwierciadło wklęsłe — promień krzywizny i powiększenie',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Zwierciadło sferyczne wklęsłe ma promień krzywizny $R = 40\\text{ cm}$. Przedmiot ustawiono w odległości $x = 30\\text{ cm}$ od zwierciadła. Oblicz odległość $y$ obrazu od zwierciadła (w $\\text{cm}$).',
       expectedValue: 60,
@@ -752,7 +752,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Prawo Malusa — dwa polaryzatory pod kątem 60°',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Światło spolaryzowane liniowo o natężeniu $I_0 = 80\\text{ W/m}^2$ pada na analizator, którego oś transmisji tworzy kąt $\\alpha = 60^\\circ$ z kierunkiem polaryzacji światła padającego ($\\cos 60^\\circ = 0{,}5$). Oblicz natężenie światła po przejściu przez analizator.',
       expectedValue: 20,
@@ -773,7 +773,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Napięcie hamowania dla światła UV padającego na cynk',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-12-fotoefekt-wykres',
       prompt:
         'Praca wyjścia elektronu z cynku wynosi $W = 4{,}30\\text{ eV}$. Na płytkę cynkową pada światło o długości fali $\\lambda = 200\\text{ nm}$ ($hc \\approx 1240\\text{ eV}\\cdot\\text{nm}$). Oblicz wartość napięcia hamowania $U_h$ (w woltach).',
@@ -793,7 +793,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Długość fali de Broglie’a elektronu w mikroskopie elektronowym',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Elektron przyspieszono ze spoczynku napięciem $U = 150\\text{ V}$ ($m_e = 9{,}11\\cdot 10^{-31}\\text{ kg}$, $e = 1{,}60\\cdot 10^{-19}\\text{ C}$, $h = 6{,}63\\cdot 10^{-34}\\text{ J}\\cdot\\text{s}$). Oblicz długość fali de Broglie’a tego elektronu w nanometrach ($\\text{nm}$).',
       expectedValue: 0.1,
@@ -812,7 +812,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Datowanie radiowęglowe próbki drewna ($^{14}\\text{C}$)',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-12-rozpad-wykres',
       prompt:
         'Okres połowicznego rozpadu izotopu węgla $^{14}\\text{C}$ wynosi $T_{1/2} = 5730\\text{ lat}$. W próbce starego drewna stwierdzono, że zawartość $^{14}\\text{C}$ stanowi obecnie $12{,}5\\%$ zawartości w żywym drzewie. Ile lat liczy ta próbka?',
@@ -831,7 +831,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Szereg promieniotwórczy — liczba rozpadów alfa i beta',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Jądro uranu $^{238}_{92}\\text{U}$ po serii rozpadów $\\alpha$ i $\\beta^-$ przekształciło się w stabilne jądro ołowiu $^{206}_{82}\\text{Pb}$. Oblicz łączną liczbę zaszłych rozpadów $\\beta^-$ (wskazówka: najpierw wyznacz liczbę rozpadów $\\alpha$ z różnicy liczb masowych).',
       expectedValue: 6,
@@ -851,7 +851,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Minimalna energia jonizacji atomu wodoru ze stanu $n = 2$',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Elektron w atomie wodoru znajduje się na drugiej orbicie ($E_2 = -3{,}40\\text{ eV}$). Jaką minimalną energię w elektronowoltach ($\\text{eV}$) musi pochłonąć atom, aby ulec jonizacji?',
       expectedValue: 3.4,
@@ -869,7 +869,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Prawo Hubble’a i przesunięcie ku czerwieni',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Linia widmowa wodoru o długości laboratoryjnej $\\lambda_0 = 656\\text{ nm}$ w widmie odległej galaktyki jest przesunięta do $\\lambda = 669{,}12\\text{ nm}$. Oblicz prędkość oddalania się tej galaktyki w $\\text{km/s}$ ($c = 3{,}00\\cdot 10^5\\text{ km/s}$).',
       expectedValue: 6000,
@@ -888,7 +888,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Dylatacja czasu w locie cząstki elementarnej (mion)',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Mion porusza się względem Ziemi z prędkością $v = 0{,}80 c$. Własny czas życia mionu (w spoczynku) wynosi $\\tau_0 = 2{,}2\\,\\mu\\text{s}$. Oblicz czas życia tego mionu zmierzony przez obserwatora na Ziemi (w $\\mu\\text{s}$).',
       expectedValue: 3.67,
@@ -907,7 +907,7 @@ export const CKE_TASKS_7_12 = {
       title: 'Ubytek masy Słońca wskutek promieniowania ($E = mc^2$)',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Moc promieniowania Słońca wynosi $P = 3{,}87\\cdot 10^{26}\\text{ W}$. Oblicz, jaka masa (w milionach ton na sekundę, tj. $10^9\\text{ kg/s}$) ubywa ze Słońca w ciągu każdej sekundy ($c = 3{,}00\\cdot 10^8\\text{ m/s}$).',
       expectedValue: 4.3,

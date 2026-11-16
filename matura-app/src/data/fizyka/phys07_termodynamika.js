@@ -125,7 +125,7 @@ export const phys07Termodynamika = {
       title: 'Praca użyteczna i sprawność cyklu prostokątnego',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-07-cykl-silnika',
       prompt:
         'Gaz doskonały wykonuje cykl prostokątny $1 \\to 2 \\to 3 \\to 4 \\to 1$ na wykresie $p(V)$ zgodnie z ruchem wskazówek zegara, między ciśnieniami $p_1 = 1{,}0\\cdot 10^5\\text{ Pa}$ i $p_2 = 3{,}0\\cdot 10^5\\text{ Pa}$ oraz objętościami $V_1 = 2{,}0\\cdot 10^{-3}\\text{ m}^3$ i $V_2 = 5{,}0\\cdot 10^{-3}\\text{ m}^3$. Oblicz pracę użyteczną wykonaną przez gaz w jednym cyklu.',
@@ -150,7 +150,7 @@ export const phys07Termodynamika = {
       title: 'Topnienie lodu wrzuconego do ciepłej wody',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Do kalorymetru zawierającego $m_w = 0{,}50\\text{ kg}$ wody o temperaturze $t_w = 40^\\circ\\text{C}$ wrzucono $m_l = 0{,}10\\text{ kg}$ lodu o temperaturze $0^\\circ\\text{C}$. Oblicz temperaturę końcową $t_k$ mieszaniny po ustaleniu równowagi ($c_w = 4200\\,\\frac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, ciepło topnienia lodu $L = 334\\,\\frac{\\text{kJ}}{\\text{kg}}$).',
       expectedValue: 20.1,

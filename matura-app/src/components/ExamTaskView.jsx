@@ -185,16 +185,16 @@ export function ExamTaskView({
                 {solOpen ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
               </button>
 
-              {task.arkuszownikUrl && (
+              {task.arkuszeUrl && (
                 <a
-                  href={task.arkuszownikUrl}
+                  href={task.arkuszeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="secondary-btn"
                   style={{ textDecoration: 'none' }}
                 >
                   <ExternalLink size={14} />
-                  arkuszownik.pl
+                  arkusze.pl
                 </a>
               )}
             </div>

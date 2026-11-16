@@ -237,7 +237,7 @@ export const phys01Fundamenty = {
       title: 'Wyznaczanie przyspieszenia grawitacyjnego z wykresu $T^2(l)$',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-01-niepewnosci-prosta',
       diagramTitle: 'Schemat dopasowania prostej do punktów pomiarowych z niepewnościami',
       prompt:
@@ -263,7 +263,7 @@ export const phys01Fundamenty = {
       title: 'Wypadkowa dwóch sił pod kątem prostym i rozkład na osie',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Na ciało o masie $m = 2{,}0\\text{ kg}$ działają w płaszczyźnie poziomej dwie prostopadłe siły o wartościach $F_1 = 6{,}0\\text{ N}$ i $F_2 = 8{,}0\\text{ N}$. Oblicz wartość przyspieszenia tego ciała.',
       expectedValue: 5.0,
@@ -285,7 +285,7 @@ export const phys01Fundamenty = {
       title: 'Wyznaczanie stałej sprężystości z wykresu F(x) i ocena niepewności',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-01-wykres-styczna-pole',
       prompt:
         'Uczeń wyznaczał stałą sprężystości $k$ metodą statyczną. Dla siły $F = (12{,}0 \\pm 0{,}3)\\text{ N}$ zmierzył wydłużenie $\\Delta x = (0{,}150 \\pm 0{,}005)\\text{ m}$. Oblicz wartość stałej sprężystości $k$ oraz jej maksymalną niepewność bezwzględną $\\Delta k$ metodą różniczki zupełnej / niepewności względnych (jako wynik wpisz samo $k$ w $\\text{N/m}$).',
@@ -310,7 +310,7 @@ export const phys01Fundamenty = {
       title: 'Równowaga trzech sił w punkcie (rozkład na składowe)',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-01-rozklad-na-osie',
       prompt:
         'Ciężarek o ciężarze $Q = 10\\text{ N}$ zawieszono na dwóch lekkich linkach. Jedna linka jest pozioma, a druga tworzy z sufitem (poziomem) kąt $\\alpha = 30^\\circ$. Oblicz wartość siły naciągu $N_2$ ukośnej linki.',

@@ -12,6 +12,7 @@ import { phys11Optyka } from './phys11_optyka';
 import { phys12Wspolczesna } from './phys12_wspolczesna';
 import { CKE_TASKS_1_6 } from './tasks/cke_tasks_1_6';
 import { CKE_TASKS_7_12 } from './tasks/cke_tasks_7_12';
+import { DEPARTMENT_EXAMS } from './exams/dept_exams';
 
 const EXTRA_CKE_TASKS = {
   ...CKE_TASKS_1_6,
@@ -36,4 +37,5 @@ const RAW_LEVELS = [
 export const FIZYKA_LEVELS = RAW_LEVELS.map((dept) => ({
   ...dept,
   examTasks: [...(dept.examTasks || []), ...(EXTRA_CKE_TASKS[dept.id] || [])],
+  exam: DEPARTMENT_EXAMS[dept.id] || null,
 }));

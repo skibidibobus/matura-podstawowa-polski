@@ -6,7 +6,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Zamiana jednostek i gęstość stopu dwóch metali',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Stop składa się z $m_1 = 400\\text{ g}$ miedzi ($\\rho_1 = 8{,}9\\,\\text{g/cm}^3$) oraz $m_2 = 100\\text{ g}$ cyny ($\\rho_2 = 7{,}3\\,\\text{g/cm}^3$). Przyjmij, że objętość stopu jest sumą objętości składników. Oblicz gęstość tego stopu w jednostkach SI ($\\text{kg/m}^3$).',
       expectedValue: 8526,
@@ -26,7 +26,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Wyznaczanie jednostki stałej fizycznej metodą analizy wymiarowej',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Siła oporu kulki o promieniu $r$ poruszającej się z prędkością $v$ w cieczy wyraża się wzorem Stokesa $F = 6\\pi \\eta r v$. Jeśli $F = 1{,}88\\cdot 10^{-3}\\text{ N}$, $r = 1{,}0\\cdot 10^{-2}\\text{ m}$ oraz $v = 0{,}50\\text{ m/s}$, oblicz współczynnik lepkości $\\eta$ w jednostkach SI ($\\text{Pa}\\cdot\\text{s}$).',
       expectedValue: 0.02,
@@ -44,7 +44,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Zmiana wektora prędkości przy odbiciu ukośnym od ściany',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-01-wektory-skladanie',
       prompt:
         'Piłka o masie $m = 0{,}50\\text{ kg}$ uderza w gładką ścianę z prędkością $v = 10\\text{ m/s}$ pod kątem $\\alpha = 30^\\circ$ do normalnej (prostopadłej do ściany) i odbija się sprężyście pod tym samym kątem. Oblicz wartość zmiany wektora prędkości $|\\Delta\\vec{v}|$ piłki ($\\cos 30^\\circ \\approx 0{,}866$).',
@@ -64,7 +64,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Wyznaczanie wartości wielkości fizycznej z nachylenia prostej',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-01-niepewnosci-prosta',
       prompt:
         'W doświadczeniu mierzono wydłużenie sprężyny $\\Delta l$ w funkcji zawieszonej masy $m$. Z prostej najlepszego dopasowania odczytano dwa punkty: $(m_1 = 0{,}10\\text{ kg},\\, \\Delta l_1 = 0{,}020\\text{ m})$ oraz $(m_2 = 0{,}50\\text{ kg},\\, \\Delta l_2 = 0{,}100\\text{ m})$. Oblicz stałą sprężystości $k$ ($g = 9{,}81\\text{ m/s}^2$).',
@@ -84,7 +84,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Praca zmiennej siły jako pole pod wykresem F(x)',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-01-wykres-styczna-pole',
       prompt:
         'Na ciało działa siła rosnąca liniowo od $F_1 = 4{,}0\\text{ N}$ w punkcie $x_1 = 0\\text{ m}$ do $F_2 = 16{,}0\\text{ N}$ w punkcie $x_2 = 5{,}0\\text{ m}$. Oblicz pracę wykonaną przez tę siłę na odcinku od $0$ do $5{,}0\\text{ m}$.',
@@ -103,7 +103,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Objętość walca i propagacja niepewności pomiarowych',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Zmierzono średnicę walca $d = 2{,}00\\text{ cm}$ z niepewnością $\\Delta d = 0{,}02\\text{ cm}$ oraz wysokość $h = 5{,}0\\text{ cm}$ z niepewnością $\\Delta h = 0{,}1\\text{ cm}$. Oblicz względną niepewność pomiaru objętości $V = \\frac{\\pi d^2 h}{4}$ wyrażoną w procentach.',
       expectedValue: 4.0,
@@ -125,7 +125,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Droga hamowania i czas reakcji kierowcy',
       maxPoints: 3,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Samochód jedzie z prędkością $v_0 = 72\\text{ km/h}$. Kierowca zauważa przeszkodę; czas jego reakcji wynosi $t_r = 0{,}50\\text{ s}$, a następnie samochód hamuje z opóźnieniem $a = 5{,}0\\text{ m/s}^2$ aż do zatrzymania. Oblicz całkowitą drogę zatrzymania.',
       expectedValue: 50,
@@ -145,7 +145,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Rzut poziomy kulki z krawędzi stołu',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Kulka stacza się z poziomego stołu o wysokości $h = 1{,}25\\text{ m}$ i upada na podłogę w odległości poziomej $Z = 1{,}50\\text{ m}$ od krawędzi stołu ($g = 10\\text{ m/s}^2$). Oblicz prędkość kulki w chwili opuszczania stołu.',
       expectedValue: 3.0,
@@ -164,7 +164,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Spadek swobodny dwóch ciał puszczonych z opóźnieniem',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Z dachu wieżowca puszczono swobodnie pierwszą kroplę wody, a po upływie $\\Delta t = 1{,}0\\text{ s}$ puszczono drugą kroplę. Oblicz odległość między kroplami po $t = 3{,}0\\text{ s}$ od momentu puszczenia pierwszej kropli ($g = 10\\text{ m/s}^2$).',
       expectedValue: 25,
@@ -184,7 +184,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Przyspieszenie dośrodkowe w ruchu po okręgu',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-02-ruch-okrag',
       prompt:
         'Bęben pralki o promieniu $r = 0{,}25\\text{ m}$ wykonuje $600\\text{ obrotów na minutę}$. Oblicz wartość przyspieszenia dośrodkowego punktu na brzegu bębna ($\\pi^2 \\approx 9{,}87$).',
@@ -204,7 +204,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Rzut pionowy w górę i w dół',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Piłkę rzucono pionowo w górę z powierzchni ziemi z prędkością początkową $v_0 = 15\\text{ m/s}$ ($g = 10\\text{ m/s}^2$). Na jakiej wysokości $h$ piłka będzie miała prędkość równą $\\frac{1}{3}v_0$?',
       expectedValue: 10,
@@ -223,7 +223,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Średnia szybkość na dwóch odcinkach trasy',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Pierwszą połowę drogi samochód przejechał z prędkością $v_1 = 40\\text{ km/h}$, a drugą połowę tej samej drogi z prędkością $v_2 = 60\\text{ km/h}$. Oblicz średnią szybkość samochodu na całej trasie (w $\\text{km/h}$).',
       expectedValue: 48,
@@ -245,7 +245,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Naciąg liny windy podczas ruszania i hamowania',
       maxPoints: 3,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Kabina windy o masie $m = 800\\text{ kg}$ jedzie w górę i przed zatrzymaniem hamuje z opóźnieniem $a = 2{,}0\\text{ m/s}^2$ ($g = 10\\text{ m/s}^2$). Oblicz wartość siły naciągu liny podtrzymującej kabinę podczas tego hamowania.',
       expectedValue: 6400,
@@ -264,7 +264,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Zderzenie centralne sprężyste dwóch kulek',
       maxPoints: 4,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-03-zderzenie-wektory',
       prompt:
         'Kulka o masie $m_1 = 1{,}0\\text{ kg}$ poruszająca się z prędkością $v_1 = 6{,}0\\text{ m/s}$ zderza się centralnie i **sprężyście** ze spoczywającą kulką o masie $m_2 = 2{,}0\\text{ kg}$. Oblicz prędkość drugiej kulki $u_2$ po zderzeniu.',
@@ -284,7 +284,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Minimalna wysokość zjazdu przed pionową pętlą',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Mały wózek zjeżdża bez tarcia z wysokości $H$ i wjeżdża na pionową pętlę kołową o promieniu $R = 2{,}0\\text{ m}$. Oblicz minimalną wysokość $H_{\\min}$, z której musi ruszyć ze spoczynku, aby nie oderwać się od toru w najwyższym punkcie pętli.',
       expectedValue: 5.0,
@@ -304,7 +304,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Moc silnika przy jeździe pod górę ze stałą prędkością',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Samochód o masie $m = 1200\\text{ kg}$ jedzie ze stałą prędkością $v = 15\\text{ m/s}$ pod górę o nachyleniu $\\sin\\alpha = 0{,}10$ ($g = 10\\text{ m/s}^2$). Siły oporu ruchu wynoszą $F_{\\text{op}} = 400\\text{ N}$. Oblicz moc rozwijaną przez silnik samochodu (w $\\text{kW}$).',
       expectedValue: 24,
@@ -323,7 +323,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Wahadło stożkowe — prędkość kątowa i kąt odchylenia',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-03-wahadlo-stozkowe',
       prompt:
         'Kulka na nici o długości $L = 1{,}0\\text{ m}$ zakreśla poziomy okrąg jako wahadło stożkowe, przy czym nić tworzy z pionem kąt $\\alpha = 60^\\circ$ ($g = 10\\text{ m/s}^2$, $\\cos 60^\\circ = 0{,}5$). Oblicz prędkość kątową $\\omega$ kulki.',
@@ -343,7 +343,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Wystrzelenie klocka za pomocą ściśniętej sprężyny',
       maxPoints: 3,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Sprężynę o stałej $k = 400\\text{ N/m}$ ściśnięto o $\\Delta x = 0{,}10\\text{ m}$ i oparto o nią klocek o masie $m = 0{,}50\\text{ kg}$ na gładkim stole. Po zwolnieniu sprężyny klocek odrywa się od niej. Oblicz prędkość uzyskaną przez klocek.',
       expectedValue: 2.83,
@@ -361,7 +361,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Odrzut wózka po wyskoczeniu człowieka',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Z nieruchomej łódki o masie $M = 150\\text{ kg}$ wyskakuje na brzeg człowiek o masie $m = 60\\text{ kg}$ z poziomą prędkością $v = 2{,}5\\text{ m/s}$ względem wody. Oblicz wartość prędkości odrzutu łódki.',
       expectedValue: 1.0,
@@ -382,7 +382,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Równowaga drabiny opartej o gładką ścianę',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-04-belka-rownowaga',
       prompt:
         'Jednorodna drabina o masie $m = 10\\text{ kg}$ opiera się o idealnie gładką pionową ścianę (brak tarcia o ścianę), tworząc z poziomą podłogą kąt $\\alpha = 45^\\circ$ ($g = 10\\text{ m/s}^2$). Oblicz minimalną wartość siły tarcia statycznego o podłogę potrzebną do utrzymania drabiny w równowadze.',
@@ -403,7 +403,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Rozpędzanie walca przez spadający ciężarek',
       maxPoints: 4,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Na jednorodny walec o masie $M = 4{,}0\\text{ kg}$ i promieniu $R$ ($I = \\frac{1}{2}MR^2$) nawinięto lekką nić, do końca której przywiązano ciężarek o masie $m = 1{,}0\\text{ kg}$ ($g = 10\\text{ m/s}^2$). Układ puszczono swobodnie. Oblicz przyspieszenie spadającego ciężarka.',
       expectedValue: 3.33,
@@ -423,7 +423,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Równowaga dźwigni dwustronnej pod kątem',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-04-ramie-sily',
       prompt:
         'Klucz płaski o długości $r = 0{,}25\\text{ m}$ obraca śrubę siłą $F = 80\\text{ N}$ przyłożoną pod kątem $\\alpha = 30^\\circ$ do osi klucza. Oblicz wartość momentu tej siły względem osi śruby.',
@@ -442,7 +442,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Moment bezwładności pręta względem końca (tw. Steinera)',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Jednorodny pręt o masie $m = 3{,}0\\text{ kg}$ i długości $L = 2{,}0\\text{ m}$ ($I_0 = \\frac{1}{12}mL^2$) może obracać się wokół osi prostopadłej przechodzącej przez jeden z jego końców. Oblicz moment bezwładności pręta względem tej osi.',
       expectedValue: 4.0,
@@ -460,7 +460,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Opuszczanie drugiego krążka na obracający się krążek',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Krążek o momencie bezwładności $I_1 = 0{,}40\\text{ kg}\\cdot\\text{m}^2$ obraca się z prędkością kątową $\\omega_1 = 15\\text{ rad/s}$. Na niego spada współosiowo drugi, początkowo nieruchomy krążek o momencie bezwładności $I_2 = 0{,}20\\text{ kg}\\cdot\\text{m}^2$. Po chwili oba obracają się razem. Oblicz wspólną prędkość kątową $\\omega_k$.',
       expectedValue: 10,
@@ -478,7 +478,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Wytaczanie się kuli pełnej na wzniesienie',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Pełna jednorodna kula ($I = \\frac{2}{5}mR^2$) toczy się bez poślizgu po poziomej powierzchni z prędkością środka masy $v = 5{,}0\\text{ m/s}$, po czym wjeżdża na równię pochyłą ($g = 10\\text{ m/s}^2$). Na jaką maksymalną wysokość $h$ wtoczy się kula?',
       expectedValue: 1.75,
@@ -497,7 +497,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Moment siły hamującej koło zamachowe',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Koło zamachowe o momencie bezwładności $I = 2{,}5\\text{ kg}\\cdot\\text{m}^2$ obracało się z prędkością kątową $\\omega = 20\\text{ rad/s}$ i zostało zatrzymane stałym momentem sił tarcia w czasie $t = 5{,}0\\text{ s}$. Oblicz wartość momentu siły hamującej.',
       expectedValue: 10,
@@ -515,7 +515,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Maksymalny ciężar na końcu belki wystającej poza stół',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Jednorodna deska o długości $L = 3{,}0\\text{ m}$ i masie $M = 6{,}0\\text{ kg}$ leży na stole tak, że wystaje poza jego krawędź na długość $d = 1{,}0\\text{ m}$. Jaką maksymalną masę $m$ można położyć na wystającym końcu deski, zanim zacznie się ona przechylać?',
       expectedValue: 3.0,
@@ -537,7 +537,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Promień orbity satelity geostacjonarnego',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Satelita geostacjonarny ma okres obiegu równy dobie gwiazdowej Ziemi $T = 86164\\text{ s}$. Oblicz promień jego orbity kołowej $r$ w tysiącach kilometrów ($G = 6{,}67\\cdot 10^{-11}$, $M_Z = 5{,}97\\cdot 10^{24}\\text{ kg}$, $\\pi^2 \\approx 9{,}87$).',
       expectedValue: 42.2,
@@ -556,7 +556,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Wykorzystanie III prawa Keplera dla dwóch planet',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Planeta krąży wokół gwiazdy po orbicie o wielkiej półosi $4$ razy większej niż wielka półoś orbity innej planety o okresie obiegu $T_1 = 2{,}0\\text{ lata}$. Oblicz okres obiegu dalszej planety $T_2$ (w latach).',
       expectedValue: 16,
@@ -574,7 +574,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Prędkość komety w peryhelium i aphelium (II prawo Keplera)',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-05-orbita-kepler',
       prompt:
         'Kometa w peryhelium znajduje się w odległości $r_p = 0{,}50\\text{ AU}$ od Słońca i ma prędkość $v_p = 54\\text{ km/s}$. Oblicz prędkość komety w aphelium, jeśli jej odległość od Słońca wynosi tam $r_a = 4{,}50\\text{ AU}$.',
@@ -593,7 +593,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Średnia gęstość planety z okresu satelity na niskiej orbicie',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Satelita krąży bardzo nisko nad powierzchnią nieznanej kulistej planety ($r \\approx R$) z okresem $T = 5000\\text{ s}$. Oblicz średnią gęstość tej planety w $\\text{kg/m}^3$ ($G = 6{,}67\\cdot 10^{-11}$, $\\pi \\approx 3{,}14$).',
       expectedValue: 5667,
@@ -612,7 +612,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Pierwsza prędkość kosmiczna na Marsie',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Masa Marsa stanowi $0{,}107$ masy Ziemi, a jego promień to $0{,}532$ promienia Ziemi. Przyjmując $v_{I,Z} = 7{,}91\\text{ km/s}$, oblicz I prędkość kosmiczną na Marsie.',
       expectedValue: 3.55,
@@ -630,7 +630,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Natężenie pola grawitacyjnego w połowie promienia Ziemi',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-05-natezenie-g-r',
       prompt:
         'Zakładając, że Ziemia jest jednorodną kulą o promieniu $R_Z$, a na jej powierzchni natężenie pola wynosi $g_0 = 9{,}8\\text{ m/s}^2$, oblicz natężenie pola grawitacyjnego w kopalni na głębokości $h = 0{,}25 R_Z$.',
@@ -649,7 +649,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Stosunek energii kinetycznej do potencjalnej na orbicie kołowej',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Satelita krąży po orbicie kołowej i ma energię kinetyczną $E_k = 2{,}0\\text{ GJ}$. Oblicz wartość bezwzględną jego całkowitej energii mechanicznej $|E_c|$ (w $\\text{GJ}$).',
       expectedValue: 2.0,
@@ -667,7 +667,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Układ podwójny dwóch jednakowych gwiazd',
       maxPoints: 3,
       difficulty: 'wyzwanie',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Dwie jednakowe gwiazdy o masie $M = 2{,}0\\cdot 10^{30}\\text{ kg}$ każda krążą wokół wspólnego środka masy w stałej odległości $d = 2{,}0\\cdot 10^{11}\\text{ m}$ od siebie. Oblicz prędkość orbitalną każdej z gwiazd w $\\text{km/s}$ ($G = 6{,}67\\cdot 10^{-11}$).',
       expectedValue: 18.26,
@@ -690,7 +690,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Długość wahadła sekundowego',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Wahadło sekundowe ma okres drgań $T = 2{,}0\\text{ s}$ (każde wahnięcie trwa $1{,}0\\text{ s}$). Oblicz długość tego wahadła ($g = 9{,}81\\text{ m/s}^2$, $\\pi^2 \\approx 9{,}87$).',
       expectedValue: 0.994,
@@ -708,7 +708,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Częstotliwość podstawowa piszczałki otwartej',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-06-fale-stojace',
       prompt:
         'Piszczałka organowa obustronnie otwarta ma długość $L = 0{,}85\\text{ m}$. Prędkość dźwięku w powietrzu wynosi $v = 340\\text{ m/s}$. Oblicz częstotliwość tonu podstawowego tej piszczałki.',
@@ -727,7 +727,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Poziom natężenia dźwięku kilku jednakowych źródeł',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Jeden głośnik wytwarza w pewnym punkcie dźwięk o poziomie natężenia $L_1 = 70\\text{ dB}$. Ile wyniesie poziom natężenia dźwięku, gdy w tym samym miejscu włączymy $10$ takich samych niespójnych głośników?',
       expectedValue: 80,
@@ -745,7 +745,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Wygaszenie dźwięku z dwóch spójnych głośników',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Dwa głośniki drgają w tej samej fazie i emitują falę dźwiękową o prędkości $v = 340\\text{ m/s}$. Słuchacz znajduje się w odległości $r_1 = 5{,}00\\text{ m}$ od pierwszego i $r_2 = 5{,}85\\text{ m}$ od drugiego głośnika. Oblicz najmniejszą częstotliwość $f$, przy której słuchacz usłyszy **wygaszenie** dźwięku.',
       expectedValue: 200,
@@ -765,7 +765,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Częstotliwość rezonansowa układu na sprężynie',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Ciężarek o masie $m = 0{,}40\\text{ kg}$ zawieszono na sprężynie, która pod jego ciężarem wydłużyła się statycznie o $\\Delta l = 0{,}10\\text{ m}$ ($g = 10\\text{ m/s}^2$). Oblicz częstotliwość drgań własnych tego układu ($\\pi \\approx 3{,}14$).',
       expectedValue: 1.59,
@@ -783,7 +783,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Prędkość fali poprzecznej na napiętej strunie',
       maxPoints: 2,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Struna o długości $L = 0{,}80\\text{ m}$ i masie $m = 4{,}0\\text{ g}$ jest napięta siłą $F = 80\\text{ N}$. Oblicz prędkość rozchodzenia się fali poprzecznej na tej strunie (wskazówka: $v = \\sqrt{\\frac{F}{\\mu}}$, gdzie $\\mu = m/L$).',
       expectedValue: 126.5,
@@ -802,7 +802,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Wychylenie i przyspieszenie w ruchu harmonicznym',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-06-oscylator-wykresy',
       prompt:
         'Punkt materialny drga harmonicznie z okresem $T = 0{,}50\\text{ s}$ i amplitudą $A = 0{,}080\\text{ m}$. Oblicz maksymalną wartość przyspieszenia tego punktu ($\\pi^2 \\approx 9{,}87$).',
@@ -821,7 +821,7 @@ export const CKE_TASKS_1_6 = {
       title: 'Pomiar odległości metodą echa',
       maxPoints: 2,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       prompt:
         'Statek nadaje sygnał dźwiękowy w kierunku pionowej skały i odbiera echo po czasie $t = 2{,}4\\text{ s}$. Oblicz odległość statku od skały ($v = 340\\text{ m/s}$).',
       expectedValue: 408,

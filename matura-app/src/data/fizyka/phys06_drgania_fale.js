@@ -129,7 +129,7 @@ export const phys06DrganiaFale = {
       title: 'Częstotliwość syreny nadjeżdżającego pociągu',
       maxPoints: 3,
       difficulty: 'standard',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-06-doppler',
       prompt:
         'Pociąg zbliża się do stojącego na peronie obserwatora z prędkością $v_{\\text{źr}} = 34\\text{ m/s}$ i nadaje sygnał dźwiękowy o częstotliwości $f = 450\\text{ Hz}$. Prędkość dźwięku w powietrzu wynosi $v = 340\\text{ m/s}$. Oblicz częstotliwość dźwięku słyszanego przez obserwatora.',
@@ -153,7 +153,7 @@ export const phys06DrganiaFale = {
       title: 'Prędkość maksymalna i energia oscylatora harmonicznego',
       maxPoints: 3,
       difficulty: 'podstawa',
-      arkuszownikUrl: 'https://arkuszownik.pl',
+      arkuszeUrl: 'https://arkusze.pl/fizyka-matura-poziom-rozszerzony/',
       svgId: 'svg-06-energia-drgan',
       prompt:
         'Ciało o masie $m = 0{,}20\\text{ kg}$ wykonuje drgania harmoniczne na sprężynie o stałej $k = 20\\text{ N/m}$ z amplitudą $A = 0{,}10\\text{ m}$. Oblicz maksymalną prędkość tego ciała.',
