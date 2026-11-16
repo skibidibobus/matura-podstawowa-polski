@@ -328,10 +328,11 @@ export function AdminDashboardView({
         password: newPassword.trim() || undefined,
       });
       setGeneratedCreds({
-        displayName: res.user.displayName,
-        username: res.credentials.username,
-        password: res.credentials.password,
+        displayName: res.user?.displayName || newName.trim(),
+        username: res.user?.username || res.credentials?.username || '',
+        password: res.plainPassword || res.credentials?.password || '',
       });
+      setCopiedCreds(false);
       setNewName('');
       setNewUsername('');
       setNewPassword('');
@@ -370,10 +371,11 @@ export function AdminDashboardView({
     try {
       const res = await apiClient.resetUserPassword(token, user.id);
       setGeneratedCreds({
-        displayName: user.displayName,
-        username: res.credentials.username,
-        password: res.credentials.password,
+        displayName: res.user?.displayName || user.displayName,
+        username: res.user?.username || user.username,
+        password: res.plainPassword || res.credentials?.password || '',
       });
+      setCopiedCreds(false);
       setNotice(`Wygenerowano nowe hasło dla: ${user.displayName}`);
     } catch (err) {
       setError(err.message);
