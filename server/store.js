@@ -81,14 +81,18 @@ function normalizeUserCourses(user) {
   if (user.role === 'admin') {
     user.allowedCourses = [...ALL_COURSES];
     user.accessExpiresAt = null;
+    user.accountType = 'long_term';
     return user;
   }
 
   if (isLegacyPermanent) {
     user.allowedCourses = [...ALL_COURSES];
     user.accessExpiresAt = null;
+    user.accountType = 'long_term';
     return user;
   }
+
+  user.accountType = user.accountType === 'one_time' ? 'one_time' : 'long_term';
 
   if (Array.isArray(user.allowedCourses)) {
     user.allowedCourses = sanitizeAllowedCourses(user.allowedCourses);
@@ -459,6 +463,7 @@ export class JsonStore {
         username: u.username,
         displayName: u.displayName,
         role: u.role,
+        accountType: u.accountType === 'one_time' ? 'one_time' : 'long_term',
         allowedCourses: access.allowedCourses,
         rawAllowedCourses: sanitizeAllowedCourses(u.allowedCourses),
         accessExpiresAt: access.accessExpiresAt,
@@ -541,6 +546,7 @@ export class JsonStore {
     role = 'student',
     allowedCourses = ALL_COURSES,
     durationDays = DEFAULT_TRIAL_DAYS,
+    accountType = 'long_term',
     initialProgress = null,
   }) {
     const cleanUsername = String(username || '').trim().toLowerCase();
@@ -558,6 +564,7 @@ export class JsonStore {
       username: cleanUsername,
       displayName: String(displayName || cleanUsername).trim(),
       role,
+      accountType: role === 'admin' ? 'long_term' : accountType === 'one_time' ? 'one_time' : 'long_term',
       allowedCourses: role === 'admin' ? [...ALL_COURSES] : sanitizeAllowedCourses(allowedCourses),
       accessExpiresAt,
       passwordHash,
@@ -579,14 +586,18 @@ export class JsonStore {
     return user;
   }
 
-  updateAllowedCourses(userId, allowedCourses, { durationDays, extendDays } = {}) {
+  updateAllowedCourses(userId, allowedCourses, { durationDays, extendDays, accountType } = {}) {
     const user = this.findUserById(userId);
     if (!user) return null;
     if (user.role === 'admin') {
       user.allowedCourses = [...ALL_COURSES];
       user.accessExpiresAt = null;
+      user.accountType = 'long_term';
       this.#writeAtomic();
       return user;
+    }
+    if (accountType === 'long_term' || accountType === 'one_time') {
+      user.accountType = accountType;
     }
     if (allowedCourses !== undefined) {
       user.allowedCourses = sanitizeAllowedCourses(allowedCourses);

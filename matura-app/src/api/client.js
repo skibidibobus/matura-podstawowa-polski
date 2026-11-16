@@ -64,6 +64,8 @@ async function apiRequest(path, { method = 'GET', token = '', body = null, keepa
 export const apiClient = {
   login: (username, password) =>
     apiRequest('/api/auth/login', { method: 'POST', body: { username, password } }),
+  registerTrial: (payload) =>
+    apiRequest('/api/auth/register-trial', { method: 'POST', body: payload }),
   getMe: (token) => apiRequest('/api/auth/me', { token }),
   getProgress: (token) => apiRequest('/api/progress', { token }),
   saveProgress: (token, progress) =>

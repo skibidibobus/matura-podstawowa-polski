@@ -130,6 +130,7 @@ export function AdminDashboardView({
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
+  const [categoryFilter, setCategoryFilter] = useState('all'); // 'all' | 'long_term' | 'one_time'
   const [logFilter, setLogFilter] = useState('');
 
   // Create user state
@@ -303,15 +304,28 @@ export function AdminDashboardView({
     };
   }, [studentAccounts, progressByUserId, courseTotalsMap]);
 
+  const longTermUsersCount = useMemo(
+    () => users.filter((u) => u.accountType !== 'one_time').length,
+    [users]
+  );
+
+  const oneTimeUsersCount = useMemo(
+    () => users.filter((u) => u.accountType === 'one_time').length,
+    [users]
+  );
+
   const filteredUsers = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
-    if (!q) return users;
-    return users.filter(
-      (u) =>
+    return users.filter((u) => {
+      const cat = u.accountType === 'one_time' ? 'one_time' : 'long_term';
+      if (categoryFilter !== 'all' && cat !== categoryFilter) return false;
+      if (!q) return true;
+      return (
         u.displayName?.toLowerCase().includes(q) ||
         u.username?.toLowerCase().includes(q)
-    );
-  }, [users, searchQuery]);
+      );
+    });
+  }, [users, searchQuery, categoryFilter]);
 
   const handleCreateUser = async (e) => {
     e.preventDefault();
@@ -565,7 +579,7 @@ export function AdminDashboardView({
               <span className="admin-kpi-label">Konta uczniów</span>
               <strong className="admin-kpi-value">{analytics.studentCount}</strong>
               <span className="admin-kpi-sub">
-                Aktywnych w ostatnich 7 dniach: {analytics.active7d}
+                Długoterminowe: {studentAccounts.filter((u) => u.accountType !== 'one_time').length} • Jednorazowe 24h: {studentAccounts.filter((u) => u.accountType === 'one_time').length}
               </span>
             </div>
             <div className="admin-kpi-card">
@@ -756,6 +770,36 @@ export function AdminDashboardView({
             </div>
           )}
 
+          <div className="admin-category-tabs" role="tablist">
+            <button
+              type="button"
+              role="tab"
+              aria-selected={categoryFilter === 'all'}
+              className={`course-access-pill ${categoryFilter === 'all' ? 'allowed' : ''}`}
+              onClick={() => setCategoryFilter('all')}
+            >
+              Wszystkie ({users.length})
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={categoryFilter === 'long_term'}
+              className={`course-access-pill ${categoryFilter === 'long_term' ? 'allowed' : ''}`}
+              onClick={() => setCategoryFilter('long_term')}
+            >
+              Długoterminowe ({longTermUsersCount})
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={categoryFilter === 'one_time'}
+              className={`course-access-pill ${categoryFilter === 'one_time' ? 'allowed' : ''}`}
+              onClick={() => setCategoryFilter('one_time')}
+            >
+              Jednorazowe 24h ({oneTimeUsersCount})
+            </button>
+          </div>
+
           <div className="admin-search-bar">
             <Search size={16} />
             <input
@@ -781,17 +825,26 @@ export function AdminDashboardView({
                         {isSelfAdmin ? (
                           <span className="admin-role-badge">ADMIN</span>
                         ) : (
-                          <span
-                            className={`admin-duration-badge ${
-                              u.isPermanent ? 'permanent' : u.isExpired ? 'expired' : 'trial'
-                            }`}
-                          >
-                            {u.isPermanent
-                              ? 'Na zawsze'
-                              : u.isExpired
-                                ? 'Dostęp wygasł'
-                                : `Pozostało ${u.daysRemaining ?? 14} dni`}
-                          </span>
+                          <>
+                            <span
+                              className={`admin-category-badge ${
+                                u.accountType === 'one_time' ? 'one-time' : 'long-term'
+                              }`}
+                            >
+                              {u.accountType === 'one_time' ? 'Jednorazowe 24h' : 'Długoterminowe'}
+                            </span>
+                            <span
+                              className={`admin-duration-badge ${
+                                u.isPermanent ? 'permanent' : u.isExpired ? 'expired' : 'trial'
+                              }`}
+                            >
+                              {u.isPermanent
+                                ? 'Na zawsze'
+                                : u.isExpired
+                                  ? 'Dostęp wygasł'
+                                  : `Pozostało ${u.daysRemaining ?? 14} dni`}
+                            </span>
+                          </>
                         )}
                       </div>
                       <div className="admin-user-meta-line">
@@ -907,6 +960,22 @@ export function AdminDashboardView({
                         >
                           Zablokuj (wygasł)
                         </button>
+                        {u.accountType === 'one_time' && (
+                          <button
+                            type="button"
+                            className="course-access-pill allowed"
+                            onClick={() =>
+                              handleUpdateDuration(
+                                u,
+                                { accountType: 'long_term', durationDays: 14 },
+                                'Przeniesiono do długoterminowych (+14 dni)'
+                              )
+                            }
+                            disabled={busy}
+                          >
+                            Przenieś do długoterminowych
+                          </button>
+                        )}
                       </div>
                     </>
                   )}

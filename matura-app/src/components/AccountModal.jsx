@@ -62,8 +62,12 @@ export function AccountModal({
   onLoginSuccess,
   onLogout,
 }) {
+  const [authTab, setAuthTab] = useState('login'); // 'login' | 'trial'
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [trialName, setTrialName] = useState('');
+  const [trialLogin, setTrialLogin] = useState('');
+  const [trialPassword, setTrialPassword] = useState('');
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
   const [loading, setLoading] = useState(false);
@@ -123,6 +127,29 @@ export function AccountModal({
       setUsername('');
       setPassword('');
       onLoginSuccess(data);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleRegisterTrial = async (e) => {
+    e.preventDefault();
+    if (!trialName.trim()) return;
+    setError('');
+    setLoading(true);
+    try {
+      const data = await apiClient.registerTrial({
+        displayName: trialName.trim(),
+        username: trialLogin.trim() || undefined,
+        password: trialPassword.trim() || undefined,
+      });
+      setTrialName('');
+      setTrialLogin('');
+      setTrialPassword('');
+      onLoginSuccess(data);
+      onClose();
     } catch (err) {
       setError(err.message);
     } finally {
@@ -317,42 +344,122 @@ export function AccountModal({
         {notice && <div className="modal-notice">{notice}</div>}
 
         {!authSession ? (
-          <form onSubmit={handleLogin} className="modal-form">
-            <label className="field-label">
-              Login
-              <input
-                type="text"
-                className="field-input"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="np. admin lub uczen-1234"
-                autoComplete="username"
-                required
-              />
-            </label>
-            <label className="field-label">
-              Hasło
-              <input
-                type="password"
-                className="field-input"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Wpisz hasło"
-                autoComplete="current-password"
-                required
-              />
-            </label>
-
-            <div className="modal-actions">
-              <button type="button" className="secondary-btn" onClick={onClose}>
-                Zostań w trybie lokalnym
+          <div className="modal-body-stack">
+            <div className="auth-mode-tabs" role="tablist">
+              <button
+                type="button"
+                role="tab"
+                aria-selected={authTab === 'login'}
+                className={`auth-mode-tab ${authTab === 'login' ? 'active' : ''}`}
+                onClick={() => {
+                  setAuthTab('login');
+                  setError('');
+                }}
+              >
+                Mam konto
               </button>
-              <button type="submit" className="primary-btn" disabled={loading}>
-                <KeyRound size={16} />
-                {loading ? 'Logowanie...' : 'Zaloguj się'}
+              <button
+                type="button"
+                role="tab"
+                aria-selected={authTab === 'trial'}
+                className={`auth-mode-tab ${authTab === 'trial' ? 'active' : ''}`}
+                onClick={() => {
+                  setAuthTab('trial');
+                  setError('');
+                }}
+              >
+                Darmowe konto 24h
               </button>
             </div>
-          </form>
+
+            {authTab === 'login' ? (
+              <form onSubmit={handleLogin} className="modal-form">
+                <label className="field-label">
+                  Login
+                  <input
+                    type="text"
+                    className="field-input"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    placeholder="Login"
+                    autoComplete="username"
+                    required
+                  />
+                </label>
+                <label className="field-label">
+                  Hasło
+                  <input
+                    type="password"
+                    className="field-input"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Wpisz hasło"
+                    autoComplete="current-password"
+                    required
+                  />
+                </label>
+
+                <div className="modal-actions">
+                  <button type="button" className="secondary-btn" onClick={onClose}>
+                    Zostań w trybie lokalnym
+                  </button>
+                  <button type="submit" className="primary-btn" disabled={loading}>
+                    <KeyRound size={16} />
+                    {loading ? 'Logowanie...' : 'Zaloguj się'}
+                  </button>
+                </div>
+              </form>
+            ) : (
+              <form onSubmit={handleRegisterTrial} className="modal-form">
+                <p className="modal-sub" style={{ margin: 0 }}>
+                  Utwórz konto jednorazowe na 1 dzień (24h), aby odblokować wszystkie 3 kursy.
+                </p>
+                <label className="field-label">
+                  Imię / Nazwa *
+                  <input
+                    type="text"
+                    className="field-input"
+                    value={trialName}
+                    onChange={(e) => setTrialName(e.target.value)}
+                    placeholder="Twoje imię lub pseudonim"
+                    required
+                  />
+                </label>
+                <label className="field-label">
+                  Login (opcjonalnie)
+                  <input
+                    type="text"
+                    className="field-input"
+                    value={trialLogin}
+                    onChange={(e) => setTrialLogin(e.target.value)}
+                    placeholder="Zostaw puste, jeśli ma się wygenerować"
+                    autoComplete="username"
+                  />
+                </label>
+                <label className="field-label">
+                  Hasło (opcjonalnie)
+                  <input
+                    type="password"
+                    className="field-input"
+                    value={trialPassword}
+                    onChange={(e) => setTrialPassword(e.target.value)}
+                    placeholder="Min. 4 znaki lub zostaw puste"
+                    autoComplete="new-password"
+                  />
+                </label>
+
+                <div className="modal-actions">
+                  <button type="button" className="secondary-btn" onClick={onClose}>
+                    Anuluj
+                  </button>
+                  <button type="submit" className="primary-btn" disabled={loading}>
+                    <UserPlus size={16} />
+                    {loading ? 'Tworzenie...' : 'Odblokuj kursy na 24h'}
+                  </button>
+                </div>
+              </form>
+            )}
+          </div>
         ) : (
           <div className="modal-body-stack">
             <div className="account-summary-bar">

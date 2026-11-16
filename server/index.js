@@ -78,6 +78,7 @@ function publicUser(user) {
     username: user.username,
     displayName: user.displayName,
     role: user.role,
+    accountType: user.accountType === 'one_time' ? 'one_time' : 'long_term',
     allowedCourses: access.allowedCourses,
     accessExpiresAt: access.accessExpiresAt,
     isPermanent: access.isPermanent,
@@ -85,6 +86,24 @@ function publicUser(user) {
     daysRemaining: access.daysRemaining,
     createdAt: user.createdAt,
   };
+}
+
+const trialSignupAttemptsByIp = new Map();
+function isTrialSignupRateLimited(req) {
+  const ip =
+    String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() ||
+    req.socket?.remoteAddress ||
+    'unknown';
+  const now = Date.now();
+  const windowMs = 15 * 60 * 1000;
+  const recent = (trialSignupAttemptsByIp.get(ip) || []).filter((t) => now - t < windowMs);
+  if (recent.length >= 10) {
+    trialSignupAttemptsByIp.set(ip, recent);
+    return true;
+  }
+  recent.push(now);
+  trialSignupAttemptsByIp.set(ip, recent);
+  return false;
 }
 
 export function createAppServer({
@@ -135,6 +154,63 @@ export function createAppServer({
       if (req.method === 'GET' && pathname === '/api/public/leaderboard') {
         const course = url.searchParams.get('course') || 'all';
         return sendJson(res, 200, { leaderboard: store.getPublicLeaderboard(course) });
+      }
+
+      // Public 1-day (24h) trial registration
+      if (req.method === 'POST' && pathname === '/api/auth/register-trial') {
+        if (isTrialSignupRateLimited(req)) {
+          return sendJson(res, 429, { error: 'Zbyt wiele rejestracji w krótkim czasie. Spróbuj za kilkanaście minut.' });
+        }
+        const body = await readJsonBody(req);
+        const displayName = String(body.displayName || '').trim();
+        if (displayName.length < 2 || displayName.length > 40) {
+          return sendJson(res, 400, { error: 'Podaj imię lub nazwę (2–40 znaków).' });
+        }
+        let username = String(body.username || '').trim().toLowerCase();
+        if (username) {
+          if (!/^[a-z0-9._-]{3,32}$/.test(username)) {
+            return sendJson(res, 400, { error: 'Login może zawierać tylko małe litery, cyfry oraz . _ - (3–32 znaki).' });
+          }
+          if (store.findUserByUsername(username)) {
+            return sendJson(res, 409, { error: 'Taki login jest już zajęty. Wybierz inny lub zostaw pole puste.' });
+          }
+        } else {
+          username = generateReadableUsername(displayName);
+          while (store.findUserByUsername(username)) {
+            username = generateReadableUsername(displayName);
+          }
+        }
+        const rawPassword = String(body.password || '').trim();
+        if (rawPassword && rawPassword.length < 4) {
+          return sendJson(res, 400, { error: 'Hasło musi mieć co najmniej 4 znaki (lub zostaw pole puste).' });
+        }
+        const plainPassword = rawPassword || generateReadablePassword(8);
+        const created = store.createUser({
+          username,
+          displayName,
+          passwordHash: hashPassword(plainPassword),
+          role: 'student',
+          allowedCourses: [...ALL_COURSES],
+          durationDays: 1,
+          accountType: 'one_time',
+        });
+        store.addLog({
+          type: 'user_created',
+          userId: created.id,
+          username: created.username,
+          displayName: created.displayName,
+          message: `Utworzono konto jednorazowe 24h: ${created.displayName} (@${created.username})`,
+        });
+        const token = signToken(
+          { sub: created.id, username: created.username, role: created.role },
+          store.getJwtSecret()
+        );
+        return sendJson(res, 201, {
+          token,
+          user: publicUser(created),
+          progress: store.getProgress(created.id),
+          credentials: { username: created.username, password: plainPassword },
+        });
       }
 
       // Login
@@ -330,6 +406,7 @@ export function createAppServer({
             const updated = store.updateAllowedCourses(userId, body.allowedCourses, {
               durationDays: body.durationDays,
               extendDays: body.extendDays,
+              accountType: body.accountType,
             });
             if (!updated) {
               return sendJson(res, 404, { error: 'Nie znaleziono użytkownika.' });

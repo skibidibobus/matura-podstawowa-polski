@@ -56,8 +56,12 @@ export function WelcomePage({
   onEnterGuest,
   onOpenRanking,
 }) {
+  const [authTab, setAuthTab] = useState('login'); // 'login' | 'trial'
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [trialName, setTrialName] = useState('');
+  const [trialLogin, setTrialLogin] = useState('');
+  const [trialPassword, setTrialPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -71,6 +75,25 @@ export function WelcomePage({
       onLoginSuccess(data);
     } catch (err) {
       setError(err.message || 'Nieprawidłowy login lub hasło.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleRegisterTrial = async (e) => {
+    e.preventDefault();
+    if (!trialName.trim()) return;
+    setLoading(true);
+    setError('');
+    try {
+      const data = await apiClient.registerTrial({
+        displayName: trialName.trim(),
+        username: trialLogin.trim() || undefined,
+        password: trialPassword.trim() || undefined,
+      });
+      onLoginSuccess(data);
+    } catch (err) {
+      setError(err.message || 'Nie udało się utworzyć konta.');
     } finally {
       setLoading(false);
     }
@@ -155,43 +178,123 @@ export function WelcomePage({
               </>
             ) : (
               <>
-                <div className="welcome-login-header">
-                  <h2>Zaloguj się do kursu</h2>
-                  <p>Wpisz dane konta otrzymane od prowadzącego, aby odblokować swoje kursy i zapisać postęp.</p>
+                <div className="auth-mode-tabs" role="tablist">
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={authTab === 'login'}
+                    className={`auth-mode-tab ${authTab === 'login' ? 'active' : ''}`}
+                    onClick={() => {
+                      setAuthTab('login');
+                      setError('');
+                    }}
+                  >
+                    Mam konto
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={authTab === 'trial'}
+                    className={`auth-mode-tab ${authTab === 'trial' ? 'active' : ''}`}
+                    onClick={() => {
+                      setAuthTab('trial');
+                      setError('');
+                    }}
+                  >
+                    Darmowe konto 24h
+                  </button>
                 </div>
 
-                {error && <div className="auth-error">{error}</div>}
+                {authTab === 'login' ? (
+                  <>
+                    <div className="welcome-login-header">
+                      <h2>Zaloguj się do kursu</h2>
+                      <p>Wpisz dane swojego konta, aby odblokować kursy i zapisać postęp.</p>
+                    </div>
 
-                <form className="auth-form" onSubmit={handleLogin}>
-                  <label className="auth-field">
-                    <span>Login</span>
-                    <input
-                      type="text"
-                      value={username}
-                      onChange={(e) => setUsername(e.target.value)}
-                      placeholder="Login"
-                      autoComplete="username"
-                      required
-                    />
-                  </label>
+                    {error && <div className="auth-error">{error}</div>}
 
-                  <label className="auth-field">
-                    <span>Hasło</span>
-                    <input
-                      type="password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      placeholder="Hasło"
-                      autoComplete="current-password"
-                      required
-                    />
-                  </label>
+                    <form className="auth-form" onSubmit={handleLogin}>
+                      <label className="auth-field">
+                        <span>Login</span>
+                        <input
+                          type="text"
+                          value={username}
+                          onChange={(e) => setUsername(e.target.value)}
+                          placeholder="Login"
+                          autoComplete="username"
+                          required
+                        />
+                      </label>
 
-                  <button type="submit" className="primary-btn welcome-submit-btn" disabled={loading}>
-                    <LogIn size={16} />
-                    {loading ? 'Logowanie...' : 'Zaloguj się i rozpocznij naukę'}
-                  </button>
-                </form>
+                      <label className="auth-field">
+                        <span>Hasło</span>
+                        <input
+                          type="password"
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
+                          placeholder="Hasło"
+                          autoComplete="current-password"
+                          required
+                        />
+                      </label>
+
+                      <button type="submit" className="primary-btn welcome-submit-btn" disabled={loading}>
+                        <LogIn size={16} />
+                        {loading ? 'Logowanie...' : 'Zaloguj się i rozpocznij naukę'}
+                      </button>
+                    </form>
+                  </>
+                ) : (
+                  <>
+                    <div className="welcome-login-header">
+                      <h2>Odblokuj wszystkie kursy na 24h</h2>
+                      <p>Utwórz darmowe konto jednorazowe na 1 dzień i przetestuj pełny dostęp do wszystkich 3 kursów.</p>
+                    </div>
+
+                    {error && <div className="auth-error">{error}</div>}
+
+                    <form className="auth-form" onSubmit={handleRegisterTrial}>
+                      <label className="auth-field">
+                        <span>Imię / Nazwa *</span>
+                        <input
+                          type="text"
+                          value={trialName}
+                          onChange={(e) => setTrialName(e.target.value)}
+                          placeholder="Twoje imię lub pseudonim"
+                          required
+                        />
+                      </label>
+
+                      <label className="auth-field">
+                        <span>Login (opcjonalnie)</span>
+                        <input
+                          type="text"
+                          value={trialLogin}
+                          onChange={(e) => setTrialLogin(e.target.value)}
+                          placeholder="Zostaw puste, jeśli ma się wygenerować"
+                          autoComplete="username"
+                        />
+                      </label>
+
+                      <label className="auth-field">
+                        <span>Hasło (opcjonalnie)</span>
+                        <input
+                          type="password"
+                          value={trialPassword}
+                          onChange={(e) => setTrialPassword(e.target.value)}
+                          placeholder="Min. 4 znaki lub zostaw puste"
+                          autoComplete="new-password"
+                        />
+                      </label>
+
+                      <button type="submit" className="primary-btn welcome-submit-btn" disabled={loading}>
+                        <Sparkles size={16} />
+                        {loading ? 'Tworzenie konta...' : 'Utwórz konto na 1 dzień (Free)'}
+                      </button>
+                    </form>
+                  </>
+                )}
 
                 <div className="welcome-guest-row">
                   <span>Chcesz najpierw tylko zobaczyć układ?</span>
