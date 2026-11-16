@@ -142,7 +142,7 @@ export function createAppServer({
         pathname,
         method: req.method,
         store,
-        secret,
+        secret: store.getJwtSecret(),
         sendJson,
         readJsonBody,
         readRawBody,

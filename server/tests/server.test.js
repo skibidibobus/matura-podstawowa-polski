@@ -281,7 +281,7 @@ describe('Backend Auth, Account Generator & Progress Isolation', () => {
     assert.equal(pubProbnaData.leaderboard[0].stats.xp, 0);
   });
 
-  it('8. New student has empty allowedCourses by default and admin can unlock/lock courses', async () => {
+  it('8. New student has 14-day trial access to all courses by default and admin can lock/unlock courses', async () => {
     const createRes = await fetch(`${baseUrl}/api/admin/users`, {
       method: 'POST',
       headers: {
@@ -292,7 +292,9 @@ describe('Backend Auth, Account Generator & Progress Isolation', () => {
     });
     assert.equal(createRes.status, 201);
     const created = await createRes.json();
-    assert.deepEqual(created.user.allowedCourses, []);
+    assert.deepEqual(created.user.allowedCourses, ['probna', 'kurs', 'ustna']);
+    assert.equal(created.user.isPermanent, false);
+    assert.equal(created.user.daysRemaining, 14);
 
     const coursesRes = await fetch(`${baseUrl}/api/admin/users/${created.user.id}/courses`, {
       method: 'POST',
