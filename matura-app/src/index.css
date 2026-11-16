@@ -54,7 +54,7 @@ body {
   font-family: var(--font-sans);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 button {
@@ -82,8 +82,30 @@ button {
   gap: 18px;
   position: sticky;
   top: 0;
+  align-self: start;
   height: 100vh;
+  height: 100dvh;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
 }
 
 .brand {
