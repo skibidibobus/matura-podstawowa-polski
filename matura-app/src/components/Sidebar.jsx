@@ -125,7 +125,13 @@ export function Sidebar({
             </span>
           </span>
           <span className="account-bar-tag">
-            {authUser ? 'Konto' : 'Zaloguj'}
+            {authUser
+              ? authUser.isExpired
+                ? 'Wygasł'
+                : !authUser.isPermanent && typeof authUser.daysRemaining === 'number'
+                  ? `${authUser.daysRemaining} dni`
+                  : 'Konto'
+              : 'Zaloguj'}
           </span>
         </button>
       )}

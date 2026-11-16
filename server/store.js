@@ -15,17 +15,96 @@ export function sanitizeAllowedCourses(raw) {
   return [...seen];
 }
 
+const DEFAULT_TRIAL_DAYS = 14;
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+
+function computeTrialExpiresAt(days = DEFAULT_TRIAL_DAYS) {
+  return new Date(Date.now() + days * MS_PER_DAY).toISOString();
+}
+
+export function getEffectiveAccess(user) {
+  if (!user || typeof user !== 'object') {
+    return {
+      allowedCourses: [],
+      accessExpiresAt: null,
+      isPermanent: false,
+      isExpired: false,
+      daysRemaining: null,
+    };
+  }
+  if (user.role === 'admin') {
+    return {
+      allowedCourses: [...ALL_COURSES],
+      accessExpiresAt: null,
+      isPermanent: true,
+      isExpired: false,
+      daysRemaining: null,
+    };
+  }
+  const baseCourses = sanitizeAllowedCourses(user.allowedCourses);
+  if (user.accessExpiresAt === null) {
+    return {
+      allowedCourses: baseCourses,
+      accessExpiresAt: null,
+      isPermanent: true,
+      isExpired: false,
+      daysRemaining: null,
+    };
+  }
+  const expiresMs = Date.parse(user.accessExpiresAt);
+  if (!Number.isFinite(expiresMs)) {
+    return {
+      allowedCourses: baseCourses,
+      accessExpiresAt: null,
+      isPermanent: true,
+      isExpired: false,
+      daysRemaining: null,
+    };
+  }
+  const diffMs = expiresMs - Date.now();
+  const isExpired = diffMs <= 0;
+  const daysRemaining = isExpired ? 0 : Math.ceil(diffMs / MS_PER_DAY);
+  return {
+    allowedCourses: isExpired ? [] : baseCourses,
+    accessExpiresAt: new Date(expiresMs).toISOString(),
+    isPermanent: false,
+    isExpired,
+    daysRemaining,
+  };
+}
+
 function normalizeUserCourses(user) {
   if (!user || typeof user !== 'object') return user;
+  const usernameLower = String(user.username || '').toLowerCase();
+  const isLegacyPermanent = LEGACY_FULL_ACCESS_USERNAMES.has(usernameLower);
+
   if (user.role === 'admin') {
     user.allowedCourses = [...ALL_COURSES];
-  } else if (Array.isArray(user.allowedCourses)) {
-    user.allowedCourses = sanitizeAllowedCourses(user.allowedCourses);
-  } else if (LEGACY_FULL_ACCESS_USERNAMES.has(String(user.username || '').toLowerCase())) {
+    user.accessExpiresAt = null;
+    return user;
+  }
+
+  if (isLegacyPermanent) {
     user.allowedCourses = [...ALL_COURSES];
+    user.accessExpiresAt = null;
+    return user;
+  }
+
+  if (Array.isArray(user.allowedCourses)) {
+    user.allowedCourses = sanitizeAllowedCourses(user.allowedCourses);
   } else {
     user.allowedCourses = [];
   }
+
+  // Migrate existing non-permanent students without an expiration date to 14 days free access,
+  // preserving any existing access and unlocking all courses if they had none yet.
+  if (user.accessExpiresAt === undefined) {
+    user.accessExpiresAt = computeTrialExpiresAt(DEFAULT_TRIAL_DAYS);
+    if (user.allowedCourses.length === 0) {
+      user.allowedCourses = [...ALL_COURSES];
+    }
+  }
+
   return user;
 }
 
@@ -374,12 +453,18 @@ export class JsonStore {
   listUsers() {
     return this.data.users.map((u) => {
       const p = this.data.progressByUserId[u.id] || DEFAULT_PROGRESS;
+      const access = getEffectiveAccess(u);
       return {
         id: u.id,
         username: u.username,
         displayName: u.displayName,
         role: u.role,
-        allowedCourses: u.role === 'admin' ? [...ALL_COURSES] : sanitizeAllowedCourses(u.allowedCourses),
+        allowedCourses: access.allowedCourses,
+        rawAllowedCourses: sanitizeAllowedCourses(u.allowedCourses),
+        accessExpiresAt: access.accessExpiresAt,
+        isPermanent: access.isPermanent,
+        isExpired: access.isExpired,
+        daysRemaining: access.daysRemaining,
         createdAt: u.createdAt,
         stats: computeProgressStats(p),
       };
@@ -449,18 +534,32 @@ export class JsonStore {
     }));
   }
 
-  createUser({ username, displayName, passwordHash, role = 'student', allowedCourses = [], initialProgress = null }) {
+  createUser({
+    username,
+    displayName,
+    passwordHash,
+    role = 'student',
+    allowedCourses = ALL_COURSES,
+    durationDays = DEFAULT_TRIAL_DAYS,
+    initialProgress = null,
+  }) {
     const cleanUsername = String(username || '').trim().toLowerCase();
     if (!cleanUsername) throw new Error('Wymagany jest login.');
     if (this.findUserByUsername(cleanUsername)) {
       throw new Error(`Konto o loginie „${cleanUsername}” już istnieje.`);
     }
+    const isPermanent = role === 'admin' || durationDays === null;
+    const daysNum = Number(durationDays);
+    const accessExpiresAt = isPermanent
+      ? null
+      : computeTrialExpiresAt(Number.isFinite(daysNum) && daysNum > 0 ? daysNum : DEFAULT_TRIAL_DAYS);
     const user = {
       id: `usr-${crypto.randomUUID().slice(0, 8)}`,
       username: cleanUsername,
       displayName: String(displayName || cleanUsername).trim(),
       role,
       allowedCourses: role === 'admin' ? [...ALL_COURSES] : sanitizeAllowedCourses(allowedCourses),
+      accessExpiresAt,
       passwordHash,
       createdAt: new Date().toISOString(),
     };
@@ -480,11 +579,42 @@ export class JsonStore {
     return user;
   }
 
-  updateAllowedCourses(userId, allowedCourses) {
+  updateAllowedCourses(userId, allowedCourses, { durationDays, extendDays } = {}) {
     const user = this.findUserById(userId);
     if (!user) return null;
-    user.allowedCourses =
-      user.role === 'admin' ? [...ALL_COURSES] : sanitizeAllowedCourses(allowedCourses);
+    if (user.role === 'admin') {
+      user.allowedCourses = [...ALL_COURSES];
+      user.accessExpiresAt = null;
+      this.#writeAtomic();
+      return user;
+    }
+    if (allowedCourses !== undefined) {
+      user.allowedCourses = sanitizeAllowedCourses(allowedCourses);
+    }
+    if (durationDays !== undefined) {
+      if (durationDays === null || durationDays === 'permanent') {
+        user.accessExpiresAt = null;
+      } else {
+        const d = Number(durationDays);
+        if (Number.isFinite(d)) {
+          user.accessExpiresAt = d <= 0
+            ? new Date(Date.now() - 1000).toISOString()
+            : computeTrialExpiresAt(d);
+        }
+      }
+    } else if (extendDays !== undefined) {
+      const d = Number(extendDays);
+      if (Number.isFinite(d) && d > 0) {
+        const baseMs =
+          user.accessExpiresAt && Date.parse(user.accessExpiresAt) > Date.now()
+            ? Date.parse(user.accessExpiresAt)
+            : Date.now();
+        user.accessExpiresAt = new Date(baseMs + d * MS_PER_DAY).toISOString();
+        if (!Array.isArray(user.allowedCourses) || user.allowedCourses.length === 0) {
+          user.allowedCourses = [...ALL_COURSES];
+        }
+      }
+    }
     this.#writeAtomic();
     return user;
   }

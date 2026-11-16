@@ -710,9 +710,11 @@ export function App() {
             <div className="locked-course-icon">
               <Lock size={28} />
             </div>
-            <h2>Ten kurs jest obecnie zablokowany</h2>
+            <h2>{effectiveUser?.isExpired ? 'Czas dostępu do kursu wygasł' : 'Ten kurs jest obecnie zablokowany'}</h2>
             <p>
-              Twoje konto nie ma jeszcze przyznanego dostępu do tego kursu. Poproś administratora o odblokowanie w panelu admina.
+              {effectiveUser?.isExpired
+                ? 'Twój darmowy okres próbny dobiegł końca. Skontaktuj się z administratorem, aby przedłużyć dostęp do kursów.'
+                : 'Twoje konto nie ma jeszcze przyznanego dostępu do tego kursu. Poproś administratora o odblokowanie w panelu admina.'}
             </p>
             <div className="locked-course-actions">
               {allowedCourses.map((c) => (

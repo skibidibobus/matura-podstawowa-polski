@@ -136,6 +136,7 @@ export function AdminDashboardView({
   const [newName, setNewName] = useState('');
   const [newUsername, setNewUsername] = useState('');
   const [newPassword, setNewPassword] = useState('');
+  const [newDuration, setNewDuration] = useState('14');
   const [creating, setCreating] = useState(false);
   const [generatedCreds, setGeneratedCreds] = useState(null);
   const [copiedCreds, setCopiedCreds] = useState(false);
@@ -322,10 +323,12 @@ export function AdminDashboardView({
     setError('');
     setNotice('');
     try {
+      const durationDays = newDuration === 'permanent' ? null : Number(newDuration);
       const res = await apiClient.createUser(token, {
         displayName: newName.trim(),
         username: newUsername.trim() || undefined,
         password: newPassword.trim() || undefined,
+        durationDays,
       });
       setGeneratedCreds({
         displayName: res.user?.displayName || newName.trim(),
@@ -336,6 +339,7 @@ export function AdminDashboardView({
       setNewName('');
       setNewUsername('');
       setNewPassword('');
+      setNewDuration('14');
       setNotice(`Utworzono konto ucznia: ${res.user.displayName}`);
       await loadAllData();
     } catch (err) {
@@ -346,18 +350,43 @@ export function AdminDashboardView({
   };
 
   const handleToggleCourseAccess = async (user, courseId) => {
-    const current = Array.isArray(user.allowedCourses) ? user.allowedCourses : [];
+    const current = Array.isArray(user.rawAllowedCourses)
+      ? user.rawAllowedCourses
+      : Array.isArray(user.allowedCourses)
+        ? user.allowedCourses
+        : [];
     const next = current.includes(courseId)
       ? current.filter((c) => c !== courseId)
       : [...current, courseId];
     setBusyUserId(user.id);
     setError('');
     try {
-      await apiClient.updateUserCourses(token, user.id, next);
+      const res = await apiClient.updateUserCourses(token, user.id, next);
       setUsers((prev) =>
-        prev.map((u) => (u.id === user.id ? { ...u, allowedCourses: next } : u))
+        prev.map((u) => (u.id === user.id ? { ...u, ...res.user, rawAllowedCourses: next } : u))
       );
       setNotice(`Zaktualizowano dostęp do kursów dla: ${user.displayName}`);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setBusyUserId('');
+    }
+  };
+
+  const handleUpdateDuration = async (user, options, label) => {
+    setBusyUserId(user.id);
+    setError('');
+    try {
+      const currentCourses = Array.isArray(user.rawAllowedCourses)
+        ? user.rawAllowedCourses
+        : Array.isArray(user.allowedCourses)
+          ? user.allowedCourses
+          : [];
+      const res = await apiClient.updateUserCourses(token, user.id, currentCourses, options);
+      setUsers((prev) =>
+        prev.map((u) => (u.id === user.id ? { ...u, ...res.user } : u))
+      );
+      setNotice(`Ustawiono czas dostępu (${label}) dla: ${user.displayName}`);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -608,6 +637,17 @@ export function AdminDashboardView({
                     <div className="admin-student-identity">
                       <strong>{s.displayName}</strong>
                       <span className="admin-user-login">@{s.username}</span>
+                      <span
+                        className={`admin-duration-badge ${
+                          s.isPermanent ? 'permanent' : s.isExpired ? 'expired' : 'trial'
+                        }`}
+                      >
+                        {s.isPermanent
+                          ? 'Na zawsze'
+                          : s.isExpired
+                            ? 'Dostęp wygasł'
+                            : `Pozostało ${s.daysRemaining ?? 14} dni`}
+                      </span>
                       <span className="admin-last-active">
                         Ostatnio: {formatDateTime(s.lastActiveAt)}
                       </span>
@@ -661,7 +701,7 @@ export function AdminDashboardView({
             <div className="admin-create-title">
               <UserPlus size={17} />
               <strong>Dodaj nowe konto ucznia</strong>
-              <span className="admin-create-hint">Nowe konto domyślnie nie ma dostępu do kursów — odblokujesz je poniżej.</span>
+              <span className="admin-create-hint">Domyślnie nowe konto dostaje 14 dni darmowego dostępu do kursów.</span>
             </div>
             <div className="admin-create-grid">
               <input
@@ -683,6 +723,16 @@ export function AdminDashboardView({
                 onChange={(e) => setNewPassword(e.target.value)}
                 placeholder="Hasło (opcjonalnie)"
               />
+              <select
+                value={newDuration}
+                onChange={(e) => setNewDuration(e.target.value)}
+                aria-label="Czas trwania dostępu"
+              >
+                <option value="14">14 dni za darmo (domyślnie)</option>
+                <option value="30">30 dni</option>
+                <option value="90">90 dni</option>
+                <option value="permanent">Na zawsze (bez limitu)</option>
+              </select>
               <button type="submit" className="primary-btn" disabled={creating}>
                 <UserPlus size={15} />
                 <span>{creating ? 'Tworzenie...' : 'Utwórz konto'}</span>
@@ -728,7 +778,21 @@ export function AdminDashboardView({
                       <div className="admin-user-title-row">
                         <strong>{u.displayName}</strong>
                         <span className="admin-user-login">@{u.username}</span>
-                        {isSelfAdmin && <span className="admin-role-badge">ADMIN</span>}
+                        {isSelfAdmin ? (
+                          <span className="admin-role-badge">ADMIN</span>
+                        ) : (
+                          <span
+                            className={`admin-duration-badge ${
+                              u.isPermanent ? 'permanent' : u.isExpired ? 'expired' : 'trial'
+                            }`}
+                          >
+                            {u.isPermanent
+                              ? 'Na zawsze'
+                              : u.isExpired
+                                ? 'Dostęp wygasł'
+                                : `Pozostało ${u.daysRemaining ?? 14} dni`}
+                          </span>
+                        )}
                       </div>
                       <div className="admin-user-meta-line">
                         <span>{u.stats?.xp || 0} XP</span>
@@ -785,24 +849,66 @@ export function AdminDashboardView({
                   </div>
 
                   {!isSelfAdmin && (
-                    <div className="course-access-row">
-                      <span className="course-access-label">Dostęp do kursów:</span>
-                      {COURSES_META.map((c) => {
-                        const allowed = Array.isArray(u.allowedCourses) && u.allowedCourses.includes(c.id);
-                        return (
-                          <button
-                            key={c.id}
-                            type="button"
-                            className={`course-access-pill ${allowed ? 'allowed' : 'blocked'}`}
-                            onClick={() => handleToggleCourseAccess(u, c.id)}
-                            disabled={busy}
-                          >
-                            {allowed ? <Check size={12} /> : null}
-                            <span>{c.shortLabel}</span>
-                          </button>
-                        );
-                      })}
-                    </div>
+                    <>
+                      <div className="course-access-row">
+                        <span className="course-access-label">Dostęp do kursów:</span>
+                        {COURSES_META.map((c) => {
+                          const rawCourses = Array.isArray(u.rawAllowedCourses)
+                            ? u.rawAllowedCourses
+                            : Array.isArray(u.allowedCourses)
+                              ? u.allowedCourses
+                              : [];
+                          const allowed = rawCourses.includes(c.id);
+                          return (
+                            <button
+                              key={c.id}
+                              type="button"
+                              className={`course-access-pill ${allowed ? 'allowed' : 'blocked'}`}
+                              onClick={() => handleToggleCourseAccess(u, c.id)}
+                              disabled={busy}
+                            >
+                              {allowed ? <Check size={12} /> : null}
+                              <span>{c.shortLabel}</span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                      <div className="course-access-row">
+                        <span className="course-access-label">Czas dostępu:</span>
+                        <button
+                          type="button"
+                          className="course-access-pill"
+                          onClick={() => handleUpdateDuration(u, { extendDays: 14 }, '+14 dni')}
+                          disabled={busy}
+                        >
+                          +14 dni
+                        </button>
+                        <button
+                          type="button"
+                          className="course-access-pill"
+                          onClick={() => handleUpdateDuration(u, { extendDays: 30 }, '+30 dni')}
+                          disabled={busy}
+                        >
+                          +30 dni
+                        </button>
+                        <button
+                          type="button"
+                          className={`course-access-pill ${u.isPermanent ? 'allowed' : ''}`}
+                          onClick={() => handleUpdateDuration(u, { durationDays: null }, 'Na zawsze')}
+                          disabled={busy}
+                        >
+                          Na zawsze
+                        </button>
+                        <button
+                          type="button"
+                          className={`course-access-pill ${u.isExpired ? 'blocked' : ''}`}
+                          onClick={() => handleUpdateDuration(u, { durationDays: 0 }, 'Wygasł / Zablokowany')}
+                          disabled={busy}
+                        >
+                          Zablokuj (wygasł)
+                        </button>
+                      </div>
+                    </>
                   )}
                 </div>
               );

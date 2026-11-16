@@ -9,7 +9,8 @@ import {
   verifyPassword,
   verifyToken,
 } from './auth.js';
-import { JsonStore, computeProgressStats } from './store.js';
+import { ALL_COURSES, JsonStore, computeProgressStats, getEffectiveAccess } from './store.js';
+import { handleMonetizationRoute } from './monetization.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,6 +26,24 @@ function sendJson(res, statusCode, payload) {
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
   });
   res.end(body);
+}
+
+function readRawBody(req) {
+  return new Promise((resolve, reject) => {
+    let size = 0;
+    const chunks = [];
+    req.on('data', (chunk) => {
+      size += chunk.length;
+      if (size > MAX_BODY_BYTES) {
+        reject(new Error('PAYLOAD_TOO_LARGE'));
+        req.destroy();
+        return;
+      }
+      chunks.push(chunk);
+    });
+    req.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
+    req.on('error', reject);
+  });
 }
 
 function readJsonBody(req) {
@@ -53,17 +72,17 @@ function readJsonBody(req) {
 }
 
 function publicUser(user) {
+  const access = getEffectiveAccess(user);
   return {
     id: user.id,
     username: user.username,
     displayName: user.displayName,
     role: user.role,
-    allowedCourses:
-      user.role === 'admin'
-        ? ['probna', 'kurs', 'ustna']
-        : Array.isArray(user.allowedCourses)
-        ? user.allowedCourses
-        : [],
+    allowedCourses: access.allowedCourses,
+    accessExpiresAt: access.accessExpiresAt,
+    isPermanent: access.isPermanent,
+    isExpired: access.isExpired,
+    daysRemaining: access.daysRemaining,
     createdAt: user.createdAt,
   };
 }
@@ -97,6 +116,20 @@ export function createAppServer({
           persistence: store.getPersistenceInfo(),
         });
       }
+
+      const handledMonetization = await handleMonetizationRoute({
+        req,
+        res,
+        pathname,
+        method: req.method,
+        store,
+        secret,
+        sendJson,
+        readJsonBody,
+        readRawBody,
+        publicUser,
+      });
+      if (handledMonetization !== false) return;
 
       // Public leaderboard (displayName only, excludes admin, supports ?course=all|probna|kurs|ustna)
       if (req.method === 'GET' && pathname === '/api/public/leaderboard') {
@@ -214,11 +247,23 @@ export function createAppServer({
                 ? String(body.password).trim()
                 : generateReadablePassword(10);
 
+            const durationDays =
+              body.durationDays === null || body.durationDays === 'permanent'
+                ? null
+                : body.durationDays !== undefined
+                  ? Number(body.durationDays)
+                  : 14;
+            const allowedCourses = Array.isArray(body.allowedCourses)
+              ? body.allowedCourses
+              : [...ALL_COURSES];
+
             const created = store.createUser({
               username,
               displayName: displayName || username,
               passwordHash: hashPassword(plainPassword),
               role: 'student',
+              allowedCourses,
+              durationDays,
             });
 
             store.addLog({
@@ -282,17 +327,26 @@ export function createAppServer({
           if (req.method === 'POST' && coursesMatch) {
             const userId = decodeURIComponent(coursesMatch[1]);
             const body = await readJsonBody(req);
-            const updated = store.updateAllowedCourses(userId, body.allowedCourses);
+            const updated = store.updateAllowedCourses(userId, body.allowedCourses, {
+              durationDays: body.durationDays,
+              extendDays: body.extendDays,
+            });
             if (!updated) {
               return sendJson(res, 404, { error: 'Nie znaleziono użytkownika.' });
             }
-            const label = updated.allowedCourses.length > 0 ? updated.allowedCourses.join(', ') : 'brak';
+            const access = getEffectiveAccess(updated);
+            const label = access.allowedCourses.length > 0 ? access.allowedCourses.join(', ') : 'brak';
+            const durLabel = access.isPermanent
+              ? 'na zawsze'
+              : access.isExpired
+                ? 'wygasł'
+                : `${access.daysRemaining} dni`;
             store.addLog({
               type: 'courses_updated',
               userId: updated.id,
               username: updated.username,
               displayName: updated.displayName,
-              message: `Administrator ustawił dostęp do kursów dla @${updated.username}: ${label}`,
+              message: `Administrator ustawił dostęp dla @${updated.username}: ${label} (${durLabel})`,
             });
             return sendJson(res, 200, { user: publicUser(updated) });
           }
