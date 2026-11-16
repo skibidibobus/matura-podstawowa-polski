@@ -10,8 +10,15 @@ import { phys09PradStaly } from './phys09_prad_staly';
 import { phys10Magnetyzm } from './phys10_magnetyzm';
 import { phys11Optyka } from './phys11_optyka';
 import { phys12Wspolczesna } from './phys12_wspolczesna';
+import { CKE_TASKS_1_6 } from './tasks/cke_tasks_1_6';
+import { CKE_TASKS_7_12 } from './tasks/cke_tasks_7_12';
 
-export const FIZYKA_LEVELS = [
+const EXTRA_CKE_TASKS = {
+  ...CKE_TASKS_1_6,
+  ...CKE_TASKS_7_12,
+};
+
+const RAW_LEVELS = [
   phys01Fundamenty,
   phys02Kinematyka,
   phys03Dynamika,
@@ -25,3 +32,8 @@ export const FIZYKA_LEVELS = [
   phys11Optyka,
   phys12Wspolczesna,
 ];
+
+export const FIZYKA_LEVELS = RAW_LEVELS.map((dept) => ({
+  ...dept,
+  examTasks: [...(dept.examTasks || []), ...(EXTRA_CKE_TASKS[dept.id] || [])],
+}));

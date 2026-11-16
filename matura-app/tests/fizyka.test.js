@@ -23,7 +23,7 @@ test('Physics Course (FIZYKA_LEVELS): 12 departments, unique IDs, valid SVG diag
     assert.ok(Array.isArray(dept.notes) && dept.notes.length >= 3, `${dept.id} should have >=3 note sections`);
     assert.ok(Array.isArray(dept.flashcards) && dept.flashcards.length >= 4, `${dept.id} should have >=4 flashcards`);
     assert.ok(Array.isArray(dept.quiz) && dept.quiz.length >= 2, `${dept.id} should have >=2 quiz questions`);
-    assert.ok(Array.isArray(dept.examTasks) && dept.examTasks.length >= 1, `${dept.id} should have >=1 CKE task`);
+    assert.ok(Array.isArray(dept.examTasks) && dept.examTasks.length >= 10, `${dept.id} should have >=10 CKE tasks (got ${dept.examTasks?.length})`);
 
     for (const note of dept.notes) {
       assert.ok(!noteIds.has(note.id), `Duplicate note id: ${note.id}`);
