@@ -4,6 +4,7 @@ import { loadComponent } from './helpers/component-loader.js';
 
 const { FIZYKA_LEVELS } = await loadComponent('/src/data/fizyka/index.js');
 const { PHYSICS_DIAGRAMS } = await loadComponent('/src/data/fizyka/diagrams/index.jsx');
+const { MathText } = await loadComponent('/src/components/MathText.jsx');
 const { default: App } = await loadComponent('/src/App.jsx');
 const React = (await import('react')).default;
 const { renderToStaticMarkup } = await import('react-dom/server');
@@ -94,4 +95,13 @@ test('App SSR: locks Physics course by default for guests and unlocks for admin'
   assert.ok(adminHtml.includes('4. Zadania CKE'), 'Admin should render 4. Zadania CKE tab');
   assert.ok(adminHtml.includes('Fundamenty Matematyczne'), 'Admin should render Dział 1');
   globalThis.localStorage.clear();
+});
+
+test('MathText renders **bold** as <strong> and $math$ via KaTeX', () => {
+  const html = renderToStaticMarkup(
+    React.createElement(MathText, { text: 'W toczeniu **siła tarcia $T_s$** nie wykonuje pracy.' })
+  );
+  assert.ok(html.includes('<strong>'), 'Should render <strong> for **bold**');
+  assert.ok(!html.includes('**'), 'Should not leave literal ** in rendered output');
+  assert.ok(html.includes('katex'), 'Should render KaTeX for $T_s$');
 });
