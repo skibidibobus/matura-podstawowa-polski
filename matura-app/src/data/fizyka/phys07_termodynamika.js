@@ -144,5 +144,30 @@ export const phys07Termodynamika = {
         '1 pkt — wynik $600\\text{ J}$.',
       ],
     },
+    {
+      id: 'cke-07-kalorymetria-lod',
+      source: 'CKE Formuła 2015/2023 • Bilans cieplny z topnieniem',
+      title: 'Topnienie lodu wrzuconego do ciepłej wody',
+      maxPoints: 3,
+      difficulty: 'standard',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      prompt:
+        'Do kalorymetru zawierającego $m_w = 0{,}50\\text{ kg}$ wody o temperaturze $t_w = 40^\\circ\\text{C}$ wrzucono $m_l = 0{,}10\\text{ kg}$ lodu o temperaturze $0^\\circ\\text{C}$. Oblicz temperaturę końcową $t_k$ mieszaniny po ustaleniu równowagi ($c_w = 4200\\,\\frac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, ciepło topnienia lodu $L = 334\\,\\frac{\\text{kJ}}{\\text{kg}}$).',
+      expectedValue: 20.1,
+      tolerance: 0.5,
+      unit: '°C',
+      hint: 'Sprawdź najpierw, czy lód stopi się w całości: $Q_{\\text{top}} = m_l L = 33{,}4\\text{ kJ}$, a woda może oddać do $0^\\circ\\text{C}$ aż $m_w c_w \\Delta t = 84\\text{ kJ}$. Zatem lód stopi się cały, a powstała z niego woda ogrzeje się do $t_k$.',
+      solutionSteps: [
+        'Ciepło potrzebne do stopienia lodu i ogrzania powstałej wody do $t_k$: $Q_{\\text{pob}} = m_l L + m_l c_w (t_k - 0)$.',
+        'Ciepło oddane przez ciepłą wodę: $Q_{\\text{odd}} = m_w c_w (40 - t_k)$.',
+        '$0{,}10 \\cdot 334000 + 0{,}10 \\cdot 4200 \\cdot t_k = 0{,}50 \\cdot 4200 \\cdot (40 - t_k)$.',
+        '$33400 + 420 t_k = 84000 - 2100 t_k \\Rightarrow 2520 t_k = 50600 \\Rightarrow t_k \\approx 20{,}1^\\circ\\text{C}$.',
+      ],
+      ckeKey: [
+        '1 pkt — sprawdzenie, że lód stopi się całkowicie.',
+        '1 pkt — poprawne równanie bilansu cieplnego z ciepłem topnienia i ogrzaniem wody z lodu.',
+        '1 pkt — obliczenie $t_k \\approx 20{,}1^\\circ\\text{C}$.',
+      ],
+    },
   ],
 };

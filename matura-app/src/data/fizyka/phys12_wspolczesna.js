@@ -143,5 +143,29 @@ export const phys12Wspolczesna = {
         '1 pkt — obliczenie długości fali $\\lambda \\approx 658\\text{ nm}$.',
       ],
     },
+    {
+      id: 'cke-12-defekt-masy',
+      source: 'CKE Formuła 2015/2023 • Fizyka jądrowa',
+      title: 'Energia wiązania jądra helu $^4_2\\text{He}$',
+      maxPoints: 3,
+      difficulty: 'standard',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      prompt:
+        'Masa protonu wynosi $m_p = 1{,}0073\\text{ u}$, masa neutronu $m_n = 1{,}0087\\text{ u}$, a masa jądra helu $^4_2\\text{He}$ wynosi $m_{\\text{He}} = 4{,}0015\\text{ u}$. Przyjmij $1\\text{ u} \\cdot c^2 = 931{,}5\\text{ MeV}$. Oblicz energię wiązania jądra helu (w $\\text{MeV}$).',
+      expectedValue: 28.4,
+      tolerance: 0.3,
+      unit: 'MeV',
+      hint: 'Jądro helu ma $2$ protony i $2$ neutrony. Defekt masy $\\Delta m = 2m_p + 2m_n - m_{\\text{He}}$.',
+      solutionSteps: [
+        'Suma mas nukleonów: $2\\cdot 1{,}0073 + 2\\cdot 1{,}0087 = 4{,}0320\\text{ u}$.',
+        'Defekt masy: $\\Delta m = 4{,}0320 - 4{,}0015 = 0{,}0305\\text{ u}$.',
+        'Energia wiązania: $\\Delta E = 0{,}0305 \\cdot 931{,}5 \\approx 28{,}41\\text{ MeV}$.',
+      ],
+      ckeKey: [
+        '1 pkt — poprawne ustalenie składu jądra ($2p + 2n$) i obliczenie defektu masy $\\Delta m = 0{,}0305\\text{ u}$.',
+        '1 pkt — przeliczenie defektu masy na energię w $\\text{MeV}$.',
+        '1 pkt — wynik $\\approx 28{,}4\\text{ MeV}$.',
+      ],
+    },
   ],
 };

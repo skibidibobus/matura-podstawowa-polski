@@ -147,5 +147,28 @@ export const phys06DrganiaFale = {
         '1 pkt — wynik $500\\text{ Hz}$.',
       ],
     },
+    {
+      id: 'cke-06-oscylator-vmax',
+      source: 'CKE Formuła 2023 • Ruch harmoniczny',
+      title: 'Prędkość maksymalna i energia oscylatora harmonicznego',
+      maxPoints: 3,
+      difficulty: 'podstawa',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      svgId: 'svg-06-energia-drgan',
+      prompt:
+        'Ciało o masie $m = 0{,}20\\text{ kg}$ wykonuje drgania harmoniczne na sprężynie o stałej $k = 20\\text{ N/m}$ z amplitudą $A = 0{,}10\\text{ m}$. Oblicz maksymalną prędkość tego ciała.',
+      expectedValue: 1.0,
+      tolerance: 0.05,
+      unit: 'm/s',
+      hint: 'Z zasady zachowania energii: $\\frac{1}{2}kA^2 = \\frac{1}{2}mv_{\\max}^2$, albo $v_{\\max} = \\omega A = \\sqrt{\\frac{k}{m}} A$.',
+      solutionSteps: [
+        'Częstość kołowa: $\\omega = \\sqrt{\\frac{k}{m}} = \\sqrt{\\frac{20}{0{,}20}} = \\sqrt{100} = 10\\text{ rad/s}$.',
+        'Maksymalna prędkość: $v_{\\max} = \\omega A = 10 \\cdot 0{,}10 = 1{,}0\\text{ m/s}$.',
+      ],
+      ckeKey: [
+        '1 pkt — powiązanie $v_{\\max} = \\omega A$ lub $\\frac{1}{2}kA^2 = \\frac{1}{2}mv_{\\max}^2$.',
+        '1 pkt — obliczenie $v_{\\max} = 1{,}0\\text{ m/s}$ z jednostką.',
+      ],
+    },
   ],
 };

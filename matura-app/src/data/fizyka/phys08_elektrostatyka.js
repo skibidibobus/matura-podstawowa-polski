@@ -133,5 +133,29 @@ export const phys08Elektrostatyka = {
         '1 pkt — obliczenie odchylenia $y = \\frac{1}{2}at^2 = 1{,}1\\text{ cm}$.',
       ],
     },
+    {
+      id: 'cke-08-kulki-nitki',
+      source: 'CKE Formuła 2015/2023 • Prawo Coulomba i równowaga sił',
+      title: 'Dwie jednakowe naładowane kulki na nitkach',
+      maxPoints: 3,
+      difficulty: 'wyzwanie',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      prompt:
+        'Dwie małe jednakowe kulki o masie $m = 1{,}0\\text{ g}$ każda zawieszono w jednym punkcie na jedwabnych nitkach. Po naładowaniu ich jednakowym ładunkiem $q$ kulki odpychają się i nitki tworzą z pionem kąt $\\alpha = 45^\\circ$, a odległość między kulkami wynosi $r = 0{,}30\\text{ m}$ ($g = 10\\text{ m/s}^2$, $k = 9{,}0\\cdot 10^9\\,\\frac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2}$). Oblicz wartość ładunku $q$ w mikrokulombach ($\\mu\\text{C}$).',
+      expectedValue: 0.32,
+      tolerance: 0.02,
+      unit: 'µC',
+      hint: 'Z równowagi sił dla jednej kulki: $\\operatorname{tg}\\alpha = \\frac{F_e}{mg} \\Rightarrow F_e = mg\\operatorname{tg} 45^\\circ = mg$.',
+      solutionSteps: [
+        'Ponieważ $\\alpha = 45^\\circ$, siła elektrostatyczna równa jest ciężarowi: $F_e = mg\\operatorname{tg} 45^\\circ = 0{,}001 \\cdot 10 \\cdot 1 = 0{,}010\\text{ N}$.',
+        'Z prawa Coulomba: $k\\frac{q^2}{r^2} = F_e \\Rightarrow q = r\\sqrt{\\frac{F_e}{k}}$.',
+        '$q = 0{,}30\\sqrt{\\frac{0{,}010}{9{,}0\\cdot 10^9}} = 0{,}30 \\cdot \\frac{0{,}1}{3{,}0\\cdot 10^4} \\approx 3{,}16\\cdot 10^{-7}\\text{ C} \\approx 0{,}32\\,\\mu\\text{C}$.',
+      ],
+      ckeKey: [
+        '1 pkt — wyznaczenie zależności $\\operatorname{tg}\\alpha = F_e / (mg)$.',
+        '1 pkt — podstawienie prawa Coulomba i wyznaczenie $q$.',
+        '1 pkt — wynik $q \\approx 0{,}32\\,\\mu\\text{C}$.',
+      ],
+    },
   ],
 };

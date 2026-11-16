@@ -134,5 +134,29 @@ export const phys09PradStaly = {
         '1 pkt — obliczenie $\\mathcal{E} = 6{,}0\\text{ V}$.',
       ],
     },
+    {
+      id: 'cke-09-kondensator-w-obwodzie',
+      source: 'CKE Formuła 2023 • Obwód prądu stałego z kondensatorem',
+      title: 'Ładunek na kondensatorze wpiętym równolegle do opornika',
+      maxPoints: 3,
+      difficulty: 'wyzwanie',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      prompt:
+        'Do źródła o $\\mathcal{E} = 12\\text{ V}$ i oporze wewnętrznym $r = 1{,}0\\,\\Omega$ podłączono szeregowo oporniki $R_1 = 2{,}0\\,\\Omega$ i $R_2 = 3{,}0\\,\\Omega$. Równolegle do opornika $R_2$ wpięto kondensator o pojemności $C = 10\\,\\mu\\text{F}$. Oblicz ładunek $Q$ zgromadzony na okładkach kondensatora po ustaleniu się prądu (w $\\mu\\text{C}$).',
+      expectedValue: 60,
+      tolerance: 1,
+      unit: 'µC',
+      hint: 'Po naładowaniu przez gałąź z kondensatorem prąd nie płynie! Oblicz prąd w pętli głównej $I = \\frac{\\mathcal{E}}{R_1 + R_2 + r}$, potem napięcie na $R_2$: $U_2 = I R_2$, i na końcu $Q = C U_2$.',
+      solutionSteps: [
+        'Prąd w obwodzie głównym: $I = \\frac{12}{2{,}0 + 3{,}0 + 1{,}0} = 2{,}0\\text{ A}$.',
+        'Napięcie na oporniku $R_2$ (a tym samym na kondensatorze): $U_C = I R_2 = 2{,}0 \\cdot 3{,}0 = 6{,}0\\text{ V}$.',
+        'Ładunek kondensatora: $Q = C U_C = 10\\,\\mu\\text{F} \\cdot 6{,}0\\text{ V} = 60\\,\\mu\\text{C}$.',
+      ],
+      ckeKey: [
+        '1 pkt — zauważenie, że przez kondensator nie płynie prąd stały i obliczenie $I = 2{,}0\\text{ A}$.',
+        '1 pkt — wyznaczenie napięcia na kondensatorze $U_C = I R_2 = 6{,}0\\text{ V}$.',
+        '1 pkt — obliczenie ładunku $Q = 60\\,\\mu\\text{C}$.',
+      ],
+    },
   ],
 };

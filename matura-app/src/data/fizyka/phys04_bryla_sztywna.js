@@ -87,7 +87,7 @@ export const phys04BrylaSztywna = {
   quiz: [
     {
       id: 'pq4-1',
-      q: 'Jednorodna belka o długości $L = 4\\text{ m}$ i masie $m = 20\\text{ kg}$ spoczywa poziomo na dwóch podporach umieszczonych na jej końcach. Jaka siła nacisku działa na każdą z podpór, jeśli na belce w odległości $1\\text{ m}$ od lewego końca położono ciężarek o masie $10\\text{ kg}$ ($g = 10\\text{ m/s}^2$)?',
+      q: 'Jednorodna belka o długości $L = 4\\text{ m}$ i masie $m = 20\\text{ kg}$ spoczywa poziomo na dwóch podporach umieszczonych na jej końcach. Jaka siła nacisku działa na każdą z podpór (odpowiednio lewą i prawą), jeśli na belce w odległości $1\\text{ m}$ od lewego końca położono ciężarek o masie $10\\text{ kg}$ ($g = 10\\text{ m/s}^2$)?',
       options: ['$125\\text{ N}$ i $175\\text{ N}$', '$150\\text{ N}$ i $150\\text{ N}$', '$100\\text{ N}$ i $200\\text{ N}$', '$175\\text{ N}$ i $125\\text{ N}$'],
       correct: 3,
       explanation: 'Moment sił względem lewej podpory: $200\\text{ N}\\cdot 2\\text{ m} + 100\\text{ N}\\cdot 1\\text{ m} = R_P \\cdot 4\\text{ m} \\Rightarrow R_P = 125\\text{ N}$. Zatem $R_L = 300 - 125 = 175\\text{ N}$.',
@@ -124,6 +124,30 @@ export const phys04BrylaSztywna = {
         '1 pkt — uwzględnienie obu składników energii kinetycznej (postępowej i obrotowej).',
         '1 pkt — użycie warunku braku poślizgu $\\omega = v/R$ i podstawienie $I = \\frac{1}{2}mR^2$.',
         '1 pkt — poprawny wynik $v \\approx 4{,}5\\text{ m/s}$.',
+      ],
+    },
+    {
+      id: 'cke-04-moment-pedu-karuzela',
+      source: 'CKE Formuła 2015/2023 • Zasada zachowania momentu pędu',
+      title: 'Dziecko przechodzi do środka obracającej się tarczy',
+      maxPoints: 3,
+      difficulty: 'wyzwanie',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      prompt:
+        'Pozioma tarcza karuzeli o momencie bezwładności $I_t = 120\\text{ kg}\\cdot\\text{m}^2$ i promieniu $R = 2{,}0\\text{ m}$ obraca się z prędkością kątową $\\omega_1 = 1{,}0\\text{ rad/s}$. Na jej brzegu stoi dziecko o masie $m = 30\\text{ kg}$ (traktuj jako punkt materialny). Dziecko przechodzi na sam środek tarczy ($r = 0$). Oblicz nową prędkość kątową karuzeli $\\omega_2$.',
+      expectedValue: 2.0,
+      tolerance: 0.05,
+      unit: 'rad/s',
+      hint: 'Brak zewnętrznych momentów sił $\\Rightarrow L_1 = L_2 \\Rightarrow (I_t + mR^2)\\omega_1 = I_t \\omega_2$.',
+      solutionSteps: [
+        'Początkowy moment bezwładności: $I_1 = I_t + mR^2 = 120 + 30 \\cdot 2{,}0^2 = 240\\text{ kg}\\cdot\\text{m}^2$.',
+        'Końcowy moment bezwładności (dziecko na osi): $I_2 = I_t = 120\\text{ kg}\\cdot\\text{m}^2$.',
+        'Z zachowania momentu pędu: $240 \\cdot 1{,}0 = 120 \\cdot \\omega_2 \\Rightarrow \\omega_2 = 2{,}0\\text{ rad/s}$.',
+      ],
+      ckeKey: [
+        '1 pkt — zastosowanie zasady zachowania momentu pędu $I_1\\omega_1 = I_2\\omega_2$.',
+        '1 pkt — poprawne obliczenie $I_1 = I_t + mR^2 = 240\\text{ kg}\\cdot\\text{m}^2$.',
+        '1 pkt — obliczenie $\\omega_2 = 2{,}0\\text{ rad/s}$.',
       ],
     },
   ],

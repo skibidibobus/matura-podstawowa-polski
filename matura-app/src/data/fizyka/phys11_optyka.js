@@ -126,5 +126,30 @@ export const phys11Optyka = {
         '1 pkt — obliczenie $\\lambda \\approx 627\\text{ nm}$.',
       ],
     },
+    {
+      id: 'cke-11-soczewka-lupa',
+      source: 'CKE Formuła 2023 • Soczewki cienkie',
+      title: 'Obraz pozorny i powiększony w lupie',
+      maxPoints: 3,
+      difficulty: 'standard',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      svgId: 'svg-11-soczewka-konstrukcje',
+      prompt:
+        'Soczewka skupiająca o zdolności skupiającej $Z = +10\\text{ D}$ daje obraz pozorny, prosty i $3$-krotnie powiększony ($p = 3$). Oblicz odległość $x$ przedmiotu od soczewki (w centymetrach).',
+      expectedValue: 6.67,
+      tolerance: 0.2,
+      unit: 'cm',
+      hint: 'Ogniskowa $f = 1/Z = 0{,}10\\text{ m} = 10\\text{ cm}$. Dla obrazu pozornego $y < 0$, więc $y = -3x$. Podstaw do $\\frac{1}{f} = \\frac{1}{x} + \\frac{1}{y}$.',
+      solutionSteps: [
+        'Ogniskowa: $f = \\frac{1}{10\\text{ D}} = 0{,}10\\text{ m} = 10\\text{ cm}$.',
+        'Powiększenie $p = \\frac{|y|}{x} = 3$, a obraz jest pozorny ($y < 0$), więc $y = -3x$.',
+        '$\\frac{1}{10} = \\frac{1}{x} - \\frac{1}{3x} = \\frac{2}{3x} \\Rightarrow 3x = 20 \\Rightarrow x \\approx 6{,}67\\text{ cm}$.',
+      ],
+      ckeKey: [
+        '1 pkt — wyznaczenie ogniskowej $f = 10\\text{ cm}$.',
+        '1 pkt — użycie znaku minus dla obrazu pozornego ($y = -3x$).',
+        '1 pkt — obliczenie $x \\approx 6{,}7\\text{ cm}$.',
+      ],
+    },
   ],
 };

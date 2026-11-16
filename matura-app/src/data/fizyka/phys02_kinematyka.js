@@ -203,5 +203,51 @@ export const phys02Kinematyka = {
         '1 pkt — poprawny wynik $H_{\\max} = 5{,}0\\text{ m}$.',
       ],
     },
+    {
+      id: 'cke-02-wzglednosc-rzeka',
+      source: 'CKE Formuła 2015/2023 • Względność ruchu',
+      title: 'Przeprawa łódki przez rzekę z prądem wody',
+      maxPoints: 3,
+      difficulty: 'standard',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      prompt:
+        'Motorówka płynie z prędkością $v_m = 5{,}0\\text{ m/s}$ względem wody, kierując dziób prostopadle do brzegu rzeki o szerokości $d = 120\\text{ m}$. Prąd rzeki ma prędkość $v_r = 3{,}0\\text{ m/s}$. Oblicz, o ile metrów poniżej punktu na wprost miejsca startu motorówka dobije do przeciwległego brzegu.',
+      expectedValue: 72,
+      tolerance: 1,
+      unit: 'm',
+      hint: 'Czas przeprawy zależy wyłącznie od prędkości prostopadłej do brzegu: $t = d/v_m$. Znos prądu w tym czasie to $s = v_r \\cdot t$.',
+      solutionSteps: [
+        'Czas przeprawy przez rzekę: $t = \\frac{d}{v_m} = \\frac{120}{5{,}0} = 24\\text{ s}$.',
+        'Znos wzdłuż rzeki: $s = v_r \\cdot t = 3{,}0 \\cdot 24 = 72\\text{ m}$.',
+      ],
+      ckeKey: [
+        '1 pkt — obliczenie czasu przeprawy $t = d/v_m = 24\\text{ s}$.',
+        '1 pkt — obliczenie znosu $s = v_r \\cdot t = 72\\text{ m}$.',
+        '1 pkt — poprawny wynik z jednostką.',
+      ],
+    },
+    {
+      id: 'cke-02-spotkanie-cial',
+      source: 'CKE Formuła 2023 • Ruch prostoliniowy',
+      title: 'Pościg samochodu za rowerzystą',
+      maxPoints: 3,
+      difficulty: 'wyzwanie',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      prompt:
+        'W chwili $t = 0$ samochód rusza z miejsca ze stałym przyspieszeniem $a = 2{,}0\\text{ m/s}^2$. W tej samej chwili mija go rowerzysta jadący ze stałą prędkością $v_r = 10\\text{ m/s}$. Po jakim czasie samochód dogoni rowerzystę?',
+      expectedValue: 10,
+      tolerance: 0.2,
+      unit: 's',
+      hint: 'W chwili spotkania przebyte drogi są równe: $\\frac{1}{2}at^2 = v_r t$ (dla $t > 0$).',
+      solutionSteps: [
+        'Droga samochodu: $s_s(t) = \\frac{1}{2}at^2$. Droga rowerzysty: $s_r(t) = v_r t$.',
+        'Warunek spotkania ($t > 0$): $\\frac{1}{2}at^2 = v_r t \\Rightarrow t = \\frac{2v_r}{a} = \\frac{2 \\cdot 10}{2{,}0} = 10\\text{ s}$.',
+      ],
+      ckeKey: [
+        '1 pkt — zapisanie równań ruchu obu ciał.',
+        '1 pkt — przyrównanie położeń $s_s(t) = s_r(t)$.',
+        '1 pkt — obliczenie czasu $t = 10\\text{ s}$.',
+      ],
+    },
   ],
 };

@@ -150,5 +150,29 @@ export const phys10Magnetyzm = {
         '1 pkt — obliczenie siły $F = BIl = 0{,}080\\text{ N}$.',
       ],
     },
+    {
+      id: 'cke-10-spektrometr-mas',
+      source: 'CKE Formuła 2015/2023 • Siła Lorentza',
+      title: 'Rozdzielanie izotopów w polu magnetycznym (spektrometr mas)',
+      maxPoints: 3,
+      difficulty: 'standard',
+      arkuszownikUrl: 'https://arkuszownik.pl',
+      svgId: 'svg-10-lorentz-okrag',
+      prompt:
+        'Jednokrotnie zjonizowany jon węgla $^{12}\\text{C}^+$ wpada z prędkością $v = 1{,}0\\cdot 10^5\\text{ m/s}$ prostopadle do jednorodnego pola magnetycznego o indukcji $B = 0{,}50\\text{ T}$. Przyjmij masę jonu $m = 12\\cdot 1{,}66\\cdot 10^{-27}\\text{ kg}$ oraz ładunek $q = 1{,}60\\cdot 10^{-19}\\text{ C}$. Oblicz promień okręgu $R$, po którym porusza się jon (w centymetrach).',
+      expectedValue: 2.49,
+      tolerance: 0.1,
+      unit: 'cm',
+      hint: 'Przyrównaj siłę Lorentza do siły dośrodkowej: $qvB = \\frac{mv^2}{R} \\Rightarrow R = \\frac{mv}{qB}$.',
+      solutionSteps: [
+        'Wzór na promień toru: $R = \\frac{mv}{qB}$.',
+        '$R = \\frac{12 \\cdot 1{,}66\\cdot 10^{-27} \\cdot 1{,}0\\cdot 10^5}{1{,}60\\cdot 10^{-19} \\cdot 0{,}50} = \\frac{1{,}992\\cdot 10^{-21}}{8{,}0\\cdot 10^{-20}} = 0{,}0249\\text{ m} = 2{,}49\\text{ cm}$.',
+      ],
+      ckeKey: [
+        '1 pkt — wyprowadzenie wzoru $R = mv/(qB)$.',
+        '1 pkt — poprawne podstawienie masy jonu w $\\text{kg}$ i ładunku elementarnego.',
+        '1 pkt — obliczenie $R \\approx 2{,}5\\text{ cm}$.',
+      ],
+    },
   ],
 };
