@@ -6,7 +6,7 @@ const COURSE_BRAND_SUBTITLES = {
   ustna: 'Kurs 76 pytań jawnych • CKE 2026–2028',
   kurs: 'Kurs 10 Działów CKE • Formuła 2023',
   probna: 'Sprint 7h • Matura Próbna',
-  fizyka: 'Matura Rozszerzona • 12 Działów CKE',
+  fizyka: 'Matura Rozszerzona • 13 Działów CKE',
 };
 
 export function Sidebar({

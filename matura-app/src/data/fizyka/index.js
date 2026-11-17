@@ -10,6 +10,7 @@ import { phys09PradStaly } from './phys09_prad_staly';
 import { phys10Magnetyzm } from './phys10_magnetyzm';
 import { phys11Optyka } from './phys11_optyka';
 import { phys12Wspolczesna } from './phys12_wspolczesna';
+import { phys13WzoryPozaKarta } from './phys13_wzory_poza_karta';
 import { CKE_TASKS_1_6 } from './tasks/cke_tasks_1_6';
 import { CKE_TASKS_7_12 } from './tasks/cke_tasks_7_12';
 import { DEPARTMENT_EXAMS } from './exams/dept_exams';
@@ -32,6 +33,7 @@ const RAW_LEVELS = [
   phys10Magnetyzm,
   phys11Optyka,
   phys12Wspolczesna,
+  phys13WzoryPozaKarta,
 ];
 
 export const FIZYKA_LEVELS = RAW_LEVELS.map((dept) => ({

@@ -9,8 +9,8 @@ const { default: App } = await loadComponent('/src/App.jsx');
 const React = (await import('react')).default;
 const { renderToStaticMarkup } = await import('react-dom/server');
 
-test('Physics Course (FIZYKA_LEVELS): 12 departments, unique IDs, valid SVG diagrams & CKE tasks', () => {
-  assert.equal(FIZYKA_LEVELS.length, 12);
+test('Physics Course (FIZYKA_LEVELS): 13 departments, unique IDs, valid SVG diagrams & CKE tasks', () => {
+  assert.equal(FIZYKA_LEVELS.length, 13);
 
   const noteIds = new Set();
   const cardIds = new Set();
